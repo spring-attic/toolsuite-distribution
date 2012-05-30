@@ -16,7 +16,7 @@ openFile</programArgs>
 -Xmx768m
 -XX:MaxPermSize=256m</vmArgs>
       <vmArgsMac>-XstartOnFirstThread
--Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+-Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/Eclipse.icns</vmArgsMac>
    </launcherArgs>
 
    <windowImages i16="/com.springsource.sts/sts.png" i32="/com.springsource.sts/sts32.png" i48="/com.springsource.sts/sts48.png" i64="/com.springsource.sts/sts64.png" i128="/com.springsource.sts/sts128.png"/>
