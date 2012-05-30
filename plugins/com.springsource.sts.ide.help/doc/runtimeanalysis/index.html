@@ -1,0 +1,98 @@
+<br>
+
+<p>When a runtime error occurs in the application you are developing, SpringSource Tool Suite can analyze the error log output and suggest solutions to common log output error messages. The suggested solutions are stored in a local knowledge base that can be periodically updated with new content from SpringSource.com. The content of the repository is produced by Spring developers who contribute it using an authoring tool included with the SpringSource Tool Suite. As more developers contribute content, there will be more solutions available to a wider range of output problems. </p>
+
+<br>
+<h2><a name="AuthoringRuntimeErrorResolutions-Viewingruntimeerroranalyses"></a>Viewing runtime error analyses</h2>
+
+<p>When viewing log output in the console view, any error messages with available analysis information will appear in blue and underlined. You can hover over the underlined text to view a tooltip containing the analysis information.</p>
+
+<p>To view all available analyses for the entire console contents, click the light bulb button at the top right of the console view with the tooltip label, "View runtime error analysis." </p>
+
+<p><img src="console-view.png" align="absmiddle" border="0" /></p>
+
+<p>This will open the Knowledge Base tab of the SpringSource Tool Suite dashboard. Your console log output is automatically copied into the log output field and you can see the results below. If there are any results, you can browse them in the "Error analyses" tree. Selecting an analysis displays its details in the box below.</p>
+
+<p><img src="analysis.png" align="absmiddle" border="0" /></p>
+
+<p>If the log output you wish to analyze isn't in the console view, you can paste the output into the log output box at the top of the Knowledge Base tab and click "Search for Analyses."</p>
+
+<h2>Authoring Runtime Error Analysis<br>
+
+</h2>
+
+<p>The knowledge base content is contributed by the Spring developer community. If you have resolved a runtime error that others may encounter, others can benefit from your solution if you contribute it as a runtime error analysis.</p>
+
+<p>Use the following step-by-step instructions to contribute a new runtime error analysis.
+r clear="all" /> <br clear="all" /></p>
+<ol>
+	<li>It is recommended that you start by reproducing the problem so that the error message is visible in your console view
+<br clear="all" /> <br clear="all" /></li>
+	<li>Highlight the error message and click the "Create new runtime error analysis" button in your console view.
+<br clear="all" /> <br clear="all" />
+<img src="console-create.png" align="absmiddle" border="0" />
+<br clear="all" /> <br clear="all" /></li>
+	<li>If you haven't already done so, you will be prompted to enter your credentials for the SpringSource Knowledge Base. Enter the same account information that you used to create an account and download the SpringSource tool suite.
+<br clear="all" /> <br clear="all" /></li>
+	<li>An editor will appear that you can use to author your runtime error resolution. This editor contains a box where your highlighted console log output appears. Below this box, write a regular expression that will match this log output. Be sure to remove any project-specific output and replace it with the appropriate regular expression syntax (e.g. your class and package names). The label above the regular expression box will indicate if the expression matches the log output. The screenshot below shows the appearance of the editor when there is a match:
+r clear="all" /> <br clear="all" />
+<img src="match.png" align="absmiddle" border="0" />
+<br clear="all" /> <br clear="all" />
+<div class='panelMacro'><table class='tipMacro'><colgroup><col width='24'><col></colgroup><tr><td valign='top'><img src="..\images\check.gif" width="16" height="16" align="absmiddle" alt="" border="0"></td><td><b>Tip</b><br />
+<p>When entering Addtional Resources, consider making a bulleted list of links to resources like this:</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">&lt;li&gt; &lt;a href=<span class="code-quote">"http:<span class="code-comment">//resource1.com"</span>&gt;Resource 1&lt;/a&gt;
+</span>&lt;li&gt; &lt;a href=<span class="code-quote">"http:pan class="code-comment">//resource2.com"</span>&gt;Resource 2&lt;/a&gt;</span></pre>
+</div></div>
+</td></tr></table></div></li>
+	<li>Click the "Preview" tab at the bottom to see how your suggested runtime error resolution will appear to the user. This is a good way to check your HTML formatting. The preview tab is shown below:
+<br clear="all" /> <br clear="all" />
+<img src="preview.png" align="absmiddle" border="0" />
+<br clear="all" /> <br clear="all" /></li>
+	<li>Return to the "Author" tab and click the link near the bottom to read the legal terms and conditions regarding your submission. If you agree to the terms, check the "I ACCEPT..." box, and click "Submit"
+<br clear="all" /> <br clear="all" />
+<img src="accept.png" align="absmiddle" border="0" />
+<br clear="all" /> <br clear="all" /></li>
+	<li>After submitting, the Task List view will open. You can use this view to open, modify, and re-submit runtime error resolutions.
+<br clear="all" /> <br clear="all" />
+<div class='panelMacro'><table class='infoMacro'><colgroup><col width='24'><col></colgroup><tr><td valign='top'><img src="../images/information.gif" width="16" height="16" align="absmiddle" alt="" border="0"></td><td><b>Note</b><br />
+<p>The content you submit will not be immediately available to test within your development environment. The content will be periodically reviewed and then packaged into a future release.</p></td></tr></table></div></li>
+</ol>
+
+<br>
+<h2><a name="AuthoringRuntimeErrorAnalyses-Updatingyourlocalknowledgebase"></a>Updating your local knowledge base</h2>
+
+<p>To update your local runtime error analysis knowledge base to the latest content, click the SpringSource icon in the toolbar. The SpringSource Stool Suite dashboard will appear. Select the "Knowledge Base" tab at the bottom. In the Knowledge Base tab, click the "Update from SpringSource.com" button.
+<br clear="all" /> <br clear="all" />
+<img src="update.png" align="absmiddle" border="0" /></p>
+
+<br>
+<h2><a name="AuthoringRuntimeErrorAnalyses-AuthoringTipsandBestPractices"></a>Authoring 
+tips and best practices</h2>
+
+<br>
+<h4><a name="AuthoringRuntimeErrorAnalyses-VariableSubstitution"></a>Variable Substitution</h4>
+
+<p>You can use placeholder variables in your HTML content that can be substituted for content from the end user's actual log output. </p>
+
+<p>Use "(" and ")" to create capture groups in the regular expression that select the content that is to be substituted into the HTML content. In the HTML content, use variable names $1, $2, etc to indicate where the captured content is to be substituted. See the example below:</p>
+
+<p>
+<img src="substitution.png" align="absmiddle" border="0" /></p>
+
+<p>Use the preview tab to check the results of the substitution</p>
+
+<p>
+<img src="substitution-preview.png" align="absmiddle" border="0" /></p>
+
+<br>
+<h4><a name="AuthoringRuntimeErrorAnalyses-Matchinglogoutputspanningmultiplelines"></a>Matching log output spanning multiple lines</h4>
+
+<p>If the log output you wish to match spans multiple lines, use "\r\n" in your regular expression to match the line breaks.</p>
+
+<br>
+<h4><a name="AuthoringRuntimeErrorAnalyses-Multipleanalysesforthesamelogoutputproblem"></a>Multiple analyses for the same log output problem</h4>
+
+<p>In many cases there are several possible ways to resolve a runtime error. For example, the solution may depend on the technology stack or the version of Spring in use. The SpringSource Tool Suite can support multiple analysis results for the same log output problem, so you can create as many analyses as you need to cover the known solutions to the problem. If your analyses for a particular output problem are specific to a version of Spring or a database vendor, for example, it is good practice to include the version or database vendor in the summary so the user can easily find the content that applies to their environment.</p>
+<br>
+<br>

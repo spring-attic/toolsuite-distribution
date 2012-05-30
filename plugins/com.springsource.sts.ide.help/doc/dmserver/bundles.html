@@ -1,0 +1,77 @@
+<br>
+<h2 class="title" style="clear: both">Developing OSGi Bundles</h2>
+				The SpringSource dm Server Tools provide a set of tools that make developing OSGi bundles, 
+				especially editing of MANIFEST.MF files, easier.   
+			</p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="tooling-developing-resolving-bundle-dependencies"></a>Resolving Bundle Dependencies</h3></div></div></div><p>
+				While working with OSGi bundles, one of the most interesting and challenging aspects is defining 
+				the	package, bundle, and library imports in the manifest and then keeping this in sync 
+				with your compile classpath	either in Ant and Maven or Eclipse. In most cases you would typically 
+				be required to manually set up the Eclipse classpath. Ultimately, the Eclipse compile 
+				classpath is still different from the bundle runtime classpath, as normally an entire
+				JAR file is being made available on the Eclipse classpath but not necessarily at runtime
+				due to the explicit visibility rules defined in <code class="code">Import-Package</code> headers. 
+			</p><p>
+				The dm Server Tools address this problem by providing an Eclipse classpath container that 
+				uses a dm Server specific dependency resolution mechanism. This classpath
+				container makes resolved dependencies available on the project's classpath but allows
+				only access to those package that are imported explicitly (e.g., via <code class="code">Import-Package</code>) 
+				or implicitly by using <code class="code">Import-Library</code> or <code class="code">Import-Bundle</code>.
+			</p><p>
+				To use the automatic dependency resolution, an OSGi bundle or PAR project needs to be 
+				targeted to a configured SpringSource dm Server instance. This can be done from the project's
+				preferences by selecting the runtime on the "Targeted Runtimes" preference page.
+			</p><p>
+				</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../images/information.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+					In most scenarios it is sufficient to target the PAR project to a runtime. The nested
+					bundles will then automatically inherit this setting.
+				</td></tr></table></div><p>
+			</p><p>
+				<img src="images/tooling-classpath.png">
+			</p><p>
+				After targeting the project or PAR you will see a "Bundle Dependencies" classpath 
+				container in your Java project. It is now safe to remove any manually configured classpath 
+				entries.
+			</p><p>
+				The classpath container will automatically attach Java source code to the classpath
+				entries by looking for source JARs next to the binary JARs in the SpringSource dm Server's 
+				repository. You can also manually override the source code attachment by using the
+				properties dialog on a single JAR entry. This manual attachment will always override
+				the convention-based attachment.
+			</p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="tooling-developing-editing-manifest-mf"></a>Editing the Manifest</h3></div></div></div><p>
+				The dm Server Tools provide a Bundle Manifest Editor that assists the developer to create and
+				edit MANIFEST.MF files. The editor understands the SpringSource dm Server specific headers
+				like <code class="code">Import-Library</code> and <code class="code">Import-Bundle</code> and provides content
+				assist features while editing source code. Furthermore a Eclipse Form-based UI is also
+				available. 
+			</p><p>
+				To open the Bundle Manifest Editor right click a MANIFEST.MF file and select "Bundle
+				Manifest Editor" from the "Open With" menu.
+			</p><p>
+				</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../images/information.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+					Please note that the SpringSource dm Server specific manifest headers appear in green color
+					to distinguish them from those headers defined in the OSGi specification. This also
+					makes navigating much easier.
+				</td></tr></table></div><p>
+			</p><p>
+				<img src="images/tooling-manifest-source-editor.png">
+			</p><p>
+				The content assist proposals in the source tab as well as in the UI-based tabs are
+				resolved from the bundle and library repository of an installed and configured 
+				SpringSource dm Server. Therefore it is important to target the project or PAR to a specific 
+				Server instance	to indicate to the tooling which bundle repository to use.
+			</p><p>
+				</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../images/information.gif"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+					If a OSGi bundle project is not targeted directly or indirectly by targeting the
+					a PAR project to specific instance the manifest editor is not much of a help as it
+					can not calculate proposals for content assist request.
+				</td></tr></table></div><p>			
+			</p><p>
+				<img src="images/tooling-manifest-form-ui-editor.png">
+			</p><p>
+				The Dependencies tab of the Bundle Manifest Editor enables the user to easily download
+				and install bundles and libraries from the SpringSource Enterprise Bundle Repository
+				by using the "Download..." buttons next to the "Import Bundle" and "Import Library" 
+				sections.
+			</p>
+			
+			<br>

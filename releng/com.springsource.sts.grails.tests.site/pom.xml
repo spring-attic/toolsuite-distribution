@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.springsource.sts</groupId>
+		<artifactId>com.springsource.sts.parent</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	<artifactId>com.springsource.sts.grails.tests.site</artifactId>
+	<packaging>eclipse-update-site</packaging>
+	<properties>
+	  <dist.accessKey>${accessKey}</dist.accessKey>
+	  <dist.secretKey>${secretKey}</dist.secretKey>
+	</properties>
+  <build>
+	<plugins>
+	  <plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>properties-maven-plugin</artifactId>
+		<version>1.0-alpha-2</version>
+		<executions>
+		  <execution>
+			<phase>initialize</phase>
+			<goals>
+			  <goal>read-project-properties</goal>
+			</goals>
+			<configuration>
+			  <quiet>true</quiet>
+			  <files>
+				<file>${dist.properties}</file>
+			  </files>
+			</configuration>
+		  </execution>
+		</executions>
+	  </plugin>
+	  <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-antrun-plugin</artifactId>
+		<version>1.7</version>
+		<executions>
+		  <execution>
+			<id>process-update-site</id>
+			<phase>install</phase>
+			<configuration>
+			  <target>
+				<ant antfile="../../common/build.xml" target="process-update-site">
+				  <property name="p2.sign" value="${p2.sign}"/>
+				  <property name="p2.repository.name" value="${p2.repository.name}"/>
+				</ant>
+			  </target>
+			</configuration>
+			<goals>
+			  <goal>run</goal>
+			</goals>
+		  </execution>
+		  <execution>
+			<id>upload-dist</id>
+			<phase>deploy</phase>
+			<configuration>
+			  <target>
+				<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}"/>
+				<ant antfile="../../common/build.xml" target="deploy">
+				  <property name="dist.project" value="${dist.project}"/>
+				  <property name="dist.platform.version" value="${dist.platform.version}"/>
+				  <property name="dist.type" value="${dist.type}"/>
+				  <property name="dist.key" value="${dist.key}-TEST"/>
+				  <property name="dist.project" value="${dist.project}"/>
+				  <property name="dist.target" value="${dist.target}"/>
+				  <property name="plugin_classpath" refid="maven.plugin.classpath"/>
+				</ant>
+			  </target>
+			</configuration>
+			<goals>
+			  <goal>run</goal>
+			</goals>
+		  </execution>
+		</executions>
+	  </plugin>  
+	</plugins>
+  </build>
+
+</project>

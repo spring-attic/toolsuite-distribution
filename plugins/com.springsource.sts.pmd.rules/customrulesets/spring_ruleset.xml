@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<ruleset name="Custom ruleset"
+    xmlns="http://pmd.sf.net/ruleset/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
+    xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
+  <description>
+  This rule set checks for Spring Framework anti-patterns
+  </description>
+  
+    
+	<rule class="net.sourceforge.pmd.rules.XPathRule" message="Consider using Spring configuration to inject singletons" name="NonSpringSingleton">
+		<description>
+			This class appears to be a singleton. It is a Spring Framework convention that singletons are declared in a Spring configuration file and injected into client objects.
+		</description>
+     	<priority>5</priority>
+    
+        <properties>
+            <property name="xpath">
+                <value><![CDATA[
+                     
+//ClassOrInterfaceDeclaration[@Image = //FieldDeclaration//ClassOrInterfaceType/@Image]
+                     
+                 ]]></value>
+            </property>
+        </properties>
+    
+    </rule>
+    
+	<rule class="net.sourceforge.pmd.rules.XPathRule" message="Direct instantiation of application contexts is discouraged. Consider using Spring configuration to create the application context." name="ApplicationContextInstantiated">
+		<description>
+			Direct instantiation of application contexts is discouraged. Consider using Spring configuration to create the application context.
+		</description>
+     	<priority>5</priority>
+    
+        <properties>
+            <property name="xpath">
+                <value><![CDATA[
+                     
+//AllocationExpression/ClassOrInterfaceType[@Image = 'XmlWebApplicationContext' or @Image = 'ClassPathXmlApplicationContext'  or @Image = 'FileSystemXmlApplicationContext' or @Image = 'GenericWebApplicationContext' or @Image = 'StaticApplicationContext' or @Image = 'StaticWebApplicationContext']
+                     
+                 ]]></value>
+            </property>
+        </properties>
+    
+    </rule>
+    
+	<rule class="net.sourceforge.pmd.rules.XPathRule" message="When possible, use a more specific interface such as ResourceLoaderAware, ApplicationEventPublisherAware or MessageSourceAware." name="UseOfApplicationContextAware">
+		<description>
+			When possible, use a more specific interface such as ResourceLoaderAware, ApplicationEventPublisherAware or MessageSourceAware.
+		</description>
+     	<priority>5</priority>
+    
+        <properties>
+            <property name="xpath">
+                <value><![CDATA[
+                     
+//TypeDeclaration/ClassOrInterfaceDeclaration/ImplementsList/ClassOrInterfaceType[@Image='ApplicationContextAware']
+                     
+                 ]]></value>
+            </property>
+        </properties>
+    
+    </rule>
+    
+    <!--
+	<rule class="com.springsource.sts.internal.pmd.rules.SpringRule" message="Test Spring Framework rule defined in Java" name="SpringRule">
+        
+		<description>
+		This Spring Framework Rule is an example created using Java code rather than XPath.    
+		</description>
+        <priority>5</priority>
+    </rule>
+    -->
+</ruleset>
+

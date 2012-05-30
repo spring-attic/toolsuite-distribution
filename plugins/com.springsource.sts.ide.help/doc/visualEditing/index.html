@@ -1,0 +1,65 @@
+<br>
+<h2 class="title" style="clear: both">Visual Editing Enhancements</h2>
+</div>
+</div>
+</div>
+<p>The configuration editor provides visual editing capabilities for
+Spring Batch and Spring Integration configuration files. Users can flip
+to the batch-graph and integration-graph tabs to edit their
+configurations via graphical interface, or simply to visualize their
+configuration for presentations. Using the visual editor is as simple as
+selecting a part from the palette on the left hand side, and dropping it
+onto the canvas on the right. Connections can be drawn between parts by
+selecting one of the connection tools, and then dragging between two
+figures on the canvas. The mouse icon will change to indicate whether
+the user is about to make a valid or invalid connection. The visual
+editor has several enhancements:</p>
+<p></p>
+
+<h3 class="title" style="clear: both">Automatic & Manual Layouts</h3>
+</div>
+</div>
+</div>
+<p>The visual editor has two modes for laying out the graph. The
+default is an automatic mode that attempts to layout the figures
+optimally. While in this mode, figures can not be moved freely. Users
+can toggle the layout button in the toolbar to turn on manual layout. In
+manual layout figures can be moved and placed freely, and the layout
+will be persisted when the configuration file is saved. The two layout
+modes can be toggled at will; the visual editor will remember the
+location of figures between modes.</p>
+<p><img src="auto layout.png"><br>
+The visual editor in automatic layout mode.</p>
+<p><img src="manual layout.png"><br>
+The visual editor in manual layout mode.</p>
+
+<h3 class="title" style="clear: both">Context Menus</h3>
+</div>
+</div>
+</div>
+<p>Right-clicking anywhere in the canvas portion of the visual
+editor will bring up a context menu with actions relevant to the
+selection. Basic actions such as undo and redo are supported. Depending
+on the selection, users may also see an action for deleting a figure
+from the graph. There are also two actions that provide alternate
+editing options: The 'Reveal In Source File' action will switch the
+configuration editor to the Source tab and highlight the XML for the
+selected figure. The 'Show Properties' action will open the Properties
+view and display the properties for the selection. Double clicking a
+figure will also open the Properties view.</p>
+<p><img src="context menu.png"></p>
+
+<h3 class="title" style="clear: both">Properties Editing</h3>
+</div>
+</div>
+</div>
+<p>The configuration editor features an enhanced Properties view
+that is designed for working alongside the visual editing tabs. The
+Properties view is designed to track selections in the configuration
+editor, and will update its contents based on the selection. New
+form-based components display documentation for the selection and
+property details as well as content-assist support for certain fields,
+obviating the need to flip back and forth between form tabs and visual
+editing tabs in the editor.</p>
+<p><img src="properties view.png"></p>
+<br>

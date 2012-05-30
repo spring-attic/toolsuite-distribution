@@ -1,0 +1,51 @@
+<br><h2>Creating a new bean definition</h2>
+<p>Bean creation is made easier with the New Bean wizard. There are 3 trigger points 
+to open the wizard:</p>
+<ul>
+	<li>New Wizard: Go to <i>File -&gt; New -&gt; Other</i> (CTRL + N) then select Spring Bean 
+	Definition</li>
+	<blockquote>
+	</blockquote>
+	<li>Spring Explorer: Right click on the
+	the bean configuration file and select New Bean Definition...<blockquote>
+		<img border="0" src="create-new-menu.png" width="529" height="516"></blockquote>
+	</blockquote></li>
+	<li><a href="../configurationediting/index.html">Configuration editor</a>: Select New Bean... in the Overview tab<blockquote>
+		<img border="0" src="create-new-editor.png" width="477" height="465"></blockquote></li>
+</ul>
+<p>In the bean wizard enter the attributes in the Bean Definition page. Any 
+error that the bean wizard detects will be shown in the title region and the 
+Finish button will be disabled until the errors are fixed. To ignore the 
+errors, deselect the Ignore errors check box in the bottom left of the page.</p>
+<p><blockquote><img border="0" src="bean-definition.png" width="556" height="467"></blockquote>
+Click Next to add property or constructor-arg definitions, otherwise click 
+Finish.</p>
+<p><blockquote><img border="0" src="properties.png" width="558" height="623"></blockquote></p>
+<p>To add a new property definition, click Add... in the Properties section which will bring up a New 
+Property dialog. Enter values in the appropriate fields and click OK. The new 
+property will appear in the Properties table. To modify a property, select from 
+the Properties table and click Modify... which will bring up a dialog for modifying the 
+attributes.</p>
+<p><blockquote><img border="0" src="property-definition.png" width="531" height="215"></blockquote></p>
+<p>By default the Constructor Args section is collapsed. The recommended way to 
+add constructor arg definitions is to select a constructor from the drop down 
+menu. The correct number of constructor args will be inserted into the 
+Constructor Args table with an &lt;EMPTY&gt; value. To change the value of the 
+constructor arg, select from the table and click Edit... (Note that the wizard 
+only supports simple definitions - for example there is no way to define a 
+constructor arg with a nested bean. Simply leave the value/ref field to be empty 
+and modify the bean definition from source directly after the bean is created).</p>
+<p><blockquote><img border="0" src="constructor-selection.png" width="516" height="193"><p>
+<img border="0" src="after-constructor-selection.png" width="507" height="188"></p>
+</blockquote></p>
+<p>&nbsp;</p>
+<h2>Modifying a bean definition</h2>
+<p>The bean wizard can also be used to modify an existing bean definition. To bring 
+up the wizard, right click on the bean from the Spring Explorer and select 
+Modify bean definition...</p>
+<blockquote>
+	<p><img border="0" src="modify-menu.png" width="466" height="311"></p>
+</blockquote>
+<p>The wizard is the same as the one described above for creating a new bean 
+definition.</p>
+<p>&nbsp;</p>

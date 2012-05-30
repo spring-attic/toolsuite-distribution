@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   STS PARENT POM
+
+ Run build: 
+
+   mvn install
+
+ Optional parameters:
+
+   -Dmaven.test.skip=true       do not run tests
+   -Dp2.qualifier=<postfix>     sets a custom qualifer postfix, default is SNAPSHOT
+   -Dp2.replaceQualifier=true   replaces qualifer in sources where approriate
+   -Pe35                        targets Eclipse 3.5
+   -Pe36                        targets Eclipse 3.6 (default)
+   -Pe37                        targets Eclipse 3.7
+   -Pe38                        targets Eclipse 3.8
+   -Pe42                        targets Eclipse 4.2
+   -Pdist                       builds distribution packages
+
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.springsource.sts</groupId>
+    <artifactId>com.springsource.sts.root</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+	<relativePath>common/pom-parent.xml</relativePath>
+  </parent>
+
+  <groupId>com.springsource.sts</groupId>
+  <artifactId>com.springsource.sts.parent</artifactId>
+  <version>3.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <scm>
+	<connection>scm:git:ssh://git.springsource.com:sts/sts.git</connection>
+	<developerConnection>scm:git:ssh://git.springsource.com:sts/sts.git</developerConnection>
+	<tag>HEAD</tag>
+	<url>http://git.springsource.com/sts/sts</url>
+  </scm>
+
+  <properties>
+	<p2.qualifier>SNAPSHOT</p2.qualifier>
+	<p2.sign>false</p2.sign>
+	<p2.repository.name>SpringSource Tool Suite</p2.repository.name>
+
+	<dist.name>SpringSource Tool Suite</dist.name>
+	<dist.project>springsource-tool-suite</dist.project>
+	<dist.key>STS</dist.key>
+	
+	<!-- general version path extension for all dependencies -->
+	<dist.dependencies-version-path>nightly</dist.dependencies-version-path>
+
+	<!-- individual version path extensions for all the dependencies -->
+	<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
+	<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
+	<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
+
+  </properties>
+
+  <modules>
+	<!-- needs to be the first bundle to process sources -->
+	<module>plugins/com.springsource.sts</module>
+
+	<module>features/com.springsource.sts</module>
+	<module>features/com.springsource.sts.maven</module>
+	<module>features/com.springsource.sts.roo</module>
+	<module>features/com.springsource.sts.tutorials</module>
+	<module>plugins/com.springsource.sts.config.core</module>
+	<module>plugins/com.springsource.sts.config.flow</module>
+	<module>plugins/com.springsource.sts.config.tests</module>
+	<module>plugins/com.springsource.sts.config.ui</module>
+	<module>plugins/com.springsource.sts.ide.help</module>
+	<module>plugins/com.springsource.sts.ide.metadata</module>
+	<module>plugins/com.springsource.sts.ide.osgi</module>
+	<module>plugins/com.springsource.sts.maven</module>
+	<module>plugins/com.springsource.sts.maven.legacy</module>
+	<module>plugins/com.springsource.sts.quickfix.tests</module>
+	<module>plugins/com.springsource.sts.quickfix</module>
+	<module>plugins/com.springsource.sts.roo.core</module>
+	<module>plugins/com.springsource.sts.roo.test</module>
+	<module>plugins/com.springsource.sts.roo.ui</module>
+	<module>plugins/com.springsource.sts.wizard</module>
+  </modules>
+
+  <profiles>
+	<profile>
+	  <id>e37</id>
+	  <properties>
+		<p2.repository.name>SpringSource Tool Suite for Eclipse 3.7</p2.repository.name>
+		<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
+		<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
+	  </properties>
+	  <repositories>
+		<repository>
+		  <id>platform</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/eclipse/updates/3.7/</url>
+		</repository>
+		<repository>
+		  <id>indigo</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/releases/indigo/</url>
+		</repository>
+		<repository>
+		  <id>ajdt</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/tools/ajdt/37/dev/update/</url>
+		</repository>
+		<repository>
+		  <id>swtbot</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+		</repository>
+		<repository>
+		  <id>groovy</id>
+		  <layout>p2</layout>
+		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e3.7/</url>
+		</repository>
+		<repository>
+		  <id>linked-resources-patch</id>
+		  <layout>p2</layout>
+		  <url>http://dist.springsource.com/release/TOOLS/patches/bug367669</url>
+		</repository>
+	  </repositories>
+	  <modules>
+		<module>features/com.springsource.sts.package.e3.7</module>
+	  </modules>
+	</profile>
+	<profile>
+	  <id>e38</id>
+	  <properties>
+		<p2.repository.name>SpringSource Tool Suite for Eclipse 3.8</p2.repository.name>
+		<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
+		<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
+	  </properties>
+	  <repositories>
+		<repository>
+		  <id>platform</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/eclipse/updates/3.8milestones/</url>
+		</repository>
+		<repository>
+		  <id>juno</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/releases/juno/</url>
+		</repository>
+		<repository>
+		  <id>ajdt</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/tools/ajdt/42/dev/update/</url>
+		</repository>
+		<repository>
+		  <id>swtbot</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+		</repository>
+		<repository>
+		  <id>groovy</id>
+		  <layout>p2</layout>
+		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</url>
+		</repository>
+	  </repositories>
+	  <modules>
+		<module>features/com.springsource.sts.package.e3.8</module>
+	  </modules>
+	</profile>
+	<profile>
+	  <id>e42</id>
+	  <properties>
+		<p2.repository.name>SpringSource Tool Suite for Eclipse 4.2</p2.repository.name>
+		<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
+		<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
+	  </properties>
+	  <repositories>
+		<repository>
+		  <id>platform</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/eclipse/updates/4.2milestones/</url>
+		</repository>
+		<repository>
+		  <id>juno</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/releases/juno/</url>
+		</repository>
+		<repository>
+		  <id>ajdt</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/tools/ajdt/42/dev/update/</url>
+		</repository>
+		<repository>
+		  <id>swtbot</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+		</repository>
+		<repository>
+		  <id>groovy</id>
+		  <layout>p2</layout>
+		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</url>
+		</repository>
+	  </repositories>
+	  <modules>
+		<module>features/com.springsource.sts.package.e4.2</module>
+	  </modules>
+	</profile>
+	<profile>
+	  <id>site</id>
+	  <modules>
+		<module>releng/com.springsource.sts.site</module>
+	  </modules>
+	</profile>
+	<profile>
+	  <id>site-grails</id>
+	  <modules>
+		<module>features/com.springsource.sts.tests</module>
+		<module>features/com.springsource.sts.grails.tests</module>
+		<module>releng/com.springsource.sts.site</module>
+	 	<module>releng/com.springsource.sts.grails.tests.site</module>
+	  </modules>
+	</profile>
+	<profile>
+	  <id>dist</id>
+	  <modules>
+		<module>features/com.springsource.sts.product</module>
+	  </modules>
+	</profile>
+  </profiles>
+
+  <repositories>
+	<repository>
+	  <id>springide</id>
+	  <layout>p2</layout>
+	  <url>http://dist.springframework.org/${dist.type}/IDE/${dist.springide-pathpostfix}</url>
+	</repository>
+	<repository>
+	  <id>eclipse-integration-commons</id>
+	  <layout>p2</layout>
+	  <url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+	</repository>
+	<repository>
+	  <id>eclipse-integration-tcserver</id>
+	  <layout>p2</layout>
+	  <url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-tcserver/${dist.eclipse-integration-tcserver-version}</url>
+	</repository>
+	<repository>
+	  <id>mylyn</id>
+	  <layout>p2</layout>
+<!--	  <url>http://download.eclipse.org/mylyn/snapshots/3.6/</url> -->
+	  <url>http://download.eclipse.org/mylyn/releases/3.7</url>
+	</repository>
+	<repository>
+	  <id>atlassian</id>
+	  <layout>p2</layout>
+	  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.6/</url>
+	</repository>
+	<repository>
+	  <id>m2eclipse-legacy</id>
+	  <layout>p2</layout>
+	  <url>http://download.springsource.com/release/TOOLS/third-party/m2eclipse-012</url>
+	</repository>
+	<repository>
+	  <id>maven-wtp</id>
+	  <layout>p2</layout>
+	  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
+	</repository>
+	<repository>
+	  <id>maven-ajdt</id>
+	  <layout>p2</layout>
+	  <url>http://dist.springsource.org/release/AJDT/configurator/</url>
+	</repository>
+  </repositories>
+ 
+</project>

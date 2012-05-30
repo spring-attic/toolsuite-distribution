@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site pack200="true">
+	<description url="http://www.springsource.com/products/sts">
+		The SpringSource Tool Suite is the next generation IDE that helps you focus 
+		your development work with the Spring Portfolio.
+	</description>
+
+	<feature
+		url="features/com.springsource.sts_0.0.0.jar"
+		id="com.springsource.sts" 
+		version="0.0.0">
+		<category name="Core / STS" />
+	</feature>
+
+	<feature
+		url="features/com.springsource.sts.tutorials_0.0.0.jar"
+		id="com.springsource.sts.tutorials" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+
+<!--
+	<feature
+		url="features/com.springsource.sts.authoring_0.0.0.jar"
+		id="com.springsource.sts.authoring" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+<!--	
+	<feature
+		url="features/com.vmware.vixapi_0.0.0.jar"
+		id="com.vmware.vixapi" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+<!--
+	<feature
+		url="features/com.springsource.sts.vmware_0.0.0.jar"
+		id="com.springsource.sts.vmware" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+<!--
+	<feature
+		url="features/com.springsource.sts.server.dm_0.0.0.jar"
+		id="com.springsource.sts.server.dm" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>	
+
+	<feature
+		url="features/com.springsource.sts.server.ec2_0.0.0.jar"
+		id="com.springsource.sts.server.ec2" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>	
+-->
+	<feature
+		id="com.vmware.vfabric.ide.eclipse.tcserver" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+
+<!--	
+	<feature
+		url="features/com.springsource.sts.server.cf_0.0.0.jar"
+		id="com.springsource.sts.server.cf" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+	<feature
+		url="features/com.springsource.sts.grails_0.0.0.jar"
+		id="com.springsource.sts.grails" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+
+	<feature
+		url="features/com.springsource.sts.roo_0.0.0.jar"
+		id="com.springsource.sts.roo" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+	
+	<feature
+		url="features/com.springsource.sts.maven_0.0.0.jar"
+		id="com.springsource.sts.maven" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+<!--	
+	<feature
+		url="features/com.springsource.sts.runtimeerroranalysis_0.0.0.jar"
+		id="com.springsource.sts.runtimeerroranalysis" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+	<feature
+		url="features/com.springsource.sts.package_0.0.0.jar"
+		id="com.springsource.sts.package" 
+		version="0.0.0">
+	</feature>
+	
+	<category-def name="Core / STS" label="Core / STS" />
+	<category-def name="Extensions / STS" label="Extensions / STS" />
+	
+	<category-def name="Package / STS" label="Package / STS" />
+	
+</site>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.springsource.sts.webflow.ui;singleton:=true
+Bundle-Version: 3.0.0.qualifier
+Bundle-Vendor: %providerName
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.springframework.ide.eclipse.webflow.core,
+ org.springframework.core,
+ org.eclipse.ui.ide,
+ org.eclipse.wst.xml.core,
+ org.eclipse.wst.sse.core
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Localization: plugin
+Import-Package: org.springframework.webflow.upgrade

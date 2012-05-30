@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpringSource Tool Suite PMD Rules
+Bundle-SymbolicName: com.springsource.sts.pmd.rules;singleton:=true
+Bundle-Version: 3.0.0.qualifier
+Bundle-Vendor: SpringSource
+Fragment-Host: net.sourceforge.pmd.eclipse.plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

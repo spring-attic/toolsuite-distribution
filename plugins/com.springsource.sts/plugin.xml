@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension id="ide" point="org.eclipse.core.runtime.products"> 
+      <product name="%productName" application="org.eclipse.ui.ide.workbench" description="%productBlurb"> 
+          <property name="windowImages" value="sts.png,sts32.png,sts48.png,sts64.png,sts128.png"/> 
+          <property name="aboutImage" value="sts_lg.gif"/> 
+          <property name="aboutText" value="%productBlurb"/> 
+          <property name="appName" value="%productName"/> 
+          <property name="preferenceCustomization" value="plugin_customization.ini"/> 
+          <property
+                name="startupForegroundColor"
+                value="a6c693"/>
+          <property
+                name="versionForegroundColor"
+                value="c2cd23"/>
+          <property
+                name="startupMessageRect"
+                value="18,210,544,20"/>
+          <property
+                name="startupProgressRect"
+                value="0,275,600,15"/>
+          <property
+                name="versionRect"
+                value="447,83" />
+          <property
+          		name="introTitle"
+          		value="%productIntroTitle"/>
+          <property
+          		name="introBrandingImage"
+          		value="product:intro-eclipse.png"/>
+          <property
+          		name="introBrandingImageText"
+          		value="%productIntroBrandingText"/>
+		  <property
+				name="introDescription-overview"
+				value="%introDescription-overview"/>
+		  <property
+				name="introDescription-tutorials"
+				value="%introDescription-tutorials"/>
+		  <property
+				name="introDescription-samples"
+				value="%introDescription-samples"/>                
+      </product> 
+   </extension>
+          
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="com.springsource.sts.internal.splash.VersionDisplayingSplashHandler"
+            id="com.springsource.sts.ide.ui.splash">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="com.springsource.sts.ide"
+            splashId="com.springsource.sts.ide.ui.splash">
+      </splashHandlerProductBinding>
+   </extension>
+
+	<extension
+       point="org.eclipse.ui.views">
+    	<category
+          id="com.springsource.sts"
+          name="SpringSource Tool Suite">
+    	</category>
+ 	</extension>
+   
+</plugin>
