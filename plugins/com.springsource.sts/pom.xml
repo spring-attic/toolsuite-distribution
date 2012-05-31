@@ -47,7 +47,7 @@
 					
 <!--					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.ui/content/root.xhtml" token="@QUALIFIER@" value="${qualifier}" summary="yes" /> -->
 					
-					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.help/doc/toc.xml" token="@QUALIFIER@" value="${qualifier}" summary="yes" />
+<!--					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.help/doc/toc.xml" token="@QUALIFIER@" value="${qualifier}" summary="yes" /> -->
 <!--					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.ui/plugin.xml" token="@QUALIFIER@" value="${qualifier}" summary="yes" /> -->
 					<replace dir="${buildDirectory}/features" summary="yes">
 					  <include name="**/feature.xml"/>

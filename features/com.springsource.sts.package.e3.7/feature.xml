@@ -100,29 +100,15 @@
 	  <import feature="org.springframework.ide.eclipse.autowire.feature"/>			
 	  <import feature="org.springframework.ide.eclipse.batch.feature"/>		
 	  <import feature="org.springframework.ide.eclipse.integration.feature"/>		
+	  <import feature="org.springframework.ide.eclipse.maven.feature"/>		
+	  <import feature="org.springframework.ide.eclipse.roo.feature"/>		
 
 	  <import feature="org.eclipse.ajdt"/>					
 	  <import feature="org.eclipse.contribution.weaving"/>					
 	  <import feature="org.eclipse.contribution.xref"/>					
 
-<!--	  <import feature="com.vmware.vixapi"/> -->
       <import feature="com.springsource.sts"/>
-<!--      <import feature="com.springsource.sts.authoring"/>-->
-<!--      <import feature="com.springsource.sts.server.dm"/> -->
-<!--      <import feature="com.springsource.sts.server.ec2"/>-->
       <import feature="com.vmware.vfabric.ide.eclipse.tcserver"/>
-<!--      <import feature="com.springsource.sts.server.cf"/>-->
-      <import feature="com.springsource.sts.tutorials"/>
-<!--      <import feature="com.springsource.sts.vmware"/> -->
-      <import feature="com.springsource.sts.maven"/>
-      <import feature="com.springsource.sts.roo"/>
-<!--      <import feature="com.springsource.sts.runtimeerroranalysis"/>-->
-<!--      <import feature="com.springsource.sts.grails"/>-->
-
-<!--	  <import feature="org.codehaus.groovy.eclipse.feature"/>
-      <import feature="org.codehaus.groovy.jdt.patch"/>
-      <import feature="org.codehaus.groovy16.feature"/>-->
-
    </requires>
 
 </feature>

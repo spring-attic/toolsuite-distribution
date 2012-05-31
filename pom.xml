@@ -62,31 +62,10 @@
   </properties>
 
   <modules>
-	<!-- needs to be the first bundle to process sources -->
 	<module>plugins/com.springsource.sts</module>
 	<module>features/com.springsource.sts</module>
-	<module>features/com.springsource.sts.maven</module>
-	<module>features/com.springsource.sts.roo</module>
-	<module>features/com.springsource.sts.tutorials</module>
-	<module>plugins/com.springsource.sts.config.core</module>
-	<module>plugins/com.springsource.sts.config.flow</module>
-	<module>plugins/com.springsource.sts.config.tests</module>
-	<module>plugins/com.springsource.sts.config.ui</module>
-	<module>plugins/com.springsource.sts.ide.help</module>
-	<module>plugins/com.springsource.sts.ide.metadata</module>
-	<module>plugins/com.springsource.sts.ide.osgi</module>
-	<module>plugins/com.springsource.sts.maven</module>
-	<module>plugins/com.springsource.sts.maven.legacy</module>
-	<module>plugins/com.springsource.sts.quickfix.tests</module>
-	<module>plugins/com.springsource.sts.quickfix</module>
-	<module>plugins/com.springsource.sts.roo.core</module>
-	<module>plugins/com.springsource.sts.roo.test</module>
-	<module>plugins/com.springsource.sts.roo.ui</module>
-	<module>plugins/com.springsource.sts.wizard</module>
-	
 	<module>plugins/com.springsource.ggts</module>
 	<module>features/com.springsource.ggts</module>
-	
   </modules>
 
   <profiles>

@@ -13,27 +13,6 @@
   </feature>
 
   <feature
-     url="features/com.springsource.sts.tutorials_0.0.0.jar"
-     id="com.springsource.sts.tutorials" 
-     version="0.0.0">
-    <category name="Extensions / STS" />
-  </feature>
-
-  <feature
-     url="features/com.springsource.sts.roo_0.0.0.jar"
-     id="com.springsource.sts.roo" 
-     version="0.0.0">
-    <category name="Extensions / STS" />
-  </feature>
-  
-  <feature
-     url="features/com.springsource.sts.maven_0.0.0.jar"
-     id="com.springsource.sts.maven" 
-     version="0.0.0">
-    <category name="Extensions / STS" />
-  </feature>
-
-  <feature
      url="features/com.springsource.sts.package_0.0.0.jar"
      id="com.springsource.sts.package" 
      version="0.0.0">
@@ -275,6 +254,16 @@
 		<category name="Extensions / Spring IDE" />
 	</feature>	
 	
+	<feature
+		id="org.springframework.ide.eclipse.roo.feature" version="3.0.0.qualifier">
+		<category name="Extensions / Spring IDE" />
+	</feature>	
+
+	<feature
+		id="org.springframework.ide.eclipse.maven.feature" version="3.0.0.qualifier">
+		<category name="Extensions / Spring IDE" />
+	</feature>	
+
 	<!-- Extensions (Incubation) features -->	
 	<feature
 		id="org.springframework.ide.eclipse.autowire.feature" version="0.0.0">
@@ -340,6 +329,16 @@
 		
 	<feature
 		id="org.springframework.ide.eclipse.integration.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>		
+
+	<feature
+		id="org.springframework.ide.eclipse.roo.feature.source" version="3.0.0.qualifier">
+		<category name="Resources / Spring IDE" />
+	</feature>		
+
+	<feature
+		id="org.springframework.ide.eclipse.maven.feature.source" version="3.0.0.qualifier">
 		<category name="Resources / Spring IDE" />
 	</feature>		
 

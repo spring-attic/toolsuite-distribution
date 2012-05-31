@@ -38,16 +38,16 @@
 					<property name="qualifier" value="${unqualifiedVersion}.${shortQualifier}" />
 					<property name="context.qualifier" value="${unqualifiedVersion}.${buildQualifier}" />
 
-					<replace file="${buildDirectory}/plugins/com.springsource.sts/about.properties" token="@QUALIFIER@" value="${qualifier}" summary="yes" />
-					<replace file="${buildDirectory}/plugins/com.springsource.sts/about.properties" token="@CONTEXT_QUALIFIER@" value="${context.qualifier}" summary="yes" />
-					<replace file="${buildDirectory}/plugins/com.springsource.sts/about.properties" token="@BUILD_ID@" value="${build.id}" summary="yes" />		
-					<replace file="${buildDirectory}/plugins/com.springsource.sts/plugin.properties" token="@QUALIFIER@" value="${qualifier}" summary="yes" />
-					<replace file="${buildDirectory}/plugins/com.springsource.sts/plugin.properties" token="@CONTEXT_QUALIFIER@" value="${context.qualifier}" summary="yes" />		
-					<replace file="${buildDirectory}/plugins/com.springsource.sts/plugin.properties" token="@BUILD_ID@" value="${build.id}" summary="yes" />		
+					<replace file="${buildDirectory}/plugins/com.springsource.ggts/about.properties" token="@QUALIFIER@" value="${qualifier}" summary="yes" />
+					<replace file="${buildDirectory}/plugins/com.springsource.ggts/about.properties" token="@CONTEXT_QUALIFIER@" value="${context.qualifier}" summary="yes" />
+					<replace file="${buildDirectory}/plugins/com.springsource.ggts/about.properties" token="@BUILD_ID@" value="${build.id}" summary="yes" />		
+					<replace file="${buildDirectory}/plugins/com.springsource.ggts/plugin.properties" token="@QUALIFIER@" value="${qualifier}" summary="yes" />
+					<replace file="${buildDirectory}/plugins/com.springsource.ggts/plugin.properties" token="@CONTEXT_QUALIFIER@" value="${context.qualifier}" summary="yes" />		
+					<replace file="${buildDirectory}/plugins/com.springsource.ggts/plugin.properties" token="@BUILD_ID@" value="${build.id}" summary="yes" />		
 					
 <!--					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.ui/content/root.xhtml" token="@QUALIFIER@" value="${qualifier}" summary="yes" /> -->
 					
-					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.help/doc/toc.xml" token="@QUALIFIER@" value="${qualifier}" summary="yes" />
+<!--					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.help/doc/toc.xml" token="@QUALIFIER@" value="${qualifier}" summary="yes" /> -->
 <!--					<replace file="${buildDirectory}/plugins/com.springsource.sts.ide.ui/plugin.xml" token="@QUALIFIER@" value="${qualifier}" summary="yes" /> -->
 					<replace dir="${buildDirectory}/features" summary="yes">
 					  <include name="**/feature.xml"/>
