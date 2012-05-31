@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.springsource.sts.package"
+      id="com.springsource.ggts.package"
       label="%featureName"
       version="3.0.0.qualifier"
       provider-name="%providerName"
-      plugin="com.springsource.sts">
+      plugin="com.springsource.ggts">
 
    <description>
       %description
@@ -19,12 +19,12 @@
    </license>
 
    <url>
-      <update label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
-      <discovery label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
+      <update label="Groovy/Grails Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
+      <discovery label="Groovy/Grails Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
    </url>
    
    <includes id="org.eclipse.platform" version="0.0.0" />
-
+  
    <requires>
 	
       <import feature="org.eclipse.cvs"/>
@@ -186,26 +186,17 @@
 
       <import feature="com.atlassian.connector.eclipse.jira"/>
       
-      <import feature="org.springframework.ide.eclipse.feature"/>
-	  <import feature="org.springframework.ide.eclipse.aop.feature"/>
-	  <import feature="org.springframework.ide.eclipse.ajdt.feature"/>
-	  <import feature="org.springframework.ide.eclipse.webflow.feature"/>
-	  <import feature="org.springframework.ide.eclipse.mylyn.feature"/>
-	  <import feature="org.springframework.ide.eclipse.osgi.feature"/>			
-	  <import feature="org.springframework.ide.eclipse.security.feature"/>			
-	  <import feature="org.springframework.ide.eclipse.autowire.feature"/>			
-	  <import feature="org.springframework.ide.eclipse.batch.feature"/>		
-	  <import feature="org.springframework.ide.eclipse.integration.feature"/>		
-
 	  <import feature="org.eclipse.ajdt"/>					
 	  <import feature="org.eclipse.contribution.weaving"/>					
 	  <import feature="org.eclipse.contribution.xref"/>					
 
-      <import feature="com.springsource.sts"/>
+      <import feature="com.springsource.ggts"/>
       <import feature="com.vmware.vfabric.ide.eclipse.tcserver"/>
-      <import feature="com.springsource.sts.tutorials"/>
-      <import feature="com.springsource.sts.maven"/>
-      <import feature="com.springsource.sts.roo"/>
+
+	  <import feature="org.grails.ide.eclipse"/>
+	  <import feature="org.codehaus.groovy.eclipse.feature" version="2.0.0" match="greaterOrEqual"/>
+	  <import feature="org.codehaus.groovy.jdt.patch"/>
+	  <import feature="org.codehaus.groovy18.feature"/>
 
    </requires>
 

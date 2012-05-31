@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.springsource.sts.p2.policy">
+   <implementation class="com.springsource.sts.internal.policy.NoApplyPolicy"/>
+   <service>
+      <provide interface="org.eclipse.equinox.p2.ui.Policy"/>
+   </service>
+   <property name="service.ranking" type="Integer" value="1000"/>
+</scr:component>

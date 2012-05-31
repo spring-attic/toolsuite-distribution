@@ -57,13 +57,13 @@
 	<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
 	<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
 	<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
+	<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
   </properties>
 
   <modules>
 	<!-- needs to be the first bundle to process sources -->
 	<module>plugins/com.springsource.sts</module>
-
 	<module>features/com.springsource.sts</module>
 	<module>features/com.springsource.sts.maven</module>
 	<module>features/com.springsource.sts.roo</module>
@@ -83,6 +83,10 @@
 	<module>plugins/com.springsource.sts.roo.test</module>
 	<module>plugins/com.springsource.sts.roo.ui</module>
 	<module>plugins/com.springsource.sts.wizard</module>
+	
+	<module>plugins/com.springsource.ggts</module>
+	<module>features/com.springsource.ggts</module>
+	
   </modules>
 
   <profiles>
@@ -203,10 +207,12 @@
 	  </repositories>
 	  <modules>
 		<module>features/com.springsource.sts.package.e4.2</module>
+		<module>features/com.springsource.ggts.package.e4.2</module>
 	  </modules>
 	</profile>
+	
 	<profile>
-	  <id>site</id>
+	  <id>spring-site</id>
 	  <modules>
 		<module>releng/com.springsource.sts.site</module>
 	  </modules>
@@ -220,12 +226,21 @@
 	 	<module>releng/com.springsource.sts.grails.tests.site</module>
 	  </modules>
 	</profile>
+	
 	<profile>
-	  <id>dist</id>
+	  <id>spring-dist</id>
 	  <modules>
 		<module>features/com.springsource.sts.product</module>
 	  </modules>
 	</profile>
+
+	<profile>
+	  <id>groovy-grails-dist</id>
+	  <modules>
+		<module>features/com.springsource.ggts.product</module>
+	  </modules>
+	</profile>
+
   </profiles>
 
   <repositories>
@@ -243,6 +258,11 @@
 	  <id>eclipse-integration-tcserver</id>
 	  <layout>p2</layout>
 	  <url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-tcserver/${dist.eclipse-integration-tcserver-version}</url>
+	</repository>
+	<repository>
+	  <id>grails-ide</id>
+	  <layout>p2</layout>
+	  <url>http://dist.springsource.com/${dist.type}/TOOLS/grails-ide/${dist.grails-ide-version}</url>
 	</repository>
 	<repository>
 	  <id>mylyn</id>

@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site pack200="true">
   <description url="http://www.springsource.com/products/sts">
-    The SpringSource Tool Suite is the next generation IDE that helps you focus 
-    your development work with the Spring Portfolio.
+    The Groovy/Grails Tool Suite is the next generation IDE that helps you focus 
+    your development work with the Groovy/Grails projects.
   </description>
 
   <feature
-     url="features/com.springsource.sts_0.0.0.jar"
-     id="com.springsource.sts" 
+     url="features/com.springsource.ggts_0.0.0.jar"
+     id="com.springsource.ggts" 
      version="0.0.0">
-    <category name="Core / STS" />
+    <category name="Core / Groovy/Grails Tool Suite" />
   </feature>
 
   <feature
-     url="features/com.springsource.sts.tutorials_0.0.0.jar"
-     id="com.springsource.sts.tutorials" 
-     version="0.0.0">
-    <category name="Extensions / STS" />
-  </feature>
-
-  <feature
-     url="features/com.springsource.sts.roo_0.0.0.jar"
-     id="com.springsource.sts.roo" 
-     version="0.0.0">
-    <category name="Extensions / STS" />
-  </feature>
-  
-  <feature
-     url="features/com.springsource.sts.maven_0.0.0.jar"
-     id="com.springsource.sts.maven" 
-     version="0.0.0">
-    <category name="Extensions / STS" />
-  </feature>
-
-  <feature
-     url="features/com.springsource.sts.package_0.0.0.jar"
-     id="com.springsource.sts.package" 
+     url="features/com.springsource.ggts.package_0.0.0.jar"
+     id="com.springsource.ggts.package" 
      version="0.0.0">
   </feature>
 
@@ -202,146 +181,28 @@
   <feature id="org.eclipse.contribution.weaving" version="0.0.0"/>
   <feature id="org.eclipse.contribution.xref" version="0.0.0"/>
 
-  <category-def name="Core / STS" label="Core / STS" />
-  <category-def name="Extensions / STS" label="Extensions / STS" /> 
-  <category-def name="Package / STS" label="Package / STS" />
-
   <!-- tc Server -->
-
   <category-def name="Core / Eclipse Integration vFabric tc Server" label="Core / Eclipse Integration vFabric tc Server"/>
 
   <feature
 	id="com.vmware.vfabric.ide.eclipse.tcserver"
 	version="0.0.0">
-	<category name="Extensions / STS" />
+	<category name="Core / Eclipse Integration vFabric tc Server" />
   </feature>
 
   <!-- Groovy/Grails -->
-<!--
   <category-def name="Core / Grails IDE for Eclipse" label="Core / Grails IDE for Eclipse"/>
+  <category-def name="Core / Groovy/Grails Tool Suite" label="Core / Groovy/Grails Tool Suite"/>
 
   <feature
 	id="org.grails.ide.eclipse" version="0.0.0">
 	<category name="Core / Grails IDE for Eclipse" />
   </feature>
 
+<!--
   <feature id="org.codehaus.groovy.eclipse.feature" version="0.0.0"/>
   <feature id="org.codehaus.groovy.jdt.patch" version="0.0.0"/>
   <feature id="org.codehaus.groovy18.feature" version="0.0.0"/>
 -->
-  <!-- Spring IDE -->
-
-  <category-def name="Core / Spring IDE" label="Core / Spring IDE" />
-  <category-def name="Dependencies / Spring IDE" label="Dependencies / Spring IDE" />
-  <category-def name="Extensions / Spring IDE" label="Extensions / Spring IDE" />
-  <category-def name="Extensions (Incubation) / Spring IDE" label="Extensions (Incubation) / Spring IDE" />
-  <category-def name="Integrations / Spring IDE" label="Integrations / Spring IDE" />
-  <category-def name="Resources / Spring IDE" label="Resources / Spring IDE" />
-
-	<!-- Core features -->
-	<feature
-		id="org.springframework.ide.eclipse.feature" version="0.0.0">
-		<category name="Core / Spring IDE" />
-	</feature>
-	
-	<!-- Extensions features -->
-	<feature
-		id="org.springframework.ide.eclipse.aop.feature" version="0.0.0">
-		<category name="Extensions / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.osgi.feature" version="0.0.0">
-		<category name="Extensions / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.security.feature" version="0.0.0">
-		<category name="Extensions / Spring IDE" />
-	</feature>
-
-	<feature
-		id="org.springframework.ide.eclipse.webflow.feature" version="0.0.0">
-		<category name="Extensions / Spring IDE" />
-	</feature>
-
-	<feature
-		id="org.springframework.ide.eclipse.batch.feature" version="0.0.0">
-		<category name="Extensions / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.integration.feature" version="0.0.0">
-		<category name="Extensions / Spring IDE" />
-	</feature>	
-	
-	<!-- Extensions (Incubation) features -->	
-	<feature
-		id="org.springframework.ide.eclipse.autowire.feature" version="0.0.0">
-		<category name="Extensions (Incubation) / Spring IDE" />
-	</feature>
-
-	<!-- Integration features -->
-	<feature
-		id="org.springframework.ide.eclipse.ajdt.feature" version="0.0.0">
-		<category name="Integrations / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.mylyn.feature" version="0.0.0">
-		<category name="Integrations / Spring IDE" />
-	</feature>
-	
-	<!-- Resources features -->
-	<feature
-		id="org.springframework.ide.eclipse.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.aop.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-
-	<feature
-		id="org.springframework.ide.eclipse.batch.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.osgi.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.security.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-
-	<feature
-		id="org.springframework.ide.eclipse.webflow.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.autowire.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-
-	<feature
-		id="org.springframework.ide.eclipse.ajdt.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.mylyn.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-		
-	<feature
-		id="org.springframework.ide.eclipse.integration.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>		
-
 
 </site>
