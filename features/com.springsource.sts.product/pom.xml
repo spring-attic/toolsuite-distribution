@@ -47,7 +47,7 @@
 			<product>
 			  <id>com.springsource.sts.ide</id>
               <rootFolder>eclipse</rootFolder>
-		      <archiveFileName>springsource-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}</archiveFileName>
+		      <archiveFileName>spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}</archiveFileName>
 		    </product>
 		  </products>
           <formats>
