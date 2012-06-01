@@ -67,6 +67,10 @@
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.e4.rcp"/>
 
+      <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.mylyn"/>
+      <import feature="org.eclipse.egit.psf"/>
+
       <import feature="org.eclipse.emf"/>
       <import feature="org.eclipse.emf.codegen"/>
       <import feature="org.eclipse.emf.codegen.ecore"/>
@@ -107,7 +111,6 @@
       <import feature="org.eclipse.jpt.jpa.feature"/>
       
       <import feature="org.eclipse.jsf.feature"/>
-
       <import feature="org.eclipse.jst.common.fproj.enablement.jdt"/>
       <import feature="org.eclipse.jst.enterprise_core.feature"/>
       <import feature="org.eclipse.jst.enterprise_ui.feature"/>
@@ -128,9 +131,11 @@
       <import feature="org.eclipse.jst.ws.jaxws.dom.feature"/>
       <import feature="org.eclipse.jst.ws.jaxws.feature"/>
 	
+      <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.m2e.logback.feature"/>
+
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
-
       <import feature="org.eclipse.mylyn.commons"/>
       <import feature="org.eclipse.mylyn.commons.identity"/>
       <import feature="org.eclipse.mylyn.commons.notifications"/>
@@ -184,6 +189,12 @@
       <import feature="org.eclipse.wst.xml.xpath2.processor.feature"/>
       <import feature="org.eclipse.wst.xsl.feature"/>
 
+      <import feature="org.eclipse.zest"/>
+      <import feature="org.maven.ide.eclipse.ajdt.feature"/>
+      <import feature="org.maven.ide.eclipse.wtp.feature"/>
+      <import feature="org.sonatype.m2e.buildhelper.feature"/>
+      <import feature="org.sonatype.m2e.mavenarchiver.feature"/>
+	
       <import feature="com.atlassian.connector.eclipse.jira"/>
       
       <import feature="org.springframework.ide.eclipse.feature"/>

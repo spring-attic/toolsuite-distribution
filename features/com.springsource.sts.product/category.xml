@@ -186,7 +186,6 @@
   <category-def name="Package / STS" label="Package / STS" />
 
   <!-- tc Server -->
-
   <category-def name="Core / Eclipse Integration vFabric tc Server" label="Core / Eclipse Integration vFabric tc Server"/>
 
   <feature
@@ -195,21 +194,7 @@
 	<category name="Extensions / STS" />
   </feature>
 
-  <!-- Groovy/Grails -->
-<!--
-  <category-def name="Core / Grails IDE for Eclipse" label="Core / Grails IDE for Eclipse"/>
-
-  <feature
-	id="org.grails.ide.eclipse" version="0.0.0">
-	<category name="Core / Grails IDE for Eclipse" />
-  </feature>
-
-  <feature id="org.codehaus.groovy.eclipse.feature" version="0.0.0"/>
-  <feature id="org.codehaus.groovy.jdt.patch" version="0.0.0"/>
-  <feature id="org.codehaus.groovy18.feature" version="0.0.0"/>
--->
   <!-- Spring IDE -->
-
   <category-def name="Core / Spring IDE" label="Core / Spring IDE" />
   <category-def name="Dependencies / Spring IDE" label="Dependencies / Spring IDE" />
   <category-def name="Extensions / Spring IDE" label="Extensions / Spring IDE" />
@@ -341,6 +326,5 @@
 		id="org.springframework.ide.eclipse.maven.feature.source" version="3.0.0.qualifier">
 		<category name="Resources / Spring IDE" />
 	</feature>		
-
 
 </site>

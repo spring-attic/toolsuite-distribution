@@ -67,6 +67,10 @@
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.e4.rcp"/>
 
+      <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.mylyn"/>
+      <import feature="org.eclipse.egit.psf"/>
+
       <import feature="org.eclipse.emf"/>
       <import feature="org.eclipse.emf.codegen"/>
       <import feature="org.eclipse.emf.codegen.ecore"/>
