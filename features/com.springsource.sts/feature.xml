@@ -45,14 +45,7 @@
          download-size="0"
          install-size="0"
          version="0.0.0"/>
-<!--
-   <plugin
-         id="com.springsource.sts.bestpractices"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
--->
+
    <plugin
          id="org.springsource.ide.eclipse.commons.core"
          download-size="0"
@@ -61,56 +54,7 @@
          unpack="false"/>
 
    <plugin
-         id="com.springsource.sts.ide.osgi"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.springsource.sts.ide.metadata"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.springsource.sts.config.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.springsource.sts.config.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.springsource.sts.quickfix"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.springsource.sts.wizard"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.springsource.ide.eclipse.commons.configurator"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="com.springsource.sts.config.flow"
          download-size="0"
          install-size="0"
          version="0.0.0"
