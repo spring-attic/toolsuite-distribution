@@ -199,10 +199,8 @@
 	<category name="Core / Grails IDE for Eclipse" />
   </feature>
 
-<!--
   <feature id="org.codehaus.groovy.eclipse.feature" version="0.0.0"/>
   <feature id="org.codehaus.groovy.jdt.patch" version="0.0.0"/>
   <feature id="org.codehaus.groovy18.feature" version="0.0.0"/>
--->
 
 </site>
