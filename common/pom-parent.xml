@@ -210,6 +210,10 @@
 	  <id>sonatype.snapshots</id>
 	  <url>https://repository.sonatype.org/content/repositories/snapshots/</url>
 	</pluginRepository>
+	<pluginRepository>
+      <id>tycho-staging</id>
+      <url>https://oss.sonatype.org/content/repositories/orgeclipsetycho-115/</url>
+    </pluginRepository>
   </pluginRepositories>
 
   <build>
@@ -288,8 +292,31 @@
 		<version>${tycho-version}</version>
 		<configuration>
 		  <resolver>p2</resolver>
+		  <includePackedArtifacts>true</includePackedArtifacts>
 		</configuration>
 	  </plugin>
+	
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jarsigner-plugin</artifactId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<id>sign</id>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<skip>${sign.skip}</skip>
+					<alias>vmware</alias>
+					<keystore>~/.keytool/springsource.jks</keystore>
+					<storepass>${STORE_PASSWORD}</storepass>
+					<keypass>${KEY_PASSWORD}</keypass>
+				</configuration>
+			</plugin>
+	
 	</plugins>
 	<pluginManagement>
 	  <plugins>
