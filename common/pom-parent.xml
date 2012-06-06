@@ -57,6 +57,13 @@
 	<p2.sign>false</p2.sign>
 	<p2.repository.name>SpringSource Tool Suite</p2.repository.name>
 
+	<!-- Signing -->
+	<signing.skip>true</signing.skip>
+	<signing.alias>vmware</signing.alias>
+	<signing.keystore>~/.keytool/springsource.jks</signing.keystore>
+	<signing.store.password>${STORE_PASSWORD}</signing.store.password>
+	<signing.key.password>${KEY_PASSWORD}</signing.key.password>
+
 	<dist.name>SpringSource Tool Suite</dist.name>
 	<dist.project></dist.project>
 	<dist.key>STS</dist.key>
@@ -79,7 +86,7 @@
 	<http_proxy>${env.http_proxy}</http_proxy>
 	<https_proxy>${env.https_proxy}</https_proxy>
 
-	<tycho-version>0.12.0</tycho-version>
+	<tycho-version>0.14.1</tycho-version>
 	<!--<maven.test.skip>true</maven.test.skip>-->
 	<maven.test.error.ignore>true</maven.test.error.ignore>
 	<maven.test.failure.ignore>true</maven.test.failure.ignore>
@@ -224,7 +231,9 @@
 		<version>3.1.0.RELEASE</version>
 	  </extension>
 	</extensions>
+	
 	<plugins>
+		
 	  <plugin>
 		<groupId>org.codehaus.mojo</groupId>
 		<artifactId>exec-maven-plugin</artifactId>
@@ -253,6 +262,7 @@
 		  </successCodes>
 		</configuration>
       </plugin>
+
 	  <plugin>
 		<groupId>org.codehaus.mojo</groupId>
 		<artifactId>properties-maven-plugin</artifactId>
@@ -273,6 +283,7 @@
 		  </execution>
 		</executions>
 	  </plugin>
+	
 	  <plugin>
 		<artifactId>maven-deploy-plugin</artifactId>
 		<version>2.5</version>
@@ -280,42 +291,43 @@
 		  <skip>true</skip>
 		</configuration>
 	  </plugin>
+	
 	  <plugin>
 		<groupId>org.eclipse.tycho</groupId>
 		<artifactId>tycho-maven-plugin</artifactId>
 		<version>${tycho-version}</version>
 		<extensions>true</extensions>
 	  </plugin>
+	
 	  <plugin>
 		<groupId>org.eclipse.tycho</groupId>
 		<artifactId>target-platform-configuration</artifactId>
 		<version>${tycho-version}</version>
 		<configuration>
 		  <resolver>p2</resolver>
-<!--		  <includePackedArtifacts>true</includePackedArtifacts> -->
 		</configuration>
 	  </plugin>
 	
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jarsigner-plugin</artifactId>
-				<version>1.2</version>
-				<executions>
-					<execution>
-						<id>sign</id>
-						<goals>
-							<goal>sign</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<skip>${sign.skip}</skip>
-					<alias>vmware</alias>
-					<keystore>~/.keytool/springsource.jks</keystore>
-					<storepass>${STORE_PASSWORD}</storepass>
-					<keypass>${KEY_PASSWORD}</keypass>
-				</configuration>
-			</plugin>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jarsigner-plugin</artifactId>
+			<version>1.2</version>
+			<executions>
+				<execution>
+					<id>sign</id>
+					<goals>
+						<goal>sign</goal>
+					</goals>
+				</execution>
+			</executions>
+			<configuration>
+				<skip>${signing.skip}</skip>
+				<alias>${signing.alias}</alias>
+				<keystore>${signing.keystore}</keystore>
+				<storepass>${signing.store.password}</storepass>
+				<keypass>${signing.key.password}</keypass>
+			</configuration>
+		</plugin>
 	
 	</plugins>
 	<pluginManagement>
