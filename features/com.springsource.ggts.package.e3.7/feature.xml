@@ -96,6 +96,11 @@
 
       <import feature="com.springsource.ggts"/>
       <import feature="com.vmware.vfabric.ide.eclipse.tcserver"/>
+
+      <import feature="org.springsource.ide.eclipse.commons"/>
+      <import feature="org.springsource.ide.eclipse.dashboard"/>
+      <import feature="org.springframework.ide.eclipse.uaa.feature"/>
+
       <import feature="com.springsource.sts.grails"/>
 	  <import feature="org.codehaus.groovy.eclipse.feature"/>
       <import feature="org.codehaus.groovy.jdt.patch"/>

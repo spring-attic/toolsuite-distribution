@@ -21,6 +21,8 @@
    <requires>
       <import feature="org.eclipse.mylyn_feature" version="3.4.0.v20100601" match="compatible"/>
       <import feature="org.eclipse.mylyn.context_feature" version="3.4.0.v20100601" match="compatible"/>
+      <import feature="org.springsource.ide.eclipse.commons" version="3.0.0.qualifier"/>
+      <import feature="org.springsource.ide.eclipse.dashboard" version="3.0.0.qualifier"/>
    </requires>
 
    <plugin
@@ -28,39 +30,6 @@
          download-size="0"
          install-size="0"
          version="0.0.0"/>
-
-   <plugin
-         id="org.springsource.ide.eclipse.commons.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.springsource.ide.eclipse.dashboard.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.springsource.ide.eclipse.commons.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.springsource.ide.eclipse.commons.configurator"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.springsource.ide.eclipse.commons.content.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
 
    <plugin
          id="com.sun.syndication"

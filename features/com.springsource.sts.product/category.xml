@@ -185,6 +185,36 @@
   <category-def name="Extensions / STS" label="Extensions / STS" /> 
   <category-def name="Package / STS" label="Package / STS" />
 
+  <!-- Eclipse Integration Commons -->
+  <category-def name="Core / Eclipse Integration Commons" label="Core / Eclipse Integration Commons"/>
+  <category-def name="Resources / Eclipse Integration Commons" label="Resources / Eclipse Integration Commons"/>
+
+  <feature
+	id="org.springframework.ide.eclipse.uaa.feature"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration Commons" />
+  </feature>
+
+  <feature
+	id="org.springsource.ide.eclipse.commons"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration Commons" />
+  </feature>
+
+  <feature
+	id="org.springsource.ide.eclipse.dashboard"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration Commons" />
+  </feature>
+
+  <feature
+	id="org.springframework.ide.eclipse.uaa.feature.source"
+	version="0.0.0">
+	<category name="Resources / Eclipse Integration Commons" />
+  </feature>
+
+  <feature id="org.springsource.ide.eclipse.commons.dependencies" version="0.0.0"/>
+
   <!-- tc Server -->
   <category-def name="Core / Eclipse Integration vFabric tc Server" label="Core / Eclipse Integration vFabric tc Server"/>
 

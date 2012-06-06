@@ -217,6 +217,10 @@
       <import feature="com.springsource.sts"/>
       <import feature="com.vmware.vfabric.ide.eclipse.tcserver"/>
 
+      <import feature="org.springsource.ide.eclipse.commons"/>
+      <import feature="org.springsource.ide.eclipse.dashboard"/>
+      <import feature="org.springframework.ide.eclipse.uaa.feature"/>
+
    </requires>
 
 </feature>
