@@ -101,7 +101,7 @@
 
       <import feature="org.eclipse.jpt.common.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.common.feature"/>
-      <import feature="org.eclipse.jpt.dbws.eclipselink.feature_"/>
+      <import feature="org.eclipse.jpt.dbws.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.jaxb.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.jaxb.feature"/>
       <import feature="org.eclipse.jpt.jpa.eclipselink.feature"/>
