@@ -112,6 +112,11 @@
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
 		</repository>
+		<repository>
+		  <id>maven-wtp</id>
+		  <layout>p2</layout>
+		  <url>http://dist.springsource.com/release/TOOLS/third-party/m2e/</url>
+		</repository>
 	  </repositories>
 	  <modules>
 		<module>features/com.springsource.sts.package.e3.7</module>
@@ -156,6 +161,11 @@
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
 		</repository>
+		<repository>
+		  <id>maven-wtp</id>
+		  <layout>p2</layout>
+		  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
+		</repository>
 	  </repositories>
 	  <modules>
 		<module>features/com.springsource.sts.package.e3.8</module>
@@ -198,6 +208,11 @@
 		  <id>atlassian</id>
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
+		</repository>
+		<repository>
+		  <id>maven-wtp</id>
+		  <layout>p2</layout>
+		  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
 		</repository>
 	  </repositories>
 	  <modules>
@@ -268,11 +283,6 @@
 	  <id>m2eclipse-legacy</id>
 	  <layout>p2</layout>
 	  <url>http://download.springsource.com/release/TOOLS/third-party/m2eclipse-012</url>
-	</repository>
-	<repository>
-	  <id>maven-wtp</id>
-	  <layout>p2</layout>
-	  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
 	</repository>
 	<repository>
 	  <id>maven-ajdt</id>
