@@ -118,7 +118,7 @@
 		  <url>http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/m2eclipse-wtp-0.15.2/</url>
 		</repository>
 		<repository>
-		  <id>maven-wtp</id>
+		  <id>maven-helper</id>
 		  <layout>p2</layout>
 		  <url>http://dist.springsource.com/release/TOOLS/third-party/m2e/</url>
 		</repository>
