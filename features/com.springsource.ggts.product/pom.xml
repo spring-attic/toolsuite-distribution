@@ -96,7 +96,7 @@
 							<property name="dist.full.version" value="${unqualifiedVersion}.${p2.qualifier}-${dist.target}" />
 
 							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
-							<property name="dist.full.path" value="${site.target.dir}/}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
+							<property name="dist.full.path" value="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
 
 							<delete file="${dist.full.path}" />
 							<zip zipfile="${dist.full.path}" filesonly="true">
