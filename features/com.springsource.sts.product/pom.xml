@@ -81,6 +81,42 @@
           </configuration>
       </plugin>
 
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-antrun-plugin</artifactId>
+			<version>1.6</version>
+			<executions>
+				<execution>
+					<id>zip-dist</id>
+					<phase>deploy</phase>
+					<configuration>
+						<target>
+
+							<property name="site.target.dir" value="${project.build.directory}" />
+							<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}" />
+
+							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
+							<property name="dist.full.path" value="${site.target.dir}/unitedRepository/${dist.file.name}" />
+
+							<delete file="${dist.full.path}" />
+							<zip zipfile="${dist.full.path}" filesonly="true">
+								<zipfileset dir="${site.target.dir}/unitedRepository">
+									<exclude name="*.zip" />
+									<exclude name="**/*.gz" />
+								</zipfileset>
+							</zip>
+							<checksum file="${dist.full.path}" algorithm="SHA1" fileext=".sha1" />
+							<checksum file="${dist.full.path}" algorithm="MD5" fileext=".md5" />
+
+						</target>
+					</configuration>
+					<goals>
+						<goal>run</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+
     </plugins>
 
 	<pluginManagement>
