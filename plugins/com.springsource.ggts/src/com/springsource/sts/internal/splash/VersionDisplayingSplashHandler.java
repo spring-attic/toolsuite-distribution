@@ -104,7 +104,7 @@ public class VersionDisplayingSplashHandler extends BasicSplashHandler {
 		catch (Exception e) {
 			// ignore and fall back to version number
 		}
-		Bundle bundle = Platform.getBundle("com.springsource.sts");
+		Bundle bundle = Platform.getBundle("com.springsource.ggts");
 		// TODO e3.5 replace by bundle.getVersion()
 		String versionString = (String) bundle.getHeaders().get("Bundle-Version"); //$NON-NLS-1$
 		if (versionString != null) {
