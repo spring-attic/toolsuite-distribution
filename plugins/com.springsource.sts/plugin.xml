@@ -17,13 +17,13 @@
                 value="c2cd23"/>
           <property
                 name="startupMessageRect"
-                value="18,210,544,20"/>
+                value="29,128,540,20"/>
           <property
                 name="startupProgressRect"
-                value="0,275,600,15"/>
+                value="29,146,540,14"/>
           <property
                 name="versionRect"
-                value="447,83" />
+                value="323,78" />
           <property
           		name="introTitle"
           		value="%productIntroTitle"/>
