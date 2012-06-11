@@ -195,7 +195,7 @@
       <import feature="org.sonatype.m2e.buildhelper.feature"/>
       <import feature="org.sonatype.m2e.mavenarchiver.feature"/>
 	
-      <import feature="com.atlassian.connector.eclipse.jira"/>
+      <!--import feature="com.atlassian.connector.eclipse.jira"/-->
       
       <import feature="org.springframework.ide.eclipse.feature"/>
 	  <import feature="org.springframework.ide.eclipse.aop.feature"/>

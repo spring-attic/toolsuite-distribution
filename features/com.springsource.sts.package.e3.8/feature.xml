@@ -88,7 +88,7 @@
       <import feature="org.eclipse.persistence.moxy"/>
       <import feature="org.eclipse.persistence.sdo"/>
 		      
-      <import feature="com.atlassian.connector.eclipse.jira"/>
+      <!--import feature="com.atlassian.connector.eclipse.jira"/-->
       
       <import feature="org.springframework.ide.eclipse.feature"/>
 	  <import feature="org.springframework.ide.eclipse.aop.feature"/>
