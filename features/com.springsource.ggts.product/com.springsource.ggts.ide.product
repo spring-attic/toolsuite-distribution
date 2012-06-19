@@ -33,6 +33,7 @@ openFile</programArgs>
          <ico path="../../plugins/com.springsource.ggts/Eclipse.ico"/>
          <bmp/>
       </win>
+      <linux icon="../../plugins/com.springsource.ggts/Eclipse.xpm"/>
    </launcher>
 
    <vm>
