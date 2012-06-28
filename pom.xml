@@ -139,7 +139,7 @@
 		<repository>
 		  <id>platform</id>
 		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/eclipse/updates/3.8milestones/</url>
+		  <url>http://download.eclipse.org/eclipse/updates/3.8/</url>
 		</repository>
 		<repository>
 		  <id>juno</id>
@@ -189,7 +189,7 @@
 		<repository>
 		  <id>platform</id>
 		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/eclipse/updates/4.2milestones/</url>
+		  <url>http://download.eclipse.org/eclipse/updates/4.2/</url>
 		</repository>
 		<repository>
 		  <id>juno</id>
