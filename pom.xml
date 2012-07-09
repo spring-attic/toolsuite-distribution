@@ -161,13 +161,11 @@
 		  <layout>p2</layout>
 		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</url>
 		</repository>
-		<!--
 		<repository>
 		  <id>atlassian</id>
 		  <layout>p2</layout>
-		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
+		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
 		</repository>
-		-->
 		<repository>
 		  <id>maven-wtp</id>
 		  <layout>p2</layout>
@@ -211,13 +209,11 @@
 		  <layout>p2</layout>
 		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</url>
 		</repository>
-		<!--
 		<repository>
 		  <id>atlassian</id>
 		  <layout>p2</layout>
-		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
+		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
 		</repository>
-		-->
 		<repository>
 		  <id>maven-wtp</id>
 		  <layout>p2</layout>

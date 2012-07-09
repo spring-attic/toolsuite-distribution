@@ -188,7 +188,7 @@
       <import feature="org.eclipse.wst.xml.xpath2.processor.feature"/>
       <import feature="org.eclipse.wst.xsl.feature"/>
 
-      <!--import feature="com.atlassian.connector.eclipse.jira"/-->
+      <import feature="com.atlassian.connector.eclipse.jira"/>
       
 	  <import feature="org.eclipse.ajdt"/>					
 	  <import feature="org.eclipse.contribution.weaving"/>					
