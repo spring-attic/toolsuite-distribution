@@ -175,14 +175,13 @@
   <import feature="org.eclipse.wst.xml.xpath2.processor.feature"/>
   <import feature="org.eclipse.wst.xsl.feature"/>
 
-  <!--import feature="com.atlassian.connector.eclipse.jira"/-->
+  <import feature="com.atlassian.connector.eclipse.jira"/>
 
   <feature id="org.eclipse.ajdt" version="0.0.0"/>
   <feature id="org.eclipse.contribution.weaving" version="0.0.0"/>
   <feature id="org.eclipse.contribution.xref" version="0.0.0"/>
 
   <category-def name="Core / STS" label="Core / STS" />
-  <category-def name="Extensions / STS" label="Extensions / STS" /> 
   <category-def name="Package / STS" label="Package / STS" />
 
   <!-- Eclipse Integration Commons -->
@@ -221,7 +220,7 @@
   <feature
 	id="com.vmware.vfabric.ide.eclipse.tcserver"
 	version="0.0.0">
-	<category name="Extensions / STS" />
+	<category name="Core / Eclipse Integration vFabric tc Server" />
   </feature>
 
   <!-- Spring IDE -->
