@@ -12,6 +12,18 @@
   <artifactId>com.springsource.ggts.product</artifactId>
   <packaging>eclipse-repository</packaging>
   <name>com.springsource.ggts.product</name>
+
+  <properties>
+	<features>org.springframework.ide.eclipse.uaa.feature.feature.group</features>
+	<sites>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+	<build.destination.cocoa.x86>target/products/com.springsource.sts.ide/macosx/cocoa/x86/eclipse</build.destination.cocoa.x86>
+	<build.destination.cocoa.x86_64>target/products/com.springsource.sts.ide/macosx/cocoa/x86_64/eclipse</build.destination.cocoa.x86_64>
+	<build.destination.linux.x86>target/products/com.springsource.sts.ide/linux/gtk/x86/eclipse</build.destination.linux.x86>
+	<build.destination.linux.x86_64>target/products/com.springsource.sts.ide/linux/gtk/x86_64/eclipse</build.destination.linux.x86_64>
+	<build.destination.win.x86>target/products/com.springsource.sts.ide/win32/win32/x86/eclipse</build.destination.win.x86>
+	<build.destination.win.x86_64>target/products/com.springsource.sts.ide/win32/win32/x86_64/eclipse</build.destination.win.x86_64>
+  </properties>
+
   <build>
     <plugins>
 	
@@ -34,12 +46,14 @@
 			<goals>
 			  <goal>materialize-products</goal>
 			</goals>
+            <phase>package</phase>
 		  </execution>
 		  <execution>
 			<id>archive-products</id>
 			<goals>
 			  <goal>archive-products</goal>
 			</goals>
+            <phase>verify</phase>
 		  </execution>
 		</executions>
 		<configuration>
@@ -116,6 +130,114 @@
 				</execution>
 			</executions>
 		</plugin>
+
+      <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-eclipserun-plugin</artifactId>
+          <version>0.14.0</version>
+          <configuration>
+              <argLine>-Declipse.p2.mirrors=false</argLine>
+              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86} -repository ${sites} -installIUs ${features}</appArgLine>
+          </configuration>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>eclipse-run</goal>
+                  </goals>
+                  <phase>package</phase>
+              </execution>
+          </executions>
+      </plugin>
+
+      <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-eclipserun-plugin</artifactId>
+          <version>0.14.0</version>
+          <configuration>
+              <argLine>-Declipse.p2.mirrors=false</argLine>
+              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
+          </configuration>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>eclipse-run</goal>
+                  </goals>
+                  <phase>package</phase>
+              </execution>
+          </executions>
+      </plugin>
+
+      <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-eclipserun-plugin</artifactId>
+          <version>0.14.0</version>
+          <configuration>
+              <argLine>-Declipse.p2.mirrors=false</argLine>
+              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86} -repository ${sites} -installIUs ${features}</appArgLine>
+          </configuration>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>eclipse-run</goal>
+                  </goals>
+                  <phase>package</phase>
+              </execution>
+          </executions>
+      </plugin>
+
+      <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-eclipserun-plugin</artifactId>
+          <version>0.14.0</version>
+          <configuration>
+              <argLine>-Declipse.p2.mirrors=false</argLine>
+              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
+          </configuration>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>eclipse-run</goal>
+                  </goals>
+                  <phase>package</phase>
+              </execution>
+          </executions>
+      </plugin>
+
+      <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-eclipserun-plugin</artifactId>
+          <version>0.14.0</version>
+          <configuration>
+              <argLine>-Declipse.p2.mirrors=false</argLine>
+              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86} -repository ${sites} -installIUs ${features}</appArgLine>
+          </configuration>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>eclipse-run</goal>
+                  </goals>
+                  <phase>package</phase>
+              </execution>
+          </executions>
+      </plugin>
+
+      <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-eclipserun-plugin</artifactId>
+          <version>0.14.0</version>
+          <configuration>
+              <argLine>-Declipse.p2.mirrors=false</argLine>
+              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
+          </configuration>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>eclipse-run</goal>
+                  </goals>
+                  <phase>package</phase>
+              </execution>
+          </executions>
+      </plugin>
 
     </plugins>
 

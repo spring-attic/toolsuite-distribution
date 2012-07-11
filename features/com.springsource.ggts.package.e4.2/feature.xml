@@ -199,7 +199,7 @@
 
       <import feature="org.springsource.ide.eclipse.commons"/>
       <import feature="org.springsource.ide.eclipse.dashboard"/>
-      <import feature="org.springframework.ide.eclipse.uaa.feature"/>
+<!--      <import feature="org.springframework.ide.eclipse.uaa.feature"/> -->
 
 	  <import feature="org.grails.ide.eclipse"/>
 	  <import feature="org.codehaus.groovy.eclipse.feature" version="2.0.0" match="greaterOrEqual"/>
