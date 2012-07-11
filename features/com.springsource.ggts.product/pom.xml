@@ -135,107 +135,79 @@
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-eclipserun-plugin</artifactId>
           <version>0.14.0</version>
-          <configuration>
-              <argLine>-Declipse.p2.mirrors=false</argLine>
-              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86} -repository ${sites} -installIUs ${features}</appArgLine>
-          </configuration>
           <executions>
               <execution>
+				<id>root-features-osx-32bit</id>
+		          <configuration>
+		              <argLine>-Declipse.p2.mirrors=false</argLine>
+		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86} -repository ${sites} -installIUs ${features}</appArgLine>
+		          </configuration>
                   <goals>
                       <goal>eclipse-run</goal>
                   </goals>
                   <phase>package</phase>
               </execution>
-          </executions>
-      </plugin>
 
-      <plugin>
-          <groupId>org.eclipse.tycho.extras</groupId>
-          <artifactId>tycho-eclipserun-plugin</artifactId>
-          <version>0.14.0</version>
-          <configuration>
-              <argLine>-Declipse.p2.mirrors=false</argLine>
-              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
-          </configuration>
-          <executions>
               <execution>
+				<id>root-features-osx-64bit</id>
+		          <configuration>
+		              <argLine>-Declipse.p2.mirrors=false</argLine>
+		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
+		          </configuration>
                   <goals>
                       <goal>eclipse-run</goal>
                   </goals>
                   <phase>package</phase>
               </execution>
-          </executions>
-      </plugin>
 
-      <plugin>
-          <groupId>org.eclipse.tycho.extras</groupId>
-          <artifactId>tycho-eclipserun-plugin</artifactId>
-          <version>0.14.0</version>
-          <configuration>
-              <argLine>-Declipse.p2.mirrors=false</argLine>
-              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86} -repository ${sites} -installIUs ${features}</appArgLine>
-          </configuration>
-          <executions>
               <execution>
+				<id>root-features-linux-32bit</id>
+		          <configuration>
+		              <argLine>-Declipse.p2.mirrors=false</argLine>
+		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86} -repository ${sites} -installIUs ${features}</appArgLine>
+		          </configuration>
                   <goals>
                       <goal>eclipse-run</goal>
                   </goals>
                   <phase>package</phase>
               </execution>
-          </executions>
-      </plugin>
 
-      <plugin>
-          <groupId>org.eclipse.tycho.extras</groupId>
-          <artifactId>tycho-eclipserun-plugin</artifactId>
-          <version>0.14.0</version>
-          <configuration>
-              <argLine>-Declipse.p2.mirrors=false</argLine>
-              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
-          </configuration>
-          <executions>
               <execution>
+				<id>root-features-linux-64bit</id>
+		          <configuration>
+		              <argLine>-Declipse.p2.mirrors=false</argLine>
+		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
+		          </configuration>
                   <goals>
                       <goal>eclipse-run</goal>
                   </goals>
                   <phase>package</phase>
               </execution>
-          </executions>
-      </plugin>
 
-      <plugin>
-          <groupId>org.eclipse.tycho.extras</groupId>
-          <artifactId>tycho-eclipserun-plugin</artifactId>
-          <version>0.14.0</version>
-          <configuration>
-              <argLine>-Declipse.p2.mirrors=false</argLine>
-              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86} -repository ${sites} -installIUs ${features}</appArgLine>
-          </configuration>
-          <executions>
               <execution>
+				<id>root-features-win-32bit</id>
+		          <configuration>
+		              <argLine>-Declipse.p2.mirrors=false</argLine>
+		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86} -repository ${sites} -installIUs ${features}</appArgLine>
+		          </configuration>
                   <goals>
                       <goal>eclipse-run</goal>
                   </goals>
                   <phase>package</phase>
               </execution>
-          </executions>
-      </plugin>
 
-      <plugin>
-          <groupId>org.eclipse.tycho.extras</groupId>
-          <artifactId>tycho-eclipserun-plugin</artifactId>
-          <version>0.14.0</version>
-          <configuration>
-              <argLine>-Declipse.p2.mirrors=false</argLine>
-              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
-          </configuration>
-          <executions>
               <execution>
+				<id>root-features-win-64bit</id>
+		          <configuration>
+		              <argLine>-Declipse.p2.mirrors=false</argLine>
+		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
+		          </configuration>
                   <goals>
                       <goal>eclipse-run</goal>
                   </goals>
                   <phase>package</phase>
               </execution>
+
           </executions>
       </plugin>
 
