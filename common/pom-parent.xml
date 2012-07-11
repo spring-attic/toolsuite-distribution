@@ -218,9 +218,9 @@
 	  <url>https://repository.sonatype.org/content/repositories/snapshots/</url>
 	</pluginRepository>
 	<pluginRepository>
-      <id>tycho-staging</id>
-      <url>https://oss.sonatype.org/content/repositories/orgeclipsetycho-115/</url>
-    </pluginRepository>
+		<id>tycho-snapshots</id>
+		<url>https://oss.sonatype.org/content/groups/public/</url>
+	</pluginRepository>
   </pluginRepositories>
 
   <build>
