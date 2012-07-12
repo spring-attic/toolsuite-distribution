@@ -162,7 +162,7 @@
 							<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
 
 							<property name="site.target.dir" value="${project.build.directory}" />
-							<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}" />
+							<property name="dist.full.version" value="${unqualifiedVersion}.${p2.qualifier}-${dist.target}" />
 							
 							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
 							<property name="dist.full.path" value="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
@@ -213,7 +213,6 @@
 							<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
 
 							<property name="site.target.dir" value="${project.build.directory}" />
-							<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}" />
 							
 							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
