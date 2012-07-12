@@ -65,7 +65,7 @@
 	<signing.key.password>${KEY_PASSWORD}</signing.key.password>
 
 	<dist.name>SpringSource Tool Suite</dist.name>
-	<dist.project></dist.project>
+	<dist.project>springsource-tool-suite</dist.project>
 	<dist.key>STS</dist.key>
 	<dist.type>snapshot</dist.type>
 	<dist.bucket>dist.springsource.com</dist.bucket>
@@ -75,6 +75,11 @@
 	<dist.target></dist.target>
 	<dist.pathpostfix>nightly/${dist.target}</dist.pathpostfix>
 	<dist.properties>dist.properties</dist.properties>
+	
+	<dist.path.repo>${dist.type}/TOOLS/${dist.pathpostfix}</dist.path.repo>
+	
+	<dist.pathpostfix.product>nightly/dist/${dist.target}</dist.pathpostfix.product>
+	<dist.path.product>${dist.type}/${dist.key}/${dist.pathpostfix.product}</dist.path.product>
 
 	<skip.source.check>true</skip.source.check>
 
