@@ -42,14 +42,7 @@
   </scm>
 
   <properties>
-	<p2.qualifier>SNAPSHOT</p2.qualifier>
-	<p2.sign>false</p2.sign>
-	<p2.repository.name>SpringSource Tool Suite</p2.repository.name>
 
-	<dist.name>SpringSource Tool Suite</dist.name>
-	<dist.project>springsource-tool-suite</dist.project>
-	<dist.key>STS</dist.key>
-	
 	<!-- general version path extension for all dependencies -->
 	<dist.dependencies-version-path>nightly</dist.dependencies-version-path>
 
