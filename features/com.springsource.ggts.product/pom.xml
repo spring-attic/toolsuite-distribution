@@ -22,11 +22,34 @@
 	<build.destination.linux.x86_64>target/products/com.springsource.sts.ide/linux/gtk/x86_64/eclipse</build.destination.linux.x86_64>
 	<build.destination.win.x86>target/products/com.springsource.sts.ide/win32/win32/x86/eclipse</build.destination.win.x86>
 	<build.destination.win.x86_64>target/products/com.springsource.sts.ide/win32/win32/x86_64/eclipse</build.destination.win.x86_64>
+	
+	<dist.accessKey>${accessKey}</dist.accessKey>
+	<dist.secretKey>${secretKey}</dist.secretKey>
   </properties>
 
   <build>
     <plugins>
 	
+		  <plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>properties-maven-plugin</artifactId>
+			<version>1.0-alpha-2</version>
+			<executions>
+			  <execution>
+				<phase>initialize</phase>
+				<goals>
+				  <goal>read-project-properties</goal>
+				</goals>
+				<configuration>
+				  <quiet>true</quiet>
+				  <files>
+					<file>${dist.properties}</file>
+				  </files>
+				</configuration>
+			  </execution>
+			</executions>
+		  </plugin>
+
       <plugin>
 		<groupId>org.eclipse.tycho</groupId>
 		<artifactId>tycho-p2-publisher-plugin</artifactId>
@@ -77,7 +100,7 @@
           <version>0.14.0</version>
           <executions>
               <execution>
-                  <phase>install</phase>
+                  <phase>verify</phase>
                   <goals>
                       <goal>mirror</goal>
                   </goals>
@@ -102,7 +125,7 @@
 			<executions>
 				<execution>
 					<id>zip-dist</id>
-					<phase>deploy</phase>
+					<phase>package</phase>
 					<configuration>
 						<target>
 
@@ -128,7 +151,135 @@
 						<goal>run</goal>
 					</goals>
 				</execution>
+				
+				<execution>
+					<id>upload-united-repository</id>
+					<phase>deploy</phase>
+					<configuration>
+						<target>
+
+							<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+							<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
+
+							<property name="site.target.dir" value="${project.build.directory}" />
+							<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}" />
+							
+							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
+							<property name="dist.full.path" value="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
+							
+							<echo>Bucket: ${dist.bucket}</echo>
+							<echo>Path on S3: ${dist.path}</echo>
+							<echo>Dist Full Path: ${dist.full.path}</echo>
+							<echo>Site on S3: ${dist.path}/${dist.file.name}</echo>
+							<echo>Name: ${dist.name}</echo>
+							<echo>Type: ${dist.type}</echo>
+							<echo>Version: ${dist.full.version}</echo>
+<!--							
+							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
+
+								<delete bucketName="${dist.bucket}">
+									<fileset dir="${dist.path}">
+										<include name="site.xml" />
+										<include name="content.jar" />
+										<include name="artifacts.jar" />
+										<include name="plugins/**" />
+										<include name="features/**" />
+									</fileset>
+								</delete>
+
+								<upload bucketName="${dist.bucket}" toDir="${dist.path}" publicRead="true">
+									<fileset dir="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository">
+										<include name="**/*" />
+										<include name="**" />
+										<exclude name="*.zip" />
+									</fileset>
+								</upload>
+
+								<upload bucketName="${dist.bucket}" file="${dist.full.path}" toFile="${dist.path}/${dist.file.name}"
+									publicRead="true">
+									<metadata name="project.name" value="${dist.name}" />
+									<metadata name="release.type" value="${dist.type}" />
+									<metadata name="bundle.version" value="${dist.full.version}" />
+									<metadata name="package.file.name" value="${dist.file.name}" />
+								</upload>
+							</s3>
+-->
+						</target>
+					</configuration>
+					<goals>
+						<goal>run</goal>
+					</goals>
+				</execution>
+<!--				
+				<execution>
+					<id>upload-grails-product</id>
+					<phase>deploy</phase>
+					<configuration>
+						<target>
+
+							<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+							<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
+
+							<property name="site.target.dir" value="${project.build.directory}" />
+							<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}" />
+							
+							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
+							<property name="dist.full.path" value="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
+							
+							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
+
+								<delete bucketName="${dist.bucket}">
+									<fileset dir="${dist.path}">
+										<include name="site.xml" />
+										<include name="content.jar" />
+										<include name="artifacts.jar" />
+										<include name="plugins/**" />
+										<include name="features/**" />
+									</fileset>
+								</delete>
+
+								<upload bucketName="${dist.bucket}" toDir="${dist.path}" publicRead="true">
+									<fileset dir="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository">
+										<include name="**/*" />
+										<include name="**" />
+										<exclude name="*.zip" />
+									</fileset>
+								</upload>
+
+								<upload bucketName="${dist.bucket}" file="${dist.full.path}" toFile="${dist.path}/${dist.file.name}"
+									publicRead="true">
+									<metadata name="project.name" value="${dist.name}" />
+									<metadata name="release.type" value="${dist.type}" />
+									<metadata name="bundle.version" value="${dist.full.version}" />
+									<metadata name="package.file.name" value="${dist.file.name}" />
+								</upload>
+							</s3>
+
+						</target>
+					</configuration>
+					<goals>
+						<goal>run</goal>
+					</goals>
+				</execution>
+-->
 			</executions>
+			<dependencies>
+				<dependency>
+					<groupId>org.springframework.build</groupId>
+					<artifactId>org.springframework.build.aws.ant</artifactId>
+					<version>3.0.5.RELEASE</version>
+				</dependency>
+				<dependency>
+					<groupId>net.java.dev.jets3t</groupId>
+					<artifactId>jets3t</artifactId>
+					<version>0.7.2</version>
+				</dependency>
+				<dependency>
+					<groupId>ant-contrib</groupId>
+					<artifactId>ant-contrib</artifactId>
+					<version>20020829</version>
+				</dependency>
+			</dependencies>
 		</plugin>
 
       <plugin>
