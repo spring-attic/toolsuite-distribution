@@ -97,7 +97,7 @@
       <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-p2-extras-plugin</artifactId>
-          <version>0.14.0</version>
+          <version>${tycho-version}</version>
           <executions>
               <execution>
                   <phase>verify</phase>
@@ -182,7 +182,7 @@
       <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-eclipserun-plugin</artifactId>
-          <version>0.14.0</version>
+          <version>${tycho-version}</version>
           <executions>
               <execution>
 				<id>root-features-osx-32bit</id>
