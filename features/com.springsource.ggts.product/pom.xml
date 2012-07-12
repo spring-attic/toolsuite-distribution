@@ -168,7 +168,8 @@
 							<property name="dist.full.path" value="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
 							
 							<echo>Bucket: ${dist.bucket}</echo>
-							<echo>Path on S3: ${dist.path}</echo>
+							<echo>Path on S3 (Repo): ${dist.path.repo}</echo>
+							<echo>Path on S3 (Product): ${dist.path.product}</echo>
 							<echo>Dist Full Path: ${dist.full.path}</echo>
 							<echo>Site on S3: ${dist.path}/${dist.file.name}</echo>
 							<echo>Name: ${dist.name}</echo>
