@@ -167,19 +167,10 @@
 							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
 							<property name="dist.full.path" value="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
 							
-							<echo>Bucket: ${dist.bucket}</echo>
-							<echo>Path on S3 (Repo): ${dist.path.repo}</echo>
-							<echo>Path on S3 (Product): ${dist.path.product}</echo>
-							<echo>Dist Full Path: ${dist.full.path}</echo>
-							<echo>Site on S3: ${dist.path}/${dist.file.name}</echo>
-							<echo>Name: ${dist.name}</echo>
-							<echo>Type: ${dist.type}</echo>
-							<echo>Version: ${dist.full.version}</echo>
-<!--							
 							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
 								<delete bucketName="${dist.bucket}">
-									<fileset dir="${dist.path}">
+									<fileset dir="${dist.path.repo}">
 										<include name="site.xml" />
 										<include name="content.jar" />
 										<include name="artifacts.jar" />
@@ -188,7 +179,7 @@
 									</fileset>
 								</delete>
 
-								<upload bucketName="${dist.bucket}" toDir="${dist.path}" publicRead="true">
+								<upload bucketName="${dist.bucket}" toDir="${dist.path.repo}" publicRead="true">
 									<fileset dir="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository">
 										<include name="**/*" />
 										<include name="**" />
@@ -196,22 +187,22 @@
 									</fileset>
 								</upload>
 
-								<upload bucketName="${dist.bucket}" file="${dist.full.path}" toFile="${dist.path}/${dist.file.name}"
-									publicRead="true">
+								<upload bucketName="${dist.bucket}" file="${dist.full.path}" toFile="${dist.path.repo}/${dist.file.name}" publicRead="true">
 									<metadata name="project.name" value="${dist.name}" />
 									<metadata name="release.type" value="${dist.type}" />
 									<metadata name="bundle.version" value="${dist.full.version}" />
 									<metadata name="package.file.name" value="${dist.file.name}" />
 								</upload>
+								
 							</s3>
--->
+
 						</target>
 					</configuration>
 					<goals>
 						<goal>run</goal>
 					</goals>
 				</execution>
-<!--				
+
 				<execution>
 					<id>upload-grails-product</id>
 					<phase>deploy</phase>
@@ -224,36 +215,22 @@
 							<property name="site.target.dir" value="${project.build.directory}" />
 							<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}" />
 							
-							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
-							<property name="dist.full.path" value="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
-							
 							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
 								<delete bucketName="${dist.bucket}">
-									<fileset dir="${dist.path}">
-										<include name="site.xml" />
-										<include name="content.jar" />
-										<include name="artifacts.jar" />
-										<include name="plugins/**" />
-										<include name="features/**" />
+									<fileset dir="${dist.path.product}">
+										<include name="groovy-*.zip" />
+										<include name="groovy-*.gz" />
 									</fileset>
 								</delete>
 
-								<upload bucketName="${dist.bucket}" toDir="${dist.path}" publicRead="true">
-									<fileset dir="${site.target.dir}/../../com.springsource.sts.product/target/unitedRepository">
-										<include name="**/*" />
-										<include name="**" />
-										<exclude name="*.zip" />
+								<upload bucketName="${dist.bucket}" toDir="${dist.path.product}" publicRead="true">
+									<fileset dir="${site.target.dir}/products">
+										<include name="*.zip" />
+										<include name="*.tar.gz" />
 									</fileset>
 								</upload>
 
-								<upload bucketName="${dist.bucket}" file="${dist.full.path}" toFile="${dist.path}/${dist.file.name}"
-									publicRead="true">
-									<metadata name="project.name" value="${dist.name}" />
-									<metadata name="release.type" value="${dist.type}" />
-									<metadata name="bundle.version" value="${dist.full.version}" />
-									<metadata name="package.file.name" value="${dist.file.name}" />
-								</upload>
 							</s3>
 
 						</target>
@@ -262,7 +239,7 @@
 						<goal>run</goal>
 					</goals>
 				</execution>
--->
+
 			</executions>
 			<dependencies>
 				<dependency>

@@ -21,6 +21,9 @@
 	<build.destination.linux.x86_64>target/products/com.springsource.sts.ide/linux/gtk/x86_64/eclipse</build.destination.linux.x86_64>
 	<build.destination.win.x86>target/products/com.springsource.sts.ide/win32/win32/x86/eclipse</build.destination.win.x86>
 	<build.destination.win.x86_64>target/products/com.springsource.sts.ide/win32/win32/x86_64/eclipse</build.destination.win.x86_64>
+	
+	<dist.accessKey>${accessKey}</dist.accessKey>
+	<dist.secretKey>${secretKey}</dist.secretKey>
   </properties>
 
   <profiles>
@@ -115,6 +118,66 @@
           </configuration>
       </plugin>
 
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-antrun-plugin</artifactId>
+			<version>1.6</version>
+			<executions>
+				<execution>
+					<id>upload-spring-product</id>
+					<phase>deploy</phase>
+					<configuration>
+						<target>
+
+							<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+							<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
+
+							<property name="site.target.dir" value="${project.build.directory}" />
+							<property name="dist.full.version" value="${unqualifiedVersion}.${buildQualifier}" />
+							
+							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
+
+								<delete bucketName="${dist.bucket}">
+									<fileset dir="${dist.path.product}">
+										<include name="spring-*.zip" />
+										<include name="spring-*.gz" />
+									</fileset>
+								</delete>
+
+								<upload bucketName="${dist.bucket}" toDir="${dist.path.product}" publicRead="true">
+									<fileset dir="${site.target.dir}/products">
+										<include name="*.zip" />
+										<include name="*.tar.gz" />
+									</fileset>
+								</upload>
+
+							</s3>
+
+						</target>
+					</configuration>
+					<goals>
+						<goal>run</goal>
+					</goals>
+				</execution>
+			</executions>
+			<dependencies>
+				<dependency>
+					<groupId>org.springframework.build</groupId>
+					<artifactId>org.springframework.build.aws.ant</artifactId>
+					<version>3.0.5.RELEASE</version>
+				</dependency>
+				<dependency>
+					<groupId>net.java.dev.jets3t</groupId>
+					<artifactId>jets3t</artifactId>
+					<version>0.7.2</version>
+				</dependency>
+				<dependency>
+					<groupId>ant-contrib</groupId>
+					<artifactId>ant-contrib</artifactId>
+					<version>20020829</version>
+				</dependency>
+			</dependencies>
+		</plugin>
 
       <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
