@@ -269,12 +269,17 @@
 	</feature>	
 	
 	<feature
-		id="org.springframework.ide.eclipse.roo.feature" version="3.0.0.qualifier">
+		id="org.springframework.ide.eclipse.roo.feature" version="0.0.0">
 		<category name="Extensions / Spring IDE" />
 	</feature>	
 
 	<feature
-		id="org.springframework.ide.eclipse.maven.feature" version="3.0.0.qualifier">
+		id="org.springframework.ide.eclipse.maven.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>	
+
+	<feature
+		id="org.springframework.ide.eclipse.data.feature" version="0.0.0">
 		<category name="Extensions / Spring IDE" />
 	</feature>	
 
@@ -347,12 +352,17 @@
 	</feature>		
 
 	<feature
-		id="org.springframework.ide.eclipse.roo.feature.source" version="3.0.0.qualifier">
+		id="org.springframework.ide.eclipse.roo.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>		
 
 	<feature
-		id="org.springframework.ide.eclipse.maven.feature.source" version="3.0.0.qualifier">
+		id="org.springframework.ide.eclipse.maven.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>		
+
+	<feature
+		id="org.springframework.ide.eclipse.data.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>		
 
