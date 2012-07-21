@@ -15,7 +15,6 @@
 
   <properties>
 	<features>org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-	<sites>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 	<build.destination.cocoa.x86>target/products/com.springsource.sts.ide/macosx/cocoa/x86/eclipse</build.destination.cocoa.x86>
 	<build.destination.cocoa.x86_64>target/products/com.springsource.sts.ide/macosx/cocoa/x86_64/eclipse</build.destination.cocoa.x86_64>
 	<build.destination.linux.x86>target/products/com.springsource.sts.ide/linux/gtk/x86/eclipse</build.destination.linux.x86>
@@ -26,6 +25,27 @@
 	<dist.accessKey>${accessKey}</dist.accessKey>
 	<dist.secretKey>${secretKey}</dist.secretKey>
   </properties>
+
+  <profiles>
+	<profile>
+	  <id>e37</id>
+	  <properties>
+<sites>http://download.eclipse.org/releases/indigo/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+	  </properties>
+	</profile>
+	<profile>
+	  <id>e38</id>
+	  <properties>
+<sites>http://download.eclipse.org/releases/juno/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+	  </properties>
+	</profile>
+	<profile>
+	  <id>e42</id>
+	  <properties>
+<sites>http://download.eclipse.org/releases/juno/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+	  </properties>
+	</profile>
+  </profiles>
 
   <build>
     <plugins>
