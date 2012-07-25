@@ -26,7 +26,7 @@ openFile</programArgs>
       startupMessageRect="7,220,441,20"
       startupForegroundColor="c1d72e" />
 
-   <launcher name="STS">
+   <launcher name="GGTS">
       <macosx icon="../../plugins/com.springsource.ggts/Eclipse.icns"/>
       <solaris/>
       <win useIco="true">
