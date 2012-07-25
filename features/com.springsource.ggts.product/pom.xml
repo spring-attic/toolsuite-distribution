@@ -15,12 +15,12 @@
 
   <properties>
 	<features>org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-	<build.destination.cocoa.x86>target/products/com.springsource.sts.ide/macosx/cocoa/x86/eclipse</build.destination.cocoa.x86>
-	<build.destination.cocoa.x86_64>target/products/com.springsource.sts.ide/macosx/cocoa/x86_64/eclipse</build.destination.cocoa.x86_64>
-	<build.destination.linux.x86>target/products/com.springsource.sts.ide/linux/gtk/x86/eclipse</build.destination.linux.x86>
-	<build.destination.linux.x86_64>target/products/com.springsource.sts.ide/linux/gtk/x86_64/eclipse</build.destination.linux.x86_64>
-	<build.destination.win.x86>target/products/com.springsource.sts.ide/win32/win32/x86/eclipse</build.destination.win.x86>
-	<build.destination.win.x86_64>target/products/com.springsource.sts.ide/win32/win32/x86_64/eclipse</build.destination.win.x86_64>
+	<build.destination.cocoa.x86>target/products/com.springsource.ggts.ide/macosx/cocoa/x86/eclipse</build.destination.cocoa.x86>
+	<build.destination.cocoa.x86_64>target/products/com.springsource.ggts.ide/macosx/cocoa/x86_64/eclipse</build.destination.cocoa.x86_64>
+	<build.destination.linux.x86>target/products/com.springsource.ggts.ide/linux/gtk/x86/eclipse</build.destination.linux.x86>
+	<build.destination.linux.x86_64>target/products/com.springsource.ggts.ide/linux/gtk/x86_64/eclipse</build.destination.linux.x86_64>
+	<build.destination.win.x86>target/products/com.springsource.ggts.ide/win32/win32/x86/eclipse</build.destination.win.x86>
+	<build.destination.win.x86_64>target/products/com.springsource.ggts.ide/win32/win32/x86_64/eclipse</build.destination.win.x86_64>
 	
 	<dist.accessKey>${accessKey}</dist.accessKey>
 	<dist.secretKey>${secretKey}</dist.secretKey>
