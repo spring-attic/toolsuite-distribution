@@ -76,5 +76,27 @@
           name="Groovy/Grails Tool Suite">
     	</category>
  	</extension>
+ 	
+ 	<extension point="org.eclipse.ui.intro">
+		<introProductBinding introId="com.springsource.ggts.ide.ui.intro"
+			productId="com.springsource.ggts.ide">
+		</introProductBinding>
+		<intro
+	        class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+	        icon="content/welcome16.png"
+	        id="com.springsource.ggts.ide.ui.intro">
+	  </intro>
+	</extension>
+	<extension point="org.eclipse.ui.intro.config">
+		<config content="introContent.xml" id="com.springsource.ggts.ide.ui.intro.config"
+			introId="com.springsource.ggts.ide.ui.intro">
+			<presentation
+         home-page-id="root"
+         standby-page-id="standby">
+				<implementation kind="html">
+				</implementation>
+			</presentation>
+		</config>
+	</extension>
    
 </plugin>

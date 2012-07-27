@@ -5,6 +5,7 @@ Bundle-SymbolicName: com.springsource.sts;singleton:=true
 Bundle-Version: 3.0.0.qualifier
 Bundle-Vendor: %providerName
 Require-Bundle: org.eclipse.ui,
+ org.eclipse.ui.intro,
  org.eclipse.core.runtime,
  org.eclipse.equinox.p2.ui,
  org.eclipse.equinox.p2.ui.sdk
