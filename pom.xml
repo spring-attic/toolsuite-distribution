@@ -83,7 +83,7 @@
 		<repository>
 		  <id>ajdt</id>
 		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/tools/ajdt/37/dev/update/</url>
+		  <url>http://download.eclipse.org/tools/ajdt/37/milestone/</url>
 		</repository>
 		<repository>
 		  <id>swtbot</id>
@@ -93,7 +93,7 @@
 		<repository>
 		  <id>groovy</id>
 		  <layout>p2</layout>
-		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e3.7/</url>
+		  <url>http://dist.springsource.org/snapshot/GRECLIPSE/e3.7/</url>
 		</repository>
 		<repository>
 		  <id>linked-resources-patch</id>
@@ -142,7 +142,7 @@
 		<repository>
 		  <id>ajdt</id>
 		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/tools/ajdt/42/dev/update/</url>
+		  <url>http://download.eclipse.org/tools/ajdt/42/milestone/</url>
 		</repository>
 		<repository>
 		  <id>swtbot</id>
@@ -152,7 +152,7 @@
 		<repository>
 		  <id>groovy</id>
 		  <layout>p2</layout>
-		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</url>
+		  <url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.2/</url>
 		</repository>
 		<repository>
 		  <id>atlassian</id>
@@ -190,7 +190,7 @@
 		<repository>
 		  <id>ajdt</id>
 		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/tools/ajdt/42/dev/update/</url>
+		  <url>http://download.eclipse.org/tools/ajdt/42/milestone/</url>
 		</repository>
 		<repository>
 		  <id>swtbot</id>
@@ -200,7 +200,7 @@
 		<repository>
 		  <id>groovy</id>
 		  <layout>p2</layout>
-		  <url>http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e4.2/</url>
+		  <url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.2/</url>
 		</repository>
 		<repository>
 		  <id>atlassian</id>
