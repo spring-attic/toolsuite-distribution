@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.springsource.sts.grails.tests_0.0.0.jar" 
+   		id="org.springsource.sts.grails.tests" 
+   		version="0.0.0"/>
+   <feature url="features/org.springsource.sts.tests_0.0.0.jar" 
+   		id="org.springsource.sts.tests" 
+   		version="0.0.0"/>
+</site>

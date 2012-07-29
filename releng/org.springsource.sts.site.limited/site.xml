@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site pack200="true">
+	<description url="http://www.springsource.com/products/sts">
+		The SpringSource Tool Suite is the next generation IDE that helps you focus 
+		your development work with the Spring Portfolio.
+	</description>
+
+
+	<!-- *** STS *** -->
+
+	<feature
+		url="features/org.springsource.sts_0.0.0.jar"
+		id="org.springsource.sts" 
+		version="0.0.0">
+		<category name="Core / STS" />
+	</feature>
+<!--
+	<feature
+		url="features/org.springsource.sts.tutorials_0.0.0.jar"
+		id="org.springsource.sts.tutorials" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+<!--
+	<feature
+		url="features/org.springsource.sts.authoring_0.0.0.jar"
+		id="org.springsource.sts.authoring" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+<!--	
+	<feature
+		url="features/com.vmware.vixapi_0.0.0.jar"
+		id="com.vmware.vixapi" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+<!--
+	<feature
+		url="features/org.springsource.sts.vmware_0.0.0.jar"
+		id="org.springsource.sts.vmware" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+	<feature
+		id="com.vmware.vfabric.ide.eclipse.tcserver" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+
+<!--	
+	<feature
+		url="features/org.springsource.sts.server.cf_0.0.0.jar"
+		id="org.springsource.sts.server.cf" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->
+	<feature
+		url="features/com.springsource.sts.grails_0.0.0.jar"
+		id="com.springsource.sts.grails" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+
+	<feature
+		url="features/com.springsource.sts.roo_0.0.0.jar"
+		id="com.springsource.sts.roo" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+	
+	<feature
+		url="features/com.springsource.sts.maven_0.0.0.jar"
+		id="com.springsource.sts.maven" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+<!--
+	<feature
+		url="features/com.springsource.sts.runtimeerroranalysis_0.0.0.jar"
+		id="com.springsource.sts.runtimeerroranalysis" 
+		version="0.0.0">
+		<category name="Extensions / STS" />
+	</feature>
+-->	
+	<!--
+	<feature
+		url="features/com.springsource.sts.package_0.0.0.jar"
+		id="com.springsource.sts.package" 
+		version="0.0.0">
+	</feature>
+	-->
+
+	<category-def name="Core / STS" label="Core / STS" />
+	<category-def name="Extensions / STS" label="Extensions / STS" />
+
+    <!--	
+	<category-def name="Package / STS" label="Package / STS" />
+	-->
+
+
+	<!-- *** Spring IDE ***	-->
+
+	<!-- Core features -->
+	<feature
+		url="features/org.springframework.ide.eclipse.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.feature" version="0.0.0">
+		<category name="Core / Spring IDE" />
+	</feature>
+	
+	<!-- Extensions features -->
+	<feature
+		url="features/org.springframework.ide.eclipse.aop.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.aop.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.osgi.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.osgi.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.security.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.security.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
+		url="features/org.springframework.ide.eclipse.webflow.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.webflow.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
+		url="features/org.springframework.ide.eclipse.batch.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.batch.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.integration.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.integration.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>	
+	
+	<!-- Extensions (Incubation) features -->	
+	<feature
+		url="features/org.springframework.ide.eclipse.autowire.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.autowire.feature" version="0.0.0">
+		<category name="Extensions (Incubation) / Spring IDE" />
+	</feature>
+
+	<!-- Integration features -->
+	<feature
+		url="features/org.springframework.ide.eclipse.ajdt.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.ajdt.feature" version="0.0.0">
+		<category name="Integrations / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.mylyn.feature_0.0.0.jar"
+		id="org.springframework.ide.eclipse.mylyn.feature" version="0.0.0">
+		<category name="Integrations / Spring IDE" />
+	</feature>
+	
+	<!-- Resources features -->
+	<!--
+	<feature
+		url="features/org.springframework.ide.eclipse.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.aop.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.aop.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		url="features/org.springframework.ide.eclipse.batch.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.batch.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.osgi.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.osgi.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.security.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.security.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		url="features/org.springframework.ide.eclipse.webflow.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.webflow.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.autowire.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.autowire.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		url="features/org.springframework.ide.eclipse.ajdt.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.ajdt.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		url="features/org.springframework.ide.eclipse.mylyn.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.mylyn.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+		
+	<feature
+		url="features/org.springframework.ide.eclipse.integration.feature.source_0.0.0.jar"
+		id="org.springframework.ide.eclipse.integration.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>		
+	-->
+
+	<category-def name="Core / Spring IDE" label="Core / Spring IDE" />
+	<category-def name="Dependencies / Spring IDE" label="Dependencies / Spring IDE" />
+	<category-def name="Extensions / Spring IDE" label="Extensions / Spring IDE" />
+	<category-def name="Extensions (Incubation) / Spring IDE" label="Extensions (Incubation) / Spring IDE" />
+	<category-def name="Integrations / Spring IDE" label="Integrations / Spring IDE" />
+	<!--
+	<category-def name="Resources / Spring IDE" label="Resources / Spring IDE" />
+	-->
+
+	<!-- *** AJDT *** -->
+
+	<feature url="features/org.eclipse.ajdt_0.0.0.jar" id="org.eclipse.ajdt" version="0.0.0">
+	  <category name="org.eclipse.ajdt"/>
+	</feature>
+
+	<feature url="features/org.eclipse.contribution.weaving_0.0.0.jar" id="org.eclipse.contribution.weaving" version="0.0.0">
+	  <category name="org.eclipse.ajdt.other"/>
+	</feature>
+
+	<feature url="features/org.eclipse.contribution.xref_0.0.0.jar" id="org.eclipse.contribution.xref" version="0.0.0">
+	  <category name="org.eclipse.ajdt.other"/>
+	</feature>
+
+	<!--
+	<feature url="features/org.eclipse.ajdt.source_0.0.0.jar" id="org.eclipse.ajdt.source" version="0.0.0">
+	  <category name="org.eclipse.ajdt.source"/>
+	</feature>
+
+	<feature url="features/org.eclipse.contribution.weaving.source_0.0.0.jar" id="org.eclipse.contribution.weaving.source" version="0.0.0">
+	  <category name="org.eclipse.ajdt.source"/>
+	</feature>
+
+	<feature url="features/org.eclipse.contribution.xref.source_0.0.0.jar" id="org.eclipse.contribution.xref.source" version="0.0.0">
+	  <category name="org.eclipse.ajdt.source"/>
+	</feature>
+	-->
+
+	<feature url="features/org.eclipse.equinox.weaving.sdk_0.0.0.jar" id="org.eclipse.equinox.weaving.sdk" version="0.0.0">
+	  <category name="org.eclipse.ajdt.other"/>
+	</feature>
+
+	<category-def name="org.eclipse.ajdt" label="Core / AspectJ Development Tools"/>
+	<category-def name="org.eclipse.ajdt.other" label="Extensions / AspectJ Development Tools"/>
+	<!--
+	<category-def name="org.eclipse.ajdt.source" label="AspectJ Development Tools Source (Optional)"/>
+	-->
+
+</site>
