@@ -23,14 +23,14 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.springsource.sts</groupId>
-    <artifactId>com.springsource.sts.root</artifactId>
+    <groupId>org.springsource.sts</groupId>
+    <artifactId>org.springsource.sts.root</artifactId>
     <version>3.0.0-SNAPSHOT</version>
 	<relativePath>common/pom-parent.xml</relativePath>
   </parent>
 
-  <groupId>com.springsource.sts</groupId>
-  <artifactId>com.springsource.sts.parent</artifactId>
+  <groupId>org.springsource.sts</groupId>
+  <artifactId>org.springsource.sts.parent</artifactId>
   <version>3.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -55,10 +55,10 @@
   </properties>
 
   <modules>
-	<module>plugins/com.springsource.sts</module>
-	<module>features/com.springsource.sts</module>
-	<module>plugins/com.springsource.ggts</module>
-	<module>features/com.springsource.ggts</module>
+	<module>plugins/org.springsource.sts</module>
+	<module>features/org.springsource.sts</module>
+	<module>plugins/org.springsource.ggts</module>
+	<module>features/org.springsource.ggts</module>
   </modules>
 
   <profiles>
@@ -117,8 +117,8 @@
 		</repository>
 	  </repositories>
 	  <modules>
-		<module>features/com.springsource.sts.package.e3.7</module>
-		<module>features/com.springsource.ggts.package.e3.7</module>
+		<module>features/org.springsource.sts.package.e3.7</module>
+		<module>features/org.springsource.ggts.package.e3.7</module>
 	  </modules>
 	</profile>
 	<profile>
@@ -166,7 +166,7 @@
 		</repository>
 	  </repositories>
 	  <modules>
-		<module>features/com.springsource.sts.package.e3.8</module>
+		<module>features/org.springsource.sts.package.e3.8</module>
 	  </modules>
 	</profile>
 	<profile>
@@ -214,38 +214,38 @@
 		</repository>
 	  </repositories>
 	  <modules>
-		<module>features/com.springsource.sts.package.e4.2</module>
-		<module>features/com.springsource.ggts.package.e4.2</module>
+		<module>features/org.springsource.sts.package.e4.2</module>
+		<module>features/org.springsource.ggts.package.e4.2</module>
 	  </modules>
 	</profile>
 	
 	<profile>
 	  <id>spring-site</id>
 	  <modules>
-		<module>releng/com.springsource.sts.site</module>
+		<module>releng/org.springsource.sts.site</module>
 	  </modules>
 	</profile>
 	<profile>
 	  <id>site-grails</id>
 	  <modules>
-		<module>features/com.springsource.sts.tests</module>
-		<module>features/com.springsource.sts.grails.tests</module>
-		<module>releng/com.springsource.sts.site</module>
-	 	<module>releng/com.springsource.sts.grails.tests.site</module>
+		<module>features/org.springsource.sts.tests</module>
+		<module>features/org.springsource.sts.grails.tests</module>
+		<module>releng/org.springsource.sts.site</module>
+	 	<module>releng/org.springsource.sts.grails.tests.site</module>
 	  </modules>
 	</profile>
 	
 	<profile>
 	  <id>spring-dist</id>
 	  <modules>
-		<module>features/com.springsource.sts.product</module>
+		<module>features/org.springsource.sts.product</module>
 	  </modules>
 	</profile>
 
 	<profile>
 	  <id>groovy-grails-dist</id>
 	  <modules>
-		<module>features/com.springsource.ggts.product</module>
+		<module>features/org.springsource.ggts.product</module>
 	  </modules>
 	</profile>
 

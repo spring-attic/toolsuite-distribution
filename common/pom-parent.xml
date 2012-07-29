@@ -6,8 +6,8 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.springsource.sts</groupId>
-  <artifactId>com.springsource.sts.root</artifactId>
+  <groupId>org.springsource.sts</groupId>
+  <artifactId>org.springsource.sts.root</artifactId>
   <version>3.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -521,12 +521,12 @@
 			<appArgLine>
 			  -eclipse.keyring ${project.build.directory}/keystore -eclipse.password ${project.build.directory}/keystore.password
 			</appArgLine>
-			<product>com.springsource.sts.ide</product>
+			<product>org.springsource.sts.ide</product>
 			<application>org.eclipse.ui.ide.workbench</application>
 			<dependencies>
               <dependency>
 				<type>p2-installable-unit</type>
-				<artifactId>com.springsource.sts.package.feature.group</artifactId>
+				<artifactId>org.springsource.sts.package.feature.group</artifactId>
 				<version>0.0.0</version>
               </dependency>
               <dependency>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.springsource.sts.package"
+      label="%featureName"
+      version="3.0.0.qualifier"
+      provider-name="%providerName"
+      plugin="org.springsource.sts">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseUrl">
+      %license
+   </license>
+
+   <url>
+      <update label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
+      <discovery label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
+   </url>
+   
+   <includes id="org.eclipse.platform" version="0.0.0" />
+  
+   <requires>
+      <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.java_feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+<!--	  <import feature="org.eclipse.epp.usagedata.feature"/> -->
+      <import feature="org.eclipse.rse"/>
+      <import feature="org.eclipse.rse.useractions"/>
+      <import feature="org.eclipse.tm.terminal"/>
+      <import feature="org.eclipse.tm.terminal.ssh"/>
+      <import feature="org.eclipse.tm.terminal.telnet"/>
+      <import feature="org.eclipse.tm.terminal.view"/>
+      <import feature="org.eclipse.datatools.modelbase.feature"/>
+      <import feature="org.eclipse.datatools.connectivity.feature"/>
+      <import feature="org.eclipse.datatools.sqldevtools.feature"/>
+      <import feature="org.eclipse.datatools.intro"/>
+      <import feature="org.eclipse.datatools.doc.user"/>
+      <import feature="org.eclipse.datatools.common.doc.user"/>
+      <import feature="org.eclipse.datatools.connectivity.doc.user"/>
+      <import feature="org.eclipse.datatools.sqltools.doc.user"/>
+      <import feature="org.eclipse.datatools.enablement.feature"/>
+      <import feature="org.eclipse.wst.common.fproj"/>
+      <import feature="org.eclipse.wst.jsdt.feature"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.wst.web_ui.feature"/>
+      <import feature="org.eclipse.wst.server_adapters.feature"/>
+      <import feature="org.eclipse.wst.xsl.feature"/>
+      <import feature="org.eclipse.jst.common.fproj.enablement.jdt"/>
+      <import feature="org.eclipse.jst.server_ui.feature"/>
+      <import feature="org.eclipse.jst.server_adapters.feature"/>
+      <import feature="org.eclipse.jst.server_adapters.ext.feature"/>
+      <import feature="org.eclipse.jst.web_ui.feature"/>
+      <import feature="org.eclipse.jst.enterprise_ui.feature"/>
+      <import feature="org.eclipse.jst.webpageeditor.feature"/>
+      <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
+      <import feature="org.eclipse.jst.ws.axis2tools.feature"/>
+      <import feature="org.eclipse.jpt.feature"/>
+      <import feature="org.eclipse.jst.ws.axis2tools.feature"/>
+      <import feature="org.eclipse.jpt.eclipselink.feature"/>
+      <import feature="org.eclipse.jst.webpageeditor.feature"/>
+      <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
+      <import feature="org.eclipse.persistence.jpa"/>
+      <import feature="org.eclipse.persistence.moxy"/>
+      <import feature="org.eclipse.persistence.sdo"/>
+	
+	  <!-- the following feature is only valid for 3.6 based builds -->
+	  <import feature="org.eclipse.jsf.feature"/>
+	      
+      <import feature="com.atlassian.connector.eclipse.jira"/>
+      
+      <import feature="org.springframework.ide.eclipse.feature"/>
+	  <import feature="org.springframework.ide.eclipse.aop.feature"/>
+	  <import feature="org.springframework.ide.eclipse.ajdt.feature"/>
+	  <import feature="org.springframework.ide.eclipse.webflow.feature"/>
+	  <import feature="org.springframework.ide.eclipse.mylyn.feature"/>
+	  <import feature="org.springframework.ide.eclipse.osgi.feature"/>			
+	  <import feature="org.springframework.ide.eclipse.security.feature"/>			
+	  <import feature="org.springframework.ide.eclipse.autowire.feature"/>			
+	  <import feature="org.springframework.ide.eclipse.batch.feature"/>		
+	  <import feature="org.springframework.ide.eclipse.integration.feature"/>		
+
+	  <import feature="org.eclipse.ajdt"/>					
+	  <import feature="org.eclipse.contribution.weaving"/>					
+	  <import feature="org.eclipse.contribution.xref"/>					
+
+	  <import feature="com.vmware.vixapi"/>
+      <import feature="org.springsource.sts"/>
+<!--      <import feature="com.springsource.sts.authoring"/>-->
+<!--      <import feature="com.springsource.sts.server.dm"/> -->
+<!--      <import feature="com.springsource.sts.server.ec2"/>-->
+      <import feature="com.springsource.sts.server.tc"/>
+<!--      <import feature="com.springsource.sts.server.cf"/>-->
+      <import feature="com.springsource.sts.tutorials"/>
+      <import feature="com.springsource.sts.vmware"/>
+      <import feature="com.springsource.sts.maven"/>
+      <import feature="com.springsource.sts.roo"/>
+<!--      <import feature="com.springsource.sts.runtimeerroranalysis"/>-->
+<!--      <import feature="com.springsource.sts.grails"/>-->
+
+<!--	  <import feature="org.codehaus.groovy.eclipse.feature"/>
+      <import feature="org.codehaus.groovy.jdt.patch"/>
+      <import feature="org.codehaus.groovy16.feature"/>-->
+
+   </requires>
+
+</feature>
