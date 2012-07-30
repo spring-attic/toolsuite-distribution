@@ -27,13 +27,13 @@ openFile</programArgs>
       startupForegroundColor="c1d72e" />
 
    <launcher name="GGTS">
-      <macosx icon="../../plugins/org.springsource.ggts/Eclipse.icns"/>
+      <macosx icon="../../plugins/org.springsource.ggts/ggts.icns"/>
       <solaris/>
       <win useIco="true">
-         <ico path="../../plugins/org.springsource.ggts/Eclipse.ico"/>
+         <ico path="../../plugins/org.springsource.ggts/ggts.ico"/>
          <bmp/>
       </win>
-      <linux icon="../../plugins/org.springsource.ggts/Eclipse.xpm"/>
+      <linux icon="../../plugins/org.springsource.ggts/ggts.xpm"/>
    </launcher>
 
    <vm>

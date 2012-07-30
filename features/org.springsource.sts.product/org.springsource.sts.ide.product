@@ -27,13 +27,13 @@ openFile</programArgs>
       startupForegroundColor="c1d72e" />
 
    <launcher name="STS">
-      <macosx icon="../../plugins/org.springsource.sts/Eclipse.icns"/>
+      <macosx icon="../../plugins/org.springsource.sts/sts.icns"/>
       <solaris/>
       <win useIco="true">
-         <ico path="../../plugins/org.springsource.sts/Eclipse.ico"/>
+         <ico path="../../plugins/org.springsource.sts/sts.ico"/>
          <bmp/>
       </win>
-      <linux icon="../../plugins/org.springsource.sts/Eclipse.xpm"/>
+      <linux icon="../../plugins/org.springsource.sts/sts.xpm"/>
    </launcher>
 
    <vm>
