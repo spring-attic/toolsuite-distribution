@@ -41,7 +41,7 @@ openFile</programArgs>
 
    <license>
         <url>open_source_licenses.txt</url>
-        <text>GGTS Distribution 3.0.0
+        <text><![CDATA[GGTS Distribution 3.0.0
 
 		===========================================================================
 
@@ -23381,8 +23381,7 @@ openFile</programArgs>
 		years from the date you acquired this Software product. Alternatively, 
 		the Source Files may accompany the VMware product. 
 
-		[GGTSDISTRIBUTION300GAKL073112]
-		</text>
+		[GGTSDISTRIBUTION300GAKL073112]]]></text>
    </license>
 
    <!--

@@ -41,7 +41,7 @@ openFile</programArgs>
 
    <license>
         <url>open_source_licenses.txt</url>
-       <text>	STS Distribution 3.0.0
+       <text><![CDATA[STS Distribution 3.0.0
 
 		===========================================================================
 
@@ -24940,7 +24940,7 @@ openFile</programArgs>
 		years from the date you acquired this Software product. Alternatively, 
 		the Source Files may accompany the VMware product.
 
-		[STSDISTRIBUTION300GAKL073112]</text>
+		[STSDISTRIBUTION300GAKL073112]]]></text>
    </license>
 
    <!--
