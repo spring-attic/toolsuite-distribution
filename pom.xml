@@ -50,6 +50,7 @@
 	<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
 	<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
 	<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
+	<dist.eclipse-integration-gradle-version>${dist.dependencies-version-path}</dist.eclipse-integration-gradle-version>
 	<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
   </properties>
@@ -266,6 +267,11 @@
 	  <id>eclipse-integration-tcserver</id>
 	  <layout>p2</layout>
 	  <url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-tcserver/${dist.eclipse-integration-tcserver-version}</url>
+	</repository>
+	<repository>
+	  <id>eclipse-integration-gradle</id>
+	  <layout>p2</layout>
+	  <url>http://dist.springsource.com/${dist.type}/TOOLS/gradle/${dist.eclipse-integration-gradle-version}</url>
 	</repository>
 	<repository>
 	  <id>grails-ide</id>
