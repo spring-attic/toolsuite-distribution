@@ -8,15 +8,12 @@
   <feature
      url="features/org.springsource.ggts_0.0.0.jar"
      id="org.springsource.ggts" 
-     version="0.0.0">
-    <category name="Core / Groovy/Grails Tool Suite" />
-  </feature>
+     version="0.0.0"/>
 
   <feature
      url="features/org.springsource.ggts.package_0.0.0.jar"
      id="org.springsource.ggts.package" 
-     version="0.0.0">
-  </feature>
+     version="0.0.0"/>
 
   <import feature="org.eclipse.cvs"/>
 
@@ -192,12 +189,6 @@
   </feature>
 
   <feature
-	id="org.springsource.ide.eclipse.commons"
-	version="0.0.0">
-	<category name="Core / Eclipse Integration Commons" />
-  </feature>
-
-  <feature
 	id="org.springsource.ide.eclipse.dashboard"
 	version="0.0.0">
 	<category name="Core / Eclipse Integration Commons" />
@@ -209,6 +200,7 @@
 	<category name="Resources / Eclipse Integration Commons" />
   </feature>
 
+  <feature id="org.springsource.ide.eclipse.commons" version="0.0.0"/>
   <feature id="org.springsource.ide.eclipse.commons.dependencies" version="0.0.0"/>
 
   <!-- tc Server -->
@@ -222,16 +214,51 @@
 
   <!-- Groovy/Grails -->
   <category-def name="Core / Grails IDE for Eclipse" label="Core / Grails IDE for Eclipse"/>
-  <category-def name="Core / Groovy/Grails Tool Suite" label="Core / Groovy/Grails Tool Suite"/>
+  <category-def name="Groovy-Eclipse" label="Groovy-Eclipse"/>
 
   <feature
-	id="org.grails.ide.eclipse" version="0.0.0">
+	id="org.grails.ide.eclipse"
+	version="0.0.0">
 	<category name="Core / Grails IDE for Eclipse" />
   </feature>
 
-  <feature id="org.codehaus.groovy.eclipse.feature" version="0.0.0"/>
-  <feature id="org.codehaus.groovy.jdt.patch" version="0.0.0"/>
-  <feature id="org.codehaus.groovy18.feature" version="0.0.0"/>
-  <feature id="org.codehaus.groovy20.feature" version="0.0.0"/>
+  <feature
+	id="org.codehaus.groovy.eclipse.feature"
+	version="0.0.0">
+	<category name="Groovy-Eclipse" />
+  </feature>
+
+  <feature
+	id="org.codehaus.groovy.jdt.patch"
+	version="0.0.0">
+	<category name="Groovy-Eclipse" />
+  </feature>
+
+  <feature
+	id="org.codehaus.groovy18.feature"
+	version="0.0.0">
+	<category name="Groovy-Eclipse" />
+  </feature>
+
+  <feature
+	id="org.codehaus.groovy20.feature"
+	version="0.0.0">
+	<category name="Groovy-Eclipse" />
+  </feature>
+
+  <!-- Gradle -->
+  <category-def name="Core / Eclipse Integration for Gradle" label="Core / Eclipse Integration for Gradle"/>
+
+  <feature
+	id="org.springsource.ide.eclipse.gradle.feature"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration for Gradle" />
+  </feature>
+
+  <feature
+	id="org.gradle.toolingapi.feature"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration for Gradle" />
+  </feature>
 
 </site>

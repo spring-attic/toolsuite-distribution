@@ -8,15 +8,12 @@
   <feature
      url="features/org.springsource.sts_0.0.0.jar"
      id="org.springsource.sts" 
-     version="0.0.0">
-    <category name="Core / STS" />
-  </feature>
+     version="0.0.0"/>
 
   <feature
      url="features/org.springsource.sts.package_0.0.0.jar"
      id="org.springsource.sts.package" 
-     version="0.0.0">
-  </feature>
+     version="0.0.0"/>
 
   <import feature="org.eclipse.cvs"/>
 
@@ -181,21 +178,12 @@
   <feature id="org.eclipse.contribution.weaving" version="0.0.0"/>
   <feature id="org.eclipse.contribution.xref" version="0.0.0"/>
 
-  <category-def name="Core / STS" label="Core / STS" />
-  <category-def name="Package / STS" label="Package / STS" />
-
   <!-- Eclipse Integration Commons -->
   <category-def name="Core / Eclipse Integration Commons" label="Core / Eclipse Integration Commons"/>
   <category-def name="Resources / Eclipse Integration Commons" label="Resources / Eclipse Integration Commons"/>
 
   <feature
 	id="org.springframework.ide.eclipse.uaa.feature"
-	version="0.0.0">
-	<category name="Core / Eclipse Integration Commons" />
-  </feature>
-
-  <feature
-	id="org.springsource.ide.eclipse.commons"
 	version="0.0.0">
 	<category name="Core / Eclipse Integration Commons" />
   </feature>
@@ -212,6 +200,7 @@
 	<category name="Resources / Eclipse Integration Commons" />
   </feature>
 
+  <feature id="org.springsource.ide.eclipse.commons" version="0.0.0"/>
   <feature id="org.springsource.ide.eclipse.commons.dependencies" version="0.0.0"/>
 
   <!-- tc Server -->
@@ -225,7 +214,6 @@
 
   <!-- Spring IDE -->
   <category-def name="Core / Spring IDE" label="Core / Spring IDE" />
-  <category-def name="Dependencies / Spring IDE" label="Dependencies / Spring IDE" />
   <category-def name="Extensions / Spring IDE" label="Extensions / Spring IDE" />
   <category-def name="Extensions (Incubation) / Spring IDE" label="Extensions (Incubation) / Spring IDE" />
   <category-def name="Integrations / Spring IDE" label="Integrations / Spring IDE" />
@@ -364,6 +352,21 @@
 	<feature
 		id="org.springframework.ide.eclipse.data.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
-	</feature>		
+	</feature>
+
+ 	<!-- Gradle -->
+ 	<category-def name="Core / Eclipse Integration for Gradle" label="Core / Eclipse Integration for Gradle"/>
+
+	<feature
+		id="org.springsource.ide.eclipse.gradle.feature"
+		version="0.0.0">
+		<category name="Core / Eclipse Integration for Gradle" />
+ 	</feature>
+
+ 	<feature
+		id="org.gradle.toolingapi.feature"
+		version="0.0.0">
+		<category name="Core / Eclipse Integration for Gradle" />
+ 	</feature>
 
 </site>
