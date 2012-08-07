@@ -94,7 +94,7 @@
 		<repository>
 		  <id>groovy</id>
 		  <layout>p2</layout>
-		  <url>http://dist.springsource.org/snapshot/GRECLIPSE/e3.7/</url>
+		  <url>http://dist.springsource.org/milestone/GRECLIPSE/e3.7/</url>
 		</repository>
 		<repository>
 		  <id>linked-resources-patch</id>
@@ -153,7 +153,7 @@
 		<repository>
 		  <id>groovy</id>
 		  <layout>p2</layout>
-		  <url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.2/</url>
+		  <url>http://dist.springsource.org/milestone/GRECLIPSE/e4.2/</url>
 		</repository>
 		<repository>
 		  <id>atlassian</id>
@@ -201,7 +201,7 @@
 		<repository>
 		  <id>groovy</id>
 		  <layout>p2</layout>
-		  <url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.2/</url>
+		  <url>http://dist.springsource.org/milestone/GRECLIPSE/e4.2/</url>
 		</repository>
 		<repository>
 		  <id>atlassian</id>
