@@ -3,7 +3,6 @@
   <dirname property="scriptdir" file="${ant.file.remove-uncategorized}"/>
 
   <target name="cleanContentJar">
-    <fail unless="localRepository">Required property localRepository not set</fail>
     <fail unless="projectDir">Required property projectDir not set</fail>
 
     <echo message="maybe removing uncategorized category from content metadata at ${projectDir}/repository/content.jar"/>

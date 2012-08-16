@@ -370,8 +370,7 @@
             <configuration>
               <target>
                 <ant
-                  antfile="${project.parent.relativePath}/common/build-remove-uncategorized.xml">
-                  <property name="localRepository" value="${settings.localRepository}" />
+                  antfile="../../common/build-remove-uncategorized.xml">
                   <property name="projectDir" value="${project.build.directory}" />
                 </ant>
               </target>
