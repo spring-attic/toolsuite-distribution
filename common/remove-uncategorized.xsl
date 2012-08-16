@@ -8,5 +8,5 @@
     </xsl:copy>
   </xsl:template>
   
-  <xsl:template match="unit[contains(@id,'.Default')]" />   
+  <xsl:template match="unit[contains(@id,'.Uncategorized')]" />   
 </xsl:stylesheet>
