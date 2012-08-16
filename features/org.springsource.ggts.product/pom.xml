@@ -360,6 +360,29 @@
           </executions>
       </plugin>
 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>remove-uncategorized</id>
+            <phase>package</phase>
+            <configuration>
+              <target>
+                <ant
+                  antfile="${project.parent.relativePath}/common/build-remove-uncategorized.xml">
+                  <property name="localRepository" value="${settings.localRepository}" />
+                  <property name="projectDir" value="${project.build.directory}" />
+                </ant>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
 
 	<pluginManagement>

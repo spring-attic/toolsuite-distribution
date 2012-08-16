@@ -1,0 +1,34 @@
+<project name="remove-uncategorized" default="cleanContentJar" basedir=".">
+
+  <dirname property="scriptdir" file="${ant.file.remove-uncategorized}"/>
+
+  <target name="cleanContentJar">
+    <fail unless="localRepository">Required property localRepository not set</fail>
+    <fail unless="projectDir">Required property projectDir not set</fail>
+
+    <echo message="maybe removing uncategorized category from content metadata at ${projectDir}/repository/content.jar"/>
+    
+    <available file="${projectDir}/repository/content.jar" property="contentExists" value="true" />
+    <antcall target="remove-uncategorized"/>
+  </target>
+  
+  <target name="remove-uncategorized" if="contentExists">
+
+    <echo>Running on ${os.name} ${os.version} (${os.arch}) / ${ant.version} / ${java.vendor} ${java.vm.name} ${java.version}</echo>
+    
+    <!-- remove the uncategorized category from the content.xml -->
+    <echo message="removing uncategorized category from content metadata"/>
+    <unzip src="${projectDir}/repository/content.jar" dest="${projectDir}/repository"/>	
+    <delete file="${projectDir}/repository/content.jar"/>
+    <move file="${projectDir}/repository/content.xml" tofile="${projectDir}/repository/content-orig.xml"/>
+    <xslt style="${scriptdir}/remove-uncategorized.xsl" in="${projectDir}/repository/content-orig.xml" out="${projectDir}/repository/content.xml"/>
+    <zip destfile="${projectDir}/repository/content.jar">
+      <fileset dir="${projectDir}/repository">
+        <include name="content.xml"/>
+      </fileset>
+    </zip>
+    <delete file="${projectDir}/repository/content-orig.xml"/>
+    <delete file="${projectDir}/repository/content.xml"/>
+  </target>
+
+</project>
