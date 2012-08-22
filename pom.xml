@@ -250,6 +250,34 @@
 	  </modules>
 	</profile>
 
+	<profile>
+	  <id>spring-bundles</id>
+	  <modules>
+		<module>releng/org.springsource.sts.distribution-bundles</module>
+	  </modules>
+	</profile>
+
+	<profile>
+	  <id>groovy-grails-bundles</id>
+	  <modules>
+		<module>releng/org.springsource.ggts.distribution-bundles</module>
+	  </modules>
+	</profile>
+
+	<profile>
+	  <id>spring-installer</id>
+	  <modules>
+		<module>releng/org.springsource.sts.distribution-installer</module>
+	  </modules>
+	</profile>
+
+	<profile>
+	  <id>groovy-grails-installer</id>
+	  <modules>
+		<module>releng/org.springsource.ggts.distribution-installer</module>
+	  </modules>
+	</profile>
+
   </profiles>
 
   <repositories>

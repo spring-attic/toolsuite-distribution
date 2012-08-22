@@ -1,445 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.springsource.sts</groupId>
-    <artifactId>org.springsource.sts.parent</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
-    <relativePath>../../pom.xml</relativePath>
-  </parent>
-  <artifactId>org.springsource.ggts.product</artifactId>
-  <packaging>eclipse-repository</packaging>
-  <name>org.springsource.ggts.product</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springsource.sts</groupId>
+		<artifactId>org.springsource.sts.parent</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	<artifactId>org.springsource.ggts.product</artifactId>
+	<packaging>eclipse-repository</packaging>
+	<name>org.springsource.ggts.product</name>
 
-  <properties>
-	<features>org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-	<build.destination.cocoa.x86>target/products/org.springsource.ggts.ide/macosx/cocoa/x86/eclipse</build.destination.cocoa.x86>
-	<build.destination.cocoa.x86_64>target/products/org.springsource.ggts.ide/macosx/cocoa/x86_64/eclipse</build.destination.cocoa.x86_64>
-	<build.destination.linux.x86>target/products/org.springsource.ggts.ide/linux/gtk/x86/eclipse</build.destination.linux.x86>
-	<build.destination.linux.x86_64>target/products/org.springsource.ggts.ide/linux/gtk/x86_64/eclipse</build.destination.linux.x86_64>
-	<build.destination.win.x86>target/products/org.springsource.ggts.ide/win32/win32/x86/eclipse</build.destination.win.x86>
-	<build.destination.win.x86_64>target/products/org.springsource.ggts.ide/win32/win32/x86_64/eclipse</build.destination.win.x86_64>
-	
-	<dist.accessKey>${accessKey}</dist.accessKey>
-	<dist.secretKey>${secretKey}</dist.secretKey>
-  </properties>
+	<properties>
+		<features>org.springframework.ide.eclipse.uaa.feature.feature.group</features>
+		<build.destination.cocoa.x86>target/products/org.springsource.ggts.ide/macosx/cocoa/x86</build.destination.cocoa.x86>
+		<build.destination.cocoa.x86_64>target/products/org.springsource.ggts.ide/macosx/cocoa/x86_64</build.destination.cocoa.x86_64>
+		<build.destination.linux.x86>target/products/org.springsource.ggts.ide/linux/gtk/x86</build.destination.linux.x86>
+		<build.destination.linux.x86_64>target/products/org.springsource.ggts.ide/linux/gtk/x86_64</build.destination.linux.x86_64>
+		<build.destination.win.x86>target/products/org.springsource.ggts.ide/win32/win32/x86</build.destination.win.x86>
+		<build.destination.win.x86_64>target/products/org.springsource.ggts.ide/win32/win32/x86_64</build.destination.win.x86_64>
 
-  <profiles>
-	<profile>
-	  <id>e37</id>
-	  <properties>
-<sites>http://download.eclipse.org/releases/indigo/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
-	  </properties>
-	</profile>
-	<profile>
-	  <id>e38</id>
-	  <properties>
-<sites>http://download.eclipse.org/releases/juno/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
-	  </properties>
-	</profile>
-	<profile>
-	  <id>e42</id>
-	  <properties>
-<sites>http://download.eclipse.org/releases/juno/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
-	  </properties>
-	</profile>
-  </profiles>
+		<dist.accessKey>${accessKey}</dist.accessKey>
+		<dist.secretKey>${secretKey}</dist.secretKey>
+	</properties>
 
-  <build>
-    <plugins>
-	
-		  <plugin>
-			<groupId>org.codehaus.mojo</groupId>
-			<artifactId>properties-maven-plugin</artifactId>
-			<version>1.0-alpha-2</version>
-			<executions>
-			  <execution>
-				<phase>initialize</phase>
-				<goals>
-				  <goal>read-project-properties</goal>
-				</goals>
+	<profiles>
+		<profile>
+			<id>e37</id>
+			<properties>
+				<sites>http://download.eclipse.org/releases/indigo/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+			</properties>
+		</profile>
+		<profile>
+			<id>e38</id>
+			<properties>
+				<sites>http://download.eclipse.org/releases/juno/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+			</properties>
+		</profile>
+		<profile>
+			<id>e42</id>
+			<properties>
+				<sites>http://download.eclipse.org/releases/juno/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+			</properties>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>1.0-alpha-2</version>
+				<executions>
+					<execution>
+						<phase>initialize</phase>
+						<goals>
+							<goal>read-project-properties</goal>
+						</goals>
+						<configuration>
+							<quiet>true</quiet>
+							<files>
+								<file>${dist.properties}</file>
+							</files>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-publisher-plugin</artifactId>
+				<version>${tycho-version}</version>
 				<configuration>
-				  <quiet>true</quiet>
-				  <files>
-					<file>${dist.properties}</file>
-				  </files>
+					<publishArtifacts>true</publishArtifacts>
 				</configuration>
-			  </execution>
-			</executions>
-		  </plugin>
+			</plugin>
 
-      <plugin>
-		<groupId>org.eclipse.tycho</groupId>
-		<artifactId>tycho-p2-publisher-plugin</artifactId>
-		<version>${tycho-version}</version>
-		<configuration>
-		  <publishArtifacts>true</publishArtifacts>
-		</configuration>
-      </plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+						<phase>verify</phase>
+					</execution>
+				</executions>
+				<configuration>
+					<products>
+						<product>
+							<id>org.springsource.ggts.ide</id>
+							<rootFolder>ggts-${unqualifiedVersion}.${p2.qualifier}</rootFolder>
+							<archiveFileName>groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}</archiveFileName>
+						</product>
+					</products>
+					<formats>
+						<linux>tar.gz</linux>
+						<macosx>tar.gz</macosx>
+					</formats>
+				</configuration>
+			</plugin>
 
-      <plugin>
-		<groupId>org.eclipse.tycho</groupId>
-		<artifactId>tycho-p2-director-plugin</artifactId>
-		<version>${tycho-version}</version>
-		<executions>
-		  <execution>
-			<id>materialize-products</id>
-			<goals>
-			  <goal>materialize-products</goal>
-			</goals>
-            <phase>package</phase>
-		  </execution>
-		  <execution>
-			<id>archive-products</id>
-			<goals>
-			  <goal>archive-products</goal>
-			</goals>
-            <phase>verify</phase>
-		  </execution>
-		</executions>
-		<configuration>
-		  <products>
-			<product>
-			  <id>org.springsource.ggts.ide</id>
-              <rootFolder>eclipse</rootFolder>
-		      <archiveFileName>groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}</archiveFileName>
-		    </product>
-		  </products>
-          <formats>
-            <linux>tar.gz</linux>
-            <macosx>tar.gz</macosx>
-          </formats>
-		</configuration>
-      </plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-p2-extras-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>mirror</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<source>
+						<repository>
+							<url>file://${project.build.directory}/repository</url>
+							<layout>p2</layout>
+						</repository>
+					</source>
+					<destination>${project.build.directory}/../../org.springsource.sts.product/target/unitedRepository</destination>
+					<append>true</append>
+				</configuration>
+			</plugin>
 
-      <plugin>
-          <groupId>org.eclipse.tycho.extras</groupId>
-          <artifactId>tycho-p2-extras-plugin</artifactId>
-          <version>${tycho-version}</version>
-          <executions>
-              <execution>
-                  <phase>verify</phase>
-                  <goals>
-                      <goal>mirror</goal>
-                  </goals>
-              </execution>
-          </executions>
-          <configuration>
-              <source>
-                  <repository>
-                      <url>file://${project.build.directory}/repository</url>
-                      <layout>p2</layout>
-                  </repository>
-              </source>
-              <destination>${project.build.directory}/../../org.springsource.sts.product/target/unitedRepository</destination>
-              <append>true</append>
-          </configuration>
-      </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
 
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-antrun-plugin</artifactId>
-			<version>1.6</version>
-			<executions>
-				<execution>
-					<id>zip-dist</id>
-					<phase>package</phase>
-					<configuration>
-						<target>
+					<execution>
+						<id>remove-uncategorized</id>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<ant antfile="../../common/build-remove-uncategorized.xml">
+									<property name="projectDir" value="${project.build.directory}" />
+								</ant>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
 
-							<property name="site.target.dir" value="${project.build.directory}" />
-							<property name="dist.full.version" value="${unqualifiedVersion}.${p2.qualifier}-${dist.target}" />
+					<execution>
+						<id>upload-united-repository</id>
+						<phase>deploy</phase>
+						<configuration>
+							<target>
 
-							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
-							<property name="dist.full.path" value="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
 
-							<delete file="${dist.full.path}" />
-							<zip zipfile="${dist.full.path}" filesonly="true">
-								<zipfileset dir="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository">
-									<exclude name="*.zip" />
-									<exclude name="**/*.gz" />
-								</zipfileset>
-							</zip>
-							<checksum file="${dist.full.path}" algorithm="SHA1" fileext=".sha1" />
-							<checksum file="${dist.full.path}" algorithm="MD5" fileext=".md5" />
+								<property name="site.target.dir" value="${project.build.directory}" />
+								<property name="dist.full.version"
+									value="${unqualifiedVersion}.${p2.qualifier}-${dist.target}" />
 
-						</target>
-					</configuration>
-					<goals>
-						<goal>run</goal>
-					</goals>
-				</execution>
-				
-				<execution>
-					<id>upload-united-repository</id>
-					<phase>deploy</phase>
-					<configuration>
-						<target>
+								<property name="dist.file.name"
+									value="${dist.project}-${dist.full.version}-updatesite.zip" />
+								<property name="dist.full.path"
+									value="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
 
-							<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
-							<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
-
-							<property name="site.target.dir" value="${project.build.directory}" />
-							<property name="dist.full.version" value="${unqualifiedVersion}.${p2.qualifier}-${dist.target}" />
-							
-							<property name="dist.file.name" value="${dist.project}-${dist.full.version}-updatesite.zip" />
-							<property name="dist.full.path" value="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
-							
-							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
-
-								<delete bucketName="${dist.bucket}">
-									<fileset dir="${dist.path.repo}">
-										<include name="site.xml" />
-										<include name="content.jar" />
-										<include name="artifacts.jar" />
-										<include name="plugins/**" />
-										<include name="features/**" />
-										<include name="binary/**" />
-									</fileset>
-								</delete>
-
-								<upload bucketName="${dist.bucket}" toDir="${dist.path.repo}" publicRead="true">
-									<fileset dir="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository">
-										<include name="**/*" />
-										<include name="**" />
+								<delete file="${dist.full.path}" />
+								<zip zipfile="${dist.full.path}" filesonly="true">
+									<zipfileset
+										dir="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository">
 										<exclude name="*.zip" />
-									</fileset>
-								</upload>
+										<exclude name="**/*.gz" />
+									</zipfileset>
+								</zip>
+								<checksum file="${dist.full.path}" algorithm="SHA1"
+									fileext=".sha1" />
+								<checksum file="${dist.full.path}" algorithm="MD5"
+									fileext=".md5" />
 
-								<upload bucketName="${dist.bucket}" file="${dist.full.path}" toFile="${dist.path.repo}/${dist.file.name}" publicRead="true">
-									<metadata name="project.name" value="${dist.name}" />
-									<metadata name="release.type" value="${dist.type}" />
-									<metadata name="bundle.version" value="${dist.full.version}" />
-									<metadata name="package.file.name" value="${dist.file.name}" />
-								</upload>
-								
-							</s3>
+								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
-						</target>
-					</configuration>
-					<goals>
-						<goal>run</goal>
-					</goals>
-				</execution>
+									<delete bucketName="${dist.bucket}">
+										<fileset dir="${dist.path.repo}">
+											<include name="site.xml" />
+											<include name="content.jar" />
+											<include name="artifacts.jar" />
+											<include name="plugins/**" />
+											<include name="features/**" />
+											<include name="binary/**" />
+											<include name="*.zip" />
+											<include name="*.sha1" />
+											<include name="*.md5" />
+										</fileset>
+									</delete>
 
-				<execution>
-					<id>upload-grails-product</id>
-					<phase>deploy</phase>
+									<upload bucketName="${dist.bucket}" toDir="${dist.path.repo}"
+										publicRead="true">
+										<fileset
+											dir="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository">
+											<include name="**/*" />
+											<include name="**" />
+											<exclude name="*.zip" />
+										</fileset>
+									</upload>
+
+									<upload bucketName="${dist.bucket}" file="${dist.full.path}"
+										toFile="${dist.path.repo}/${dist.file.name}" publicRead="true">
+										<metadata name="project.name" value="${dist.name}" />
+										<metadata name="release.type" value="${dist.type}" />
+										<metadata name="bundle.version" value="${dist.full.version}" />
+										<metadata name="package.file.name" value="${dist.file.name}" />
+									</upload>
+
+								</s3>
+
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>upload-grails-product</id>
+						<phase>deploy</phase>
+						<configuration>
+							<target>
+
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
+
+								<property name="site.target.dir" value="${project.build.directory}" />
+
+								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
+
+									<delete bucketName="${dist.bucket}">
+										<fileset dir="${dist.path.product}">
+											<include name="groovy-*.zip" />
+											<include name="groovy-*.gz" />
+										</fileset>
+									</delete>
+
+									<upload bucketName="${dist.bucket}" toDir="${dist.path.product}"
+										publicRead="true">
+										<fileset dir="${site.target.dir}/products">
+											<include name="*.zip" />
+											<include name="*.tar.gz" />
+										</fileset>
+									</upload>
+
+								</s3>
+
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework.build</groupId>
+						<artifactId>org.springframework.build.aws.ant</artifactId>
+						<version>3.0.5.RELEASE</version>
+					</dependency>
+					<dependency>
+						<groupId>net.java.dev.jets3t</groupId>
+						<artifactId>jets3t</artifactId>
+						<version>0.7.2</version>
+					</dependency>
+					<dependency>
+						<groupId>ant-contrib</groupId>
+						<artifactId>ant-contrib</artifactId>
+						<version>20020829</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-eclipserun-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>root-features-osx-32bit</id>
+						<configuration>
+							<argLine>-Declipse.p2.mirrors=false</argLine>
+							<appArgLine>-consoleLog -application
+								org.eclipse.equinox.p2.director -nosplash -destination
+								${build.destination.cocoa.x86}/ggts-${unqualifiedVersion}.${p2.qualifier}
+								-repository ${sites} -installIUs ${features}</appArgLine>
+						</configuration>
+						<goals>
+							<goal>eclipse-run</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+
+					<execution>
+						<id>root-features-osx-64bit</id>
+						<configuration>
+							<argLine>-Declipse.p2.mirrors=false</argLine>
+							<appArgLine>-consoleLog -application
+								org.eclipse.equinox.p2.director -nosplash -destination
+								${build.destination.cocoa.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier}
+								-repository ${sites} -installIUs ${features}</appArgLine>
+						</configuration>
+						<goals>
+							<goal>eclipse-run</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+
+					<execution>
+						<id>root-features-linux-32bit</id>
+						<configuration>
+							<argLine>-Declipse.p2.mirrors=false</argLine>
+							<appArgLine>-consoleLog -application
+								org.eclipse.equinox.p2.director -nosplash -destination
+								${build.destination.linux.x86}/ggts-${unqualifiedVersion}.${p2.qualifier}
+								-repository ${sites} -installIUs ${features}</appArgLine>
+						</configuration>
+						<goals>
+							<goal>eclipse-run</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+
+					<execution>
+						<id>root-features-linux-64bit</id>
+						<configuration>
+							<argLine>-Declipse.p2.mirrors=false</argLine>
+							<appArgLine>-consoleLog -application
+								org.eclipse.equinox.p2.director -nosplash -destination
+								${build.destination.linux.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier}
+								-repository ${sites} -installIUs ${features}</appArgLine>
+						</configuration>
+						<goals>
+							<goal>eclipse-run</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+
+					<execution>
+						<id>root-features-win-32bit</id>
+						<configuration>
+							<argLine>-Declipse.p2.mirrors=false</argLine>
+							<appArgLine>-consoleLog -application
+								org.eclipse.equinox.p2.director -nosplash -destination
+								${build.destination.win.x86}/ggts-${unqualifiedVersion}.${p2.qualifier}
+								-repository ${sites} -installIUs ${features}</appArgLine>
+						</configuration>
+						<goals>
+							<goal>eclipse-run</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+
+					<execution>
+						<id>root-features-win-64bit</id>
+						<configuration>
+							<argLine>-Declipse.p2.mirrors=false</argLine>
+							<appArgLine>-consoleLog -application
+								org.eclipse.equinox.p2.director -nosplash -destination
+								${build.destination.win.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier}
+								-repository ${sites} -installIUs ${features}</appArgLine>
+						</configuration>
+						<goals>
+							<goal>eclipse-run</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+
+				</executions>
+			</plugin>
+
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>target-platform-configuration</artifactId>
+					<version>${tycho-version}</version>
 					<configuration>
-						<target>
-
-							<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
-							<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
-
-							<property name="site.target.dir" value="${project.build.directory}" />
-							
-							<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
-
-								<delete bucketName="${dist.bucket}">
-									<fileset dir="${dist.path.product}">
-										<include name="groovy-*.zip" />
-										<include name="groovy-*.gz" />
-									</fileset>
-								</delete>
-
-								<upload bucketName="${dist.bucket}" toDir="${dist.path.product}" publicRead="true">
-									<fileset dir="${site.target.dir}/products">
-										<include name="*.zip" />
-										<include name="*.tar.gz" />
-									</fileset>
-								</upload>
-
-							</s3>
-
-						</target>
+						<resolver>p2</resolver>
+						<pomDependencies>consider</pomDependencies>
+						<ignoreTychoRepositories>true</ignoreTychoRepositories>
+						<environments>
+							<environment>
+								<os>macosx</os>
+								<ws>cocoa</ws>
+								<arch>x86</arch>
+							</environment>
+							<environment>
+								<os>macosx</os>
+								<ws>cocoa</ws>
+								<arch>x86_64</arch>
+							</environment>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86</arch>
+							</environment>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86_64</arch>
+							</environment>
+							<environment>
+								<os>linux</os>
+								<ws>gtk</ws>
+								<arch>x86</arch>
+							</environment>
+							<environment>
+								<os>linux</os>
+								<ws>gtk</ws>
+								<arch>x86_64</arch>
+							</environment>
+						</environments>
 					</configuration>
-					<goals>
-						<goal>run</goal>
-					</goals>
-				</execution>
+				</plugin>
 
-			</executions>
-			<dependencies>
-				<dependency>
-					<groupId>org.springframework.build</groupId>
-					<artifactId>org.springframework.build.aws.ant</artifactId>
-					<version>3.0.5.RELEASE</version>
-				</dependency>
-				<dependency>
-					<groupId>net.java.dev.jets3t</groupId>
-					<artifactId>jets3t</artifactId>
-					<version>0.7.2</version>
-				</dependency>
-				<dependency>
-					<groupId>ant-contrib</groupId>
-					<artifactId>ant-contrib</artifactId>
-					<version>20020829</version>
-				</dependency>
-			</dependencies>
-		</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-packaging-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<format>yyyyMMddHHmm-'${p2.qualifier}'-'${package.qualifierPrefix}'</format>
+						<archiveSite>true</archiveSite>
+					</configuration>
+				</plugin>
 
-      <plugin>
-          <groupId>org.eclipse.tycho.extras</groupId>
-          <artifactId>tycho-eclipserun-plugin</artifactId>
-          <version>${tycho-version}</version>
-          <executions>
-              <execution>
-				<id>root-features-osx-32bit</id>
-		          <configuration>
-		              <argLine>-Declipse.p2.mirrors=false</argLine>
-		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86} -repository ${sites} -installIUs ${features}</appArgLine>
-		          </configuration>
-                  <goals>
-                      <goal>eclipse-run</goal>
-                  </goals>
-                  <phase>package</phase>
-              </execution>
-
-              <execution>
-				<id>root-features-osx-64bit</id>
-		          <configuration>
-		              <argLine>-Declipse.p2.mirrors=false</argLine>
-		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
-		          </configuration>
-                  <goals>
-                      <goal>eclipse-run</goal>
-                  </goals>
-                  <phase>package</phase>
-              </execution>
-
-              <execution>
-				<id>root-features-linux-32bit</id>
-		          <configuration>
-		              <argLine>-Declipse.p2.mirrors=false</argLine>
-		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86} -repository ${sites} -installIUs ${features}</appArgLine>
-		          </configuration>
-                  <goals>
-                      <goal>eclipse-run</goal>
-                  </goals>
-                  <phase>package</phase>
-              </execution>
-
-              <execution>
-				<id>root-features-linux-64bit</id>
-		          <configuration>
-		              <argLine>-Declipse.p2.mirrors=false</argLine>
-		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
-		          </configuration>
-                  <goals>
-                      <goal>eclipse-run</goal>
-                  </goals>
-                  <phase>package</phase>
-              </execution>
-
-              <execution>
-				<id>root-features-win-32bit</id>
-		          <configuration>
-		              <argLine>-Declipse.p2.mirrors=false</argLine>
-		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86} -repository ${sites} -installIUs ${features}</appArgLine>
-		          </configuration>
-                  <goals>
-                      <goal>eclipse-run</goal>
-                  </goals>
-                  <phase>package</phase>
-              </execution>
-
-              <execution>
-				<id>root-features-win-64bit</id>
-		          <configuration>
-		              <argLine>-Declipse.p2.mirrors=false</argLine>
-		              <appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86_64} -repository ${sites} -installIUs ${features}</appArgLine>
-		          </configuration>
-                  <goals>
-                      <goal>eclipse-run</goal>
-                  </goals>
-                  <phase>package</phase>
-              </execution>
-
-          </executions>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>remove-uncategorized</id>
-            <phase>package</phase>
-            <configuration>
-              <target>
-                <ant
-                  antfile="../../common/build-remove-uncategorized.xml">
-                  <property name="projectDir" value="${project.build.directory}" />
-                </ant>
-              </target>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
-    </plugins>
-
-	<pluginManagement>
-	  <plugins>
-		<plugin>
-		  <groupId>org.eclipse.tycho</groupId>
-		  <artifactId>target-platform-configuration</artifactId>
-		  <version>${tycho-version}</version>
-		  <configuration>
-			<resolver>p2</resolver>
-			<pomDependencies>consider</pomDependencies>
-			<ignoreTychoRepositories>true</ignoreTychoRepositories>
-			<environments>
-			  <environment>
-				<os>macosx</os>
-				<ws>cocoa</ws>
-				<arch>x86</arch>
-			  </environment>
-			  <environment>
-				<os>macosx</os>
-				<ws>cocoa</ws>
-				<arch>x86_64</arch>
-			  </environment>
-			  <environment>
-				<os>win32</os>
-				<ws>win32</ws>
-				<arch>x86</arch>
-			  </environment>
-			  <environment>
-				<os>win32</os>
-				<ws>win32</ws>
-				<arch>x86_64</arch>
-			  </environment>
-			  <environment>
-				<os>linux</os>
-				<ws>gtk</ws>
-				<arch>x86</arch>
-			  </environment>
-			  <environment>
-				<os>linux</os>
-				<ws>gtk</ws>
-				<arch>x86_64</arch>
-			  </environment>
-			</environments>
-		  </configuration>
-		</plugin>
-		
-		<plugin>
-		  <groupId>org.eclipse.tycho</groupId>
-		  <artifactId>tycho-packaging-plugin</artifactId>
-		  <version>${tycho-version}</version>
-		  <configuration>
-			<format>yyyyMMddHHmm-'${p2.qualifier}'-'${package.qualifierPrefix}'</format>
-			<archiveSite>true</archiveSite>
-		  </configuration>
-		</plugin>
-		
-	  </plugins>
-	</pluginManagement>
-  </build>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>

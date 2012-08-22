@@ -1,0 +1,216 @@
+<project name="build-distribution" default="" basedir=".">
+
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+
+	<property name="roo.version" value="1.2.2.RELEASE" />
+	<property name="tcserver.version" value="2.7.1.RELEASE" />
+	<property name="maven.version" value="3.0.4" />
+	<property name="grails.version" value="2.1.0" />
+
+	<property name="roo.name" value="spring-roo-${roo.version}" />
+	<property name="tcserver.name" value="vfabric-tc-server-developer-${tcserver.version}" />
+	<property name="maven.name" value="apache-maven-${maven.version}" />
+	<property name="grails.name" value="grails-${grails.version}" />
+
+	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/org.springsource.sts.product/target/products/" />
+	<property name="product.build.directory.ggts" value="${project.build.directory}/../../../features/org.springsource.ggts.product/target/products/" />
+	<property name="unqualifiedVersion" value="3.0.0" />
+
+	<target name="create-bundled-distribution-sts">
+		<antcall target="download-tcserver"/>
+		<antcall target="download-maven"/>
+		<antcall target="download-springroo"/>
+
+		<antcall target="create-sts-bundle-archive-tar">
+			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86"/>
+			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-sts-bundle-archive-tar">
+			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86_64"/>
+			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-sts-bundle-archive-tar">
+			<param name="path" value="org.springsource.sts.ide/linux/gtk/x86"/>
+			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-sts-bundle-archive-tar">
+			<param name="path" value="org.springsource.sts.ide/linux/gtk/x86_64"/>
+			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk-x86_64.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-sts-bundle-archive-zip">
+			<param name="path" value="org.springsource.sts.ide/win32/win32/x86"/>
+			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32.zip"/>
+		</antcall>
+
+		<antcall target="create-sts-bundle-archive-zip">
+			<param name="path" value="org.springsource.sts.ide/win32/win32/x86_64"/>
+			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32-x86_64.zip"/>
+		</antcall>
+	</target>
+
+	<target name="create-bundled-distribution-ggts">
+		<antcall target="download-tcserver"/>
+		<antcall target="download-grails"/>
+
+		<antcall target="create-ggts-bundle-archive-tar">
+			<param name="path" value="org.springsource.ggts.ide/macosx/cocoa/x86"/>
+			<param name="destName" value="${project.build.directory}/groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-ggts-bundle-archive-tar">
+			<param name="path" value="org.springsource.ggts.ide/macosx/cocoa/x86_64"/>
+			<param name="destName" value="${project.build.directory}/groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-ggts-bundle-archive-tar">
+			<param name="path" value="org.springsource.ggts.ide/linux/gtk/x86"/>
+			<param name="destName" value="${project.build.directory}/groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-ggts-bundle-archive-tar">
+			<param name="path" value="org.springsource.ggts.ide/linux/gtk/x86_64"/>
+			<param name="destName" value="${project.build.directory}/groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk-x86_64.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-ggts-bundle-archive-zip">
+			<param name="path" value="org.springsource.ggts.ide/win32/win32/x86"/>
+			<param name="destName" value="${project.build.directory}/groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32.zip"/>
+		</antcall>
+
+		<antcall target="create-ggts-bundle-archive-zip">
+			<param name="path" value="org.springsource.ggts.ide/win32/win32/x86_64"/>
+			<param name="destName" value="${project.build.directory}/groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32-x86_64.zip"/>
+		</antcall>
+	</target>
+
+	<target name="create-sts-bundle-archive-tar">
+		<exec executable="gnutar">
+			<arg value="--transform"/>
+			<arg value="s,^,springsource/,S"/>
+			<arg value="-czf"/>
+			<arg value="${destName}"/>
+			<arg value="-C"/>
+			<arg value="${project.build.directory}"/>
+			<arg value="${roo.name}"/>
+			<arg value="${tcserver.name}"/>
+			<arg value="${maven.name}"/>
+			<arg value="-C"/>
+			<arg value="${product.build.directory.sts}/${path}"/>
+			<arg value="sts-${unqualifiedVersion}.${p2.qualifier}"/>
+			<arg value="-C"/>
+			<arg value="${project.build.directory}/.."/>
+			<arg value="README-BUNDLES-STS.txt"/>
+		</exec>
+
+		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
+		<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
+
+	</target>
+
+	<target name="create-ggts-bundle-archive-tar">
+		<exec executable="gnutar">
+			<arg value="--transform"/>
+			<arg value="s,^,springsource/,S"/>
+			<arg value="-czf"/>
+			<arg value="${destName}"/>
+			<arg value="-C"/>
+			<arg value="${project.build.directory}"/>
+			<arg value="${grails.name}"/>
+			<arg value="${tcserver.name}"/>
+			<arg value="-C"/>
+			<arg value="${product.build.directory.ggts}/${path}"/>
+			<arg value="ggts-${unqualifiedVersion}.${p2.qualifier}"/>
+			<arg value="-C"/>
+			<arg value="${project.build.directory}/.."/>
+			<arg value="README-BUNDLES-GGTS.txt"/>
+		</exec>
+
+		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
+		<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
+
+	</target>
+
+	<target name="create-sts-bundle-archive-zip">
+		<zip destfile="${destName}">
+			<zipfileset dir="${product.build.directory.sts}/${path}/sts-${unqualifiedVersion}.${p2.qualifier}" prefix="springsource/sts-${unqualifiedVersion}.${p2.qualifier}"/>
+			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="springsource/${tcserver.name}"/>
+			<zipfileset dir="${project.build.directory}/${maven.name}" prefix="springsource/${maven.name}"/>
+			<zipfileset dir="${project.build.directory}/${roo.name}" prefix="springsource/${roo.name}"/>
+			<zipfileset file="${project.build.directory}/../README-BUNDLES-STS.txt" prefix="springsource/"/>
+		</zip>
+
+		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
+		<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
+
+	</target>
+
+	<target name="create-ggts-bundle-archive-zip">
+		<zip destfile="${destName}">
+			<zipfileset dir="${product.build.directory.ggts}/${path}/ggts-${unqualifiedVersion}.${p2.qualifier}" prefix="springsource/ggts-${unqualifiedVersion}.${p2.qualifier}"/>
+			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="springsource/${tcserver.name}"/>
+			<zipfileset dir="${project.build.directory}/${grails.name}" prefix="springsource/${grails.name}"/>
+			<zipfileset file="${project.build.directory}/../README-BUNDLES-GGTS.txt" prefix="springsource/"/>
+		</zip>
+
+		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
+		<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
+
+	</target>
+
+	<target name="download-tcserver">
+		<get src="http://download.springsource.com/release/TCS/${tcserver.name}.zip"
+		 dest="${project.build.directory}/${tcserver.name}.zip"
+		 verbose="true"
+		 skipexisting="true"/>
+		<if>
+			<available file="${project.build.directory}/${tcserver.name}.zip" />
+			<then>
+				<unzip src="${project.build.directory}/${tcserver.name}.zip" dest="${project.build.directory}"/>
+			</then>
+		</if>
+	</target>
+
+	<target name="download-maven">
+		<get src="http://www.us.apache.org/dist/maven/binaries/${maven.name}-bin.zip"
+		 dest="${project.build.directory}/${maven.name}-bin.zip"
+		 verbose="true"
+		 skipexisting="true"/>
+		<if>
+			<available file="${project.build.directory}/${maven.name}-bin.zip" />
+			<then>
+				<unzip src="${project.build.directory}/${maven.name}-bin.zip" dest="${project.build.directory}"/>
+			</then>
+		</if>
+	</target>
+
+	<target name="download-springroo">
+		<get src="http://s3.amazonaws.com/dist.springframework.org/release/ROO/${roo.name}.zip"
+		 dest="${project.build.directory}/${roo.name}.zip"
+		 verbose="true"
+		 skipexisting="true"/>
+		<if>
+			<available file="${project.build.directory}/${roo.name}.zip" />
+			<then>
+				<unzip src="${project.build.directory}/${roo.name}.zip" dest="${project.build.directory}"/>
+			</then>
+		</if>
+	</target>
+
+	<target name="download-grails">
+		<get src="http://s3.amazonaws.com/dist.springframework.org/release/GRAILS/${grails.name}.zip"
+		 dest="${project.build.directory}/${grails.name}.zip"
+		 verbose="true"
+		 skipexisting="true"/>
+		<if>
+			<available file="${project.build.directory}/${grails.name}.zip" />
+			<then>
+				<unzip src="${project.build.directory}/${grails.name}.zip" dest="${project.build.directory}"/>
+			</then>
+		</if>
+	</target>
+
+</project>

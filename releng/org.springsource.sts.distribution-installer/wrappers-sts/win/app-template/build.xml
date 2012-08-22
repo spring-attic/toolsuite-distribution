@@ -1,0 +1,13 @@
+<project default="exe" basedir=".">
+
+	<property environment="env"/>
+    <condition property="LAUNCH4J_HOME" value="${env.LAUNCH4J_HOME}" else="../../../launch4j">
+        <isset property="env.LAUNCH4J_HOME"/>
+    </condition>
+
+	<target name="exe">
+		<taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${LAUNCH4J_HOME}/launch4j.jar:${LAUNCH4J_HOME}/lib/xstream.jar" />
+		<launch4j configFile="install.xml" jar="${installer.jar}" outfile="${installer.exe}"/>
+	</target>
+
+</project>

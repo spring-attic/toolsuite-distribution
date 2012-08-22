@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+<shortcuts>
+	
+  <skipIfNotSupported/>
+<!--
+  <programGroup defaultName="SpringSource"
+                location="applications"/>
+
+  <shortcut 
+	name="SpringSource Tool Suite %sts.version%" 
+	programGroup="yes" 
+	desktop="yes" 
+	applications="no"
+	startMenu="yes" 
+	startup="no" 
+	target="$INSTALL_PATH/sts-%sts.version%/STS" 
+	commandLine="" 
+	workingDirectory="$INSTALL_PATH/sts-%sts.version%" 
+	description="Launch SpringSource Tool Suite" 
+	iconFile="$INSTALL_PATH/sts-%sts.version%/icon.xpm" 
+	iconIndex="0" 
+	type="Application" 
+	encoding="UTF-8" 
+	terminal="false" 
+	KdeSubstUID="false" 
+	initialState="normal"> 
+	<createForPack name="SpringSource Tool Suite %sts.version%"/> 
+  </shortcut>
+-->	
+</shortcuts>
+
