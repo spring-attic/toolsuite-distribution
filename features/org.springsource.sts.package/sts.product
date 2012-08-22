@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
-<product name="SpringSource Tool Suite" id="com.springsource.sts.ide" application="org.eclipse.ui.ide.workbench" version="3.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="SpringSource Tool Suite" id="com.springsource.sts.ide" application="org.eclipse.ui.ide.workbench" version="3.1.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -227,7 +227,7 @@ February, 18th 2010</text>
    </features>
 
    <configurations>
-   	  <property name="eclipse.buildId" value="3.0.0.qualifier"/>
+   	  <property name="eclipse.buildId" value="3.1.0.qualifier"/>
    	  <property name="osgi.instance.area.default" value="@user.home/Documents/workspace-sts-@QUALIFIER@"/>
    	  <property name="osgi.splashPath" value="platform:/base/plugins/com.springsource.sts"/>
    	  
