@@ -14,7 +14,15 @@
 
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/org.springsource.sts.product/target/products/" />
 	<property name="product.build.directory.ggts" value="${project.build.directory}/../../../features/org.springsource.ggts.product/target/products/" />
-	<property name="unqualifiedVersion" value="3.0.0" />
+	<property name="unqualifiedVersion" value="3.1.0" />
+
+    <condition property="tar-command" value="gnutar">
+        <os family="mac" />
+    </condition>
+
+    <condition property="tar-command" value="tar">
+	    <os family="unix" />
+    </condition>
 
 	<target name="create-bundled-distribution-sts">
 		<antcall target="download-tcserver"/>
@@ -88,7 +96,7 @@
 	</target>
 
 	<target name="create-sts-bundle-archive-tar">
-		<exec executable="gnutar">
+		<exec executable="${tar-command}">
 			<arg value="--transform"/>
 			<arg value="s,^,springsource/,S"/>
 			<arg value="-czf"/>
@@ -112,7 +120,7 @@
 	</target>
 
 	<target name="create-ggts-bundle-archive-tar">
-		<exec executable="gnutar">
+		<exec executable="${tar-command}">
 			<arg value="--transform"/>
 			<arg value="s,^,springsource/,S"/>
 			<arg value="-czf"/>
