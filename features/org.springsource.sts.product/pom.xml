@@ -140,12 +140,13 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.6</version>
+				<version>1.7</version>
 				<executions>
 					<execution>
 						<id>upload-spring-product</id>
 						<phase>deploy</phase>
 						<configuration>
+							<skip>${skip.plain-product-upload}</skip>
 							<target>
 
 								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
