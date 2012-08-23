@@ -197,6 +197,59 @@
 						</goals>
 					</execution>
 
+					<execution>
+						<id>fix-eclipseproduct-file</id>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<propertyfile file="${build.destination.cocoa.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa.tar.gz"/>
+								</propertyfile>
+								
+								<propertyfile file="${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.tar.gz"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.linux.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk.tar.gz"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.linux.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk-x86_64.tar.gz"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.win.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32.zip"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.win.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32-x86_64.zip"/>
+								</propertyfile>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
 				</executions>
 				<dependencies>
 					<dependency>
