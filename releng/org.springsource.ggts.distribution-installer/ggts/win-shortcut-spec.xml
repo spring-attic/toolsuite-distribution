@@ -7,11 +7,11 @@
                 location="applications"/>
 
   <shortcut
-    name="Groovy-Grails Tool Suite %sts.version%"
+    name="Groovy/Grails Tool Suite %sts.version%"
     target="$INSTALL_PATH\ggts-%sts.version%\GGTS.exe"
     commandLine=""
     workingDirectory="$INSTALL_PATH\ggts-%sts.version%"
-    description="Groovy-Grails Tool Suite"
+    description="Groovy/Grails Tool Suite"
     initialState="normal"
     programGroup="yes"
     desktop="no"
