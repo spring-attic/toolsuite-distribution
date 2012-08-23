@@ -20,6 +20,21 @@
 		<plugins>
 
 			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>timestamp</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>build-qualifier</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>properties-maven-plugin</artifactId>
 				<version>1.0-alpha-2</version>
@@ -49,8 +64,8 @@
 						<phase>verify</phase>
 						<configuration>
 							<target>
-								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-sts">
-								</ant>
+								<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
+								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-sts" />
 							</target>
 						</configuration>
 						<goals>
@@ -122,5 +137,6 @@
 			</plugin>
 
 		</plugins>
+
 	</build>
 </project>
