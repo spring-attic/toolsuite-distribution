@@ -195,6 +195,51 @@
 		</properties>
 	</profile>
 
+    <profile>
+            <id>vmware-signing</id>
+            <properties>
+                    <signserver.signMethod>jdk-1.6.0_18</signserver.signMethod>
+            		<signserver.keyId>jarsign_test</signserver.keyId>
+            		<vmware.maven.jarsigner.plugin.version>1.0.0</vmware.maven.jarsigner.plugin.version>
+            </properties>
+            <build>
+                    <plugins>
+                            <plugin>
+                                    <groupId>com.vmware.build.maven</groupId>
+                                    <artifactId>vmware-maven-jarsigner-plugin</artifactId>
+                                    <version>${vmware.maven.jarsigner.plugin.version}</version>
+                                    <executions>
+                                            <execution>
+                                                    <id>sign-jars</id>
+                                                    <goals>
+                                                            <goal>sign</goal>
+                                                    </goals>
+                                                    <!--
+                                                    Signing defaults to happening during the package phase
+                                                    but then we can't be sure that signing will happen after
+                                                    the maven-jar-plugin generates any test-jars that we
+                                                    require for testing subsequent packages.
+                                                    Work around by binding signing to the install phase.
+                                                    -->
+                                                    <phase>install</phase>
+                                            </execution>
+                                    </executions>
+                                    <configuration>
+                                            <keyId>${signserver.keyId}</keyId>
+                                                    <signMethod>${signserver.signMethod}</signMethod>
+                                    </configuration>
+                            </plugin>
+                    </plugins>
+            </build>
+            <repositories>
+                    <repository>
+                            <id>Internal-maven-repo</id>
+                            <name>VMware Nexus Repo</name>
+                            <url>http://build-squid.eng.vmware.com/nexus/content/groups/repo</url>
+                    </repository>
+            </repositories>
+	</profile>
+ 
   </profiles>
 
   <repositories>
@@ -342,7 +387,6 @@
 				<keypass>${signing.key.password}</keypass>
 			</configuration>
 		</plugin>
-	
 	</plugins>
 	<pluginManagement>
 	  <plugins>
