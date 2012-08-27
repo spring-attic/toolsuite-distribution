@@ -97,7 +97,7 @@
 	<target name="create-sts-bundle-archive-tar">
 		<exec executable="${tar-command}">
 			<arg value="--transform"/>
-			<arg value="s,^,springsource/,S"/>
+			<arg value="s,^,springsource/,"/>
 			<arg value="-czf"/>
 			<arg value="${destName}"/>
 			<arg value="-C"/>
@@ -121,7 +121,7 @@
 	<target name="create-ggts-bundle-archive-tar">
 		<exec executable="${tar-command}">
 			<arg value="--transform"/>
-			<arg value="s,^,springsource/,S"/>
+			<arg value="s,^,springsource/,"/>
 			<arg value="-czf"/>
 			<arg value="${destName}"/>
 			<arg value="-C"/>
