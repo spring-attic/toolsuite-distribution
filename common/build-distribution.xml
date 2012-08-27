@@ -176,7 +176,9 @@
 		<if>
 			<available file="${project.build.directory}/${tcserver.name}.zip" />
 			<then>
-				<unzip src="${project.build.directory}/${tcserver.name}.zip" dest="${project.build.directory}"/>
+				<exec executable="unzip">
+				    <arg line="-o ${project.build.directory}/${tcserver.name}.zip -d ${project.build.directory}" />
+				</exec>
 			</then>
 		</if>
 	</target>
@@ -189,7 +191,9 @@
 		<if>
 			<available file="${project.build.directory}/${maven.name}-bin.zip" />
 			<then>
-				<unzip src="${project.build.directory}/${maven.name}-bin.zip" dest="${project.build.directory}"/>
+				<exec executable="unzip">
+				    <arg line="-o ${project.build.directory}/${maven.name}-bin.zip -d ${project.build.directory}" />
+				</exec>
 			</then>
 		</if>
 	</target>
@@ -202,7 +206,9 @@
 		<if>
 			<available file="${project.build.directory}/${roo.name}.zip" />
 			<then>
-				<unzip src="${project.build.directory}/${roo.name}.zip" dest="${project.build.directory}"/>
+				<exec executable="unzip">
+				    <arg line="-o ${project.build.directory}/${roo.name}.zip -d ${project.build.directory}" />
+				</exec>
 			</then>
 		</if>
 	</target>
@@ -215,7 +221,9 @@
 		<if>
 			<available file="${project.build.directory}/${grails.name}.zip" />
 			<then>
-				<unzip src="${project.build.directory}/${grails.name}.zip" dest="${project.build.directory}"/>
+				<exec executable="unzip">
+				    <arg line="-o ${project.build.directory}/${grails.name}.zip -d ${project.build.directory}" />
+				</exec>
 			</then>
 		</if>
 	</target>
