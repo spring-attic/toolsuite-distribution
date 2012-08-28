@@ -351,7 +351,7 @@
 					<execution>
 						<id>root-features-osx-32bit</id>
 						<configuration>
-							<argLine>-Declipse.p2.mirrors=false -Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient</argLine>
+							<argLine>-Declipse.p2.mirrors=false ${tycho.eclipserun.arguments}</argLine>
 							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86}/ggts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
 						</configuration>
 						<goals>
@@ -363,7 +363,7 @@
 					<execution>
 						<id>root-features-osx-64bit</id>
 						<configuration>
-							<argLine>-Declipse.p2.mirrors=false -Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient</argLine>
+							<argLine>-Declipse.p2.mirrors=false ${tycho.eclipserun.arguments}</argLine>
 							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
 						</configuration>
 						<goals>
@@ -375,7 +375,7 @@
 					<execution>
 						<id>root-features-linux-32bit</id>
 						<configuration>
-							<argLine>-Declipse.p2.mirrors=false -Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient</argLine>
+							<argLine>-Declipse.p2.mirrors=false ${tycho.eclipserun.arguments}</argLine>
 							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86}/ggts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
 						</configuration>
 						<goals>
@@ -387,7 +387,7 @@
 					<execution>
 						<id>root-features-linux-64bit</id>
 						<configuration>
-							<argLine>-Declipse.p2.mirrors=false -Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient</argLine>
+							<argLine>-Declipse.p2.mirrors=false ${tycho.eclipserun.arguments}</argLine>
 							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
 						</configuration>
 						<goals>
@@ -399,7 +399,7 @@
 					<execution>
 						<id>root-features-win-32bit</id>
 						<configuration>
-							<argLine>-Declipse.p2.mirrors=false -Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient</argLine>
+							<argLine>-Declipse.p2.mirrors=false ${tycho.eclipserun.arguments}</argLine>
 							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86}/ggts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
 						</configuration>
 						<goals>
@@ -411,7 +411,7 @@
 					<execution>
 						<id>root-features-win-64bit</id>
 						<configuration>
-							<argLine>-Declipse.p2.mirrors=false -Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient</argLine>
+							<argLine>-Declipse.p2.mirrors=false ${tycho.eclipserun.arguments}</argLine>
 							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
 						</configuration>
 						<goals>
