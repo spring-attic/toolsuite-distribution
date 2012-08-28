@@ -256,8 +256,8 @@ ROO_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
 #GRAILS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\+\.[0-9]\+\.\?[A-Z,a-z,0-9]*\).*'`
 
 ZIP_NAME=`ls -a macosx.cocoa/springsource/ | grep maven`
-#MAVEN_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\+\.[0-9]\+\.\?[A-Z,a-z,0-9]*\).*'`
-MAVEN_VERSION=3.0.4
+MAVEN_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\.[0-9]\).*'`
+#MAVEN_VERSION=3.0.4
 
 echo sts.version=$STS_VERSION
 echo tcs.version=$TCS_VERSION

@@ -253,8 +253,8 @@ TOMCAT7_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.
 #ROO_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
 
 ZIP_NAME=`ls -a macosx.cocoa/ | grep grails`
-#GRAILS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\+\.[0-9]\+\.\?[A-Z,a-z,0-9]*\).*'`
-GRAILS_VERSION=2.1.0
+GRAILS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\.[0-9]\).*'`
+#GRAILS_VERSION=2.1.0
 
 #ZIP_NAME=`ls -a macosx.cocoa/springsource/ | grep maven`
 #MAVEN_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\+\.[0-9]\+\.\?[A-Z,a-z,0-9]*\).*'`
