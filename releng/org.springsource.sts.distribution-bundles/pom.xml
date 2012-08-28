@@ -59,14 +59,16 @@
 				<artifactId>maven-antrun-plugin</artifactId>
 				<version>1.6</version>
 				<executions>
+					
 					<execution>
 						<id>archive-products</id>
 						<phase>verify</phase>
 						<configuration>
 							<target>
-								<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
-								<property name="p2.qualifier" value="${p2.qualifier}" />
-								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-sts" />
+								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-sts">
+									<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
+									<property name="p2.qualifier" value="${p2.qualifier}" />
+								</ant>
 							</target>
 						</configuration>
 						<goals>

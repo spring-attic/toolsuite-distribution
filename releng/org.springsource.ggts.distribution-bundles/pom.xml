@@ -64,9 +64,10 @@
 						<phase>verify</phase>
 						<configuration>
 							<target>
-								<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
-								<property name="p2.qualifier" value="${p2.qualifier}" />
-								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-ggts" />
+								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-ggts">
+									<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
+									<property name="p2.qualifier" value="${p2.qualifier}" />
+								</ant>
 							</target>
 						</configuration>
 						<goals>
