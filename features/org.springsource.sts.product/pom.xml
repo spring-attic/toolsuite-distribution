@@ -24,7 +24,7 @@
 		<dist.accessKey>${accessKey}</dist.accessKey>
 		<dist.secretKey>${secretKey}</dist.secretKey>
 		
-		<tycho.eclipserun.arguments>${tycho.eclipserun.mirror} ${tycho.eclipserun.proxyHost} ${tycho.eclipserun.proxyPort} ${tycho.eclipserun.exclude}</tycho.eclipserun.arguments>
+		<tycho.eclipserun.arguments>${tycho.eclipserun.mirror} ${tycho.eclipserun.proxyHost} ${tycho.eclipserun.proxyPort} ${tycho.eclipserun.exclude} ${tycho.eclipserun.connect} ${tycho.eclipserun.read}</tycho.eclipserun.arguments>
 	</properties>
 
 	<profiles>
