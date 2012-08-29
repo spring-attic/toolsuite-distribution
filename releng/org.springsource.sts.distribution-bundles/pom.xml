@@ -93,10 +93,12 @@
 
 									<delete bucketName="${dist.bucket}">
 										<fileset dir="${dist.path.product}">
-											<include name="spring-tool-suilte*.zip" />
-											<include name="spring-tool-suite*.gz" />
-											<include name="spring-tool-suite*.md5" />
-											<include name="spring-tool-suite*.sha1" />
+											<include name="spring-tool-suite*.zip" />
+											<include name="spring-tool-suite*.zip.md5" />
+											<include name="spring-tool-suite*.zip.sha1" />
+											<include name="spring-tool-suite*.tar.gz" />
+											<include name="spring-tool-suite*.tar.gz.md5" />
+											<include name="spring-tool-suite*.tar.gz.sha1" />
 										</fileset>
 									</delete>
 
@@ -104,9 +106,11 @@
 										publicRead="true">
 										<fileset dir="${site.target.dir}">
 											<include name="spring-tool-suite*.zip" />
+											<include name="spring-tool-suite*.zip.md5" />
+											<include name="spring-tool-suite*.zip.sha1" />
 											<include name="spring-tool-suite*.tar.gz" />
-											<include name="spring-tool-suite*.md5" />
-											<include name="spring-tool-suite*.sha1" />
+											<include name="spring-tool-suite*.tar.gz.md5" />
+											<include name="spring-tool-suite*.tar.gz.sha1" />
 										</fileset>
 									</upload>
 

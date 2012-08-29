@@ -80,20 +80,36 @@
 
 									<delete bucketName="${dist.bucket}">
 										<fileset dir="${dist.path.product}">
-											<include name="spring-tool-suilte*.zip" />
-											<include name="spring-tool-suite*.gz" />
-											<include name="spring-tool-suite*.md5" />
-											<include name="spring-tool-suite*.sha1" />
+											<include name="spring-tool-suite*installer.jar" />
+											<include name="spring-tool-suite*installer.jar.md5" />
+											<include name="spring-tool-suite*installer.jar.sha1" />
+											<include name="spring-tool-suite*installer.sh" />
+											<include name="spring-tool-suite*installer.sh.md5" />
+											<include name="spring-tool-suite*installer.sh.sha1" />
+											<include name="spring-tool-suite*installer.dmg" />
+											<include name="spring-tool-suite*installer.dmg.md5" />
+											<include name="spring-tool-suite*installer.dmg.sha1" />
+											<include name="spring-tool-suite*installer.exe" />
+											<include name="spring-tool-suite*installer.exe.md5" />
+											<include name="spring-tool-suite*installer.exe.sha1" />
 										</fileset>
 									</delete>
 
 									<upload bucketName="${dist.bucket}" toDir="${dist.path.product}"
 										publicRead="true">
 										<fileset dir="${site.target.dir}">
-											<include name="spring-tool-suite*.zip" />
-											<include name="spring-tool-suite*.tar.gz" />
-											<include name="spring-tool-suite*.md5" />
-											<include name="spring-tool-suite*.sha1" />
+											<include name="spring-tool-suite*installer.jar" />
+											<include name="spring-tool-suite*installer.jar.md5" />
+											<include name="spring-tool-suite*installer.jar.sha1" />
+											<include name="spring-tool-suite*installer.sh" />
+											<include name="spring-tool-suite*installer.sh.md5" />
+											<include name="spring-tool-suite*installer.sh.sha1" />
+											<include name="spring-tool-suite*installer.dmg" />
+											<include name="spring-tool-suite*installer.dmg.md5" />
+											<include name="spring-tool-suite*installer.dmg.sha1" />
+											<include name="spring-tool-suite*installer.exe" />
+											<include name="spring-tool-suite*installer.exe.md5" />
+											<include name="spring-tool-suite*installer.exe.sha1" />
 										</fileset>
 									</upload>
 
