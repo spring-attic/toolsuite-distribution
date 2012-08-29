@@ -101,7 +101,7 @@
 
 									<upload bucketName="${dist.bucket}" toDir="${dist.path.product}"
 										publicRead="true">
-										<fileset dir="${site.target.dir}/products">
+										<fileset dir="${site.target.dir}">
 											<include name="groovy-grails-tool-suite*.zip" />
 											<include name="groovy-grails-tool-suite*.tar.gz" />
 											<include name="groovy-grails-tool-suite*.md5" />
