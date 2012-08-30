@@ -92,7 +92,7 @@
 
 									<delete bucketName="${dist.bucket}">
 										<fileset dir="${dist.path.product}">
-											<include name="groovy-grails-tool-suilte*.zip" />
+											<include name="groovy-grails-tool-suite*.zip" />
 											<include name="groovy-grails-tool-suite*.zip.md5" />
 											<include name="groovy-grails-tool-suite*.zip.sha1" />
 											<include name="groovy-grails-tool-suite*.tar.gz" />
@@ -104,7 +104,7 @@
 									<upload bucketName="${dist.bucket}" toDir="${dist.path.product}"
 										publicRead="true">
 										<fileset dir="${site.target.dir}">
-											<include name="groovy-grails-tool-suilte*.zip" />
+											<include name="groovy-grails-tool-suite*.zip" />
 											<include name="groovy-grails-tool-suite*.zip.md5" />
 											<include name="groovy-grails-tool-suite*.zip.sha1" />
 											<include name="groovy-grails-tool-suite*.tar.gz" />
