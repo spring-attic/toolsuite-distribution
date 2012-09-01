@@ -216,10 +216,14 @@ mv launch4j installer/
 export IZPACK_HOME=`pwd`/installer/izpack
 export LAUNCH4J_HOME=`pwd`/installer/launch4j
 
-ZIP_NAME=`ls ../../org.springsource.ggts.distribution-bundles/target/groovy-grails-tool-suite-*-macosx-cocoa*`
-RELEASE_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
-STS_VERSION=$RELEASE_VERSION
-ECLIPSE_VERSION=`expr "$ZIP_NAME" : '.*-\(e[.0-9]*\)-.*'`
+#ZIP_NAME=`ls ../../org.springsource.ggts.distribution-bundles/target/groovy-grails-tool-suite-*-macosx-cocoa*`
+#RELEASE_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
+#STS_VERSION=$RELEASE_VERSION
+#ECLIPSE_VERSION=`expr "$ZIP_NAME" : '.*-\(e[.0-9]*\)-.*'`
+
+RELEASE_VERSION=$1
+STS_VERSION=$1
+ECLIPSE_VERSION=$2
 
 echo sts.version=$STS_VERSION
 

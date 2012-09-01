@@ -20,6 +20,21 @@
 		<plugins>
 
 			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>timestamp</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>build-qualifier</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>properties-maven-plugin</artifactId>
 				<version>1.0-alpha-2</version>
@@ -54,6 +69,8 @@
 
 								<exec executable="${project.build.directory}/../create-installer.sh"
 									dir="${project.build.directory}">
+								    <arg value="${unqualifiedVersion}.${p2.qualifier}"/>
+								    <arg value="${dist.target}"/>
 								</exec>
 
 							</target>
@@ -73,8 +90,6 @@
 								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
 
 								<property name="site.target.dir" value="${project.build.directory}" />
-								<property name="dist.full.version"
-									value="${unqualifiedVersion}.${buildQualifier}" />
 
 								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
