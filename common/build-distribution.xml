@@ -15,7 +15,7 @@
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/org.springsource.sts.product/target/products/" />
 	<property name="product.build.directory.ggts" value="${project.build.directory}/../../../features/org.springsource.ggts.product/target/products/" />
 
-    <condition property="tar-command" value="gnutar">
+    <condition property="tar-command" value="tar">
         <os family="mac" />
     </condition>
 
