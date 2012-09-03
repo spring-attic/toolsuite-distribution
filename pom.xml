@@ -160,10 +160,15 @@
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
 		</repository>
-		<repository>
+<!--		<repository>
 		  <id>maven-wtp</id>
 		  <layout>p2</layout>
 		  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
+		</repository> -->
+		<repository>
+		  <id>maven-extras-mirror</id>
+		  <layout>p2</layout>
+		  <url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
 		</repository>
 	  </repositories>
 	  <modules>
@@ -208,10 +213,15 @@
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
 		</repository>
+		<!--		<repository>
+				  <id>maven-wtp</id>
+				  <layout>p2</layout>
+				  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
+				</repository> -->
 		<repository>
-		  <id>maven-wtp</id>
+		  <id>maven-extras-mirror</id>
 		  <layout>p2</layout>
-		  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
+		  <url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
 		</repository>
 	  </repositories>
 	  <modules>
@@ -316,11 +326,11 @@
 	  <layout>p2</layout>
 	  <url>http://download.springsource.com/release/TOOLS/third-party/m2eclipse-012</url>
 	</repository>
-	<repository>
+<!--	<repository>
 	  <id>maven-ajdt</id>
 	  <layout>p2</layout>
 	  <url>http://dist.springsource.org/release/AJDT/configurator/</url>
-	</repository>
+	</repository> -->
   </repositories>
  
 </project>
