@@ -86,8 +86,6 @@
 								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
 
 								<property name="site.target.dir" value="${project.build.directory}" />
-								<property name="dist.full.version"
-									value="${unqualifiedVersion}.${buildQualifier}" />
 
 								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
