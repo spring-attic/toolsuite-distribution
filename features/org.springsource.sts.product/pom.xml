@@ -390,6 +390,45 @@
 				</executions>
 			</plugin>
 
+			<plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>exec-maven-plugin</artifactId>
+			    <executions>
+			        <execution>
+			            <id>osx-app-signing-32bit</id>
+			            <goals>
+			                <goal>exec</goal>
+			            </goals>
+			            <phase>package</phase>
+			            <configuration>
+							<skip>${skip.osx.signing}</skip>
+			                <executable>codesign</executable>
+			                <arguments>
+			                    <argument>-s</argument>
+			                    <argument>Developer ID Application: VMware, Inc</argument>
+			                    <argument>${build.destination.cocoa.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/STS.app</argument>
+			                </arguments>
+			            </configuration>
+			        </execution>
+			        <execution>
+			            <id>osx-app-signing-64bit</id>
+			            <goals>
+			                <goal>exec</goal>
+			            </goals>
+			            <phase>package</phase>
+			            <configuration>
+							<skip>${skip.osx.signing}</skip>
+			                <executable>codesign</executable>
+			                <arguments>
+			                    <argument>-s</argument>
+			                    <argument>Developer ID Application: VMware, Inc</argument>
+			                    <argument>${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/STS.app</argument>
+			                </arguments>
+			            </configuration>
+			        </execution>
+			    </executions>
+			</plugin>
+			
 		</plugins>
 
 		<pluginManagement>

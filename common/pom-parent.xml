@@ -63,6 +63,9 @@
 	<signing.keystore>~/.keytool/springsource.jks</signing.keystore>
 	<signing.store.password>${STORE_PASSWORD}</signing.store.password>
 	<signing.key.password>${KEY_PASSWORD}</signing.key.password>
+	
+	<!-- OSX app signing -->
+	<skip.osx.signing>true</skip.osx.signing>
 
 	<dist.name>SpringSource Tool Suite</dist.name>
 	<dist.project>springsource-tool-suite</dist.project>
