@@ -360,15 +360,13 @@
 
 								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 
-								<exec executable="codesign"
-									dir="${project.build.directory}">
+								<exec executable="codesign">
 								    <arg value="-s"/>
 								    <arg value="Developer ID Application: VMware, Inc"/>
 								    <arg value="${build.destination.cocoa.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/GGTS.app"/>
 								</exec>
 
-								<exec executable="codesign"
-									dir="${project.build.directory}">
+								<exec executable="codesign">
 								    <arg value="-s"/>
 								    <arg value="Developer ID Application: VMware, Inc"/>
 								    <arg value="${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/GGTS.app"/>
