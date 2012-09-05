@@ -239,61 +239,6 @@
 			</repositories>
 		</profile>
 
-		<profile>
-			<id>gobuild-snapshot</id>
-			<activation>
-				<property>
-					<name>OBJDIR</name>
-					<value>obj</value>
-				</property>
-			</activation>
-			<properties>
-				<p2.qualifier>CI-B${BUILD_NUMBER}</p2.qualifier>
-			</properties>
-		</profile>
-
-		<profile>
-			<id>gobuild-milestone</id>
-			<activation>
-				<property>
-					<name>OBJDIR</name>
-					<value>beta</value>
-				</property>
-			</activation>
-			<properties>
-				<p2.qualifier>M1</p2.qualifier>
-				<dist.type>milestone</dist.type>
-				<dist.dependencies-version-path>3.1.0.M1</dist.dependencies-version-path>
-				
-				<dist.springide-pathpostfix>3.1.0.M1</dist.springide-pathpostfix>
-				<dist.eclipse-integration-commons-version>3.1.0.M1</dist.eclipse-integration-commons-version>
-				<dist.eclipse-integration-tcserver-version>3.1.0.M1</dist.eclipse-integration-tcserver-version>
-				<dist.eclipse-integration-gradle-version>3.1.0.M1</dist.eclipse-integration-gradle-version>
-				<dist.grails-ide-version>3.1.0.M1</dist.grails-ide-version>
-			</properties>
-		</profile>
-
-		<profile>
-			<id>gobuild-release</id>
-			<activation>
-				<property>
-					<name>OBJDIR</name>
-					<value>release</value>
-				</property>
-			</activation>
-			<properties>
-				<p2.qualifier>RELEASE</p2.qualifier>
-				<dist.type>release</dist.type>
-				<dist.dependencies-version-path>3.1.0.RELEASE</dist.dependencies-version-path>
-
-				<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
-				<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
-				<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
-				<dist.eclipse-integration-gradle-version>${dist.dependencies-version-path}</dist.eclipse-integration-gradle-version>
-				<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
-			</properties>
-		</profile>
-
 	</profiles>
 
 	<repositories>
