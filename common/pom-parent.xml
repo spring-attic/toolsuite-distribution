@@ -265,11 +265,11 @@
 				<dist.type>milestone</dist.type>
 				<dist.dependencies-version-path>3.1.0.M1</dist.dependencies-version-path>
 				
-				<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
-				<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
-				<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
-				<dist.eclipse-integration-gradle-version>${dist.dependencies-version-path}</dist.eclipse-integration-gradle-version>
-				<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
+				<dist.springide-pathpostfix>3.1.0.M1</dist.springide-pathpostfix>
+				<dist.eclipse-integration-commons-version>3.1.0.M1</dist.eclipse-integration-commons-version>
+				<dist.eclipse-integration-tcserver-version>3.1.0.M1</dist.eclipse-integration-tcserver-version>
+				<dist.eclipse-integration-gradle-version>3.1.0.M1</dist.eclipse-integration-gradle-version>
+				<dist.grails-ide-version>3.1.0.M1</dist.grails-ide-version>
 			</properties>
 		</profile>
 
