@@ -244,7 +244,7 @@
 			<activation>
 				<property>
 					<name>OBJDIR</name>
-					<value>obj</name>
+					<value>obj</value>
 				</property>
 			</activation>
 			<properties>
@@ -257,7 +257,7 @@
 			<activation>
 				<property>
 					<name>OBJDIR</name>
-					<value>beta</name>
+					<value>beta</value>
 				</property>
 			</activation>
 			<properties>
@@ -272,7 +272,7 @@
 			<activation>
 				<property>
 					<name>OBJDIR</name>
-					<value>release</name>
+					<value>release</value>
 				</property>
 			</activation>
 			<properties>
