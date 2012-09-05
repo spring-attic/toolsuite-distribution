@@ -264,6 +264,12 @@
 				<p2.qualifier>M1</p2.qualifier>
 				<dist.type>milestone</dist.type>
 				<dist.dependencies-version-path>3.1.0.M1</dist.dependencies-version-path>
+				
+				<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
+				<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
+				<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
+				<dist.eclipse-integration-gradle-version>${dist.dependencies-version-path}</dist.eclipse-integration-gradle-version>
+				<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 			</properties>
 		</profile>
 
@@ -279,6 +285,12 @@
 				<p2.qualifier>RELEASE</p2.qualifier>
 				<dist.type>release</dist.type>
 				<dist.dependencies-version-path>3.1.0.RELEASE</dist.dependencies-version-path>
+
+				<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
+				<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
+				<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
+				<dist.eclipse-integration-gradle-version>${dist.dependencies-version-path}</dist.eclipse-integration-gradle-version>
+				<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 			</properties>
 		</profile>
 
