@@ -216,8 +216,8 @@
 					</execution>
 
 					<execution>
-						<id>upload-united-repository</id>
-						<phase>deploy</phase>
+						<id>zip-united-repository</id>
+						<phase>install</phase>
 						<configuration>
 							<target>
 
@@ -245,6 +245,31 @@
 									fileext=".sha1" />
 								<checksum file="${dist.full.path}" algorithm="MD5"
 									fileext=".md5" />
+
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>upload-united-repository</id>
+						<phase>deploy</phase>
+						<configuration>
+							<target>
+
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
+
+								<property name="site.target.dir" value="${project.build.directory}" />
+								<property name="dist.full.version"
+									value="${unqualifiedVersion}.${p2.qualifier}-${dist.target}" />
+
+								<property name="dist.file.name"
+									value="${dist.project}-${dist.full.version}-updatesite.zip" />
+								<property name="dist.full.path"
+									value="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
 
 								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
