@@ -251,6 +251,9 @@
 				<value>obj</name>
 			</property>
 		</activation>
+		<properties>
+			<p2.qualifier>CI-B${BUILD_NUMBER}</p2.qualifier>
+		</properties>
     </profile>
 
     <profile>
