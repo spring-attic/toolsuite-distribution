@@ -189,6 +189,11 @@
 		  <url>http://download.eclipse.org/eclipse/updates/4.2/</url>
 		</repository>
 		<repository>
+		  <id>platform</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/releases/maintenance/</url>
+		</repository>
+		<repository>
 		  <id>juno</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/releases/juno/</url>
