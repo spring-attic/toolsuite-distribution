@@ -173,6 +173,7 @@
 	  </repositories>
 	  <modules>
 		<module>features/org.springsource.sts.package.e3.8</module>
+		<module>features/org.springsource.ggts.package.e3.8</module>
 	  </modules>
 	</profile>
 	<profile>

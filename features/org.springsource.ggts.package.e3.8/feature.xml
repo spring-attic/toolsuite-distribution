@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.springsource.sts.package"
+      id="org.springsource.ggts.package"
       label="%featureName"
       version="3.1.0.qualifier"
       provider-name="%providerName"
-      plugin="org.springsource.sts">
+      plugin="org.springsource.ggts">
 
    <description>
       %description
@@ -19,14 +19,14 @@
    </license>
 
    <url>
-      <update label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e3.8"/>
-      <discovery label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e3.8"/>
+      <update label="Groovy/Grails Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
+      <discovery label="Groovy/Grails Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
    </url>
    
    <includes id="org.eclipse.platform" version="0.0.0" />
-
+  
    <requires>
-
+	
       <import feature="org.eclipse.cvs"/>
 
       <import feature="org.eclipse.datatools.common.doc.user"/>
@@ -97,7 +97,7 @@
       <import feature="org.eclipse.equinox.p2.rcp.feature"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.gef"/>
-
+	
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt"/>
 
@@ -108,8 +108,9 @@
       <import feature="org.eclipse.jpt.jaxb.feature"/>
       <import feature="org.eclipse.jpt.jpa.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.jpa.feature"/>
-
+      
       <import feature="org.eclipse.jsf.feature"/>
+
       <import feature="org.eclipse.jst.common.fproj.enablement.jdt"/>
       <import feature="org.eclipse.jst.enterprise_core.feature"/>
       <import feature="org.eclipse.jst.enterprise_ui.feature"/>
@@ -129,14 +130,10 @@
       <import feature="org.eclipse.jst.ws.jaxws_userdoc.feature"/>
       <import feature="org.eclipse.jst.ws.jaxws.dom.feature"/>
       <import feature="org.eclipse.jst.ws.jaxws.feature"/>
-
-<!--
-      <import feature="org.eclipse.m2e.feature"/>
-      <import feature="org.eclipse.m2e.logback.feature"/>
--->
-
+	
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+
       <import feature="org.eclipse.mylyn.commons"/>
       <import feature="org.eclipse.mylyn.commons.identity"/>
       <import feature="org.eclipse.mylyn.commons.notifications"/>
@@ -190,33 +187,22 @@
       <import feature="org.eclipse.wst.xml.xpath2.processor.feature"/>
       <import feature="org.eclipse.wst.xsl.feature"/>
 
-      <import feature="org.eclipse.zest"/>
-
       <import feature="com.atlassian.connector.eclipse.jira"/>
-
-      <import feature="org.springframework.ide.eclipse.feature"/>
-	  <import feature="org.springframework.ide.eclipse.aop.feature"/>
-	  <import feature="org.springframework.ide.eclipse.ajdt.feature"/>
-	  <import feature="org.springframework.ide.eclipse.webflow.feature"/>
-	  <import feature="org.springframework.ide.eclipse.mylyn.feature"/>
-	  <import feature="org.springframework.ide.eclipse.osgi.feature"/>			
-	  <import feature="org.springframework.ide.eclipse.security.feature"/>			
-	  <import feature="org.springframework.ide.eclipse.autowire.feature"/>			
-	  <import feature="org.springframework.ide.eclipse.batch.feature"/>		
-	  <import feature="org.springframework.ide.eclipse.integration.feature"/>		
-      <import feature="org.springframework.ide.eclipse.maven.feature"/>
-      <import feature="org.springframework.ide.eclipse.roo.feature"/>
-      <import feature="org.springframework.ide.eclipse.data.feature"/>
-
+      
 	  <import feature="org.eclipse.ajdt"/>					
 	  <import feature="org.eclipse.contribution.weaving"/>					
 	  <import feature="org.eclipse.contribution.xref"/>					
 
-      <import feature="org.springsource.sts"/>
+      <import feature="org.springsource.ggts"/>
       <import feature="com.vmware.vfabric.ide.eclipse.tcserver"/>
 
       <import feature="org.springsource.ide.eclipse.commons"/>
       <import feature="org.springsource.ide.eclipse.dashboard"/>
+
+	  <import feature="org.grails.ide.eclipse"/>
+	  <import feature="org.codehaus.groovy.eclipse.feature" version="2.0.0" match="greaterOrEqual"/>
+	  <import feature="org.codehaus.groovy.jdt.patch"/>
+	  <import feature="org.codehaus.groovy18.feature"/>
 
    </requires>
 
