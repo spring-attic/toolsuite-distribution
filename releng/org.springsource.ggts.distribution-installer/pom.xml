@@ -71,6 +71,7 @@
 									dir="${project.build.directory}">
 								    <arg value="${unqualifiedVersion}.${p2.qualifier}"/>
 								    <arg value="${dist.target}"/>
+									<env key="SKIP_OSX_SIGNING" value="${skip.osx.signing}"/>
 								</exec>
 
 							</target>

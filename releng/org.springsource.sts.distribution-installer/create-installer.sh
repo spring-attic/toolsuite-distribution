@@ -74,6 +74,11 @@ wrapInstallerDmg() {
 	
 	mkdir -p ./installer-dmg
 	
+	if [ $SKIP_OSX_SIGNING == true ]
+	then
+		codesign -s 'Developer ID Application: VMware, Inc' "$APP_NAME"
+	fi
+	
 	if [[ $OS == *Darwin* ]]
 	then
 		hdiutil attach ./installer-template.dmg -mountpoint ./installer-dmg
