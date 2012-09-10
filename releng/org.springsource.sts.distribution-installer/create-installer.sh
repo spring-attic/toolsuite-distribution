@@ -74,8 +74,7 @@ wrapInstallerDmg() {
 	
 	mkdir -p ./installer-dmg
 	
-	echo $SKIP_OSX_SIGNING
-	if [ $SKIP_OSX_SIGNING == true ]
+	if [ $SKIP_OSX_SIGNING == false ]
 	then
 		echo 'Signing OSX installer'
 		codesign -s 'Developer ID Application: VMware, Inc' "$APP_NAME"
