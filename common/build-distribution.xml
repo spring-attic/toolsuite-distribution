@@ -184,7 +184,7 @@
 	</target>
 
 	<target name="download-maven">
-		<get src="http://www.us.apache.org/dist/maven/binaries/${maven.name}-bin.zip"
+		<get src="http://www.us.apache.org/dist/maven/maven-3/${maven.version}/binaries/${maven.name}-bin.zip"
 		 dest="${project.build.directory}/${maven.name}-bin.zip"
 		 verbose="true"
 		 skipexisting="true"/>
@@ -199,7 +199,7 @@
 	</target>
 
 	<target name="download-springroo">
-		<get src="http://s3.amazonaws.com/dist.springframework.org/release/ROO/${roo.name}.zip"
+		<get src="http://dist.springframework.org/release/ROO/${roo.name}.zip"
 		 dest="${project.build.directory}/${roo.name}.zip"
 		 verbose="true"
 		 skipexisting="true"/>
@@ -214,7 +214,7 @@
 	</target>
 
 	<target name="download-grails">
-		<get src="http://s3.amazonaws.com/dist.springframework.org/release/GRAILS/${grails.name}.zip"
+		<get src="http://dist.springframework.org/release/GRAILS/${grails.name}.zip"
 		 dest="${project.build.directory}/${grails.name}.zip"
 		 verbose="true"
 		 skipexisting="true"/>
