@@ -325,7 +325,7 @@
 	<repository>
 	  <id>mylyn</id>
 	  <layout>p2</layout>
-	  <url>http://download.eclipse.org/mylyn/releases/3.7</url>
+	  <url>http://download.eclipse.org/mylyn/drops/3.8.1/v20120725-0100</url>
 	</repository>
 	<repository>
 	  <id>m2eclipse-legacy</id>
