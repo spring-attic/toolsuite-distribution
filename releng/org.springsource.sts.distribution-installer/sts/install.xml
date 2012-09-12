@@ -69,7 +69,7 @@
 		<variable name="StsFinishPanel.launcher" value="STS" />
 		<variable name="StsFinishPanel.path" value="$INSTALL_PATH/sts-@{sts.version}" />
 		<variable name="StsFinishPanel.url" >
-			<value><![CDATA[http://www.springsource.com/products/sts/welcome?version=@{sts.version}&os=@{sts.platform}]]></value>
+			<value><![CDATA[http://www.springsource.org/products/sts/welcome?version=@{sts.version}&os=@{sts.platform}]]></value>
 		</variable>
 	</variables> 
 
