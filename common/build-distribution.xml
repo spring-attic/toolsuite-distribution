@@ -12,6 +12,11 @@
 	<property name="maven.name" value="apache-maven-${maven.version}" />
 	<property name="grails.name" value="grails-${grails.version}" />
 
+	<property name="roo.root" value="http://dist.springframework.org/release/ROO" />
+	<property name="tcserver.root" value="http://download.springsource.com/release/TCS" />
+	<property name="maven.root" value="http://www.us.apache.org/dist/maven/maven-3/${maven.version}/binaries" />
+	<property name="grails.root" value="http://dist.springframework.org/release/GRAILS" />
+
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/org.springsource.sts.product/target/products/" />
 	<property name="product.build.directory.ggts" value="${project.build.directory}/../../../features/org.springsource.ggts.product/target/products/" />
 
@@ -169,7 +174,7 @@
 	</target>
 
 	<target name="download-tcserver">
-		<get src="http://download.springsource.com/release/TCS/${tcserver.name}.zip"
+		<get src="${tcserver.root}/${tcserver.name}.zip"
 		 dest="${project.build.directory}/${tcserver.name}.zip"
 		 verbose="true"
 		 skipexisting="true"/>
@@ -184,7 +189,7 @@
 	</target>
 
 	<target name="download-maven">
-		<get src="http://www.us.apache.org/dist/maven/maven-3/${maven.version}/binaries/${maven.name}-bin.zip"
+		<get src="${maven.root}/${maven.name}-bin.zip"
 		 dest="${project.build.directory}/${maven.name}-bin.zip"
 		 verbose="true"
 		 skipexisting="true"/>
@@ -199,7 +204,7 @@
 	</target>
 
 	<target name="download-springroo">
-		<get src="http://dist.springframework.org/release/ROO/${roo.name}.zip"
+		<get src="${roo.root}/${roo.name}.zip"
 		 dest="${project.build.directory}/${roo.name}.zip"
 		 verbose="true"
 		 skipexisting="true"/>
@@ -214,7 +219,7 @@
 	</target>
 
 	<target name="download-grails">
-		<get src="http://dist.springframework.org/release/GRAILS/${grails.name}.zip"
+		<get src="${grails.root}/${grails.name}.zip"
 		 dest="${project.build.directory}/${grails.name}.zip"
 		 verbose="true"
 		 skipexisting="true"/>
