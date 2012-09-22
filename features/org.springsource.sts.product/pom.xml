@@ -39,13 +39,13 @@
 		<profile>
 			<id>e38</id>
 			<properties>
-				<sites>http://download.eclipse.org/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/releases/maintenance/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 		<profile>
 			<id>e42</id>
 			<properties>
-				<sites>http://download.eclipse.org/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/releases/maintenance/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 	</profiles>
