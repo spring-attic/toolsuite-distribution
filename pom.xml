@@ -135,11 +135,11 @@
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/eclipse/updates/3.8/</url>
 		</repository>
-		<repository>
+<!--		<repository>
 		  <id>juno-updates</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/releases/maintenance/</url>
-		</repository>
+		</repository> -->
 		<repository>
 		  <id>juno</id>
 		  <layout>p2</layout>
@@ -194,11 +194,11 @@
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/eclipse/updates/4.2/</url>
 		</repository>
-		<repository>
+<!--		<repository>
 		  <id>juno-updates</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/releases/maintenance/</url>
-		</repository>
+		</repository> -->
 		<repository>
 		  <id>juno</id>
 		  <layout>p2</layout>
