@@ -82,6 +82,12 @@
 	<category name="Core / Eclipse Integration vFabric tc Server" />
   </feature>
 
+  <feature
+	id="com.vmware.vfabric.ide.eclipse.tcserver.insight"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration vFabric tc Server" />
+  </feature>
+
   <!-- Spring IDE -->
   <category-def name="Core / Spring IDE" label="Core / Spring IDE" />
   <category-def name="Extensions / Spring IDE" label="Extensions / Spring IDE" />

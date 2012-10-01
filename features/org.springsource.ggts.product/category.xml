@@ -83,6 +83,12 @@
 	<category name="Core / Eclipse Integration vFabric tc Server" />
   </feature>
 
+  <feature
+	id="com.vmware.vfabric.ide.eclipse.tcserver.insight"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration vFabric tc Server" />
+  </feature>
+
   <!-- Groovy/Grails -->
   <category-def name="Core / Grails IDE for Eclipse" label="Core / Grails IDE for Eclipse"/>
   <category-def name="Groovy-Eclipse" label="Groovy-Eclipse"/>
