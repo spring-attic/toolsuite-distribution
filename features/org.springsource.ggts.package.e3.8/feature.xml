@@ -195,6 +195,7 @@
 
       <import feature="org.springsource.ggts"/>
       <import feature="com.vmware.vfabric.ide.eclipse.tcserver"/>
+      <import feature="com.vmware.vfabric.ide.eclipse.tcserver.insight"/>
 
       <import feature="org.springsource.ide.eclipse.commons"/>
       <import feature="org.springsource.ide.eclipse.dashboard"/>
