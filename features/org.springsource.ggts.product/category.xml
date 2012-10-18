@@ -132,10 +132,4 @@
 	<category name="Core / Eclipse Integration for Gradle" />
   </feature>
 
-  <feature
-	id="org.gradle.toolingapi.feature"
-	version="0.0.0">
-	<category name="Core / Eclipse Integration for Gradle" />
-  </feature>
-
 </site>
