@@ -3,7 +3,7 @@
 	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
 
 	<property name="roo.version" value="1.2.2.RELEASE" />
-	<property name="tcserver.version" value="2.7.2.RELEASE" />
+	<property name="tcserver.version" value="2.8.1.RELEASE" />
 	<property name="maven.version" value="3.0.4" />
 	<property name="grails.version" value="2.1.1" />
 
