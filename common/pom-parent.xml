@@ -92,7 +92,7 @@
 		<http_proxy>${env.http_proxy}</http_proxy>
 		<https_proxy>${env.https_proxy}</https_proxy>
 
-		<tycho-version>0.14.1</tycho-version>
+		<tycho-version>0.16.0</tycho-version>
 		<!--<maven.test.skip>true</maven.test.skip> -->
 		<maven.test.error.ignore>true</maven.test.error.ignore>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
@@ -106,7 +106,7 @@
 			<id>e35</id>
 			<properties>
 				<dist.target>e3.5.2</dist.target>
-				<dist.target.major>e3.5</dist.target>
+				<dist.target.major>e3.5</dist.target.major>
 				<dist.platform.name>Galileo</dist.platform.name>
 				<dist.platform.id>galileo</dist.platform.id>
 				<dist.platform.version>3.5</dist.platform.version>
@@ -121,7 +121,7 @@
 			</activation>
 			<properties>
 				<dist.target>e3.6.2</dist.target>
-				<dist.target.major>e3.6</dist.target>
+				<dist.target.major>e3.6</dist.target.major>
 				<dist.platform.name>Helios</dist.platform.name>
 				<dist.platform.id>helios</dist.platform.id>
 				<dist.platform.version>3.6</dist.platform.version>
@@ -133,7 +133,7 @@
 			<id>e37</id>
 			<properties>
 				<dist.target>e3.7.2</dist.target>
-				<dist.target.major>e3.7</dist.target>
+				<dist.target.major>e3.7</dist.target.major>
 				<dist.platform.name>Indigo</dist.platform.name>
 				<dist.platform.id>indigo</dist.platform.id>
 				<dist.platform.version>3.7</dist.platform.version>
@@ -145,7 +145,7 @@
 			<id>e38</id>
 			<properties>
 				<dist.target>e3.8.1</dist.target>
-				<dist.target.major>e3.8</dist.target>
+				<dist.target.major>e3.8</dist.target.major>
 				<dist.platform.name>Juno</dist.platform.name>
 				<dist.platform.id>juno</dist.platform.id>
 				<dist.platform.version>3.8</dist.platform.version>
@@ -157,7 +157,7 @@
 			<id>e42</id>
 			<properties>
 				<dist.target>e4.2.1</dist.target>
-				<dist.target.major>e4.2</dist.target>
+				<dist.target.major>e4.2</dist.target.major>
 				<dist.platform.name>Juno</dist.platform.name>
 				<dist.platform.id>juno</dist.platform.id>
 				<dist.platform.version>4.2</dist.platform.version>
