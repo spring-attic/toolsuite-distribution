@@ -105,7 +105,8 @@
 		<profile>
 			<id>e35</id>
 			<properties>
-				<dist.target>e3.5</dist.target>
+				<dist.target>e3.5.2</dist.target>
+				<dist.target.major>e3.5</dist.target>
 				<dist.platform.name>Galileo</dist.platform.name>
 				<dist.platform.id>galileo</dist.platform.id>
 				<dist.platform.version>3.5</dist.platform.version>
@@ -119,7 +120,8 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<dist.target>e3.6</dist.target>
+				<dist.target>e3.6.2</dist.target>
+				<dist.target.major>e3.6</dist.target>
 				<dist.platform.name>Helios</dist.platform.name>
 				<dist.platform.id>helios</dist.platform.id>
 				<dist.platform.version>3.6</dist.platform.version>
@@ -130,7 +132,8 @@
 		<profile>
 			<id>e37</id>
 			<properties>
-				<dist.target>e3.7</dist.target>
+				<dist.target>e3.7.2</dist.target>
+				<dist.target.major>e3.7</dist.target>
 				<dist.platform.name>Indigo</dist.platform.name>
 				<dist.platform.id>indigo</dist.platform.id>
 				<dist.platform.version>3.7</dist.platform.version>
@@ -141,7 +144,8 @@
 		<profile>
 			<id>e38</id>
 			<properties>
-				<dist.target>e3.8</dist.target>
+				<dist.target>e3.8.1</dist.target>
+				<dist.target.major>e3.8</dist.target>
 				<dist.platform.name>Juno</dist.platform.name>
 				<dist.platform.id>juno</dist.platform.id>
 				<dist.platform.version>3.8</dist.platform.version>
@@ -152,7 +156,8 @@
 		<profile>
 			<id>e42</id>
 			<properties>
-				<dist.target>e4.2</dist.target>
+				<dist.target>e4.2.1</dist.target>
+				<dist.target.major>e4.2</dist.target>
 				<dist.platform.name>Juno</dist.platform.name>
 				<dist.platform.id>juno</dist.platform.id>
 				<dist.platform.version>4.2</dist.platform.version>
