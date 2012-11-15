@@ -1,7 +1,7 @@
 #!/bin/bash
 # To specify the required version, set the REQUIRED_VERSION to the major version required, 
 # e.g. 1.3, but not 1.3.1.
-REQUIRED_VERSION=1.5
+REQUIRED_VERSION=1.6
 REQUIRED_VERSION_STRING=$REQUIRED_VERSION
 
 error_msg() {

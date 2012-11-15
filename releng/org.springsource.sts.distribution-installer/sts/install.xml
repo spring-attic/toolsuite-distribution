@@ -9,7 +9,7 @@
         <url>http://www.springsource.com</url>
 		<writeinstallationinformation>no</writeinstallationinformation>
 <!--		<pack200/>-->
-		<javaversion>1.5</javaversion>
+		<javaversion>1.6</javaversion>
 		<requiresjdk>no</requiresjdk>
 		<uninstaller write="no" />
 		<run-privileged condition="izpack.windowsinstall.vista|izpack.windowsinstall.7"/>

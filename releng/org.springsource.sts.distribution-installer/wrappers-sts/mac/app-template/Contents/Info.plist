@@ -25,7 +25,7 @@
 		<key>MainClass</key>
 		<string>com.izforge.izpack.installer.Installer</string>
 		<key>JVMVersion</key>
-		<string>1.4+</string>
+		<string>1.6+</string>
 		<key>ClassPath</key>
 			<string>$JAVAROOT/__JAR__</string>
 		<key>Properties</key>
