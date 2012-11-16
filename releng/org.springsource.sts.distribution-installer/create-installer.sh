@@ -280,14 +280,14 @@ echo grails.version=$GRAILS_VERSION
 echo maven.version=$MAVEN_VERSION
 
 
-createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.5.0 32bit
+createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.6.0 32bit
 createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar macosx.cocoa.x86_64 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64 izpack.macinstall 1.6.0 64bit
 
-createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk izpack.linuxinstall 1.5.0 32bit
-createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar linux.x86_64 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64 izpack.linuxinstall 1.5.0 64bit
+createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk izpack.linuxinstall 1.6.0 32bit
+createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar linux.x86_64 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64 izpack.linuxinstall 1.6.0 64bit
 
-createInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32 izpack.windowsinstall 1.5.0 32bit
-createInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64 izpack.windowsinstall 1.5.0 64bit
+createInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32 izpack.windowsinstall 1.6.0 32bit
+createInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64 izpack.windowsinstall 1.6.0 64bit
 
 wrapInstallerDmg spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer
 wrapInstallerDmg spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer
@@ -310,44 +310,3 @@ for II in *tool-suite*; do
 	openssl dgst -md5 $II >>$II.md5;
 	openssl dgst -sha1 $II >>$II.sha1;
 done
-
-
-# GROOVY/GRAILS TOOL SUITE
-#STS_DIRECTORY=ggts
-#STS_APPNAME=GGTS
-#STS_PRODUCT_NAME='Groovy-Grails Tool Suite'
-#STS_SHORTNAME=groovy-grails-tool-suite
-#INSTALLER_DIR=ggts
-
-#processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar gg-macosx.cocoa 
-#processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar gg-macosx.cocoa.x86_64 
-#processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar gg-linux.x86_64 
-#processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar gg-linux 
-#processZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip gg-win32 
-#processZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip gg-win32.x86_64 
-
-#createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar gg-macosx.cocoa groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.5.0 32bit
-#createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar gg-macosx.cocoa.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64 izpack.macinstall 1.6.0 64bit
-
-#createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar gg-linux groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk izpack.linuxinstall 1.5.0 32bit
-#createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar gg-linux.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64 izpack.linuxinstall 1.5.0 64bit
-
-#createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip gg-win32 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32 izpack.windowsinstall 1.5.0 32bit
-#createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip gg-win32.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64 izpack.windowsinstall 1.5.0 64bit
-
-#wrapInstallerDmg groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer
-#wrapInstallerDmg groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer
-
-#wrapInstallerSh groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64-installer
-#wrapInstallerSh groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-installer
-
-#wrapInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-installer
-#wrapInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64-installer
-
-#echo "...creating checksum files"
-#for II in *tool-suite*; do 
-#	openssl dgst -md5 $II >>$II.md5;
-#	openssl dgst -sha1 $II >>$II.sha1;
-#done
-
-# /opt/build/sts/releng/com.springsource.sts.releng/epp/send-mail.sh

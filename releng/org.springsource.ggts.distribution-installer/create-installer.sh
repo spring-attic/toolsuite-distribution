@@ -281,14 +281,14 @@ echo grails.version=$GRAILS_VERSION
 echo maven.version=$MAVEN_VERSION
 
 
-createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.5.0 32bit
+createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.6.0 32bit
 createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar macosx.cocoa.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64 izpack.macinstall 1.6.0 64bit
 
-createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk izpack.linuxinstall 1.5.0 32bit
-createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar linux.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64 izpack.linuxinstall 1.5.0 64bit
+createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk izpack.linuxinstall 1.6.0 32bit
+createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar linux.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64 izpack.linuxinstall 1.6.0 64bit
 
-createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32 izpack.windowsinstall 1.5.0 32bit
-createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64 izpack.windowsinstall 1.5.0 64bit
+createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32 izpack.windowsinstall 1.6.0 32bit
+createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64 izpack.windowsinstall 1.6.0 64bit
 
 wrapInstallerDmg groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer
 wrapInstallerDmg groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer
