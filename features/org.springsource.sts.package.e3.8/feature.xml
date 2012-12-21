@@ -68,7 +68,7 @@
 
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.mylyn"/>
-      <import feature="org.eclipse.egit.psf"/>
+      <import feature="org.eclipse.egit.import"/>
 
       <import feature="org.eclipse.emf"/>
       <import feature="org.eclipse.emf.codegen"/>

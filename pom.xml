@@ -107,6 +107,11 @@
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
 		</repository>
 		<repository>
+		  <id>egit</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/egit/updates</url>
+		</repository>
+		<repository>
 		  <id>maven-wtp</id>
 		  <layout>p2</layout>
 		  <url>http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/m2eclipse-wtp-0.15.2/</url>
@@ -164,6 +169,11 @@
 		  <id>atlassian</id>
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
+		</repository>
+		<repository>
+		  <id>egit</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/egit/updates</url>
 		</repository>
 <!--		<repository>
 		  <id>maven-wtp</id>
@@ -223,6 +233,11 @@
 		  <id>atlassian</id>
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
+		</repository>
+		<repository>
+		  <id>egit</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/egit/updates</url>
 		</repository>
 		<!--		<repository>
 				  <id>maven-wtp</id>
