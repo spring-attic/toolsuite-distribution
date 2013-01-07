@@ -156,7 +156,7 @@
 		<profile>
 			<id>e42</id>
 			<properties>
-				<dist.target>e4.2.1</dist.target>
+				<dist.target>e4.2.2</dist.target>
 				<dist.target.major>e4.2</dist.target.major>
 				<dist.platform.name>Juno</dist.platform.name>
 				<dist.platform.id>juno</dist.platform.id>
