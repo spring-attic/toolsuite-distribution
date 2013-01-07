@@ -204,6 +204,11 @@
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/eclipse/updates/4.2/</url>
 		</repository>
+		<repository>
+		  <id>maintenance-builds</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/eclipse/updates/4.2-M-builds</url>
+		</repository>
 <!--		<repository>
 		  <id>juno-updates</id>
 		  <layout>p2</layout>
