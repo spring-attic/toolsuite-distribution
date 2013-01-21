@@ -144,7 +144,7 @@
 		<profile>
 			<id>e38</id>
 			<properties>
-				<dist.target>e3.8.1</dist.target>
+				<dist.target>e3.8.2</dist.target>
 				<dist.target.major>e3.8</dist.target.major>
 				<dist.platform.name>Juno</dist.platform.name>
 				<dist.platform.id>juno</dist.platform.id>
