@@ -302,7 +302,7 @@
 			<repository>
 			  <id>groovy</id>
 			  <layout>p2</layout>
-			  <url>http://dist.springsource.org/milestone/GRECLIPSE/e4.2/</url>
+			  <url>http://dist.springsource.org/milestone/GRECLIPSE/e4.3/</url>
 			</repository>
 			<repository>
 			  <id>atlassian</id>
