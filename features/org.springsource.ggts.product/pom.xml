@@ -48,6 +48,12 @@
 				<sites>http://download.eclipse.org/releases/juno/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
+		<profile>
+			<id>e43</id>
+			<properties>
+				<sites>http://download.eclipse.org/releases/kepler/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+			</properties>
+		</profile>
 	</profiles>
 
 	<build>
