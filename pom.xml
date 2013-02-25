@@ -82,6 +82,11 @@
 		  <url>http://download.eclipse.org/releases/indigo/</url>
 		</repository>
 		<repository>
+		  <id>mylyn</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/mylyn/releases/indigo</url>
+		</repository>
+		<repository>
 		  <id>ajdt</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/tools/ajdt/37/milestone/</url>
@@ -105,11 +110,6 @@
 		  <id>atlassian</id>
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
-		</repository>
-		<repository>
-		  <id>egit</id>
-		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/egit/updates</url>
 		</repository>
 		<repository>
 		  <id>maven-wtp</id>
@@ -156,6 +156,11 @@
 		  <url>http://download.eclipse.org/releases/juno/</url>
 		</repository>
 		<repository>
+		  <id>mylyn</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/mylyn/releases/juno</url>
+		</repository>
+		<repository>
 		  <id>ajdt</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/tools/ajdt/42/milestone/</url>
@@ -174,11 +179,6 @@
 		  <id>atlassian</id>
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
-		</repository>
-		<repository>
-		  <id>egit</id>
-		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/egit/updates</url>
 		</repository>
 <!--		<repository>
 		  <id>maven-wtp</id>
@@ -225,6 +225,11 @@
 		  <url>http://download.eclipse.org/releases/juno/</url>
 		</repository>
 		<repository>
+		  <id>mylyn</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/mylyn/releases/juno</url>
+		</repository>
+		<repository>
 		  <id>ajdt</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/tools/ajdt/42/milestone/</url>
@@ -243,11 +248,6 @@
 		  <id>atlassian</id>
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
-		</repository>
-		<repository>
-		  <id>egit</id>
-		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/egit/updates</url>
 		</repository>
 		<!--		<repository>
 				  <id>maven-wtp</id>
@@ -290,6 +290,11 @@
 			  <url>http://download.eclipse.org/releases/kepler/</url>
 			</repository>
 			<repository>
+			  <id>mylyn</id>
+			  <layout>p2</layout>
+			  <url>http://download.eclipse.org/mylyn/releases/latest</url>
+			</repository>
+			<repository>
 			  <id>ajdt</id>
 			  <layout>p2</layout>
 			  <url>http://download.eclipse.org/tools/ajdt/43/dev/update</url>
@@ -308,11 +313,6 @@
 			  <id>atlassian</id>
 			  <layout>p2</layout>
 			  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
-			</repository>
-			<repository>
-			  <id>egit</id>
-			  <layout>p2</layout>
-			  <url>http://download.eclipse.org/egit/updates</url>
 			</repository>
 			<!--		<repository>
 					  <id>maven-wtp</id>
@@ -418,9 +418,19 @@
 	  <url>http://dist.springsource.com/${dist.type}/TOOLS/grails-ide/${dist.grails-ide-version}</url>
 	</repository>
 	<repository>
-	  <id>mylyn</id>
+	  <id>egit</id>
 	  <layout>p2</layout>
-	  <url>http://download.eclipse.org/mylyn/drops/3.8.1/v20120725-0100</url>
+	  <url>http://download.eclipse.org/egit/updates</url>
+	</repository>
+	<repository>
+	  <id>egit-23-emergency-updates</id>
+	  <layout>p2</layout>
+	  <url>http://download.eclipse.org/egit/updates-2.3</url>
+	</repository>
+	<repository>
+	  <id>m2e</id>
+	  <layout>p2</layout>
+	  <url>http://download.eclipse.org/technology/m2e/releases/</url>
 	</repository>
 	<repository>
 	  <id>m2eclipse-legacy</id>
