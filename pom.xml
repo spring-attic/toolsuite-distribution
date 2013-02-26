@@ -180,11 +180,11 @@
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
 		</repository>
-<!--		<repository>
+		<repository>
 		  <id>maven-wtp</id>
 		  <layout>p2</layout>
-		  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
-		</repository> -->
+		  <url>http://download.eclipse.org/m2e-wtp/releases/juno/</url>
+		</repository>
 		<repository>
 		  <id>maven-extras-mirror</id>
 		  <layout>p2</layout>
@@ -249,11 +249,11 @@
 		  <layout>p2</layout>
 		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
 		</repository>
-		<!--		<repository>
-				  <id>maven-wtp</id>
-				  <layout>p2</layout>
-				  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
-				</repository> -->
+		<repository>
+		  <id>maven-wtp</id>
+		  <layout>p2</layout>
+		  <url>http://download.eclipse.org/m2e-wtp/releases/juno/</url>
+		</repository>
 		<repository>
 		  <id>maven-extras-mirror</id>
 		  <layout>p2</layout>
@@ -314,11 +314,11 @@
 			  <layout>p2</layout>
 			  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
 			</repository>
-			<!--		<repository>
-					  <id>maven-wtp</id>
-					  <layout>p2</layout>
-					  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
-					</repository> -->
+			<repository>
+			  <id>maven-wtp</id>
+			  <layout>p2</layout>
+			  <url>http://download.eclipse.org/m2e-wtp/releases/kepler</url>
+			</repository>
 			<repository>
 			  <id>maven-extras-mirror</id>
 			  <layout>p2</layout>
