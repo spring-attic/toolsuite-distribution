@@ -139,6 +139,7 @@
 	      <import feature="org.eclipse.mylyn.java_feature"/>
 	      <import feature="org.eclipse.mylyn.team_feature"/>
 	      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+	      <import feature="org.eclipse.mylyn.github.feature"/>
 
 	      <import feature="org.eclipse.pde"/>
 	      <import feature="org.eclipse.platform"/>

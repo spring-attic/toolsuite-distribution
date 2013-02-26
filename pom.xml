@@ -428,6 +428,16 @@
 	  <url>http://download.eclipse.org/egit/updates-2.3</url>
 	</repository>
 	<repository>
+	  <id>egit-github</id>
+	  <layout>p2</layout>
+	  <url>http://download.eclipse.org/egit/github/updates</url>
+	</repository>
+	<repository>
+	  <id>egit-github-23-emergency-updates</id>
+	  <layout>p2</layout>
+	  <url>http://download.eclipse.org/egit/github/updates-2.3</url>
+	</repository>
+	<repository>
 	  <id>m2e</id>
 	  <layout>p2</layout>
 	  <url>http://download.eclipse.org/technology/m2e/releases/</url>

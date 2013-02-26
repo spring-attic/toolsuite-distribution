@@ -149,6 +149,7 @@
       <import feature="org.eclipse.mylyn.tasks.ide"/>
       <import feature="org.eclipse.mylyn.team_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.mylyn.github.feature"/>
 
       <import feature="org.eclipse.pde"/>
       <import feature="org.eclipse.platform" version="3.8.0" match="compatible"/>
