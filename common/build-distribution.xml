@@ -115,7 +115,7 @@
 			<arg value="sts-${unqualifiedVersion}.${p2.qualifier}"/>
 			<arg value="-C"/>
 			<arg value="${project.build.directory}/.."/>
-			<arg value="README-BUNDLES-STS.txt"/>
+			<arg value="Legal"/>
 		</exec>
 
 		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
@@ -138,7 +138,7 @@
 			<arg value="ggts-${unqualifiedVersion}.${p2.qualifier}"/>
 			<arg value="-C"/>
 			<arg value="${project.build.directory}/.."/>
-			<arg value="README-BUNDLES-GGTS.txt"/>
+			<arg value="Legal"/>
 		</exec>
 
 		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
@@ -152,7 +152,7 @@
 			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="springsource/${tcserver.name}"/>
 			<zipfileset dir="${project.build.directory}/${maven.name}" prefix="springsource/${maven.name}"/>
 			<zipfileset dir="${project.build.directory}/${roo.name}" prefix="springsource/${roo.name}"/>
-			<zipfileset file="${project.build.directory}/../README-BUNDLES-STS.txt" prefix="springsource/"/>
+			<zipfileset dir="${project.build.directory}/../Legal" prefix="springsource/Legal"/>
 		</zip>
 
 		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
@@ -165,7 +165,7 @@
 			<zipfileset dir="${product.build.directory.ggts}/${path}/ggts-${unqualifiedVersion}.${p2.qualifier}" prefix="springsource/ggts-${unqualifiedVersion}.${p2.qualifier}"/>
 			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="springsource/${tcserver.name}"/>
 			<zipfileset dir="${project.build.directory}/${grails.name}" prefix="springsource/${grails.name}"/>
-			<zipfileset file="${project.build.directory}/../README-BUNDLES-GGTS.txt" prefix="springsource/"/>
+			<zipfileset dir="${project.build.directory}/../Legal" prefix="springsource/Legal"/>
 		</zip>
 
 		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
