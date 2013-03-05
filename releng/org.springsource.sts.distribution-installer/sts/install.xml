@@ -48,7 +48,7 @@
     </locale>
 
     <resources>
-        <res id="LicencePanel.licence" src="open_source_licenses.txt"/>
+        <res id="LicencePanel.licence" src="Spring_Tool_Suite_Bundle.txt"/>
 
 		<res id="Heading.image" src="installer-header.png"/>
 		<res id="Installer.image" src="installer-sidebar.png" />
