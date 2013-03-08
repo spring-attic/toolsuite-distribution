@@ -114,6 +114,11 @@
 			</parsable>
         </pack>
 			
+		 <pack name="License Information" required="yes">
+            <description>contains all the open-source licenses for STS, Spring Roo, and Apache Maven as well as the license for the tc Server Developer Edition.</description>
+            <file src="springsource/legal" targetdir="$INSTALL_PATH" override="true" />
+        </pack>
+			
 		 <pack name="vFabric tc Server @{tc.server.version}" required="no">
             <description>Installs vFabric tc Server Developer Edition @{tc.server.version}</description>
             <file src="springsource/vfabric-tc-server-developer-@{tc.server.version}" targetdir="$INSTALL_PATH" override="true"/>
