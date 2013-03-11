@@ -2,7 +2,7 @@
 <feature
       id="org.springsource.ggts.package"
       label="%featureName"
-      version="3.2.0.qualifier"
+      version="3.3.0.qualifier"
       provider-name="%providerName"
       plugin="org.springsource.ggts">
 
@@ -205,7 +205,7 @@
 	  <import feature="org.grails.ide.eclipse"/>
 	  <import feature="org.codehaus.groovy.eclipse.feature" version="2.0.0" match="greaterOrEqual"/>
 	  <import feature="org.codehaus.groovy.jdt.patch"/>
-	  <import feature="org.codehaus.groovy18.feature"/>
+	  <import feature="org.codehaus.groovy20.feature"/>
 
    </requires>
 
