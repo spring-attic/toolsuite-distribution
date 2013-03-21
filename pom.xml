@@ -141,16 +141,6 @@
 		  <url>http://download.eclipse.org/eclipse/updates/3.8/</url>
 		</repository>
 		<repository>
-		  <id>juno-m-builds</id>
-		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/eclipse/updates/3.8-M-builds</url>
-		</repository>
-		<repository>
-		  <id>juno-updates</id>
-		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/releases/maintenance/</url>
-		</repository>
-		<repository>
 		  <id>juno</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/releases/juno/</url>
@@ -208,16 +198,6 @@
 		  <id>platform</id>
 		  <layout>p2</layout>
 		  <url>http://download.eclipse.org/eclipse/updates/4.2/</url>
-		</repository>
-		<repository>
-		  <id>juno-m-builds</id>
-		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/eclipse/updates/4.2-M-builds</url>
-		</repository>
-		<repository>
-		  <id>juno-updates</id>
-		  <layout>p2</layout>
-		  <url>http://download.eclipse.org/releases/maintenance/</url>
 		</repository>
 		<repository>
 		  <id>juno</id>
