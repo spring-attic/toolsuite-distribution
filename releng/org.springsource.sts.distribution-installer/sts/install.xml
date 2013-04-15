@@ -152,6 +152,7 @@
 			<executable targetfile="$INSTALL_PATH/spring-roo-@{roo.version}/bin/roo.sh" stage="never" keep="yes" />
         </pack>
 -->
+<!--
 		 <pack name="Apache Maven @{maven.version}" required="no">
             <description>Installs Apache Maven @{maven.version}</description>
             <file src="springsource/apache-maven-@{maven.version}" targetdir="$INSTALL_PATH" override="true"/>
@@ -159,7 +160,7 @@
 			<executable targetfile="$INSTALL_PATH/apache-maven-@{maven.version}/bin/mvnDebug" stage="never" keep="yes" />			
 			<executable targetfile="$INSTALL_PATH/apache-maven-@{maven.version}/bin/mvnyjp" stage="never" keep="yes" />			
         </pack>
-
+-->
     </packs>
 
 	<listeners> 
