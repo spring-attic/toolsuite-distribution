@@ -190,7 +190,6 @@
 	  <import feature="org.springframework.ide.eclipse.ajdt.feature"/>
 	  <import feature="org.springframework.ide.eclipse.webflow.feature"/>
 	  <import feature="org.springframework.ide.eclipse.mylyn.feature"/>
-	  <import feature="org.springframework.ide.eclipse.osgi.feature"/>
 	  <import feature="org.springframework.ide.eclipse.security.feature"/>
 	  <import feature="org.springframework.ide.eclipse.autowire.feature"/>
 	  <import feature="org.springframework.ide.eclipse.batch.feature"/>
