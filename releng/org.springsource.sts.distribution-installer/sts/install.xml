@@ -145,13 +145,13 @@
 			<executable targetfile="$INSTALL_PATH/vfabric-tc-server-developer-@{tc.server.version}/tomcat-@{tomcat7.version}/bin/version.sh" stage="never" keep="yes" />			
 
         </pack>
-<!--
+
         <pack name="Spring Roo @{roo.version}" required="no">
             <description>Installs Spring Roo @{roo.version}</description>
             <file src="springsource/spring-roo-@{roo.version}" targetdir="$INSTALL_PATH" override="true"/>
 			<executable targetfile="$INSTALL_PATH/spring-roo-@{roo.version}/bin/roo.sh" stage="never" keep="yes" />
         </pack>
--->
+
 <!--
 		 <pack name="Apache Maven @{maven.version}" required="no">
             <description>Installs Apache Maven @{maven.version}</description>

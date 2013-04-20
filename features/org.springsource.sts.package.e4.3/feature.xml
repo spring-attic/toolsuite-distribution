@@ -207,6 +207,7 @@
 	  <import feature="org.springframework.ide.eclipse.integration.feature"/>		
       <import feature="org.springframework.ide.eclipse.maven.feature"/>
       <import feature="org.springframework.ide.eclipse.data.feature"/>
+      <import feature="org.springframework.ide.eclipse.roo.feature"/>
 
 	  <import feature="org.eclipse.ajdt"/>					
 	  <import feature="org.eclipse.contribution.weaving"/>					
