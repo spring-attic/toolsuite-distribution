@@ -109,7 +109,7 @@
 		<repository>
 		  <id>atlassian</id>
 		  <layout>p2</layout>
-		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.7/</url>
+		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 		</repository>
 		<repository>
 		  <id>maven-wtp</id>
@@ -168,7 +168,7 @@
 		<repository>
 		  <id>atlassian</id>
 		  <layout>p2</layout>
-		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
+		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 		</repository>
 		<repository>
 		  <id>maven-wtp</id>
@@ -227,7 +227,7 @@
 		<repository>
 		  <id>atlassian</id>
 		  <layout>p2</layout>
-		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
+		  <url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 		</repository>
 		<repository>
 		  <id>maven-wtp</id>
@@ -292,7 +292,7 @@
 			<repository>
 			  <id>atlassian</id>
 			  <layout>p2</layout>
-			  <url>http://update.atlassian.com/atlassian-eclipse-plugin/e3.8</url>
+			  <url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 			</repository>
 			<repository>
 			  <id>maven-wtp</id>
