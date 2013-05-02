@@ -40,14 +40,14 @@
 			<id>e38</id>
 			<properties>
 				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/releases/maintenance/,http://download.eclipse.org/m2e-wtp/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/m2e-wtp/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 		<profile>
 			<id>e42</id>
 			<properties>
 				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/releases/maintenance/,http://download.eclipse.org/m2e-wtp/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/m2e-wtp/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 		<profile>
@@ -351,6 +351,52 @@
 				<groupId>org.eclipse.tycho.extras</groupId>
 				<artifactId>tycho-eclipserun-plugin</artifactId>
 				<version>${tycho-version}</version>
+
+				<configuration>
+					<dependencies>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.transport.ecf</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.repository</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.touchpoint.natives</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.touchpoint.eclipse</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.artifact.repository
+							</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.director.app</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.ds</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.core.net</artifactId>
+							<type>eclipse-plugin</type>
+						</dependency>
+					</dependencies>
+					<repositories>
+						<repository>
+							<id>juno</id>
+							<layout>p2</layout>
+							<url>http://download.eclipse.org/releases/juno</url>
+						</repository>
+					</repositories>
+				</configuration>
+
 				<executions>
 					<execution>
 						<id>root-features-osx-32bit</id>
