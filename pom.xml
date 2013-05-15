@@ -267,8 +267,13 @@
 			<repository>
 			  <id>juno</id>
 			  <layout>p2</layout>
-			  <url>http://download.eclipse.org/releases/kepler/</url>
+			  <url>http://download.eclipse.org/releases/kepler/201305100900</url>
 			</repository>
+<!--			<repository>
+			  <id>juno</id>
+			  <layout>p2</layout>
+			  <url>http://download.eclipse.org/releases/kepler/</url>
+			</repository> -->
 			<repository>
 			  <id>mylyn</id>
 			  <layout>p2</layout>
