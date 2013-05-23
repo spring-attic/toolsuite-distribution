@@ -67,12 +67,6 @@
 	<category name="Uncategorized"/>
   </feature>
 
-  <feature
-	id="org.springsource.ide.eclipse.commons.dependencies"
-	version="0.0.0">
-	<category name="Uncategorized"/>
-  </feature>
-
   <!-- tc Server -->
   <category-def name="Core / Eclipse Integration vFabric tc Server" label="Core / Eclipse Integration vFabric tc Server"/>
 
