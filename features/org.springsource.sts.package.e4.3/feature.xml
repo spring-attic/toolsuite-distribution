@@ -219,6 +219,7 @@
 
       <import feature="org.springsource.ide.eclipse.commons"/>
       <import feature="org.springsource.ide.eclipse.dashboard"/>
+      <import feature="org.springsource.ide.eclipse.commons.quicksearch.feature"/>
 
    </requires>
 

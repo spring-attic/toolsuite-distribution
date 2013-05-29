@@ -57,6 +57,12 @@
   </feature>
 
   <feature
+    id="org.springsource.ide.eclipse.commons.quicksearch.feature"
+    version="0.0.0">
+    <category name="Core / Eclipse Integration Commons" />
+  </feature>
+	
+  <feature
 	id="org.springframework.ide.eclipse.uaa.feature.source"
 	version="0.0.0">
 	<category name="Resources / Eclipse Integration Commons" />
