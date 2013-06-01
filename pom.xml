@@ -269,10 +269,15 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-				<repository>
+<!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
+				</repository> -->
+				<repository>
+					<id>platform</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/eclipse/updates/4.3milestones/S-4.3RC3-201305301430/</url>
 				</repository>
 				<!--		<repository>
 				<id>juno-updates</id>
