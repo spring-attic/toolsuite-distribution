@@ -277,7 +277,7 @@ Optional parameters:
 				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.3milestones/S-4.3RC3-201305301430/</url>
+					<url>http://download.eclipse.org/eclipse/updates/4.3milestones/S-4.3RC4-201306052000/</url>
 				</repository>
 				<!--		<repository>
 				<id>juno-updates</id>
