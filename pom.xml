@@ -285,9 +285,9 @@ Optional parameters:
 				<url>http://download.eclipse.org/releases/maintenance/</url>
 				</repository> -->
 				<repository>
-					<id>juno</id>
+					<id>kepler</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/kepler/201306070900</url>
+					<url>http://build.eclipse.org/technology/epp/epp_build/kepler/download/20130614-0234/repository/</url>
 				</repository>
 				<!--			<repository>
 				<id>juno</id>
