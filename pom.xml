@@ -287,7 +287,7 @@ Optional parameters:
 				<repository>
 					<id>kepler</id>
 					<layout>p2</layout>
-					<url>http://build.eclipse.org/technology/epp/epp_build/kepler/download/20130614-0234/repository/</url>
+					<url>http://download.eclipse.org/releases/staging/</url>
 				</repository>
 				<!--			<repository>
 				<id>juno</id>
