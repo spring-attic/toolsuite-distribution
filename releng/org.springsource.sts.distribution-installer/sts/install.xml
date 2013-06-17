@@ -6,7 +6,7 @@
         <appversion>@{sts.version}</appversion>
 <!--        <authors>
         </authors>-->
-        <url>http://www.springsource.com</url>
+        <url>http://www.springsource.org</url>
 		<writeinstallationinformation>no</writeinstallationinformation>
 <!--		<pack200/>-->
 		<javaversion>1.6</javaversion>
