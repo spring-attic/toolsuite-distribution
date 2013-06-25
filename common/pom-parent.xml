@@ -178,6 +178,18 @@
 			</properties>
 		</profile>
 		<profile>
+			<id>e44</id>
+			<properties>
+				<dist.target>e4.4</dist.target>
+				<dist.target.major>e4.4</dist.target.major>
+				<dist.platform.name>Luna</dist.platform.name>
+				<dist.platform.id>luna</dist.platform.id>
+				<dist.platform.version>4.4</dist.platform.version>
+				<package.qualifierPrefix>e44</package.qualifierPrefix>
+				<version.weaving>1.0.100.HEAD</version.weaving>
+			</properties>
+		</profile>
+		<profile>
 			<id>build.springsource.com</id>
 			<activation>
 				<property>
