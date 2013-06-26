@@ -269,15 +269,10 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-<!--				<repository>
-					<id>platform</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
-				</repository> -->
 				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.3milestones/S-4.3RC4-201306052000/</url>
+					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
 				</repository>
 				<!--		<repository>
 				<id>juno-updates</id>
@@ -285,15 +280,10 @@ Optional parameters:
 				<url>http://download.eclipse.org/releases/maintenance/</url>
 				</repository> -->
 				<repository>
-					<id>kepler</id>
+					<id>juno</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/staging/</url>
+					<url>http://download.eclipse.org/releases/kepler/</url>
 				</repository>
-				<!--			<repository>
-				<id>juno</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/releases/kepler/</url>
-				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
@@ -359,7 +349,7 @@ Optional parameters:
 				<url>http://download.eclipse.org/releases/maintenance/</url>
 				</repository> -->
 				<repository>
-					<id>juno</id>
+					<id>luna</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/kepler/</url>
 				</repository>
