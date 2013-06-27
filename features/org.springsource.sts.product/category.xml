@@ -239,6 +239,12 @@
  	</feature>
 
 	<!-- third-party dependencies -->
+	<feature
+		id="org.eclipse.zest"
+		version="0.0.0">
+		<category name="Uncategorized"/>
+	</feature>
+
 	<bundle id="com.google.protobuf" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
