@@ -22,7 +22,6 @@
       <import feature="org.springframework.ide.eclipse.feature" version="3.3.0" match="compatible"/>
       <import feature="org.springframework.ide.eclipse.aop.feature" version="3.3.0" match="compatible"/>
       <import feature="org.springframework.ide.eclipse.mylyn.feature" version="3.3.0" match="compatible"/>
-      <import feature="org.springframework.ide.eclipse.osgi.feature" version="3.3.0" match="compatible"/>
       <import feature="org.springframework.ide.eclipse.webflow.feature" version="3.3.0" match="compatible"/>
       <import feature="org.eclipse.mylyn_feature" version="3.4.0.v20100601" match="compatible"/>
       <import feature="org.eclipse.mylyn.context_feature" version="3.4.0.v20100601" match="compatible"/>
