@@ -3,9 +3,6 @@ The Spring Tool Suite Bundle consists of:
 Spring Tool Suite (STS)
 This project is licensed under the Eclipse Public License Version 1.0 ("EPL"). The EPL is referenced in the open_source_licenses-sts-distribution.txt and the complete text of the EPL is available in the file called license.txt.
 
-Apache Maven
-This project is licensed under the Apache License Version 2.0. A copy of this license is available in the file called open_source_licenses-sts-bundle.txt.
-
 Spring Roo
 This project is licensed under Apache License 2.0.A copy of this license is available in the file called open_source_licenses-sts-bundle.txt.
 
