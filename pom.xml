@@ -47,7 +47,7 @@ Optional parameters:
 		<dist.dependencies-version-path>nightly</dist.dependencies-version-path>
 
 		<!-- individual version path extensions for all the dependencies -->
-		<dist.springide-pathpostfix>3.3.1.RELEASE</dist.springide-pathpostfix>
+		<dist.springide-pathpostfix>${dist.dependencies-version-path}</dist.springide-pathpostfix>
 		<dist.eclipse-integration-commons-version>${dist.dependencies-version-path}</dist.eclipse-integration-commons-version>
 		<dist.eclipse-integration-tcserver-version>${dist.dependencies-version-path}</dist.eclipse-integration-tcserver-version>
 		<dist.eclipse-integration-gradle-version>${dist.dependencies-version-path}</dist.eclipse-integration-gradle-version>
