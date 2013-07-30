@@ -178,6 +178,18 @@
 			</properties>
 		</profile>
 		<profile>
+			<id>e43-java8</id>
+			<properties>
+				<dist.target>e4.3-java8</dist.target>
+				<dist.target.major>e4.3-java8</dist.target.major>
+				<dist.platform.name>Kepler</dist.platform.name>
+				<dist.platform.id>kepler</dist.platform.id>
+				<dist.platform.version>4.3-java8</dist.platform.version>
+				<package.qualifierPrefix>e43-java8</package.qualifierPrefix>
+				<version.weaving>1.0.100.HEAD</version.weaving>
+			</properties>
+		</profile>
+		<profile>
 			<id>e44</id>
 			<properties>
 				<dist.target>e4.4</dist.target>
