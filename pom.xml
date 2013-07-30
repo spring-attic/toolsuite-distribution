@@ -466,8 +466,8 @@ Optional parameters:
 				</repository>
 			</repositories>
 			<modules>
-				<module>features/org.springsource.sts.package.e4.3</module>
-				<module>features/org.springsource.ggts.package.e4.3</module>
+				<module>features/org.springsource.sts.package.e4.4</module>
+				<module>features/org.springsource.ggts.package.e4.4</module>
 			</modules>
 		</profile>
 
