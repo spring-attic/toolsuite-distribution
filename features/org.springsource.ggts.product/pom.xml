@@ -51,19 +51,19 @@
 		<profile>
 			<id>e43</id>
 			<properties>
-				<sites>http://download.eclipse.org/releases/kepler/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/releases/staging/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 		<profile>
 			<id>e43-java8</id>
 			<properties>
-				<sites>http://download.eclipse.org/releases/kepler/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/releases/staging/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 		<profile>
 			<id>e44</id>
 			<properties>
-				<sites>http://download.eclipse.org/releases/kepler/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/luna/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 	</profiles>

@@ -280,6 +280,11 @@ Optional parameters:
 				<url>http://download.eclipse.org/releases/maintenance/</url>
 				</repository> -->
 				<repository>
+					<id>kepler-maintenance</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/staging/</url>
+				</repository>
+				<repository>
 					<id>kepler</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/kepler/</url>
@@ -343,6 +348,11 @@ Optional parameters:
 					<id>platform</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
+				</repository>
+				<repository>
+					<id>kepler-maintenance</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/staging/</url>
 				</repository>
 				<repository>
 					<id>kepler</id>
