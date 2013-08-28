@@ -98,5 +98,14 @@
 			</presentation>
 		</config>
 	</extension>
+	
+	 <extension
+	       point="com.springsource.sts.core.resources">
+	    <propertyDefinition
+	          id="sts.properties.url"
+	          defaultValue="http://dist.springsource.com/release/STS/discovery/ggts.properties">
+	    </propertyDefinition>
+	 </extension>
+	
    
 </plugin>
