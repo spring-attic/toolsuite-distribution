@@ -405,13 +405,13 @@
 
 								<exec executable="codesign">
 								    <arg value="-s"/>
-								    <arg value="Developer ID Application: VMware, Inc"/>
+								    <arg value="Developer ID Application: VMware, Inc."/>
 								    <arg value="${build.destination.cocoa.x86}/ggts-${unqualifiedVersion}.${p2.qualifier}/GGTS.app"/>
 								</exec>
 
 								<exec executable="codesign">
 								    <arg value="-s"/>
-								    <arg value="Developer ID Application: VMware, Inc"/>
+								    <arg value="Developer ID Application: VMware, Inc."/>
 								    <arg value="${build.destination.cocoa.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier}/GGTS.app"/>
 								</exec>
 
