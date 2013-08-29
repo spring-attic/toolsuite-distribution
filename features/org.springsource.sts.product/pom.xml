@@ -55,7 +55,7 @@
 			<id>e43</id>
 			<properties>
 				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/releases/maintenance/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 
@@ -63,7 +63,7 @@
 			<id>e43-java8</id>
 			<properties>
 				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/releases/maintenance/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 		
@@ -71,7 +71,7 @@
 			<id>e44</id>
 			<properties>
 				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
+				<sites>http://download.eclipse.org/releases/luna/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
 
