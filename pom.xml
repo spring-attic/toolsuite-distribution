@@ -274,20 +274,15 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
 				</repository>
-				<!--		<repository>
-				<id>juno-updates</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository> -->
-				<repository>
-					<id>kepler-maintenance</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/staging/</url>
-				</repository>
 				<repository>
 					<id>kepler</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/kepler/</url>
+				</repository>
+				<repository>
+					<id>kepler-updates</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/maintenance/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
@@ -350,14 +345,14 @@ Optional parameters:
 					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
 				</repository>
 				<repository>
-					<id>kepler-maintenance</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/staging/</url>
-				</repository>
-				<repository>
 					<id>kepler</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/kepler/</url>
+				</repository>
+				<repository>
+					<id>kepler-updates</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/maintenance/</url>
 				</repository>
 				<repository>
 					<id>java8-patches</id>
@@ -422,7 +417,7 @@ Optional parameters:
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
+					<url>http://download.eclipse.org/eclipse/updates/4.4/</url>
 				</repository> -->
 				<!--		<repository>
 				<id>juno-updates</id>
