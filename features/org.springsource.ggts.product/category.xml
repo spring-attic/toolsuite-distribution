@@ -110,13 +110,13 @@
 	version="0.0.0">
 	<category name="Groovy-Eclipse" />
   </feature>
-
+<!--
   <feature
 	id="org.codehaus.groovy17.feature"
 	version="0.0.0">
 	<category name="Groovy-Eclipse" />
   </feature>
-
+-->
   <feature
 	id="org.codehaus.groovy18.feature"
 	version="0.0.0">
