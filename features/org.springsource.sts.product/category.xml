@@ -62,6 +62,12 @@
   </feature>
 	
   <feature
+    id="org.springsource.ide.eclipse.commons.gettingstarted.feature"
+    version="0.0.0">
+    <category name="Core / Eclipse Integration Commons" />
+  </feature>
+
+  <feature
 	id="org.springframework.ide.eclipse.uaa.feature.source"
 	version="0.0.0">
 	<category name="Resources / Eclipse Integration Commons" />
@@ -347,6 +353,19 @@
 		<category name="Uncategorized"/>
 	</bundle>
 	
+    <bundle id="org.codehaus.jackson.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.codehaus.jackson.core.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.codehaus.jackson.mapper" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.codehaus.jackson.mapper.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
 	<bundle id="org.json" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
