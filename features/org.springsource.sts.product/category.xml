@@ -347,6 +347,19 @@
 		<category name="Uncategorized"/>
 	</bundle>
 	
+    <bundle id="org.codehaus.jackson.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.codehaus.jackson.core.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.codehaus.jackson.mapper" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.codehaus.jackson.mapper.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
 	<bundle id="org.json" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
