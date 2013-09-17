@@ -54,10 +54,6 @@
 				name="applicationCSSResources"
 	         	value="platform:/plugin/org.eclipse.platform/images/">
 		  </property>
-		  <property
-		        name="sts.properties.url"
-		        value="http://dist.springsource.com/release/STS/discovery/ggts.properties">
-		  </property>
       </product> 
    </extension>
           
@@ -102,5 +98,5 @@
 			</presentation>
 		</config>
 	</extension>
-	
+
 </plugin>
