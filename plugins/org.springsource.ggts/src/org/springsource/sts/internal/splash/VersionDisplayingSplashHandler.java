@@ -1,5 +1,5 @@
 /******************************************************************************************
- * Copyright (c) 2009 - 2010 SpringSource, a division of VMware, Inc. All rights reserved.
+ * Copyright (c) 2009 - 2010 GoPivotal, Inc. All rights reserved.
  ******************************************************************************************/
 package org.springsource.sts.internal.splash;
 
