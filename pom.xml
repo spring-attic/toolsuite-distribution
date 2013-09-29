@@ -279,11 +279,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/kepler/</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>kepler-updates</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
@@ -349,11 +349,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/kepler/</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>kepler-updates</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>java8-patches</id>
 					<layout>p2</layout>
