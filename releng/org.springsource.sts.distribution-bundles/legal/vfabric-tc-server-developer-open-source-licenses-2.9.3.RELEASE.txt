@@ -1,6 +1,6 @@
 open_source_license.txt
 
-VMware vFabric tc Server 2.9.2.RELEASE
+VMware vFabric tc Server 2.9.3.RELEASE
 
 
 ===========================================================================
