@@ -17,6 +17,7 @@ openFile</programArgs>
 -XX:MaxPermSize=256m</vmArgs>
       <vmArgsMac>-XstartOnFirstThread
 -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns</vmArgsMac>
+      <vmArgsWin>-Dorg.eclipse.swt.browser.IEVersion=10001</vmArgsWin>
    </launcherArgs>
 
    <windowImages i16="/org.springsource.sts/sts.png" i32="/org.springsource.sts/sts32.png" i48="/org.springsource.sts/sts48.png" i64="/org.springsource.sts/sts64.png" i128="/org.springsource.sts/sts128.png"/>
