@@ -364,6 +364,10 @@
 		<category name="Uncategorized"/>
 	</bundle>
 	
+	<bundle id="org.slf4j.api" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	
 	<bundle id="org.aspectj.runtime" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
