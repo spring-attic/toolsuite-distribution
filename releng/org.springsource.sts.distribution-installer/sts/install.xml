@@ -6,7 +6,7 @@
         <appversion>@{sts.version}</appversion>
 <!--        <authors>
         </authors>-->
-        <url>http://www.springsource.org</url>
+        <url>https://spring.io/tools/sts</url>
 		<writeinstallationinformation>no</writeinstallationinformation>
 <!--		<pack200/>-->
 		<javaversion>1.6</javaversion>
@@ -69,7 +69,7 @@
 		<variable name="StsFinishPanel.launcher" value="STS" />
 		<variable name="StsFinishPanel.path" value="$INSTALL_PATH/sts-@{sts.version}" />
 		<variable name="StsFinishPanel.url" >
-			<value><![CDATA[http://www.springsource.org/sts/welcome?version=@{sts.version}&os=@{sts.platform}]]></value>
+			<value><![CDATA[https://spring.io/tools/sts/welcome?version=@{sts.version}&os=@{sts.platform}]]></value>
 		</variable>
 	</variables> 
 
@@ -115,12 +115,12 @@
         </pack>
 			
 		 <pack name="License Information" required="yes">
-            <description>contains all the open-source licenses for STS, Spring Roo, and Apache Maven as well as the license for the tc Server Developer Edition.</description>
+            <description>contains all the open-source licenses for STS and Spring Roo, as well as the license for the tc Server Developer Edition.</description>
             <file src="springsource/legal" targetdir="$INSTALL_PATH" override="true" />
         </pack>
 			
-		 <pack name="vFabric tc Server @{tc.server.version}" required="no">
-            <description>Installs vFabric tc Server Developer Edition @{tc.server.version}</description>
+		 <pack name="Pivotal tc Server @{tc.server.version}" required="no">
+            <description>Installs Pivotal tc Server Developer Edition @{tc.server.version}</description>
             <file src="springsource/vfabric-tc-server-developer-@{tc.server.version}" targetdir="$INSTALL_PATH" override="true"/>
 			<executable targetfile="$INSTALL_PATH/vfabric-tc-server-developer-@{tc.server.version}/tcruntime-ctl.sh" stage="never" keep="yes" />
 			<executable targetfile="$INSTALL_PATH/vfabric-tc-server-developer-@{tc.server.version}/tcruntime-instance.sh" stage="never" keep="yes" />
