@@ -69,7 +69,7 @@
 		<variable name="StsFinishPanel.launcher" value="GGTS" />
 		<variable name="StsFinishPanel.path" value="$INSTALL_PATH/ggts-@{sts.version}" />
 		<variable name="StsFinishPanel.url" >
-			<value><![CDATA[https://spring.io/tools/ggts/welcome?version=@{sts.version}&os=@{sts.platform}]]></value>
+			<value><![CDATA[http://grails.org/products/ggts/welcome?version=@{sts.version}&os=@{sts.platform}]]></value>
 		</variable>
 	</variables> 
 
