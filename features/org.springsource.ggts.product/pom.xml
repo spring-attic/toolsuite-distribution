@@ -568,6 +568,15 @@
 				</executions>
 			</plugin>
 
+			<plugin>
+				<groupId>com.vmware.build.maven</groupId>
+				<artifactId>vmware-maven-jarsigner-plugin</artifactId>
+				<version>${vmware.maven.jarsigner.plugin.version}</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+
 		</plugins>
 
 		<pluginManagement>
