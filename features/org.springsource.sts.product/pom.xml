@@ -74,6 +74,22 @@
 				<sites>http://download.eclipse.org/releases/luna/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
+		
+		<profile>
+			<id>vmware-signing</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.vmware.build.maven</groupId>
+						<artifactId>vmware-maven-jarsigner-plugin</artifactId>
+						<version>${vmware.maven.jarsigner.plugin.version}</version>
+						<configuration>
+							<skip>true</skip>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 
 	</profiles>
 
@@ -489,15 +505,6 @@
 					</execution>
 
 				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>com.vmware.build.maven</groupId>
-				<artifactId>vmware-maven-jarsigner-plugin</artifactId>
-				<version>${vmware.maven.jarsigner.plugin.version}</version>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
 			</plugin>
 
 		</plugins>

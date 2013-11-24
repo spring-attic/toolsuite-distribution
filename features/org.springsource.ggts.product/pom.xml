@@ -66,6 +66,23 @@
 				<sites>http://download.eclipse.org/releases/luna/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</sites>
 			</properties>
 		</profile>
+		
+		<profile>
+			<id>vmware-signing</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.vmware.build.maven</groupId>
+						<artifactId>vmware-maven-jarsigner-plugin</artifactId>
+						<version>${vmware.maven.jarsigner.plugin.version}</version>
+						<configuration>
+							<skip>true</skip>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 	</profiles>
 
 	<build>
@@ -566,15 +583,6 @@
 					</execution>
 
 				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>com.vmware.build.maven</groupId>
-				<artifactId>vmware-maven-jarsigner-plugin</artifactId>
-				<version>${vmware.maven.jarsigner.plugin.version}</version>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
 			</plugin>
 
 		</plugins>
