@@ -23,8 +23,6 @@
       <discovery label="Groovy/Grails Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e4.2"/>
    </url>
    
-   <includes id="org.eclipse.platform" version="0.0.0" />
-  
    <requires>
 	      <import feature="org.eclipse.cvs"/>
 
@@ -142,8 +140,8 @@
 	      <import feature="org.eclipse.mylyn.github.feature"/>
 
 	      <import feature="org.eclipse.pde"/>
-	      <import feature="org.eclipse.platform"/>
-	      <import feature="org.eclipse.rcp"/>
+	      <import feature="org.eclipse.platform" version="3.7.0" match="compatible"/>
+	      <import feature="org.eclipse.rcp" version="3.7.0" match="compatible"/>
 
 	      <import feature="org.eclipse.rse"/>
 	      <import feature="org.eclipse.rse.core"/>

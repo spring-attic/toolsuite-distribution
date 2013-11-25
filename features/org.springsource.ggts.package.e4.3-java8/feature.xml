@@ -23,8 +23,6 @@
       <discovery label="Groovy/Grails Tool Suite Updates" url="http://download.springsource.com/release/TOOLS/update/e4.3"/>
    </url>
    
-   <includes id="org.eclipse.platform" version="0.0.0" />
-  
    <requires>
 	
       <import feature="org.eclipse.cvs"/>
@@ -150,8 +148,8 @@
       <import feature="org.eclipse.mylyn.github.feature"/>
 
       <import feature="org.eclipse.pde"/>
-      <import feature="org.eclipse.platform" version="4.2.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="4.2.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="4.3.0" match="compatible"/>
+      <import feature="org.eclipse.rcp" version="4.3.0" match="compatible"/>
 
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.rse.core"/>
