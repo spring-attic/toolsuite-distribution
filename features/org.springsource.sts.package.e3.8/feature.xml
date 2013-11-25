@@ -23,8 +23,6 @@
       <discovery label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e3.8"/>
    </url>
    
-   <includes id="org.eclipse.platform" version="0.0.0" />
-
    <requires>
 
       <import feature="org.eclipse.cvs"/>
