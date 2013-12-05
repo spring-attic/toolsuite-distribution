@@ -204,7 +204,6 @@
 	  <import feature="org.grails.ide.eclipse"/>
 	  <import feature="org.codehaus.groovy.eclipse.feature" version="2.0.0" match="greaterOrEqual"/>
 	  <import feature="org.codehaus.groovy.jdt.patch"/>
-	  <import feature="org.codehaus.groovy20.feature"/>
 <!--
 	  <import feature="org.eclipse.jdt.java8patch"/>
 	  <import feature="org.eclipse.pde.java8patch"/>

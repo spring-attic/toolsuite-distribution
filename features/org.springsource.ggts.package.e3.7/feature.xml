@@ -212,7 +212,6 @@
 		  <import feature="org.grails.ide.eclipse"/>
 		  <import feature="org.codehaus.groovy.eclipse.feature"/>
 	      <import feature="org.codehaus.groovy.jdt.patch"/>
-	      <import feature="org.codehaus.groovy20.feature"/>
 
    </requires>
 
