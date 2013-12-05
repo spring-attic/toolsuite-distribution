@@ -20,7 +20,7 @@ openFile</programArgs>
       <vmArgsWin>-Dorg.eclipse.swt.browser.IEVersion=10001</vmArgsWin>
    </launcherArgs>
 
-   <windowImages i16="/org.springsource.ggts/sts.png" i32="/org.springsource.ggts/sts32.png" i48="/org.springsource.ggts/sts48.png" i64="/org.springsource.ggts/sts64.png" i128="/org.springsource.ggts/sts128.png"/>
+   <windowImages i16="/org.springsource.ggts/ggts16.png" i32="/org.springsource.ggts/ggts32.png" i48="/org.springsource.ggts/ggts48.png" i64="/org.springsource.ggts/ggts64.png" i128="/org.springsource.ggts/ggts128.png"/>
 
    <splash
       startupProgressRect="0,225,455,15"

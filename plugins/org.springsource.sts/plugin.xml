@@ -4,7 +4,7 @@
 
    <extension id="ide" point="org.eclipse.core.runtime.products"> 
       <product name="%productName" application="org.eclipse.ui.ide.workbench" description="%productBlurb"> 
-          <property name="windowImages" value="sts.png,sts32.png,sts48.png,sts64.png,sts128.png"/> 
+          <property name="windowImages" value="sts16.png,sts32.png,sts48.png,sts64.png,sts128.png"/> 
           <property name="aboutImage" value="sts_lg.gif"/> 
           <property name="aboutText" value="%productBlurb"/> 
           <property name="appName" value="%productName"/> 
