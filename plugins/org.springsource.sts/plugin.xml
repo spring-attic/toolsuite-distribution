@@ -11,19 +11,19 @@
           <property name="preferenceCustomization" value="plugin_customization.ini"/> 
           <property
                 name="startupForegroundColor"
-                value="a6c693"/>
+                value="33302D"/>
           <property
                 name="versionForegroundColor"
-                value="c2cd23"/>
+                value="33302D"/>
           <property
                 name="startupMessageRect"
-                value="29,128,540,20"/>
+                value="29,176,540,20"/>
           <property
                 name="startupProgressRect"
-                value="29,146,540,14"/>
+                value="29,192,540,14"/>
           <property
                 name="versionRect"
-                value="323,78" />
+                value="540,40" />
           <property
           		name="introTitle"
           		value="%productIntroTitle"/>
