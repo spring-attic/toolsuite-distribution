@@ -5,8 +5,8 @@
   <cmdLine></cmdLine>
   <chdir>.</chdir>
   <priority>normal</priority>
-  <downloadUrl>http://java.com/download</downloadUrl>
-  <supportUrl>http://forum.springsource.org/forumdisplay.php?f=32</supportUrl>
+  <downloadUrl>http://spring.io/tools</downloadUrl>
+  <supportUrl>http://forum.spring.io/forum/spring-projects/springsource-tool-suite</supportUrl>
   <customProcName>true</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
@@ -19,11 +19,11 @@
     <fileVersion>%sts.major.version%.0</fileVersion>
     <txtFileVersion>%sts.version%</txtFileVersion>
     <fileDescription>Installer - Spring Tool Suite</fileDescription>
-    <copyright>Copyright (c) 2007, 2012 SpringSource.  All rights reserved.</copyright>
+    <copyright>Copyright (c) 2007, 2014 Pivotal Software Inc.  All rights reserved.</copyright>
     <productVersion>%sts.major.version%.0</productVersion>
     <txtProductVersion>%sts.version%</txtProductVersion>
     <productName>Spring Tool Suite</productName>
-    <companyName>SpringSource</companyName>
+    <companyName>Pivotal</companyName>
     <internalName>%sts.internal.name%</internalName>
     <originalFilename>%sts.file.name%</originalFilename> 
   </versionInfo>
