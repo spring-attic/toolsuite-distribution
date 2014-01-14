@@ -17,7 +17,7 @@
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="sts.png" i32="sts32.png" i48="sts48.png" i64="sts64.png" i128="sts128.png"/>
+   <windowImages i16="sts16.png" i32="sts32.png" i48="sts48.png" i64="sts64.png" i128="sts128.png"/>
 
    <splash
       startupProgressRect="0,225,455,15"
@@ -32,13 +32,12 @@
       </win>
    </launcher>
 
-   <intro introId="org.eclipse.ui.intro.universal"/>
-
    <vm>
-      <linux>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)</linux>
-      <macos>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)</macos>
-      <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)</windows>
+      <linux include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)</linux>
+      <macos include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)</macos>
+      <windows include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/JVM 1.5.0 (MacOS X Default)</windows>
    </vm>
+
 
    <plugins>
    </plugins>

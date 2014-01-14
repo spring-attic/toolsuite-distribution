@@ -24,24 +24,6 @@
           <property
                 name="versionRect"
                 value="550,30" />
-          <property
-          		name="introTitle"
-          		value="%productIntroTitle"/>
-          <property
-          		name="introBrandingImage"
-          		value="product:intro-eclipse.png"/>
-          <property
-          		name="introBrandingImageText"
-          		value="%productIntroBrandingText"/>
-		  <property
-				name="introDescription-overview"
-				value="%introDescription-overview"/>
-		  <property
-				name="introDescription-tutorials"
-				value="%introDescription-tutorials"/>
-		  <property
-				name="introDescription-samples"
-				value="%introDescription-samples"/>
 		  <property
 				name="applicationXMI"
 				value="org.eclipse.platform/LegacyIDE.e4xmi">
@@ -75,28 +57,5 @@
           id="org.springsource.sts"
           name="SpringSource Tool Suite">
     	</category>
- 	</extension>
- 	
- 	<extension point="org.eclipse.ui.intro">
-		<introProductBinding introId="org.springsource.sts.ide.ui.intro"
-			productId="org.springsource.sts.ide">
-		</introProductBinding>
-		<intro
-	        class="org.eclipse.ui.intro.config.CustomizableIntroPart"
-	        icon="content/welcome16.png"
-	        id="org.springsource.sts.ide.ui.intro">
-	  </intro>
-	</extension>
-	<extension point="org.eclipse.ui.intro.config">
-		<config content="introContent.xml" id="org.springsource.sts.ide.ui.intro.config"
-			introId="org.springsource.sts.ide.ui.intro">
-			<presentation
-         home-page-id="root"
-         standby-page-id="standby">
-				<implementation kind="html">
-				</implementation>
-			</presentation>
-		</config>
-	</extension>
-   
+ 	</extension>   
 </plugin>
