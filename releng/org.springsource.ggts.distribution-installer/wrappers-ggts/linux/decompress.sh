@@ -45,7 +45,7 @@ printf " done\n"
 echo ""
 echo "*******************************************************************************"
 cpad "For more information vist:"
-cpad "http://grails.org/products/ggts"
+cpad "http://spring.io/tools"
 echo "*******************************************************************************"
 echo ""
 exit 0

@@ -6,6 +6,9 @@
 	<property name="tcserver.version" value="2.9.4.RELEASE" />
 	<property name="maven.version" value="3.0.5" />
 	<property name="grails.version" value="2.3.4" />
+	
+	<property name="sts-rootfolder" value="sts-bundle" />
+	<property name="ggts-rootfolder" value="ggts-bundle" />
 
 	<property name="roo.name" value="spring-roo-${roo.version}" />
 	<property name="tcserver.name" value="vfabric-tc-server-developer-${tcserver.version}" />
@@ -102,7 +105,7 @@
 	<target name="create-sts-bundle-archive-tar">
 		<exec executable="${tar-command}">
 			<arg value="--transform"/>
-			<arg value="s,^,springsource/,S"/>
+			<arg value="s,^,${sts-rootfolder}/,S"/>
 			<arg value="-czf"/>
 			<arg value="${destName}"/>
 			<arg value="-C"/>
@@ -126,7 +129,7 @@
 	<target name="create-ggts-bundle-archive-tar">
 		<exec executable="${tar-command}">
 			<arg value="--transform"/>
-			<arg value="s,^,springsource/,S"/>
+			<arg value="s,^,${ggts-rootfolder}/,S"/>
 			<arg value="-czf"/>
 			<arg value="${destName}"/>
 			<arg value="-C"/>
@@ -148,11 +151,11 @@
 
 	<target name="create-sts-bundle-archive-zip">
 		<zip destfile="${destName}">
-			<zipfileset dir="${product.build.directory.sts}/${path}/sts-${unqualifiedVersion}.${p2.qualifier}" prefix="springsource/sts-${unqualifiedVersion}.${p2.qualifier}"/>
-			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="springsource/${tcserver.name}"/>
-<!--			<zipfileset dir="${project.build.directory}/${maven.name}" prefix="springsource/${maven.name}"/> -->
-			<zipfileset dir="${project.build.directory}/${roo.name}" prefix="springsource/${roo.name}"/>
-			<zipfileset dir="${project.build.directory}/../legal" prefix="springsource/legal"/>
+			<zipfileset dir="${product.build.directory.sts}/${path}/sts-${unqualifiedVersion}.${p2.qualifier}" prefix="${sts-rootfolder}/sts-${unqualifiedVersion}.${p2.qualifier}"/>
+			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="${sts-rootfolder}/${tcserver.name}"/>
+<!--			<zipfileset dir="${project.build.directory}/${maven.name}" prefix="${sts-rootfolder}/${maven.name}"/> -->
+			<zipfileset dir="${project.build.directory}/${roo.name}" prefix="${sts-rootfolder}/${roo.name}"/>
+			<zipfileset dir="${project.build.directory}/../legal" prefix="${sts-rootfolder}/legal"/>
 		</zip>
 
 		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
@@ -162,10 +165,10 @@
 
 	<target name="create-ggts-bundle-archive-zip">
 		<zip destfile="${destName}">
-			<zipfileset dir="${product.build.directory.ggts}/${path}/ggts-${unqualifiedVersion}.${p2.qualifier}" prefix="springsource/ggts-${unqualifiedVersion}.${p2.qualifier}"/>
-			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="springsource/${tcserver.name}"/>
-			<zipfileset dir="${project.build.directory}/${grails.name}" prefix="springsource/${grails.name}"/>
-			<zipfileset dir="${project.build.directory}/../legal" prefix="springsource/legal"/>
+			<zipfileset dir="${product.build.directory.ggts}/${path}/ggts-${unqualifiedVersion}.${p2.qualifier}" prefix="${ggts-rootfolder}/ggts-${unqualifiedVersion}.${p2.qualifier}"/>
+			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="${ggts-rootfolder}/${tcserver.name}"/>
+			<zipfileset dir="${project.build.directory}/${grails.name}" prefix="${ggts-rootfolder}/${grails.name}"/>
+			<zipfileset dir="${project.build.directory}/../legal" prefix="${ggts-rootfolder}/legal"/>
 		</zip>
 
 		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />

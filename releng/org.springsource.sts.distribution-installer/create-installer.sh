@@ -3,6 +3,8 @@
 
 export COPYFILE_DISABLE=true
 
+STS_ROOTFOLDER="sts-bundle"
+
 PACK_PROPERTIES="pack.excludes=/**/dm-server-*/boot/com.springsource.server.bootstrap.harness-*.jar,/**/sts-*/plugins/org.eclipse.jdt.apt.pluggable.core_*.jar,/**/sts*/plugins/org.eclipse.jdt.compiler.apt_*.jar,/**/sts*/plugins/org.eclipse.jdt.compiler.tool_*.jar,/**/spring-roo-*/dist/org.springframework.roo.annotations-*-sources.jar,/**/sts-*/p2/org.eclipse.equinox.p2.repository/cache/*.jar,/**/sts-*/plugins/com.ibm.icu_*.jar,/**/sts-*/plugins/org.apache.xalan_*.jar,/**/sts-*/plugins/org.sat4j.pb_*.jar,/**/sts-*/plugins/org.sat4j.core_*.jar,/**/sts-*/plugins/org.maven.ide.eclipse*.jar,/**/sts-*/plugins/org.sonatype.tycho.m2e_*.jar,/**/sts-*/plugins/org.eclipse.jem.proxy_*.jar,/**/sts-*/plugins/com.springsource.org.aspectj.weaver_*.jar,/**/sts-*/plugins/org.eclipse.jst.jsf.core_*.jar"
 
 processTar() {
@@ -15,13 +17,13 @@ processTar() {
 		tar zxf ../../../org.springsource.sts.distribution-bundles/target/$1.gz
 		
 		if [[ $2 =~ .*linux.* ]]; then
-			JDKPLACEHOLDER=`grep JDKPath ./springsource/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini`
+			JDKPLACEHOLDER=`grep JDKPath ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini`
 			if [ -z $JDKPLACEHOLDER ] ; then
 				echo "-vm" >> ./temp_STS.ini
 				echo "\$JDKPath/bin/java" >> ./temp_STS.ini
-				cat ./temp_STS.ini ./springsource/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini >> ./springsource/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini
+				cat ./temp_STS.ini ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini >> ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini
 				rm -rf ./temp_STS.ini
-				mv ./springsource/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini ./springsource/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini
+				mv ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini
 			fi
 		fi
 				
@@ -49,10 +51,10 @@ createInstallerTar() {
 	
 	
 	if [[ $2 =~ .*macosx.* ]]; then
-		mv ./fix-symlink.sh ./springsource/$STS_DIRECTORY-$STS_VERSION/
+		mv ./fix-symlink.sh ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/
 	fi
 		
-	ant -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat6.version=$TOMCAT6_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
+	ant -Dsts.rootfolder=$STS_ROOTFOLDER -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat6.version=$TOMCAT6_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
 		
 	cd ..
 
@@ -139,13 +141,13 @@ processZip() {
 		cd $2
 		unzip -q ../../../org.springsource.sts.distribution-bundles/target/$1
 		
-		JDKPLACEHOLDER=`grep JDKPath ./springsource/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini`
+		JDKPLACEHOLDER=`grep JDKPath ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini`
 		if [ -z $JDKPLACEHOLDER ] ; then
 			echo "-vm" >> ./temp_STS.ini
 			echo "\$JDKPath\bin\javaw.exe" >> ./temp_STS.ini
-			cat ./temp_STS.ini ./springsource/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini >> ./springsource/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini
+			cat ./temp_STS.ini ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini >> ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini
 			rm -rf ./temp_STS.ini
-			mv ./springsource/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini ./springsource/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini
+			mv ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/temp_STS.ini ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/$STS_APPNAME.ini
 		fi
 		
 #		nohup $JAVA_HOME/bin/java -cp ../../installer/izpack/bin/customActions/Unpack200InstallListener.jar -Xmx2024m com.springsource.sts.jarprocessor.Main -processAll -pack -repack -lzma -verbose -remove -outputDir springsource springsource > $2.log &
@@ -169,7 +171,7 @@ createInstallerZip() {
 		sed -i -e 's/%sts.version%/'$STS_VERSION'/g' ./win-shortcut-spec.xml
 	fi
 
-	ant -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat6.version=$TOMCAT6_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
+	ant -Dsts.rootfolder=$STS_ROOTFOLDER -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat6.version=$TOMCAT6_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
 		
 	cd ..
 
@@ -252,22 +254,22 @@ processZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32
 processZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64
 
 
-ZIP_NAME=`ls -a macosx.cocoa/springsource/ | grep tc-server-developer`
+ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep tc-server-developer`
 TCS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/springsource/vfabric-tc-server-developer-$TCS_VERSION/ | grep tomcat-6`
+ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/vfabric-tc-server-developer-$TCS_VERSION/ | grep tomcat-6`
 TOMCAT6_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/springsource/vfabric-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
+ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/vfabric-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
 TOMCAT7_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/springsource/ | grep roo`
+ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep roo`
 ROO_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
 
 #ZIP_NAME=`ls -a macosx.cocoa/ | grep grails`
 #GRAILS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\+\.[0-9]\+\.\?[A-Z,a-z,0-9]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/springsource/ | grep maven`
+ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep maven`
 MAVEN_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\.[0-9]\).*'`
 #MAVEN_VERSION=3.0.4
 
