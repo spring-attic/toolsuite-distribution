@@ -3,7 +3,7 @@
   
   <skipIfNotSupported/>
 
-  <programGroup defaultName="SpringSource"
+  <programGroup defaultName="Spring by Pivotal"
                 location="applications"/>
 
   <shortcut
