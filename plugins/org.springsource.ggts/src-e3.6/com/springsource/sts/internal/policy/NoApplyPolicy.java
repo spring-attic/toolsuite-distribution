@@ -1,5 +1,5 @@
 /******************************************************************************************
- * Copyright (c) 2010 - 2011 GoPivotal, Inc. All rights reserved.
+ * Copyright (c) 2010 - 2011 Pivotal Software, Inc. All rights reserved.
  ******************************************************************************************/
 package com.springsource.sts.internal.policy;
 
