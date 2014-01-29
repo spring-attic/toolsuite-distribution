@@ -17,10 +17,10 @@
                 value="33302D"/>
           <property
                 name="startupMessageRect"
-                value="23,176,550,20"/>
+                value="23,176,550,18"/>
           <property
                 name="startupProgressRect"
-                value="23,192,550,14"/>
+                value="23,194,550,14"/>
           <property
                 name="versionRect"
                 value="550,30" />
