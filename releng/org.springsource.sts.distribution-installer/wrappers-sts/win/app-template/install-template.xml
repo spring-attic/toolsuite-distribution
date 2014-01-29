@@ -10,7 +10,7 @@
   <customProcName>true</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>Eclipse.ico</icon>
+  <icon>sts.ico</icon>
   <jre>
     <minVersion>1.6.0</minVersion>
     <jdkPreference>preferJre</jdkPreference>
