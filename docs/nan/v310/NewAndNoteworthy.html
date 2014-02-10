@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.springsource.org/sites/all/themes/s2org11/favicon.ico"/>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>STS/GGTS v3.1.0: New and Noteworthy</title>
+</head>
+  
+<body>
+<!-- green header -->
+<div xmlns="http://www.w3.org/TR/xhtml1/transitional" 
+     style="background:url('http://www.springsource.org/files/static/sts-nn-header.gif') #2d5427 no-repeat;border:none;height:80px;">
+	<span style="color:#97bd80;text-transform:uppercase;font-size:22px;padding:0 15px 0 0;line-height:110px;font-family: Verdana, Arial, helvetica, sans-serif;float:right;text-shadow:0 1px 0 #333">SpringSource Tool Suites 3.1.0: New and Noteworthy</span>
+</div>
+
+<div style="margin:40px;">
+
+<h2>General Updates</h2>
+
+<h3>Eclipse Juno SR1</h3>
+
+<p>The STS/GGTS distributions ship on top of the latest Eclipse Juno SR1. This includes the following updates:</p>
+
+<ul>
+<li>General Eclipse platform and JEE package update to Juno SR1 (4.2.1 &amp; 3.8.1)</li>
+<li>Mylyn update to 3.8.2</li>
+<li>EGit update to 2.1.0</li>
+<li>Maven Integration for Eclipse (m2e) update to 1.2.0</li>
+<li>Maven Integration for WTP (m2e-wtp) update to 0.16.0</li>
+</ul>
+
+<h3>Eclipse 3.8 and 4.2 based distributions</h3>
+
+<p>There is a lot of discussion going on in the community around the Eclipse Juno 4.2 release. Some users
+are facing performance issues using the new Eclipse 4.2 platform (in general) and have requested a STS/GGTS
+distribution based on the Eclipse 3.8 platform.</p>
+
+<p>To provide the best possible user experience for our users, we decided to ship STS 3.1.0 on top of both
+distributions. You can choose whether you would like to use STS/GGTS on top of Eclipse 4.2 or on top of the
+Eclipse 3.8 platform. All the pre-installed components like Webtools, the Maven integration, and all our own
+projects are the same for both distributions. So you can either use the new Eclipse platform 4.2 as a base or
+jump over to the 3.8-based distributions. You have the choice now!</p>
+
+<h3>vFabric tc Server Developer Edition updated to 2.7.2</h3>
+
+<p>STS and GGTS now ships and supports the latest vFabric tc Server Developer Edition 2.7.2.</p>
+
+<h3>Mac OSX 10.8 Mountain Lion - Gatekeeper compatible</h3>
+
+<p>Starting with the STS/GGTS 3.1.0 version we are signing the OSX apps. This allows you to run OSX 10.8
+(Mountain Lion) with Gatekeeper enabled and use STS/GGTS at the same time without starting them once before
+with Gatekeeper disabled.</p>
+
+<hr>
+
+<h2>Spring Development Tools</h2>
+
+<h3>Introducing the Live Beans Graph (experimental)</h3>
+
+<p>Spring Tool Suite 3.1.0 introduces a new Live Beans Graph view that allows you to inspect the beans model of
+a running Spring application. This feature requires Spring Framework 3.2 and is considered experimental.</p>
+
+<p>Pictured below is an example of a Spring application laid out in the Live Beans Graph. Nodes of the graph can
+be selected and their properties are revealed in the Spring Tool Suite Properties view. Right clicking a node
+brings up the option to open the Bean's class file or the file in which the Bean is declared.</p>
+
+<center>
+<img src="images/livebeans-views.png"/>
+</center>
+
+<p>There are two ways to open an application in the Live Beans Graph view. Opening the pull-down menu in the view
+header and selecting the 'Connect to Application...' command will open the dialog pictured below. In this example we
+are attempting a connection to localhost with port 8999 open for JMX. To allow proper communication, servers must be
+configured to enable JMX and must also be given the VM argument '-Dspring.liveBeansView.mbeanDomain' in order for
+the Spring Framework to produce the data required to build up the graph.</p>
+
+<center>
+<img src="images/livebeans-connect-to.png"/>
+</center>
+
+<p>The other way to connect to your application is through the vFabric tc Server Integration for Eclipse. This method
+requires no configuration. Simply double click your tc Server instance from the STS Servers view in order to open the
+Server Editor. As pictured below, there is a new Live Beans Graph section to the editor. Click the checkbox to enable
+the Live Beans feature in the Spring Framework, then launch your tc Server. When the tc Server is running, you can
+double-click an application from the list to launch it in the Live Beans Graph view.</p>
+
+<center>
+<img src="images/livebeans-tc-server.png"/>
+</center>
+
+<p>The <b>Live Beans Graph</b> is part of STS 3.1.0 as an experimental feature. There are many ways to improve this for
+future STS releases and we would be happy to hear your feedback and ideas about this. Feel free to raise a ticket
+in JIRA (<a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a>).</p>
+
+<h3>Spring Data Gemfire - Project templates</h3>
+
+<p>STS 3.1.0 includes a set of project templates for Spring Data Gemfire that make it easy to get started with Gemfire
+projects using Spring Data. There are currently 4 project templates for working with Spring Data GemFire. Each of them
+generates a Spring configuration for GemFire and a single region to get you started.</p>
+
+<center>
+<img src="images/gemfireTemplates.png" border="1"/>
+</center>
+
+<ul>
+<li><b>Standalone Cache:</b> Creates an embedded cache and a region. You may specify the region name and  type: (local,
+replicated or partitioned). The project includes a Main.java which will initialize the cache and also includes some
+basic sample code.</li>
+<li><b>Standalone Cache Server:</b> Creates a standalone Java application configured with a cache server for use with
+a cache client. In addition to the region name and type: (local, replicated or partitioned), you may specify the server
+port.</li>
+<li><b>Cache Server War:</b> Similar to the Standalone Cache Server, but generates a web application to host a cache
+server in a servlet container.</li>
+<li><b>Cache Client:</b> Creates a standalone Java application configured with a client cache and client region, and
+client pool for use with a cache server. In addition to the region name, you may specify how the pool connects (locator
+or server) along with the associated host and port.</li>
+</ul> 
+
+<p>Special thanks to David Turanski for implementing and maintaining these new template projects!</p>
+
+<hr>
+
+<h2>Grails Development Tools</h2>
+
+<h3>Updated versions</h3>
+<p>GGTS now includes Grails 2.1.1. It has also been tested with the release candidates of Grails 2.2 and should
+work fine with that build of Grails, however, Grails 2.2 requires a 2.0 Groovy compiler and so you will need to 
+grab a 2.0 Groovy compiler from the dashboard.</p>
+
+<h3>Project Import Wizard</h3>
+
+<p>There is now a dedicated import Wizard just for Grails projects. The goal of this wizard is to provide 
+more obvious and easier route to getting your existing Grails project into Grails-IDE.</p>
+
+<p>The Wizard is accessible via the <span class="menuaction">File > Import</span> menu under the "Grails" category.</p>
+
+<center>
+<img src="images/importGrailsProject1.png"/>
+</center>
+
+
+<p>After pointing the wizard to a folder, it scans the folder quickly to validate that this is an actual Grails project. 
+It also determines the required Grails version for the project and pre-selects a matching Grails install if 
+it can find one. If cannot find one, an error will be shown and you can click the <b>Configure Grails Installations</b> 
+link to open the Grails preferences page and configure a matching install before proceeding with the import.</p>
+
+<p>If <b>Copy resources into workspace</b> is selected then the contents of the project will be copied into the workspace.
+ The copy will then be imported leaving the project contents at the original location unmodified. </p>
+
+<p>If <b>Copy Resources into workspace</b> is not selected, then the project will be imported into the workspace 
+as a link to the original location.</p>
+
+<p>The wizard will detect if your project is a mavenized grails project. If so, it will direct you to 
+use the M2E wizard to import your project instead:</p>
+
+<center>
+<img src="images/importGrailsProject2.png"/>
+</center>
+
+<p>At this point you have two options. You can choose to ignore the warning and proceed anyway, or click the <b>Switch to Maven Import</b> button. 
+This will open the correct wizard for you. </p>
+
+<p>Note that the <b>Switch to Maven</b> button is only present if you have m2e installed. Otherwise you will just see a message about m2e not being installed.  
+You can install m2e easily from the GGTS dashboard if you want to proceed importing this project as a maven project.</p>
+
+<h3>Improved support for mavenized Grails projects</h3>
+
+<p>3.1.0 now has experimental support for working with mavenized grails projects.  This allows
+you to work with projects that use the grails-maven-plugin to issue grails commands instead
+of a grails install.  Inside of GGTS, mavenized projects are treated as a hybrid
+Grails-Maven project, borrowing functionality from both Grails-IDE and m2e (the Eclipse plugin for maven).  </p>
+
+<p>For more information on how to work with mavenized projects in GGTS, please see 
+<a href="http://forum.springsource.org/showthread.php?130130-Working-with-Mavenized-Grails-projects-in-GGTS-3-1-0">this article</a> in the STS forums.</p>
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+<p>Here is a full list of resolved bugs and enhancement requests for the 3.1.0 release:
+<p><a href="https://issuetracker.springsource.com/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+STS+AND+fixVersion+in+%2812495%2C+12496%2C+12497%29+AND+status+in+%28Resolved%2C+Closed%29">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+IDE+AND+fixVersion+in+%2813296%2C+13297%2C+13298%29+AND+status+in+%28Resolved%2C+Closed%29">Spring IDE issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="http://www.springsource.org/spring-tool-suite-download">http://www.springsource.org/spring-tool-suite-download</a></p>
+<p>Download GGTS: <a href="http://grails.org/products/ggts">http://grails.org/products/ggts</a></p>
+<p>STS/GGTS forum: <a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.1.SR1.pdf">STS 2.7.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+</body>
+
+</html>

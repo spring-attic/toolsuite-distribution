@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.springsource.org/sites/all/themes/s2org11/favicon.ico"/>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>STS/GGTS v3.2.0.M1: New and Noteworthy</title>
+</head>
+  
+<body>
+<!-- green header -->
+<div xmlns="http://www.w3.org/TR/xhtml1/transitional" 
+     style="background:url('http://www.springsource.org/files/static/sts-nn-header.gif') #2d5427 no-repeat;border:none;height:80px;">
+	<span style="color:#97bd80;text-transform:uppercase;font-size:22px;padding:0 15px 0 0;line-height:110px;font-family: Verdana, Arial, helvetica, sans-serif;float:right;text-shadow:0 1px 0 #333">Spring Tool Suite &amp; Groovy-Grails Tool Suite 3.2.0.M1: New and Noteworthy</span>
+</div>
+
+<div style="margin:40px;">
+
+<!-- h2 for a section title, h3 for sub headings, finish with an hr -->
+<!-- pictures go in the images sub folder, refs like this: 
+<center>
+<img src="images/livebeans-views.png"/>
+</center>
+-->
+
+<h2>General Updates</h2>
+
+<h3>Performance Improvements</h3>
+<p>We are working on improving performance all over the place in STS and GGTS. At the same time, the Eclipse platform
+team is also working on solving performance issues in the new platform UI implementation, also known as the Eclipse 4.2
+platform. STS/GGTS 3.2.0.M1 is still built on top of Eclipse Juno SR1, which doesn't contain most of the performance
+fixes that the Eclipse team is working on. We plan to adopt the latest changes with STS/GGTS 3.2.0.M2 (planned for end
+of January 2013) or at latest for the 3.2.0 release (scheduled for early March 2013). In the meantime, we recommend to
+to use the STS/GGTS builds on top of Eclipse 3.8.</p>
+
+<h3>vFabric tc Server Developer Edition updated to 2.8.1</h3>
+<p>STS and GGTS now ships with the latest vFabric tc Server Developer Edition 2.8.1.</p>
+
+<hr>
+
+<h2>Spring Development Tools</h2>
+
+<h3>Live Beans Graph</h3>
+<p>For this milestone release, the Live Beans Graph has switched to a horizontal tree layout. We plan to continue to
+optimize the graph layout as we evolve the Live Beans Graph feature.</p>
+
+<center>
+<img border="1" src="images/livebeans-horizontal.png"/>
+</center>
+
+<p>A new popup menu has been introduced to allow users to switch between applications that have been loaded in the Live
+Beans Graph view. We have also added a refresh button to the view's tool bar that will retrieve anew the Spring beans
+model and redraw the graph.</p>
+
+<center>
+<img border="1" src="images/livebeans-toolbar.png"/>
+</center>
+
+<p>The Live Beans Graph feature requires applications to be running Spring Framework 3.2. Applications that do not support
+this feature will now appear greyed-out in the tc Server Live Beans Graph applications list.</p>
+
+<center>
+<img border="1" src="images/livebeans-tc-server-disabled.png"/>
+</center>
+
+<h3>Regular expression support for &at;RequestMapping validation</h3>
+<p>We now support regular expressions inside path variables when validating @RequestMapping annotations.</p>
+
+<center>
+<img border="1" src="images/validation_pathvariable_regex.png"/>
+</center>
+
+<h3>Support for Spring Integration 2.2</h3>
+<p>The Spring Integration visual editor component of the Spring Config Editor has been updated to support Spring Integration
+2.2 and its new adapters. Below is an example that uses the Spring Integration Mongo adapter.</p>
+
+<center>
+<img border="1" src="images/si-mongo-example.png"/>
+</center>
+
+<hr>
+
+<h2>vFabric tc Server Integration for Eclipse</h2>
+
+<h3>Update to support tc Server 2.8.1</h3>
+<p>Support for the latest vFabric tc Server Developer Edition 2.8.1. has been added.</p>
+
+<h3>Improvements to tc Server instance creation wizard</h3>
+<p>The wizard now allows to use existing instance from any location on your disk. In addition, if you want to create
+a new instance it lets you choose any location for it.</p>
+
+<center>
+<img border="1" src="images/tcserver-instance-location-1.png"/>
+</center>
+
+<center>
+<img border="1" src="images/tcserver-instance-location-2.png"/>
+</center>
+
+<hr>
+
+<h2>Groovy and Grails Development Tools</h2>
+
+<h3>Better handling of built-in AST transforms</h3>
+<p>Groovy-Eclipse now has editing support for the following built-in AST transforms including: <tt>@Bindable</tt>, 
+<tt>@Vetoable</tt>, <tt>@ListenerList</tt>, <tt>@Log</tt>, and <tt>@AutoExternalize</tt>
+</p>
+
+<h3>Formatter improvements</h3>
+<p>
+	Now you have more explicit control over how lists are formatted.  <em>Long</em> lists are wrapped so that each element is on a single line and <em>short</em> lists are all on one line.
+	From the Groovy -> Formatter preferences page, you can define the number of characters a <em>long</em> list.
+</p>
+<p>
+	Below, you can see the preferences page where you can set this option:
+	<center>
+		<img border="1" align="center" src="images/formatting1.png" alt="Groovy -> Formatting preferences page"/>
+	</center>
+</p>
+<p>
+	And by setting the <em>long list length</em> to be 30 characters, the following is formatted, with the upper list being wrapped, with the lower list staying on the same line:
+	<center>
+		<img border="1" align="center" src="images/formatting2.png" alt="Formatting long and short lists"/>
+	</center>
+</p>
+<p>
+	Additionally, we have fixed many bugs in this area and your formatting experiences should be greatly improved.
+</p>
+<hr>
+
+<h2>AspectJ Development Tools</h2>
+
+<h3>Performance improvements</h3>
+<p>We have made some significant performance improvements to the AJ builder.  Your AspectJ-enabled projects will now 
+build faster.  As an example, using STS 3.1.0, a full build of the 
+<a href="https://github.com/SpringSource/spring-data-neo4j">Spring Data Neo4j project</a> took about 5 minutes.  With
+STS 3.2.0.M1, the same build takes just under 3 minutes.  This was informally tested using a MacBook Pro with 8Gb of ram.
+The performance improvements are around how Eclipse maps files between the filesystem and the workspace, so projects with
+many files will see larger improvements.</p>
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+<p>Here is a full list of resolved bugs and enhancement requests for the 3.2.0.M1:
+<!-- these links include anything fixed in 3.2.0.M1/3.2.0.M2/3.2.0.RC1/3.2.0.RELEASE -->
+<p><a href="https://issuetracker.springsource.com/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+STS+AND+fixVersion+in+%2812883%2C+12884%2C+12885%2C+12886%29+AND+status+in+%28Resolved%2C+Closed%29">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+IDE+AND+fixVersion+in+%2813613%2C+13614%2C+13615%2C+13616%29+AND+status+in+%28Resolved%2C+Closed%29">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18821+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="http://www.springsource.org/spring-tool-suite-download">http://www.springsource.org/spring-tool-suite-download</a></p>
+<p>Download GGTS: <a href="http://grails.org/products/ggts">http://grails.org/products/ggts</a></p>
+<p>STS/GGTS forum: <a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.1.SR1.pdf">STS 2.7.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+</body>
+
+</html>

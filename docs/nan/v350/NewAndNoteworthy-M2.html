@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>Spring Tool Suite - Groovy/Grails Tool Suite 3.5.0.M2 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite & Groovy/Grails Tool Suite 3.5.0.M2: New and Noteworthy</h1>
+
+<p class="nan2">General Updates</p>
+
+<p class="nan3">Design updates</p>
+<p>We updated the branding of the toolsuite distributions to match the latest style of <a href="http://spring.io">http://spring.io</a>.</p>
+
+<br/>
+<center><img src="images/splashscreen-2014.png"></img></center>
+<br/>
+
+<p class="nan3">Grails updated to 2.3.5</p>
+<p>GGTS now ships with Grails 2.3.5.</p>
+
+<p class="nan3">Additional Dashboard Improvements</p>
+
+<p>The dashboard icon in the toolbar git an indicator icon added to show you when new feed items are available that you haven't read or seen yet. This
+allows you to keep the dashboard closed and still see if there are any news coming along.</p>
+
+<br/>
+<center><img src="images/dashboard-new-items.png"></img></center>
+<br/>
+
+<p>In addition to that we changed the design of the dashboard to open separate new editors when you select something instead of opening new tabs inside the
+dashboard itself. This gives you a much more natural and browser-like experience when using the dashboard. For the sake of consistency, we also moved the extension
+installation part out of the dashboard and into a separate editor. You can still open it by clicking on the "Manage Extensions" button on the dashboard.</p>
+
+<br/>
+<center><img src="images/dashboard-editors.png"></img></center>
+<br/>
+
+<p>This also allows much more flexibility in arranging those different parts in your workbench. You can have the extension install part open and looking at the
+documentation page at the same time by moving those editors to different places in your workbench layout.</p>
+
+<br/>
+<center><img src="images/dashboard-editors-layout.png"></img></center>
+<br/>
+
+<p class="nan2">Spring Tooling updates</p>
+
+<p class="nan3">Improved Spring Boot Jar-type Content Assist</p>
+
+<p>The Jar type content assist suggestion engine now detects the spring-boot version of
+spring-boot maven projects. This includes projects created via the 'New Spring Starter' wizard.
+The index file used to compute the suggestions is no longer embedded inside STS
+but downloaded for your specific version of spring-boot from a CloudFoundry web service.
+This allows us to update the suggestions for future versions of spring boot without
+requiring a new version of STS.</p>
+
+<p class="nan3">Minimal Support for Running Spring Groovy CLI apps</p>
+
+<p>You can now easily run <b>Spring Groovy CLI</b> apps from within STS. Right click a <tt>app.groovy</tt> file
+and select <b>Run As >> Spring Groovy CLI</b>. The app will be started and its output appears in
+a Eclipse Console.</p>
+
+<br/>
+<center><img src="images/run-as-spring-cli.png"></img></center>
+<br/>
+
+<p>A recent spring-boot runtime for running the app is automatically configured for you, but it can
+be overridden via preferences.</p>
+
+<br/>
+<center><img src="images/spring-boot-runtime.png"></img></center>
+<br/>
+
+<p class="nan3">Support for Importing `General' Getting Started Content</p>
+
+<p>The wizard for importing spring.io getting started content has been extended with a 
+`General' content type. This allows it to import projects
+that don't have any explicit build-logic (pom.xml or build.gradle) as generic Eclipse projects.
+</p>
+
+<br/>
+<center><img src="images/general-import.png"></img></center>
+<br/>
+
+<p class="nan2">Gradle Tooling</p>
+
+<p class="nan3">Gradle: Workingset Actions Group</p>
+<p>Gradle Actions group has been added for a workingset (just like Maven has). Now Gradle actions can be executed via Workingset context menu. A Gradle action will be executed on all Gradle projects within a Workingset.</p>
+
+<br/>
+<center><img src="images/gradle-workingset-actions.png" style="max-width: 500px;"></img></center>
+<br/>
+
+<p class="nan3">Gradle: "Refresh All" Action Performance Improvement</p>
+<p>"Refresh All" action now executes Gradle projects refresh operation in batches of projects under the same root project. This results in order of magnitude running time improvement for refresh operation in common refresh scenarios.</p>
+
+<p class="nan3">Gradle: Project Configurators Extension Point</p>
+<p>Ability to contribute project configurator classes via <i>org.springsource.ide.eclipse.gradle.core.projectConfigurators</i> extension point. These classes allow client to configure a project based on the information inferred from the project's Gradle model.</p>
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+
+<p>Here is a full list of resolved bugs and enhancement requests for 3.5.0:</p>
+<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20in%20(%223.5.0.M1%22%2C%20%223.5.0.M2%22%2C%20%223.5.0.RC1%22%2C%20%223.5.0.RC2%22%2C%20%223.5.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20in%20(%223.5.0.M1%22%2C%20%223.5.0.M2%22%2C%20%223.5.0.RC1%22%2C%20%223.5.0.RC2%22%2C%20%223.5.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18821+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>Download GGTS: <a href="https://spring.io/tools/ggts/all">https://spring.io/tools/ggts/all</a></p>
+<p>STS/GGTS forum: <a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite">http://forum.spring.io/forum/spring-projects/springsource-tool-suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>Known issues in this release</h2>
+
+<h3>Spring Roo 1.2.4 issue when using GWT add-on in combination with java.lang.Float or java.lang.Byte</h3> 
+
+<p>There was a bug reported against Spring Roo 1.2.4 about a problem when using the GWT support together with java.lang.Float (or Byte) field types. In case we hit this issue
+we recommend to download and use Spring Roo 1.2.3. You can configure the Spring Roo runtime that STS should use in the preferences (Preferences -> Spring -> Roo support).</p>
+<br/>
+
+<p>The issue in Roo is tracked here: <a href="https://jira.springsource.org/browse/ROO-3466">https://jira.springsource.org/browse/ROO-3466</a></p>
+<br/>
+
+<h3>Spring Roo doesn't start when running on top of JDK8</h3> 
+
+<p>We observed that Spring Roo doesn't work inside of STS when running STS on top of a recent JDK8 build. The workaround for this is to run STS on
+top of a JDK7 instead.</p>
+<br/>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy.html">STS/GGTS 3.4.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">STS/GGTS 3.3.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.6.1.SR1.pdf">STS 2.6.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>

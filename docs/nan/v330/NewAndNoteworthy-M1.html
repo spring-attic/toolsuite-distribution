@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.springsource.org/sites/all/themes/s2org11/favicon.ico"/>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>STS/GGTS v3.3.0.M1: New and Noteworthy</title>
+</head>
+  
+<body>
+<!-- green header -->
+<div xmlns="http://www.w3.org/TR/xhtml1/transitional" 
+     style="background:url('http://www.springsource.org/files/static/sts-nn-header.gif') #2d5427 no-repeat;border:none;height:80px;">
+	<span style="color:#97bd80;text-transform:uppercase;font-size:22px;padding:0 15px 0 0;line-height:110px;font-family: Verdana, Arial, helvetica, sans-serif;float:right;text-shadow:0 1px 0 #333">Spring Tool Suite &amp; Groovy-Grails Tool Suite 3.3.0.M1: New and Noteworthy</span>
+</div>
+
+<div style="margin:40px;">
+
+<!-- h2 for a section title, h3 for sub headings, finish with an hr -->
+<!-- pictures go in the images sub folder, refs like this: 
+<center>
+<img src="images/livebeans-views.png"/>
+</center>
+-->
+
+<h2>General Updates</h2>
+
+<h3>Apache Maven removed</h3>
+<p>We removed the Apache Maven runtime package from the distribution package of the Spring Tool Suite
+in order to provide a lighter download. An Apache Maven runtime for internal Eclipse usage is included in the Maven
+Integration for Eclipse and therefore isn't required. Nevertheless you can configure a different Apache Maven runtim
+in the tooling via the preferences.</p>
+
+<p>We also removed the outdated Spring IDE OSGi extension from the default distribution. You can still get it from the
+update repository manually.</p>
+
+<p>All this is part of our overall effort to provide a more lightweight tooling (and distribution) and we might remove
+more parts from the default distribution in upcoming milestones and releases. If you would like to see certain parts
+removed (or added), let us know. Feedback is always very welcome and can be provided through the STS 
+<a href="https://issuetracker.springsource.com/browse/STS">JIRA</a> or by posting a comment on the
+<a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">forum</a>.</p>
+
+<hr>
+
+<h2>Spring Development Tools</h2>
+
+<h3>Support for JavaConfig only Spring projects</h3>
+<p>One of the major themes of STS 3.3.0 is to provide advanced support for JavaConfig and JavaConfig-only Spring projects. Therefore
+we added the option to configure @Configuration classes directly as Spring bean configs in the project settings (for those cases where
+you don't have any Spring XML config files anymore):</p>
+
+<center>
+<img border="1" src="images/javaconfig-project-configuration.png"/>
+</center>
+
+<p>This allows you to benefit from the general tooling support for Spring projects without configuring a component-scanning element
+in a Spring XML config file just to make the tooling happy. You can select @Configuration classes directly from a filtered list of
+types that are available to your project:</p>
+
+<center>
+<img border="1" src="images/javaconfig-class-selection.png"/>
+</center>
+
+<p>Since Spring XML files and Spring JavaConfig classes are both now first-class citizens of the Spring tooling, you can use both
+to define your bean config sets to validate against specific scopes and bean profiles:</p>
+
+<center>
+<img border="1" src="images/javaconfig-configsets.png"/>
+</center>
+
+<p>There is more to come as part of the next milestone (3.3.0.M2, shipping in early June) and the release of the Spring Tool
+Suite 3.3.0 (shipping in early July). 
+We are very eager to get your feedback and hear about your experiences with the Java Config support in STS (and any new features you would like to see). Feedback can be provided through the STS 
+<a href="https://issuetracker.springsource.com/browse/STS">JIRA</a> or by posting a comment on the
+<a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">forum</a>.</p>
+
+<hr>
+
+<h2>Groovy and Grails Development Tools</h2>
+
+
+<h3>Groovy-Eclipse</h3>
+
+<p>
+GGTS 3.3.0.M1 comes with Groovy-Eclipse 2.8.0.M1.  In this milestone, we have put significant effort into handling multiple compiler versions and stabilizing our static type checking support.  More details are below
+</p>
+
+<h4>Editor templates</h4>
+
+<p>
+The Groovy editor now supports templating similar to the Java editor.  For example, when you invoke content assist, and the prefix matches an available template, you will see it in the content assist menu:
+<br/>
+<center>
+<img src="images/groovy-template1.png" border="1"/>
+</center>
+<br/>
+<p>After applying the template, you get a chance to tab through the template variables and edit them:
+<br/>
+<center>
+<img src="images/groovy-template2.png" border="1"/>
+</center>
+<br/>
+<p>The list of templates are available in <b>Preferences -> Groovy -> Editor -> Groovy Templates</b>: 
+<br/>
+<center>
+<img src="images/groovy-template3.png" border="1"/>
+</center>
+<br/>
+<p>Here you can edit existing templates or create new ones:
+<br/>
+<center>
+<img src="images/groovy-template4.png" border="1"/>
+</center>
+</p>
+
+<h4>Surround with...</h4>
+
+<p>
+	The Groovy editor now supports surround-with templates. This allows you to surround a selection of code with a template (similar functionality exists in the Java editor).  To access this functionality, select some text, and press <tt>CMD/CTRL+1</tt>:
+	<br/>
+	<center>
+	<img src="images/surround-with1.png" border="1"/>
+	</center>
+	<br/>
+<p>
+	All the surround-with templates appear as quick fixes.  This functionality is also available by <b>Right-click -> Surround with</b>.  Or by typing <tt>CTRL/CMD+ALT+Z</tt>: 
+	<br/>
+	<center>
+	<img src="images/surround-with1.png" border="1"/>
+	</center>
+	<br/>
+<p>
+	 Selecting the last line to <em>Configure templates...</em> will open up the template preferences page shown above.  All templates that use a <tt>${line_selection}</tt> variable will appear in the Surround With menu.
+	
+<h4>Compiler switching</h4>
+<p>There are some significant changes in the way multiple compilers are handled in the workspace now.  The back end implementation for this has been completely rewritten using different OSGi functionality. From a user's perspective, most functionality should be the same, except for the following differences:</p>
+
+<ul>
+	<li>Compiler settings are now per-workspace, instead of per-install.  This means that if you use multiple workspaces with different compiler levels, you no longer have to use separate shortcuts to launch them.</li>
+	<li>There is now a <em>Don't care</em> setting for projects.  In the Project Groovy compiler preferences page, you can set your project to <em>Don't care</em> and it will avoid checking for compiler mismatches no matter what compiler level the current workspace is using.</li>
+	<li>There is now a compiler switching UI. Select a project with a compiler mismatch problem on it.  Project -> Groovy -> Fix compiler mismatch problems:
+		<br/>
+		<center>
+		<img src="images/compiler-mismatch-ui1.png" border="1"/>
+		</center>
+		<br/>
+		Selecting this will bring up the following dialog that allows you to configure all projects throughout the workspace at once:
+		<br/>
+		<center>
+		<img src="images/compiler-mismatch-ui2.png" border="1"/>
+		</center>
+		</li>		
+</ul>
+
+
+<h4>Navigation and hovers in binary Groovy files</h4>
+
+<p>Navigation to definitions and JavaDoc hovers are now supported in class files compiled from Groovy, when the source is available.  You can see this here, when exploring the <tt>SwingBuilder</tt> class:
+<br/>
+<center>
+<img src="images/hover-in-binary-groovy.png" border="1"/>
+</center>
+</p>
+
+<h4>@DelegatesTo support</h4>
+<p>
+The <a href="http://groovy.codehaus.org/The+@DelegatesTo+annotation">Groovy 2.1 <tt>@DelegatesTo</tt> annotation</a> is now supported in Groovy-Eclipse:
+<br/>
+<center>
+
+<img src="images/delegatesTo.png" border="1"/>
+</center>
+<br/>
+<p>In the screenshot above, you can see the <tt>Email</tt> class and that it is being used as a delegate to the <tt>email</tt> function.  The implementation is snipped, but you can see that when selecting the <tt>from</tt> field reference inside the closure, its definition is highlighted in the <tt>Email</tt> class.  Also, the hover properly describes where the reference comes from.
+</p>
+
+<h3>Grails IDE</h3>
+
+<h4>Grails 2.3 support</h4>
+
+<p>
+Grails IDE now includes preliminary support for the yet to be released Grails 2.3. One important note is that 2.3 has
+currently deprecated the <tt>install plugin</tt> command, and this means the plugin manager will *not* currently
+work in GGTS 3.3.0.M1. On attempting to use it you will see an error message indicating the current workaround. In
+subsequent milestones we will be looking to address this problem.
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+<p>Here is a full list of resolved bugs and enhancement requests for the 3.3.0.M1:
+<!-- these links include anything fixed in 3.2.0.M1/3.2.0.M2/3.2.0.RC1/3.2.0.RELEASE -->
+<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20in%20(%223.3.0.M1%22%2C%20%223.3.0.M2%22%2C%20%223.3.0.RC1%22%2C%20%223.3.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20in%20(%223.3.0.M1%22%2C%20%223.3.0.M2%22%2C%20%223.3.0.RC1%22%2C%20%223.3.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18821+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="http://www.springsource.org/spring-tool-suite-download">http://www.springsource.org/spring-tool-suite-download</a></p>
+<p>Download GGTS: <a href="http://grails.org/products/ggts">http://grails.org/products/ggts</a></p>
+<p>STS/GGTS forum: <a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.1.SR1.pdf">STS 2.7.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+</body>
+
+</html>

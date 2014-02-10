@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.springsource.org/sites/all/themes/s2org11/favicon.ico"/>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>STS/GGTS v3.2.0: New and Noteworthy</title>
+</head>
+  
+<body>
+<!-- green header -->
+<div xmlns="http://www.w3.org/TR/xhtml1/transitional" 
+     style="background:url('http://www.springsource.org/files/static/sts-nn-header.gif') #2d5427 no-repeat;border:none;height:80px;">
+	<span style="color:#97bd80;text-transform:uppercase;font-size:22px;padding:0 15px 0 0;line-height:110px;font-family: Verdana, Arial, helvetica, sans-serif;float:right;text-shadow:0 1px 0 #333">Spring Tool Suite &amp; Groovy-Grails Tool Suite 3.2.0: New and Noteworthy</span>
+</div>
+
+<div style="margin:40px;">
+
+<!-- h2 for a section title, h3 for sub headings, finish with an hr -->
+<!-- pictures go in the images sub folder, refs like this: 
+<center>
+<img src="images/livebeans-views.png"/>
+</center>
+-->
+
+<h2>General Updates</h2>
+
+<h3>Eclipse Juno (4.2) SR2 and Eclipse Kepler (4.3) Milestone support</h3>
+<p>STS and GGTS 3.2.0 are now shipping on top of the latest Eclipse Juno SR2 release. In addition to the Eclipse Juno SR2 release,
+we also updated the following components to their latest versions:</p>
+<ul>
+	<li>EGit 2.3.1</li>
+	<li>Maven Integration for Eclipse 1.3.1</li>
+	<li>Maven Integration for Eclipse Webtools 0.17.0</li>
+</ul>
+	
+<p>From this release on we provide p2 repositories for the latest Eclipse Kepler 4.3 milestone builds. The p2 repository is located here:
+<a href="http://download.springsource.com/release/TOOLS/update/e4.3">http://download.springsource.com/release/TOOLS/update/e4.3</a></p>
+
+<h3>vFabric tc Server Developer Edition updated to 2.8.2</h3>
+<p>STS and GGTS now ships with the latest vFabric tc Server Developer Edition 2.8.2.</p>
+
+<h3>Groovy/Grails</h3>
+<p>The GGTS distributions now include Grails 2.2.1 and the Groovy 2.0.7 compiler.</p>
+
+<h3>Performance Improvements</h3>
+<p>We are working on improving performance all over the place in STS and GGTS. At the same time, the Eclipse platform
+team is also working on solving performance issues in the new platform UI implementation, also known as the Eclipse
+4.2 platform. STS/GGTS 3.2.0 adopts the latest changes from the Eclipse Juno SR2 release, which contains a lot of fixes
+from the Eclipse team.</p>
+<p><b>We still recommend using the STS/GGTS builds on top of Eclipse 3.8 in order to achieve maximum performance
+and stability, but the performance of STS/GGTS on Eclipse 4.2.2 has improved a lot.</b></p>
+
+<h3>Support for Retina displays on OSX</h3>
+<p>In the same way as Eclipse Juno SR2, STS now supports high-res retina displays on Mac OSX. Enjoy!</p>
+
+<h3>New detailed license information</h3>
+<p>While the Spring Tool Suite and the Groovy/Grails Tool Suite is published as open-source under the Eclipse Public License 1.0,
+the download bundle also includes tc Server Developer Edition, which is not open-source and therefore cannot be published under
+the same license. Therefore we have included detailed licensing information for all the parts of the download bundle.</p>
+
+<hr>
+
+<h2>Spring Development Tools</h2>
+
+<h3>Performance Improvements</h3>
+<p>We are working on improving performance inside the Spring tooling. This targets two areas:</p>
+<ul>
+<li>Make STS as fast as plain Eclipse when working with Java files. Therefore we identified and fixed a number of issues
+that made Java editing and content-assist a bit slower than with plain Eclipse, even for non-Spring-related Java files.</li>
+<li>Improve the performance of the Spring specific project builders. Reading and validating the Spring configurations
+in XML and Java files caused performance issues in the past from time to time and the goal is to be able to run validations
+and metadata builders all the time without hitting performance problems.</li>
+</ul>
+<p>STS 3.2.0 contains a number of fixes in both areas. We were able to improve performance in certain areas of
+the additional Spring project builders by a factor of 10. However, there is still more work to do and we will continue working
+on this within the next release cycle.</p>
+
+<p>For additional information and continuous progress reports, take a look at the JIRA ticket for this:
+<a href="https://issuetracker.springsource.com/browse/STS-3054">STS-3054</a> and watch the performance comparison screencast at
+the <a href="http://www.youtube.com/user/springsourcedev">SpringSource Developer channel on YouTube</a> (coming soon...)</p>
+
+<h3>Code completion and validation for common findBy.. methods in a Spring Data repository class</h3>
+<p>Code completion is now available for findBy... methods for properties that are defined inside the domain class
+associated with a Spring Data repository class</p>
+
+<center>
+<img src="images/findByTemplate.png"/>
+</center>
+
+<p>Code validation is added to check for consistency between parameter type of a findBy... method and the
+corresponding property type defined in the associated domain class.</p>
+
+<center>
+<img src="images/findByValidation.png"/>
+</center>
+
+<h3>Live Beans Graph</h3>
+<p>This release introduces a new tree mode for the Live Beans view. Beans are grouped by the resource from
+which they originate and expanding a bean will list all beans it depends on or is injected into. This display mode
+can be toggled with the graph mode from the toolbar of the Live Beans view.</p>
+
+<center>
+<img src="images/livebeans-treeview.png"/>
+</center>
+
+<p>For this release, the Live Beans Graph has switched to a horizontal tree layout. We plan to continue to
+optimize the graph layout as we evolve the Live Beans Graph feature.</p>
+
+<center>
+<img border="1" src="images/livebeans-horizontal.png"/>
+</center>
+
+<p>A new popup menu has been introduced to allow users to switch between applications that have been loaded in the Live
+Beans Graph view. We have also added a refresh button to the view's tool bar that will retrieve the latest Spring beans
+model and redraw the graph.</p>
+
+<center>
+<img border="1" src="images/livebeans-toolbar.png"/>
+</center>
+
+<p>The Live Beans view menu can be used to switch between "Group by resource" and "Group by context" modes. Also Inner
+Beans can now be displayed in both modes. They are filtered out by default, but this setting can be changed from the view menu.</p>
+
+<center>
+<img border="1" src="images/livebeans-filter-group-by.png"/>
+</center>
+
+<p>The Live Beans Graph feature requires applications to be running Spring Framework 3.2. Applications that do not support
+this feature will now appear greyed-out in the tc Server Live Beans Graph applications list.</p>
+
+<center>
+<img border="1" src="images/livebeans-tc-server-disabled.png"/>
+</center>
+
+<h3>Support for Spring Integration 2.2</h3>
+<p>The Spring Integration visual editor component of the Spring Config Editor has been updated to support Spring Integration
+2.2 and its new adapters. Below is an example that uses the Spring Integration Mongo adapter.</p>
+
+<center>
+<img border="1" src="images/si-mongo-example.png"/>
+</center>
+
+<h3>Regular expression support for @RequestMapping validation</h3>
+<p>We now support regular expressions inside path variables when validating @RequestMapping annotations.</p>
+
+<center>
+<img border="1" src="images/validation_pathvariable_regex.png"/>
+</center>
+
+<h3>Spring Template project wizards warns in case of missing bundles</h3>
+<p>In this release we have improved the template project wizard by adding a warning to indicate when a bundle is required for a template project that is about to be created but is not currently installed. You can either proceed with the project creation and install the feature that includes the missing bundle, or cancel the wizard, install the feature and then create the project again to ensure project compiles properly on creation.</p>
+
+<center>
+<img border="1" src="images/template_warning.png"/>
+</center>
+
+<p>In case you use the Spring Tool Suite distribution download, we take care of having everything installed by default for all the available template projects, so you should
+never see this warning. But in case you have installed the Spring Tool Suite tooling into an existing Eclipse installation, you might not have the Maven Integration for Eclipse
+already installed, for example. In that case, the warning will point you towards the missing bundle or feature.</p>
+
+<p>The future plan for this is to automate the installation of the required feature when the template is used.</p>
+
+<hr>
+
+<h2>vFabric tc Server Integration for Eclipse</h2>
+
+<h3>Update to support tc Server 2.8.2</h3>
+<p>Support for the latest vFabric tc Server Developer Edition 2.8.2. has been added.</p>
+
+<h3>Improvements to tc Server instance creation wizard</h3>
+<p>The wizard now allows to use existing instance from any location on your disk. In addition, if you want to create
+a new instance it lets you choose any location for it.</p>
+
+<center>
+<img border="1" src="images/tcserver-instance-location-1.png"/>
+</center>
+
+<center>
+<img border="1" src="images/tcserver-instance-location-2.png"/>
+</center>
+
+<h3>Improvements to the New Server wizard</h3>
+<p>When creating a new tc Server instance and selecting a template the wizard will now prompt for
+missing template properties values. The wizard will also provide default values if defined in the template.</p>
+
+<center>
+<img src="images/template_props_ajp.png"/><br/>
+<img src="images/template_props_apr-ssl.png"/>
+</center>
+
+<hr>
+
+<h2>Groovy and Grails Development Tools</h2>
+
+<h3>Groovy 2.1</h3>
+
+<p>
+	Groovy 2.1 is now available as an optional add-on from the GGTS extensions page. 
+	To install, open the extensions page, select <em>Groovy 2.1 Compiler for Groovy-Eclipse</em>,
+	and click <em>Install</em>.
+</p>
+<center>
+	<img border="1" src="images/install-groovy2.1.png" />
+</center>
+
+<h3>Groovy 2.1 <tt>@DelegatesTo</tt> annotation</h3>
+
+<p>
+	There is now support for the new Groovy 2.1 <tt>@DelegatesTo</tt> annotation.  This
+	annotation specifies the delegate type of a closure that is passed as a parameter to a method.
+	Using this annotation will provide Groovy-Eclipse with enough information to populate proper content
+	assist, search, hovers, navigation, and other editor features.  For example:
+</p>
+<center>
+	<img border="1" src="images/delegatesTo.png" />
+</center>
+<p>
+	The script in the screenshot above uses <tt>@DelegatesTo</tt> to indicate that the closure in the
+	<tt>doit()</tt> method uses an <tt>Executor</tt> as its delegate type.  You can see that 
+	in the closure defined at the bottom that Groovy-Eclipse knows that the invocation of 
+	the <tt>execute()</tt> method corresponds to the expected method declaration in <tt>Executor</tt>.
+</p>
+
+<h3>Groovy 2.1 Static Type Checker DSLs</h3>
+<p>
+	Groovy 2.1 static type checker extensions are now supported in Groovy-Eclipse.  For example, 
+	here is a simple static type checker extension using the new DSL provided by Groovy 2.1:<br/>
+</p>
+<center>
+	<img border="1" src="images/stc_scriptDSL.png" />
+</center>
+<p>
+	This script says that a <tt>robot</tt> variable is available in the script and that
+	it has a method called <tt>move</tt> on it.  When this script is used, you can see the
+	hover support showing that the type of <tt>robot</tt> is correctly inferred to be 
+	<tt>Robot</tt>:
+</p>
+<center>
+	<img border="1" src="images/stc_script1.png" />
+</center>
+<p>
+	And if the <tt>move</tt> method is mispelled, you get a proper compile error:
+</p>
+<center>
+	<img border="1" src="images/stc_script2.png" />
+</center>
+<p>
+	Be aware that static type checker extensions must be available in an output folder or a 
+	jar on the classpath as source.  This means that if you are working with an extension
+	defined in a project, you must have <a href="http://groovy.codehaus.org/Groovy-Eclipse+2.1.0RC2+New+and+Noteworthy#Groovy-Eclipse210RC2NewandNoteworthy-Scriptfolders">script folders</a>
+	enabled for that project.
+	You can configure them globally in Preferences -> Groovy -> Compiler, or on a per-project basis by going 
+	to your project properties:
+</p>
+<center>
+	<img border="1" src="images/script_folders.png" />
+</center>
+
+<h3>Grails 2.2.1 and Groovy 2.0.7 included</h3>
+<p>
+GGTS 3.2.0 bundles the Grails 2.2.1 release and this version is also available from the dashboard if
+you need to install it into a non-GGTS distribution.
+Grails 2.2.1 requires the Groovy 2.0.7 compiler and so GGTS now also includes
+that version by default. Groovy 1.8 is still included and it is a
+simple matter to switch versions in the preferences page if there are projects that require
+that compiler level. The grails tooling in eclipse is still fully compatible with previous versions of 
+Grails.
+</p>
+
+<h3>Editing support for Grails <tt>addTo*</tt> and <tt>removeFrom*</tt> methods</h3>
+
+<p>
+	There is now content assist and hover support for the Grails 
+	<a href="http://grails.org/doc/latest/ref/Domain%20Classes/addTo.html">
+	<tt>addTo*</tt></a> and 
+	<a href="http://grails.org/doc/latest/ref/Domain%20Classes/removeFrom.html">
+	<tt>removeFrom*</tt></a> methods.
+</p>
+
+<h3>Calculating controller action return types now more precise</h3>
+
+<p>
+Now, calculating the actual return type of a controller action takes into account calls to <tt>redirect()</tt>.
+For example, the following controller uses nested redirects in its actions.  The show action conditionally 
+redirects to the create action, which conditionally redirects to the update action:
+</p>
+
+<center>
+	<img src="images/grails-controller-actions.png"/>
+</center>
+
+<p>
+When the controller is referenced (in a unit test, for example), you can see content assist support
+for all values returned by the action and its transitively redirected other actions:
+</p>
+
+<center>
+	<img src="images/grails-controller-actions-test.png"/>
+</center>
+
+<p>
+	The return values from show, create, and update are all available through content assist.
+</p>
+
+
+<h3>Easier way to fix compiler version mismatches</h3>
+
+<p>
+	If you have Groovy projects with compiler mismatch errors on them (for example if you switch your workspace between 
+	Groovy 1.8 and 2.0), then you will see errors like this:
+</p>
+
+<center>
+	<img src="images/groovy-compiler-mismatch1.png"/>
+</center>
+
+<p>
+It is now simpler to fix these problems, by right-clicking on a broken project -> Groovy -> Fix compiler mismatch problems:
+</p>
+
+<center>
+	<img src="images/groovy-compiler-mismatch2.png"/>
+</center>
+<p>
+The following dialog appears and lets you change the compiler level for an individual project or all of the projects and
+even lets you change the workspace compiler level:
+</p>
+
+<center>
+	<img src="images/groovy-compiler-mismatch3.png"/>
+</center>
+
+<hr>
+
+<h2>Gradle Integration</h2>
+
+<p>There is now an option to automatically refresh <em>Gradle Dependencies</em>. 
+When the option is enabled, anytime a <code>.gradle</code> file is changed any <em>Gradle Dependencies</em>
+classpath element of any Gradle Project in the containing Gradle project 
+hierarchy will be refreshed automatically after a configurable delay.
+</p>
+<center>
+	<img src="images/enable-auto-refresh.png" alt="screenshot"> 
+</center>
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+<p>Here is a full list of resolved bugs and enhancement requests for the 3.2.0:
+<!-- these links include anything fixed in 3.2.0.M1/3.2.0.M2/3.2.0.RC1/3.2.0.RELEASE -->
+<p><a href="https://issuetracker.springsource.com/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+STS+AND+fixVersion+in+%2812883%2C+12884%2C+12885%2C+12886%29+AND+status+in+%28Resolved%2C+Closed%29">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+IDE+AND+fixVersion+in+%2813613%2C+13614%2C+13615%2C+13616%29+AND+status+in+%28Resolved%2C+Closed%29">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18618+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="http://www.springsource.org/spring-tool-suite-download">http://www.springsource.org/spring-tool-suite-download</a></p>
+<p>Download GGTS: <a href="http://grails.org/products/ggts">http://grails.org/products/ggts</a></p>
+<p>STS/GGTS forum: <a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.1.SR1.pdf">STS 2.7.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+</body>
+
+</html>

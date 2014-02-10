@@ -1,0 +1,48 @@
+body {
+	font-family: Arial, sans-serif;
+	margin:0;
+	background:#eeeeee;
+}
+
+p {
+	color: #666;
+	font-size:14px;
+}
+
+ul {
+	color: #666;
+	font-size:14px;
+}
+
+a {
+	text-decoration:none;
+	color: #0A96C5;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+
+
+h2 {
+	font-weight: normal;
+	color: #666;
+	text-transform:uppercase;
+	text-shadow: 0 1px 0 #fff;
+	font-size:24px;
+}
+
+
+h3 {
+	font-size: 16px;
+	font-weight:normal;
+	color:#666;
+	text-transform:uppercase;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.menuaction {
+  font-family: monospace;
+}
+

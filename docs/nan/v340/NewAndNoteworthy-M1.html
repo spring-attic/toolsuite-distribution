@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns:app="http://www.springframework.org"><head>
+  <title>Spring Tool Suite - Groovy/Grails Tool Suite 3.4.0.M1 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite & Groovy/Grails Tool Suite 3.4.0.M1: New and Noteworthy</h1>
+
+<p class="nan2">General Updates</p>
+
+<p class="nan3">Updated to Eclipse Kepler SR1 RC1</p>
+
+<p>The main distributions are now based on the latest Eclipse Kelper SR1 release candidate builds, including the latest bugfixes that go into Eclipse Kelper SR1.</p>
+
+<p class="nan3">Easy and quick Stop and Restart</p>
+
+A 'Stop' and 'Restart' button have been added to the Eclipse 'Launching' toolbar. 
+Just clicking the button applies to the last process you started. Alternatively, 
+select a specific currently running process from the pulldown.
+
+<center><img src="images/relaunch-toolbar.png"></img></center>
+
+<p class="nan3">Pivotal tc Server Developer Edition updated to 2.9.3</p>
+<p> STS and GGTS now ship with the latest Pivotal tc Server Developer Edition 2.9.3.</p>
+
+<p class="nan3">Grails updated to 2.2.4</p>
+<p>GGTS now ships with Grails 2.2.4.</p>
+
+<p class="nan2">Spring Tooling updates</p>
+
+<p class="nan3">New Dashboard</p>
+<p>The distributions ship with a completely renewed dashboard. This new dashboard is designed and implemented to provide easier navigation, a better browsing experience and more direct access to the new getting started content on <a href="https://spring.io">http://spring.io/</a>.</p>
+
+<center><img src="images/dashboard-welcome-page.png"></img></center>
+
+<p class="nan3">Support for new Getting Started Guides</p>
+
+<p>The dashboard welcome page provides links to useful resources on the spring website. The 'Browse Guides' link takes you to an index of
+Getting Started Guides on the spring.io website. The typical guide will come with sample code that can easily be imported into STS
+via the 'Getting Started Content' import wizard. The wizard can be opened in several ways.</p>
+<ul>
+   <li>Via the "Import Guide" button on the dashboard.
+   <li>Via the "File >> Import Menu" find the "Getting Started Content" wizard in the "Spring Category".
+</ul>
+
+<p>Use the wizard to search getting started content by keyword, then pick a guide of your choice.
+You can import the code associated with the guide into the workspace as either Gradle or Maven projects.
+The tutorial content of the guide will open in a web browser.</p>
+
+<center><img src="images/guides-wizard.png"></img></center>
+
+<p class="nan3">New Spring Starter Project Wizard</p>
+
+This wizard creates a <a href="http://spring.io/blog/2013/08/06/spring-boot-simplifying-spring-for-everyone">Spring Boot</a> 
+enabled project. Open the wizard from the menu "File >> New >> Spring Starter Project". Select some Spring Boot Starters and 
+an app with the desired classpath elements is created. Spring Boot does the rest, configuring suitable defaults for your Spring app 
+based on what's on the classpath.
+
+<center><img src="images/new-boot-wizard.png"></img></center>
+
+<p class="nan3">Automatic detection for JavaConfig classes</p>
+<p>STS 3.4.0 can now automatically detect Java types annotated with <tt>@Configuration</tt>, <tt>@Component</tt>, <tt>@Bean</tt>, <tt>@Import</tt> or <tt>@EnableAutoConfiguration</tt>
+and automatically add them to the Spring model as JavaConfigs. This setting can be enabled in the project properties:</p>
+<center>
+<img src="images/AutoDetectJavaConfigs.png"></img>
+</center>
+
+<p class="nan3">Basic support of Groovy for Spring apps</p>
+<p>STS 3.4.0 will treat annotated Groovy Config classes as though they were Java Config classes and add them to the Spring model:</p>
+<center>
+<img src="images/GroovySupport.png"></img>
+</center>
+
+<p class="nan2">Java8</p>
+<p class="nan3">Easy access to Eclipse Java 8 support (currently in beta)</p>
+<p>The eclipse team are working hard on Java8 support and many of the proposed language features are 
+already supported. The STS team is now building the beta versions of this support into an update site.
+The Java 8 support can be installed via the usual route (dashboard extensions page) or using the
+regular eclipse update site mechanism and this URL:</p>
+
+<br>
+<p><tt>http://dist.springsource.com/snapshot/TOOLS/java8/e43</tt></p>
+<br>
+
+<p>There are also complete distributions created nightly containing the Java8 feature, see the
+second group of downloads available here:</p>
+<p></p>
+<br>
+<p><tt><a href="http://dist.springsource.com/snapshot/STS/nightly-distributions.html">http://dist.springsource.com/snapshot/STS/nightly-distributions.html</a></tt></p>
+<br>
+
+<p>With the features installed it is then possible to set a project compatibility level
+to 1.8 and start to explore the new language constructs.  Be aware that it is important
+to run code compiled via this route against a compatible level of JDK8. b97 works well but
+can be tricky to get hold of.  With b105 there are currently problems with running code using lambdas.
+If in any doubt what to use, ask on the tools forum, the situation changes daily (the update site
+is rebuilt every evening to include the latest changes).
+</p>
+<p><b>Note:</b>Currently this will not install into GGTS. The Java8 support is currently shipped
+as a feature patch for the compiler. Groovy-Eclipse also includes a feature patch for
+the compiler. They cannot both be installed at the same time.</p>
+
+
+<p class="nan2">Cloud Foundry Integration for Eclipse 1.5.1</p>
+
+<p>1.5.1 introduces 3 new features that expand on the v2 Cloud Foundry server support added in 1.5.0.</p>
+
+
+<p class="nan3">Buildpacks</p>
+
+<p>Buildpacks can now be specified when pushing an application to a Cloud Foundry server. When the deployment wizard opens after dragging and dropping an application to a Cloud Foundry server instance, the first page allows users to enter a URL to a buildpack (e.g. https://github.com/cloudfoundry/java-buildpack).</p>
+<center><img src="images/buildpack.png"></img></center>
+
+<p class="nan3">Clone Server to Target Space</p>
+
+<p>
+It is now easier to clone an existing Cloud Foundry server instance to target another space. In either the Cloud Foundry editor "Overview" tab, or Servers View context menu, select "Clone Server". This will
+open a wizard that allows a user to create a new server instance to another organization or space without having to go through the New Server Wizard again.
+</p>
+
+
+<center><img src="images/cloneserver_cfeditor.png"></img></center>
+<center><img src="images/cloneserver_wizard.png"></img></center>
+
+<p class="nan3">Multiple Domains</p>
+<p> When deploying an application, or editing the application's mapped URLs, the URL UI has been enhanced to show the host and domain components of the application's URL. A user can now select other available domains from a combo control.</p>
+
+<center><img src="images/domainhost.png"></img></center>
+
+<!-- <p class="index-page--subtitle">Quick search for eclipse</p> -->
+<!-- <center><img src="images/quicksearch.png"></img></center> -->
+
+<!--
+    <div class="row-fluid content-container--wrapper guides-section--container">
+-->
+	<div class="row-fluid">
+
+
+<p class="nan2">AJDT</p>
+
+<p class="nan3">AspectJ 1.8.0.M1</p>
+<p>The Eclipse 4.3 based distributions now include the first milestone of AspectJ 1.8. Normally the first milestone of a new major
+AspectJ release cannot compile source at that Java level but only weave it. However, this time the first milestone can compile 
+Java 1.8 source code (and weave it).</p>
+
+<p class="nan2">Groovy-Eclipse</p>
+<p class="nan3">Groovy 2.1.6</p>
+<p>Groovy Eclipse now supports Groovy 2.1.6 - this is installable from the dashboard.</p>
+<p class="nan3">Compiler Customizers</p>
+<p>Groovy Eclipse, when using the 2.1.X versions of Groovy, now supports Groovy compiler customizers. They are specified by
+including an entry in the project <tt>.settings/org.eclipse.jdt.core.prefs</tt>:
+<br>
+<br>
+<tt>org.eclipse.jdt.core.compiler.groovy.groovyCustomizerClassesList=pkg.MyCustomizer</tt>
+<br>
+<br>
+The customizer must be discoverable on the project classpath. Multiple customizers can be specified - separate them with a ','.
+There is no UI for setting these yet.
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+
+<p>Here is a full list of resolved bugs and enhancement requests for 3.4.0:</p>
+<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20in%20%28%223.4.0.M1%22%2C%20%223.4.0.RC1%22%2C%20%223.4.0.RC2%22%2C%20%223.4.0.RELEASE%22%29%20AND%20status%20in%20%28Resolved%2C%20Closed%29">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20in%20%28%223.4.0.M1%22%2C%20%223.4.0.RC1%22%2C%20%223.4.0.RC2%22%2C%20%223.4.0.RELEASE%22%29%20AND%20status%20in%20%28Resolved%2C%20Closed%29">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18821+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>Download GGTS: <a href="https://spring.io/tools/ggts/all">https://spring.io/tools/ggts/all</a></p>
+<p>STS/GGTS forum: <a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite">http://forum.spring.io/forum/spring-projects/springsource-tool-suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>Known issues in this release</h2>
+
+<p>The extension install page of the dashboard is broken after installing the latest JDK 7u40: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=417043">https://bugs.eclipse.org/bugs/show_bug.cgi?id=417043</a>. This problem in Mylyn also affects the m2e catalog discovery. There is no known workaround for this at the moment. We hope to include a fixed version of Mylyn in the upcoming 3.4.0 release.</p>
+
+<p>The known issues from the previous 3.3.0 release are fixed in 3.4.0.</p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">STS/GGTS 3.3.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.6.1.SR1.pdf">STS 2.6.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> GoPivotal, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>

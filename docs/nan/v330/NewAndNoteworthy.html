@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.springsource.org/sites/all/themes/s2org11/favicon.ico"/>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>STS/GGTS v3.3.0: New and Noteworthy</title>
+</head>
+  
+<body>
+<!-- green header -->
+<div xmlns="http://www.w3.org/TR/xhtml1/transitional" 
+     style="background:url('http://www.springsource.org/files/static/sts-nn-header.gif') #2d5427 no-repeat;border:none;height:80px;">
+	<span style="color:#97bd80;text-transform:uppercase;font-size:22px;padding:0 15px 0 0;line-height:110px;font-family: Verdana, Arial, helvetica, sans-serif;float:right;text-shadow:0 1px 0 #333">Spring Tool Suite &amp; Groovy-Grails Tool Suite 3.3.0: New and Noteworthy</span>
+</div>
+
+<div style="margin:40px;">
+
+<!-- h2 for a section title, h3 for sub headings, finish with an hr -->
+<!-- pictures go in the images sub folder, refs like this: 
+<center>
+<img src="images/livebeans-views.png"/>
+</center>
+-->
+
+<h2>General Updates</h2>
+
+<h3>Updated to Eclipse Kepler</h3>
+<p>The 4.x-based distributions of the STS and GGTS are now based on the latest Eclipse Kepler 4.3 release. In addition to that we will
+continue to ship 3.8.2-based distributions of STS and GGTS, but those distributions continue to consist of the Eclipse Juno components.
+That means, for example, that the Java tooling of Eclipse 3.8/4.2 is part of STS 3.3.0 on Eclipse 3.8.2 instead of the Java tooling updates
+from Eclipse 4.3.</p>
+<p>If you came across bugs in Eclipse 3.8 and/or 4.2 that got fixed in Eclipse Kepler, you will have to use the latest STS 3.3.0 on Eclipse 4.3
+distribution.</p>
+
+<h3>vFabric tc Server Developer Edition updated to 2.9.2</h3>
+<p>STS and GGTS now ships with the latest vFabric tc Server Developer Edition 2.9.2.</p>
+
+<h3>Spring Roo updated to 1.2.4</h3>
+<p>STS now ships with the latest Spring Roo 1.2.4.</p>
+
+<h3>Grails updated to 2.2.3</h3>
+<p>GGTS now ships with Grails 2.2.3.</p>
+
+<h3>Apache Maven and Spring IDE OSGi extension removed</h3>
+<p>We removed the Apache Maven runtime package from the distribution package of the Spring Tool Suite
+in order to provide a lighter download. An Apache Maven runtime for internal Eclipse usage is included in the Maven
+Integration for Eclipse and therefore isn't required. Nevertheless you can configure a different Apache Maven runtime
+in the tooling via the preferences.</p>
+
+<p>We also removed the outdated Spring IDE OSGi extension from the default distribution. You can still get it from the
+update repository manually.</p>
+
+<p>All this is part of our overall effort to provide a more lightweight tooling (and distribution) and we might remove
+more parts from the default distribution in upcoming milestones and releases. If you would like to see certain parts
+removed (or added), let us know. Feedback is always very welcome and can be provided through the STS 
+<a href="https://issuetracker.springsource.com/browse/STS">JIRA</a> or by posting a comment on the
+<a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">forum</a>.</p>
+
+
+<h2>Quick Search for Eclipse</h2>
+
+<p>The new light-weight 'Quick Search' feature provides a simple yet effective text search popup dialog. The dialog was designed to have minimal 
+overhead in terms of mouse-clicks and keypresses needed to open the dialog and jump to an interesting result. </p>
+
+<p>A single keystroke (CTRL+SHIFT+L or CMD+SHIFT+L on Mac) opens the dialog from any context. The text selected in the
+current editor will be used to kick off the search initially. If the current selection is empty, your previous search will be used
+instead. Start typing to search for something else.</p>
+
+<p>The search is incremental and updates the query of an ongoing search as you 
+type. It also prioritizes what files to search first, based on what editors are currently open. This results in quick 
+and responsive search experience even though it does not use a text index that needs to be kept up-to-date.</p>
+
+<p>Use the arrow keys to quickly select an interesting result and press enter to open it in an editor.</p>
+
+<center>
+<img src="images/quicksearch.png"/>
+</center>
+
+<h3>Tip of the day</h3>
+<p>STS and GGTs now display a small popup window showing you useful tips for using STS and GGTS. This opens up automatically
+at startup and contains links for direct access to the mentioned features or resources.</p>
+
+<center>
+<img src="images/tip-of-the-day.png"/>
+</center>
+
+<h3>Global preference curator</h3>
+<p>We collected a number of preferences that make Eclipse more awesome and fun to use. Those preferences can be set (and reset)
+by using the new global preference curator (in the SpringSource section of the preference dialog) via a single click, instead of setting
+each preference manually all over the place.</p>
+	
+<center>
+<img src="images/preference-curator.png"/>
+</center>
+	
+<h3>Performance and Memory Footprint</h3>
+<p>We continued our work on general performance and memory improvements throughout the distribution.</p>
+
+<hr>
+
+<h2>Spring Development Tools</h2>
+
+<h3>Ready for Spring 4</h3>
+<p>STS 3.3.0 now includes and uses the latest Spring 4.0.0.M1 libraries to parse and analyze your projects. This ensures Spring 4 projects work flawlessly in the Spring Tool Suite.</p>
+
+<h3>New Spring Project Wizard</h3>
+
+<p>New Spring projects and template based projects can now be created from one single wizard. Previous versions of STS featured two separate wizards, 
+one for creating Spring projects from templates, and another from a Java project with additional Spring configuration.</p>
+<p>STS 3.3.0 has replaced both of these wizards with just one New Spring Project wizard, which can be opened 
+from either the STS Dashboard, or from the File -> New... menu.</p>
+<p> Much like the previous Spring Template wizard, which this new wizard is replacing, a user can create a project by choosing a template, 
+as well as refresh and edit the list of available templates. In addition, a user can display self-hosted projects from the workspace.</p>
+
+<center>
+<img src="images/newspringwizard330M2.png"/>
+</center>
+
+<p>The wizard also introduces <b>Simple Projects</b>, which allows users to quickly create a Spring project without any additional configuration aside 
+from a project name. Unlike most templates that require further user input in subsequent pages, simple projects can be created right from the first page of the wizard.</p>
+
+<center>
+<img src="images/simpleprojects330M2.png" border="1"/>
+</center>
+
+<p>    
+The three types of simple projects are:
+</p>
+
+<p>1.	<b>Simple Java</b>: creates a basic Spring project based on a Java project without a top-level package, and with default Spring configuration. 
+This is very similar to the old Spring Project wizard where a user was able to create a Spring Java project with additional Spring configuration. 
+Although the only requirement is a project name, a user does have the option to navigate to subsequent pages for Simple Java to edit the default Spring configuration values, 
+as well as modify the settings in the Java build page for the project.</p>
+
+<p>2.	<b>Simple Spring Maven</b>: creates a basic Spring project using Maven that contains a basic set of non-web Spring libraries. 
+The user has the ability to create a Simple Spring Maven project using a choice of the following: Spring 3.2.3, 3.1.4, or 3.0.7.</p>
+
+<p>3.	<b>Simple Spring Web Maven</b>: creates a basic Spring web project using Maven that contains a basic set of Spring web libraries, like spring-web and spring-webmvc. 
+The user has the ability to create a Simple Spring Web Maven project using a choice of the following: Spring 3.2.3, 3.1.4, or 3.0.7.</p>
+
+<p>
+Finally, the New Spring Project wizard now allows users to select which version of Spring to use when creating and building a project. 
+The options are to use the default Spring version defined in the template or simple project, or to select one of the following: 3.2.3, 3.1.4, 3.0.7.
+</p>
+
+<center>
+<img src="images/springversion_newspringwizard_330M2.png" border="1"/>
+</center>
+
+<p>
+Spring version support is not supported on all templates and Simple Projects. The drop-down UI for the Spring version selection is only enabled on certain templates 
+and simple projects that support a range of Spring versions.
+</p>
+
+<h3>Support for JavaConfig only Spring projects</h3>
+<p>One of the major themes of STS 3.3.0 is to provide advanced support for JavaConfig and JavaConfig-only Spring projects. Therefore
+we added the option to configure @Configuration classes directly as Spring bean configs in the project settings (for those cases where
+you don't have any Spring XML config files anymore):</p>
+
+<center>
+<img border="1" src="images/javaconfig-project-configuration.png"/>
+</center>
+
+<p>This allows you to benefit from the general tooling support for Spring projects without configuring a component-scanning element
+in a Spring XML config file just to make the tooling happy. You can select @Configuration classes directly from a filtered list of
+types that are available to your project:</p>
+
+<center>
+<img border="1" src="images/javaconfig-class-selection.png"/>
+</center>
+
+<p>Since Spring XML files and Spring JavaConfig classes are both now first-class citizens of the Spring tooling, you can use both
+to define your bean config sets to validate against specific scopes and bean profiles:</p>
+
+<center>
+<img border="1" src="images/javaconfig-configsets.png"/>
+</center>
+
+<h3>New context menu actions: an easier way to configure your Spring project</h3>
+<p>We've added a couple of new actions to the Spring Tools context menu for configuring types and XML files as beans configs. You can now
+directly right-click on a Java @Configuration class to configure that class as beans config for your project (and the same for Spring
+XML config files). The same way works for quickly removing types or XML files as Spring configurations from the project.</p>
+	
+<center>
+<img src="images/add-as-bean-config.png" border="1"/>
+</center>
+	
+<center>
+<img src="images/remove-as-bean-config.png" border="1"/>
+</center>
+	
+<p>We also implemented context menu actions for arranging beans configs into config sets. You can invoke these actions
+by right-clicking on a config file or config set in the Spring Explorer view.</p>
+
+<center>
+<img src="images/add-to-config-set.png" border="1"/>
+</center>
+	
+<center>
+<img src="images/remove-from-config-set.png" border="1"/>
+</center>
+	
+<p>All those new actions provide you with a quicker way to change your Spring project configuration than by going through the project
+preference dialogs.</p>
+
+<h3>Autowired Bean Navigation</h3>
+<p>In this release we added ability to navigate to bean definition for autowired field or method parameter. You can access the hyperlink by CTRL+CLICK the field name or the parameter name with an @Autowire annotation and selecting the available hyperlink.</p>
+
+<center>
+<img src="images/autowire_field.png" border="1"/>
+</center>
+
+<center>
+<img src="images/autowire_parameter.png" border="1"/>
+</center>
+
+<h3>Improved content-assist for Spring annotations</h3>
+<p>We have improved content assist for java configuration annotation by adding content assist for package name and class attributes, starting with the @ComponentScan annotation.</p>
+
+<center>
+<img src="images/package-content-assist.png" border="1"/>
+</center>
+
+<center>
+<img src="images/class-content-assist.png" border="1"/>
+</center>
+
+<h2>Performance and Memory Footprint</h2>
+<p>We continued our work on performance and memory improvements for building Spring projects. Therefore we re-implemented parts of the underlying
+validation and build logic in order to consume less memory and increase performance at the same time. First measurements and experiences look promising, but
+also depend highly on the size of your projects and the workspace.</p>
+<p>
+If you experience specific slowdowns, heavy memory usage, or both at the same time, please let us know and file a report
+<a href="https://issuetracker.springsource.com/browse/STS">using our JIRA system</a>. Special thanks go to Stefan Kohrs, who reported a general performance issue
+and helped us a lot with profiling data, testing various milestone and snapshot builds, and reporting back the results. Thanks again!
+</p>
+
+<hr>
+
+<h2>AspectJ Development Tools</h2>
+
+<h3>OSGi-ification and Smaller install size</h3>
+<p>
+	The AspectJ bundles have been repackaged as proper OSGi bundles.  This includes the AspectJ runtime, weaver, and ajde bundles (i.e., the compiler bundles).  The 
+	AJDT jars (i.e., the Eclipse integration) have always been proper OSGi bundles with proper, separate source bundles.
+	Source and documentation have been extracted from the AspectJ binary bundles and placed into proper source bundles.
+	There is a new feature in the AspectJ update site to install just the AspectJ compiler standalone, without any of the IDE support. With these changes, 
+	typical install size has been reduced by about 5 Mb.
+</p>
+
+<hr>
+
+<h2>Groovy-Eclipse</h2>
+
+<h3>Memory improvements</h3>
+<p>
+	Significant memory improvements are now in Groovy-Eclipse.  
+	Here are some numbers.  We imported the <a href="http://gpars.codehaus.org/">GPars</a> project into an empty workspace of GGTS 3.2.0 
+	(with Groovy-Eclipse 2.7.2) and also into an empty workspace of GGTS 3.3.0.M2 (with Groovy-Eclipse 2.8.0.M2). We also did the same for an
+	empty Grails 2.2.2 project (i.e., run <tt>grails create-app</tt> and import the results).
+	After a full clean-compile-clean-compile-GC-GC-GC cycle, you will notice a large difference in heap size:
+</p>
+
+	<center>
+	<table border="1">
+		<tr>
+			<th></th>
+			<th>GPars project</th>
+			<th>Empty Grails project</th>
+		</tr>
+		<tr>
+			<th align="right">STS 3.2.0<br/>(Groovy-Eclipse 2.7.2)</th>
+			<td>348 Mb heap used</td>
+			<td>130 Mb heap used</td>
+		</tr>
+		<tr>
+			<th align="right">STS 3.3.0.M2<br/>(Groovy-Eclipse 2.8.0.M2)</th>
+			<td>133 Mb heap used</td>
+			<td>108 Mb heap used</td>
+		</tr>
+		<tr>
+			<th align="right">Improvement</th>
+			<td>215 Mb</td>
+			<td>22 Mb</td>
+		</tr>
+	</table><br/>
+	</center>
+	
+<p>
+	For compiling GPars, GGTS 3.3.0.M2 has more than 200 Mb smaller footprint. Empty Grails projects show a 22 Mb smaller GGTS footprint.  For all the details, see <a href="http://jira.codehaus.org/browse/GRECLIPSE-1633">GRECLIPSE-1633</a>. 
+
+	Workspaces that declare enums or annotations in Groovy source will see this dramatic memory improvement.  And there are other, smaller tweaks that
+	apply memory improvements to all workspaces.
+</p>
+
+<p>
+GGTS 3.3.0 comes with Groovy-Eclipse 2.8.0.  In this release, we have put significant effort into handling multiple compiler versions and stabilizing our static type checking support.  More details are below
+</p>
+
+<h4>Editor templates</h4>
+
+<p>
+The Groovy editor now supports templating similar to the Java editor.  For example, when you invoke content assist, and the prefix matches an available template, you will see it in the content assist menu:
+<br/>
+<center>
+<img src="images/groovy-template1.png" border="1"/>
+</center>
+<br/>
+<p>After applying the template, you get a chance to tab through the template variables and edit them:
+<br/>
+<center>
+<img src="images/groovy-template2.png" border="1"/>
+</center>
+<br/>
+<p>The list of templates are available in <b>Preferences -> Groovy -> Editor -> Groovy Templates</b>: 
+<br/>
+<center>
+<img src="images/groovy-template3.png" border="1"/>
+</center>
+<br/>
+<p>Here you can edit existing templates or create new ones:
+<br/>
+<center>
+<img src="images/groovy-template4.png" border="1"/>
+</center>
+</p>
+
+<h4>Surround with...</h4>
+
+<p>
+	The Groovy editor now supports surround-with templates. This allows you to surround a selection of code with a template (similar functionality exists in the Java editor).  To access this functionality, select some text, and press <tt>CMD/CTRL+1</tt>:
+	<br/>
+	<center>
+	<img src="images/surround-with1.png" border="1"/>
+	</center>
+	<br/>
+<p>
+	All the surround-with templates appear as quick fixes.  This functionality is also available by <b>Right-click -> Surround with</b>.  Or by typing <tt>CTRL/CMD+ALT+Z</tt>: 
+	<br/>
+	<center>
+	<img src="images/surround-with1.png" border="1"/>
+	</center>
+	<br/>
+<p>
+	 Selecting the last line to <em>Configure templates...</em> will open up the template preferences page shown above.  All templates that use a <tt>${line_selection}</tt> variable will appear in the Surround With menu.
+	
+<h4>Compiler switching</h4>
+<p>There are some significant changes in the way multiple compilers are handled in the workspace now.  The back end implementation for this has been completely rewritten using different OSGi functionality. From a user's perspective, most functionality should be the same, except for the following differences:</p>
+
+<ul>
+	<li>Compiler settings are now per-workspace, instead of per-install.  This means that if you use multiple workspaces with different compiler levels, you no longer have to use separate shortcuts to launch them.</li>
+	<li>There is now a <em>Don't care</em> setting for projects.  In the Project Groovy compiler preferences page, you can set your project to <em>Don't care</em> and it will avoid checking for compiler mismatches no matter what compiler level the current workspace is using.</li>
+	<li>There is now a compiler switching UI. Select a project with a compiler mismatch problem on it.  Project -> Groovy -> Fix compiler mismatch problems:
+		<br/>
+		<center>
+		<img src="images/compiler-mismatch-ui1.png" border="1"/>
+		</center>
+		<br/>
+		Selecting this will bring up the following dialog that allows you to configure all projects throughout the workspace at once:
+		<br/>
+		<center>
+		<img src="images/compiler-mismatch-ui2.png" border="1"/>
+		</center>
+		</li>		
+</ul>
+
+
+<h4>Navigation and hovers in binary Groovy files</h4>
+
+<p>Navigation to definitions and JavaDoc hovers are now supported in class files compiled from Groovy, when the source is available.  You can see this here, when exploring the <tt>SwingBuilder</tt> class:
+<br/>
+<center>
+<img src="images/hover-in-binary-groovy.png" border="1"/>
+</center>
+</p>
+
+<h4>@DelegatesTo support</h4>
+<p>
+The <a href="http://groovy.codehaus.org/The+@DelegatesTo+annotation">Groovy 2.1 <tt>@DelegatesTo</tt> annotation</a> is now supported in Groovy-Eclipse:
+<br/>
+<center>
+
+<img src="images/delegatesTo.png" border="1"/>
+</center>
+<br/>
+<p>In the screenshot above, you can see the <tt>Email</tt> class and that it is being used as a delegate to the <tt>email</tt> function.  The implementation is snipped, but you can see that when selecting the <tt>from</tt> field reference inside the closure, its definition is highlighted in the <tt>Email</tt> class.  Also, the hover properly describes where the reference comes from.
+</p>
+
+<h3>Better anonymous inner type support</h3>
+<p>
+	There is now full editor support for anonymous inner types.<br/><br/>
+	The outline view works as expected with the inner type appearing properly named and inside of the method that declares it:
+</p>
+	
+	<center>
+	<img src="images/inner_outline.png" border="1"/>
+	</center>
+
+<p>
+	Searching for references to methods declared in anonymous inner types works as expected:
+</p>
+	
+	<center>
+	<img src="images/inner_search.png" border="1"/>
+	</center>
+	
+<p>
+	And navigation works as expected. Navigating from a method reference will take you to its declaration and navigating from the super-type of 
+	the anonymous type will take you to its declaration.
+</p>
+	
+	<center>
+	<img src="images/inner_declaration.png" border="1"/>
+	</center>
+
+<h3>More precise error locations</h3>
+<p>
+	Error markers now more precisely cover the error that they are describing, specifically with missing type references.  
+	As you can see in Groovy-Eclipse 2.8.0, missing types are fully underlined with red squiggles:
+</p>
+	
+	<center>
+	<img src="images/errors-new.png" border="1"/>
+	</center>
+	
+<p>
+	And the same class in Groovy-Eclipse 2.7.2 shows that the red squiggles are improperly placed.:
+</p>
+	
+	<center>
+	<img src="images/errors-old.png" border="1"/>
+	</center>
+	
+</p>
+
+<h3>Smaller install size</h3>
+<p>
+	We have repackaged the <tt>org.codehaus.groovy</tt> bundles and removed extraneous jar files.  Install size of Groovy-Eclipse has been reduced by about 20 Mb.
+</p>
+
+<h3>Deprecating of Groovy 1.7 support</h3>
+
+<p>The Groovy 1.7 support in GGTS has been deprecated.  It is still possible to install it for this release, but it will be removed in future releases.  If you need to install the Groovy 1.7 compiler, then:
+
+<ol>
+	<li>Go to Help -> Install new software</li>
+	<li>Choose the Springsource update site to work with</li>
+	<li>Uncheck <em>Group items by category</em>, As shown in the image:<br/>
+	<center>
+	<img src="images/groovy1.7-optional.png" border="1"/></li>
+	</center>
+	<li>You will now be able to see the Groovy 1.7 compiler in the list of installs.</li>
+	<li>Select that entry and follow the instructions to install</li>
+</ol>
+</p>
+
+<hr>
+
+<h2>Grails Development Tools</h2>
+
+<p>
+GGTS 3.3.0 includes the Grails 2.2.3 release.
+
+<h3>Grails 2.3 support</h3>
+
+<p>
+Grails IDE now includes preliminary support for the yet to be released Grails 2.3. One important note is that 2.3 has
+currently deprecated the <tt>install plugin</tt> command, and this means the plugin manager will *not* currently
+work in GGTS 3.3.0. On attempting to use it you will see an error message indicating the current workaround. In
+subsequent milestones we will be looking to address this problem.
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+<p>Here is a full list of resolved bugs and enhancement requests for 3.3.0:
+<!-- these links include anything fixed in 3.2.0.M1/3.2.0.M2/3.2.0.RC1/3.2.0.RELEASE -->
+<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20in%20(%223.3.0.M1%22%2C%20%223.3.0.M2%22%2C%20%223.3.0.RC1%22%2C%20%223.3.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20in%20(%223.3.0.M1%22%2C%20%223.3.0.M2%22%2C%20%223.3.0.RC1%22%2C%20%223.3.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18821+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Known issues in this release</h2>
+
+<p>There is a regression for the hyperlinking feature in non-spring projects. There is an exception being thrown if you try to activate a hyperlink for an argument of a method. See: <a href="https://issuetracker.springsource.com/browse/STS-3462">STS-3462</a>. The workaround for this is to deactivate the autowire hyperlink detector via: Preferences -> General -> Editors -> Text Editors -> Hyperlinking -> then deactivate the "Autowire Hyperlink Detector".</p>
+
+<p>If you are using old workspaces, you might come across errors in the Error Log view telling you about missing action sets. You don't need to worry about them. They indicate that the workspace still contains some references in its metadata to outdated and meanwhile removed action sets. Please ignore.</p>
+
+<p>Two-keystroke shortcuts are broken in Eclipse 4.2 and still don't work in the Eclipse Kepler 4.3 release. Therefore the STS 3.3.0 distribution that comes with Eclipse Kepler 4.3 suffers from this broken two-keystroke problem as well. We hope that this will get fixed in the Eclipse platform UI soon. Unfortunately there is known workaround other than moving back to the STS/GGTS distribution that is based on Eclipse 3.8.2 - which doesn't contain the latest Eclipse Kepler fixes and improvements.</p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="http://www.springsource.org/spring-tool-suite-download">http://www.springsource.org/spring-tool-suite-download</a></p>
+<p>Download GGTS: <a href="http://grails.org/products/ggts">http://grails.org/products/ggts</a></p>
+<p>STS/GGTS forum: <a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.6.1.SR1.pdf">STS 2.6.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+</body>
+
+</html>

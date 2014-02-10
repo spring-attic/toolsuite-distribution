@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.springsource.org/sites/all/themes/s2org11/favicon.ico"/>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>STS/GGTS v3.2.0.M2: New and Noteworthy</title>
+</head>
+  
+<body>
+<!-- green header -->
+<div xmlns="http://www.w3.org/TR/xhtml1/transitional" 
+     style="background:url('http://www.springsource.org/files/static/sts-nn-header.gif') #2d5427 no-repeat;border:none;height:80px;">
+	<span style="color:#97bd80;text-transform:uppercase;font-size:22px;padding:0 15px 0 0;line-height:110px;font-family: Verdana, Arial, helvetica, sans-serif;float:right;text-shadow:0 1px 0 #333">Spring Tool Suite &amp; Groovy-Grails Tool Suite 3.2.0.M2: New and Noteworthy</span>
+</div>
+
+<div style="margin:40px;">
+
+<!-- h2 for a section title, h3 for sub headings, finish with an hr -->
+<!-- pictures go in the images sub folder, refs like this: 
+<center>
+<img src="images/livebeans-views.png"/>
+</center>
+-->
+
+<h2>General Updates</h2>
+
+<h3>Eclipse Juno SR2 on the horizon</h3>
+<p>While the Eclipse Juno SR2 releases is on the horizon, but not yet shipped, we built our Eclipse-3.8
+and Eclipse-4.2-based distributions on top of the latest maintenance builds of Eclipse Juno. 
+So these distributions already contain the very latest fixes and improvements from the Eclipse team.</p>
+
+<h3>Grails 2.2</h3>
+<p>The GGTS distributions now include Grails 2.2.0.</p>
+
+<h3>Performance Improvements</h3>
+<p>We are working on improving performance all over the place in STS and GGTS. At the same time, the Eclipse platform
+team is also working on solving performance issues in the new platform UI implementation, also known as the Eclipse
+4.2 platform. STS/GGTS 3.2.0.M2 adopts the latest changes from Eclipse Juno SR2 RC1, which contains a lot of fixes
+from the Eclipse team. The STS/GGTS 3.2.0.RELEASE (scheduled for early March 2013) will be built on top of Eclipse Juno SR2.</p>
+<p><b>We still recommend to use the STS/GGTS builds on top of Eclipse 3.8 in order to archive maximum performance
+and stability.</b></p>
+
+<hr>
+
+<h2>Spring Development Tools</h2>
+
+<h3>Performance Improvements</h3>
+<p>We are working on improving performance inside the Spring tooling. This targets two areas:</p>
+<ul>
+<li>Make STS as fast as plain Eclipse when working with Java files. Therefore we identified and fixed a number of issues
+that made Java editing and content-assist a bit slower than with plain Eclipse, even for non-Spring-related Java files.</li>
+<li>Improve the performance of the Spring specific project builders. Reading and validating the Spring configurations
+in XML and Java files caused performance issues in the past from time to time and the goal is to be able to run validations
+and metadata builders all the time without hitting performance problems.</li>
+</ul>
+<p>STS 3.2.0.M2 already contains a number of fixes in both areas. We were able to improve performance in certain areas of
+the additional Spring project builders by a factor of 10. However, there is still work to do and we will continue with
+this before we ship the final 3.2.0 release.</p>
+
+<p>For additional information and continuous progress reports, take a look at the JIRA ticket for this:
+<a href="https://issuetracker.springsource.com/browse/STS-3054">STS-3054</a></p>
+
+<h3>Code completion for common findBy.. methods in a Spring Data repository class</h3>
+<p>Code completion is now available for findBy... methods for properties that are defined inside the domain class
+associated with a Spring Data repository class</p>
+
+<center>
+<img src="images/findbyTemplate.png"/>
+</center>
+
+<h3>Code validation for findBy... methods</h3>
+<p>Code validation is added to check for consistency between parameter type of a findBy... method and the
+corresponding property type defined in the associated domain class.</p>
+
+<center>
+<img src="images/findByValidation.png"/>
+</center>
+
+<h3>Live Beans Graph</h3>
+<p>This milestone introduces a new tree mode for the Live Beans view. Beans are grouped by the resource from
+which they originate and expanding a bean will list all beans it depends on or is injected into. This display mode
+can be toggled with the graph mode from the toolbar of the Live Beans view.</p>
+
+<center>
+<img src="images/livebeans-treeview.png"/>
+</center>
+
+<hr>
+
+<h2>vFabric tc Server Integration</h2>
+
+<h3>Improvements to the New Server wizard</h3>
+<p>When creating a new tc Server instance and selecting a template the wizard will now prompt for
+missing template properties values. The wizard will also provide default values if defined in the template.</p>
+
+<center>
+<img src="images/template_props_ajp.png"/><br/>
+<img src="images/template_props_apr-ssl.png"/>
+</center>
+
+<hr>
+
+<h2>Groovy and Grails Development Tools</h2>
+
+<h3>Grails 2.2 and Groovy 2.0 included</h3>
+<p>
+GGTS 3.2.0.M2 now bundles the Grails 2.2 release and this version is also available from the dashboard if
+you need to install it into a non-GGTS distribution.
+Grails 2.2 requires the Groovy 2.0 compiler and so GGTS now also includes
+the Groovy 2.0 compiler by default (version 2.0.6 to be precise). Groovy 1.8 is still included and it is a
+simple matter to switch versions in the preferences page if there are projects that require
+that compiler level. The grails tooling in eclipse is still fully compatible with previous versions of 
+Grails.
+</p>
+
+<h3>Editing support for Grails <tt>addTo*</tt> and <tt>removeFrom*</tt> methods</h3>
+
+<p>
+	There is now content assist and hover support for the Grails 
+	<a href="http://grails.org/doc/latest/ref/Domain%20Classes/addTo.html">
+	<tt>addTo*</tt></a> and 
+	<a href="http://grails.org/doc/latest/ref/Domain%20Classes/removeFrom.html">
+	<tt>removeFrom*</tt></a> methods.
+</p>
+
+<h3>Calculating controller action return types now more precise</h3>
+
+<p>
+Now, calculating the actual return type of a controller action takes into account calls to <tt>redirect()</tt>.
+For example, the following controller uses nested redirects in its actions.  The show action conditionally 
+redirects to the create action, which conditionally redirects to the update action:
+</p>
+
+<center>
+	<img src="images/grails-controller-actions.png"/>
+</center>
+
+<p>
+When the controller is referenced (in a unit test, for example), you can see content assist support
+for all values returned by the action and its transitively redirected other actions:
+</p>
+
+<center>
+	<img src="images/grails-controller-actions-test.png"/>
+</center>
+
+<p>
+	The return values from show, create, and update are all available through content assist.
+</p>
+
+
+<h3>Easier way to fix compiler version mismatches</h3>
+
+<p>
+	If you have Groovy projects with compiler mismatch errors on them (for example if you switch your workspace between 
+	Groovy 1.8 and 2.0), then you will see errors like this:
+</p>
+
+<center>
+	<img src="images/groovy-compiler-mismatch1.png"/>
+</center>
+
+<p>
+It is now simpler to fix these problems, by right-clicking on a broken project -> Groovy -> Fix compiler mismatch problems:
+</p>
+
+<center>
+	<img src="images/groovy-compiler-mismatch2.png"/>
+</center>
+<p>
+The following dialog appears and lets you change the compiler level for an individual project or all of the projects and
+even lets you change the workspace compiler level:
+</p>
+
+<center>
+	<img src="images/groovy-compiler-mismatch3.png"/>
+</center>
+
+<hr>
+
+<h2>Gradle Integration</h2>
+
+<p>There is now an option to automatically refresh <em>Gradle Dependencies</em>. 
+When the option is enabled, anytime a <code>.gradle</code> file is changed any <em>Gradle Dependencies</em>
+classpath element of any Gradle Project in the containing Gradle project 
+hierarchy will be refreshed automatically after a configurable delay.
+</p>
+<center>
+	<img src="images/enable-auto-refresh.png" alt="screenshot"> 
+</center>
+
+<hr>
+
+<h2>Issues resolved in this release</h2>
+<p>Here is a full list of resolved bugs and enhancement requests for the 3.2.0.M2:
+<!-- these links include anything fixed in 3.2.0.M1/3.2.0.M2/3.2.0.RC1/3.2.0.RELEASE -->
+<p><a href="https://issuetracker.springsource.com/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+STS+AND+fixVersion+in+%2812883%2C+12884%2C+12885%2C+12886%29+AND+status+in+%28Resolved%2C+Closed%29">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+IDE+AND+fixVersion+in+%2813613%2C+13614%2C+13615%2C+13616%29+AND+status+in+%28Resolved%2C+Closed%29">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18618+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="http://www.springsource.org/spring-tool-suite-download">http://www.springsource.org/spring-tool-suite-download</a></p>
+<p>Download GGTS: <a href="http://grails.org/products/ggts">http://grails.org/products/ggts</a></p>
+<p>STS/GGTS forum: <a href="http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite">http://forum.springsource.org/forumdisplay.php?32-SpringSource-Tool-Suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy-M1.html">STS/GGTS 3.2.0.M1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.1.SR1.pdf">STS 2.7.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+</body>
+
+</html>
