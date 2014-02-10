@@ -126,6 +126,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/release/TOOLS/third-party/m2e/</url>
 				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e3.7</module>
@@ -190,6 +195,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
 				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e3.8</module>
@@ -253,6 +263,11 @@ Optional parameters:
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
 					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
+				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -323,6 +338,11 @@ Optional parameters:
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
 					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
+				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -399,6 +419,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
 				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.3-java8</module>
@@ -468,6 +493,11 @@ Optional parameters:
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
 					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
+				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -541,11 +571,6 @@ Optional parameters:
 			<id>springide</id>
 			<layout>p2</layout>
 			<url>http://dist.springframework.org/${dist.type}/IDE/${dist.springide-pathpostfix}</url>
-		</repository>
-		<repository>
-			<id>eclipse-integration-commons</id>
-			<layout>p2</layout>
-			<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 		</repository>
 		<repository>
 			<id>eclipse-integration-tcserver</id>
