@@ -51,11 +51,4 @@
       </splashHandlerProductBinding>
    </extension>
 
-	<extension
-       point="org.eclipse.ui.views">
-    	<category
-          id="org.springsource.sts"
-          name="SpringSource Tool Suite">
-    	</category>
- 	</extension>   
 </plugin>
