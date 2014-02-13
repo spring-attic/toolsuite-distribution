@@ -168,7 +168,7 @@
 		<profile>
 			<id>e43</id>
 			<properties>
-				<dist.target>e4.3.1</dist.target>
+				<dist.target>e4.3.2</dist.target>
 				<dist.target.major>e4.3</dist.target.major>
 				<dist.platform.name>Kepler</dist.platform.name>
 				<dist.platform.id>kepler</dist.platform.id>
@@ -180,7 +180,7 @@
 		<profile>
 			<id>e43-java8</id>
 			<properties>
-				<dist.target>e4.3.1-java8</dist.target>
+				<dist.target>e4.3.2-java8</dist.target>
 				<dist.target.major>e4.3-java8</dist.target.major>
 				<dist.platform.name>Kepler</dist.platform.name>
 				<dist.platform.id>kepler</dist.platform.id>
