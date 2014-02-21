@@ -377,7 +377,7 @@ Optional parameters:
 				<repository>
 					<id>java8-patches</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/snapshot/TOOLS/java8/e43/</url>
+					<url>http://build.eclipse.org/eclipse/builds/4P/siteDir/updates/4.3-P-builds</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
