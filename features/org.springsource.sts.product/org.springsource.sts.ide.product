@@ -39309,6 +39309,15 @@ openFile</programArgs>
 
    <features>
       <feature id="org.springsource.sts.package"/>
+
+      <feature id="org.eclipse.m2e.feature" installMode="root"/>
+      <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
+      <feature id="org.maven.ide.eclipse.ajdt.feature" installMode="root"/>
+      <feature id="org.eclipse.m2e.wtp.feature" installMode="root"/>
+      <feature id="org.springframework.ide.eclipse.uaa.feature" installMode="root"/>
+      <feature id="org.sonatype.m2e.buildhelper.feature" installMode="root"/>
+      <feature id="org.sonatype.m2e.mavenarchiver.feature" installMode="root"/>
+
    </features>
 
    <configurations>

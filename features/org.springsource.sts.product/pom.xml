@@ -13,68 +13,11 @@
 	<name>org.springsource.sts.product</name>
 
 	<properties>
-		<build.destination.cocoa.x86>target/products/org.springsource.sts.ide/macosx/cocoa/x86</build.destination.cocoa.x86>
-		<build.destination.cocoa.x86_64>target/products/org.springsource.sts.ide/macosx/cocoa/x86_64</build.destination.cocoa.x86_64>
-		<build.destination.linux.x86>target/products/org.springsource.sts.ide/linux/gtk/x86</build.destination.linux.x86>
-		<build.destination.linux.x86_64>target/products/org.springsource.sts.ide/linux/gtk/x86_64</build.destination.linux.x86_64>
-		<build.destination.win.x86>target/products/org.springsource.sts.ide/win32/win32/x86</build.destination.win.x86>
-		<build.destination.win.x86_64>target/products/org.springsource.sts.ide/win32/win32/x86_64</build.destination.win.x86_64>
-
 		<dist.accessKey>${accessKey}</dist.accessKey>
 		<dist.secretKey>${secretKey}</dist.secretKey>
-		
-<!--		<tycho.eclipserun.arguments>${tycho.eclipserun.mirror} ${tycho.eclipserun.proxyHost} ${tycho.eclipserun.proxyPort} ${tycho.eclipserun.exclude} ${tycho.eclipserun.connect} ${tycho.eclipserun.read}</tycho.eclipserun.arguments> -->
-		<tycho.eclipserun.arguments>-Declipse.p2.mirrors=false</tycho.eclipserun.arguments>
-		<skip.eclipserun.proxies>true</skip.eclipserun.proxies>
 	</properties>
 
 	<profiles>
-		<profile>
-			<id>e37</id>
-			<properties>
-				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.maven.ide.eclipse.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/indigo/,http://download.springsource.com/release/TOOLS/third-party/m2e/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</sites>
-			</properties>
-		</profile>
-		<profile>
-			<id>e38</id>
-			<properties>
-				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/m2e-wtp/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</sites>
-			</properties>
-		</profile>
-		<profile>
-			<id>e42</id>
-			<properties>
-				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/juno/,http://download.eclipse.org/m2e-wtp/releases/juno/,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</sites>
-			</properties>
-		</profile>
-		
-		<profile>
-			<id>e43</id>
-			<properties>
-				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/releases/maintenance/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</sites>
-			</properties>
-		</profile>
-
-		<profile>
-			<id>e43-java8</id>
-			<properties>
-				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/kepler/,http://download.eclipse.org/releases/maintenance/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</sites>
-			</properties>
-		</profile>
-		
-		<profile>
-			<id>e44</id>
-			<properties>
-				<features>org.eclipse.m2e.feature.feature.group,org.eclipse.m2e.logback.feature.feature.group,org.maven.ide.eclipse.ajdt.feature.feature.group,org.eclipse.m2e.wtp.feature.feature.group,org.sonatype.m2e.buildhelper.feature.feature.group,org.sonatype.m2e.mavenarchiver.feature.feature.group,org.springframework.ide.eclipse.uaa.feature.feature.group</features>
-				<sites>http://download.eclipse.org/releases/luna/,http://download.eclipse.org/m2e-wtp/releases/kepler,http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/,http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</sites>
-			</properties>
-		</profile>
-		
 		<profile>
 			<id>vmware-signing</id>
 			<build>
@@ -90,7 +33,6 @@
 				</plugins>
 			</build>
 		</profile>
-
 	</profiles>
 
 	<build>
@@ -379,132 +321,6 @@
 						<version>20020829</version>
 					</dependency>
 				</dependencies>
-			</plugin>
-
-			<plugin>
-				<groupId>org.eclipse.tycho.extras</groupId>
-				<artifactId>tycho-eclipserun-plugin</artifactId>
-				<version>${tycho-version}</version>
-
-				<configuration>
-					<dependencies>
-						<dependency>
-							<artifactId>org.eclipse.equinox.p2.transport.ecf</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.equinox.p2.repository</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.equinox.p2.touchpoint.natives</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.equinox.p2.touchpoint.eclipse</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.equinox.p2.artifact.repository
-							</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.equinox.p2.director.app</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.equinox.ds</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-						<dependency>
-							<artifactId>org.eclipse.core.net</artifactId>
-							<type>eclipse-plugin</type>
-						</dependency>
-					</dependencies>
-					<repositories>
-						<repository>
-							<id>juno</id>
-							<layout>p2</layout>
-							<url>http://download.eclipse.org/releases/juno</url>
-						</repository>
-					</repositories>
-				</configuration>
-
-				<executions>
-					<execution>
-						<id>root-features-osx-32bit</id>
-						<configuration>
-							<argLine>${tycho.eclipserun.arguments}</argLine>
-							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86}/sts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
-						</configuration>
-						<goals>
-							<goal>eclipse-run</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-
-					<execution>
-						<id>root-features-osx-64bit</id>
-						<configuration>
-							<argLine>${tycho.eclipserun.arguments}</argLine>
-							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
-						</configuration>
-						<goals>
-							<goal>eclipse-run</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-
-					<execution>
-						<id>root-features-linux-32bit</id>
-						<configuration>
-							<argLine>${tycho.eclipserun.arguments}</argLine>
-							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86}/sts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
-						</configuration>
-						<goals>
-							<goal>eclipse-run</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-
-					<execution>
-						<id>root-features-linux-64bit</id>
-						<configuration>
-							<argLine>${tycho.eclipserun.arguments}</argLine>
-							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.linux.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
-						</configuration>
-						<goals>
-							<goal>eclipse-run</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-
-					<execution>
-						<id>root-features-win-32bit</id>
-						<configuration>
-							<argLine>${tycho.eclipserun.arguments}</argLine>
-							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86}/sts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
-						</configuration>
-						<goals>
-							<goal>eclipse-run</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-
-					<execution>
-						<id>root-features-win-64bit</id>
-						<configuration>
-							<argLine>${tycho.eclipserun.arguments}</argLine>
-							<appArgLine>-consoleLog -application org.eclipse.equinox.p2.director -nosplash -destination ${build.destination.win.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier} -repository ${sites} -installIUs ${features}</appArgLine>
-						</configuration>
-						<goals>
-							<goal>eclipse-run</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-
-				</executions>
 			</plugin>
 
 		</plugins>
