@@ -205,6 +205,10 @@
 	  <import feature="org.codehaus.groovy.eclipse.feature" version="2.0.0" match="greaterOrEqual"/>
 	  <import feature="org.codehaus.groovy.jdt.patch"/>
 
+	  <import feature="org.eclipse.jdt.java8patch"/>
+	  <import feature="org.eclipse.jdt.a2.java8patch"/>
+	  <import feature="org.eclipse.pde.java8patch"/>
+
    </requires>
 
 </feature>
