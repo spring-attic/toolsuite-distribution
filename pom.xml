@@ -136,6 +136,8 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e3.7</module>
 				<module>features/org.springsource.ggts.package.e3.7</module>
+				<module>features/org.springsource.sts.product</module>
+				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 		
@@ -206,6 +208,8 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e3.8</module>
 				<module>features/org.springsource.ggts.package.e3.8</module>
+				<module>features/org.springsource.sts.product</module>
+				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 		
@@ -276,6 +280,8 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e4.2</module>
 				<module>features/org.springsource.ggts.package.e4.2</module>
+				<module>features/org.springsource.sts.product</module>
+				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 
@@ -361,6 +367,8 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e4.3</module>
 				<module>features/org.springsource.ggts.package.e4.3</module>
+				<module>features/org.springsource.sts.product.java8</module>
+				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 
@@ -436,6 +444,8 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e4.4</module>
 				<module>features/org.springsource.ggts.package.e4.4</module>
+				<module>features/org.springsource.sts.product</module>
+				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 
@@ -457,16 +467,20 @@ Optional parameters:
 
 		<profile>
 			<id>spring-dist</id>
+<!--
 			<modules>
 				<module>features/org.springsource.sts.product</module>
 			</modules>
+-->
 		</profile>
 
 		<profile>
 			<id>groovy-grails-dist</id>
+<!--
 			<modules>
 				<module>features/org.springsource.ggts.product</module>
 			</modules>
+-->
 		</profile>
 
 		<profile>

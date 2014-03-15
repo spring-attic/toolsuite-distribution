@@ -223,11 +223,11 @@
       <import feature="org.springsource.ide.eclipse.commons"/>
       <import feature="org.springsource.ide.eclipse.dashboard"/>
       <import feature="org.springsource.ide.eclipse.commons.quicksearch.feature"/>
-
+<!--
 	  <import feature="org.eclipse.jdt.java8patch"/>
 	  <import feature="org.eclipse.jdt.a2.java8patch"/>
 	  <import feature="org.eclipse.pde.java8patch"/>
-
+-->
    </requires>
 
 </feature>
