@@ -67,7 +67,7 @@
 								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-ggts">
 									<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
 									<property name="p2.qualifier" value="${p2.qualifier}" />
-									<property name="product.folder.ggts" value="${product.project.ggts}"
+									<property name="product.folder.ggts" value="${product.project.ggts}" />
 								</ant>
 							</target>
 						</configuration>
