@@ -129,7 +129,7 @@
 							<layout>p2</layout>
 						</repository>
 					</source>
-					<destination>${project.build.directory}/../../org.springsource.sts.product/target/unitedRepository</destination>
+					<destination>${project.build.directory}/../../${product.project.sts}/target/unitedRepository</destination>
 					<append>true</append>
 				</configuration>
 			</plugin>
@@ -224,12 +224,12 @@
 								<property name="dist.file.name"
 									value="${dist.project}-${dist.full.version}-updatesite.zip" />
 								<property name="dist.full.path"
-									value="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
+									value="${site.target.dir}/../../${product.project.sts}/target/unitedRepository/${dist.file.name}" />
 
 								<delete file="${dist.full.path}" />
 								<zip zipfile="${dist.full.path}" filesonly="true">
 									<zipfileset
-										dir="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository">
+										dir="${site.target.dir}/../../${product.project.sts}/target/unitedRepository">
 										<exclude name="*.zip" />
 										<exclude name="**/*.gz" />
 									</zipfileset>
@@ -262,7 +262,7 @@
 								<property name="dist.file.name"
 									value="${dist.project}-${dist.full.version}-updatesite.zip" />
 								<property name="dist.full.path"
-									value="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository/${dist.file.name}" />
+									value="${site.target.dir}/../../${product.project.sts}/target/unitedRepository/${dist.file.name}" />
 
 								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
@@ -283,7 +283,7 @@
 									<upload bucketName="${dist.bucket}" toDir="${dist.path.repo}"
 										publicRead="true">
 										<fileset
-											dir="${site.target.dir}/../../org.springsource.sts.product/target/unitedRepository">
+											dir="${site.target.dir}/../../${product.project.sts}/target/unitedRepository">
 											<include name="**/*" />
 											<include name="**" />
 											<exclude name="*.zip" />

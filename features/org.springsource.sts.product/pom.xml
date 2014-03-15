@@ -129,7 +129,7 @@
 							<layout>p2</layout>
 						</repository>
 					</source>
-					<destination>${project.build.directory}/../../org.springsource.sts.product/target/unitedRepository</destination>
+					<destination>${project.build.directory}/../../${product.project.sts}/target/unitedRepository</destination>
 					<append>true</append>
 				</configuration>
 			</plugin>
