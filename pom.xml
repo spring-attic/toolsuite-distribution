@@ -67,6 +67,8 @@ Optional parameters:
 			
 			<id>e37</id>
 			<properties>
+				<product.project.sts>org.springsource.sts.product</product.project.sts>
+				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 3.7</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -144,6 +146,8 @@ Optional parameters:
 		<profile>
 			<id>e38</id>
 			<properties>
+				<product.project.sts>org.springsource.sts.product</product.project.sts>
+				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 3.8</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -216,6 +220,8 @@ Optional parameters:
 		<profile>
 			<id>e42</id>
 			<properties>
+				<product.project.sts>org.springsource.sts.product</product.project.sts>
+				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.2</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -288,6 +294,8 @@ Optional parameters:
 		<profile>
 			<id>e43</id>
 			<properties>
+				<product.project.sts>org.springsource.sts.product.java8</product.project.sts>
+				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.3</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -375,6 +383,8 @@ Optional parameters:
 		<profile>
 			<id>e44</id>
 			<properties>
+				<product.project.sts>org.springsource.sts.product</product.project.sts>
+				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.4</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>

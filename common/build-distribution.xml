@@ -20,8 +20,8 @@
 	<property name="maven.root" value="http://www.us.apache.org/dist/maven/maven-3/${maven.version}/binaries" />
 	<property name="grails.root" value="http://dist.springframework.org/release/GRAILS" />
 
-	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/org.springsource.sts.product/target/products/" />
-	<property name="product.build.directory.ggts" value="${project.build.directory}/../../../features/org.springsource.ggts.product/target/products/" />
+	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/${product.folder.sts}/target/products/" />
+	<property name="product.build.directory.ggts" value="${project.build.directory}/../../../features/${product.folder.ggts}/target/products/" />
 
     <condition property="tar-command" value="tar">
         <os family="mac" />

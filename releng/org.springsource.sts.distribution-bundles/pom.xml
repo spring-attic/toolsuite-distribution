@@ -68,6 +68,7 @@
 								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-sts">
 									<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
 									<property name="p2.qualifier" value="${p2.qualifier}" />
+									<property name="product.folder.sts" value="${product.project.sts}"
 								</ant>
 							</target>
 						</configuration>
