@@ -342,14 +342,9 @@ Optional parameters:
 					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
 				</repository>
 				<repository>
-					<id>groovy-jdt8</id>
-					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.3-j8</url>
-				</repository>
-				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.3</url>
+					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.3-j8</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
