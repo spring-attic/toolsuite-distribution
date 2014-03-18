@@ -324,7 +324,7 @@ Optional parameters:
 				<repository>
 					<id>java8-patches</id>
 					<layout>p2</layout>
-					<url>http://build.eclipse.org/eclipse/builds/4P/siteDir/updates/4.3-P-builds</url>
+					<url>http://build.eclipse.org/eclipse/builds/4P/siteDir/updates/4.3-P-builds/P20140317-1600</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
