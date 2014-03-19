@@ -228,6 +228,35 @@ Dashboard Extensions page.
 <p class="nan3">Project Configurators Extension Point</p>
 <p>Ability to contribute project configurator classes via <i>org.springsource.ide.eclipse.gradle.core.projectConfigurators</i> extension point. These classes allow client to configure a project based on the information inferred from the project's Gradle model.</p>
 
+<p class="nan2">Cloud Foundry Eclipse</p>
+
+<p class="nan3">Spring Boot Support</p>
+<p>Cloud Foundry Eclipse 1.6.0 now allows Spring Boot applications to be pushed to a Cloud Foundry server instance within STS. Right-click the Spring Boot project
+in the workspace, and select:</p>
+<br/>
+<center>Configure -> Enable as Cloud Foundry App</center>
+<br/>
+<center><img src="images/configure_spring_boot_CF.png" style="max-width: 500px;"></img></center>
+<br/>
+<p>After this simple configuration step, the project can now be dragged and dropped to a Cloud Foundry server instance like any other application. The Cloud Foundry console will show the Spring Boot application being pushed and started in the Cloud Foundry server:</p>
+<br/>
+<center><img src="images/console_staging_2.png" style="max-width: 500px;"></img></center>
+<br/>
+<p>1.6.0 only supports Java Spring Boot apps. That is, only Spring Boot apps that are packaged as jar files can be configured and pushed to a Cloud Foundry server instance.</p>
+
+<p class="nan3">Private Clouds Using Self-Signed Certificates</p>
+<p>Cloud Foundry server instances can now be created to private clouds that use self-signed certificates. In the Cloud Foundry
+New Server wizard, click on "Manage Cloud..." in the credentials page. This opens a dialogue where a list of server URLs can be added.</p>
+<br/>
+<center><img src="images/server_manage_cloud_URLs.png" style="max-width: 500px;"></img></center>
+<br/>
+<p> After adding a URL to a private cloud, the user may be prompted to keep the URL (select "Yes"), and afterward, when validating the user credentials, the wizard will detect that the server is using self-signed certificates and prompt the user whether to continue. If the user clicks "Yes" a second time, the Cloud Foundry plug-in will remember the decision for any future server instance creations using this URL.</p>
+<br/>
+<center><img src="images/server_unable_to_authenticate_URL.png" style="max-width: 500px;"></img></center>
+<br/>
+<br/>
+<center><img src="images/self-signed-cert.png" style="max-width: 500px;"></img></center>
+<br/>
 <hr>
 
 <h2>Issues resolved in this release</h2>
