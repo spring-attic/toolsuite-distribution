@@ -213,7 +213,38 @@ that don't have any explicit build-logic (pom.xml or build.gradle) as generic Ec
 Groovy Eclipse now includes Groovy 2.1 compiler by default. The Groovy 2.2 compiler is now also available and can be installed from the STS or GGTS 
 Dashboard Extensions page.
 
+<p class="nan3">Simple Refactorings Available as Quick Fixes</p>
+<p><p>Simple refactorings are also available via quick fixes:</p>
+<li>Extract to Constant</li>
+<li>Extract to Local Variable</li>
+<li>Convert Local Variable to Field</li>
+<br/>
+<center><img src="images/groovy-quick-fix.png"></img></center>
+<br/>
+
+
 <p class="nan2">Gradle Tooling</p>
+
+<p class="nan3">Aggregate Tasks Support</p>
+<p>Aggregate gradle tasks of a Gradle project is a union of all Gradle tasks for the project and all of its children. For example if one runs a Gradle task 'clean' this task would be run on the current project and all of its children. Gradle tasks view now supports two modes for displaying tasks of the selected project: <br/><li>Tasks defined by selected project or any of its children projects</li><li>Tasks defined by the selected project</li></p>
+<p>The toggle button in the <b>Gradle Tasks</b> view allows to switch the viewing mode. (Marked in red on the screenshot below)</p>
+<br/>
+<center><img src="images/gradle-tasks-view.png" style="max-width: 500px;"></img></center>
+<br/>
+
+<p class="nan3">Tasks Launch Configuration</p>
+<p>Gradle Tasks Launch Configuration wizard <b>Gradle Tasks</b> tab contents have been redesigned. Instead of a Gradle tasks tree for picking Gradle tasks to run and a list to order gradle tasks the UI became a single Gradle tasks editor. The editore allows users to type in Gradle tasks as one would type them in the command line. The editor has content assist and error checking available</p>
+<p>Content Assist displays available Gradle tasks (aggregate and project specific) and sub-projects</p>
+<p>Error checking marks invalid (non-existent) Gradle task names</p>
+<br/>
+<center><img src="images/gradle-launch-config.png"></img></center>
+<br/>
+
+<p class="nan3">Tasks Quick Launcher</p>
+<p><b>Tasks Quick Launcher</b> is available from Gradle project context menu <b>Gradle</b> group menu and from a view action in <b>Gradle Tasks</b> view. Tasks Quick Launcher is a small dialog similar to Grails command prompt dialog that allows to type in names of Gradle tasks to run. Content assist and error checking help to find and enter valid task names. Although the dialog immitates the gradle command line interface it only supports Gradle tasks, but not the Gradle command line interface commands.</p>
+<br/>
+<center><img src="images/gradle-tasks-quick-launcher.png"></img></center>
+<br/>
 
 <p class="nan3">Workingset Actions Group</p>
 <p>Gradle Actions group has been added for a workingset (just like Maven has). Now Gradle actions can be executed via Workingset context menu. A Gradle action will be executed on all Gradle projects within a Workingset.</p>
