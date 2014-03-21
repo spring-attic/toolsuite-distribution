@@ -86,6 +86,13 @@
 
 <p class="nan2">General Updates</p>
 
+<p class="nan3">Java 8</p>
+
+Java 8 has now been officially released. You can grab the JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>. Although the Eclipse Java8 support is available as a patch for Kepler
+(information <a href="https://wiki.eclipse.org/JDT_Core/Java8">here</a>) we have to decided to include the necessary
+patches by default in our STS *and* GGTS distributions. This means either distribution supports Java8
+development out-of-the-box and in the case of GGTS it is possible to mix your groovy code with your Java 8 code.
+
 <p class="nan3">Design updates</p>
 <p>We updated the branding of the toolsuite distributions to match the latest style of <a href="http://spring.io">http://spring.io</a>.</p>
 
@@ -96,13 +103,16 @@
 <p class="nan3">Pivotal tc Server Developer Edition updated to 2.9.5.SR1</p>
 <p> STS and GGTS now ship with the latest Pivotal tc Server Developer Edition 2.9.5.SR1.</p>
 
-<p class="nan3">Grails updated to 2.3.5</p>
-<p>GGTS now ships with Grails 2.3.5.</p>
+<p class="nan3">Grails updated to 2.3.7</p>
+<p>GGTS now ships with Grails 2.3.7.</p>
+
+<p class="nan3">STS startup time improvement</p>
+<p>We are continuing our work to improve the performance of STS/GGTS and with this latest version you should find that STS starts a little quicker.</p>
 
 <p class="nan3">Already available for the upcoming Eclipse Luna release</p>
 <p>A new update site is available to install the STS/GGTS components into an early milestone of the upcoming Eclipse Luna release:
 <a href="http://download.springsource.com/release/TOOLS/update/e4.4/">http://download.springsource.com/release/TOOLS/update/e4.4/</a>. Ready-to-use distribution
-builds are available on demand. The next version of STS and GGTS (3.6.0) is scheduled for July 2014 and will ship of top of the Eclipse Luna release.</p>
+builds are available on demand. The next version of STS and GGTS (3.6.0) is scheduled for July 2014 and will ship on top of the Eclipse Luna release.</p>
 
 <p class="nan3">New Dashboard Improvements</p>
 <p>We received a lot of <a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite/723992-new-dashboard-in-sts-3-4-0">feedback on the forum</a> about
@@ -137,6 +147,9 @@ documentation page at the same time by moving those editors to different places 
 <center><img src="images/dashboard-editors-layout.png"></img></center>
 <br/>
 
+<p class="nan3">Spring Roo</p>
+<p>Spring Roo support and the Spring Roo runtime is now installable from the dashboard rather than being directly included in STS.</p>
+
 <p class="nan2">Spring Tooling updates</p>
 
 <p class="nan3">Spring Boot: New Add/Edit Starters Dialog</p>
@@ -156,9 +169,8 @@ to add or remove them from the pom:
 <center><img src="images/add-starter-dialog.png"></img></center>
 
 <p><b>Note:</b> one of these two dialogs (most likely the simpler "Add Starter") 
-will be removed before the 3.5.0 release because they provide almost
-identical functionality. If you have a preference please comment on the
-forum to let us know before we remove it.</p>
+may be removed in future because the functionality they provide is so similar.
+If you have a preference please let us know! (jira)</p>
 
 <p class="nan3">Spring Boot: Jar-type Content Assist</p>
 
@@ -183,7 +195,7 @@ requiring a new version of STS.</p>
 <p class="nan3">Open the Live Beans Graph for Standalone Spring Boot Apps</p>
 
 <p>There is now a way an easy way to open the Live Beans Graph View for a Spring Boot App. Just run your app
-with "Run As >> Spring Boot App". The needed VM arguments are added to your newly created launch configuration.
+with <b>Run As >> Spring Boot App</b>. The needed VM arguments are added to your newly created launch configuration.
 Once the app is running you can open the Live Beans View from the Project's "Spring Tools" context menu.</p>
 
 <center><img src="images/open-live-beans-view.png"></img></center>
@@ -222,7 +234,8 @@ that don't have any explicit build-logic (pom.xml or build.gradle) as generic Ec
 
 <p class="nan2">Groovy-Eclipse</p>
 
-Groovy Eclipse now includes Groovy 2.1 compiler by default. The Groovy 2.2 compiler is now also available and can be installed from the STS or GGTS 
+<p class="nan3">Groovy 2.2 available</p>
+Groovy Eclipse now includes Groovy 2.1 compiler by default but the Groovy 2.2 compiler is available and can be installed from the STS or GGTS 
 Dashboard Extensions page.
 
 <p class="nan3">Simple Refactorings Available as Quick Fixes</p>
@@ -245,39 +258,40 @@ Dashboard Extensions page.
 <br/>
 
 <p class="nan3">Tasks Launch Configuration</p>
-<p>Gradle Tasks Launch Configuration wizard <b>Gradle Tasks</b> tab contents have been redesigned. Instead of a Gradle tasks tree for picking Gradle tasks to run and a list to order gradle tasks the UI became a single Gradle tasks editor. The editore allows users to type in Gradle tasks as one would type them in the command line. The editor has content assist and error checking available</p>
-<p>Content Assist displays available Gradle tasks (aggregate and project specific) and sub-projects</p>
-<p>Error checking marks invalid (non-existent) Gradle task names</p>
+<p>Gradle Tasks Launch Configuration wizard <b>Gradle Tasks</b> tab contents have been redesigned. Instead of a Gradle tasks tree for picking Gradle tasks to run and a list to order gradle tasks the UI became a single Gradle tasks editor. The editor allows users to type in Gradle tasks as one would type them in the command line. The editor has content assist and error checking available:</p>
+<ul>
+<li>Content Assist displays available Gradle tasks (aggregate and project specific) and sub-projects</li>
+<li>Error checking marks invalid (non-existent) Gradle task names</li>
+</ul>
 <br/>
 <center><img src="images/gradle-launch-config.png"></img></center>
 <br/>
 
 <p class="nan3">Tasks Quick Launcher</p>
-<p><b>Tasks Quick Launcher</b> is available from Gradle project context menu <b>Gradle</b> group menu and from a view action in <b>Gradle Tasks</b> view. Tasks Quick Launcher is a small dialog similar to Grails command prompt dialog that allows to type in names of Gradle tasks to run. Content assist and error checking help to find and enter valid task names. Although the dialog immitates the gradle command line interface it only supports Gradle tasks, but not the Gradle command line interface commands.</p>
+<p><b>Tasks Quick Launcher</b> is available from Gradle project context menu <b>Gradle</b> group menu and from a view action in <b>Gradle Tasks</b> view.
+ Tasks Quick Launcher is a small dialog similar to the Grails command prompt dialog that allows users to type in names of Gradle tasks to run. Content assist and error checking help to find and enter valid task names. Although the dialog immitates the gradle command line interface it only supports Gradle tasks, but not the Gradle command line interface commands.</p>
 <br/>
 <center><img src="images/gradle-tasks-quick-launcher.png"></img></center>
 <br/>
 
-<p class="nan3">Workingset Actions Group</p>
-<p>Gradle Actions group has been added for a workingset (just like Maven has). Now Gradle actions can be executed via Workingset context menu. A Gradle action will be executed on all Gradle projects within a Workingset.</p>
+<p class="nan3">Working set context menu</p>
+<p>A Gradle actions menu has been added for a working set (just like Maven has). Now Gradle actions can be executed via this working set context menu. A Gradle action will be executed on all Gradle projects within a working set.</p>
 
 <br/>
 <center><img src="images/gradle-workingset-actions.png" style="max-width: 500px;"></img></center>
 <br/>
 
 <p class="nan3">"Refresh All" Action Performance Improvement</p>
-<p>"Refresh All" action now executes Gradle projects refresh operation in batches of projects under the same root project. This results in order of magnitude running time improvement for refresh operation in common refresh scenarios.</p>
+<p>The <b><tt>Refresh All</tt></b> action now executes Gradle project refresh operations on batches of projects under the same root project. This results in an order of magnitude running time improvement for the refresh operation in common refresh scenarios.</p>
 
 <p class="nan3">Project Configurators Extension Point</p>
-<p>Ability to contribute project configurator classes via <i>org.springsource.ide.eclipse.gradle.core.projectConfigurators</i> extension point. These classes allow client to configure a project based on the information inferred from the project's Gradle model.</p>
+<p>It is now possible to contribute project configurator classes via the <b><tt>org.springsource.ide.eclipse.gradle.core.projectConfigurators</tt></b> extension point. These classes allow clients to configure a project based on the information inferred from the project's Gradle model.</p>
 
 <p class="nan2">Cloud Foundry Eclipse</p>
 
 <p class="nan3">Spring Boot Support</p>
 <p>Cloud Foundry Eclipse 1.6.0 now allows Spring Boot applications to be pushed to a Cloud Foundry server instance within STS. Right-click the Spring Boot project
-in the workspace, and select:</p>
-<br/>
-<center>Configure -> Enable as Cloud Foundry App</center>
+in the workspace, and select <b><tt>Configure -> Enable as Cloud Foundry App</tt></b>:
 <br/>
 <center><img src="images/configure_spring_boot_CF.png" style="max-width: 500px;"></img></center>
 <br/>
@@ -289,7 +303,7 @@ in the workspace, and select:</p>
 
 <p class="nan3">Private Clouds Using Self-Signed Certificates</p>
 <p>Cloud Foundry server instances can now be created to private clouds that use self-signed certificates. In the Cloud Foundry
-New Server wizard, click on "Manage Cloud..." in the credentials page. This opens a dialogue where a list of server URLs can be added.</p>
+New Server wizard, click on <b><tt>Manage Cloud...</tt></b> in the credentials page. This opens a dialogue where a list of server URLs can be added.</p>
 <br/>
 <center><img src="images/server_manage_cloud_URLs.png" style="max-width: 500px;"></img></center>
 <br/>
@@ -301,6 +315,9 @@ New Server wizard, click on "Manage Cloud..." in the credentials page. This open
 <center><img src="images/self-signed-cert.png" style="max-width: 500px;"></img></center>
 <br/>
 <hr>
+
+<p class="nan2">AJDT/AspectJ</a>
+<p>AJDT now includes the AspectJ 1.8.0.RC2 build.  AspectJ has been rebased on the latest Eclipse Java8 compiler.</p>
 
 <h2>Issues resolved in this release</h2>
 
