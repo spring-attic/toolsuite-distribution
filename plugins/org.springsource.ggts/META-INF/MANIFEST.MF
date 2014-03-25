@@ -5,7 +5,6 @@ Bundle-SymbolicName: org.springsource.ggts;singleton:=true
 Bundle-Version: 3.5.0.qualifier
 Bundle-Vendor: %providerName
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime,
  org.eclipse.equinox.p2.ui,
  org.eclipse.equinox.p2.ui.sdk
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
@@ -14,3 +13,6 @@ Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
  lib/
 Service-Component: OSGI-INF/component.xml
+Import-Package: org.eclipse.core.runtime,
+ org.eclipse.osgi.service.datalocation,
+ org.osgi.framework
