@@ -88,10 +88,12 @@
 
 <p class="nan3">Java 8</p>
 
-Java 8 has now been officially released. You can grab the JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>. Although the Eclipse Java8 support is available as a patch for Kepler
+<p>Java 8 has now been officially released. You can grab the JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>. Although the Eclipse Java8 support is available as a patch for Kepler
 (information <a href="https://wiki.eclipse.org/JDT_Core/Java8">here</a>) we have to decided to include the necessary
 patches by default in our STS *and* GGTS distributions. This means either distribution supports Java8
-development out-of-the-box and in the case of GGTS it is possible to mix your groovy code with your Java 8 code.
+development out-of-the-box.</p>
+
+<p>In the case of GGTS it is possible to have groovy code and Java 8 code in the same workspace, <b>but not in the same project</b>. (See known issues below)</p>
 
 <p class="nan3">Design updates</p>
 <p>We updated the branding of the toolsuite distributions to match the latest style of <a href="http://spring.io">http://spring.io</a>.</p>
@@ -354,6 +356,19 @@ we recommend to download and use Spring Roo 1.2.3. You can configure the Spring 
 
 <p>The issue in Roo is tracked here: <a href="https://jira.springsource.org/browse/ROO-3466">https://jira.springsource.org/browse/ROO-3466</a></p>
 <br/>
+
+<h3>Mixed Java 8 and Groovy Setup</h3>
+
+<p>The Groovy compiler at this time does not yet support Java 8 JVM. However, it is possible to use both Java 8 and Groovy in the same
+workspace if you use the following recommended setup to keep Groovy and Java 8 from stepping on eachother:</p>
+ 
+ <ul>
+  <li>Make sure to point to a Java 7 JDK in your STS.ini file. I.e. run your IDE with a JDK7. This is needed because the Greclipse compiler runs
+  inside the same VM as the IDE. Running the Greclipse compiler with a JDK 8 is not supported yet.
+  <li>Set your workspace default JRE to a Java 7 JDK.
+  <li>Change individual projects that require Java 8 to use a Java 8 JRE or JDK via project preferences (i.e. put the right JRE container on the build  path and also set the Java 8 source/target compiler levels on these specific projects only).
+  <li>Your Java 8 enabled projects shouldn't contain groovy code.
+</ul>
 
 <hr>
 
