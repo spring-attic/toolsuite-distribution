@@ -113,8 +113,11 @@ development out-of-the-box.</p>
 
 <p class="nan3">Already available for the upcoming Eclipse Luna release</p>
 <p>A new update site is available to install the STS/GGTS components into an early milestone of the upcoming Eclipse Luna release:
-<a href="http://download.springsource.com/release/TOOLS/update/e4.4/">http://download.springsource.com/release/TOOLS/update/e4.4/</a>. Ready-to-use distribution
-builds are available on demand. The next version of STS and GGTS (3.6.0) is scheduled for July 2014 and will ship on top of the Eclipse Luna release.</p>
+<a href="http://dist.springsource.com/snapshot/TOOLS/nightly/e4.4">http://dist.springsource.com/snapshot/TOOLS/nightly/e4.4</a>. This is a nightly update site that
+contains the latest bits. Full distribution builds that include Eclipse Luna 4.4 are also available from the nightly distribution download page:
+<a href="http://dist.springsource.com/snapshot/STS/nightly-distributions.html">http://dist.springsource.com/snapshot/STS/nightly-distributions.html</a>. There
+is a known issue with the Groovy and Grails tooling having some issues with changed APIs in this upcoming Eclipse release, which we are going to fix soon. The
+Spring tooling is ready to be used on Eclipse 4.4. The next version of STS and GGTS (3.6.0) is scheduled for July 2014 and will ship on top of the Eclipse Luna release.</p>
 
 <p class="nan3">New Dashboard Improvements</p>
 <p>We received a lot of <a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite/723992-new-dashboard-in-sts-3-4-0">feedback on the forum</a> about
@@ -322,6 +325,10 @@ New Server wizard, click on <b><tt>Manage Cloud...</tt></b> in the credentials p
 <p>AJDT now includes the AspectJ 1.8.0.RC2 build.  AspectJ has been rebased on the latest Eclipse Java8 compiler.</p>
 <br/>
 
+<hr>
+
+<p class="nan2">Miscellaneous</a>
+
 <h2>Issues resolved in this release</h2>
 
 <p>Here is a full list of resolved bugs and enhancement requests for 3.5.0:</p>
@@ -370,6 +377,15 @@ workspace if you use the following recommended setup to keep Groovy and Java 8 f
   <li>Change individual projects that require Java 8 to use a Java 8 JRE or JDK via project preferences (i.e. put the right JRE container on the build  path and also set the Java 8 source/target compiler levels on these specific projects only).
   <li>Your Java 8 enabled projects shouldn't contain groovy code.
 </ul>
+
+<p>The issue in Roo is tracked here: <a href="https://jira.springsource.org/browse/ROO-3466">https://jira.springsource.org/browse/ROO-3466</a></p>
+<br/>
+
+<h3>GGTS throwing exceptions when running on top of Eclipse 4.4</h3> 
+
+<p>There is an issue with the Groovy and Grails tooling throwing exceptions when running on top of Eclipse 4.4, due to incompatible changes to some
+internal APIs. We will provide a fixed version via the nightly update sites and distribution builds soon.</p>
+<br/>
 
 <hr>
 
