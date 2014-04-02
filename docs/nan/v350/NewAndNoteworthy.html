@@ -88,12 +88,14 @@
 
 <p class="nan3">Java 8</p>
 
-<p>Java 8 has now been officially released. You can grab the JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>. Although the Eclipse Java8 support is available as a patch for Kepler
-(information <a href="https://wiki.eclipse.org/JDT_Core/Java8">here</a>) we have to decided to include the necessary
-patches by default in our STS *and* GGTS distributions. This means either distribution supports Java8
-development out-of-the-box.</p>
+<p>Java 8 has now been officially released. You can grab the JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>.
+Although the Eclipse Java8 support is available as a patch for Kepler (information <a href="https://wiki.eclipse.org/JDT_Core/Java8">here</a>) we have to
+decided to include the necessary patches by default in our STS *and* GGTS distributions. This means either distribution supports Java8 development out-of-the-box.</p></br>
 
-<p>In the case of GGTS it is possible to have groovy code and Java 8 code in the same workspace, <b>but not in the same project</b>. (See known issues below)</p>
+<p>In the case of GGTS it is possible to have groovy code and Java 8 code in the same workspace, <b>but not in the same project</b>. (See known issues below)</p></br>
+
+<p>Updating an existing STS installation to the 3.5.0 release will *not* automatically install the Java8 support. This has to be done manually afterwards by selecting
+the Java8 support from the extension install (via the Dashboard -> Manage IDE Extensions). Updating an existing GGTS includes the Java8 support (for technical reasons).</p>
 
 <p class="nan3">Design updates</p>
 <p>We updated the branding of the toolsuite distributions to match the latest style of <a href="http://spring.io">http://spring.io</a>.</p>
