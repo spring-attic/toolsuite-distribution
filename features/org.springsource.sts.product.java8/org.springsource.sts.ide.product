@@ -39766,6 +39766,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
 	  
 	  <feature id="org.eclipse.jdt.java8patch" installMode="root"/>
 	  <feature id="org.eclipse.pde.java8patch" installMode="root"/>
+	  <feature id="org.eclipse.jst.common.fproj.enablement.jdt.feature.patch" installMode="root"/>
 
    </features>
 

@@ -327,6 +327,16 @@ Optional parameters:
 					<url>http://build.eclipse.org/eclipse/builds/4P/siteDir/updates/4.3-P-builds/P20140317-1600</url>
 				</repository>
 				<repository>
+					<id>wtp-patches</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/webtools/patches/drops/R3.5.2/P-3.5.2-20140329045715/repository</url>
+				</repository>
+				<repository>
+					<id>m2e-java8-update</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/m2e/releases/1.4/1.4.1.20140328-1905</url>
+				</repository>
+				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/mylyn/releases/latest</url>
