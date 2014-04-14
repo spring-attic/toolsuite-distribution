@@ -108,7 +108,7 @@
 				<dist.target>e3.5.2</dist.target>
 				<dist.target.major>e3.5</dist.target.major>
 				<dist.platform.name>Galileo</dist.platform.name>
-				<dist.platform.name.long>Galileo SR2 (3.5.2)</dist.platform.name>
+				<dist.platform.name.long>Galileo SR2 (3.5.2)</dist.platform.name.long>
 				<dist.platform.id>galileo</dist.platform.id>
 				<dist.platform.version>3.5</dist.platform.version>
 				<package.qualifierPrefix>e35</package.qualifierPrefix>
@@ -124,7 +124,7 @@
 				<dist.target>e3.6.2</dist.target>
 				<dist.target.major>e3.6</dist.target.major>
 				<dist.platform.name>Helios</dist.platform.name>
-				<dist.platform.name.long>Helios SR2 (3.6.2)</dist.platform.name>
+				<dist.platform.name.long>Helios SR2 (3.6.2)</dist.platform.name.long>
 				<dist.platform.id>helios</dist.platform.id>
 				<dist.platform.version>3.6</dist.platform.version>
 				<package.qualifierPrefix>e36</package.qualifierPrefix>
@@ -137,7 +137,7 @@
 				<dist.target>e3.7.2</dist.target>
 				<dist.target.major>e3.7</dist.target.major>
 				<dist.platform.name>Indigo</dist.platform.name>
-				<dist.platform.name.long>Indigo SR2 (3.7.2)</dist.platform.name>
+				<dist.platform.name.long>Indigo SR2 (3.7.2)</dist.platform.name.long>
 				<dist.platform.id>indigo</dist.platform.id>
 				<dist.platform.version>3.7</dist.platform.version>
 				<package.qualifierPrefix>e37</package.qualifierPrefix>
@@ -150,7 +150,7 @@
 				<dist.target>e3.8.2</dist.target>
 				<dist.target.major>e3.8</dist.target.major>
 				<dist.platform.name>Juno</dist.platform.name>
-				<dist.platform.name.long>Juno SR2 (3.8.2)</dist.platform.name>
+				<dist.platform.name.long>Juno SR2 (3.8.2)</dist.platform.name.long>
 				<dist.platform.id>juno</dist.platform.id>
 				<dist.platform.version>3.8</dist.platform.version>
 				<package.qualifierPrefix>e38</package.qualifierPrefix>
@@ -163,7 +163,7 @@
 				<dist.target>e4.2.2</dist.target>
 				<dist.target.major>e4.2</dist.target.major>
 				<dist.platform.name>Juno</dist.platform.name>
-				<dist.platform.name.long>Juno SR2 (4.2.2)</dist.platform.name>
+				<dist.platform.name.long>Juno SR2 (4.2.2)</dist.platform.name.long>
 				<dist.platform.id>juno</dist.platform.id>
 				<dist.platform.version>4.2</dist.platform.version>
 				<package.qualifierPrefix>e42</package.qualifierPrefix>
@@ -176,7 +176,7 @@
 				<dist.target>e4.3.2</dist.target>
 				<dist.target.major>e4.3</dist.target.major>
 				<dist.platform.name>Kepler</dist.platform.name>
-				<dist.platform.name.long>Kepler SR2 (4.3.2)</dist.platform.name>
+				<dist.platform.name.long>Kepler SR2 (4.3.2)</dist.platform.name.long>
 				<dist.platform.id>kepler</dist.platform.id>
 				<dist.platform.version>4.3</dist.platform.version>
 				<package.qualifierPrefix>e43</package.qualifierPrefix>
@@ -189,7 +189,7 @@
 				<dist.target>e4.3.2-java8</dist.target>
 				<dist.target.major>e4.3-java8</dist.target.major>
 				<dist.platform.name>Kepler</dist.platform.name>
-				<dist.platform.name.long>Kepler SR2 (4.3.2)</dist.platform.name>
+				<dist.platform.name.long>Kepler SR2 (4.3.2)</dist.platform.name.long>
 				<dist.platform.id>kepler</dist.platform.id>
 				<dist.platform.version>4.3-java8</dist.platform.version>
 				<package.qualifierPrefix>e43-java8</package.qualifierPrefix>
@@ -202,7 +202,7 @@
 				<dist.target>e4.4</dist.target>
 				<dist.target.major>e4.4</dist.target.major>
 				<dist.platform.name>Luna</dist.platform.name>
-				<dist.platform.name.long>Luna (4.4)</dist.platform.name>
+				<dist.platform.name.long>Luna (4.4)</dist.platform.name.long>
 				<dist.platform.id>luna</dist.platform.id>
 				<dist.platform.version>4.4</dist.platform.version>
 				<package.qualifierPrefix>e44</package.qualifierPrefix>
