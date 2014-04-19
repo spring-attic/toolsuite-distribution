@@ -206,7 +206,7 @@ Optional parameters:
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
+					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
@@ -285,7 +285,7 @@ Optional parameters:
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
+					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
@@ -384,7 +384,7 @@ Optional parameters:
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
+					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
@@ -473,7 +473,7 @@ Optional parameters:
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310/</url>
+					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
