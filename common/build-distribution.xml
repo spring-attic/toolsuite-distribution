@@ -5,7 +5,7 @@
 	<property name="roo.version" value="1.2.5.RELEASE" />
 	<property name="tcserver.version" value="2.9.5.SR1" />
 	<property name="maven.version" value="3.0.5" />
-	<property name="grails.version" value="2.3.7" />
+	<property name="grails.version" value="2.3.8" />
 	
 	<property name="sts-rootfolder" value="sts-bundle" />
 	<property name="ggts-rootfolder" value="ggts-bundle" />
