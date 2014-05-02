@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>Spring Tool Suite - Groovy/Grails Tool Suite 3.5.1 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite & Groovy/Grails Tool Suite 3.5.1: New and Noteworthy</h1>
+
+<p class="nan2">General Updates</p>
+
+<p class="nan3">Java 8</p>
+
+<p>In addition to the general Java 8 support for the Eclipse Java tooling STS 3.5.1 now also contains the Java8 support patch for Eclipse WTP (for web projects)
+by default.</p>
+
+<p class="nan3">Grails updated to 2.3.8</p>
+<p>GGTS now ships with Grails 2.3.8.</p>
+
+<p class="nan3">m2e-egit connector included</p>
+<p>The EGit connector for the Maven integration is now included by default, so that you can checkout Maven projects from Git repositories right from within
+the IDE.</p>
+
+<p class="nan3">Bugfixes</p>
+<p>We mostly worked in fixing existing and important issues for this 3.5.1 maintenance release. Please take a look at the list of fixed issues for details:</p>
+<P><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20%3D%20%223.5.1.RELEASE%22%20AND%20status%20in%20(Resolved%2C%20Closed)">STS/GGTS issues fixed in 3.5.1</a></p>
+<p><a href="https://jira.spring.io/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20%3D%203.5.1.RELEASE%20AND%20status%20in%20(Resolved%2C%20Closed)">Spring IDE issues fixed in 3.5.1</a></p>
+
+<hr>
+	
+<h1 class="nan1">Spring Tool Suite & Groovy/Grails Tool Suite 3.5.0: New and Noteworthy</h1>
+
+<p class="nan2">General Updates</p>
+
+<p class="nan3">Java 8</p>
+
+<p>Java 8 has now been officially released. You can grab the JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>.
+Although the Eclipse Java8 support is available as a patch for Kepler (information <a href="https://wiki.eclipse.org/JDT_Core/Java8">here</a>) we have to
+decided to include the necessary patches by default in our STS *and* GGTS distributions. This means either distribution supports Java8 development out-of-the-box.</p></br>
+
+<p>In the case of GGTS it is possible to have groovy code and Java 8 code in the same workspace, <b>but not in the same project</b>. (See known issues below)</p></br>
+
+<p>Updating an existing STS installation to the 3.5.0 release will *not* automatically install the Java8 support. This has to be done manually afterwards by selecting
+the Java8 support from the extension install (via the Dashboard -> Manage IDE Extensions). Updating an existing GGTS includes the Java8 support (for technical reasons).</p>
+
+<p class="nan3">Design updates</p>
+<p>We updated the branding of the toolsuite distributions to match the latest style of <a href="http://spring.io">http://spring.io</a>.</p>
+
+<br/>
+<center><img src="images/splashscreen-2014.png"></img></center>
+<br/>
+
+<p class="nan3">Pivotal tc Server Developer Edition updated to 2.9.5.SR1</p>
+<p> STS and GGTS now ship with the latest Pivotal tc Server Developer Edition 2.9.5.SR1.</p>
+
+<p class="nan3">Grails updated to 2.3.7</p>
+<p>GGTS now ships with Grails 2.3.7.</p>
+
+<p class="nan3">STS startup time improvement</p>
+<p>We are continuing our work to improve the performance of STS/GGTS and with this latest version you should find that STS starts a little quicker.</p>
+
+<p class="nan3">Already available for the upcoming Eclipse Luna release</p>
+<p>A new update site is available to install the STS/GGTS components into an early milestone of the upcoming Eclipse Luna release:
+<a href="http://dist.springsource.com/snapshot/TOOLS/nightly/e4.4">http://dist.springsource.com/snapshot/TOOLS/nightly/e4.4</a>. This is a nightly update site that
+contains the latest bits. Full distribution builds that include Eclipse Luna 4.4 are also available from the nightly distribution download page:
+<a href="http://dist.springsource.com/snapshot/STS/nightly-distributions.html">http://dist.springsource.com/snapshot/STS/nightly-distributions.html</a>. There
+is a known issue with the Groovy and Grails tooling having some issues with changed APIs in this upcoming Eclipse release, which we are going to fix soon. The
+Spring tooling is ready to be used on Eclipse 4.4. The next version of STS and GGTS (3.6.0) is scheduled for July 2014 and will ship on top of the Eclipse Luna release.</p>
+
+<p class="nan3">New Dashboard Improvements</p>
+<p>We received a lot of <a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite/723992-new-dashboard-in-sts-3-4-0">feedback on the forum</a> about
+the new web-based dashboard in 3.4.0 - mostly telling us how much you missed the features of the old dashboard! So we've improved the look and feel of the dashboard,
+but also brought back the good stuff: RSS feeds, tooling updates, search support and even more getting started content. So, keep that feedback coming - we're listening.</p>
+
+<center><img src="images/NewNewDashboard.png"></img></center>
+
+<p>The dashboard is based on leading-edge technology (using the JavaFX web browser) so that we can provide a more consistent and reliable user experience across platforms.
+That means that it will only work on recent versions of Java (1.7 and 1.8) and Eclipse (4.2, 4.3, and 4.4). Other configurations will fall-back to the old browser. (And, yes,
+if you're not quite ready for the future, you can still opt for the old dashboard by selecting the "Use Old Dashboard" option in the Dashboard Preferences page.)</p>
+
+<p>The dashboard icon in the toolbar got an indicator icon added to show you when new feed items are available that you haven't read or seen yet. This
+allows you to keep the dashboard closed and still see if there are any news coming along.</p>
+
+<br/>
+<center><img src="images/dashboard-new-items.png"></img></center>
+<br/>
+
+<p>In addition to that we changed the design of the dashboard to open separate new editors when you select something instead of opening new tabs inside the
+dashboard itself. This gives you a much more natural and browser-like experience when using the dashboard. For the sake of consistency, we also moved the extension
+installation part out of the dashboard and into a separate editor. You can still open it by clicking on the "Manage Extensions" button on the dashboard.</p>
+
+<br/>
+<center><img src="images/dashboard-editors.png"></img></center>
+<br/>
+
+<p>This also allows much more flexibility in arranging those different parts in your workbench. You can have the extension install part open and looking at the
+documentation page at the same time by moving those editors to different places in your workbench layout.</p>
+
+<br/>
+<center><img src="images/dashboard-editors-layout.png"></img></center>
+<br/>
+
+<p class="nan3">Spring Roo</p>
+<p>Spring Roo support and the Spring Roo runtime is now installable from the dashboard rather than being directly included in STS.</p>
+
+<p class="nan2">Spring Tooling updates</p>
+
+<p class="nan3">Spring Boot: New Add/Edit Starters Dialog</p>
+To add and remove 'boot starter' dependencies to a Maven Spring Boot project,  
+right click its pom and select "Add/Edit Starters" from the "Spring" 
+context menu.
+
+<center><img src="images/add-edit-starters-menu.png"></img></center>
+<br>
+<b>Edit Starters</b> opens a dialog that lets you check or uncheck multiple starters 
+to add or remove them from the pom:
+
+<center><img src="images/edit-starters-dialog.png"></img></center>
+<br>
+<b>Add Starter</b> opens a simpler dialog that lets you add just one starter:
+
+<center><img src="images/add-starter-dialog.png"></img></center>
+
+<p><b>Note:</b> one of these two dialogs (most likely the simpler "Add Starter") 
+may be removed in future because the functionality they provide is so similar.
+If you have a preference please let us know! (jira)</p>
+
+<p class="nan3">Spring Boot: Jar-type Content Assist</p>
+
+For spring-boot projects STS keeps an index of potential types 
+you may want on your boot project's classpath. STS will suggest these types
+even when they are not yet on your classpath. The 'Jar' suggestions are shown below any types
+already on your classpath and are recognisable by the special 'jar type' icon.
+
+<center><img src="images/jar-type-ca.png"></img></center>
+
+<p>When you select a 'Jar Type' it will be imported as usual. In addition, the required dependency 
+is added to your project's 'pom.xml' (This feature only works for 
+Maven-based projects).</p>
+
+<p>The Jar type content assist suggestion engine also detects the spring-boot version of
+spring-boot maven projects. This includes projects created via the 'New Spring Starter' wizard.
+The index file used to compute the suggestions is no longer embedded inside STS
+but downloaded for your specific version of spring-boot from a CloudFoundry web service.
+This allows us to update the suggestions for future versions of spring boot without
+requiring a new version of STS.</p>
+
+<p class="nan3">Open the Live Beans Graph for Standalone Spring Boot Apps</p>
+
+<p>There is now an easy way to open the Live Beans Graph View for a Spring Boot App. Just run your app
+with <b>Run As >> Spring Boot App</b>. The needed VM arguments are added to your newly created launch configuration.
+Once the app is running you can open the Live Beans View from the Project's "Spring Tools" context menu.</p>
+
+<center><img src="images/open-live-beans-view.png"></img></center>
+
+<center><img src="images/live-beans-view.png"></img></center>
+
+
+
+<p class="nan3">Minimal Support for Running Spring Groovy CLI apps</p>
+
+<p>You can now easily run <b>Spring Groovy CLI</b> apps from within STS. Right click a <tt>app.groovy</tt> file
+and select <b>Run As >> Spring Groovy CLI</b>. The app will be started and its output appears in
+a Eclipse Console.</p>
+
+<br/>
+<center><img src="images/run-as-spring-cli.png"></img></center>
+<br/>
+
+<p>A recent spring-boot runtime for running the app is automatically configured for you, but it can
+be overridden via preferences.</p>
+
+<br/>
+<center><img src="images/spring-boot-runtime.png"></img></center>
+<br/>
+
+<p class="nan3">Support for Importing `General' Getting Started Content</p>
+
+<p>The wizard for importing spring.io getting started content has been extended with a 
+`General' content type. This allows it to import projects
+that don't have any explicit build-logic (pom.xml or build.gradle) as generic Eclipse projects.
+</p>
+
+<br/>
+<center><img src="images/general-import.png"></img></center>
+<br/>
+
+<p class="nan2">Groovy-Eclipse</p>
+
+<p class="nan3">Groovy 2.2 available</p>
+Groovy Eclipse now includes Groovy 2.1 compiler by default but the Groovy 2.2 compiler is available and can be installed from the STS or GGTS 
+Dashboard Extensions page.
+
+<p class="nan3">Simple Refactorings Available as Quick Fixes</p>
+<p><p>Simple refactorings are also available via quick fixes:</p>
+<li>Extract to Constant</li>
+<li>Extract to Local Variable</li>
+<li>Convert Local Variable to Field</li>
+<br/>
+<center><img src="images/groovy-quick-fix.png"></img></center>
+<br/>
+
+
+<p class="nan2">Gradle Tooling</p>
+
+<p class="nan3">Aggregate Tasks Support</p>
+<p>Aggregate gradle tasks of a Gradle project is a union of all Gradle tasks for the project and all of its children. For example if one runs a Gradle task 'clean' this task would be run on the current project and all of its children. Gradle tasks view now supports two modes for displaying tasks of the selected project: <br/><li>Tasks defined by selected project or any of its children projects</li><li>Tasks defined by the selected project</li></p>
+<p>The toggle button in the <b>Gradle Tasks</b> view allows to switch the viewing mode. (Marked in red on the screenshot below)</p>
+<br/>
+<center><img src="images/gradle-tasks-view.png" style="max-width: 500px;"></img></center>
+<br/>
+
+<p class="nan3">Tasks Launch Configuration</p>
+<p>Gradle Tasks Launch Configuration wizard <b>Gradle Tasks</b> tab contents have been redesigned. Instead of a Gradle tasks tree for picking Gradle tasks to run and a list to order gradle tasks the UI became a single Gradle tasks editor. The editor allows users to type in Gradle tasks as one would type them in the command line. The editor has content assist and error checking available:</p>
+<ul>
+<li>Content Assist displays available Gradle tasks (aggregate and project specific) and sub-projects</li>
+<li>Error checking marks invalid (non-existent) Gradle task names</li>
+</ul>
+<br/>
+<center><img src="images/gradle-launch-config.png"></img></center>
+<br/>
+
+<p class="nan3">Tasks Quick Launcher</p>
+<p><b>Tasks Quick Launcher</b> is available from Gradle project context menu <b>Gradle</b> group menu and from a view action in <b>Gradle Tasks</b> view.
+ Tasks Quick Launcher is a small dialog similar to the Grails command prompt dialog that allows users to type in names of Gradle tasks to run. Content assist and error checking help to find and enter valid task names. Although the dialog immitates the gradle command line interface it only supports Gradle tasks, but not the Gradle command line interface commands.</p>
+<br/>
+<center><img src="images/gradle-tasks-quick-launcher.png"></img></center>
+<br/>
+
+<p class="nan3">Working set context menu</p>
+<p>A Gradle actions menu has been added for a working set (just like Maven has). Now Gradle actions can be executed via this working set context menu. A Gradle action will be executed on all Gradle projects within a working set.</p>
+
+<br/>
+<center><img src="images/gradle-workingset-actions.png" style="max-width: 500px;"></img></center>
+<br/>
+
+<p class="nan3">"Refresh All" Action Performance Improvement</p>
+<p>The <b><tt>Refresh All</tt></b> action now executes Gradle project refresh operations on batches of projects under the same root project. This results in an order of magnitude running time improvement for the refresh operation in common refresh scenarios.</p>
+
+<p class="nan3">Project Configurators Extension Point</p>
+<p>It is now possible to contribute project configurator classes via the <b><tt>org.springsource.ide.eclipse.gradle.core.projectConfigurators</tt></b> extension point. These classes allow clients to configure a project based on the information inferred from the project's Gradle model.</p>
+
+<p class="nan2">Cloud Foundry Eclipse</p>
+
+<p class="nan3">Spring Boot Support</p>
+<p>Cloud Foundry Eclipse 1.6.0 now allows Spring Boot applications to be pushed to a Cloud Foundry server instance within STS. Right-click the Spring Boot project
+in the workspace, and select <b><tt>Configure -> Enable as Cloud Foundry App</tt></b>:
+<br/>
+<center><img src="images/configure_spring_boot_CF.png" style="max-width: 500px;"></img></center>
+<br/>
+<p>After this simple configuration step, the project can now be dragged and dropped to a Cloud Foundry server instance like any other application. The Cloud Foundry console will show the Spring Boot application being pushed and started in the Cloud Foundry server:</p>
+<br/>
+<center><img src="images/console_staging_2.png" style="max-width: 500px;"></img></center>
+<br/>
+<p>1.6.0 only supports Java Spring Boot apps. That is, only Spring Boot apps that are packaged as jar files can be configured and pushed to a Cloud Foundry server instance.</p>
+
+<p class="nan3">Private Clouds Using Self-Signed Certificates</p>
+<p>Cloud Foundry server instances can now be created to private clouds that use self-signed certificates. In the Cloud Foundry
+New Server wizard, click on <b><tt>Manage Cloud...</tt></b> in the credentials page. This opens a dialogue where a list of server URLs can be added.</p>
+<br/>
+<center><img src="images/server_manage_cloud_URLs.png" style="max-width: 500px;"></img></center>
+<br/>
+<p> After adding a URL to a private cloud, the user may be prompted to keep the URL (select "Yes"), and afterward, when validating the user credentials, the wizard will detect that the server is using self-signed certificates and prompt the user whether to continue. If the user clicks "Yes" a second time, the Cloud Foundry plug-in will remember the decision for any future server instance creations using this URL.</p>
+<br/>
+<center><img src="images/server_unable_to_authenticate_URL.png" style="max-width: 500px;"></img></center>
+<br/>
+<br/>
+<center><img src="images/self-signed-cert.png" style="max-width: 500px;"></img></center>
+<br/>
+<hr>
+
+<p class="nan2">AJDT/AspectJ</a>
+<p>AJDT now includes the AspectJ 1.8.0.RC2 build.  AspectJ has been rebased on the latest Eclipse Java8 compiler.</p>
+<br/>
+
+<hr>
+
+<p class="nan2">Miscellaneous</a>
+
+<h2>Issues resolved in this release</h2>
+
+<p>Here is a full list of resolved bugs and enhancement requests for 3.5.0:</p>
+<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20in%20(%223.5.0.M1%22%2C%20%223.5.0.M2%22%2C%20%223.5.0.RC1%22%2C%20%223.5.0.RC2%22%2C%20%223.5.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">STS/GGTS issue tracker</a></p>
+<p><a href="https://jira.springsource.org/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20in%20(%223.5.0.M1%22%2C%20%223.5.0.M2%22%2C%20%223.5.0.RC1%22%2C%20%223.5.0.RC2%22%2C%20%223.5.0.RELEASE%22)%20AND%20status%20in%20(Resolved%2C%20Closed)">Spring IDE issue tracker</a></p>
+<p><a href="http://jira.codehaus.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+GRECLIPSE+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%2C+%22Not+A+Bug%22%29+AND+fixVersion+%3D+18821+ORDER+BY+priority+DESC">Groovy-Eclipse issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>Download GGTS: <a href="https://spring.io/tools/ggts/all">https://spring.io/tools/ggts/all</a></p>
+<p>STS/GGTS forum: <a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite">http://forum.spring.io/forum/spring-projects/springsource-tool-suite</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>Known issues in this release</h2>
+
+<h3>Dashboard and Retina Displays</h3>
+
+<p>When running STS/GGTS on top of a JDK7, the new dashboard looks a bit blurry when using a HiRes (Retina) display, for example on a Retina MacBook Pro. This is due to the
+underlying browser technology that is used to display the dashboard content and that is coming from JavaFX. The JavaFX version that ships with JDK7 doesn't support
+retina displays. The solution for this is to run STS/GGTS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
+<br/>
+
+<h3>Spring Roo 1.2.4 issue when using GWT add-on in combination with java.lang.Float or java.lang.Byte</h3> 
+
+<p>There was a bug reported against Spring Roo 1.2.4 about a problem when using the GWT support together with java.lang.Float (or Byte) field types. In case we hit this issue
+we recommend to download and use Spring Roo 1.2.3. You can configure the Spring Roo runtime that STS should use in the preferences (Preferences -> Spring -> Roo support).</p>
+<br/>
+
+<p>The issue in Roo is tracked here: <a href="https://jira.springsource.org/browse/ROO-3466">https://jira.springsource.org/browse/ROO-3466</a></p>
+<br/>
+
+<h3>Mixed Java 8 and Groovy Setup</h3>
+
+<p>The Groovy compiler at this time does not yet support Java 8 JVM. However, it is possible to use both Java 8 and Groovy in the same
+workspace if you use the following recommended setup to keep Groovy and Java 8 from stepping on eachother:</p>
+ 
+ <ul>
+  <li>Make sure to point to a Java 7 JDK in your STS.ini file. I.e. run your IDE with a JDK7. This is needed because the Greclipse compiler runs
+  inside the same VM as the IDE. Running the Greclipse compiler with a JDK 8 is not supported yet.
+  <li>Set your workspace default JRE to a Java 7 JDK.
+  <li>Change individual projects that require Java 8 to use a Java 8 JRE or JDK via project preferences (i.e. put the right JRE container on the build  path and also set the Java 8 source/target compiler levels on these specific projects only).
+  <li>Your Java 8 enabled projects shouldn't contain groovy code.
+</ul>
+
+<p>The issue in Roo is tracked here: <a href="https://jira.springsource.org/browse/ROO-3466">https://jira.springsource.org/browse/ROO-3466</a></p>
+<br/>
+
+<h3>GGTS throwing exceptions when running on top of Eclipse 4.4</h3> 
+
+<p>There is an issue with the Groovy and Grails tooling throwing exceptions when running on top of Eclipse 4.4, due to incompatible changes to some
+internal APIs. We will provide a fixed version via the nightly update sites and distribution builds soon.</p>
+<br/>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy.html">STS/GGTS 3.4.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">STS/GGTS 3.3.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.6.1.SR1.pdf">STS 2.6.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
