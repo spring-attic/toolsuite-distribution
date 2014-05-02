@@ -147,6 +147,12 @@
 	<category name="Groovy-Eclipse" />
   </feature>
 
+  <feature
+	id="org.codehaus.groovy.m2eclipse.feature"
+	version="0.0.0">
+	<category name="Groovy-Eclipse" />
+  </feature>
+
   <!-- Gradle -->
   <category-def name="Core / Eclipse Integration for Gradle" label="Core / Eclipse Integration for Gradle"/>
 
