@@ -149,7 +149,7 @@
             <description>Installs Grails @{grails.version}</description>
             <file src="@{sts.rootfolder}/grails-@{grails.version}" targetdir="$INSTALL_PATH" override="true"/>
 			<executable targetfile="$INSTALL_PATH/grails-@{grails.version}/bin/grails" stage="never" keep="yes" />
-			<executable targetfile="$INSTALL_PATH/grails-@{grails.version}/bin/grails-debug" stage="never" keep="yes" />						
+<!--			<executable targetfile="$INSTALL_PATH/grails-@{grails.version}/bin/grails-debug" stage="never" keep="yes" /> -->
 			<executable targetfile="$INSTALL_PATH/grails-@{grails.version}/bin/startGrails" stage="never" keep="yes" />
         </pack>
 
