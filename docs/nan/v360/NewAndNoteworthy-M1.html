@@ -109,13 +109,6 @@ think about this change - please comment on the announcement blog entry.</p>
 </ul>
 </p>
 
-<p class="nan3">Based on the latest Eclipse Luna builds</p>
-<p>STS ships on top of the latest Eclipse Luna builds (in preparation of our upcoming STS 3.6.0 release that will ship of Eclipse Luna 4.4).</p>
-
-<hr>
-
-<p class="nan2">Spring Tooling updates</p>
-
 <hr>
 
 <p class="nan2">Gradle Tooling</p>
@@ -154,6 +147,12 @@ think about this change - please comment on the announcement blog entry.</p>
 <hr>
 
 <h2>Known issues in this release</h2>
+
+<h3>Check for Updates throws an error when updating from STS 3.5.1</h3>
+
+<p>Doing a "Check for Updates" after adding the milestone update site of STS to an existing installation throws an error about a problem with the
+Groovy-Eclipse JDT patch feature. In that case, disable the Groovy-Eclipse JDT patch feature from the list of components to update and continue.</p>
+<br/>
 
 <h3>Dashboard and Retina Displays</h3>
 
