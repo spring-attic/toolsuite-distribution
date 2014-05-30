@@ -161,6 +161,13 @@ underlying browser technology that is used to display the dashboard content and 
 retina displays. The solution for this is to run STS/GGTS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
 <br/>
 
+<h3>Setting the JDK</h3>
+
+<p>STS and GGTS requires a JDK to run on top of. Nevertheless the native launcher component might pick up a JRE automatically if you don't specifiy which
+JDK to run STS/GGTS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS/GGTS installation. Add a line at the beginning
+"-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
+<br/>
+
 <hr>
 
 <h2>New and Noteworthy for previous releases</h2>
