@@ -184,6 +184,20 @@ JDK to run STS/GGTS on top of. To avoid this, you can specify the JDK in the sts
 "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
 <br/>
 
+<h3>Issues on Linux (GTK3)</h3>
+
+<p>Eclipse 4.4, upon which STS and GGTS are based, is the first Eclipse release where GTK3 is the default for the SWT widget library.
+There are some issues with this still:</p>
+
+<ul>
+  <li>STS New Dashboard doesn't work under GTK3 because it uses JavaFX which is not currently compatible with GTK3. Instead the old dashboard will
+      open.
+  <li>The Eclipse editor may be slow to respond (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=434898">Eclipse Bug 434898</a>).
+</ul>
+
+<p>You may also experience other UI rendering glitches. If you exprience any of these problems you can avoid them by forcing SWT to 
+switch back to using GTK2. Just set the environment variable "SWT_GTK3=0" before launching STS or GGTS.
+
 <hr>
 
 <h2>New and Noteworthy for previous releases</h2>
