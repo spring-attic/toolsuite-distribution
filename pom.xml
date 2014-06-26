@@ -374,7 +374,7 @@ Optional parameters:
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
+					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
@@ -415,26 +415,26 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-<!--				<repository>
-					<id>platform</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.4/</url>
-				</repository> -->
-				<!--		<repository>
-				<id>juno-updates</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository> -->
 				<repository>
 					<id>luna</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/luna/</url>
 				</repository>
 				<repository>
+					<id>platform</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/eclipse/updates/4.4/</url>
+				</repository>
+				<!--		<repository>
+				<id>juno-updates</id>
+				<layout>p2</layout>
+				<url>http://download.eclipse.org/releases/maintenance/</url>
+				</repository> -->
+<!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.4-I-builds</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
@@ -463,7 +463,7 @@ Optional parameters:
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
+					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
