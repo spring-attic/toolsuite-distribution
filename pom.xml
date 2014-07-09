@@ -120,6 +120,11 @@ Optional parameters:
 					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 				</repository>
 				<repository>
+					<id>m2e</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
+				</repository>
+				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
 					<url>http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120926-1337/</url>
@@ -199,6 +204,11 @@ Optional parameters:
 					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 				</repository>
 				<repository>
+					<id>m2e</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
+				</repository>
+				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/m2e-wtp/releases/juno/</url>
@@ -276,6 +286,11 @@ Optional parameters:
 					<id>atlassian</id>
 					<layout>p2</layout>
 					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
+				</repository>
+				<repository>
+					<id>m2e</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
@@ -375,6 +390,11 @@ Optional parameters:
 					<id>atlassian</id>
 					<layout>p2</layout>
 					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+				</repository>
+				<repository>
+					<id>m2e</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/m2e/releases/1.4/1.4.1.20140328-1905</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
@@ -594,11 +614,6 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/egit/github/updates</url>
 		</repository>
-<!--		<repository>
-			<id>m2e</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/technology/m2e/releases/</url>
-		</repository> -->
 		<repository>
 			<id>m2eclipse-legacy</id>
 			<layout>p2</layout>
