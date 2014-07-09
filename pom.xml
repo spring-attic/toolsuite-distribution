@@ -488,7 +488,7 @@ Optional parameters:
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/kepler</url>
+					<url>http://download.eclipse.org/m2e-wtp/releases/luna</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
