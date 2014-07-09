@@ -585,11 +585,6 @@ Optional parameters:
 			<url>http://download.eclipse.org/egit/updates</url>
 		</repository>
 		<repository>
-			<id>egit-23-emergency-updates</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/egit/updates</url>
-		</repository>
-		<repository>
 			<id>egit-github</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/egit/github/updates</url>
@@ -599,11 +594,11 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/egit/github/updates</url>
 		</repository>
-		<repository>
+<!--		<repository>
 			<id>m2e</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/technology/m2e/releases/</url>
-		</repository>
+		</repository> -->
 		<repository>
 			<id>m2eclipse-legacy</id>
 			<layout>p2</layout>
