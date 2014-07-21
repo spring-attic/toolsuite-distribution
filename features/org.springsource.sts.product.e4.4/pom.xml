@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springsource.sts</groupId>
+		<artifactId>org.springsource.sts.parent</artifactId>
+		<version>3.6.1-SNAPSHOT</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	<artifactId>org.springsource.sts.product</artifactId>
+	<packaging>eclipse-repository</packaging>
+	<name>org.springsource.sts.product</name>
+
+	<properties>
+		<dist.accessKey>${accessKey}</dist.accessKey>
+		<dist.secretKey>${secretKey}</dist.secretKey>
+		
+		<build.destination.cocoa.x86>target/products/org.springsource.sts.ide/macosx/cocoa/x86</build.destination.cocoa.x86>
+		<build.destination.cocoa.x86_64>target/products/org.springsource.sts.ide/macosx/cocoa/x86_64</build.destination.cocoa.x86_64>
+		<build.destination.linux.x86>target/products/org.springsource.sts.ide/linux/gtk/x86</build.destination.linux.x86>
+		<build.destination.linux.x86_64>target/products/org.springsource.sts.ide/linux/gtk/x86_64</build.destination.linux.x86_64>
+		<build.destination.win.x86>target/products/org.springsource.sts.ide/win32/win32/x86</build.destination.win.x86>
+		<build.destination.win.x86_64>target/products/org.springsource.sts.ide/win32/win32/x86_64</build.destination.win.x86_64>
+		
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>vmware-signing</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.vmware.build.maven</groupId>
+						<artifactId>vmware-maven-jarsigner-plugin</artifactId>
+						<version>${vmware.maven.jarsigner.plugin.version}</version>
+						<configuration>
+							<skip>true</skip>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>1.0-alpha-2</version>
+				<executions>
+					<execution>
+						<phase>initialize</phase>
+						<goals>
+							<goal>read-project-properties</goal>
+						</goals>
+						<configuration>
+							<quiet>true</quiet>
+							<files>
+								<file>${dist.properties}</file>
+							</files>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-publisher-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<publishArtifacts>true</publishArtifacts>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+						<phase>verify</phase>
+					</execution>
+				</executions>
+				<configuration>
+					<products>
+						<product>
+							<id>org.springsource.sts.ide</id>
+							<rootFolder>sts-${unqualifiedVersion}.${p2.qualifier}</rootFolder>
+							<archiveFileName>spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}</archiveFileName>
+						</product>
+					</products>
+					<formats>
+						<linux>tar.gz</linux>
+						<macosx>tar.gz</macosx>
+					</formats>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-p2-extras-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>mirror</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<source>
+						<repository>
+							<url>file://${project.build.directory}/repository</url>
+							<layout>p2</layout>
+						</repository>
+					</source>
+					<destination>${project.build.directory}/../../${product.project.sts}/target/unitedRepository</destination>
+					<append>true</append>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<id>upload-spring-product</id>
+						<phase>deploy</phase>
+						<configuration>
+							<skip>${skip.plain-product-upload}</skip>
+							<target>
+
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
+								
+								<condition property="httpclient.proxy-autodetect" value="false">
+								    <isset property="http.proxyHost"/>
+								</condition>
+
+								<condition property="httpclient.proxy-host" value="${http.proxyHost}">
+								    <isset property="http.proxyHost"/>
+								</condition>
+
+								<condition property="httpclient.proxy-port" value="${http.proxyPort}">
+								    <isset property="http.proxyPort"/>
+								</condition>
+
+								<property name="site.target.dir" value="${project.build.directory}" />
+								<property name="dist.full.version"
+									value="${unqualifiedVersion}.${buildQualifier}" />
+
+								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
+
+									<delete bucketName="${dist.bucket}">
+										<fileset dir="${dist.path.product}">
+											<include name="spring-*.zip" />
+											<include name="spring-*.gz" />
+										</fileset>
+									</delete>
+
+									<upload bucketName="${dist.bucket}" toDir="${dist.path.product}"
+										publicRead="true">
+										<fileset dir="${site.target.dir}/products">
+											<include name="*.zip" />
+											<include name="*.tar.gz" />
+										</fileset>
+									</upload>
+
+								</s3>
+
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>remove-uncategorized</id>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<ant antfile="../../common/build-remove-uncategorized.xml">
+									<property name="projectDir" value="${project.build.directory}" />
+								</ant>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>fix-eclipseproduct-file</id>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<propertyfile file="${build.destination.cocoa.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa.tar.gz"/>
+								</propertyfile>
+								
+								<propertyfile file="${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.tar.gz"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.linux.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk.tar.gz"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.linux.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-linux-gtk-x86_64.tar.gz"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.win.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32.zip"/>
+								</propertyfile>
+
+								<propertyfile file="${build.destination.win.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
+								  <entry  key="name" value="Spring Tool Suite"/>
+								  <entry  key="id" value="org.springsource.sts"/>
+								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
+								  <entry  key="package" value="spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-win32-x86_64.zip"/>
+								</propertyfile>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>configure-proxies-for-eclipserun</id>
+						<phase>package</phase>
+						<configuration>
+							<skip>${skip.eclipserun.proxies}</skip>
+							<target>
+								<touch file="${project.build.directory}/work/configuration/.settings/org.eclipse.core.net.prefs" mkdirs="true"/>
+								
+								<propertyfile file="${project.build.directory}/work/configuration/.settings/org.eclipse.core.net.prefs">
+								  <entry  key="eclipse.preferences.version" value="1"/>
+								  <entry  key="nonProxiedHosts" value="${http.nonProxyHosts}"/>
+								  <entry  key="org.eclipse.core.net.hasMigrated" value="true"/>
+								  <entry  key="proxyData/HTTP/hasAuth" value="false"/>
+								  <entry  key="proxyData/HTTP/host" value="${http.proxyHost}"/>
+								  <entry  key="proxyData/HTTP/port" value="${http.proxyPort}"/>
+								  <entry  key="systemProxiesEnabled" value="false"/>
+								</propertyfile>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>osx-app-signing</id>
+						<phase>package</phase>
+						<configuration>
+							<skip>${skip.osx.signing}</skip>
+							<target>
+
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+
+								<exec executable="codesign">
+								    <arg value="-s"/>
+								    <arg value="Developer ID Application: VMware, Inc."/>
+								    <arg value="${build.destination.cocoa.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/STS.app"/>
+								</exec>
+
+								<exec executable="codesign">
+								    <arg value="-s"/>
+								    <arg value="Developer ID Application: VMware, Inc."/>
+								    <arg value="${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/STS.app"/>
+								</exec>
+
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.springframework.build</groupId>
+						<artifactId>org.springframework.build.aws.ant</artifactId>
+						<version>3.1.0.RELEASE</version>
+					</dependency>
+					<dependency>
+						<groupId>net.java.dev.jets3t</groupId>
+						<artifactId>jets3t</artifactId>
+						<version>0.8.1</version>
+					</dependency>
+					<dependency>
+						<groupId>ant-contrib</groupId>
+						<artifactId>ant-contrib</artifactId>
+						<version>20020829</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>target-platform-configuration</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<resolver>p2</resolver>
+						<pomDependencies>consider</pomDependencies>
+						<ignoreTychoRepositories>true</ignoreTychoRepositories>
+						<environments>
+							<environment>
+								<os>macosx</os>
+								<ws>cocoa</ws>
+								<arch>x86</arch>
+							</environment>
+							<environment>
+								<os>macosx</os>
+								<ws>cocoa</ws>
+								<arch>x86_64</arch>
+							</environment>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86</arch>
+							</environment>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86_64</arch>
+							</environment>
+							<environment>
+								<os>linux</os>
+								<ws>gtk</ws>
+								<arch>x86</arch>
+							</environment>
+							<environment>
+								<os>linux</os>
+								<ws>gtk</ws>
+								<arch>x86_64</arch>
+							</environment>
+						</environments>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-packaging-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<format>yyyyMMddHHmm-'${p2.qualifier}'-'${package.qualifierPrefix}'</format>
+						<archiveSite>true</archiveSite>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

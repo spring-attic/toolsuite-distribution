@@ -509,7 +509,7 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e4.4</module>
 				<module>features/org.springsource.ggts.package.e4.4</module>
-				<module>features/org.springsource.sts.product</module>
+				<module>features/org.springsource.sts.product.e4.4</module>
 				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
