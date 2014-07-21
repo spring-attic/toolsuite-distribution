@@ -428,7 +428,7 @@ Optional parameters:
 		<profile>
 			<id>e44</id>
 			<properties>
-				<product.project.sts>org.springsource.sts.product</product.project.sts>
+				<product.project.sts>org.springsource.sts.product.e4.4</product.project.sts>
 				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.4</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
