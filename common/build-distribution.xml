@@ -4,6 +4,7 @@
 
 	<property name="roo.version" value="1.2.5.RELEASE" />
 	<property name="tcserver.version" value="3.0.0.RELEASE" />
+	<property name="tcserver.version.path" value="3.0.0" />
 	<property name="maven.version" value="3.0.5" />
 	<property name="grails.version" value="2.4.3" />
 	
@@ -16,7 +17,7 @@
 	<property name="grails.name" value="grails-${grails.version}" />
 
 	<property name="roo.root" value="http://dist.springframework.org/release/ROO" />
-	<property name="tcserver.root" value="http://download.pivotal.com.s3.amazonaws.com/tcserver/${tcserver.version}" />
+	<property name="tcserver.root" value="http://download.pivotal.com.s3.amazonaws.com/tcserver/${tcserver.version.path}" />
 	<property name="maven.root" value="http://www.us.apache.org/dist/maven/maven-3/${maven.version}/binaries" />
 	<property name="grails.root" value="http://dist.springframework.org/release/GRAILS" />
 
