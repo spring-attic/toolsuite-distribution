@@ -16,7 +16,7 @@
 	<property name="grails.name" value="grails-${grails.version}" />
 
 	<property name="roo.root" value="http://dist.springframework.org/release/ROO" />
-	<property name="tcserver.root" value="http://download.pivotal.com.s3.amazonaws.com/tcserver/${tcserver.version}/" />
+	<property name="tcserver.root" value="http://download.pivotal.com.s3.amazonaws.com/tcserver/${tcserver.version}" />
 	<property name="maven.root" value="http://www.us.apache.org/dist/maven/maven-3/${maven.version}/binaries" />
 	<property name="grails.root" value="http://dist.springframework.org/release/GRAILS" />
 
