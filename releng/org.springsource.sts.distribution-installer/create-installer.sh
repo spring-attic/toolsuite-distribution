@@ -54,7 +54,7 @@ createInstallerTar() {
 		mv ./fix-symlink.sh ./$STS_ROOTFOLDER/$STS_DIRECTORY-$STS_VERSION/
 	fi
 		
-	ant -Dsts.rootfolder=$STS_ROOTFOLDER -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat6.version=$TOMCAT6_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
+	ant -Dsts.rootfolder=$STS_ROOTFOLDER -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Dtomcat8.version=$TOMCAT8_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
 		
 	cd ..
 
@@ -171,7 +171,7 @@ createInstallerZip() {
 		sed -i -e 's/%sts.version%/'$STS_VERSION'/g' ./win-shortcut-spec.xml
 	fi
 
-	ant -Dsts.rootfolder=$STS_ROOTFOLDER -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat6.version=$TOMCAT6_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
+	ant -Dsts.rootfolder=$STS_ROOTFOLDER -Dsts.version=$STS_VERSION -Dtc.server.version=$TCS_VERSION -Droo.version=$ROO_VERSION -Dgrails.version=$GRAILS_VERSION -Dmaven.version=$MAVEN_VERSION -Dtomcat7.version=$TOMCAT7_VERSION -Dtomcat8.version=$TOMCAT8_VERSION -Ddistribution.name=$3 -Dos.system=$4 -Djdk.minversion=$5 -Djdk.architecture=$6 -Dsts.platform=$2
 		
 	cd ..
 
@@ -257,11 +257,11 @@ processZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip 
 ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep tc-server-developer`
 TCS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/vfabric-tc-server-developer-$TCS_VERSION/ | grep tomcat-6`
-TOMCAT6_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
-
-ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/vfabric-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
+ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
 TOMCAT7_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
+
+ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-8`
+TOMCAT8_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
 
 ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep roo`
 ROO_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
@@ -275,8 +275,8 @@ MAVEN_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\.[0-9]\).*'`
 
 echo sts.version=$STS_VERSION
 echo tcs.version=$TCS_VERSION
-echo tomcat6.version=$TOMCAT6_VERSION
 echo tomcat7.version=$TOMCAT7_VERSION
+echo tomcat8.version=$TOMCAT8_VERSION
 echo roo.version=$ROO_VERSION
 echo grails.version=$GRAILS_VERSION
 echo maven.version=$MAVEN_VERSION
