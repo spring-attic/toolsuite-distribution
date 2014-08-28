@@ -6,7 +6,7 @@
 
 	<groupId>org.springsource.sts</groupId>
 	<artifactId>org.springsource.sts.root</artifactId>
-	<version>3.6.1-SNAPSHOT</version>
+	<version>3.6.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<organization>
