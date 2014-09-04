@@ -445,11 +445,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.4/</url>
 				</repository>
-				<!--		<repository>
-				<id>juno-updates</id>
+				<repository>
+				<id>luna-updates</id>
 				<layout>p2</layout>
 				<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository> -->
+				</repository>
 <!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
