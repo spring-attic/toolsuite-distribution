@@ -199,10 +199,10 @@
 		<profile>
 			<id>e44</id>
 			<properties>
-				<dist.target>e4.4</dist.target>
+				<dist.target>e4.4.1</dist.target>
 				<dist.target.major>e4.4</dist.target.major>
 				<dist.platform.name>Luna</dist.platform.name>
-				<dist.platform.name.long>Luna (4.4)</dist.platform.name.long>
+				<dist.platform.name.long>Luna SR1 (4.4.1)</dist.platform.name.long>
 				<dist.platform.id>luna</dist.platform.id>
 				<dist.platform.version>4.4</dist.platform.version>
 				<package.qualifierPrefix>e44</package.qualifierPrefix>
