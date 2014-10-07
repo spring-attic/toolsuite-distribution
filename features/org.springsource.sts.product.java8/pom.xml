@@ -293,12 +293,16 @@
 								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 
 								<exec executable="codesign">
+								    <arg value="--force"/>
+									<arg value="--deep"/>
 								    <arg value="-s"/>
 								    <arg value="Developer ID Application: VMware, Inc."/>
 								    <arg value="${build.destination.cocoa.x86}/sts-${unqualifiedVersion}.${p2.qualifier}/STS.app"/>
 								</exec>
 
 								<exec executable="codesign">
+								    <arg value="--force"/>
+									<arg value="--deep"/>
 								    <arg value="-s"/>
 								    <arg value="Developer ID Application: VMware, Inc."/>
 								    <arg value="${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/STS.app"/>
