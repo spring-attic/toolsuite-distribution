@@ -86,12 +86,15 @@
 
 <p class="nan2">General Updates</p>
 
+<p class="nan3">Update to Eclipse Luna SR1</p>
 <p>STS and GGTS now ship on top of the latest Eclipse Luna SR1 release. This Eclipse release includes numerous Java 8 compilation fixes.</p>
+
 <hr>
+
 <p class="nan2">Gradle Tooling</p>
-<p>Gradle 2.1 has been adopted.</p>
-<br/>
+<p class="nan3">Gradle 2.1 has been adopted.</p>
 <p>It is now possible to stop/cancel Gradle tasks due to enhancements in the gradle tooling API.  Use the <tt>terminate</tt> button in the <tt>Console view</tt> (which used to be disabled). Furthermore, any Gradle operation (Gradle, build, import, model construction, etc.) can either be stopped from a progress dialog (if applicable) or from the Progress view just like any other task in Eclipse.</p>
+
 <hr>
 
 <p class="nan2">Miscellaneous</a>
@@ -119,7 +122,9 @@
 
 <p>The OSX platform specific signing of the STS and GGTS Mac apps is not yet updated to a Mavericks infrastructure. Therefore running
 STS/GGTS on OSX 10.9.5 and OSX 10.10 will cause Gatekeeper to complain about STS/GGTS. In that case, please go to the System Preferences
--> Security and do "Open Anyway". Once you started STS/GGTS at least once successfully, OSX will remember your decision about this app and will not ask you again.</p>
+-> Security and do "Open Anyway". If that doesn't work, you have to disable the Gatekeeper checks to allow every app to run. Then start STS/GGTS.
+Once you started STS/GGTS at least once successfully, OSX will remember your decision about this app, will not ask you again, and you can switch
+back Gatekeeper security settings to a more secure mode again.</p>
 <br/>
 
 <h3>Check for Updates throws an error when updating from STS 3.5.1</h3>
