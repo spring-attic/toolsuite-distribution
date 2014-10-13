@@ -2,7 +2,7 @@
 <feature
       id="org.springsource.ggts"
       label="%featureName"
-      version="3.6.2.qualifier"
+      version="3.6.3.qualifier"
       provider-name="%providerName"
       plugin="org.springsource.ggts">
 
@@ -21,9 +21,9 @@
    <requires>
       <import feature="org.eclipse.mylyn_feature" version="3.4.0.v20100601" match="compatible"/>
       <import feature="org.eclipse.mylyn.context_feature" version="3.4.0.v20100601" match="compatible"/>
-      <import feature="org.springsource.ide.eclipse.commons" version="3.6.2.qualifier"/>
-      <import feature="org.springsource.ide.eclipse.dashboard" version="3.6.2.qualifier"/>
-      <import feature="org.grails.ide.eclipse" version="3.6.2.qualifier"/>
+      <import feature="org.springsource.ide.eclipse.commons" version="3.6.3.qualifier"/>
+      <import feature="org.springsource.ide.eclipse.dashboard" version="3.6.3.qualifier"/>
+      <import feature="org.grails.ide.eclipse" version="3.6.3.qualifier"/>
    </requires>
 
    <plugin
