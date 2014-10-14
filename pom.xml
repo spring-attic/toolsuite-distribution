@@ -515,6 +515,95 @@ Optional parameters:
 		</profile>
 
 		<profile>
+			<id>e45</id>
+			<properties>
+				<product.project.sts>org.springsource.sts.product.e4.4</product.project.sts>
+				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
+				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.5</p2.repository.name>
+				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
+				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
+			</properties>
+			<repositories>
+				<repository>
+					<id>luna</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/mars/</url>
+				</repository>
+				<repository>
+					<id>platform</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
+				</repository>
+<!--				<repository>
+				<id>luna-updates</id>
+				<layout>p2</layout>
+				<url>http://download.eclipse.org/releases/maintenance/</url>
+				</repository> -->
+<!--				<repository>
+					<id>platform-i-builds</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/eclipse/updates/4.4-I-builds</url>
+				</repository> -->
+				<repository>
+					<id>orbit</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
+				</repository>
+				<repository>
+					<id>mylyn</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+				</repository>
+				<repository>
+					<id>ajdt</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/tools/ajdt/44/dev/update</url>
+				</repository>
+				<repository>
+					<id>swtbot</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+				</repository>
+				<repository>
+					<id>groovy</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.4</url>
+				</repository>
+				<repository>
+					<id>atlassian</id>
+					<layout>p2</layout>
+					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+				</repository>
+				<repository>
+					<id>maven-wtp</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/m2e-wtp/releases/luna</url>
+				</repository>
+				<repository>
+					<id>maven-extras-mirror</id>
+					<layout>p2</layout>
+					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+				</repository>
+				<repository>
+					<id>maven-egit</id>
+					<layout>p2</layout>
+					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
+				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+				</repository>
+			</repositories>
+			<modules>
+				<module>features/org.springsource.sts.package.e4.5</module>
+				<module>features/org.springsource.ggts.package.e4.5</module>
+				<module>features/org.springsource.sts.product.e4.4</module>
+				<module>features/org.springsource.ggts.product</module>
+			</modules>
+		</profile>
+
+		<profile>
 			<id>spring-site</id>
 			<modules>
 				<module>releng/org.springsource.sts.site</module>
