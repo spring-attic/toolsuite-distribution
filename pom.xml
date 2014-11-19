@@ -505,6 +505,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
 				</repository>
+				<repository>
+					<id>cloudfoundry-eclipse</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/release/TOOLS/cloudfoundry/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.4</module>
@@ -593,6 +598,11 @@ Optional parameters:
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+				</repository>
+				<repository>
+					<id>cloudfoundry-eclipse</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/release/TOOLS/cloudfoundry/</url>
 				</repository>
 			</repositories>
 			<modules>
