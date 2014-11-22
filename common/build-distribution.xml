@@ -38,11 +38,6 @@
 <!--		<antcall target="download-springroo"/> -->
 
 		<antcall target="create-sts-bundle-archive-tar">
-			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86"/>
-			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa.tar.gz"/>
-		</antcall>
-
-		<antcall target="create-sts-bundle-archive-tar">
 			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86_64"/>
 			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.tar.gz"/>
 		</antcall>
@@ -71,11 +66,6 @@
 	<target name="create-bundled-distribution-ggts">
 		<antcall target="download-tcserver"/>
 		<antcall target="download-grails"/>
-
-		<antcall target="create-ggts-bundle-archive-tar">
-			<param name="path" value="org.springsource.ggts.ide/macosx/cocoa/x86"/>
-			<param name="destName" value="${project.build.directory}/groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa.tar.gz"/>
-		</antcall>
 
 		<antcall target="create-ggts-bundle-archive-tar">
 			<param name="path" value="org.springsource.ggts.ide/macosx/cocoa/x86_64"/>

@@ -16,7 +16,6 @@
 		<dist.accessKey>${accessKey}</dist.accessKey>
 		<dist.secretKey>${secretKey}</dist.secretKey>
 
-		<build.destination.cocoa.x86>target/products/org.springsource.ggts.ide/macosx/cocoa/x86</build.destination.cocoa.x86>
 		<build.destination.cocoa.x86_64>target/products/org.springsource.ggts.ide/macosx/cocoa/x86_64</build.destination.cocoa.x86_64>
 		<build.destination.linux.x86>target/products/org.springsource.ggts.ide/linux/gtk/x86</build.destination.linux.x86>
 		<build.destination.linux.x86_64>target/products/org.springsource.ggts.ide/linux/gtk/x86_64</build.destination.linux.x86_64>
@@ -160,13 +159,6 @@
 						<phase>package</phase>
 						<configuration>
 							<target>
-								<propertyfile file="${build.destination.cocoa.x86}/ggts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
-								  <entry  key="name" value="Groovy/Grails Tool Suite"/>
-								  <entry  key="id" value="org.springsource.ggts"/>
-								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
-								  <entry  key="package" value="groovy-grails-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa.tar.gz"/>
-								</propertyfile>
-								
 								<propertyfile file="${build.destination.cocoa.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier}/.eclipseproduct">
 								  <entry  key="name" value="Groovy/Grails Tool Suite"/>
 								  <entry  key="id" value="org.springsource.ggts"/>
@@ -384,15 +376,6 @@
 									<arg value="--verbose"/>
 								    <arg value="-s"/>
 								    <arg value="Developer ID Application: VMware, Inc."/>
-								    <arg value="${build.destination.cocoa.x86}/ggts-${unqualifiedVersion}.${p2.qualifier}/GGTS.app"/>
-								</exec>
-
-								<exec executable="codesign">
-								    <arg value="--force"/>
-									<arg value="--deep"/>
-									<arg value="--verbose"/>
-								    <arg value="-s"/>
-								    <arg value="Developer ID Application: VMware, Inc."/>
 								    <arg value="${build.destination.cocoa.x86_64}/ggts-${unqualifiedVersion}.${p2.qualifier}/GGTS.app"/>
 								</exec>
 
@@ -436,11 +419,6 @@
 						<pomDependencies>consider</pomDependencies>
 						<ignoreTychoRepositories>true</ignoreTychoRepositories>
 						<environments>
-							<environment>
-								<os>macosx</os>
-								<ws>cocoa</ws>
-								<arch>x86</arch>
-							</environment>
 							<environment>
 								<os>macosx</os>
 								<ws>cocoa</ws>
