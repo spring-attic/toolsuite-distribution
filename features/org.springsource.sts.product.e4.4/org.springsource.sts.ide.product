@@ -30899,16 +30899,21 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.springsource.sts.package"/>
 
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
+
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
-      <feature id="org.maven.ide.eclipse.ajdt.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.wtp.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.uaa.feature" installMode="root"/>
-      <feature id="org.sonatype.m2e.buildhelper.feature" installMode="root"/>
-      <feature id="org.sonatype.m2e.mavenarchiver.feature" installMode="root"/>
-      <feature id="org.sonatype.m2e.egit.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.wtp.jaxrs.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.wtp.jpa.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.wtp.jsf.feature" installMode="root"/>
+
+      <feature id="org.maven.ide.eclipse.ajdt.feature" installMode="root"/>
+      <feature id="org.sonatype.m2e.buildhelper.feature" installMode="root"/>
+      <feature id="org.sonatype.m2e.mavenarchiver.feature" installMode="root"/>
+      <feature id="org.sonatype.m2e.egit.feature" installMode="root"/>
+	  
+      <feature id="org.cloudfoundry.ide.eclipse.server" installMode="root"/>
+
+      <feature id="org.springframework.ide.eclipse.uaa.feature" installMode="root"/>	  
    </features>
 
    <configurations>
