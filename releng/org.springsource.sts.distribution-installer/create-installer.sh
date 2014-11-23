@@ -246,7 +246,7 @@ STS_PRODUCT_NAME='Spring Tool Suite'
 STS_SHORTNAME=spring-tool-suite
 INSTALLER_DIR=sts
 
-processTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa 
+# processTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa 
 processTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar macosx.cocoa.x86_64 
 processTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux 
 processTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar linux.x86_64 
@@ -254,22 +254,22 @@ processZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32
 processZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64
 
 
-ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep tc-server-developer`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$STS_ROOTFOLDER/ | grep tc-server-developer`
 TCS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$STS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
 TOMCAT7_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-8`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$STS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-8`
 TOMCAT8_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep roo`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$STS_ROOTFOLDER/ | grep roo`
 ROO_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
 
-#ZIP_NAME=`ls -a macosx.cocoa/ | grep grails`
+#ZIP_NAME=`ls -a macosx.cocoa.x86_64/ | grep grails`
 #GRAILS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\+\.[0-9]\+\.\?[A-Z,a-z,0-9]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$STS_ROOTFOLDER/ | grep maven`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$STS_ROOTFOLDER/ | grep maven`
 MAVEN_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\.[0-9]\).*'`
 #MAVEN_VERSION=3.0.4
 
@@ -282,7 +282,7 @@ echo grails.version=$GRAILS_VERSION
 echo maven.version=$MAVEN_VERSION
 
 
-createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.6.0 32bit
+# createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.6.0 32bit
 createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar macosx.cocoa.x86_64 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64 izpack.macinstall 1.6.0 64bit
 
 createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk izpack.linuxinstall 1.6.0 32bit
@@ -291,7 +291,7 @@ createInstallerTar spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk
 createInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32 izpack.windowsinstall 1.6.0 32bit
 createInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64 spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64 izpack.windowsinstall 1.6.0 64bit
 
-wrapInstallerDmg spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer
+# wrapInstallerDmg spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer
 wrapInstallerDmg spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer
 
 wrapInstallerSh spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-installer
@@ -300,7 +300,7 @@ wrapInstallerSh spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x8
 wrapInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-installer
 wrapInstallerZip spring-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64-installer
 
-rm -rf macosx.cocoa
+# rm -rf macosx.cocoa
 rm -rf macosx.cocoa.x86_64
 rm -rf linux
 rm -rf linux.x86_64

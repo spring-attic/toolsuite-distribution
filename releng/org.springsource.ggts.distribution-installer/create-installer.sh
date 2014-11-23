@@ -246,7 +246,7 @@ STS_PRODUCT_NAME='Groovy-Grails Tool Suite'
 STS_SHORTNAME=groovy-grails-tool-suite
 INSTALLER_DIR=ggts
 
-processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa 
+# processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa 
 processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar macosx.cocoa.x86_64 
 processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64.tar linux.x86_64 
 processTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux 
@@ -254,19 +254,19 @@ processZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip 
 processZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64 
 
 
-ZIP_NAME=`ls -a macosx.cocoa/$GGTS_ROOTFOLDER/ | grep tc-server-developer`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$GGTS_ROOTFOLDER/ | grep tc-server-developer`
 TCS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$GGTS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$GGTS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-7`
 TOMCAT7_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$GGTS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-8`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$GGTS_ROOTFOLDER/pivotal-tc-server-developer-$TCS_VERSION/ | grep tomcat-8`
 TOMCAT8_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[-,A-Z,a-z,0-9,.]*\).*'`
 
-#ZIP_NAME=`ls -a macosx.cocoa/$GGTS_ROOTFOLDER/ | grep roo`
+#ZIP_NAME=`ls -a macosx.cocoa.x86_64/$GGTS_ROOTFOLDER/ | grep roo`
 #ROO_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]*\.[0-9]*\.[A-Z,a-z,0-9]*\).*'`
 
-ZIP_NAME=`ls -a macosx.cocoa/$GGTS_ROOTFOLDER/ | grep grails`
+ZIP_NAME=`ls -a macosx.cocoa.x86_64/$GGTS_ROOTFOLDER/ | grep grails`
 GRAILS_VERSION=`expr "$ZIP_NAME" : '.*\([0-9]\.[0-9]\.[0-9]\).*'`
 #GRAILS_VERSION=2.1.0
 
@@ -283,7 +283,7 @@ echo grails.version=$GRAILS_VERSION
 echo maven.version=$MAVEN_VERSION
 
 
-createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.6.0 32bit
+# createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa.tar macosx.cocoa groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa izpack.macinstall 1.6.0 32bit
 createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64.tar macosx.cocoa.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64 izpack.macinstall 1.6.0 64bit
 
 createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk.tar linux groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk izpack.linuxinstall 1.6.0 32bit
@@ -292,7 +292,7 @@ createInstallerTar groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-li
 createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32.zip win32 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32 izpack.windowsinstall 1.6.0 32bit
 createInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64.zip win32.x86_64 groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64 izpack.windowsinstall 1.6.0 64bit
 
-wrapInstallerDmg groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer
+# wrapInstallerDmg groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-installer
 wrapInstallerDmg groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-macosx-cocoa-x86_64-installer
 
 wrapInstallerSh groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux-gtk-x86_64-installer
@@ -301,7 +301,7 @@ wrapInstallerSh groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-linux
 wrapInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-installer
 wrapInstallerZip groovy-grails-tool-suite-$RELEASE_VERSION-$ECLIPSE_VERSION-win32-x86_64-installer
 
-rm -rf macosx.cocoa
+# rm -rf macosx.cocoa
 rm -rf macosx.cocoa.x86_64
 rm -rf linux
 rm -rf linux.x86_64
