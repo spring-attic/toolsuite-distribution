@@ -99,6 +99,44 @@
 
 <hr>
 
+<p class="nan2">Gradle Tooling</p>
+
+<p class="nan3">Gradle Model Manager</p>
+
+<p>The Gradle model manager which forwards Gradle model build requests to the Gradle Tooling API and caches their results has been completely
+rewritten with a comprehensive regression suite. It should now be more stable and reliable. For example users should be much less likely
+to run into the dreaded `InconsistentProjectHierarchyException`.</p>
+
+<p class="nan3">Convert Jar Dependencies to Project Dependencies</p>
+
+<p>This feature will automatically convert a 'jar' dependency in a Gradle project's classpath container into 
+an Eclipse project dependency if the corresponding Gradle or Maven project exists in the same workspace.</p>
+
+<p>This is an old feature which has been improved in this releass:</p>
+
+<ul>
+   <li>Now it also works for dependencies to Gradle projects. (Used to work only for Maven projects). 
+   <li>A project open/close listener refreshes the mapping when projects are opened/closed.
+</ul> 
+
+    <img src="img/remap-project-open.png"></img>
+    <img src="img/remap-project-closed.png"></img>
+
+<p>These functionalities can be enabled/disabled from the Gradle preferences page</p>
+
+<br/>
+<center><img src="img/gradle-preferences.png"></img></center>
+<br/>
+ 
+Note that remmaping dependencies to Gradle projects is still experimental and is disabled by default. You must explicitly 
+enable it to try it out. The main reason for this is that building the `ProjectPublications` models for large workspaces 
+with many projects is very slow. We expect to be able to fix this issue in the next release.</p>
+
+<p class="nan3">
+
+<p class="nan2">Groovy and Grails Tooling</p>
+
+
 <h2>Useful Links</h2>
 
 <p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
