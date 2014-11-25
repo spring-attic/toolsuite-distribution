@@ -6,7 +6,7 @@
 	<property name="tcserver.version" value="3.0.0.RELEASE" />
 	<property name="tcserver.version.path" value="3.0.0" />
 	<property name="maven.version" value="3.0.5" />
-	<property name="grails.version" value="2.4.3" />
+	<property name="grails.version" value="2.4.4" />
 	
 	<property name="sts-rootfolder" value="sts-bundle" />
 	<property name="ggts-rootfolder" value="ggts-bundle" />
