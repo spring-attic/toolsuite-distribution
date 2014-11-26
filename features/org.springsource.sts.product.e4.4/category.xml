@@ -39,6 +39,13 @@
 	<category name="Uncategorized"/>
   </feature>
 
+  <!-- Eclipse 4.4.1 patch feature -->
+  <feature
+	id="org.eclipse.e4.rcp.R441patch"
+	version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
   <!-- Eclipse Integration Commons -->
   <category-def name="Core / Eclipse Integration Commons" label="Core / Eclipse Integration Commons"/>
   <category-def name="Resources / Eclipse Integration Commons" label="Resources / Eclipse Integration Commons"/>
