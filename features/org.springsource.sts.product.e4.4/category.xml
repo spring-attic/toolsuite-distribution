@@ -246,19 +246,6 @@
  	</feature>
 
 	<!-- third-party dependencies -->
-	<feature
-		id="org.eclipse.zest"
-		version="0.0.0">
-		<category name="Uncategorized"/>
-	</feature>
-
-	<bundle id="com.google.protobuf" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="com.google.protobuf.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-
 	<bundle id="com.springsource.util.common" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
@@ -273,43 +260,10 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
-	<bundle id="javax.activation" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.annotation" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.annotation.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.el" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.el.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.inject" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.inject.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
 	<bundle id="javax.jms" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
 	<bundle id="javax.jms.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.mail" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.xml.ws" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.xml.bind" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="javax.xml.stream" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
 
@@ -317,40 +271,7 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
-	<bundle id="org.apache.commons.codec" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.commons.codec.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.commons.collections" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.commons.collections.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.commons.io" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
 	<bundle id="org.apache.commons.io.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.commons.logging" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.commons.logging.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.httpcomponents.httpclient" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.httpcomponents.httpclient.source" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.httpcomponents.httpcore" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.apache.httpcomponents.httpcore.source" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
 	
@@ -367,14 +288,6 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
-	<bundle id="org.json" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	
-	<bundle id="org.slf4j.api" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	
 	<bundle id="org.aspectj.runtime" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
