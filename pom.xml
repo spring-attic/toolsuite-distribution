@@ -508,7 +508,7 @@ Optional parameters:
 				<repository>
 					<id>cloudfoundry-eclipse</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/cloudfoundry/</url>
+					<url>http://dist.springsource.com/release/TOOLS/cloudfoundry/1.7.4</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -602,7 +602,7 @@ Optional parameters:
 				<repository>
 					<id>cloudfoundry-eclipse</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/cloudfoundry/</url>
+					<url>http://dist.springsource.com/release/TOOLS/cloudfoundry/1.7.4</url>
 				</repository>
 			</repositories>
 			<modules>
