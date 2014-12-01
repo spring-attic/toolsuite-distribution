@@ -119,7 +119,7 @@
 <center><img src="img/integration-extensions.png"></img></center>
 
 <p class="nan3">@RestController now supported</p>
-<p>@Controller annotations are supported by the Spring tooling for a long time, enablling the request mapping overviews that you are familiar with. We added the same support for the @RestController annotation. Request mappings on those controllers now show up in the existing request mapping views as well.</p>
+<p>@Controller annotations have been supported in the Spring tooling for a long time, facilitating the request mapping overviews that you are familiar with. STS now provides the same support for the @RestController annotation. Request mappings on those controllers now show up in the existing request mapping views as well.</p>
 
 <hr>
 
@@ -132,7 +132,13 @@
 <br/>
 
 <hr>
+<p class="nan2">Groovy & Grails</p>
+<p class="nan3">Groovy 2.3.7 support</p>
+<p>Groovy-Eclipse 2.9.1 is included in GGTS which provides support for Groovy 2.3.7. See the <a href="https://github.com/groovy/groovy-eclipse/wiki/Groovy-Eclipse-2.9.1-Release-Notes">release notes</a> for Groovy-Eclipse for more details.</p>
+<p class="nan3">Grails</p>
+<p>Grails 2.4.4 is now included in GGTS.</p>
 
+<hr>
 <p class="nan2">Gradle Tooling</p>
 
 <p class="nan3">Gradle Model Manager</p>
@@ -146,7 +152,7 @@ to run into the dreaded `InconsistentProjectHierarchyException`.</p>
 <p>This feature will automatically convert a 'jar' dependency in a Gradle project's classpath container into 
 an Eclipse project dependency if the corresponding Gradle or Maven project exists in the same workspace.</p>
 
-<p>This is an old feature which has been improved in this releass:</p>
+<p>This is an old feature which has been improved in this release:</p>
 
 <ul>
    <li>Now it also works for dependencies to Gradle projects. (Used to work only for Maven projects). 
@@ -156,13 +162,13 @@ an Eclipse project dependency if the corresponding Gradle or Maven project exist
     <img src="img/remap-project-open.png"></img>
     <img src="img/remap-project-closed.png"></img>
 
-<p>These functionalities can be enabled/disabled from the Gradle preferences page</p>
+<p>These capabilities can be enabled/disabled from the Gradle preferences page</p>
 
 <br/>
 <center><img src="img/gradle-preferences.png"></img></center>
 <br/>
  
-Note that remmaping dependencies to Gradle projects is still experimental and is disabled by default. You must explicitly 
+Note that remapping dependencies to Gradle projects is still experimental and is disabled by default. You must explicitly 
 enable it to try it out. The main reason for this is that building the `ProjectPublications` models for large workspaces 
 with many projects is very slow. We expect to be able to fix this issue in the next release.</p>
 
