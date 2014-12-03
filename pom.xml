@@ -522,7 +522,7 @@ Optional parameters:
 		<profile>
 			<id>e45</id>
 			<properties>
-				<product.project.sts>org.springsource.sts.product.e4.4</product.project.sts>
+				<product.project.sts>org.springsource.sts.product.e4.5</product.project.sts>
 				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.5</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
@@ -608,7 +608,7 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e4.5</module>
 				<module>features/org.springsource.ggts.package.e4.5</module>
-				<module>features/org.springsource.sts.product.e4.4</module>
+				<module>features/org.springsource.sts.product.e4.5</module>
 				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
