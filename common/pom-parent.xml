@@ -74,12 +74,12 @@
 		<dist.platform.version></dist.platform.version>
 		<dist.platform.id></dist.platform.id>
 		<dist.target></dist.target>
-		<dist.pathpostfix>nightly/${dist.target}</dist.pathpostfix>
+		<dist.pathpostfix>nightly/${dist.target.major}</dist.pathpostfix>
 		<dist.properties>dist.properties</dist.properties>
 
 		<dist.path.repo>${dist.type}/TOOLS/${dist.pathpostfix}</dist.path.repo>
 
-		<dist.pathpostfix.product>nightly/dist/${dist.target}</dist.pathpostfix.product>
+		<dist.pathpostfix.product>nightly/dist/${dist.target.major}</dist.pathpostfix.product>
 		<dist.path.product>${dist.type}/${dist.key}/${dist.pathpostfix.product}</dist.path.product>
 
 		<skip.source.check>true</skip.source.check>
