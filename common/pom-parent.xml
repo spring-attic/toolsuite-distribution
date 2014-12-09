@@ -78,8 +78,8 @@
 		<dist.properties>dist.properties</dist.properties>
 
 		<dist.path.repo>${dist.type}/TOOLS/${dist.pathpostfix}/${dist.target.major}</dist.path.repo>
-		<dist.path.repo.sts>${dist.type}/TOOLS/${dist.pathpostfix}/sts/${dist.target.major}</dist.path.repo>
-		<dist.path.repo.ggts>${dist.type}/TOOLS/${dist.pathpostfix}/ggts/${dist.target.major}</dist.path.repo>
+		<dist.path.repo.sts>${dist.type}/TOOLS/${dist.pathpostfix}/sts/${dist.target.major}</dist.path.repo.sts>
+		<dist.path.repo.ggts>${dist.type}/TOOLS/${dist.pathpostfix}/ggts/${dist.target.major}</dist.path.repo.ggts>
 
 		<dist.pathpostfix.product>nightly/dist/${dist.target.major}</dist.pathpostfix.product>
 		<dist.path.product>${dist.type}/${dist.key}/${dist.pathpostfix.product}</dist.path.product>
