@@ -127,6 +127,9 @@
 						<configuration>
 							<skip>${skip.update-nightly-download-page}</skip>
 							<target>
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
+
 								<copy file="../../common/html/nightly-generic-snippet.html" tofile="../../common/html/ggts-nightly-${dist.target.major}.html"/>
 
 								<replace file="../../common/html/ggts-nightly-${dist.target.major}.html" token="@QUALIFIER@" value="${unqualifiedVersion}.${p2.qualifier}" summary="yes" />
