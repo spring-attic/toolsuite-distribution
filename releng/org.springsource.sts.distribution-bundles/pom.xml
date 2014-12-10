@@ -128,11 +128,18 @@
 						<configuration>
 							<skip>${skip.update-nightly-download-page}</skip>
 							<target>
-								<ant antfile="../../common/build-distribution.xml" target="upload-nightly-website-sts">
-									<property name="unqualifiedVersion" value="${unqualifiedVersion}" />
-									<property name="p2.qualifier" value="${p2.qualifier}" />
-									<property name="product.folder.sts" value="${product.project.sts}" />
-								</ant>
+								<copy file="../../common/html/nightly-generic-snippet.html" tofile="../../common/html/sts-nightly-${dist.target.major}.html"/>
+		
+								<replace file="../../common/html/sts-nightly-${dist.target.major}.html" token="@QUALIFIER@" value="${unqualifiedVersion}.${p2.qualifier}" summary="yes" />
+								<replace file="../../common/html/sts-nightly-${dist.target.major}.html" token="@TARGET@" value="${dist.target}" summary="yes" />
+								<replace file="../../common/html/sts-nightly-${dist.target.major}.html" token="@MAJOR-TARGET@" value="${dist.target.major}" summary="yes" />
+								<replace file="../../common/html/sts-nightly-${dist.target.major}.html" token="@VARIANT@" value="spring" summary="yes" />
+
+								<s3 accessKey="${accessKey}" secretKey="${secretKey}">
+									<upload bucketName="${dist.bucket}" file="../../common/html/sts-nightly-${dist.target.major}.html"
+										toFile="snapshot/STS/sts-nightly-${dist.target.major}.html" publicRead="true">
+									</upload>
+								</s3>
 							</target>
 						</configuration>
 						<goals>

@@ -226,34 +226,4 @@
 		</if>
 	</target>
 
-	<target name="upload-nightly-website-sts">
-		<copy file="${project.build.directory}/../../../common/html/nightly-generic-snippet.html" tofile="${project.build.directory}/../../../common/html/sts-nightly-${dist.target.major}.html"/>
-		
-		<replace file="${project.build.directory}/../../../common/html/sts-nightly-${dist.target.major}.html" token="@QUALIFIER@" value="${unqualifiedVersion}.${p2.qualifier}" summary="yes" />
-		<replace file="${project.build.directory}/../../../common/html/sts-nightly-${dist.target.major}.html" token="@TARGET@" value="${dist.target}" summary="yes" />
-		<replace file="${project.build.directory}/../../../common/html/sts-nightly-${dist.target.major}.html" token="@MAJOR-TARGET@" value="${dist.target.major}" summary="yes" />
-		<replace file="${project.build.directory}/../../../common/html/sts-nightly-${dist.target.major}.html" token="@VARIANT@" value="spring" summary="yes" />
-
-		<s3 accessKey="${accessKey}" secretKey="${secretKey}">
-			<upload bucketName="${dist.bucket}" file="${project.build.directory}/../../../common/html/sts-nightly-${dist.target.major}.html"
-				toFile="snapshot/STS/sts-nightly-${dist.target.major}.html" publicRead="true">
-			</upload>
-		</s3>
-	</target>
-	
-	<target name="upload-nightly-website-ggts">
-		<copy file="${project.build.directory}/../../../common/html/nightly-generic-snippet.html" tofile="${project.build.directory}/../../../common/html/ggts-nightly-${dist.target.major}.html"/>
-
-		<replace file="${project.build.directory}/../../../common/html/ggts-nightly-${dist.target.major}.html" token="@QUALIFIER@" value="${unqualifiedVersion}.${p2.qualifier}" summary="yes" />
-		<replace file="${project.build.directory}/../../../common/html/ggts-nightly-${dist.target.major}.html" token="@TARGET@" value="${dist.target}" summary="yes" />
-		<replace file="${project.build.directory}/../../../common/html/ggts-nightly-${dist.target.major}.html" token="@MAJOR-TARGET@" value="${dist.target.major}" summary="yes" />
-		<replace file="${project.build.directory}/../../../common/html/ggts-nightly-${dist.target.major}.html" token="@VARIANT@" value="groovy-grails" summary="yes" />
-
-		<s3 accessKey="${accessKey}" secretKey="${secretKey}">
-			<upload bucketName="${dist.bucket}" file="${project.build.directory}/../../../common/html/ggts-nightly-${dist.target.major}.html"
-				toFile="snapshot/STS/ggts-nightly-${dist.target.major}.html" publicRead="true">
-			</upload>
-		</s3>
-	</target>
-	
 </project>
