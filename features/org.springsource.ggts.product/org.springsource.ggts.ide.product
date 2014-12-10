@@ -21865,8 +21865,6 @@ Alternatively, the Source Files may accompany the Pivotal product.
 
    <features>
       <feature id="org.springsource.ggts.package"/>
-
-      <feature id="org.springframework.ide.eclipse.uaa.feature" installMode="root"/>
    </features>
 
    <configurations>

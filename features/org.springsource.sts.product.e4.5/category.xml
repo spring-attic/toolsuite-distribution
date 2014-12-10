@@ -44,12 +44,6 @@
   <category-def name="Resources / Eclipse Integration Commons" label="Resources / Eclipse Integration Commons"/>
 
   <feature
-	id="org.springframework.ide.eclipse.uaa.feature"
-	version="0.0.0">
-	<category name="Core / Eclipse Integration Commons" />
-  </feature>
-
-  <feature
 	id="org.springsource.ide.eclipse.dashboard"
 	version="0.0.0">
 	<category name="Core / Eclipse Integration Commons" />
@@ -61,12 +55,6 @@
     <category name="Core / Eclipse Integration Commons" />
   </feature>
 	
-  <feature
-	id="org.springframework.ide.eclipse.uaa.feature.source"
-	version="0.0.0">
-	<category name="Resources / Eclipse Integration Commons" />
-  </feature>
-
   <feature
 	id="org.springsource.ide.eclipse.commons"
 	version="0.0.0">
@@ -377,9 +365,6 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
-	<bundle id="org.springframework.uaa.client" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
 	<bundle id="org.springframework.roo.wrapping.bcpg-jdk15" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
