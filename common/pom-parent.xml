@@ -53,7 +53,7 @@
 	<properties>
 		<p2.qualifier>SNAPSHOT</p2.qualifier>
 		<p2.sign>false</p2.sign>
-		<p2.repository.name>SpringSource Tool Suite</p2.repository.name>
+		<p2.repository.name>Spring Tool Suite</p2.repository.name>
 
 		<!-- Signing -->
 		<signing.skip>true</signing.skip>
@@ -65,7 +65,7 @@
 		<!-- OSX app signing -->
 		<skip.osx.signing>true</skip.osx.signing>
 
-		<dist.name>SpringSource Tool Suite</dist.name>
+		<dist.name>Spring Tool Suite</dist.name>
 		<dist.project>springsource-tool-suite</dist.project>
 		<dist.key>STS</dist.key>
 		<dist.type>snapshot</dist.type>
@@ -74,15 +74,15 @@
 		<dist.platform.version></dist.platform.version>
 		<dist.platform.id></dist.platform.id>
 		<dist.target></dist.target>
-		<dist.pathpostfix>nightly</dist.pathpostfix>
 		<dist.properties>dist.properties</dist.properties>
 
-		<dist.path.repo>${dist.type}/TOOLS/${dist.pathpostfix}/${dist.target.major}</dist.path.repo>
-		<dist.path.repo.sts>${dist.type}/TOOLS/${dist.pathpostfix}/sts/${dist.target.major}</dist.path.repo.sts>
-		<dist.path.repo.ggts>${dist.type}/TOOLS/${dist.pathpostfix}/ggts/${dist.target.major}</dist.path.repo.ggts>
+		<dist.pathpostfix.repo>nightly</dist.pathpostfix>
+		<dist.pathpostfix.product>nightly</dist.pathpostfix>
 
-		<dist.pathpostfix.product>nightly/dist/${dist.target.major}</dist.pathpostfix.product>
-		<dist.path.product>${dist.type}/${dist.key}/${dist.pathpostfix.product}</dist.path.product>
+		<dist.path.repo>${dist.type}/TOOLS/${dist.pathpostfix.repo}/${dist.target.major}</dist.path.repo>
+		<dist.path.repo.sts>${dist.type}/TOOLS/${dist.pathpostfix.repo}/sts/${dist.target.major}</dist.path.repo.sts>
+		<dist.path.repo.ggts>${dist.type}/TOOLS/${dist.pathpostfix.repo}/ggts/${dist.target.major}</dist.path.repo.ggts>
+		<dist.path.product>${dist.type}/${dist.key}/${dist.pathpostfix.product}/dist/${dist.target.major}</dist.path.product>
 
 		<skip.source.check>true</skip.source.check>
 		<skip.update-nightly-download-page>true</skip.update-nightly-download-page>
