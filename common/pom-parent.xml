@@ -76,8 +76,8 @@
 		<dist.target></dist.target>
 		<dist.properties>dist.properties</dist.properties>
 
-		<dist.pathpostfix.repo>nightly</dist.pathpostfix>
-		<dist.pathpostfix.product>nightly</dist.pathpostfix>
+		<dist.pathpostfix.repo>nightly</dist.pathpostfix.repo>
+		<dist.pathpostfix.product>nightly</dist.pathpostfix.product>
 
 		<dist.path.repo>${dist.type}/TOOLS/${dist.pathpostfix.repo}/${dist.target.major}</dist.path.repo>
 		<dist.path.repo.sts>${dist.type}/TOOLS/${dist.pathpostfix.repo}/sts/${dist.target.major}</dist.path.repo.sts>
