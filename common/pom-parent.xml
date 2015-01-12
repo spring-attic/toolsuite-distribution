@@ -68,7 +68,6 @@
 		<dist.name>Spring Tool Suite</dist.name>
 		<dist.project>springsource-tool-suite</dist.project>
 		<dist.key>STS</dist.key>
-		<dist.type>snapshot</dist.type>
 		<dist.bucket>dist.springsource.com</dist.bucket>
 		<dist.platform.name></dist.platform.name>
 		<dist.platform.version></dist.platform.version>
@@ -76,16 +75,7 @@
 		<dist.target></dist.target>
 		<dist.properties>dist.properties</dist.properties>
 
-		<dist.pathpostfix.repo>nightly</dist.pathpostfix.repo>
-		<dist.pathpostfix.product>nightly</dist.pathpostfix.product>
-
-		<dist.path.repo>${dist.type}/TOOLS/${dist.pathpostfix.repo}/${dist.target.major}</dist.path.repo>
-		<dist.path.repo.sts>${dist.type}/TOOLS/${dist.pathpostfix.repo}/sts/${dist.target.major}</dist.path.repo.sts>
-		<dist.path.repo.ggts>${dist.type}/TOOLS/${dist.pathpostfix.repo}/ggts/${dist.target.major}</dist.path.repo.ggts>
-		<dist.path.product>${dist.type}/${dist.key}/${dist.pathpostfix.product}/dist/${dist.target.major}</dist.path.product>
-
 		<skip.source.check>true</skip.source.check>
-		<skip.update-nightly-download-page>true</skip.update-nightly-download-page>
 
 		<test.vmargs>${test.osvmargs}</test.vmargs>
 		<test.osvmargs></test.osvmargs>
@@ -105,6 +95,46 @@
 	</properties>
 
 	<profiles>
+		
+		<profile>
+			<id>snapshot</id>
+			<properties>
+				<dist.type>snapshot</dist.type>
+
+				<dist.path.repo>${dist.type}/TOOLS/nightly/${dist.target.major}</dist.path.repo>
+				<dist.path.repo.sts>${dist.type}/TOOLS/nightly/sts/${dist.target.major}</dist.path.repo.sts>
+				<dist.path.repo.ggts>${dist.type}/TOOLS/nightly/ggts/${dist.target.major}</dist.path.repo.ggts>
+				<dist.path.product>${dist.type}/STS/nightly/dist/${dist.target.major}</dist.path.product>
+				<skip.update-nightly-download-page>true</skip.update-nightly-download-page>
+			</properties>
+		</profile>
+		
+		<profile>
+			<id>milestone</id>
+			<properties>
+				<dist.type>milestone</dist.type>
+
+				<dist.path.repo>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/${dist.target.major}</dist.path.repo>
+				<dist.path.repo.sts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/sts/${dist.target.major}</dist.path.repo.sts>
+				<dist.path.repo.ggts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/ggts/${dist.target.major}</dist.path.repo.ggts>
+				<dist.path.product>${dist.type}/STS/${unqualifiedVersion}.${p2.qualifier}/dist/${dist.target.major}</dist.path.product>
+				<skip.update-nightly-download-page>false</skip.update-nightly-download-page>
+			</properties>
+		</profile>
+		
+		<profile>
+			<id>release</id>
+			<properties>
+				<dist.type>release</dist.type>
+
+				<dist.path.repo>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/${dist.target.major}</dist.path.repo>
+				<dist.path.repo.sts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/sts/${dist.target.major}</dist.path.repo.sts>
+				<dist.path.repo.ggts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/ggts/${dist.target.major}</dist.path.repo.ggts>
+				<dist.path.product>${dist.type}/STS/${unqualifiedVersion}.${p2.qualifier}/dist/${dist.target.major}</dist.path.product>
+				<skip.update-nightly-download-page>false</skip.update-nightly-download-page>
+			</properties>
+		</profile>
+		
 		<profile>
 			<id>e35</id>
 			<properties>
