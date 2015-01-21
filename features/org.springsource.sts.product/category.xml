@@ -452,14 +452,4 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
-	<bundle id="org.springframework.roo.wrapping.bcpg-jdk15" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.springframework.roo.wrapping.bcprov-jdk15" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-	<bundle id="org.springframework.roo.wrapping.json-simple" version="0.0.0">
-		<category name="Uncategorized"/>
-	</bundle>
-
 </site>
