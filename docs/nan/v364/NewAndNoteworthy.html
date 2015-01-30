@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>Spring Tool Suite - Groovy/Grails Tool Suite 3.6.3.SR1 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite & Groovy/Grails Tool Suite 3.6.3.SR1: New and Noteworthy</h1>
+
+<p class="nan2">General Updates</p>
+
+<p class="nan3">Something...</p>
+<p>Very interesting general stuff.</p>
+
+<p class="nan2">Spring Boot Support</p>
+
+<p class="nan3">Spring Properties Editor</p>
+
+<p><em>The Spring Properties Editor</em> is a specialization of the default Eclipse properties editor.
+It understands Spring Boot's configuration metadata (this is information stored in "spring-configuration-metadata.json" 
+files included in the jars of Spring Boot Dependencies). The editor provides the following features:</p>
+<br>
+
+<p>The <b>Content Assistant</b> suggests auto-completions as you type.</p> 
+<img src="img/property-editor-content-assist.png"></img>
+<br><br>
+
+<p>An <b>Info Hover</b> is shown when you hover the mouse over a known property name.</p>
+<img src="img/property-editor-info-hover.png"></img>
+<br><br>
+
+<p>Use <b>CTRL-CLICK navigation</b> to take you directly to the source code where a 
+known property-name is defined.</p>
+<img src="img/property-editor-navigation.png"></img>
+<br><br>
+
+<p>The <b>Reconciler</b> shows errors and warnings as you type.</p>
+<img src="img/property-editor-reconciling.png"></img>
+<br><br>
+
+<p><b>Live Meta Data</b> You can define 
+your own properties by annotating your own 
+classes with a '@ConfigurationProperties'.</p>
+<img src="img/configuration-properties-annotation.png"></img>
+<br><br>
+
+<p>Add the 'spring-boot-configuration-processor' 
+as a dependency in your 'pom' (or 'build.gradle') and STS will 
+configure Eclipse's Annotation Processor to generate
+the metadata for your project on-the-fly.</p>
+<img src="img/pom.png"></img>
+<br><br>
+
+<p>Now, any time you define a new property, the editor will
+recognize it instantly.</p> 
+<img src="img/live-metadata.png"></img>
+<br><br>
+
+<p><b>Enabling the Spring Properties Editor</b> STS automatically configures 
+Eclipse Content Types so that the Spring Properties Editor is used for any file 
+called 'application.properties'. This is indicated by the 'Spring Leaf' icon in 
+the Package and Project Explorer Views.</p>
+<img src="img/explorer-leaf-icon.png"></img>
+<br><br>
+
+<p>Properties files with other names will be opened with Eclipse's basic 
+property editor. You can easily override that behavior by right 
+clicking any '.properties' file and selecting 
+"Spring >> Enable Spring Property Editor"</p>
+
+<p class="nan3">Spring Boot Launch Configuration Editor</p>
+
+<p>This release provides a brand-new, spring-boot-specific Launch Configuration
+Editor.</p>
+<br>
+
+<p>The "Run As >> Spring Boot App" menu still works as before except that
+it now creates a Spring-Boot specific launch configuration. This configuration
+can then later be easily customized with the Launch Configuration Editor.</p>
+<br>
+
+<p>You open the editor by selecting either the "Debug As >> Debug Configurations..."
+or "Run As >> Run Configuration..." menu.</p>
+<img src="img/boot-launch-config-editor.png"></img>
+<br><br>
+
+<p>The editor has a Boot-specific tab that has the following features:</p>
+<br>
+
+<p>The <b>Project</b> and <b>Main Type</b> selection widgets are like those
+on the standard Java Launch Configuration Editor. However its
+'Main Type Search' algorithm is tweaked to work better for Spring Boot
+projects.
+</p> 
+<br>
+<p>The 'Profile' text/pulldown combo let's you select an optional 
+<a href="http://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html#howto-set-active-spring-profiles">Active Profile</a>.
+Type an arbitrary profile name or pick one from the pull-down menu.
+The menu is populated from with profiles you used before as well 
+as profiles you have defined by creating a properties files like 
+'application-production</em>.properties'.</p>
+<img src="img/launch-profile.png"></img>
+<br><br>
+
+<p>The 'Enable Live Bean Support' adds some VM arguments to the launch 
+to enable JMX and Spring infrastructure that allows extracting information about 
+Spring Beans from a running process. You can later view this information
+by right clicking on your project (while it is running) and selecting the
+"Spring >> Open Live Beans Graph".</p>
+<br>
+
+<p>The 'Override Properties' table lets you add additional property associations
+which will take precedence over those that are defined in 
+the 'application.properties' file or the active profile. The table viewer 
+provides auto-completions for property names.</p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>Download GGTS: <a href="https://spring.io/tools/ggts/all">https://spring.io/tools/ggts/all</a></p>
+<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+<h2>Known issues in this release</h2>
+
+<h3>Live configuration metadata generarion requires Spring Boot 1.2.2</h3>
+
+<p>Spring Boot 1.2.1 configuration processor does not work correctly when executed
+from Eclipse's incremental build. This issue is fixed in Spring Boot 1.2.2.
+This only affects 'live' metadata generated from your own source code, not the
+metadata that is packaged inside spring-boot jars themselves. So you can still 
+use older versions of Boot, but the 'live metadata' updates 
+will not be accurate. See Spring Boot issue 
+<a href="https://github.com/spring-projects/spring-boot/issues/2313">GH-2313</a>
+for details.</p>
+
+<h3>Mac OSX app signing not yet updated for 10.9.5 and 10.10</h3>
+
+<p>The OSX platform specific signing of the STS and GGTS Mac apps is not yet updated to a Mavericks infrastructure. Therefore running
+STS/GGTS on OSX 10.9.5 and OSX 10.10 will cause Gatekeeper to complain about STS/GGTS. In that case, please go to the System Preferences
+-> Security and do "Open Anyway". If that doesn't work, you have to disable the Gatekeeper checks to allow every app to run. Then start STS/GGTS.
+Once you started STS/GGTS at least once successfully, OSX will remember your decision about this app, will not ask you again, and you can switch
+back Gatekeeper security settings to a more secure mode again.</p>
+<br/>
+
+<h3>Check for Updates throws an error when updating from STS 3.5.1</h3>
+
+<p>Doing a "Check for Updates" of STS to an existing installation throws an error about a problem with the
+Groovy-Eclipse JDT patch feature. In that case, disable the Groovy-Eclipse JDT patch feature from the list of components to update and continue. This happens
+on the Eclipse 4.3 platform only. If you upgrade from STS 3.6.0 or 3.6.1 on Eclipse 4.4, you will not hit this problem.</p>
+<br/>
+
+<h3>Dashboard and Retina Displays</h3>
+
+<p>When running STS/GGTS on top of a JDK7, the new dashboard looks a bit blurry when using a HiRes (Retina) display, for example on a Retina MacBook Pro. This is due to the
+underlying browser technology that is used to display the dashboard content and that is coming from JavaFX. The JavaFX version that ships with JDK7 doesn't support
+retina displays. The solution for this is to run STS/GGTS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
+<br/>
+
+<h3>Setting the JDK</h3>
+
+<p>STS and GGTS requires a JDK to run on top of. Nevertheless the native launcher component might pick up a JRE automatically if you don't specifiy which
+JDK to run STS/GGTS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS/GGTS installation. Add a line at the beginning
+"-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
+<br/>
+
+<h3>Issues on Linux (GTK3)</h3>
+
+<p>Eclipse 4.4, upon which STS and GGTS are based, is the first Eclipse release where GTK3 is the default for the SWT widget library.
+There are some issues with this still:</p>
+
+<ul>
+  <li>STS New Dashboard doesn't work under GTK3 because it uses JavaFX which is not currently compatible with GTK3. Instead the old dashboard will
+      open.
+  <li>The Eclipse editor may be slow to respond (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=434898">Eclipse Bug 434898</a>).
+</ul>
+
+<p>You may also experience other UI rendering glitches. If you exprience any of these problems you can avoid them by forcing SWT to 
+switch back to using GTK2. Just set the environment variable "SWT_GTK3=0" before launching STS or GGTS.
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v363/NewAndNoteworthy.html">STS/GGTS 3.6.3</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v362/NewAndNoteworthy.html">STS/GGTS 3.6.2</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v361/NewAndNoteworthy.html">STS/GGTS 3.6.1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v360/NewAndNoteworthy.html">STS/GGTS 3.6.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v351/NewAndNoteworthy.html">STS/GGTS 3.5.1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy.html">STS/GGTS 3.4.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">STS/GGTS 3.3.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.6.1.SR1.pdf">STS 2.6.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
