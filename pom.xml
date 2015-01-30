@@ -445,16 +445,21 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.4/</url>
 				</repository>
-<!--				<repository>
-				<id>luna-updates</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository> -->
+				<repository>
+					<id>luna-updates</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/maintenance/</url>
+				</repository>
 <!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.4-I-builds</url>
 				</repository> -->
+				<repository>
+					<id>platform-m-builds</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/eclipse/updates/4.4-M-builds/</url>
+				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
