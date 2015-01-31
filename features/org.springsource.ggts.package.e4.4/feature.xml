@@ -150,7 +150,7 @@
       <import feature="org.eclipse.pde"/>
       <import feature="org.eclipse.platform" version="4.4.0" match="compatible"/>
       <import feature="org.eclipse.rcp" version="4.4.0" match="compatible"/>
-      <import feature="org.eclipse.e4.rcp.R441patch"/>
+<!--      <import feature="org.eclipse.e4.rcp.R441patch"/> -->
 
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.rse.core"/>
