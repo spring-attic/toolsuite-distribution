@@ -39,6 +39,12 @@
 	<category name="Uncategorized"/>
   </feature>
 
+  <feature
+	id="org.eclipse.fx.runtime.min.feature"
+	version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
   <!-- Eclipse 4.4.1 patch feature -->
 <!--  <feature
 	id="org.eclipse.e4.rcp.R441patch"
