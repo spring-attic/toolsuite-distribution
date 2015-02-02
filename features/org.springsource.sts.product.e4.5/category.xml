@@ -286,6 +286,10 @@
 	</bundle>
 	<!--		<bundle id="org.eclipse.weaver.source" version="0.0.0"/> -->
 	
+	<bundle id="org.eclipse.fx.osgi.util" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
 	<bundle id="org.springframework.aop" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
