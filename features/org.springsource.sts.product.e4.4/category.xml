@@ -240,6 +240,13 @@
  	</feature>
 
 	<!-- third-party dependencies -->
+	<bundle id="com.google.protobuf" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="com.google.protobuf.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
 	<bundle id="com.springsource.util.common" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
