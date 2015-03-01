@@ -136,6 +136,12 @@
   </feature>
 
   <feature
+	id="org.codehaus.groovy24.feature"
+	version="0.0.0">
+	<category name="Groovy-Eclipse" />
+  </feature>
+
+  <feature
 	id="org.codehaus.groovy.m2eclipse.feature"
 	version="0.0.0">
 	<category name="Groovy-Eclipse" />
