@@ -235,7 +235,7 @@
 				<dist.target>e4.4.2</dist.target>
 				<dist.target.major>e4.4</dist.target.major>
 				<dist.platform.name>Luna</dist.platform.name>
-				<dist.platform.name.long>Luna SR1 (4.4.2)</dist.platform.name.long>
+				<dist.platform.name.long>Luna SR2 (4.4.2)</dist.platform.name.long>
 				<dist.platform.id>luna</dist.platform.id>
 				<dist.platform.version>4.4</dist.platform.version>
 				<package.qualifierPrefix>e44</package.qualifierPrefix>
