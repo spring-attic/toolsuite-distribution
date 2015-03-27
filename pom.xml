@@ -58,8 +58,6 @@ Optional parameters:
 	<modules>
 		<module>plugins/org.springsource.sts</module>
 		<module>features/org.springsource.sts</module>
-		<module>plugins/org.springsource.ggts</module>
-		<module>features/org.springsource.ggts</module>
 	</modules>
 
 	<profiles>
@@ -68,7 +66,6 @@ Optional parameters:
 			<id>e37</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product</product.project.sts>
-				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 3.7</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -147,9 +144,7 @@ Optional parameters:
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e3.7</module>
-				<module>features/org.springsource.ggts.package.e3.7</module>
 				<module>features/org.springsource.sts.product</module>
-				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 		
@@ -157,7 +152,6 @@ Optional parameters:
 			<id>e38</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product</product.project.sts>
-				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 3.8</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -231,9 +225,7 @@ Optional parameters:
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e3.8</module>
-				<module>features/org.springsource.ggts.package.e3.8</module>
 				<module>features/org.springsource.sts.product</module>
-				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 		
@@ -241,7 +233,6 @@ Optional parameters:
 			<id>e42</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product</product.project.sts>
-				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.2</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -315,9 +306,7 @@ Optional parameters:
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.2</module>
-				<module>features/org.springsource.ggts.package.e4.2</module>
 				<module>features/org.springsource.sts.product</module>
-				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 
@@ -325,7 +314,6 @@ Optional parameters:
 			<id>e43</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product.java8</product.project.sts>
-				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.3</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -419,9 +407,7 @@ Optional parameters:
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.3</module>
-				<module>features/org.springsource.ggts.package.e4.3</module>
 				<module>features/org.springsource.sts.product.java8</module>
-				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 
@@ -429,7 +415,6 @@ Optional parameters:
 			<id>e44</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product.e4.4</product.project.sts>
-				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.4</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -518,9 +503,7 @@ Optional parameters:
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.4</module>
-				<module>features/org.springsource.ggts.package.e4.4</module>
 				<module>features/org.springsource.sts.product.e4.4</module>
-				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 
@@ -528,7 +511,6 @@ Optional parameters:
 			<id>e45</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product.e4.5</product.project.sts>
-				<product.project.ggts>org.springsource.ggts.product</product.project.ggts>
 				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.5</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
@@ -612,9 +594,7 @@ Optional parameters:
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.5</module>
-				<module>features/org.springsource.ggts.package.e4.5</module>
 				<module>features/org.springsource.sts.product.e4.5</module>
-				<module>features/org.springsource.ggts.product</module>
 			</modules>
 		</profile>
 
@@ -635,24 +615,6 @@ Optional parameters:
 		</profile>
 
 		<profile>
-			<id>spring-dist</id>
-<!--
-			<modules>
-				<module>features/org.springsource.sts.product</module>
-			</modules>
--->
-		</profile>
-
-		<profile>
-			<id>groovy-grails-dist</id>
-<!--
-			<modules>
-				<module>features/org.springsource.ggts.product</module>
-			</modules>
--->
-		</profile>
-
-		<profile>
 			<id>spring-bundles</id>
 			<modules>
 				<module>releng/org.springsource.sts.distribution-bundles</module>
@@ -660,23 +622,9 @@ Optional parameters:
 		</profile>
 
 		<profile>
-			<id>groovy-grails-bundles</id>
-			<modules>
-				<module>releng/org.springsource.ggts.distribution-bundles</module>
-			</modules>
-		</profile>
-
-		<profile>
 			<id>spring-installer</id>
 			<modules>
 				<module>releng/org.springsource.sts.distribution-installer</module>
-			</modules>
-		</profile>
-
-		<profile>
-			<id>groovy-grails-installer</id>
-			<modules>
-				<module>releng/org.springsource.ggts.distribution-installer</module>
 			</modules>
 		</profile>
 
@@ -697,11 +645,6 @@ Optional parameters:
 			<id>eclipse-integration-gradle</id>
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/${dist.type}/TOOLS/gradle/${dist.eclipse-integration-gradle-version}</url>
-		</repository>
-		<repository>
-			<id>grails-ide</id>
-			<layout>p2</layout>
-			<url>http://dist.springsource.com/${dist.type}/TOOLS/grails-ide/${dist.grails-ide-version}</url>
 		</repository>
 		<repository>
 			<id>egit</id>

@@ -102,8 +102,6 @@
 				<dist.type>snapshot</dist.type>
 
 				<dist.path.repo>${dist.type}/TOOLS/nightly/${dist.target.major}</dist.path.repo>
-				<dist.path.repo.sts>${dist.type}/TOOLS/nightly/sts/${dist.target.major}</dist.path.repo.sts>
-				<dist.path.repo.ggts>${dist.type}/TOOLS/nightly/ggts/${dist.target.major}</dist.path.repo.ggts>
 				<dist.path.product>${dist.type}/STS/nightly/dist/${dist.target.major}</dist.path.product>
 				<skip.update-nightly-download-page>false</skip.update-nightly-download-page>
 			</properties>
@@ -115,8 +113,6 @@
 				<dist.type>milestone</dist.type>
 
 				<dist.path.repo>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/${dist.target.major}</dist.path.repo>
-				<dist.path.repo.sts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/sts/${dist.target.major}</dist.path.repo.sts>
-				<dist.path.repo.ggts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/ggts/${dist.target.major}</dist.path.repo.ggts>
 				<dist.path.product>${dist.type}/STS/${unqualifiedVersion}.${p2.qualifier}/dist/${dist.target.major}</dist.path.product>
 				<skip.update-nightly-download-page>true</skip.update-nightly-download-page>
 			</properties>
@@ -128,8 +124,6 @@
 				<dist.type>release</dist.type>
 
 				<dist.path.repo>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/${dist.target.major}</dist.path.repo>
-				<dist.path.repo.sts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/sts/${dist.target.major}</dist.path.repo.sts>
-				<dist.path.repo.ggts>${dist.type}/TOOLS/update/${unqualifiedVersion}.${p2.qualifier}/ggts/${dist.target.major}</dist.path.repo.ggts>
 				<dist.path.product>${dist.type}/STS/${unqualifiedVersion}.${p2.qualifier}/dist/${dist.target.major}</dist.path.product>
 				<skip.update-nightly-download-page>true</skip.update-nightly-download-page>
 			</properties>

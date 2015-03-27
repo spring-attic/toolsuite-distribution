@@ -198,7 +198,7 @@
 								<s3 accessKey="${dist.accessKey}" secretKey="${dist.secretKey}">
 
 									<delete bucketName="${dist.bucket}">
-										<fileset dir="${dist.path.repo.sts}">
+										<fileset dir="${dist.path.repo}">
 											<include name="site.xml" />
 											<include name="content.jar" />
 											<include name="artifacts.jar" />
@@ -211,7 +211,7 @@
 										</fileset>
 									</delete>
 
-									<upload bucketName="${dist.bucket}" toDir="${dist.path.repo.sts}"
+									<upload bucketName="${dist.bucket}" toDir="${dist.path.repo}"
 										publicRead="true">
 										<fileset
 											dir="${site.target.dir}/../../${product.project.sts}/target/repository">
@@ -222,7 +222,7 @@
 									</upload>
 
 									<upload bucketName="${dist.bucket}" file="${dist.full.path}"
-										toFile="${dist.path.repo.sts}/${dist.file.name}" publicRead="true">
+										toFile="${dist.path.repo}/${dist.file.name}" publicRead="true">
 										<metadata name="project.name" value="${dist.name}" />
 										<metadata name="release.type" value="${dist.type}" />
 										<metadata name="bundle.version" value="${dist.full.version}" />
