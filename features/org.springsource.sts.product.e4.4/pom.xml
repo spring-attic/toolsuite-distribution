@@ -110,30 +110,6 @@
 			</plugin>
 
 			<plugin>
-				<groupId>org.eclipse.tycho.extras</groupId>
-				<artifactId>tycho-p2-extras-plugin</artifactId>
-				<version>${tycho-version}</version>
-				<executions>
-					<execution>
-						<phase>verify</phase>
-						<goals>
-							<goal>mirror</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<source>
-						<repository>
-							<url>file://${project.build.directory}/repository</url>
-							<layout>p2</layout>
-						</repository>
-					</source>
-					<destination>${project.build.directory}/../../${product.project.sts}/target/unitedRepository</destination>
-					<append>true</append>
-				</configuration>
-			</plugin>
-
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<version>1.7</version>
