@@ -99,6 +99,9 @@
 						<product>
 							<id>org.springsource.sts.ide</id>
 							<rootFolder>sts-${unqualifiedVersion}.${p2.qualifier}</rootFolder>
+							<rootFolders>
+								<macosx>STS.app</macosx>
+							</rootFolders>
 							<archiveFileName>spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}</archiveFileName>
 						</product>
 					</products>
