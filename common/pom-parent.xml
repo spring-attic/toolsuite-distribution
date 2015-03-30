@@ -368,6 +368,10 @@
 			<id>tycho-snapshots</id>
 			<url>https://oss.sonatype.org/content/groups/public/</url>
 		</pluginRepository>
+	    <pluginRepository>
+	      <id>tycho-snapshots</id>
+	      <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
+	    </pluginRepository>
 	</pluginRepositories>
 
 	<build>
