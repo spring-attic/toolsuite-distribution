@@ -354,11 +354,11 @@
 	      <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
 	    </pluginRepository>
 		<!-- necessary for Maven and Ant AWS dependency -->
-<!--		<pluginRepository>
+		<pluginRepository>
 			<id>spring-maven-release</id>
 			<name>Spring Maven Release Repository</name>
 			<url>http://maven.springframework.org/release</url>
-		</pluginRepository> -->
+		</pluginRepository>
 <!--		<pluginRepository>
 			<id>springsource-maven-release</id>
 			<name>SpringSource Maven Release Repository</name>
