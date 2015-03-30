@@ -331,30 +331,6 @@
 					</execution>
 
 					<execution>
-						<id>configure-proxies-for-eclipserun</id>
-						<phase>package</phase>
-						<configuration>
-							<skip>${skip.eclipserun.proxies}</skip>
-							<target>
-								<touch file="${project.build.directory}/work/configuration/.settings/org.eclipse.core.net.prefs" mkdirs="true"/>
-								
-								<propertyfile file="${project.build.directory}/work/configuration/.settings/org.eclipse.core.net.prefs">
-								  <entry  key="eclipse.preferences.version" value="1"/>
-								  <entry  key="nonProxiedHosts" value="${http.nonProxyHosts}"/>
-								  <entry  key="org.eclipse.core.net.hasMigrated" value="true"/>
-								  <entry  key="proxyData/HTTP/hasAuth" value="false"/>
-								  <entry  key="proxyData/HTTP/host" value="${http.proxyHost}"/>
-								  <entry  key="proxyData/HTTP/port" value="${http.proxyPort}"/>
-								  <entry  key="systemProxiesEnabled" value="false"/>
-								</propertyfile>
-							</target>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-
-					<execution>
 						<id>osx-app-signing</id>
 						<phase>package</phase>
 						<configuration>
