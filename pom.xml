@@ -604,15 +604,6 @@ Optional parameters:
 				<module>releng/org.springsource.sts.site</module>
 			</modules>
 		</profile>
-		<profile>
-			<id>site-grails</id>
-			<modules>
-				<module>features/org.springsource.sts.tests</module>
-				<module>features/org.springsource.sts.grails.tests</module>
-				<module>releng/org.springsource.sts.site</module>
-				<module>releng/org.springsource.sts.grails.tests.site</module>
-			</modules>
-		</profile>
 
 		<profile>
 			<id>spring-bundles</id>
@@ -622,9 +613,9 @@ Optional parameters:
 		</profile>
 
 		<profile>
-			<id>spring-installer</id>
+			<id>spring-bundles-e45</id>
 			<modules>
-				<module>releng/org.springsource.sts.distribution-installer</module>
+				<module>releng/org.springsource.sts.distribution-bundles.e45</module>
 			</modules>
 		</profile>
 
