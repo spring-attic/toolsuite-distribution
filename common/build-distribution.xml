@@ -2,26 +2,12 @@
 
 	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
 
-	<property name="roo.version" value="1.2.5.RELEASE" />
 	<property name="tcserver.version" value="3.1.0.RELEASE" />
-	<property name="maven.version" value="3.0.5" />
-	<property name="grails.version" value="2.4.4" />
-	
 	<property name="sts-rootfolder" value="sts-bundle" />
-	<property name="ggts-rootfolder" value="ggts-bundle" />
-
-	<property name="roo.name" value="spring-roo-${roo.version}" />
 	<property name="tcserver.name" value="pivotal-tc-server-developer-${tcserver.version}" />
-	<property name="maven.name" value="apache-maven-${maven.version}" />
-	<property name="grails.name" value="grails-${grails.version}" />
-
-	<property name="roo.root" value="http://dist.springframework.org/release/ROO" />
 	<property name="tcserver.root" value="http://dist.springsource.com/release/TCS" />
-	<property name="maven.root" value="http://www.us.apache.org/dist/maven/maven-3/${maven.version}/binaries" />
-	<property name="grails.root" value="http://dist.springframework.org/release/GRAILS" />
 
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/${product.folder.sts}/target/products/" />
-	<property name="product.build.directory.ggts" value="${project.build.directory}/../../../features/${product.folder.ggts}/target/products/" />
 
     <condition property="tar-command" value="tar">
         <os family="mac" />
@@ -33,8 +19,6 @@
 
 	<target name="create-bundled-distribution-sts">
 		<antcall target="download-tcserver"/>
-<!--		<antcall target="download-maven"/> -->
-<!--		<antcall target="download-springroo"/> -->
 
 		<antcall target="create-sts-bundle-archive-tar">
 			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86_64"/>
@@ -100,9 +84,7 @@
 			<arg value="${destName}"/>
 			<arg value="-C"/>
 			<arg value="${project.build.directory}"/>
-<!--			<arg value="${roo.name}"/> -->
 			<arg value="${tcserver.name}"/>
-<!--			<arg value="${maven.name}"/> -->
 			<arg value="-C"/>
 			<arg value="${product.build.directory.sts}/${path}"/>
 			<arg value="sts-${unqualifiedVersion}.${p2.qualifier}"/>
@@ -116,49 +98,12 @@
 
 	</target>
 
-	<target name="create-ggts-bundle-archive-tar">
-		<exec executable="${tar-command}">
-			<arg value="--transform"/>
-			<arg value="s,^,${ggts-rootfolder}/,S"/>
-			<arg value="-czf"/>
-			<arg value="${destName}"/>
-			<arg value="-C"/>
-			<arg value="${project.build.directory}"/>
-			<arg value="${grails.name}"/>
-			<arg value="${tcserver.name}"/>
-			<arg value="-C"/>
-			<arg value="${product.build.directory.ggts}/${path}"/>
-			<arg value="ggts-${unqualifiedVersion}.${p2.qualifier}"/>
-			<arg value="-C"/>
-			<arg value="${project.build.directory}/.."/>
-			<arg value="legal"/>
-		</exec>
-
-		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
-		<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
-
-	</target>
 
 	<target name="create-sts-bundle-archive-zip">
 		<zip destfile="${destName}">
 			<zipfileset dir="${product.build.directory.sts}/${path}/sts-${unqualifiedVersion}.${p2.qualifier}" prefix="${sts-rootfolder}/sts-${unqualifiedVersion}.${p2.qualifier}"/>
 			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="${sts-rootfolder}/${tcserver.name}"/>
-<!--			<zipfileset dir="${project.build.directory}/${maven.name}" prefix="${sts-rootfolder}/${maven.name}"/> -->
-<!--			<zipfileset dir="${project.build.directory}/${roo.name}" prefix="${sts-rootfolder}/${roo.name}"/> -->
 			<zipfileset dir="${project.build.directory}/../legal" prefix="${sts-rootfolder}/legal"/>
-		</zip>
-
-		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
-		<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
-
-	</target>
-
-	<target name="create-ggts-bundle-archive-zip">
-		<zip destfile="${destName}">
-			<zipfileset dir="${product.build.directory.ggts}/${path}/ggts-${unqualifiedVersion}.${p2.qualifier}" prefix="${ggts-rootfolder}/ggts-${unqualifiedVersion}.${p2.qualifier}"/>
-			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="${ggts-rootfolder}/${tcserver.name}"/>
-			<zipfileset dir="${project.build.directory}/${grails.name}" prefix="${ggts-rootfolder}/${grails.name}"/>
-			<zipfileset dir="${project.build.directory}/../legal" prefix="${ggts-rootfolder}/legal"/>
 		</zip>
 
 		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
@@ -176,51 +121,6 @@
 			<then>
 				<exec executable="unzip">
 				    <arg line="-o ${project.build.directory}/${tcserver.name}.zip -d ${project.build.directory}" />
-				</exec>
-			</then>
-		</if>
-	</target>
-
-	<target name="download-maven">
-		<get src="${maven.root}/${maven.name}-bin.zip"
-		 dest="${project.build.directory}/${maven.name}-bin.zip"
-		 verbose="true"
-		 skipexisting="true"/>
-		<if>
-			<available file="${project.build.directory}/${maven.name}-bin.zip" />
-			<then>
-				<exec executable="unzip">
-				    <arg line="-o ${project.build.directory}/${maven.name}-bin.zip -d ${project.build.directory}" />
-				</exec>
-			</then>
-		</if>
-	</target>
-
-	<target name="download-springroo">
-		<get src="${roo.root}/${roo.name}.zip"
-		 dest="${project.build.directory}/${roo.name}.zip"
-		 verbose="true"
-		 skipexisting="true"/>
-		<if>
-			<available file="${project.build.directory}/${roo.name}.zip" />
-			<then>
-				<exec executable="unzip">
-				    <arg line="-o ${project.build.directory}/${roo.name}.zip -d ${project.build.directory}" />
-				</exec>
-			</then>
-		</if>
-	</target>
-
-	<target name="download-grails">
-		<get src="${grails.root}/${grails.name}.zip"
-		 dest="${project.build.directory}/${grails.name}.zip"
-		 verbose="true"
-		 skipexisting="true"/>
-		<if>
-			<available file="${project.build.directory}/${grails.name}.zip" />
-			<then>
-				<exec executable="unzip">
-				    <arg line="-o ${project.build.directory}/${grails.name}.zip -d ${project.build.directory}" />
 				</exec>
 			</then>
 		</if>
