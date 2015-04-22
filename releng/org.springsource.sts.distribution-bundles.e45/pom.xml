@@ -62,7 +62,7 @@
 					
 					<execution>
 						<id>archive-products</id>
-						<phase>verify</phase>
+						<phase>install</phase>
 						<configuration>
 							<target>
 								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-sts-e45">
