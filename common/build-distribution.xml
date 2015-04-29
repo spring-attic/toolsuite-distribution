@@ -9,7 +9,7 @@
 
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/${product.folder.sts}/target/products/" />
 
-    <condition property="tar-command" value="tar">
+    <condition property="tar-command" value="gnutar">
         <os family="mac" />
     </condition>
 
