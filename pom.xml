@@ -433,8 +433,8 @@ Optional parameters:
 <!--				<repository>
 					<id>luna-updates</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/maintenance/</url> -->
-				</repository>
+					<url>http://download.eclipse.org/releases/maintenance/</url>
+				</repository> -->
 <!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
