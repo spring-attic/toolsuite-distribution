@@ -539,7 +539,7 @@ Optional parameters:
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</url>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20150513182540/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
