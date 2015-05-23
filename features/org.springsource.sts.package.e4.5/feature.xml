@@ -24,9 +24,13 @@
    </url>
    
    <requires>
-	
-      <import feature="org.eclipse.cvs"/>
-
+	   
+      <import feature="org.eclipse.aether.connector.basic.feature"/>
+      <import feature="org.eclipse.aether.feature"/>
+      <import feature="org.eclipse.aether.maven.feature"/>
+      <import feature="org.eclipse.aether.transport.file.feature"/>
+      <import feature="org.eclipse.aether.transport.http.feature"/>
+		  
       <import feature="org.eclipse.datatools.common.doc.user"/>
       <import feature="org.eclipse.datatools.connectivity.doc.user"/>
       <import feature="org.eclipse.datatools.connectivity.feature"/>
@@ -61,9 +65,17 @@
       <import feature="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature"/>
       <import feature="org.eclipse.datatools.sqldevtools.sqlbuilder.feature"/>
       <import feature="org.eclipse.datatools.sqltools.doc.user"/>
-
+		  
+		  
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.e4.rcp"/>
+
+      <import feature="org.eclipse.ecf.core.feature"/>
+      <import feature="org.eclipse.ecf.core.ssl.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.ssl.feature"/>
 
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.mylyn"/>
@@ -88,6 +100,8 @@
       <import feature="org.eclipse.emf.mapping.ecore"/>
       <import feature="org.eclipse.emf.mapping.ecore.editor"/>
       <import feature="org.eclipse.emf.mapping.ui"/>
+	  
+      <import feature="org.eclipse.epp.logging.aeri.feature"/>
       <import feature="org.eclipse.epp.mpc"/>
 
       <import feature="org.eclipse.equinox.p2.core.feature"/>
@@ -96,9 +110,10 @@
       <import feature="org.eclipse.equinox.p2.rcp.feature"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.gef"/>
-	
+		  
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.jgit"/>
 
       <import feature="org.eclipse.jpt.common.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.common.feature"/>
@@ -129,11 +144,6 @@
       <import feature="org.eclipse.jst.ws.jaxws.dom.feature"/>
       <import feature="org.eclipse.jst.ws.jaxws.feature"/>
 
-<!--
-      <import feature="org.eclipse.m2e.feature"/>
-      <import feature="org.eclipse.m2e.logback.feature"/>
--->
-
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.commons"/>
@@ -154,6 +164,9 @@
       <import feature="org.eclipse.platform" version="4.5.0" match="compatible"/>
       <import feature="org.eclipse.rcp" version="4.5.0" match="compatible"/>
 
+      <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.rcp.feature"/>
+
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.rse.core"/>
       <import feature="org.eclipse.rse.dstore"/>
@@ -161,13 +174,15 @@
       <import feature="org.eclipse.rse.local"/>
       <import feature="org.eclipse.rse.ssh"/>
       <import feature="org.eclipse.rse.telnet"/>
-      <import feature="org.eclipse.rse.terminals"/>
       <import feature="org.eclipse.rse.useractions"/>
 
-      <import feature="org.eclipse.tm.terminal"/>
-      <import feature="org.eclipse.tm.terminal.ssh"/>
-      <import feature="org.eclipse.tm.terminal.telnet"/>
-      <import feature="org.eclipse.tm.terminal.view"/>
+      <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
+      <import feature="org.eclipse.tm.terminal.connector.serial.feature"/>
+      <import feature="org.eclipse.tm.terminal.connector.ssh.feature"/>
+      <import feature="org.eclipse.tm.terminal.connector.telnet.feature"/>
+      <import feature="org.eclipse.tm.terminal.control.feature"/>
+      <import feature="org.eclipse.tm.terminal.feature"/>
+      <import feature="org.eclipse.tm.terminal.view.feature"/>
 
       <import feature="org.eclipse.wst.common_core.feature"/>
       <import feature="org.eclipse.wst.common_ui.feature"/>
@@ -205,10 +220,6 @@
 	  <import feature="org.springframework.ide.eclipse.integration.feature"/>		
       <import feature="org.springframework.ide.eclipse.maven.feature"/>
       <import feature="org.springframework.ide.eclipse.data.feature"/>
-
-	  <!--
-	        <import feature="org.springframework.ide.eclipse.roo.feature"/>
-	  -->
 
 	  <import feature="org.eclipse.ajdt"/>					
 	  <import feature="org.eclipse.contribution.weaving"/>					
