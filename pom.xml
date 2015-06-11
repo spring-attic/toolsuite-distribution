@@ -517,7 +517,7 @@ Optional parameters:
 			</properties>
 			<repositories>
 				<repository>
-					<id>luna</id>
+					<id>mars</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/mars/</url>
 				</repository>
@@ -526,11 +526,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
 				</repository>
-<!--				<repository>
-				<id>luna-updates</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository> -->
+				<repository>
+					<id>mars-staging</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/staging/</url>
+				</repository>
 <!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
