@@ -341,11 +341,10 @@
 
 								<exec executable="codesign">
 								    <arg value="--force"/>
-									<arg value="--deep"/>
 									<arg value="--verbose"/>
 								    <arg value="-s"/>
 								    <arg value="Developer ID Application: VMware, Inc."/>
-								    <arg value="${build.destination.cocoa.x86_64}/sts-${unqualifiedVersion}.${p2.qualifier}/STS.app"/>
+								    <arg value="${build.destination.cocoa.x86_64}/STS.app"/>
 								</exec>
 
 							</target>
