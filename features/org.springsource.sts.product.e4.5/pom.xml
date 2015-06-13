@@ -343,7 +343,7 @@
 								    <arg value="--force"/>
 									<arg value="--verbose"/>
 								    <arg value="-s"/>
-								    <arg value="Developer ID Application: VMware, Inc."/>
+								    <arg value="Developer ID Application: Pivotal Software"/>
 								    <arg value="${build.destination.cocoa.x86_64}/STS.app"/>
 								</exec>
 
