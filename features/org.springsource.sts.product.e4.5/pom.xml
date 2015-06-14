@@ -339,13 +339,6 @@
 
 								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 
-								<exec executable="security" failonerror="true">
-									<arg value="unlock-keychain"/>
-									<arg value="-p"/>
-									<arg value="${env.KEYCHAIN_PASSWORD}"/>
-									<arg value="${env.KEYCHAIN}"/>
-								</exec>
-
 								<exec executable="codesign" failonerror="true">
 									<arg value="--verbose"/>
 								    <arg value="--keychain"/>
