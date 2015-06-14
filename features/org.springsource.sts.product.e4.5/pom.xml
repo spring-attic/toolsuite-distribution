@@ -289,7 +289,7 @@
 						<phase>package</phase>
 						<configuration>
 							<target>
-								<propertyfile file="${build.destination.cocoa.x86_64}/STS.app/.eclipseproduct">
+								<propertyfile file="${build.destination.cocoa.x86_64}/STS.app/Contents/Eclipse/.eclipseproduct">
 								  <entry  key="name" value="Spring Tool Suite"/>
 								  <entry  key="id" value="org.springsource.sts"/>
 								  <entry  key="version" value="${unqualifiedVersion}.${p2.qualifier}"/>
