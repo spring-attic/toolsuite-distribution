@@ -340,10 +340,9 @@
 								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 
 								<exec executable="codesign">
-								    <arg value="--force"/>
 									<arg value="--verbose"/>
 								    <arg value="-s"/>
-								    <arg value="Trevor Marshall"/>
+								    <arg value="3rd Party Mac Developer Application: Trevor Marshall"/>
 								    <arg value="${build.destination.cocoa.x86_64}/STS.app"/>
 								</exec>
 
