@@ -339,7 +339,7 @@
 
 								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 
-								<exec executable="codesign">
+								<exec executable="codesign" failonerror="true">
 									<arg value="--verbose"/>
 								    <arg value="-s"/>
 								    <arg value="3rd Party Mac Developer Application: Trevor Marshall"/>
