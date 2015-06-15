@@ -344,7 +344,7 @@
 								    <arg value="--keychain"/>
 								    <arg value="${env.KEYCHAIN}"/>
 								    <arg value="-s"/>
-								    <arg value="3rd Party Mac Developer Application: Trevor Marshall"/>
+								    <arg value="Developer ID Application: Trevor Marshall"/>
 								    <arg value="${build.destination.cocoa.x86_64}/STS.app"/>
 								</exec>
 
