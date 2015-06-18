@@ -2,10 +2,10 @@
 
 	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
 
-	<property name="tcserver.version" value="3.1.0.RELEASE" />
+	<property name="tcserver.version" value="3.1.1.RELEASE" />
 	<property name="sts-rootfolder" value="sts-bundle" />
 	<property name="tcserver.name" value="pivotal-tc-server-developer-${tcserver.version}" />
-	<property name="tcserver.root" value="http://dist.springsource.com/release/TCS" />
+	<property name="tcserver.root" value="http://repo.eng.pivotal.io/artifactory/tcserver-releases/tcserver/developer/pivotal-tc-server-developer/${tcserver.version}" />
 
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/${product.folder.sts}/target/products/" />
 
