@@ -101,7 +101,7 @@
       <import feature="org.eclipse.emf.mapping.ecore.editor"/>
       <import feature="org.eclipse.emf.mapping.ui"/>
 	  
-      <import feature="org.eclipse.epp.logging.aeri.feature"/>
+<!--      <import feature="org.eclipse.epp.logging.aeri.feature"/> -->
       <import feature="org.eclipse.epp.mpc"/>
 
       <import feature="org.eclipse.equinox.p2.core.feature"/>
