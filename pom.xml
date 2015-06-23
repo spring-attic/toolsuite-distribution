@@ -488,7 +488,7 @@ Optional parameters:
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator/</url>
+					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
@@ -584,7 +584,7 @@ Optional parameters:
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator/</url>
+					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
