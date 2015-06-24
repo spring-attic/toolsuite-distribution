@@ -531,11 +531,6 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
 				</repository>
-				<repository>
-					<id>mars-staging</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/staging/</url>
-				</repository>
 <!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
@@ -574,7 +569,7 @@ Optional parameters:
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/luna</url>
+					<url>http://download.eclipse.org/m2e-wtp/releases/mars</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
@@ -589,7 +584,7 @@ Optional parameters:
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
+					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201504071521/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
