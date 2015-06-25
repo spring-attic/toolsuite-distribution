@@ -221,6 +221,34 @@ STS 3.7.0, developers could generate its own Spring Roo Add-On Suites using STS.
 
 <hr>
 
+<p class="nan2">Cloud Foundry Eclipse 1.8.3</p>
+
+<p class="nan3">Spring Boot Deployment</p>
+
+<p>STS 3.7.0 includes Cloud Foundry Eclipse 1.8.3, and contains some new features to improve Spring Boot deployment to Cloud Foundry.</p>
+<br/>
+<p>For 3.7.0, users no longer need to manually configure their Spring Boot projects when dragging and dropping them to a <a href="http://docs.cloudfoundry.org/buildpacks/java/sts.html#cloud-foundry-server">Cloud Foundry server instance</a> or
+deploying them via <b>Run on Server</b>. Users can now create or import their Spring Boot projects into STS and just deploy them directly to Cloud Foundry through drag and drop or <b>Run on Server</b>.</p>
+<br/>
+
+<p>If converting a Spring Boot JAR project to WAR, in some cases the automatic Cloud Foundry deployment needs to be disabled to deploy the WAR application
+to tcServer or WTP Tomcat server. This is done simply by right-clicking on the project in the Project Explorer and selecting <b>Configure -> Disable as Cloud Foundry App</b>.</p>
+<br/>
+
+<p>Other improvements in 1.8.3 include fixing issues with deploying .jar and .war files defined in a project's manifest.yml. Now, pushing
+changes to the application will always push the actual file in the file system. A previous bug would only push the old .jar file
+even if the .jar file had changed.</p>
+<br/>
+<p><b>NOTE:</b> Java 7 JRE in STS is a minimum requirement to use Cloud Foundry Eclipse 1.8.3.</p>
+<br/>
+<p>A comprehensive
+overview of the Cloud Foundry tooling can be found <a href="http://docs.cloudfoundry.org/buildpacks/java/sts.html">here</a>.
+</p>
+<br/>
+
+
+<hr>
+
 <p class="nan2">GGTS</a>
 
 <p>Since the end of March Pivotal is no longer sponsoring the Groovy and Grails projects (as described
