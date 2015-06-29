@@ -653,11 +653,6 @@ Optional parameters:
 			<url>http://download.eclipse.org/egit/github/updates</url>
 		</repository>
 		<repository>
-			<id>egit-github-23-emergency-updates</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/egit/github/updates</url>
-		</repository>
-		<repository>
 			<id>m2eclipse-legacy</id>
 			<layout>p2</layout>
 			<url>http://download.springsource.com/release/TOOLS/third-party/m2eclipse-012</url>
