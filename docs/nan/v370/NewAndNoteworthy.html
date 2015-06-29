@@ -82,7 +82,7 @@
 
 <div class="header--container"></div>
 <div class="body--container container-fluid ">
-<h1 class="nan1">Spring Tool Suite 3.7.4: New and Noteworthy</h1>
+<h1 class="nan1">Spring Tool Suite 3.7.0: New and Noteworthy</h1>
 
 <p class="nan2">General Updates</p>
 
@@ -214,7 +214,7 @@ clicking any '.yml' file and selecting
 
 <p class="nan3">Spring Roo Add-On Suite Generation using STS</p>
 
-<p>As we could see on <a href="https://spring.io/blog/2015/03/30/looking-ahead-to-spring-roo-2-0">Spring Roo 2.0 roadmap</a>,
+<p>As we can see on <a href="https://spring.io/blog/2015/03/30/looking-ahead-to-spring-roo-2-0">Spring Roo 2.0 roadmap</a>,
 Spring Roo 2.0 wants to improve extensibility and increase the collaboration of the Spring Roo project.  For that reason since
 STS 3.7.0, developers could generate its own Spring Roo Add-On Suites using STS.<p>
 <br/>
@@ -258,7 +258,7 @@ overview of the Cloud Foundry tooling can be found <a href="http://docs.cloudfou
 
 <p>Since the end of March Pivotal is no longer sponsoring the Groovy and Grails projects (as described
 <a href="http://blog.pivotal.io/pivotal/news-2/groovy-2-4-and-grails-3-0-to-be-last-major-releases-under-pivotal-sponsorship">here</a>).
-Therefore we don't ship new versions of the GGTS bundle anymore. Groovy-Eclipse remains on the dashboard is got updated to Eclipse 4.5.
+Therefore we don't ship new versions of the GGTS bundle anymore. Groovy-Eclipse remains on the dashboard and got fully updated for Eclipse 4.5.
 </p>
 <hr>
 
@@ -267,7 +267,7 @@ Therefore we don't ship new versions of the GGTS bundle anymore. Groovy-Eclipse 
 <h2>Issues resolved in this release</h2>
 
 <p>Here is a full list of resolved bugs and enhancement requests for 3.7.0:</p>
-<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20%3D%20%223.7.0.RELEASE%22%20AND%20status%20in%20(Resolved%2C%20Closed)">STS/GGTS issue tracker</a></p>
+<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20%3D%20%223.7.0.RELEASE%22%20AND%20status%20in%20(Resolved%2C%20Closed)">STS issue tracker</a></p>
 <p><a href="https://jira.spring.io/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20%3D%203.7.0.RELEASE%20AND%20status%20in%20(Resolved%2C%20Closed)">Spring IDE issue tracker</a></p>
 
 <hr>
@@ -275,7 +275,7 @@ Therefore we don't ship new versions of the GGTS bundle anymore. Groovy-Eclipse 
 <h2>Useful Links</h2>
 
 <p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
-<p>STS/GGTS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+<p>STS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
 
 <hr>
 
@@ -284,10 +284,10 @@ Therefore we don't ship new versions of the GGTS bundle anymore. Groovy-Eclipse 
 
 <h3>No repository available when checking for updates</h3>
 
-<p>If you have used a pre-release version Eclipse Mars or STS, the embedded Eclipse Oomph technology created a cache
+<p>If you have used a pre-release version of Eclipse Mars or STS, the embedded Eclipse Oomph technology created a cache
 of p2 repositores in your home directory. This cached p2 data can cause issues when using STS 3.7.0 or Eclipse Mars. The
 error message looks like STS/Eclipse fails to read information from the main Eclipse Mars p2 repository.</p>
-<p>In case you encouter this error, please stop Eclipse/STS, go to your home directory, delete "~/.eclipse/org.eclipse.oomph.p2",
+<p>In case you encounter this error, please stop Eclipse/STS, go to your home directory, delete "~/.eclipse/org.eclipse.oomph.p2",
 and restart Eclipse/STS. The related Eclipse bug is: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=470912">Bug 470912</a>.</p>
 <br/>
 
@@ -305,15 +305,15 @@ for details.</p>
 
 <h3>Dashboard and Retina Displays</h3>
 
-<p>When running STS/GGTS on top of a JDK7, the new dashboard looks a bit blurry when using a HiRes (Retina) display, for example on a Retina MacBook Pro. This is due to the
+<p>When running STS on top of a JDK7, the new dashboard looks a bit blurry when using a HiRes (Retina) display, for example on a Retina MacBook Pro. This is due to the
 underlying browser technology that is used to display the dashboard content and that is coming from JavaFX. The JavaFX version that ships with JDK7 doesn't support
-retina displays. The solution for this is to run STS/GGTS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
+retina displays. The solution for this is to run STS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
 <br/>
 
 <h3>Setting the JDK</h3>
 
-<p>STS and GGTS requires a JDK to run on top of. Nevertheless the native launcher component might pick up a JRE automatically if you don't specifiy which
-JDK to run STS/GGTS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS/GGTS installation. Add a line at the beginning
+<p>STS requires a JDK to run on top of. Nevertheless the native launcher component might pick up a JRE automatically if you don't specify which
+JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. Add a line at the beginning
 "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
 <br/>
 
