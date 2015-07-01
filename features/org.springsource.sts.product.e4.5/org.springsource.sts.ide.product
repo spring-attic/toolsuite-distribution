@@ -11,7 +11,7 @@
 openFile</programArgs>
       <programArgsWin>--launcher.XXMaxPermSize
 256M</programArgsWin>
-      <vmArgs>-Dosgi.requiredJavaVersion=1.6
+      <vmArgs>-Dosgi.requiredJavaVersion=1.7
 -Xms40m
 -Xmx768m
 -XX:MaxPermSize=256m
