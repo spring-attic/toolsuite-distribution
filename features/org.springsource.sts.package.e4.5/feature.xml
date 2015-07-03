@@ -70,7 +70,7 @@
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.e4.rcp" version="1.4.0.v20150603-0857" match="perfect"/>
 
-      <import feature="org.eclipse.ecf.core.feature" version="3.10.0.v20150512-1727" match="perfect"/>
+      <import feature="org.eclipse.ecf.core.feature" version="1.1.0.v20150512-1727" match="perfect"/>
       <import feature="org.eclipse.ecf.core.ssl.feature" version="1.0.0.v20150512-1727" match="perfect"/>
       <import feature="org.eclipse.ecf.filetransfer.feature" version="3.10.0.v20150512-1727" match="perfect"/>
       <import feature="org.eclipse.ecf.filetransfer.httpclient4.feature" version="3.10.0.v20150512-1727" match="perfect"/>
