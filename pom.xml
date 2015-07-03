@@ -539,7 +539,7 @@ Optional parameters:
 
 				<!-- temporary nightly builds for testing newer JDT versions -->
 				<repository>
-					<id>platform-m-builds</id>
+					<id>platform-nightly-builds</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.6-N-builds/N20150702-2307</url>
 				</repository>
