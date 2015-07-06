@@ -112,7 +112,7 @@
       <import feature="org.eclipse.gef"/>
 		  
       <import feature="org.eclipse.help" version="2.1.0.v20150603-2000" match="perfect"/>
-      <import feature="org.eclipse.jdt" version="3.11.0.N20150702-2307" match="perfect"/>
+      <import feature="org.eclipse.jdt" version="3.11.0.N20150705-2000" match="perfect"/>
       <import feature="org.eclipse.jgit"/>
 
       <import feature="org.eclipse.jpt.common.eclipselink.feature"/>

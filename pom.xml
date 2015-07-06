@@ -541,7 +541,7 @@ Optional parameters:
 				<repository>
 					<id>platform-nightly-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.6-N-builds/N20150702-2307</url>
+					<url>http://download.eclipse.org/eclipse/updates/4.6-N-builds/N20150705-2000</url>
 				</repository>
 
 				<repository>
