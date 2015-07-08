@@ -207,8 +207,6 @@
 
       <import feature="org.eclipse.zest"/>
 
-      <import feature="com.atlassian.connector.eclipse.jira"/>
-      
       <import feature="org.springframework.ide.eclipse.feature"/>
 	  <import feature="org.springframework.ide.eclipse.aop.feature"/>
 	  <import feature="org.springframework.ide.eclipse.ajdt.feature"/>
