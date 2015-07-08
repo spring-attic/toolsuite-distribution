@@ -34155,6 +34155,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.sonatype.m2e.buildhelper.feature" installMode="root"/>
       <feature id="org.sonatype.m2e.mavenarchiver.feature" installMode="root"/>
       <feature id="org.sonatype.m2e.egit.feature" installMode="root"/>
+      <feature id="org.jboss.tools.m2e.wro4j.feature" installMode="root"/>
 	  
       <feature id="org.cloudfoundry.ide.eclipse.server" installMode="root"/>
    </features>
