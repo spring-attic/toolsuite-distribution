@@ -610,6 +610,11 @@ Optional parameters:
 					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
+					<id>maven-dependency-support</id>
+					<layout>p2</layout>
+					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+				</repository>
+				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
