@@ -68,14 +68,14 @@
 		  
 		  
       <import feature="org.eclipse.draw2d"/>
-      <import feature="org.eclipse.e4.rcp" version="1.4.0.v20150603-0857" match="perfect"/>
+      <import feature="org.eclipse.e4.rcp"/>
 
-      <import feature="org.eclipse.ecf.core.feature" version="1.1.0.v20150512-1727" match="perfect"/>
-      <import feature="org.eclipse.ecf.core.ssl.feature" version="1.0.0.v20150512-1727" match="perfect"/>
-      <import feature="org.eclipse.ecf.filetransfer.feature" version="3.10.0.v20150512-1727" match="perfect"/>
-      <import feature="org.eclipse.ecf.filetransfer.httpclient4.feature" version="3.10.0.v20150512-1727" match="perfect"/>
-      <import feature="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature" version="1.0.0.v20150512-1727" match="perfect"/>
-      <import feature="org.eclipse.ecf.filetransfer.ssl.feature" version="1.0.0.v20150512-1727" match="perfect"/>
+      <import feature="org.eclipse.ecf.core.feature"/>
+      <import feature="org.eclipse.ecf.core.ssl.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.ssl.feature"/>
 
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.mylyn"/>
@@ -104,15 +104,15 @@
 <!--      <import feature="org.eclipse.epp.logging.aeri.feature"/> -->
       <import feature="org.eclipse.epp.mpc"/>
 
-      <import feature="org.eclipse.equinox.p2.core.feature" version="1.3.100.v20150527-1706" match="perfect"/>
-      <import feature="org.eclipse.equinox.p2.discovery.feature" version="1.0.300.v20150430-1836" match="perfect"/>
-      <import feature="org.eclipse.equinox.p2.extras.feature" version="1.2.100.v20150601-1708" match="perfect"/>
-      <import feature="org.eclipse.equinox.p2.rcp.feature" version="1.2.100.v20150527-1706" match="perfect"/>
-      <import feature="org.eclipse.equinox.p2.user.ui" version="2.2.100.v20150601-1708" match="perfect"/>
+      <import feature="org.eclipse.equinox.p2.core.feature"/>
+      <import feature="org.eclipse.equinox.p2.discovery.feature"/>
+      <import feature="org.eclipse.equinox.p2.extras.feature"/>
+      <import feature="org.eclipse.equinox.p2.rcp.feature"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.gef"/>
 		  
-      <import feature="org.eclipse.help" version="2.1.0.v20150603-2000" match="perfect"/>
-      <import feature="org.eclipse.jdt" version="3.11.0.v20150707-0800" match="perfect"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.jdt"/>
       <import feature="org.eclipse.jgit"/>
 
       <import feature="org.eclipse.jpt.common.eclipselink.feature"/>
@@ -160,9 +160,9 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.mylyn.github.feature"/>
 
-      <import feature="org.eclipse.pde" version="3.11.0.v20150603-2000" match="perfect"/>
-      <import feature="org.eclipse.platform" version="4.5.0.v20150603-2358" match="perfect"/>
-      <import feature="org.eclipse.rcp" version="4.5.0.v20150603-2331" match="perfect"/>
+      <import feature="org.eclipse.pde"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.rcp"/>
 
       <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
       <import feature="org.eclipse.recommenders.rcp.feature"/>

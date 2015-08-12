@@ -531,17 +531,10 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
 				</repository> -->
-<!--				<repository>
+				<repository>
 					<id>platform-m-builds</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.5-M-builds/</url>
-				</repository> -->
-
-				<!-- temporary nightly builds for testing newer JDT versions -->
-				<repository>
-					<id>platform-nightly-builds</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.6-I-builds/I20150707-0800</url>
 				</repository>
 
 				<repository>
