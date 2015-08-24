@@ -251,7 +251,7 @@
 			<id>e45-internal</id>
 			<properties>
 				<dist.target>e4.5-internal</dist.target>
-				<dist.target.major>e4.5</dist.target.major>
+				<dist.target.major>e4.5-internal</dist.target.major>
 				<dist.platform.name>Mars</dist.platform.name>
 				<dist.platform.name.long>Mars (4.5.0)</dist.platform.name.long>
 				<dist.platform.id>mars</dist.platform.id>
