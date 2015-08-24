@@ -13,12 +13,19 @@ openFile</programArgs>
 256M</programArgsWin>
       <vmArgs>-Dosgi.requiredJavaVersion=1.7
 -Xms40m
--Xmx768m
 -XX:MaxPermSize=256m
 -Xverify:none</vmArgs>
-      <vmArgsMac>-XstartOnFirstThread
--Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns -javaagent:../Eclipse/lombok.jar</vmArgsMac>
-      <vmArgsWin>-Dorg.eclipse.swt.browser.IEVersion=10001</vmArgsWin>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns
+         <argsX86_64>-Xmx1200m</argsX86_64>
+      </vmArgsMac>
+      <vmArgsWin>-Dorg.eclipse.swt.browser.IEVersion=10001
+         <argsX86_64>-Xmx1200m</argsX86_64>
+         <argsX86>-Xmx768m</argsX86>
+      </vmArgsWin>
+      <vmArgsLin>
+         <argsX86_64>-Xmx1200m</argsX86_64>
+         <argsX86>-Xmx768m</argsX86>
+      </vmArgsLin>
    </launcherArgs>
 
    <windowImages i16="/org.springsource.sts/sts16.png" i32="/org.springsource.sts/sts32.png" i48="/org.springsource.sts/sts48.png" i64="/org.springsource.sts/sts64.png" i128="/org.springsource.sts/sts128.png"/>
