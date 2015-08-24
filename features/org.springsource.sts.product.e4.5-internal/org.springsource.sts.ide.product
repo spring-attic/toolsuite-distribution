@@ -16,7 +16,7 @@ openFile</programArgs>
 -XX:MaxPermSize=256m
 -Xverify:none</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns
-         <argsX86_64>-Xmx1200m</argsX86_64>
+         <argsX86_64>-Xmx1200m -javaagent:../Eclipse/lombok.jar</argsX86_64>
       </vmArgsMac>
       <vmArgsWin>-Dorg.eclipse.swt.browser.IEVersion=10001
          <argsX86_64>-Xmx1200m</argsX86_64>
