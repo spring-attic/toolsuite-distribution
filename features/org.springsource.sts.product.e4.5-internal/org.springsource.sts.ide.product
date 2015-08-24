@@ -23,8 +23,8 @@ openFile</programArgs>
          <argsX86>-Xmx768m</argsX86>
       </vmArgsWin>
       <vmArgsLin>
-         <argsX86_64>-Xmx1200m</argsX86_64>
-         <argsX86>-Xmx768m</argsX86>
+         <argsX86_64>-Xmx1200m -javaagent:lombok.jar</argsX86_64>
+         <argsX86>-Xmx768m -javaagent:lombok.jar</argsX86>
       </vmArgsLin>
    </launcherArgs>
 
