@@ -235,6 +235,7 @@
 	  <import feature="org.codehaus.groovy.eclipse.feature" version="2.0.0" match="greaterOrEqual"/>
 	  <import feature="org.codehaus.groovy.jdt.patch"/>
 	  <import feature="org.codehaus.groovy24.feature"/>
+	  <import feature="org.codehaus.groovy.m2eclipse.feature"/>
 	  
    </requires>
 
