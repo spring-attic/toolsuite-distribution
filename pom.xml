@@ -742,7 +742,7 @@ Optional parameters:
 				<repository>
 					<id>jdepend-eclipse</id>
 					<layout>p2</layout>
-					<url>http://andrei.gmxhome.de/eclipse/</url>
+					<url>http://dist.springsource.com/release/TOOLS/third-party/jdepend4eclipse</url>
 				</repository>
 			</repositories>
 			<modules>
