@@ -149,6 +149,11 @@
 	</feature>	
 
 	<feature
+		id="org.springframework.ide.eclipse.boot.dash.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
 		id="org.springframework.ide.eclipse.autowire.feature" version="0.0.0">
 		<category name="Extensions / Spring IDE" />
 	</feature>
@@ -227,6 +232,11 @@
 
 	<feature
 		id="org.springframework.ide.eclipse.data.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.boot.dash.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
 
