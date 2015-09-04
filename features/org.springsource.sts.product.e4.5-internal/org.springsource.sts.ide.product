@@ -34169,6 +34169,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
 
       <feature id="org.cloudfoundry.ide.eclipse.server" installMode="root"/>
       <feature id="JDepend4Eclipse" installMode="root"/>
+      <feature id="pl.com.tt.fontsize" installMode="root"/>
    </features>
 
    <configurations>

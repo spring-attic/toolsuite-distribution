@@ -744,6 +744,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/release/TOOLS/third-party/jdepend4eclipse</url>
 				</repository>
+				<repository>
+					<id>fontsize</id>
+					<layout>p2</layout>
+					<url>http://plm.tt.com.pl/eclipse-plugins/updateSite/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.5-internal</module>
