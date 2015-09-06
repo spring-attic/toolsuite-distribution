@@ -237,10 +237,10 @@
 		<profile>
 			<id>e45</id>
 			<properties>
-				<dist.target>e4.5</dist.target>
+				<dist.target>e4.5.1</dist.target>
 				<dist.target.major>e4.5</dist.target.major>
 				<dist.platform.name>Mars</dist.platform.name>
-				<dist.platform.name.long>Mars (4.5.0)</dist.platform.name.long>
+				<dist.platform.name.long>Mars.1 (4.5.1)</dist.platform.name.long>
 				<dist.platform.id>mars</dist.platform.id>
 				<dist.platform.version>4.5</dist.platform.version>
 				<package.qualifierPrefix>e45</package.qualifierPrefix>
@@ -250,10 +250,10 @@
 		<profile>
 			<id>e45-internal</id>
 			<properties>
-				<dist.target>e4.5-internal</dist.target>
+				<dist.target>e4.5.1-internal</dist.target>
 				<dist.target.major>e4.5-internal</dist.target.major>
 				<dist.platform.name>Mars</dist.platform.name>
-				<dist.platform.name.long>Mars (4.5.0)</dist.platform.name.long>
+				<dist.platform.name.long>Mars.1 (4.5.1)</dist.platform.name.long>
 				<dist.platform.id>mars</dist.platform.id>
 				<dist.platform.version>4.5</dist.platform.version>
 				<package.qualifierPrefix>e45</package.qualifierPrefix>
