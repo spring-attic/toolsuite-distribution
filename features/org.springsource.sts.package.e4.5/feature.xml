@@ -76,11 +76,11 @@
       <import feature="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
       <import feature="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
       <import feature="org.eclipse.ecf.filetransfer.ssl.feature"/>
-
+<!--
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.egit.import"/>
-
+-->
       <import feature="org.eclipse.emf"/>
       <import feature="org.eclipse.emf.codegen"/>
       <import feature="org.eclipse.emf.codegen.ecore"/>
@@ -113,8 +113,9 @@
 		  
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt"/>
+<!--
       <import feature="org.eclipse.jgit"/>
-
+-->
       <import feature="org.eclipse.jpt.common.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.common.feature"/>
       <import feature="org.eclipse.jpt.dbws.eclipselink.feature"/>
