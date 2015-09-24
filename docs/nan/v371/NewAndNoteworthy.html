@@ -178,27 +178,33 @@
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p></p>
+<p>Cloud-native applications are rarely developed exclusively on a local machine. Sets of microservices are being deployed to the cloud, for testing and further
+	development reasons. This is a reason why we also integrated Cloud Foundry as a premier platform as a service for Spring Boot apps, into the boot dashboard.</p>
+<br/>
+
+<p>You can use the big "plus" icon from the toolbar or the context menu to add a new section for Cloud Foundry to your boot dashboard. The upcoming dialog
+	allows you to specify your credentials and the Clond Foundry instance of your choice. Once that information is complete, you can select the org and space
+	that you would like to use in this Cloud Foundry section in the boot dashboard.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p></p>
+<p>Feel free to add multiple Cloud Foundry sections to your boot dashboard in case you would like to use different Cloud Foundry instances or various orgs/spaces
+	from the same Cloud Foundry instance. Just open the dialog again and add another section.</p>
+<br/>
+
+<p>Once added, the section in the boot dashboard will list the apps that are deployed on this cloud foundry instance, together with its state (whether it is running
+	starting, or inactive. In addition to that the Cloud Foundry integration for the boot dashboard provides you with a very similar set of actions. You can go
+	ahead and (re)start or stop applications on CF or open the console view for each app to get the log output streamed directly into your Eclipse/STS console view.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p></p>
+<p>You can also deploy one (or even multiple at the same time) Spring Boot project from your workspace to CF using drag&drop. The boot dashboard will either use
+	the manifest.yml file of the project to configure it for CF or will prompt you for necessary information about the project to successfully deploy it to CF.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
-<br/>
-
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
-<br/>
-
-<p></p>
+<p>Once you deployed an app from your workspace to CF, the boot dashboard will keep this project association for your convenience. If you, for example, change the code of your
+	project locally and press (re)start afterwards on the associated app on CF, the boot dashboard will take care of redeploying the changed app to CF before it restarts it.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
