@@ -193,51 +193,73 @@
 <br/>
 
 <p>Once added, the section in the boot dashboard will list the apps that are deployed on this cloud foundry instance, together with its state (whether it is running
-	starting, or inactive. In addition to that the Cloud Foundry integration for the boot dashboard provides you with a very similar set of actions. You can go
-	ahead and (re)start or stop applications on CF or open the console view for each app to get the log output streamed directly into your Eclipse/STS console view.</p>
+	starting, or inactive), and the number of instances. In addition to that the Cloud Foundry integration for the boot dashboard provides you with a very similar
+	set of actions. You can go ahead and (re)start or stop applications on CF or open the console view for each app to get the log output streamed directly into
+	your Eclipse/STS console view.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p>You can also deploy one (or even multiple at the same time) Spring Boot project from your workspace to CF using drag&drop. The boot dashboard will either use
+<p>You can also deploy one Spring Boot project (or even multiple at the same time) from your workspace to CF using drag&amp;drop. The boot dashboard will either use
 	the manifest.yml file of the project to configure it for CF or will prompt you for necessary information about the project to successfully deploy it to CF.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p>Once you deployed an app from your workspace to CF, the boot dashboard will keep this project association for your convenience. If you, for example, change the code of your
-	project locally and press (re)start afterwards on the associated app on CF, the boot dashboard will take care of redeploying the changed app to CF before it restarts it.</p>
+<p>But take care when using a manifest.yml file in your project. If there is one, the boot dashboard will use it to configure the application on CF each time you
+	redeploy it (which happens automatically at restart and redebug. Changes to your application on CF that you made elsewhere (via the CF CLI or the web console)
+	will be lost and overridden by the configuration inside the manifest.yml. Even though this provides a consistent behavior of the boot dashboards interactions with
+	CF, we know that this is not yet the optimal way to do it and something we will work on for the next version of the boot dashboard.</p>
+<br/>
+
+<p>By the way, once you deployed an app from your workspace to CF, the boot dashboard will keep this project association for your convenience. If you, for example,
+	change the code of your project locally and press (re)start afterwards on the associated app on CF, the boot dashboard will take care of redeploying the changed
+	app to CF before it restarts it.</p>
+<br/>
+
+<p>You might have noticed that turn-around-cycles can be quite long and tedious when working with apps that are deployed to CF somewhere. Changing the app locally
+	usually requires uploading the changes to CF and re-staging/starting the app on CF. That takes a while and if all but a pleasure if you want to quickly change
+	your app in your IDE and test the results on CF. The <a href="https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3">Spring Boot Devtools</a> help you
+	with that. They allow an automatic restart of a Spring Boot application whehn class files change. In contrast to redeploying an app on CF, the internal Spring
+	Boot mechanism to restart the app usually takes only a few seconds.</p>
+<br/>
+
+<p>Usually this is done by starting the Spring Boot app on CF with the Spring Boot devtools on its classpath as well as a few options to enable the automatic restart
+	of the app in a remote contetxt. In addition to that the local Spring Boot app in your workspace needs to be started with a specific main method and additional
+	options as well to act as a local file watcher and submit changes ot the app on CF. The boot dashboard provides direct support for this setup. In case an app has
+	the Spring Boot Devtools on its classpath, all the necessary options are enabled by default at deploy time. And a conext menu action allows the developer to
+	start the local app using a single click.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p></p>
+<p>This makes it easy and convenient to work with the Spring Boot Devtools on CF. But another highlight should be mentioned here as well. The Spring Boot Devtools
+	allow remote debugging of apps on CF. And the boot dashboard supports this as well. You can restart your boot-devtools-enabled app on CF in debug mode (using the
+	(re)debug action). The boot devtools client application is started automatically and the STS/Eclipse debugger is connected to that application, once it is up
+	and running.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p></p>
+<p>This allows you to debug applications on CF right from within your IDE. (the automatic restart feature is automatically disabled when running the app in debug mode,
+	since both features cannot yet be used at the same time.</p>
+<br/>
+
+<p>Even though this remote debugging is a powerful feature for cetain situations, it usually is too slow for your everyday debugging work. Therefore the boot
+	dashboard offers another option to work with applications on remote targets like CF. The boot dashboard allows you to run a local Spring Boot app and expose it
+	via the <a href="">ngrok service</a> to the internet. This creates a public visible URL at ngrok that forwards all traffic to your locally running application.</p>
+<br/>
+
+<p>At the same time, when starting the local app in this mode, you can choose a remote Eureka service registry on CF, for example, to register your service with.
+	The local app with be started with additional parameters to register with the remote Eureka instance using the URL of the public visible ngrok tunnel. As a result,
+	services and apps on CF that lookup your service via Eureka are now able to call out to your locally running service. You can run, for example, one of your
+	microservices locally (and debug it, for example, locally), while everything else of your microservice landscape continues to run on CF.</p>
 <img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<p>The information of the exposed ngrok tunnel is displayed in the boot dashboard and visible in the properties view when you select the local app in the boot
+	dashboard. There is also a link to the admin UI of the locally running ngrok service (which is started behind the scenes for the exposed app automatically).
+	This ngrok UI is quite useful for introspecting the calls that are going forth and back via the tunnel.</p>
 <br/>
 
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
-<br/>
-
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
-<br/>
-
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
-<br/>
-
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
-<br/>
-
-<p></p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<p>This gives you an overview of the new Spring Boot Dashboard in STS and how it helps with microservice development using Spring Boot, Spring Cloud, and STS.
+	We hope you like it. If you have suggestions/questions, feel free to contact us on StackOverflow or via our issue tracker (see below).</p>
 <br/>
 
 <p class="nan3">Improvements to the Spring Boot YML Editor</p>
