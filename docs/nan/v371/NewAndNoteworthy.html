@@ -87,8 +87,7 @@
 <p class="nan2">General Updates</p>
 
 <p class="nan3">Eclipse Mars.1 (4.5.1, formerly known as Mars SR1)</p>
-<p>The default STS distribution is now based on the just released Eclipse Mars.1 release, formerly known as Eclipse Mars SR1. This update includes importent fixes for the Java8 comppiler implementation and the Maven Integration for Eclipse (that broke the Groovy-Eclipse m2e configurator in m2e 1.6.1), plus other bug fixes.</p>
-<p>If you wanna know what is new in Eclipse Mars in general, read more at <a href="https://www.eclipse.org/mars/noteworthy/">Eclipse Mars New &amp; Noteworthy</a>.</p>
+<p>The default STS distribution is now based on the just released Eclipse Mars.1 release, formerly known as Eclipse Mars SR1. This update includes importent fixes for the Java8 compiler implementation and the Maven Integration for Eclipse (that broke the Groovy-Eclipse m2e configurator in m2e 1.6.1), plus other bug fixes. If you wanna know what is new in Eclipse Mars in general, read more at <a href="https://www.eclipse.org/mars/noteworthy/">Eclipse Mars New &amp; Noteworthy</a>.</p>
 
 <p class="nan3">Pivotal tc Server updated to 3.1.2</p>
 <p>The latest Pivotal tc Server release 3.1.2 is now included in the STS distribution bundle.</p>
@@ -106,34 +105,33 @@
 <br/>
 	
 <p>You can open the Spring Boot Dashboard via the Spring Boot button in your main Eclipse toolbar.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/dashboard-icon.png"></img></center>
 <br/>
 
 <p>It opens up a new view in your STS/Eclipse. If you have projects in your workspace that uses Spring Boot, you will see them showing up in the
 	boot dashboard automatically.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/dashboard.png"></img></center>
 <br/>
 
 <p>You can go ahead, select one or multiple apps, and start or stop them using the actions in the toolbar of the view or from the context menu. This gives you
 	an easy way to just start (in debug or run mode) or stop them right from within the boot dashboard. Those actions will take care of an already running app and
 	restart it (stop it first, then start it again) for you. This makes it easy for you to quickly restart your boot app, if you made changes to your code, for example.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/start.png"></img></center>
 <br/>
 
-<p>The (re)start//re)debug actions will create a new Spring Boot launch configuration, if there is no existing Spring Boot launch configuration for the project. If there are
+<p>The (re)start/(re)debug actions will create a new Spring Boot launch configuration, if there is no existing Spring Boot launch configuration for the project. If there are
 	multiple launch configurations available, the dashboard allows you to select the default one. This will be used the next time you press (re)start/(re)debug on the
 	dashboard.</p>
 <br/>
 
 <p>If you are looking for the console of a running boot app, you can jump to that console directly from within the boot dashboard. This makes it easy to switch between the
 	different consoles if you have a number of boot apps running locally.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/jumptoconsole.png"></img></center>
 <br/>
 
 <p>For your convenience, there are some information directly being displayed in the boot dashboard, if your boot app is running. Firstofall, the state is being visualized
 	using icons for inactive, starting, or running spring boot projects. In addition to that the boot dashboard will also display the port that is used by the boot app.
 	You don't need to search in the log output anymore on which port the Tomcat server got started. Just take a look at the boot dashboard and you will see it immediately.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
 <p>If you would like to use the running spring boot application via a browser, you can just double-click on the project item in the boot dashboard. It will open
@@ -141,41 +139,44 @@
 	app is now just one double-click away. This feature uses the preferences for which browser to use from the general STS/Eclipse browser preferences. So if you would
 	like to use your system default instead of the internal STS/Eclipse browser view, go to the preferences and make the switch. The next time you double-click on
 	a running project in the boot dashboard will use that setting.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/browser.png"></img></center>
 <br/>
 
 <p>In some situations, the default URL of a project is not what you typically use as the main entry point of your app. Sometimes there is no default page being served,
 	but specific request mappings are used to return JSON data, for example. For those situations, you can customize the default URL of the app (for the double-click action).
-	Open the preferences view for the item in the dashboard (there is an action for that in the dashboard, too) and type something into the "path" field. This will be used
+	Open the properties view for the item in the dashboard (there is an action for that in the dashboard, too) and type something into the "path" field. This will be used
 	as the extension to the default URL of the app. From there on, a double-click will open this combined URL.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/path.png"></img></center>
 <br/>
 
 <p>If you have the Spring Boot actuators enabled for your Spring Boot projects (by adding them as a starter in your pom.xml file), the path field will even prompt you
-	with content assist. It finds all the mapped URLs of the running Spring Boot app. You can browse them in the "Request Mappings" section of the properties view as well.
+	with content assist. It finds all the mapped URLs of the running Spring Boot app.</p>
+<center><img src="img/path-content-assist.png"></img></center>
+<br/>
+	
+<p>You can browse them in the "Request Mappings" section of the properties view as well.
 	In that tab of the properties view, every single request mapping of the running app is listed. The ones at the top (using a regular font color) are defined in the
 	source code of your project. The ones in grey are contributed by libraries on the classpath of the project. Double-clicking on the URL extension opens a browser
 	window for that mapping. Double-clicking on the source-code column of that entry will jump to the code where this request mapping is being defined. This makes it
 	easy for you to navigate to the code directly from the request mapping.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/request-mappings.png"></img></center>
 <br/>
 
-<p>Working with a potentially larger number of Spring Boot applications in your workspace can turn the Spring Boot dashboard into a crowdy place. Usually in those
+<p>Working with a potentially larger number of Spring Boot applications in your workspace can turn the Spring Boot dashboard into a crowded place. Usually in those
 	situations you are not working on all of those projects, but would like to focus in a subset. Therefore we added the ability to tag boot apps on the dashboard.
 	Within the propperties view the field "tags" allows you to add a random number of tags to each project. Content-assist helps you to use already existing tags.
 	A comma or a semicolon can be used as a delimiter to distinguish individual tags, since we allow spaces to be part of a tag.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/tagging.png"></img></center>
 <br/>
 
 <p>Once tagged, you can go back to the boot dashboard and use the filter box at the top to reduce the number of visible projects to one or more tags. In case your
 	doesn't match all the apps, there is an information showing up at the botton of the dashboard about how many projects are currently not visible due to the 
 	filtering.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/filter.png"></img></center>
 <br/>
 
 <p>These features are great to deal with local Spring Boot apps and definitely provide the easiest way to work with them. From our early experiences using the dashboard
 	and watching people using it, it changes the way you work with Spring Boot apps in STS and quickly becomes a often-times used and central piece of your IDE.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
 <br/>
 
 <p>Cloud-native applications are rarely developed exclusively on a local machine. Sets of microservices are being deployed to the cloud, for testing and further
@@ -185,7 +186,7 @@
 <p>You can use the big "plus" icon from the toolbar or the context menu to add a new section for Cloud Foundry to your boot dashboard. The upcoming dialog
 	allows you to specify your credentials and the Clond Foundry instance of your choice. Once that information is complete, you can select the org and space
 	that you would like to use in this Cloud Foundry section in the boot dashboard.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/cloudfoundry.png"></img></center>
 <br/>
 
 <p>Feel free to add multiple Cloud Foundry sections to your boot dashboard in case you would like to use different Cloud Foundry instances or various orgs/spaces
@@ -196,12 +197,12 @@
 	starting, or inactive), and the number of instances. In addition to that the Cloud Foundry integration for the boot dashboard provides you with a very similar
 	set of actions. You can go ahead and (re)start or stop applications on CF or open the console view for each app to get the log output streamed directly into
 	your Eclipse/STS console view.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/cloudsection.png"></img></center>
 <br/>
 
 <p>You can also deploy one Spring Boot project (or even multiple at the same time) from your workspace to CF using drag&amp;drop. The boot dashboard will either use
 	the manifest.yml file of the project to configure it for CF or will prompt you for necessary information about the project to successfully deploy it to CF.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/cf-deploy-dialog.png"></img></center>
 <br/>
 
 <p>But take care when using a manifest.yml file in your project. If there is one, the boot dashboard will use it to configure the application on CF each time you
@@ -227,14 +228,14 @@
 	options as well to act as a local file watcher and submit changes ot the app on CF. The boot dashboard provides direct support for this setup. In case an app has
 	the Spring Boot Devtools on its classpath, all the necessary options are enabled by default at deploy time. And a conext menu action allows the developer to
 	start the local app using a single click.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/devtools-client.png"></img></center>
 <br/>
 
 <p>This makes it easy and convenient to work with the Spring Boot Devtools on CF. But another highlight should be mentioned here as well. The Spring Boot Devtools
 	allow remote debugging of apps on CF. And the boot dashboard supports this as well. You can restart your boot-devtools-enabled app on CF in debug mode (using the
 	(re)debug action). The boot devtools client application is started automatically and the STS/Eclipse debugger is connected to that application, once it is up
 	and running.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/cloud-debug.png"></img></center>
 <br/>
 
 <p>This allows you to debug applications on CF right from within your IDE. (the automatic restart feature is automatically disabled when running the app in debug mode,
@@ -250,7 +251,9 @@
 	The local app with be started with additional parameters to register with the remote Eureka instance using the URL of the public visible ngrok tunnel. As a result,
 	services and apps on CF that lookup your service via Eureka are now able to call out to your locally running service. You can run, for example, one of your
 	microservices locally (and debug it, for example, locally), while everything else of your microservice landscape continues to run on CF.</p>
-<img src="img/yaml-editor-info-hover.png"></img>
+<center><img src="img/ngrok-tunnel-1.png"></img></center>
+<br/>
+<center><img src="img/ngrok-tunnel-2.png"></img></center>
 <br/>
 
 <p>The information of the exposed ngrok tunnel is displayed in the boot dashboard and visible in the properties view when you select the local app in the boot
