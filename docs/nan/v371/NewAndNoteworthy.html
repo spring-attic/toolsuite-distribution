@@ -87,7 +87,7 @@
 <p class="nan2">General Updates</p>
 
 <p class="nan3">Eclipse Mars.1 (4.5.1, formerly known as Mars SR1)</p>
-<p>The default STS distribution is now based on the just released Eclipse Mars.1 release, formerly known as Eclipse Mars SR1. This update includes importent fixes for the Java8 compiler implementation and the Maven Integration for Eclipse (that broke the Groovy-Eclipse m2e configurator in m2e 1.6.1), plus other bug fixes. If you wanna know what is new in Eclipse Mars in general, read more at <a href="https://www.eclipse.org/mars/noteworthy/">Eclipse Mars New &amp; Noteworthy</a>.</p>
+<p>The default STS distribution is now based on the recently released Eclipse Mars.1 release, formerly known as Eclipse Mars SR1. This update includes important fixes for the Java8 compiler implementation and the Maven Integration for Eclipse (that broke the Groovy-Eclipse m2e configurator in m2e 1.6.1), plus other bug fixes. If you want to know what is new in Eclipse Mars in general, read more at <a href="https://www.eclipse.org/mars/noteworthy/">Eclipse Mars New &amp; Noteworthy</a>.</p>
 
 <p class="nan3">Pivotal tc Server updated to 3.1.2</p>
 <p>The latest Pivotal tc Server release 3.1.2 is now included in the STS distribution bundle.</p>
@@ -101,19 +101,19 @@
 	Spring Boot is a great foundation for building those microservies, and Spring Cloud is more and more used to assemble and coordinate a potentially large
 	number of those microservices in the cloud and on a PaaS like Cloud Foundry. We think this architectural shift deserves first-class support in your IDE.
 	This is why we introduce a brand-new component to the Spring Tool Suite that was designed from the ground-up to help you work with Spring Boot and
-	mircoservice architectures: The Spring Boot Dashboard in STS.</p>
+	microservice architectures: The Spring Boot Dashboard in STS.</p>
 <br/>
 	
 <p>You can open the Spring Boot Dashboard via the Spring Boot button in your main Eclipse toolbar.</p>
 <center><img src="img/dashboard-icon.png"></img></center>
 <br/>
 
-<p>It opens up a new view in your STS/Eclipse. If you have projects in your workspace that uses Spring Boot, you will see them showing up in the
+<p>It opens up a new view in your STS/Eclipse. If you have projects in your workspace that use Spring Boot, you will see them showing up in the
 	boot dashboard automatically.</p>
 <center><img src="img/dashboard.png"></img></center>
 <br/>
 
-<p>You can go ahead, select one or multiple apps, and start or stop them using the actions in the toolbar of the view or from the context menu. This gives you
+<p>You can select one or many apps, then start or stop them using the actions in the toolbar of the view or from the context menu. This gives you
 	an easy way to just start (in debug or run mode) or stop them right from within the boot dashboard. Those actions will take care of an already running app and
 	restart it (stop it first, then start it again) for you. This makes it easy for you to quickly restart your boot app, if you made changes to your code, for example.</p>
 <center><img src="img/start.png"></img></center>
@@ -129,16 +129,16 @@
 <center><img src="img/jumptoconsole.png"></img></center>
 <br/>
 
-<p>For your convenience, there are some information directly being displayed in the boot dashboard, if your boot app is running. Firstofall, the state is being visualized
+<p>For your convenience some information is directly displayed in the boot dashboard for each app, if your boot app is running. First of all, the state is being visualized
 	using icons for inactive, starting, or running spring boot projects. In addition to that the boot dashboard will also display the port that is used by the boot app.
-	You don't need to search in the log output anymore on which port the Tomcat server got started. Just take a look at the boot dashboard and you will see it immediately.</p>
+	You don't need to search in the log output anymore on which port the embedded server got started. Just take a look at the boot dashboard and you will see it immediately.</p>
 <br/>
 
-<p>If you would like to use the running spring boot application via a browser, you can just double-click on the project item in the boot dashboard. It will open
+<p>If you would like to access the running spring boot application via a browser, you can just double-click on the project item in the boot dashboard. It will open
 	a browser with the default URL (in this case it is localhost, followed by the port number of the app) for you. So opening the right URL for your Spring Boot
 	app is now just one double-click away. This feature uses the preferences for which browser to use from the general STS/Eclipse browser preferences. So if you would
 	like to use your system default instead of the internal STS/Eclipse browser view, go to the preferences and make the switch. The next time you double-click on
-	a running project in the boot dashboard will use that setting.</p>
+	a running project in the boot dashboard it will use that setting.</p>
 <center><img src="img/browser.png"></img></center>
 <br/>
 
@@ -163,83 +163,91 @@
 <br/>
 
 <p>Working with a potentially larger number of Spring Boot applications in your workspace can turn the Spring Boot dashboard into a crowded place. Usually in those
-	situations you are not working on all of those projects, but would like to focus in a subset. Therefore we added the ability to tag boot apps on the dashboard.
-	Within the propperties view the field "tags" allows you to add a random number of tags to each project. Content-assist helps you to use already existing tags.
+	situations you are not working on all of those projects, but would like to focus in on a subset. Therefore we added the ability to tag boot apps on the dashboard.
+	Within the propperties view the field "tags" allows you to add any number of tags to each project. Content-assist helps you to use already existing tags.
 	A comma or a semicolon can be used as a delimiter to distinguish individual tags, since we allow spaces to be part of a tag.</p>
 <center><img src="img/tagging.png"></img></center>
 <br/>
 
-<p>Once tagged, you can go back to the boot dashboard and use the filter box at the top to reduce the number of visible projects to one or more tags. In case your
-	doesn't match all the apps, there is an information showing up at the botton of the dashboard about how many projects are currently not visible due to the 
-	filtering.</p>
+<p>Once tagged, you can go back to the boot dashboard and use the filter box at the top to reduce
+the number of visible projects to just those having certain tags. In case your tag doesn't match
+all the apps, there is an information label showing up at the botton of the dashboard about how 
+many projects are currently not visible due to the filtering.</p>
 <center><img src="img/filter.png"></img></center>
 <br/>
 
-<p>These features are great to deal with local Spring Boot apps and definitely provide the easiest way to work with them. From our early experiences using the dashboard
-	and watching people using it, it changes the way you work with Spring Boot apps in STS and quickly becomes a often-times used and central piece of your IDE.</p>
+<p>These features are great for dealing with local Spring Boot apps and definitely provide the easiest
+way to work with them. From our early experiences using the dashboard and watching people using it, 
+it changes the way you work with Spring Boot apps in STS.</p>
 <br/>
 
-<p>Cloud-native applications are rarely developed exclusively on a local machine. Sets of microservices are being deployed to the cloud, for testing and further
-	development reasons. This is a reason why we also integrated Cloud Foundry as a premier platform as a service for Spring Boot apps, into the boot dashboard.</p>
+<p>Cloud-native applications are rarely developed exclusively on a local machine. It is a common
+occurrence that your system is composed of numerous microservices and you may be working locally
+on one of them whilst the rest are deployed to the cloud. To make managing cloud deployment easier
+the boot dashboard integrates Cloud Foundry support directly.</p>
 <br/>
 
-<p>You can use the big "plus" icon from the toolbar or the context menu to add a new section for Cloud Foundry to your boot dashboard. The upcoming dialog
-	allows you to specify your credentials and the Clond Foundry instance of your choice. Once that information is complete, you can select the org and space
-	that you would like to use in this Cloud Foundry section in the boot dashboard.</p>
+<p>You can use the big "plus" icon from the toolbar or the context menu to add a new section for Cloud Foundry to your boot dashboard. The dialog that appears allows you to specify your credentials and the Cloud Foundry instance of
+your choice. Once that information is entered, you can select the org and space that you would like
+to use in this Cloud Foundry section in the boot dashboard.</p>
 <center><img src="img/cloudfoundry.png"></img></center>
 <br/>
 
-<p>Feel free to add multiple Cloud Foundry sections to your boot dashboard in case you would like to use different Cloud Foundry instances or various orgs/spaces
-	from the same Cloud Foundry instance. Just open the dialog again and add another section.</p>
+<p>Feel free to add multiple Cloud Foundry sections to your boot dashboard in case you would like to use
+different Cloud Foundry instances or different orgs/spaces from the same Cloud Foundry instance. Just
+open the dialog again and add another section.</p>
 <br/>
 
-<p>Once added, the section in the boot dashboard will list the apps that are deployed on this cloud foundry instance, together with its state (whether it is running
-	starting, or inactive), and the number of instances. In addition to that the Cloud Foundry integration for the boot dashboard provides you with a very similar
-	set of actions. You can go ahead and (re)start or stop applications on CF or open the console view for each app to get the log output streamed directly into
-	your Eclipse/STS console view.</p>
+<p>Once added, the section in the boot dashboard will list the apps that are deployed on this cloud foundry
+space, together with their state (running, starting, or inactive), and the number of instances. The same
+actions (start, stop, open console) are supported for Cloud Foundry deployed apps as are supported for local boot apps.
+</p>
 <center><img src="img/cloudsection.png"></img></center>
 <br/>
 
-<p>You can also deploy one Spring Boot project (or even multiple at the same time) from your workspace to CF using drag&amp;drop. The boot dashboard will either use
-	the manifest.yml file of the project to configure it for CF or will prompt you for necessary information about the project to successfully deploy it to CF.</p>
+<p>You can also deploy one Spring Boot project (or even multiple at the same time) from your workspace to Cloud Foundry using drag&amp;drop. The boot dashboard will either use the manifest.yml file of the project to configure it for CF or will prompt you for necessary information about the project in order to facilitate deployment.</p>
 <center><img src="img/cf-deploy-dialog.png"></img></center>
 <br/>
 
 <p>But take care when using a manifest.yml file in your project. If there is one, the boot dashboard will use it to configure the application on CF each time you
-	redeploy it (which happens automatically at restart and redebug. Changes to your application on CF that you made elsewhere (via the CF CLI or the web console)
-	will be lost and overridden by the configuration inside the manifest.yml. Even though this provides a consistent behavior of the boot dashboards interactions with
-	CF, we know that this is not yet the optimal way to do it and something we will work on for the next version of the boot dashboard.</p>
+redeploy it (which happens automatically when executing restart/redebug). Changes to your application on CF that you made elsewhere (via the CF CLI or the web console)
+ will be lost and overridden by the configuration inside the manifest.yml. Even though this provides a consistent behavior of the boot dashboards interactions with CF, we know that this is not yet the optimal way to do it and is something we will work on for the next version of the boot dashboard.</p>
 <br/>
 
-<p>By the way, once you deployed an app from your workspace to CF, the boot dashboard will keep this project association for your convenience. If you, for example,
-	change the code of your project locally and press (re)start afterwards on the associated app on CF, the boot dashboard will take care of redeploying the changed
-	app to CF before it restarts it.</p>
+<p>Once you have deployed an app from your workspace to CF, the boot dashboard will keep this
+project association. If you, for example, change the code of your project locally
+and press (re)start afterwards on the associated app on CF, the boot dashboard will take care
+of redeploying the modified app to CF before it restarts it.</p>
 <br/>
 
-<p>You might have noticed that turn-around-cycles can be quite long and tedious when working with apps that are deployed to CF somewhere. Changing the app locally
-	usually requires uploading the changes to CF and re-staging/starting the app on CF. That takes a while and if all but a pleasure if you want to quickly change
-	your app in your IDE and test the results on CF. The <a href="https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3">Spring Boot Devtools</a> help you
-	with that. They allow an automatic restart of a Spring Boot application whehn class files change. In contrast to redeploying an app on CF, the internal Spring
-	Boot mechanism to restart the app usually takes only a few seconds.</p>
+<p>You might have noticed that turn-around-cycles can be rather long when working with apps that
+are deployed to CF somewhere. Changing the app locally usually requires uploading the changes to
+CF and re-staging/starting the app on CF.
+The <a href="https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3">Spring Boot Devtools</a> help you
+with that. They allow an automatic restart of a Spring Boot application when class files change.
+In contrast to redeploying an app on CF, the internal Spring Boot mechanism to restart the app usually takes only a few seconds.</p>
 <br/>
 
-<p>Usually this is done by starting the Spring Boot app on CF with the Spring Boot devtools on its classpath as well as a few options to enable the automatic restart
-	of the app in a remote contetxt. In addition to that the local Spring Boot app in your workspace needs to be started with a specific main method and additional
-	options as well to act as a local file watcher and submit changes ot the app on CF. The boot dashboard provides direct support for this setup. In case an app has
-	the Spring Boot Devtools on its classpath, all the necessary options are enabled by default at deploy time. And a conext menu action allows the developer to
+<p>Usually this is done by starting the Spring Boot app on CF with the Spring Boot devtools
+on its classpath as well as a few options to enable the automatic restart of the app in a
+remote context. In addition to that the local Spring Boot app in your workspace needs to
+be started with a specific main method and additional options as well to act as a local
+file watcher and submit changes ot the app on CF. The boot dashboard provides direct 
+support for this setup. In case an app has the Spring Boot Devtools on its classpath, 
+all the necessary options are enabled by default at deploy time. And a context menu action allows the developer to
 	start the local app using a single click.</p>
 <center><img src="img/devtools-client.png"></img></center>
 <br/>
 
-<p>This makes it easy and convenient to work with the Spring Boot Devtools on CF. But another highlight should be mentioned here as well. The Spring Boot Devtools
-	allow remote debugging of apps on CF. And the boot dashboard supports this as well. You can restart your boot-devtools-enabled app on CF in debug mode (using the
-	(re)debug action). The boot devtools client application is started automatically and the STS/Eclipse debugger is connected to that application, once it is up
-	and running.</p>
+<p>This makes it easy and convenient to work with the Spring Boot Devtools on CF. Additionally, the Spring Boot Devtools
+allow remote debugging of apps on CF. And the boot dashboard supports this as well. You
+can restart your boot-devtools-enabled app on CF in debug mode (using the (re)debug
+action). The boot devtools client application is started automatically and the STS/Eclipse
+debugger is connected to that application, once it is up and running.</p>
 <center><img src="img/cloud-debug.png"></img></center>
 <br/>
 
-<p>This allows you to debug applications on CF right from within your IDE. (the automatic restart feature is automatically disabled when running the app in debug mode,
-	since both features cannot yet be used at the same time.</p>
+<p>This allows you to debug applications on CF right from within your IDE. (the automatic restart feature is automatically disabled when running the app in debug mode, since both features cannot yet be used at the same time.</p>
 <br/>
 
 <p>Even though this remote debugging is a powerful feature for cetain situations, it usually is too slow for your everyday debugging work. Therefore the boot
@@ -247,22 +255,26 @@
 	via the <a href="">ngrok service</a> to the internet. This creates a public visible URL at ngrok that forwards all traffic to your locally running application.</p>
 <br/>
 
-<p>At the same time, when starting the local app in this mode, you can choose a remote Eureka service registry on CF, for example, to register your service with.
-	The local app with be started with additional parameters to register with the remote Eureka instance using the URL of the public visible ngrok tunnel. As a result,
-	services and apps on CF that lookup your service via Eureka are now able to call out to your locally running service. You can run, for example, one of your
-	microservices locally (and debug it, for example, locally), while everything else of your microservice landscape continues to run on CF.</p>
+<p>At the same time, when starting the local app in this mode, you can choose a remote
+Eureka service registry on CF, for example, to register your service with.  The local app
+will be started with additional parameters to register with the remote Eureka instance using the
+URL of the public visible ngrok tunnel. As a result, services and apps on CF that lookup your
+service via Eureka are now able to call out to your locally running service. This enables you to run one of your
+microservices locally (and debug it, for example, locally), while everything else of your
+microservice landscape continues to run on CF!</p>
 <center><img src="img/ngrok-tunnel-1.png"></img></center>
 <br/>
 <center><img src="img/ngrok-tunnel-2.png"></img></center>
 <br/>
 
-<p>The information of the exposed ngrok tunnel is displayed in the boot dashboard and visible in the properties view when you select the local app in the boot
-	dashboard. There is also a link to the admin UI of the locally running ngrok service (which is started behind the scenes for the exposed app automatically).
-	This ngrok UI is quite useful for introspecting the calls that are going forth and back via the tunnel.</p>
+<p>The information about the exposed ngrok tunnel is displayed in the boot dashboard and visible
+in the properties view when you select the local app in the boot dashboard. There is also a
+link to the admin UI of the locally running ngrok service (which is started behind the
+scenes for the exposed app automatically).  This ngrok UI is quite useful for introspecting the
+calls that are going forth and back via the tunnel.</p>
 <br/>
 
-<p>This gives you an overview of the new Spring Boot Dashboard in STS and how it helps with microservice development using Spring Boot, Spring Cloud, and STS.
-	We hope you like it. If you have suggestions/questions, feel free to contact us on StackOverflow or via our issue tracker (see below).</p>
+<p>We hope you like the dashboard. If you have suggestions/questions, feel free to contact us on StackOverflow or via our issue tracker (see below).</p>
 <br/>
 
 <p class="nan3">Improvements to the Spring Boot YML Editor</p>
@@ -273,7 +285,10 @@
 
 <p>Since the end of March Pivotal is no longer sponsoring the Groovy and Grails projects (as described
 <a href="http://blog.pivotal.io/pivotal/news-2/groovy-2-4-and-grails-3-0-to-be-last-major-releases-under-pivotal-sponsorship">here</a>).
-Therefore we don't ship new versions of the GGTS bundle anymore. Groovy-Eclipse remains on the dashboard and got fully updated for Eclipse 4.5.
+Therefore we don't ship new versions of the GGTS bundle anymore. Groovy-Eclipse remains on the dashboard
+and was fully updated for Eclipse 4.5. It was *not* updated for Eclipse 4.5.1 so beware that if you
+install Groovy-Eclipse you will be downgrading your Java
+compiler and missing all the JDT related fixes that went into 4.5.1.
 </p>
 <hr>
 
