@@ -526,11 +526,6 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/mars/</url>
 				</repository>
-				<repository>
-					<id>mars-updates</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository>
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
@@ -571,11 +566,6 @@ Optional parameters:
 					<id>atlassian</id>
 					<layout>p2</layout>
 					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
-				</repository>
-				<repository>
-					<id>m2e-emergency-updates</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/milestones/1.6/</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
@@ -643,11 +633,6 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/mars/</url>
 				</repository>
-				<repository>
-					<id>mars-updates</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository>
 				<!--				<repository>
 				<id>platform</id>
 				<layout>p2</layout>
@@ -688,11 +673,6 @@ Optional parameters:
 					<id>atlassian</id>
 					<layout>p2</layout>
 					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
-				</repository>
-				<repository>
-					<id>m2e-emergency-updates</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/milestones/1.6/</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
