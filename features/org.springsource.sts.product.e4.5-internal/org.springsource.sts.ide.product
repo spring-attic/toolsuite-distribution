@@ -34176,6 +34176,8 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.eclipse.jgit" installMode="root"/>
 	  
       <feature id="org.springsource.ide.eclipse.gradle.feature" installMode="root"/>
+	  
+      <feature id="io.github.philwebb.eclipse.theme.cupertino.feature" installMode="root"/>
    </features>
 
    <configurations>

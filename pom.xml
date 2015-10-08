@@ -612,6 +612,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/release/TOOLS/cloudfoundry/1.8.3</url>
 				</repository>
+				<repository>
+					<id>cupertino-theme</id>
+					<layout>p2</layout>
+					<url>https://dl.bintray.com/philwebb/eclipse-cupertino-theme/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.5</module>
@@ -728,6 +733,11 @@ Optional parameters:
 					<id>fontsize</id>
 					<layout>p2</layout>
 					<url>http://plm.tt.com.pl/eclipse-plugins/updateSite/</url>
+				</repository>
+				<repository>
+					<id>cupertino-theme</id>
+					<layout>p2</layout>
+					<url>https://dl.bintray.com/philwebb/eclipse-cupertino-theme/</url>
 				</repository>
 			</repositories>
 			<modules>
