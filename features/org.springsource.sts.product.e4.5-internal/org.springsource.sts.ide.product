@@ -34167,7 +34167,9 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="com.ifedorenko.m2e.mavendev.feature" installMode="root"/>
       <feature id="com.ianbrandt.tools.m2e.mdp.feature" installMode="root"/>
 
-      <feature id="org.cloudfoundry.ide.eclipse.server" installMode="root"/>
+      <feature id="org.eclipse.cft.server.core.feature" installMode="root"/>
+      <feature id="org.eclipse.cft.server.ui.feature" installMode="root"/>
+
       <feature id="JDepend4Eclipse" installMode="root"/>
       <feature id="pl.com.tt.fontsize" installMode="root"/>
 	  
