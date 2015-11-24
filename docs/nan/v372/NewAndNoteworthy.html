@@ -103,16 +103,74 @@
 <br/>
 <p>The debugging support for apps on Cloud Foundry has changed. We use debugging via SSH from now on. That means
 	you don't need to have the Spring Boot Devtools on the classpath of your project to get debugging working. All you
-	need to ensure is that you are running on Diego (which is the default runtime now).</p>
+	need to ensure is that you are running on Diego (which is the default runtime now on PWS).</p>
 <br/>
 <p>Known limitations: since this is an early-access feature, it is limited to the PWS CF environment. The old support
 	using the Spring Boot Devtools is no longer available via the boot dashboard. However, you can acitvate that manually
 	as described on the Spring Boot Devtools docs.</p>
 <br/>
 
-<p class="nan3">Improvements to the Spring Boot YML and Properties Editors</p>
+<p class="nan3">Gradle BuildShip Integration (Experimental)</p>
+<br/>
 
-<p></p> 
+<p>In time, STS Gradle Integration will be replaced with <a href="http://projects.eclipse.org/projects/tools.buildship">
+Eclipse BuildShip</a> (the new official Eclipse project that provides Gradle integration for Eclipse). STS 3.7.2 makes a 
+first step in that direction. Our 'New Spring Starter Project' and 'Import Getting Started Content' wizards now 
+provide a choice between our old "STS Gradle Integration" or "BuildShip".<p>
+
+<center><img src="img/new-starter-project-buildship.png"></img></center>
+<br/>
+
+<p>We encourage users to try out BuildShip in preparation to eventually making the switch. If BuildShip does not
+yet meet your needs, you can still continue to use "STS Gradle Integration" for some time to come. However, "STS Gradle Integration" 
+is in 'minimal maintenance' mode. There will be no more new features and limited bugfixes. So please consider filing a bug report 
+detailing what is stopping you from making the switch to BuildShip. You can file these bug reports on the <a href="https://issuetracker.springsource.com/browse/STS">STS issue tracker</a>. We will raise corresponding BuildShip issue tickets when appropriate.</p>
+<br/>
+
+<p>Known limitations of BuildShip Gradle integration:</p>
+<ul>
+  <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=471728">Bug 471728</a>: BuildShip does not integrate with Eclipse WTP. 
+     While projects that use 'war' packaging can be created using our wizards, such projects are not officialy supported and consequently will 
+     not be correctly configured by BuildShip.</li>
+  <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=482315">Bug 482315</a>: Running a BuildShip project with "Run As Java Application" or
+     "Run as Spring Boot App", the runtime classpath will be incorrect and contain 'test' dependencies. Note: this is not a problem specific
+     only to "BuildShip". "STS Gradle Integration" is also affected as this issue stems from a limitation of the Gradle Tooling API that 
+     both use.</li>
+  <li><a href="href=https://bugs.eclipse.org/bugs/show_bug.cgi?id=468244">Bug 468244</a>: BuildShip lacks a mechanism for third-party tooling 
+     providers to participate in configuring a project. STS uses such a mechanism to configure the JDT Annotation Processor when 
+     spring-boot-configration-processor is present on a project's classpath. This automatic configuration currently only works with 
+     "STS Gradle Integration" but not "BuildShip". If you make use of the '@ConfigurationProperties' annotations in your code, this 
+     means that these annotations will not be processed as part of Eclipse workspace builds unless you manually configure JDT APT.
+  </li>
+</ul>
+
+<p class="nan3">"New Spring Starter Project" Wizard Improvements</p>
+<br/>
+
+<p>The wizard now remembers previously selected options and uses them as defaults when you open it the next time [<a href="https://issuetracker.springsource.com/browse/STS-4243">STS-4243</a>].</p>
+<br/>
+
+<p>The wizard now also has a searchbox to help find a specific 'dependency' among the many that are available 
+[<a href="https://issuetracker.springsource.com/browse/STS-4257">STS-4257</a>].</p>
+<center><img src="img/new-starter-search.png"></img></center>
+<br/>
+
+
+<p class="nan3">QuickSearch escape sequences</p>
+<br/>
+<p>STS Quick Text Search now provides support for escaping the wildcard '*' and '?' characters by using a '\' [<a href="https://issuetracker.springsource.com/browse/STS-4190">STS-4190</a>]. 
+
+<center><img src="img/find-a-star.png"></img></center>
+<br/>
+
+<p class="nan3">Improvements to the Spring Boot YML and Properties Editors</p>
+<br/>
+<p>More accurate validation of Map type properties that allow for nested yaml structure [<a href="https://issuetracker.springsource.com/browse/STS-4254">STS-4254</a>].</p>
+<br/>
+<p>There is a new 'QuickFix' to ignore a given problem marker type in the current project (before there was only a quickfix to ignore it in the
+entire workspace) [<a href="https://issuetracker.springsource.com/browse/STS-4230">STS-4230</a>].</p>
+
+<center><img src="img/yml-quickfix.png"></img></center>
 <br/>
 
 <p class="nan3">Spring Framework updated to 4.2.3</p>
