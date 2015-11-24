@@ -288,6 +288,13 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
+	<bundle id="javax.validation" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="javax.validation.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
 	<bundle id="org.aopalliance" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
