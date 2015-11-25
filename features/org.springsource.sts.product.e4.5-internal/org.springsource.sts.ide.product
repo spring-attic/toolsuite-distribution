@@ -34171,7 +34171,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.eclipse.cft.server.ui.feature" installMode="root"/>
 
       <feature id="JDepend4Eclipse" installMode="root"/>
-      <feature id="pl.com.tt.fontsize" installMode="root"/>
+      <feature id="FontsFeature" installMode="root"/>
 	  
       <feature id="org.eclipse.egit" installMode="root"/>
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>

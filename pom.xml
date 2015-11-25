@@ -732,7 +732,7 @@ Optional parameters:
 				<repository>
 					<id>fontsize</id>
 					<layout>p2</layout>
-					<url>http://plm.tt.com.pl/eclipse-plugins/updateSite/</url>
+					<url>http://eclipse-fonts.googlecode.com/svn/trunk/FontsUpdate/</url>
 				</repository>
 				<repository>
 					<id>cupertino-theme</id>
