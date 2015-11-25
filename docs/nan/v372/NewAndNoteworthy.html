@@ -86,36 +86,34 @@
 
 <p class="nan2">General Updates</p>
 
-<p class="nan3">Improvements to the Quick Text Search</p>
-<br/>
-<p>STS Quick Text Search now provides support for escaping the wildcard '*' and '?' characters by using a '\' [<a href="https://issuetracker.springsource.com/browse/STS-4190">STS-4190</a>]. 
-
-<center><img src="img/find-a-star.png"></img></center>
-<br/>
-
-
-<br/>
-<p></p>
-<br/>
 
 <p class="nan2">Spring Tooling</p>
 
 <p class="nan3">Spring Boot Dashboard works with Diego on Cloud Foundry</p>
 
 <br/>
-<p>The Spring Boot Dashboard fixes a number of issues when using Cloud Foundry environments that got already
+<p>The Spring Boot Dashboard fixes a number of issues when using Cloud Foundry environments that have already
 	updated to the new Diego container runtime. In case you might have come across 503 errors when trying to
 	use the dashboard with apps on a Diego container on CF, update to this new STS release.</p>
 <br/>
-<p>The debugging support for apps on Cloud Foundry has changed. We use debugging via SSH from now on. That means
-	you don't need to have the Spring Boot Devtools on the classpath of your project to get debugging working. All you
-	need to ensure is that you are running on Diego (which is the default runtime now on PWS).</p>
+<p>The debugging support for apps on Cloud Foundry has changed. From now on debugging will be done using the SSH
+support in the runtime. This means you don't need to have the Spring Boot Devtools on the classpath
+of your project to get debugging working. All you need to ensure is that you are running on Diego
+(which is the default runtime now on PWS).</p>
 <br/>
-<p>Known limitations: since this is an early-access feature, it is limited to the PWS CF environment. The old support
-	using the Spring Boot Devtools is no longer available via the boot dashboard. However, you can acitvate that manually
-	as described on the Spring Boot Devtools docs.</p>
+<p>If not on a ssh supporting runtime you can still try to use debugging via Spring Boot devtools but it will be
+necessary to set it up manually - the instructions are 
+<a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-devtools-remote-debugtunnel">here</a>.</p>
 <br/>
 
+<p class="nan3">Improvements to the Quick Text Search</p>
+<br/>
+<p>STS Quick Text Search now provides support for escaping the wildcard '*' and '?' characters by using a '\' [<a href="https://issuetracker.springsource.com/browse/STS-4190">STS-4190</a>]. 
+<center><img src="img/find-a-star.png"></img></center>
+<br/>
+<br/>
+<p></p>
+<br/>
 <p class="nan3">Gradle BuildShip Integration (Experimental)</p>
 <br/>
 
@@ -130,7 +128,9 @@ provide a choice between our old "STS Gradle Integration" or "BuildShip".<p>
 <p>We encourage users to try out BuildShip in preparation to eventually making the switch. If BuildShip does not
 yet meet your needs, you can still continue to use "STS Gradle Integration" for some time to come. However, "STS Gradle Integration" 
 is in 'minimal maintenance' mode. There will be no more new features and limited bugfixes. So please consider filing a bug report 
-detailing what is stopping you from making the switch to BuildShip. You can file these bug reports on the <a href="https://issuetracker.springsource.com/browse/STS">STS issue tracker</a>. We will raise corresponding BuildShip issue tickets when appropriate.</p>
+detailing what is stopping you from making the switch to BuildShip. You can file these bug reports on
+the <a href="https://issuetracker.springsource.com/browse/STS">STS issue tracker</a>. We will raise corresponding BuildShip
+issue tickets when appropriate.</p>
 <br/>
 
 <p>Known limitations of BuildShip Gradle integration:</p>
@@ -173,7 +173,7 @@ entire workspace) [<a href="https://issuetracker.springsource.com/browse/STS-423
 
 <p class="nan3">Spring Framework updated to 4.2.3</p>
 <br/>
-<p>We updated the internally used version of the Spring Framework to the latest release (4.2.3). This fixes issues that could
+<p>The internally used version of Spring Framework has been updated to 4.2.3. This fixes issues that could
 	occur if using Spring Boot 1.3.0 in one of your projects.</p>
 <br/>
 
