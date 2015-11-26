@@ -106,6 +106,32 @@ necessary to set it up manually - the instructions are
 <a href="http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-devtools-remote-debugtunnel">here</a>.</p>
 <br/>
 
+<p class="nan3">Updated Cloud Foundry Tools (formerly Cloud Foundry Eclipse) for Diego on Cloud Foundry</p>
+
+<br/>
+ <p>A new milestone version of Cloud Foundry Tools (CFT) 1.0.0.M2 is included in 3.7.2 and includes many changes that occurred after CFT moved to Eclipse Foundation and
+became an Eclipse project. This replaces the old Cloud Foundry Eclipse 1.8.3 tools. If you are downloading a full copy of 3.7.2, CFT is already included.
+ </p>
+ <br/>
+ <p><b>NOTE:</b> However, if you are updating to 3.7.2 from an older STS, you MUST manually install CFT from this update site:<p/>
+ <br/>
+ <p>http://download.springsource.com/release/TOOLS/cft/1.0.0.M2</p>
+ <br/>
+ <p>You may be prompted by Eclipse to automatically uninstall the old Cloud Foundry Eclipse as part of
+ updating to CFT. If you see the dialogue below, select "Update my installation..."</p>
+ <center><img src="img/cft_update_installation.png"></img></center>
+<br/>
+<p>Changes in CFT include:</p>
+<br/>
+<ul>
+<li>SSH Debug support for Diego. A "Debug" button is now enabled in the CFT editor when selecting a deployed application. This replaces the old Ngrok-based debugging support.</li>
+<li>SSH file fetching for Diego in Remote Systems Explorer.</li>
+<li>Stability fixes for Pivotal Web Services (PWS), in particular better handling of 503 errors when fetching application stats.</li>
+</ul>
+<h3>Possible Backward Compatibility Issues:</h3>
+<br/>
+<p>CFT contains automated migration for old Cloud Foundry Eclipse server instances in the Eclipse Servers view. In the event that your old existing Cloud Foundry Eclipse server instances no longer work or connect, you may have to delete the old ones and recreate them manually through the New Server Wizard.</p>
+
 <p class="nan3">Improvements to the Quick Text Search</p>
 <br/>
 <p>STS Quick Text Search now provides support for escaping the wildcard '*' and '?' characters by using a '\' [<a href="https://issuetracker.springsource.com/browse/STS-4190">STS-4190</a>]. 
