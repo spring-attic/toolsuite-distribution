@@ -1,0 +1,16 @@
+instructions.configure=\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/releases/neon,name:Neon);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/releases/neon,name:Neon);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.6,name:SpringSource Update Site for Eclipse 4.6);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.6,name:SpringSource Update Site for Eclipse 4.6);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/cloudfoundry,name:Cloud Foundry Integration for Eclipse);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.springsource.com/release/TOOLS/cloudfoundry,name:Cloud Foundry Integration for Eclipse);\
+ org.eclipse.equinox.p2.touchpoint.natives.mkdir(path:${installFolder}/dropins);
+
+instructions.unconfigure=\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/neon);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/neon);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.6);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.6);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/cloudfoundry);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/cloudfoundry)

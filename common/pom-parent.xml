@@ -261,6 +261,19 @@
 			</properties>
 		</profile>
 		<profile>
+			<id>e46</id>
+			<properties>
+				<dist.target>e4.6</dist.target>
+				<dist.target.major>e4.6</dist.target.major>
+				<dist.platform.name>Neon</dist.platform.name>
+				<dist.platform.name.long>Neon (4.6)</dist.platform.name.long>
+				<dist.platform.id>neon</dist.platform.id>
+				<dist.platform.version>4.6</dist.platform.version>
+				<package.qualifierPrefix>e46</package.qualifierPrefix>
+				<version.weaving>1.1.0.HEAD</version.weaving>
+			</properties>
+		</profile>
+		<profile>
 			<id>build.springsource.com</id>
 			<activation>
 				<property>
