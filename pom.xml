@@ -622,6 +622,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>https://dl.bintray.com/philwebb/eclipse-cupertino-theme/</url>
 				</repository>
+				<repository>
+					<id>ansi-console</id>
+					<layout>p2</layout>
+					<url>http://www.mihai-nita.net/eclipse</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.5</module>
@@ -749,6 +754,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>https://dl.bintray.com/philwebb/eclipse-cupertino-theme/</url>
 				</repository>
+				<repository>
+					<id>ansi-console</id>
+					<layout>p2</layout>
+					<url>http://www.mihai-nita.net/eclipse</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.5-internal</module>
@@ -857,9 +867,9 @@ Optional parameters:
 					<url>http://download.springsource.com/release/TOOLS/cft/1.0.0.M2</url>
 				</repository>
 				<repository>
-					<id>cupertino-theme</id>
+					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>https://dl.bintray.com/philwebb/eclipse-cupertino-theme/</url>
+					<url>http://www.mihai-nita.net/eclipse</url>
 				</repository>
 			</repositories>
 			<modules>
