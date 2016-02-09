@@ -804,7 +804,7 @@ Optional parameters:
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/45/dev/update</url>
+					<url>http://download.eclipse.org/tools/ajdt/46/dev/update</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
