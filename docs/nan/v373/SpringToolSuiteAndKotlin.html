@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>Spring Tool Suite and Kotlin</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheetKotlin.css" />
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite and Kotlin</h1>
+
+<p>The Kotlin team have created an Eclipse plugin for working with Kotlin
+projects in eclipse. It is hosted at github: 
+<a href="https://github.com/JetBrains/kotlin-eclipse">https://github.com/JetBrains/kotlin-eclipse</a>.
+This page describes how to work with Spring Boot apps written in Kotlin in Spring Tool Suite. Currently
+there are a few rough edges and this should help you work through them and understand the current
+limitations - it is a work in progress. The instructions below should work with STS 3.7.2 and later.</p>
+
+<p class="nan2">Installing</p>
+
+<p>The latest stable release of the Kotlin plugin is at this update site:<br>
+<tt>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/</tt>
+</p>
+<br>
+<p>
+Nightly builds are available here: <br>
+<tt>https://teamcity.jetbrains.com/guestAuth/repository/download/Kotlin_EclipsePlugin/.lastSuccessful/</tt>
+</p>
+<br>
+<p>It is also on the eclipse marketplace: 
+<a href="http://marketplace.eclipse.org/content/kotlin-plugin-eclipse">http://marketplace.eclipse.org/content/kotlin-plugin-eclipse</a></p>
+<br>
+<p>Just install like any other plugin using the standing install dialog available via <span class="menuaction">Help > Install New Software...</span>
+<center><img border="5" src="kotlin/install.png" width="70%"/></center>
+
+</p>
+
+<p class="nan2">Creating a sample project</p>
+<p class="nan3">Spring Starter Project Wizard</p>
+<p>With the plugin installed you can immediately start creating Kotlin projects but if you want to
+get going really quickly with a Spring Boot application, you might want to use the Spring Starter wizard:
+<span class="menuaction">File > New Spring Starter Project</span>. As you can see below it is already
+enabled with a Kotlin language choice:
+
+<center><img src="kotlin/starterwizard.png" width="80%"/></center>
+
+<br>
+<p>Let's try using it now. Open the wizard, change the language to <tt>Kotlin</tt> and then press
+<tt>Next</tt>, on the subsequent page let's add the <tt>Web</tt> starter and press <tt>Finish</tt>:</p> 
+
+<center><img src="kotlin/webstarter.png" width="60%"/></center>
+<br>
+
+<p>When importing finishes, you will be left with an error on the maven pom:</p><br>
+<tt>Plugin execution not covered by lifecycle configuration ...</tt>
+<br>
+<br>
+<p>This is currently raised as <a href="https://youtrack.jetbrains.com/issue/KT-8401">kotlin issue 8401</a>.
+To remove the noise from our problems view for now, let's use a quick fix to ignore it (either ignore
+in preferences or ignore in pom would be fine, although ignoring in pom may need you to do
+a <span class="menuaction">Maven > Update Project </span> action on your project).
+With that gone the project should be building cleanly.
+
+<p class="nan2">What about Gradle</p>
+<p>You can select the gradle build option on the Spring Starter wizard (either the STS or Buildship Gradle), but once the project is imported
+you will need to manually add the kotlin nature. Select the project, right click
+<span class="menuaction">Configure Kotlin > Add Kotlin Nature</span>. Once that is done you will be able to work on it and run it as shown below.
+</p>
+
+<p class="nan3">Adding code</p>
+<p>Let's create a new data class called <tt>com.example.Greeting</tt>. Use the Kotlin Class wizard
+accessible through <span class="menuaction">File > New > Other..</span>:
+
+<center><img src="kotlin/newGreetingWizard.png" width="50%"/></center>
+
+
+<br>
+<p>And then let's define the data class:</p>
+<center><img src="kotlin/greetingContents.png" width="80%"/></center>
+<br>
+
+<p>Use the wizard to also create a <tt>com.example.GreetingController</tt> class:</p>
+<center><img src="kotlin/greetingControllerContents.png" width="80%"/></center>
+
+<br>
+<p class="nan3">Running the app</p>
+<p>The simplest way to run the app is to select the <tt>DemoApplication.kt</tt> file in the package explorer,
+right click <span class="menuaction">Run As > Kotlin Application</span>.
+
+It should then be accessible via your browser:
+<center><img src="kotlin/appRunning.png" width="80%"/></center>
+
+<br>
+<p>It is <b>important</b> to note that you cannot directly the use the <span class="menuaction">Run As > Spring Boot App</span> currently. That action
+does not have insight into the kotlin source to see the <tt>main</tt> method. But you can manually define a <tt>Spring Boot App</tt>
+launch configuration for the project. Just open the launch configurations dialog via the pulldown menu available next to the run button
+on the toolbar. Then create a new Spring Boot App launch configuration as shown below, set the project name and manually enter the 
+Main Type - <i>the <tt>Search</tt> button will not find it</i>. <b>BE AWARE</b> that the type for our sample here is com.example.DemoApplicationKt - note that
+Kt suffix. If you only put com.example.DemoApplication it will not work. Although the main method is in the DemoApplication source file
+it is not in the DemoApplication class, it is separate and Kotlin generates a holding class for it which is the name of the file with a Kt suffix.
+<br>
+<center><img src="kotlin/launchConfig.png" width="80%"/></center>
+
+
+<br>
+<p>You can then use that launch config just like any other.</p>
+<br>
+<br>
+<p class="nan2">And Cloud Foundry?</p>
+
+<p>It is possible to deploy from the UI to Cloud Foundry but it isn't currently as streamlined as we would like. Here is a process that
+works right now:</p>
+<ul>
+<li>Package your project by running the relevant maven goal or gradle task, ensure the package explorer is refreshed to see the new artifacts.
+<li>Create a manifest.yml in the root of the project, make it look like this:
+<center><img src="kotlin/manifest.png" width="80%"/></center>
+You may need to tweak some elements depending on your proposed deployment target and where your packaging step put the built artifacts. This was for my <a href="https://run.pivotal.io">Pivotal Web Services</a> target, a hosted Cloud Foundry, I called the deployed application <tt>demo-kt</tt>.
+<li>Drag the application to the target in either the servers view (if using Cloud Foundry Eclipse tooling) or the Boot Dashboard view.
+<center><img src="kotlin/dash.png" width="30%"/></center>
+<li>Point your browser at the running app:
+<center><img src="kotlin/runOnCF.png" width="80%"/></center>
+</ul>
+
+<hr>
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>STS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
