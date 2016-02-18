@@ -94,13 +94,16 @@ limitations - it is a work in progress. The instructions below should work with 
 
 <p class="nan2">Installing</p>
 
-<p>The latest stable release of the Kotlin plugin is at this update site:<br>
-<tt>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/</tt>
+<p>The nightly builds of the Kotlin Eclipse plugin are available from this update site:<br>
+<tt>https://teamcity.jetbrains.com/guestAuth/repository/download/Kotlin_EclipsePlugin/.lastSuccessful/</tt>
 </p>
 <br>
-<p>
-Nightly builds are available here: <br>
-<tt>https://teamcity.jetbrains.com/guestAuth/repository/download/Kotlin_EclipsePlugin/.lastSuccessful/</tt>
+<p><b>Note:Currently (on Feb-18-2016) the nightly builds include some important fixes that make the STS experience smoother,
+so you may want to install from this update site.</b>
+</p>
+<br>
+<p>The latest stable release update site is here:<br>
+<tt>https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/</tt>
 </p>
 <br>
 <p>It is also on the eclipse marketplace: 
@@ -127,12 +130,13 @@ enabled with a Kotlin language choice:
 <center><img src="kotlin/webstarter.png" width="60%"/></center>
 <br>
 
-<p>When importing finishes, you will be left with an error on the maven pom:</p><br>
+<p>When importing finishes, you may be left with an error on the maven pom:</p><br>
 <tt>Plugin execution not covered by lifecycle configuration ...</tt>
 <br>
 <br>
-<p>This is currently raised as <a href="https://youtrack.jetbrains.com/issue/KT-8401">kotlin issue 8401</a>.
-To remove the noise from our problems view for now, let's use a quick fix to ignore it (either ignore
+<p>This is <a href="https://youtrack.jetbrains.com/issue/KT-8401">kotlin issue 8401</a>. As of Feb-18-2016 it has
+been fixed in nightly builds (v0.6.0.v20160218) but not yet in the stable release. You can update to a nightly
+build or use a quick fix for now (either the quick fix to ignore
 in preferences or ignore in pom would be fine, although ignoring in pom may need you to do
 a <span class="menuaction">Maven > Update Project </span> action on your project).
 With that gone the project should be building cleanly.
