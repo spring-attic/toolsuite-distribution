@@ -102,10 +102,14 @@
 <br/>
 <p></p>
 
-<p class="nan3">Advanced editing support for Cloud Foundry Manifest files</p>
+<p class="nan3">Advanced Cloud Foundry Manifest Editor</p>
 <br/>
-<p>Double clicking a file called <code>manifest.yml</code> will automatically open the brand-new <em>Cloud Foundry Manifest Editor</em>. 
-If your file has a slightly different name, you can open it using the <em>Open With</em> context menu instead:
+<p>STS 3.7.3 adds support for editing <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html">
+Cloud Foundry Deployment Manifests</a>. Double clicking a file 
+called <code>manifest.yml</code> will automatically open our new <em>Cloud Foundry Manifest Editor</em>.</p>
+<br>
+<p><em>Tip</em>: If your file has a slightly different name, the dedicated editor won't open automatically on the first double-click. 
+So use the <em>Open With</em> context menu to choose it explicitly and STS will remember your choice for future double clicks:</p> 
 </p>
 <center><img src="img/manifest-yml-open-with.png"></img></center>
 <br/>
@@ -137,10 +141,9 @@ are moved to the bottom of the list:</p>
 
 <center><img src="img/application-yml-deprecated-ca.png"></img></center><br>
  
-<p>Content assist for properties with "special" types: both the Yaml amd Properties Editor now recognize
-properties of type <code>java.nio.charset.Charset</code>, <code>java.util.Locale</code> 
-and <code>org.springframework.util.MimeType</code> as special cases and provide helpful content assist 
-for them:</p>
+<p>Both the Yaml amd Properties Editor now recognize properties of type <code>java.nio.charset.Charset</code>, 
+<code>java.util.Locale</code> and <code>org.springframework.util.MimeType</code> as special cases and provide 
+helpful content assist for them:</p>
 
 <center><img src="img/application-props-charset.png"></img></center><br>
 
@@ -177,10 +180,10 @@ layout and contents:</p>
 
 <p>The new implementation provides significant improvements over the old one:</p>
 <ul>
-  <li><b>completeness</b>: All dependencies available from the "New Spring Starter" wizard are now also available in 
-          "Edit Starters" wizard.
-  <li><b>presentation</b>: The dependencies are categorized in the same way as in "New Spring Starter", including 
-       a list of <em>frequently used</em> dependencies at the top.
+  <li><b>completeness</b>: All dependencies available from the <em>New Spring Starter</em> wizard are now also available in 
+          <em>Edit Starters</em> wizard.
+  <li><b>presentation</b>: The dependencies are categorized in the same way as in <em>New Spring Starter</em>, including 
+       a <em>Frequently Used</em> category at the top.
   <li><b>searchability</b>: A searchbox allows quickly finding the one dependency that you are interested in.
 </ul>
 
