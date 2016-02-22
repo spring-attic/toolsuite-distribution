@@ -104,8 +104,8 @@
 
 <p class="nan3">Advanced editing support for Cloud Foundry Manifest files</p>
 <br/>
-<p>Double clicking a file called <code>manifest.yml</code> will automatically open the brand-new "Cloud Foundry Manifest Editor". 
-If your file has a slightly different name, you can open it using the "Open With" context menu instead:
+<p>Double clicking a file called <code>manifest.yml</code> will automatically open the brand-new <em>Cloud Foundry Manifest Editor</em>. 
+If your file has a slightly different name, you can open it using the <em>Open With</em> context menu instead:
 </p>
 <center><img src="img/manifest-yml-open-with.png"></img></center>
 <br/>
@@ -127,8 +127,8 @@ content assist (see screenshot above) or by hovering over a property with the mo
 
 <center><img src="img/application-yml-duplicate-key.png"></img></center><br>
 
-<p>The Yaml and Properties editors now supports property deprecation. Deprecated properties are marked as warnings in
-the editor:</p>
+<p>Both the Yaml and Properties Editors now support property deprecation. Deprecated properties are marked as warnings in
+each editor:</p>
 
 <center><img src="img/application-yml-deprecated-warning.png"></img></center><br>
 
@@ -137,7 +137,7 @@ are moved to the bottom of the list:</p>
 
 <center><img src="img/application-yml-deprecated-ca.png"></img></center><br>
  
-<p>Content assist for properties with "special" types. Both the yml amd properties editor now recognize
+<p>Content assist for properties with "special" types: both the Yaml amd Properties Editor now recognize
 properties of type <code>java.nio.charset.Charset</code>, <code>java.util.Locale</code> 
 and <code>org.springframework.util.MimeType</code> as special cases and provide helpful content assist 
 for them:</p>
@@ -149,26 +149,29 @@ provide content assist for specific properties. STS now parses this extended for
 assist for a subset of it (more complete support to follow in the next release). Wherever we added support, it works 
 in both the yml and properties editor. STS 3.7.3 already supports:</p>
 <br>
-<p><b>Value Hints</b> which allows metadata to suggest a list of possible values for property. For example:</p>
+<p><b>Value Hints</b> which allows metadata to suggest a list of possible values for a specific property. For example:</p>
 
 <center><img src="img/application-yml-value-hints.png"></img></center><br>
 
-<p>The <b>logger-name</b> Value Provider which is associated with property <code>logging.level</code> in Spring Boot 1.3:</p>
+<p>The <b>logger-name</b> Value Provider which is associated with the Mapping Keys of property <code>logging.level</code> 
+in Spring Boot 1.3:</p>
 
 <center><img src="img/application-yml-logger-name.png"></img></center><br>
   
 </ul>
 <p></p>
 
-<p class="nan3">Improvements to the "Edit Starters" Wizard</p>
+<p class="nan3">Improvements to the <em>Edit Starters</em> Wizard</p>
 <br>
-<p>The "Edit Starters" wizard is accessible by right-clicking a Maven project's <code>pom.xml</code>. This wizard provides a 
+<p>The <em>Edit Starters</em> wizard is accessible by right-clicking a Maven project's <code>pom.xml</code>, 
+from menu <em>Spring >> Edit Starters</em>. This wizard provides a 
 way to change the project's dependencies, adding (or removing) starters that you might have forgotten to choose initially 
-when creating your project with the "New Spring Starter Project" Wizard.</p>
+when creating your project with the <em>New Spring Starter Project</em> Wizard.</p>
 <br>
 
 <p>The old implementation only provided an unorganized, long and incomplete list of dependencies. This
-has been replaced with a new implementation that completely mirrors the "New Spring Starter" wizard's layout and contents:</p>
+has been replaced with a much nicer implementation that completely mirrors the <em>New Spring Starter</em> wizard's 
+layout and contents:</p>
 
 <center><img src="img/edit-starters-wizard.png"></img></center><br>
 
@@ -196,27 +199,29 @@ became an Eclipse project. This replaces the old Cloud Foundry Eclipse 1.8.3 too
 <p class="nan3">Gradle BuildShip Integration (Experimental)</p>
 <br/>
 
-<p>We encourage users to try out BuildShip in preparation to eventually making the switch. Reading this <a href="https://github.com/eclipse/buildship/wiki/Migration-guide-from-STS-Gradle-to-Buildship">Migration Guide</a> is a good place to start.</p>
+<p>We encourage users to try out <a href="http://projects.eclipse.org/projects/tools.buildship">BuildShip</a> in preparation 
+to eventually making the switch from <em>STS Gradle Tooling</em>. Reading 
+this <a href="https://github.com/eclipse/buildship/wiki/Migration-guide-from-STS-Gradle-to-Buildship">Migration Guide</a> is 
+a good place to start.</p>
 <br>
-<p>If BuildShip does not yet meet your needs, you can still continue to use "STS Gradle Integration" for some time to come. 
-However, "STS Gradle Integration"  is in <em>minimal maintenance</em> mode. There will be no more new features and limited bugfixes. 
-So please consider filing a BuildShip bug report detailing what is stopping you from making the switch. You can file these 
-bug reports on the <a href="https://issuetracker.springsource.com/browse/STS">STS issue tracker</a> or directly on 
-<a href="https://bugs.eclipse.org/bugs/describecomponents.cgi?product=Buildship">Eclipse Bugzilla</a>.</p>
+<p>If <em>BuildShip</em> does not yet meet your needs, you can still continue to use <em>STS Gradle Integration</em> for some time to come. 
+However, <em>STS Gradle Integration</em>  is in <em>minimal maintenance</em> mode. There will be no more new features and limited bugfixes. 
+So please consider filing a <a href="https://bugs.eclipse.org/bugs/describecomponents.cgi?product=Buildship">BuildShip Bug Report</a> 
+detailing what is stopping you from making the switch.</p>
 <br/>
-<p>Some known limitations of BuildShip that may affect STS users in particular are: 
-<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=471728">Bug 471728</a>: BuildShip does not integrate with Eclipse WTP.
-While projects that use 'war' packaging can be created using our wizards, such projects are not officialy supported and consequently will
-not be correctly configured by BuildShip.</li>
-<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=482315">Bug 482315</a>: Running a BuildShip project with "Run As Java Application" or
-"Run as Spring Boot App", the runtime classpath will be incorrect and contain 'test' dependencies. Note: this is not a problem specific
-only to "BuildShip". "STS Gradle Integration" is also affected as this issue stems from a limitation of the Gradle Tooling API that
-both use.</li>
+<p>Some known limitations of <em>BuildShip</em> that may affect STS users in particular are: 
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=471728">Bug 471728</a>: <em>BuildShip</em> does not integrate with Eclipse WTP.
+While projects that use <code>war</code> packaging can be created using our wizards, such projects are not officialy supported and consequently will
+not be correctly configured by <em>BuildShip</em>.</li>
+<li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=482315">Bug 482315</a>: Running a <em>BuildShip</em> project with 
+<em>Run As Java Application</em> or <em>Run as Spring Boot App</em>, the runtime classpath will be incorrect and contain test dependencies. 
+Note: this is not a problem specific only to <em>BuildShip</em>. <em>STS Gradle Integration</em> is also affected as this issue 
+stems from a limitation of the Gradle Tooling API that both use.</li>
 <li><a href="href=https://bugs.eclipse.org/bugs/show_bug.cgi?id=468244">Bug 468244</a>: BuildShip lacks a mechanism for third-party tooling
 providers to participate in configuring a project. STS uses such a mechanism to configure the JDT Annotation Processor when
 spring-boot-configration-processor is present on a project's classpath. This automatic configuration currently only works with
-"STS Gradle Integration" but not "BuildShip". If you make use of the <code>@ConfigurationProperties</code> annotations in your code, this
-means that these annotations will not be processed as part of Eclipse workspace builds unless you manually configure JDT APT.
+<em>STS Gradle Integration</em> but not <em>BuildShip</em>. If you make use of the <code>@ConfigurationProperties</code> annotations in 
+your code, this means that these annotations will not be processed as part of Eclipse workspace builds unless you manually configure JDT APT.
 </li>
 
 <p class="nan2">GGTS</a>
