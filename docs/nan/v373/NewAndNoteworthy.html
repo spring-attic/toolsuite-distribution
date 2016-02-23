@@ -89,18 +89,128 @@
 <p class="nan3">Eclipse Mars.2 (4.5.2, formerly known as Mars SR2)</p>
 <p>The default STS distribution is now based on the recently released Eclipse Mars.2 release.</p>
 
+<p class="nan3">Early Access Builds for STS on Eclipse Neon available</p>
+<p>There are early-access builds of STS 3.7.3 available that are built on top of the latest Eclipse
+	Neon milestone (M5 in this case).</p>
+<p>Highlights from this early-access builds on Eclipse Neon include substring code completion for Java content
+	assist, word-wrap in text editors, commands/shortcuts/pinch gestures to zoom into text editors (especially
+	useful when giving presentations), and more. Please find additional details in the
+	<a href="https://www.eclipse.org/eclipse/news/4.6/M5/"> Eclipse Neon Platform New and Noteworthy</a>.</p>
+
 <p class="nan3">Pivotal tc Server updated to 3.1.3.SR1</p>
 <p>The latest Pivotal tc Server release 3.1.3.SR1 is now included in the STS distribution bundle.</p>
 
 <p class="nan2">Spring Tooling</p>
 
-<p class="nan3">Spring Boot Dashboard supports multile launch configurations</p>
+<p class="nan3">Spring Boot Dashboard: support for multile launch configurations</p>
 <br/>
-<p></p>
+<p>In the past the boot dashboard listed Spring Boot projects from your workspace and allowed you
+to pick a "blessed" launch config to use. This launch config was used when starting/debugging/stopping
+the app from the boot dashboard. However there was no way to deal with multiple running instances or
+variants of a project. This has changed dramatically in the new version of the Spring Boot dashboard.</p>
+<p>In the latest incarnation the Spring Boot dashboard directly supports multiple launch configurations
+	per project. If you already have multiple launch configs for a project, they automatically show
+	up in the boot dashboard as items of the project.</p>
+<center><img src="img/boot-dashboard-multiple-launch-configs.png"></img></center>
+<br/>
 
-<p class="nan3">Spring Boot Dashboard advanced support for working with manifest files</p>
+<p>All the existing features of the boot dashboard are now available for those individual launch configs.
+	You can start/debug/stop them, jump to the associated console view, open a browser window for that
+	running application, set a default path per launch config (in case you want to have different
+	default path settings for your launch configs), tag them, and so on.</p>
+
+<p>The project item in the dashboard becomes a shortcut for all those launch configs. It provides you a
+	quick summary of the individual launch configs and allows you to execute bulk actions on them, like
+	start or stop them all.</p>
+<center><img src="img/boot-dashboard-multiple-launch-configs-summary.png"></img></center>
 <br/>
-<p></p>
+
+<p>To hepl you deal with multiple launch configs for a project, the context menu got new actions. Those
+	allow you to quickly open a launch config editor, to duplicate an existing launch config, or to
+	delete one. And by the way: the duplicate action is smart enough to NOT use the same JMX port
+	over and over again, but chooses a new one for each launch configs so that they can truly run
+	in parallel.</p>
+<center><img src="img/boot-dashboard-multiple-launch-config-actions.png"></img></center>
+<br/>
+
+<p>To keep things as simple as possible, the boot dashboard behaves exactly the same as before if there
+	is only one launch config for a project. In that case the dashbaord doesn't bother you with an additional
+	item in the tree. In that case you won't notice a difference to the previous version of the boot dashboard.
+	You can switch that behavior off in the boot dashboard, if you want to.</p>
+
+<p>Nevertheless there might be some launch configs in your workspace that you find annoying to show up
+	in the boot dashboard. For that case the Spring Boot launch configs got an option to be hidden
+	from the boot dashboard. Switch that on and that launch config will never show up in the boot
+	dashboard.</p>
+<center><img src="img/boot-dashboard-multiple-launch-configs.png"></img></center>
+<br/>
+
+<p class="nan3">Spring Boot Dashboard: advanced support for Cloud Foundry manifest files</p>
+<br/>
+<p>tbd</p>
+
+<p class="nan3">Spring Boot Dashboard: new actions to deploy apps</p>
+<br/>
+<p>You can now deploy apps directly in run or debug mode via new actions in the context menu. Select the apps
+	you want to deploy to a Cloud Foundry instance in the local section of the boot dashboard, go to the context
+	menu and take the "Deploy and Run On...". The submenu allows you to directly pick the CF target you would
+	like to deploy the app to.</p>
+<center><img src="img/boot-dashboard-deploy-actions.png"></img></center>
+<br/>
+
+<p class="nan3">Spring Boot Dashboard: support for services on Cloud Foundry</p>
+<br/>
+<p>Cloud Foundry sections in the boot dashboard now visualize service instances with their name
+	and selected properties of that service. Double-clicking on that service takes you directly to the
+	management web UI of that service (by opening a web browser for the management URL).</p>
+<center><img src="img/boot-dashboard-services.png"></img></center>
+<br/>
+
+<p class="nan3">Spring Boot Dashboard: improved connect/disconnect/activity handling for Cloud Foundry sections</p>
+<br/>
+<p>Cloud Foundry sections in the boot dashboard now directly visualize their connected/disconnected status
+	and you can manually connect and disconnect those connections to Cloud Foundry. The connected/disconnected
+	state will be remembered the next time you start up STS. A disconnected Cloud Foundry section will not
+	be connected automatically at next startup. This is particulary useful if you have Cloud Foundry targets
+	defined in the boot dashboard that you don't use all the time.</p>
+<center><img src="img/boot-dashboard-default-path-action.png"></img></center>
+<br/>
+<p>In addition to that connection problems will be marked as an error on those Cloud Foundry sections, with more
+	detailed information showing up when you hover over the section.</p>
+<center><img src="img/boot-dashboard-error-indicator.png"></img></center>
+<br/>
+<p>More details about background activity will also be visualized in the Cloud Foundry section, so that you can
+	direclty see what is going on when the boot dashboard tries to connect to a Cloud Foundry instance.</p>
+<center><img src="img/boot-dashboard-cloud-foundry-activity.png"></img></center>
+<br/>
+
+<p class="nan3">Spring Boot Dashboard: filter apps by working sets</p>
+<br/>
+<p>In case you have already organized your projects in your workspace using working sets, you
+	can directly filter for those working sets in the boot dashboard. There is no need to add
+	additional tags to the apps. Just type in a part of the working set name into the filter box
+	and the boot dashboard will show those apps only.</p>
+<center><img src="img/boot-dashboard-filter-working-sets.png"></img></center>
+<br/>
+
+<p class="nan3">Spring Boot Dashboard: visualize request mappings from apps on CF</p>
+<br/>
+<p>The request mappings property tab now works for apps that are running on CF as well.</p>
+
+<p class="nan3">Spring Boot Dashboard: direclty select the default path</p>
+<br/>
+<p>The boot dashboard allows you to direclty pick the default path for a local app (or an app on Cloud Foundry) in the
+	request mappings property tab. Just select the request mapping you would like to use as default for the app and select
+	"" from the context menu.</p>
+<center><img src="img/boot-dashboard-default-path-action.png"></img></center>
+<br/>
+
+<p class="nan3">Spring Boot Dashboard: host in properties view now a hyperlink</p>
+<br/>
+<p>The host field on the properties view has turned into a hyperlink that lets you jump to the app
+	URL directly from the properties view.</p>
+<center><img src="img/boot-dashboard-hyperlink-in-properties.png"></img></center>
+<br/>
 
 <p class="nan3">Advanced Cloud Foundry Manifest Editor</p>
 <br/>
@@ -186,6 +296,13 @@ layout and contents:</p>
        a <em>Frequently Used</em> category at the top.
   <li><b>searchability</b>: A searchbox allows quickly finding the one dependency that you are interested in.
 </ul>
+
+<p class="nan3">SilentExitExceptions ignored by default</p>
+<br/>
+<p>When running a Spring Boot app in debug mode (while having the Boot Devtools on the classpath), the debugger usually
+	stops automatically at a SilentExitException (if you have "stop on uncaught exceptions" enabled). Since this can be
+	really annoying, we configure the debugger for Spring Boot apps automatically to ignore exactly that exception.</p>
+
 
 <p class="nan3">Updated Cloud Foundry Tools (formerly Cloud Foundry Eclipse) for Diego on Cloud Foundry</p>
 <br/>
