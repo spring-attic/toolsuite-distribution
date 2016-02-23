@@ -145,6 +145,34 @@ variants of a project. This has changed dramatically in the new version of the S
 <center><img src="img/boot-dashboard-multiple-launch-configs.png"></img></center>
 <br/>
 
+<b>Below is Kris's version of this which ended up being a merge conflict. Martin, please pick up any pieces of this if
+you want. Or just delete it altogether if you prefer to just use your own text.</b>
+
+<p>The Sping Boot Dashboard now explicitly shows Launch Configurations as sub-nodes of
+local apps:</p>
+
+<center><img src="img/boot-dash-multiple-launches.png"></img></center><br>
+
+<p>To reduce clutter and to maintain the simplicity of the UI for the common case where there's just one launch configuration per-project, 
+a <em>Hide Solitatry Launch Configurations</em> filter is applied to the Dashboard by default, but you can disable this filter if you wish:</p> 
+
+<center><img src="img/boot-dash-filter-solitary-launch-config.png"></img></center><br>
+
+<p>This filter hides  launch configurations from the tree, unless there is more than one for a given project. Disabling the
+filter will show all Configs:</p>
+
+<center><img src="img/boot-dash-show-solitary-conf.png"></img></center><br>
+
+<p>A single configuration is created automatically when an app is launched. Creating additional configurations is easy. Select a
+Local App node or one of its children and use the <em>Duplicate Config</em> menu from its context menu:</p>
+
+<center><img src="img/boot-dash-duplicate-config-action.png"></img></center><br>
+
+<p><em>Tip:</em> If you want to run multple instances of a single local app simultaneously (e.g. you want to bind multiple
+local instances of a service via Eureka), you can set the property <code>server.port=0</code> to let spring-boot pick a 
+port dynamically (otherwise all but one of your launches will fail because the port is already bound).</p>
+
+
 <p class="nan3">Spring Boot Dashboard: advanced support for Cloud Foundry manifest files</p>
 <br/>
 <p>Cloud Foundry Manifest files are a central piece when deploying apps to Cloud Foundry. In the past the
