@@ -155,14 +155,14 @@ variants of a project. This has changed dramatically in the new version of the S
 	in the boot dashboard. For that case the Spring Boot launch configs got an option to be hidden
 	from the boot dashboard. Switch that on and that launch config will never show up in the boot
 	dashboard.</p>
-<center><img src="img/boot-dashboard-multiple-launch-configs.png"></img></center>
+<center><img src="img/boot-dashboard-hide-launch-config.png"></img></center>
 <br/>
 
 
 <p class="nan3">Spring Boot Dashboard: advanced support for Cloud Foundry manifest files</p>
 <br/>
 
-<p>Cloud Foundry Manifest files are a central piece when deploying apps to Cloud Foundry. In the past the
+<p>Cloud Foundry Manifest files are a nice utility when deploying apps to Cloud Foundry. In the past the
 	boot dashboard used a manifest.yml file of the project (if existed) to deploy an app the Cloud Foundry.
 	But changes to the running app on Cloud Foundry didn't find its way back into the IDE and deploying
 	different variants of the same app to Cloud Foundry was cumbersome. This changes in the new version
@@ -172,7 +172,7 @@ variants of a project. This has changed dramatically in the new version of the S
 
 <p>The first thing that you will notice is: when you deploy an app in the dashboard to a Cloud Foundry
 	section, new dialog opens to let you select the manifest file of your choice:</p>
-<center><img src="img/boot-dashboard-deploy-actions.png"></img></center>
+<center><img src="img/boot-dashboard-select-manifest-dialog.png"></img></center>
 <br/>
 
 <p>This allows you to pick a manifest file from your project or anywhere else in the workspace. And the boot
@@ -189,13 +189,12 @@ variants of a project. This has changed dramatically in the new version of the S
 <p>In case you don't remember which manifest file you chose for which app or want to change that setting,
 	you can use the "Select Manifest" action from the context menu. It will open the same dialog and show
 	you which manifest file you chose last time for that application.</p>
-<center><img src="img/boot-dashboard-select-manifest-action.png"></img></center>
 <br/>
 
 <p>But what happens if you want to deploy your app without a having to create or keep a manifest file in your
 	project? The dialog provides the "manual mode" option for this use case. Switch to the "manual mode"
 	and you will be able to edit a temporary manifest file directly within the dialog.</p>
-<center><img src="img/boot-dashboard-manual-mode.png"></img></center>
+<center><img src="img/boot-dashboard-manifest-manual-mode.png"></img></center>
 <br/>
 
 <p>The default content of the temporary manifest file will be generated for you, so no need to write everything
@@ -205,7 +204,7 @@ variants of a project. This has changed dramatically in the new version of the S
 
 <p>You will also notice that all the nice features for editing Cloud Foundry Manifest files (see below), like
 	content-assist, validations, and hover help and available in this dialog, too.</p>
-<center><img src="img/boot-dashboard-manual-mode-editing.png"></img></center>
+<center><img src="img/boot-dashboard-manifest-manual-mode-editing.png"></img></center>
 <br/>
 	
 <p>By the way: this direct editing of the manifest file content also works if you select an existing manifest
@@ -228,7 +227,6 @@ variants of a project. This has changed dramatically in the new version of the S
 <p>This powerful dialog visualizes the differences that exist between the selected manifest file and the
 	configuration of the application on Cloud Foundry. And it allows you to merge those updates into the
 	local manifest file with a single click.</p>
-<center><img src="img/boot-dashboard-manifest-merge-action.png"></img></center>
 <br/>
 
 <p>You can also decide to not merge those changes into your manifest file and use the manifest file as
@@ -243,7 +241,7 @@ variants of a project. This has changed dramatically in the new version of the S
 	multiple applications when showing the diff/merge dialog.</p>
 <br/>
 
-<p><b>Known limitation: </b>the "inherit" attribute is not yet fully supported for Cloud Foundry Manifest files. If
+<p><b>Known limitation:</b> the "inherit" attribute is not yet fully supported for Cloud Foundry Manifest files. If
 	you use the "inherit" attribute, the inherited attributes are not yet taken into account when deploying
 	the file nor are they when doing a diff and merge of manifest files and config changes on Cloud Foundry.</p>
 
@@ -271,7 +269,7 @@ variants of a project. This has changed dramatically in the new version of the S
 	state will be remembered the next time you start up STS. A disconnected Cloud Foundry section will not
 	be connected automatically at next startup. This is particulary useful if you have Cloud Foundry targets
 	defined in the boot dashboard that you don't use all the time.</p>
-<center><img src="img/boot-dashboard-default-path-action.png"></img></center>
+<center><img src="img/boot-dashboard-cf-targets-connected.png"></img></center>
 <br/>
 
 <p>In addition to that connection problems will be marked as an error on those Cloud Foundry sections, with more
@@ -432,7 +430,8 @@ However, <em>STS Gradle Integration</em>  is in <em>minimal maintenance</em> mod
 So please consider filing a <a href="https://bugs.eclipse.org/bugs/describecomponents.cgi?product=Buildship">BuildShip Bug Report</a> 
 detailing what is stopping you from making the switch.</p>
 <br/>
-<p>Some known limitations of <em>BuildShip</em> that may affect STS users in particular are: 
+<p>Some known limitations of <em>BuildShip</em> that may affect STS users in particular are:
+<ul>
 <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=471728">Bug 471728</a>: <em>BuildShip</em> does not integrate with Eclipse WTP.
 While projects that use <code>war</code> packaging can be created using our wizards, such projects are not officialy supported and consequently will
 not be correctly configured by <em>BuildShip</em>.</li>
@@ -446,6 +445,7 @@ spring-boot-configration-processor is present on a project's classpath. This aut
 <em>STS Gradle Integration</em> but not <em>BuildShip</em>. If you make use of the <code>@ConfigurationProperties</code> annotations in 
 your code, this means that these annotations will not be processed as part of Eclipse workspace builds unless you manually configure JDT APT.
 </li>
+</ul>
 
 <p class="nan2">GGTS</a>
 
