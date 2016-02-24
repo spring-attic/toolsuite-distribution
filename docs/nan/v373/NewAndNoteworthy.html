@@ -405,14 +405,20 @@ layout and contents:</p>
 	really annoying, we configure the debugger for Spring Boot apps automatically to ignore exactly that exception.</p>
 
 
-<p class="nan3">Updated Cloud Foundry Tools (formerly Cloud Foundry Eclipse) for Diego on Cloud Foundry</p>
+<p class="nan3">Cloud Foundry Tools</p>
 <br/>
- <p>A new milestone version of Cloud Foundry Tools (CFT) 1.0.0.M3 is included in 3.7.3 and includes many changes that occurred after CFT moved to Eclipse Foundation and
-became an Eclipse project. This replaces the old Cloud Foundry Eclipse 1.8.3 tools. If you are downloading a full copy of 3.7.2, CFT is already included.
+ <p>A new milestone version of Cloud Foundry Tools (CFT) 1.0.M3 is included in 3.7.3 and includes many changes that occurred after CFT moved to Eclipse Foundation and
+became an Eclipse project. This replaces the old Cloud Foundry Eclipse 1.8.3 tools. If you are downloading a full copy of 3.7.3, CFT is already included.
  </p>
-<p>Changes in CFT include:</p>
+ <br/>
+ <p>Further information on the tools can be found at: <a href="https://projects.eclipse.org/projects/ecd.cft">Cloud Foundry Tools</a></p>
+<br/>
+<p>Changes in M3 include:</p>
 <ul>
-<li>...</li>
+<li>Improved application running state detection. Starting and Started states of an application are now more accurately reflected in the Servers view</li>
+<li>New host taken detection feature in the application deployment wizard. The wizard will now automatically detect if a host is taken and suggest a new host. Alternately, a user can enter a host in the second page of the deployment wizard and manually validate the application URL:</li>
+<center><img src="img/cft-host-taken-validation-1.png"></img></center>
+<center><img src="img/cft-host-taken-validation-2.png"></img></center>
 </ul>
 
 <br/>
