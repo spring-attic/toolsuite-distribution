@@ -108,35 +108,48 @@
 to pick a "blessed" launch config to use. This launch config was used when starting/debugging/stopping
 the app from the boot dashboard. However there was no way to deal with multiple running instances or
 variants of a project. This has changed dramatically in the new version of the Spring Boot dashboard.</p>
+<br/>
+
 <p>In the latest incarnation the Spring Boot dashboard directly supports multiple launch configurations
 	per project. If you already have multiple launch configs for a project, they automatically show
 	up in the boot dashboard as items of the project.</p>
-<center><img src="img/boot-dashboard-multiple-launch-configs.png"></img></center>
+<center><img src="img/boot-dash-multiple-launches.png"></img></center><br>
 <br/>
 
 <p>All the existing features of the boot dashboard are now available for those individual launch configs.
 	You can start/debug/stop them, jump to the associated console view, open a browser window for that
 	running application, set a default path per launch config (in case you want to have different
 	default path settings for your launch configs), tag them, and so on.</p>
+<br/>
 
 <p>The project item in the dashboard becomes a shortcut for all those launch configs. It provides you a
 	quick summary of the individual launch configs and allows you to execute bulk actions on them, like
 	start or stop them all.</p>
-<center><img src="img/boot-dashboard-multiple-launch-configs-summary.png"></img></center>
 <br/>
 
-<p>To hepl you deal with multiple launch configs for a project, the context menu got new actions. Those
-	allow you to quickly open a launch config editor, to duplicate an existing launch config, or to
-	delete one. And by the way: the duplicate action is smart enough to NOT use the same JMX port
-	over and over again, but chooses a new one for each launch configs so that they can truly run
-	in parallel.</p>
-<center><img src="img/boot-dashboard-multiple-launch-config-actions.png"></img></center>
-<br/>
+<p>To reduce clutter and to maintain the simplicity of the UI for the common case where there's just one
+	launch configuration per-project, a <em>Hide Solitatry Launch Configurations</em> filter is applied
+	to the Dashboard by default, but you can disable this filter if you wish:</p> 
+<center><img src="img/boot-dash-filter-solitary-launch-config.png"></img></center>
+<br>
 
-<p>To keep things as simple as possible, the boot dashboard behaves exactly the same as before if there
-	is only one launch config for a project. In that case the dashbaord doesn't bother you with an additional
-	item in the tree. In that case you won't notice a difference to the previous version of the boot dashboard.
-	You can switch that behavior off in the boot dashboard, if you want to.</p>
+<p>This filter hides launch configurations from the tree, unless there is more than one for a given project.
+	Disabling the filter will show all Configs:</p>
+<center><img src="img/boot-dash-show-solitary-conf.png"></img></center><br>
+
+<p>A single configuration is created automatically when an app is launched.  To help you deal with multiple
+	launch configs for a project, the context menu got new actions. Those allow you to quickly open a launch
+	config editor, to duplicate an existing launch config, or to delete one. And by the way: the duplicate
+	action is smart enough to NOT use the same JMX port over and over again, but chooses a new one for each
+	launch configs so that they can truly run in parallel.</p>
+<center><img src="img/boot-dash-duplicate-config-action.png"></img></center>
+<br>
+
+<p><em>Tip:</em> If you want to run multple instances of a single local app simultaneously (e.g. you want to
+	bind multiple local instances of a service via Eureka), you can set the property <code>server.port=0</code>
+	to let spring-boot pick a port dynamically (otherwise all but one of your launches will fail because the
+	port is already bound).</p>
+<br/>
 
 <p>Nevertheless there might be some launch configs in your workspace that you find annoying to show up
 	in the boot dashboard. For that case the Spring Boot launch configs got an option to be hidden
@@ -145,54 +158,33 @@ variants of a project. This has changed dramatically in the new version of the S
 <center><img src="img/boot-dashboard-multiple-launch-configs.png"></img></center>
 <br/>
 
-<b>Below is Kris's version of this which ended up being a merge conflict. Martin, please pick up any pieces of this if
-you want. Or just delete it altogether if you prefer to just use your own text.</b>
-
-<p>The Sping Boot Dashboard now explicitly shows Launch Configurations as sub-nodes of
-local apps:</p>
-
-<center><img src="img/boot-dash-multiple-launches.png"></img></center><br>
-
-<p>To reduce clutter and to maintain the simplicity of the UI for the common case where there's just one launch configuration per-project, 
-a <em>Hide Solitatry Launch Configurations</em> filter is applied to the Dashboard by default, but you can disable this filter if you wish:</p> 
-
-<center><img src="img/boot-dash-filter-solitary-launch-config.png"></img></center><br>
-
-<p>This filter hides  launch configurations from the tree, unless there is more than one for a given project. Disabling the
-filter will show all Configs:</p>
-
-<center><img src="img/boot-dash-show-solitary-conf.png"></img></center><br>
-
-<p>A single configuration is created automatically when an app is launched. Creating additional configurations is easy. Select a
-Local App node or one of its children and use the <em>Duplicate Config</em> menu from its context menu:</p>
-
-<center><img src="img/boot-dash-duplicate-config-action.png"></img></center><br>
-
-<p><em>Tip:</em> If you want to run multple instances of a single local app simultaneously (e.g. you want to bind multiple
-local instances of a service via Eureka), you can set the property <code>server.port=0</code> to let spring-boot pick a 
-port dynamically (otherwise all but one of your launches will fail because the port is already bound).</p>
-
 
 <p class="nan3">Spring Boot Dashboard: advanced support for Cloud Foundry manifest files</p>
 <br/>
+
 <p>Cloud Foundry Manifest files are a central piece when deploying apps to Cloud Foundry. In the past the
 	boot dashboard used a manifest.yml file of the project (if existed) to deploy an app the Cloud Foundry.
 	But changes to the running app on Cloud Foundry didn't find its way back into the IDE and deploying
 	different variants of the same app to Cloud Foundry was cumbersome. This changes in the new version
 	of the Spring Boot dashboard. Cloud Foundry Manifest YAML files are becoming a first-class citizen
 	when working with Spring Boot apps in the boot dashboard.</p>
+<br/>
+
 <p>The first thing that you will notice is: when you deploy an app in the dashboard to a Cloud Foundry
 	section, new dialog opens to let you select the manifest file of your choice:</p>
 <center><img src="img/boot-dashboard-deploy-actions.png"></img></center>
 <br/>
+
 <p>This allows you to pick a manifest file from your project or anywhere else in the workspace. And the boot
 	dashboard remembers your decision. It will use the same manifest file the next time you re-deploy the
 	app (for example when deploying and restarting the app with changes you made to the code in your IDE).</p>
+<br/>
 
 <p>This explicit support for manifest files also allows you to use various manifest files in your project,
 	for example one for each CF instance you would like to to deploy on, an additional one for a specific
 	variant of the app, one dev version, etc. You can deploy the same project multiple times to Cloud Foundry
 	using different manifest files.</p>
+<br/>
 
 <p>In case you don't remember which manifest file you chose for which app or want to change that setting,
 	you can use the "Select Manifest" action from the context menu. It will open the same dialog and show
@@ -209,6 +201,7 @@ port dynamically (otherwise all but one of your launches will fail because the p
 <p>The default content of the temporary manifest file will be generated for you, so no need to write everything
 	up yourself. But you can change the generated content as well as add additional properties. This gives
 	you the option to exactly specify how the project should be deployed to Cloud Foundry.</p>
+<br/>
 
 <p>You will also notice that all the nice features for editing Cloud Foundry Manifest files (see below), like
 	content-assist, validations, and hover help and available in this dialog, too.</p>
@@ -219,10 +212,12 @@ port dynamically (otherwise all but one of your launches will fail because the p
 	file. You can quickly change the content of that file directly from within the dialog. No need to close
 	the dialog, open the file in an editor, make and save changes, and trigger the deploy action again.
 	Just edit the content directly within the dialog. It will save the changes in the file for you.</p>
+<br/>
 
 <p>The boot dashboard will use the content of the selected manifest file to deploy the application to
 	Cloud Foundry - each time it deployes or updates the app. What happens if you changed the configuration
 	of the application on Cloud Foundry in the meantime via the CF CLI or the web console of Cloud Foundry?</p>
+<br/>
 
 <p>The Spring Boot Dashboard will check for those changes each time it updates the application on Cloud
 	Foundry. If it identifies a difference in the configuration, it will prompt you with a diff and merge
@@ -240,13 +235,14 @@ port dynamically (otherwise all but one of your launches will fail because the p
 	it is to deploy the app or to forget the manifest file altogether and continue to use the configuration
 	as it exists on Cloud Foundry. In that case, the boot dashboard will remember that decision and don't
 	use the manifest file anymore when updating the application.</p>
+<br/>
 
 <p>Cloud Foundry Manifest files can contain configuration information for multiple applications in one file.
 	Therefore the boot dashboard recognizes this situation and lets you pick the application section from the
 	manifest file that you would like to use when deploying the app. The mechanics behind that also support
 	multiple applications when showing the diff/merge dialog.</p>
-
 <br/>
+
 <p><b>Known limitation: </b>the "inherit" attribute is not yet fully supported for Cloud Foundry Manifest files. If
 	you use the "inherit" attribute, the inherited attributes are not yet taken into account when deploying
 	the file nor are they when doing a diff and merge of manifest files and config changes on Cloud Foundry.</p>
@@ -277,10 +273,12 @@ port dynamically (otherwise all but one of your launches will fail because the p
 	defined in the boot dashboard that you don't use all the time.</p>
 <center><img src="img/boot-dashboard-default-path-action.png"></img></center>
 <br/>
+
 <p>In addition to that connection problems will be marked as an error on those Cloud Foundry sections, with more
 	detailed information showing up when you hover over the section.</p>
 <center><img src="img/boot-dashboard-error-indicator.png"></img></center>
 <br/>
+
 <p>More details about background activity will also be visualized in the Cloud Foundry section, so that you can
 	direclty see what is going on when the boot dashboard tries to connect to a Cloud Foundry instance.</p>
 <center><img src="img/boot-dashboard-cloud-foundry-activity.png"></img></center>
@@ -297,10 +295,12 @@ port dynamically (otherwise all but one of your launches will fail because the p
 
 <p class="nan3">Spring Boot Dashboard: visualize request mappings from apps on CF</p>
 <br/>
+
 <p>The request mappings property tab now works for apps that are running on CF as well.</p>
 
 <p class="nan3">Spring Boot Dashboard: direclty select the default path</p>
 <br/>
+
 <p>The boot dashboard allows you to direclty pick the default path for a local app (or an app on Cloud Foundry) in the
 	request mappings property tab. Just select the request mapping you would like to use as default for the app and select
 	"" from the context menu.</p>
@@ -309,6 +309,7 @@ port dynamically (otherwise all but one of your launches will fail because the p
 
 <p class="nan3">Spring Boot Dashboard: host in properties view now a hyperlink</p>
 <br/>
+
 <p>The host field on the properties view has turned into a hyperlink that lets you jump to the app
 	URL directly from the properties view.</p>
 <center><img src="img/boot-dashboard-hyperlink-in-properties.png"></img></center>
