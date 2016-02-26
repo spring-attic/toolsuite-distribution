@@ -84,7 +84,29 @@
 <div class="body--container container-fluid ">
 <h1 class="nan1">Spring Tool Suite 3.7.3: New and Noteworthy</h1>
 
-<p class="nan2">General Updates</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#gu">General Updates</a></li>
+<li><a href="#bootdash">Spring Boot Dash</a></li>
+<ul>
+<li><a href="#launchconfigs">Supporting multiple launch configurations</a></li>
+<li><a href="#dashmanifets">Better support for working with Cloud Foundry Manifests</a></li>
+<li><a href="#services">Early support for seeing Cloud Foundry services in the Dash</a></li>
+<li><a href="#workingsets">Dash content filtering based on working sets</a></li>
+</ul>
+<li><a href="#manifestediting">Advanced Cloud Foundry manifest editing support</a></li>
+<li><a href="#ymlediting">Spring Boot YML/properties editor improvements</a></li>
+<ul>
+<li><a href="#deprecated">Deprecated Properties</a></li>
+<li><a href="#wellknown">Support for well known types</a></li>
+<li><a href="#valuehints">Value hints</a></li>
+</ul>
+<li><a href="#editstarters">'Edit starters' improvements</a></li>
+<li><a href="#cft">Cloud Foundry Tooling updates</a></li>
+<li><a href="#buildship">Gradle BuildShip integration</a></li>
+</ul>
+
+<p class="nan2"><a name="gu"></a>General Updates</p>
 
 <p class="nan3">Eclipse Mars.2 (4.5.2, formerly known as Mars SR2)</p>
 <p>The default STS distribution is now based on the recently released Eclipse Mars.2 release.</p>
@@ -102,7 +124,7 @@
 
 <p class="nan2">Spring Tooling</p>
 
-<p class="nan3">Spring Boot Dashboard: support for multiple launch configurations</p>
+<p class="nan3"><a name="bootdash"></a><a name="launchconfigs"></a>Spring Boot Dashboard: support for multiple launch configurations</p>
 <br/>
 <p>In the past the boot dashboard listed Spring Boot projects from your workspace and allowed you
 to pick a "blessed" launch config to use. This launch config was used when starting/debugging/stopping
@@ -159,19 +181,19 @@ variants of a project. This has changed dramatically in the new version of the S
 <br/>
 
 
-<p class="nan3">Spring Boot Dashboard: advanced support for Cloud Foundry manifest files</p>
+<p class="nan3"><a name="dashmanifets"></a>Spring Boot Dashboard: advanced support for Cloud Foundry manifest files</p>
 <br/>
 
-<p>Cloud Foundry Manifest files are a nice utility when deploying apps to Cloud Foundry. In the past the
-	boot dashboard used a manifest.yml file of the project (if existed) to deploy an app the Cloud Foundry.
-	But changes to the running app on Cloud Foundry didn't find its way back into the IDE and deploying
+<p>Cloud Foundry Manifest files are a configuration file used when deploying apps to Cloud Foundry. In the past the
+	boot dashboard used a manifest.yml file from the project (if it existed) to deploy an app to Cloud Foundry.
+	But changes to the running app on Cloud Foundry would not find their way back into the IDE and deploying
 	different variants of the same app to Cloud Foundry was cumbersome. This changes in the new version
 	of the Spring Boot dashboard. Cloud Foundry Manifest YAML files are becoming a first-class citizen
 	when working with Spring Boot apps in the boot dashboard.</p>
 <br/>
 
 <p>The first thing that you will notice is: when you deploy an app in the dashboard to a Cloud Foundry
-	section, new dialog opens to let you select the manifest file of your choice:</p>
+	section, new dialog opens to let you select the manifest file to be used:</p>
 <center><img src="img/boot-dashboard-select-manifest-dialog.png"></img></center>
 <br/>
 
@@ -182,7 +204,7 @@ variants of a project. This has changed dramatically in the new version of the S
 
 <p>This explicit support for manifest files also allows you to use various manifest files in your project,
 	for example one for each CF instance you would like to to deploy on, an additional one for a specific
-	variant of the app, one dev version, etc. You can deploy the same project multiple times to Cloud Foundry
+	variant of the app, a dev version, etc. You can deploy the same project multiple times to Cloud Foundry
 	using different manifest files.</p>
 <br/>
 
@@ -203,7 +225,7 @@ variants of a project. This has changed dramatically in the new version of the S
 <br/>
 
 <p>You will also notice that all the nice features for editing Cloud Foundry Manifest files (see below), like
-	content-assist, validations, and hover help and available in this dialog, too.</p>
+	content-assist, validations, and hover help are available in this dialog, too.</p>
 <center><img src="img/boot-dashboard-manifest-manual-mode-editing.png"></img></center>
 <br/>
 	
@@ -214,11 +236,11 @@ variants of a project. This has changed dramatically in the new version of the S
 <br/>
 
 <p>The boot dashboard will use the content of the selected manifest file to deploy the application to
-	Cloud Foundry - each time it deployes or updates the app. What happens if you changed the configuration
+	Cloud Foundry - each time it deploys or updates the app. What happens if you changed the configuration
 	of the application on Cloud Foundry in the meantime via the CF CLI or the web console of Cloud Foundry?</p>
 <br/>
 
-<p>The Spring Boot Dashboard will check for those changes each time it updates the application on Cloud
+<p>The Spring Boot Dashboard will now check for those changes each time it updates the application on Cloud
 	Foundry. If it identifies a difference in the configuration, it will prompt you with a diff and merge
 	dialog.</p>
 <center><img src="img/boot-dashboard-manifest-diff-merge-dialog.png"></img></center>
@@ -231,12 +253,12 @@ variants of a project. This has changed dramatically in the new version of the S
 
 <p>You can also decide to not merge those changes into your manifest file and use the manifest file as
 	it is to deploy the app or to forget the manifest file altogether and continue to use the configuration
-	as it exists on Cloud Foundry. In that case, the boot dashboard will remember that decision and don't
+	as it exists on Cloud Foundry. In that case, the boot dashboard will remember that decision and not
 	use the manifest file anymore when updating the application.</p>
 <br/>
 
 <p>Cloud Foundry Manifest files can contain configuration information for multiple applications in one file.
-	Therefore the boot dashboard recognizes this situation and lets you pick the application section from the
+	The boot dashboard recognizes this situation and lets you pick the application section from the
 	manifest file that you would like to use when deploying the app. The mechanics behind that also support
 	multiple applications when showing the diff/merge dialog.</p>
 <br/>
@@ -254,7 +276,7 @@ variants of a project. This has changed dramatically in the new version of the S
 <center><img src="img/boot-dashboard-deploy-actions.png"></img></center>
 <br/>
 
-<p class="nan3">Spring Boot Dashboard: support for services on Cloud Foundry</p>
+<p class="nan3"><a name="services"></a>Spring Boot Dashboard: support for services on Cloud Foundry</p>
 <br/>
 <p>Cloud Foundry sections in the boot dashboard now visualize service instances with their name
 	and selected properties of that service. Double-clicking on that service takes you directly to the
@@ -278,11 +300,11 @@ variants of a project. This has changed dramatically in the new version of the S
 <br/>
 
 <p>More details about background activity will also be visualized in the Cloud Foundry section, so that you can
-	direclty see what is going on when the boot dashboard tries to connect to a Cloud Foundry instance.</p>
+	directly see what is going on when the boot dashboard tries to connect to a Cloud Foundry instance.</p>
 <center><img src="img/boot-dashboard-cloud-foundry-activity.png"></img></center>
 <br/>
 
-<p class="nan3">Spring Boot Dashboard: filter apps by working sets</p>
+<p class="nan3"><a name="workingsets"></a>Spring Boot Dashboard: filter apps by working sets</p>
 <br/>
 <p>In case you have already organized your projects in your workspace using working sets, you
 	can directly filter for those working sets in the boot dashboard. There is no need to add
@@ -296,12 +318,12 @@ variants of a project. This has changed dramatically in the new version of the S
 
 <p>The request mappings property tab now works for apps that are running on CF as well.</p>
 
-<p class="nan3">Spring Boot Dashboard: direclty select the default path</p>
+<p class="nan3">Spring Boot Dashboard: directly select the default path</p>
 <br/>
 
-<p>The boot dashboard allows you to direclty pick the default path for a local app (or an app on Cloud Foundry) in the
+<p>The boot dashboard allows you to directly pick the default path for a local app (or an app on Cloud Foundry) in the
 	request mappings property tab. Just select the request mapping you would like to use as default for the app and select
-	"" from the context menu.</p>
+	"Make Default" from the context menu.</p>
 <center><img src="img/boot-dashboard-default-path-action.png"></img></center>
 <br/>
 
@@ -313,7 +335,7 @@ variants of a project. This has changed dramatically in the new version of the S
 <center><img src="img/boot-dashboard-hyperlink-in-properties.png"></img></center>
 <br/>
 
-<p class="nan3">Advanced Cloud Foundry Manifest Editor</p>
+<p class="nan3"><a name="manifestediting"></a>Advanced Cloud Foundry Manifest Editor</p>
 <br/>
 <p>STS 3.7.3 adds support for editing <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html">
 Cloud Foundry Deployment Manifests</a>. Double clicking a file 
@@ -336,9 +358,9 @@ content assist (see screenshot above) or by hovering over a property with the mo
 <br/>
 
 
-<p class="nan3">Improvements to the Spring Boot YML and Properties Editors</p>
+<p class="nan3"><a name="ymlediting"></a>Improvements to the Spring Boot YML and Properties Editors</p>
 <br/>
-<p>The Yaml Properties editor now checks for duplicate map keys and marks them as errors:</p>
+<p><a name="deprecated"></a>The Yaml Properties editor now checks for duplicate map keys and marks them as errors:</p>
 
 <center><img src="img/application-yml-duplicate-key.png"></img></center><br>
 
@@ -352,7 +374,7 @@ are moved to the bottom of the list:</p>
 
 <center><img src="img/application-yml-deprecated-ca.png"></img></center><br>
  
-<p>Both the Yaml amd Properties Editor now recognize properties of type <code>java.nio.charset.Charset</code>, 
+<p><a name="wellknown"></a>Both the Yaml amd Properties Editor now recognize properties of type <code>java.nio.charset.Charset</code>, 
 <code>java.util.Locale</code> and <code>org.springframework.util.MimeType</code> as special cases and provide 
 helpful content assist for them:</p>
 
@@ -361,9 +383,9 @@ helpful content assist for them:</p>
 <p>Spring Boot 1.3 defines an extension of its <a href="http://docs.spring.io/spring-boot/docs/1.3.0.RELEASE/reference/html/configuration-metadata.html">metadata format</a> that allows providing <em>hints</em> to the IDE on how to
 provide content assist for specific properties. STS now parses this extended format and provides meaninful content
 assist for a subset of it (more complete support to follow in the next release). Wherever we added support, it works 
-in both the yml and properties editor. STS 3.7.3 already supports:</p>
+in both the yml and properties editor. STS 3.7.3 supports:</p>
 <br>
-<p><b>Value Hints</b> which allows metadata to suggest a list of possible values for a specific property. For example:</p>
+<p><a name="valuehints"></a><b>Value Hints</b> which allows metadata to suggest a list of possible values for a specific property. For example:</p>
 
 <center><img src="img/application-yml-value-hints.png"></img></center><br>
 
@@ -375,7 +397,7 @@ in Spring Boot 1.3:</p>
 </ul>
 <p></p>
 
-<p class="nan3">Improvements to the <em>Edit Starters</em> Wizard</p>
+<p class="nan3"><a name="editstarters"></a>Improvements to the <em>Edit Starters</em> Wizard</p>
 <br>
 <p>The <em>Edit Starters</em> wizard is accessible by right-clicking a Maven project's <code>pom.xml</code>, 
 from menu <em>Spring >> Edit Starters</em>. This wizard provides a 
@@ -405,7 +427,7 @@ layout and contents:</p>
 	really annoying, we configure the debugger for Spring Boot apps automatically to ignore exactly that exception.</p>
 
 
-<p class="nan3">Cloud Foundry Tools</p>
+<p class="nan3"><a name="cft"></a>Cloud Foundry Tools</p>
 <br/>
  <p>A new milestone version of Cloud Foundry Tools (CFT) 1.0.M3 is included in 3.7.3 and includes many changes that occurred after CFT moved to Eclipse Foundation and
 became an Eclipse project. This replaces the old Cloud Foundry Eclipse 1.8.3 tools. If you are downloading a full copy of 3.7.3, CFT is already included.
@@ -423,7 +445,7 @@ became an Eclipse project. This replaces the old Cloud Foundry Eclipse 1.8.3 too
 
 <br/>
 
-<p class="nan3">Gradle BuildShip Integration (Experimental)</p>
+<p class="nan3"><a name="buildship"></a>Gradle BuildShip Integration (Experimental)</p>
 <br/>
 
 <p>We encourage users to try out <a href="http://projects.eclipse.org/projects/tools.buildship">BuildShip</a> in preparation 
