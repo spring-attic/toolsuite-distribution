@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>How to tunnel local services via ngrok to CF when using Spring Cloud Services</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheetKotlin.css" />
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Tunnel local services in STS via ngrok to Spring Cloud Services on PCF</h1>
+
+<p>The Spring Boot Dashboard in the Spring Tool Suite provides an easy way to start up a local Spring Boot
+	project and connect it to a running microservice system that is running on Cloud Foundry. This is done
+	by tunneling the local application via ngrok to the outside world and register the URL of the tunnel
+	with the remote Eureka service registry on CF. This feature of the Spring Boot dashboard is described
+	in more detail in the <a href="https://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry">
+	second part of our blog series about the Spring Boot Dashboard in STS</a>.</p>
+<br/>
+	
+<p>This feature was designed to be used and is working with a remote Eureka service registry that you
+	deployed yourself as a Spring Boot app. It doesn't work yet with Eureka service registries that you
+	get when using the <a href="http://docs.pivotal.io/spring-cloud-services/">Spring Cloud Services on PCF</a>.
+	While the direct support of this feature for SCS will be part of a future release of the Spring Tool Suite,
+	this document describes in detail how to tunnel a local application via <a href="https://ngrok.com/">ngrok</a>
+	manually when using Spring Cloud Services.</p>
+<br/>
+	
+<p>As an example for this tech note I will use the SCS demo application that consists out of a service called
+	"camelboy" that uses another service called "expedition". The expedition service will be the one that I am
+	going to run locally. The camelboy service will keep running on PCF.</p>
+
+<p class="nan2">Setup</p>
+
+<p>You need to have ngrok installed on your local machine. You can download it from the officla <a href="https://ngrok.com/download">
+	ngrok download page</a>.</p>
+<br/>
+	
+<p>Once you have ngrok installed on your local machine, you can startup a tunnel manually from the command
+	line via: </p>
+<br/>
+<p>ngrok http 8080</p>
+<br/>
+<p>The 8080 is the port on your local machine that you would like to tunnel to the outside world. In our case it is the
+	port that is used by the local Sprign Boot app that we would like to run locally and connect to the other microservices
+	that are running on PCF.</p>
+<br/>
+
+<p>As a result ngrok will display the temporary ngrok URLs of the created tunnel. It looks like this:</p>
+
+<center><img border="5" src="ngrok-scs/ngrok-scs-tunnel-created.png"/></center>
+
+<p class="nan2">Configure your local service - application.yml</p>
+
+<p>As a next step we need to configure the launch configuration of the local Spring Boot app in a way that it registers
+	itself with the remote service registry that is coming from Spring Cloud Services. This gets a little more
+	complicated because the remote service registry is running in a secure mode and protected via oauth.</p>
+<br/>
+
+<p>First, we take a look at the application.yml. There are three things that need to be configured as properties:</p>
+
+<center><img border="5" src="ngrok-scs/ngrok-scs-application-yml.png"/></center>
+
+<p>First, we need to set a name to the application. This name is being used to register the application with the
+	remote eureka as has to be the same that you use when deploying the service to PCF and the same that you use
+	when looking up the service in your code.</p>
+<br/>
+<p>Second, we configure the eureka registration in order to be able to deal with the secure ports on PCF. The
+	"-1" as the secure port looks a bit strange, but it will cause the spring cloud implementation to use the
+	standard port for https (which is also the one that is being exposed by ngrok for the https tunnel).</p>
+<br/>
+
+<p>Third, we disable the basic security that gets enabled by default otherwise. This helps us to test the local
+	app with a browser without the need to login.</p>
+
+<p>There is nothing mentioned about the ngrok tunnel URL yet. So how does the local app know how to register
+	with the remote Eureka?</p>
+<br/>
+
+<p class="nan2">Configure your local service - environment variables</p>
+
+<p>The next step is to configure certain environment variables for your local Spring Boot application. Therefore
+	open the launch config dialog, select the launch configuration you would like to use and switch to the
+	"Environment" tab.</p>
+<br/>
+
+<p>We need to set six different environment variables in here:
+	<ul>
+		<li><b>CF_INSTANCE_IP</b> - This is the ngrok tunnel URL (without a leading https://).</li>
+		<li><b>CF_INSTANCE_PORT</b> - Set to "0" (zero).</li>
+		<li><b>CF_TARGET</b> - This is the target API of your PCF environment and particularly useful if your PCF environment uses a self-signed certificate for https.</li>
+		<li><b>SPRING_PROFILES_ACTIVE</b> - set to "dev, cloud" to get Spring Cloud to register with the remote Eureka correctly.</li>
+		<li><b>VCAP_SERVICES</b> - This one defines the remote Eureka service that should be used together with its keys (as a JSON string).</li>
+		<li><b>VCAP_APPLICATION</b> - This one defines the application and contains again the ngrok tunnel URL of the local app (as a JSON string).</li>
+	</ul>
+</p>
+<br/>
+
+<p>The first four environment variables are easy to set and straight forward. The latter two are more complicated.
+	In the end the environment variable configuration should look like this:</p>
+
+<center><img border="5" src="ngrok-scs/ngrok-scs-environment-variables.png"/></center>
+
+<p>The VCAP environment variables consist out of JSON strings that are (on PCF) set by the PCF environment in order
+	to pass important service information to the application. The best thing to obtain those two JSON documents is to open the web
+	console of your PCF environment, go to the deployed version of your local service and take a look at the environment. It contains
+	a single JSON string which contains the VCAP_SERVICES definitions as well as the VCAP_APPLICATION section. We need to cut
+	those sections out into individual JSON strings.</p>
+<br/>
+
+<p>The VCAP_SERVICES environment variable JSON value can be used in exactly the way we copy that out of the environment
+	variables on PCF. It contains the remote Eureka specs, including the necessary service keys. In our example it might
+	look like this:</p>
+<br/>
+
+{
+	"p-service-registry": [
+		{
+			"name": "eureka-registry",
+			"label": "p-service-registry",
+			"tags": [
+				"eureka",
+				"discovery",
+				"registry",
+				"spring-cloud"
+			],
+			"plan": "standard",
+			"credentials": {
+				"uri": "https://eureka-<somehash>.tan.springapps.io",
+				"client_id": "p-service-registry-<somehash>",
+				"client_secret": "theclientsecret",
+				"access_token_uri": "https://p-spring-cloud-services.uaa.tan.springapps.io/oauth/token"
+			}
+		}
+	]
+}
+
+<br/><br/>
+
+<p>The VCAP_APPLICATION environment variable value needs some editing after cutting that portion out into its own
+	document. The application URL needs to be replaced with the ngrok tunnel URL. In the end this JSON doc might look
+	like this (in our example):</p>
+<br/>
+
+
+{
+	"limits": {
+		"mem": 512,
+		"disk": 1024,
+		"fds": 16384
+	},
+	"application_id": "<somehash-for-the-app>",
+	"application_version": "<somehash-for-the-app-version>",
+	"application_name": "expedition-ml",
+	"application_uris": [
+		"011c747a.ngrok.io"
+	],
+	"version": "<somehash-again-for-the-version>",
+	"name": "expedition-ml",
+	"space_name": "<the name of the space on PCF>",
+	"space_id": "<somehash-ID-for-the-space>",
+	"uris": [
+		"011c747a.ngrok.io"
+	],
+	"users": null
+}
+<br/><br/>
+
+<p>Both JSON strings can be copied into the environment variable configuration of the launch configuration editor
+	that we opened a while ago.</p>
+<br/>
+
+<p>The final step is to run the local Spring Boot app (maybe even in debug mode) using the special launch configuration
+	that we configured. It starts up as a regular Spring Boot app. After while (it might take a few seconds or minutes),
+	it registers itself with the remote Eureka instance. You can observe this in the console output of the local app:</p>
+<br/>
+
+<p>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122 - Re-registering apps/EXPEDITION-ML</p>
+<p>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122: registering service...</p>
+<p>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122 - registration status: 204</p>
+<br/>
+
+<p>The remote Eureka registry will start to list the local service, too:</p>
+
+<center><img border="5" src="ngrok-scs/ngrok-scs-eureka-with-local-service.png"/></center>
+
+<p class="nan2">Working wih the local service</p>
+
+<p>Whereas the setup and configuration steps above are somewhat cumbersome, working with the once registered
+	boot app locally is a pleasure. You can debug the app locally on your machine and restart it as any
+	other local app. This can save a lot of time, compared to re-deploying a changed app to your CF environment.</p>
+
+
+<hr>
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>STS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+<p>Spring Cloud Services: <a href="http://docs.pivotal.io/spring-cloud-services/">http://docs.pivotal.io/spring-cloud-services/</a></p>
+
+<hr>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
