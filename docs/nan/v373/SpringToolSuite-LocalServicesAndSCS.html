@@ -117,7 +117,7 @@
 <p>ngrok http 8080</p>
 <br/>
 <p>The 8080 is the port on your local machine that you would like to tunnel to the outside world. In our case it is the
-	port that is used by the local Sprign Boot app that we would like to run locally and connect to the other microservices
+	port that is used by the local Spring Boot app that we would like to run locally and connect to the other microservices
 	that are running on PCF.</p>
 <br/>
 
@@ -129,15 +129,15 @@
 
 <p>As a next step we need to configure the launch configuration of the local Spring Boot app in a way that it registers
 	itself with the remote service registry that is coming from Spring Cloud Services. This gets a little more
-	complicated because the remote service registry is running in a secure mode and protected via oauth.</p>
+	complicated because the remote service registry is running in a secure mode and protected via OAuth.</p>
 <br/>
 
 <p>First, we take a look at the application.yml. There are three things that need to be configured as properties:</p>
 
 <center><img border="5" src="ngrok-scs/ngrok-scs-application-yml.png"/></center>
 
-<p>First, we need to set a name to the application. This name is being used to register the application with the
-	remote eureka as has to be the same that you use when deploying the service to PCF and the same that you use
+<p>First, we need to set a name for the application. This name is being used to register the application with the
+	remote eureka and has to be the same that you use when deploying the service to PCF and the same that you use
 	when looking up the service in your code.</p>
 <br/>
 <p>Second, we configure the eureka registration in order to be able to deal with the secure ports on PCF. The
@@ -259,12 +259,13 @@
 
 <center><img border="5" src="ngrok-scs/ngrok-scs-eureka-with-local-service.png"/></center>
 
-<p class="nan2">Working wih the local service</p>
+<p class="nan2">Working with the local service</p>
 
 <p>Whereas the setup and configuration steps above are somewhat cumbersome, working with the once registered
 	boot app locally is a pleasure. You can debug the app locally on your machine and restart it as any
 	other local app. This can save a lot of time, compared to re-deploying a changed app to your CF environment.</p>
 
+<p>This whole setup process should be automated to a couple of clicks in a future STS.</p>
 
 <hr>
 <h2>Useful Links</h2>
