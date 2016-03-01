@@ -420,6 +420,12 @@ layout and contents:</p>
   <li><b>searchability</b>: A searchbox allows quickly finding the one dependency that you are interested in.
 </ul>
 
+<p class="nan3">ANSI coloring in console</p>
+<br/>
+<p>STS 3.7.3 comes with the <a href="http://marketplace.eclipse.org/content/ansi-escape-console">ANSI Escape in Console</a>
+	plugin installed by default and enables the Spring Boot option to produce ANSI colored console output automatically
+	in case this plugin is installed and active.</p>
+
 <p class="nan3">SilentExitExceptions ignored by default</p>
 <br/>
 <p>When running a Spring Boot app in debug mode (while having the Boot Devtools on the classpath), the debugger usually
@@ -510,7 +516,9 @@ install Groovy-Eclipse you will be downgrading your Java compiler and missing al
 <p>The Spring Boot Dashboards ngrok tunnel feature doesn't work yet with remote service registries from Spring Cloud Services.
 	  Instead it works with self-deployed Eureka service registry apps on CF only (as described
 	  <a href="https://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry">here</a>). We
-	  are working on enhancing the ngrok tunnel feature to directly support Spring Cloud Services in the near future.</p>
+	  are working on enhancing the ngrok tunnel feature to directly support Spring Cloud Services in the near future. In the meantime
+	  we published a tech note that describes <a href="http://static.springsource.org/sts/nan/v373/SpringToolSuite-LocalServicesAndSCS.html">
+      how to setup ngrok tunneling in combination with SCS manually</a>.</p>
 <br/>
 
 <h3>Conflicting duplicate lifecycle mapping errors in Maven projects upgrading from STS 3.6.x</h3>
