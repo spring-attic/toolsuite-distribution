@@ -31,7 +31,8 @@
   <script type="text/javascript" src="js/filter.js"></script>
   <script type="text/javascript" src="js/application.js"></script>
   <script type="text/javascript" src="js/guide.js"></script>
-	
+  <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
 </head><body onload="checkCookie()">
   <div class="viewport">
     <header class="navbar header--navbar header-web">
@@ -114,7 +115,7 @@
 <p>Once you have ngrok installed on your local machine, you can startup a tunnel manually from the command
 	line via: </p>
 <br/>
-<p>ngrok http 8080</p>
+<p><tt>> ngrok http 8080</tt></p>
 <br/>
 <p>The 8080 is the port on your local machine that you would like to tunnel to the outside world. In our case it is the
 	port that is used by the local Spring Boot app that we would like to run locally and connect to the other microservices
@@ -188,6 +189,7 @@
 	look like this:</p>
 <br/>
 
+<pre class="prettyprint">
 {
 	"p-service-registry": [
 		{
@@ -201,45 +203,44 @@
 			],
 			"plan": "standard",
 			"credentials": {
-				"uri": "https://eureka-<somehash>.tan.springapps.io",
-				"client_id": "p-service-registry-<somehash>",
+				"uri": "https://eureka-somehash.tan.springapps.io",
+				"client_id": "p-service-registry-somehash",
 				"client_secret": "theclientsecret",
 				"access_token_uri": "https://p-spring-cloud-services.uaa.tan.springapps.io/oauth/token"
 			}
 		}
 	]
-}
-
-<br/><br/>
+}</pre>
+<br/>
 
 <p>The VCAP_APPLICATION environment variable value needs some editing after cutting that portion out into its own
 	document. The application URL needs to be replaced with the ngrok tunnel URL. In the end this JSON doc might look
 	like this (in our example):</p>
 <br/>
 
-
+<pre class="prettyprint">
 {
 	"limits": {
 		"mem": 512,
 		"disk": 1024,
 		"fds": 16384
 	},
-	"application_id": "<somehash-for-the-app>",
-	"application_version": "<somehash-for-the-app-version>",
+	"application_id": "somehash-for-the-app",
+	"application_version": "somehash-for-the-app-version",
 	"application_name": "expedition-ml",
 	"application_uris": [
 		"011c747a.ngrok.io"
 	],
-	"version": "<somehash-again-for-the-version>",
+	"version": "somehash-again-for-the-version",
 	"name": "expedition-ml",
-	"space_name": "<the name of the space on PCF>",
-	"space_id": "<somehash-ID-for-the-space>",
+	"space_name": "the name of the space on PCF",
+	"space_id": "somehash-ID-for-the-space",
 	"uris": [
 		"011c747a.ngrok.io"
 	],
 	"users": null
-}
-<br/><br/>
+}</pre>
+<br/>
 
 <p>Both JSON strings can be copied into the environment variable configuration of the launch configuration editor
 	that we opened a while ago.</p>
@@ -250,9 +251,9 @@
 	it registers itself with the remote Eureka instance. You can observe this in the console output of the local app:</p>
 <br/>
 
-<p>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122 - Re-registering apps/EXPEDITION-ML</p>
-<p>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122: registering service...</p>
-<p>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122 - registration status: 204</p>
+<p><tt>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122 - Re-registering apps/EXPEDITION-ML</tt></p>
+<p><tt>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122: registering service...</tt></p>
+<p><tt>DiscoveryClient_EXPEDITION-ML/011c747a.ngrok.io:e645d5b618dc6c22f4b398530aa74122 - registration status: 204</tt></p>
 <br/>
 
 <p>The remote Eureka registry will start to list the local service, too:</p>
