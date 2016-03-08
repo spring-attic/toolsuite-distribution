@@ -785,11 +785,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.6/</url>
 				</repository> -->
-<!--				<repository>
-					<id>platform-m-builds</id>
+				<repository>
+					<id>platform-i-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.6-M-builds/</url>
-				</repository> -->
+					<url>http://download.eclipse.org/eclipse/updates/4.6-I-builds</url>
+				</repository>
 
 				<repository>
 					<id>orbit</id>
