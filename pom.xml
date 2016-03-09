@@ -788,13 +788,13 @@ Optional parameters:
 				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.6-I-builds</url>
+					<url>http://download.eclipse.org/eclipse/updates/4.6-I-builds/I20160308-0800</url>
 				</repository>
 
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/</url>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20151204220443/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
