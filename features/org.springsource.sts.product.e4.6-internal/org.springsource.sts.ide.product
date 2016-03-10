@@ -34304,10 +34304,8 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.eclipse.cft.server.ui.feature" installMode="root"/>
 
       <feature id="JDepend4Eclipse" installMode="root"/>
-      <feature id="FontsFeature" installMode="root"/>
 	  
       <feature id="org.eclipse.egit" installMode="root"/>
-      <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.jgit" installMode="root"/>
 	  
       <feature id="org.springsource.ide.eclipse.gradle.feature" installMode="root"/>
