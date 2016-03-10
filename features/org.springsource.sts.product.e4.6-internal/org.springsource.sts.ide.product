@@ -34141,12 +34141,6 @@ Alternatively, the Source Files may accompany the Pivotal product.
 [STSDISTRIBUTION370GASS061815]]]></text>
    </license>
 
-   <!--
-   <plugins>
-      <plugin id="org.springsource.sts"/>
-   </plugins>
-   -->
-
    <features>
 
       <feature id="org.eclipse.aether.connector.basic.feature" installMode="root"/>
@@ -34165,7 +34159,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature" installMode="root"/>
       <feature id="org.eclipse.ecf.filetransfer.ssl.feature" installMode="root"/>
 
-      <feature id="org.eclipse.emf installMode="root""/>
+      <feature id="org.eclipse.emf" installMode="root"/>
       <feature id="org.eclipse.emf.codegen" installMode="root"/>
       <feature id="org.eclipse.emf.codegen.ecore" installMode="root"/>
       <feature id="org.eclipse.emf.codegen.ecore.ui" installMode="root"/>
