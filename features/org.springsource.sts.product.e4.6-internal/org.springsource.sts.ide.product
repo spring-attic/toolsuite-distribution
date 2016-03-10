@@ -34279,6 +34279,11 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.springsource.ide.eclipse.dashboard" installMode="root"/>
       <feature id="org.springsource.ide.eclipse.commons.quicksearch.feature" installMode="root"/>
 
+      <feature id="org.codehaus.groovy.eclipse.feature" installMode="root"/>
+      <feature id="org.codehaus.groovy.jdt.patch" installMode="root"/>
+      <feature id="org.codehaus.groovy24.feature" installMode="root"/>
+      <feature id="org.codehaus.groovy.m2eclipse.feature" installMode="root"/>
+
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
 
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
