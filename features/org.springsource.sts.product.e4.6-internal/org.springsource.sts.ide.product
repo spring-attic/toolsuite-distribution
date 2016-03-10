@@ -34312,7 +34312,6 @@ Alternatively, the Source Files may accompany the Pivotal product.
 	  
       <feature id="org.springsource.ide.eclipse.gradle.feature" installMode="root"/>
 	  
-      <feature id="io.github.philwebb.eclipse.theme.cupertino.feature" installMode="root"/>
       <feature id="net.mihai-nita.ansicon" installMode="root"/>
    </features>
 
