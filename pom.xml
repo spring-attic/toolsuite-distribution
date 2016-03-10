@@ -785,11 +785,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.6/</url>
 				</repository> -->
-				<repository>
+<!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.6-I-builds/I20160308-0800</url>
-				</repository>
+				</repository> -->
 
 				<repository>
 					<id>orbit</id>
@@ -875,6 +875,117 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e4.6</module>
 				<module>features/org.springsource.sts.product.e4.6</module>
+			</modules>
+		</profile>
+
+		<profile>
+			<id>e46-internal</id>
+			<properties>
+				<product.project.sts>org.springsource.sts.product.e4.6-internal</product.project.sts>
+				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.6</p2.repository.name>
+				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
+				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
+			</properties>
+			<repositories>
+				<repository>
+					<id>mars</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/neon/</url>
+				</repository>
+				<!--				<repository>
+				<id>platform</id>
+				<layout>p2</layout>
+				<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
+				</repository> -->
+
+				<repository>
+					<id>orbit</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20151204220443/repository/</url>
+				</repository>
+				<repository>
+					<id>mylyn</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+				</repository>
+				<repository>
+					<id>ajdt</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/tools/ajdt/46/dev/update</url>
+				</repository>
+				<repository>
+					<id>swtbot</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+				</repository>
+				<repository>
+					<id>groovy</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.6/</url>
+				</repository>
+				<repository>
+					<id>atlassian</id>
+					<layout>p2</layout>
+					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+				</repository>
+				<repository>
+					<id>maven-wtp</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/m2e-wtp/releases/mars</url>
+				</repository>
+				<repository>
+					<id>maven-extras-mirror</id>
+					<layout>p2</layout>
+					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+				</repository>
+				<repository>
+					<id>ajdt-m2e-configurator</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+				</repository>
+				<repository>
+					<id>maven-egit</id>
+					<layout>p2</layout>
+					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201504071521/</url>
+				</repository>
+				<repository>
+					<id>maven-wro4j</id>
+					<layout>p2</layout>
+					<url>http://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
+				</repository>
+				<repository>
+					<id>maven-devtools</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+				</repository>
+				<repository>
+					<id>maven-dependency-support</id>
+					<layout>p2</layout>
+					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+				</repository>
+				<repository>
+					<id>eclipse-integration-commons</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+				</repository>
+				<repository>
+					<id>cloudfoundry-eclipse</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/cft/1.0.M6/</url>
+				</repository>
+				<repository>
+					<id>jdepend-eclipse</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/release/TOOLS/third-party/jdepend4eclipse</url>
+				</repository>
+				<repository>
+					<id>ansi-console</id>
+					<layout>p2</layout>
+					<url>http://www.mihai-nita.net/eclipse</url>
+				</repository>
+			</repositories>
+			<modules>
+				<module>features/org.springsource.sts.product.e4.6-internal</module>
 			</modules>
 		</profile>
 
