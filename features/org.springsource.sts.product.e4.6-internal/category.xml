@@ -15,6 +15,13 @@
   </feature>
 
   <feature
+     url="features/org.springsource.sts.package_0.0.0.jar"
+     id="org.springsource.sts.package" 
+     version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
+  <feature
 	id="org.eclipse.ajdt"
 	version="0.0.0">
 	<category name="Uncategorized"/>

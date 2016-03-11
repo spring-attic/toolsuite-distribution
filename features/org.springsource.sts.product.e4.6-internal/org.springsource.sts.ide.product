@@ -34255,34 +34255,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
 
       <feature id="org.eclipse.zest" installMode="root"/>
 
-      <feature id="org.springframework.ide.eclipse.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.aop.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.ajdt.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.webflow.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.security.feature" installMode="root"/>	
-      <feature id="org.springframework.ide.eclipse.autowire.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.batch.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.integration.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.maven.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.data.feature" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.boot.dash.feature" installMode="root"/>
-
-      <feature id="org.eclipse.ajdt" installMode="root"/>
-      <feature id="org.eclipse.contribution.weaving" installMode="root"/>
-      <feature id="org.eclipse.contribution.xref" installMode="root"/>
-
-      <feature id="org.springsource.sts" installMode="root"/>
-      <feature id="com.vmware.vfabric.ide.eclipse.tcserver" installMode="root"/>
-      <feature id="com.vmware.vfabric.ide.eclipse.tcserver.insight" installMode="root"/>
-
-      <feature id="org.springsource.ide.eclipse.commons" installMode="root"/>
-      <feature id="org.springsource.ide.eclipse.dashboard" installMode="root"/>
-      <feature id="org.springsource.ide.eclipse.commons.quicksearch.feature" installMode="root"/>
-
-      <feature id="org.codehaus.groovy.eclipse.feature" installMode="root"/>
-      <feature id="org.codehaus.groovy.jdt.patch" installMode="root"/>
-      <feature id="org.codehaus.groovy24.feature" installMode="root"/>
-      <feature id="org.codehaus.groovy.m2eclipse.feature" installMode="root"/>
+      <feature id="org.springsource.sts.package" installMode="root"/>
 
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
 

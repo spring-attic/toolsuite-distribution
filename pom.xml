@@ -986,6 +986,7 @@ Optional parameters:
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.product.e4.6-internal</module>
+				<module>features/org.springsource.sts.package.e4.6-internal</module>
 			</modules>
 		</profile>
 
