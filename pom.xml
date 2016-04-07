@@ -526,22 +526,6 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/mars/</url>
 				</repository>
-<!--				<repository>
-					<id>platform</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
-				</repository> -->
-				<repository>
-					<id>platform-m-builds</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.5-M-builds/</url>
-				</repository>
-				<repository>
-					<id>mars-maintenance</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository>
-
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
@@ -648,22 +632,6 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/mars/</url>
 				</repository>
-				<!--				<repository>
-				<id>platform</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
-				</repository> -->
-				<repository>
-					<id>platform-m-builds</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.5-M-builds/</url>
-				</repository>
-				<repository>
-					<id>mars-maintenance</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/maintenance/</url>
-				</repository>
-
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
