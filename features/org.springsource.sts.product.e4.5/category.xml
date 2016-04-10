@@ -68,18 +68,12 @@
   </feature>
 
   <!-- tc Server -->
-  <category-def name="Core / Eclipse Integration vFabric tc Server" label="Core / Eclipse Integration vFabric tc Server"/>
+  <category-def name="Core / Eclipse Integration Pivotal tc Server" label="Core / Eclipse Integration Pivotal tc Server"/>
 
   <feature
 	id="com.vmware.vfabric.ide.eclipse.tcserver"
 	version="0.0.0">
-	<category name="Core / Eclipse Integration vFabric tc Server" />
-  </feature>
-
-  <feature
-	id="com.vmware.vfabric.ide.eclipse.tcserver.insight"
-	version="0.0.0">
-	<category name="Core / Eclipse Integration vFabric tc Server" />
+	<category name="Core / Eclipse Integration Pivotal tc Server" />
   </feature>
 
   <!-- Spring IDE -->
