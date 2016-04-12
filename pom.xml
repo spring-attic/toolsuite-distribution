@@ -594,7 +594,7 @@ Optional parameters:
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>cloudfoundry-eclipse</id>
@@ -700,7 +700,7 @@ Optional parameters:
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>cloudfoundry-eclipse</id>
@@ -827,7 +827,7 @@ Optional parameters:
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>cloudfoundry-eclipse</id>
@@ -934,7 +934,7 @@ Optional parameters:
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>cloudfoundry-eclipse</id>
