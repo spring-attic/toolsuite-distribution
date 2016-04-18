@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.springsource.sts.cft.branding;singleton:=true
+Bundle-Version: 3.8.0.qualifier
+Bundle-Vendor: %providerName
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Localization: plugin
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.cft.server.branding.core
