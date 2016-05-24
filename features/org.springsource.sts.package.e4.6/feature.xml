@@ -161,6 +161,10 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.mylyn.github.feature"/>
 
+      <import feature="org.eclipse.oomph.p2"/>
+      <import feature="org.eclipse.oomph.setup"/>
+      <import feature="org.eclipse.oomph.setup.core"/>
+
       <import feature="org.eclipse.pde"/>
       <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.rcp"/>
@@ -189,6 +193,10 @@
       <import feature="org.eclipse.wst.common_ui.feature"/>
       <import feature="org.eclipse.wst.common.fproj"/>
       <import feature="org.eclipse.wst.jsdt.feature"/>
+      <import feature="org.eclipse.wst.jsdt.chromium.debug.feature"/>
+      <import feature="org.eclipse.wst.jsdt.nodejs.feature"/>
+      <import feature="org.eclipse.wst.json_core.feature"/>
+      <import feature="org.eclipse.wst.json_ui.feature"/>
       <import feature="org.eclipse.wst.server_adapters.feature"/>
       <import feature="org.eclipse.wst.server_core.feature"/>
       <import feature="org.eclipse.wst.server_ui.feature"/>
