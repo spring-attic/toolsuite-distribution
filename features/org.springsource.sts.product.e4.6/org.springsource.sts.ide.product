@@ -9,11 +9,8 @@
       <programArgs>-product org.springsource.sts.ide
 --launcher.defaultAction
 openFile</programArgs>
-      <programArgsWin>--launcher.XXMaxPermSize
-256M</programArgsWin>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
 -Xms40m
--XX:MaxPermSize=256m
 -Xverify:none</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns
          <argsX86_64>-Xmx1200m</argsX86_64>
