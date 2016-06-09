@@ -440,4 +440,8 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
+	<bundle id="org.eclipse.buildship.stsmigration" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
 </site>
