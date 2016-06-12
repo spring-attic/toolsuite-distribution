@@ -750,6 +750,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/neon/</url>
 				</repository>
+				<repository>
+					<id>neon-staging</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/staging/neon/</url>
+				</repository>
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
