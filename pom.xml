@@ -599,9 +599,9 @@ Optional parameters:
 					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
-					<id>cloudfoundry-eclipse</id>
+					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.0.RC1/</url>
+					<url>http://download.eclipse.org/cft/1.0.1.M1/</url>
 				</repository>
 				<repository>
 					<id>cupertino-theme</id>
@@ -837,6 +837,11 @@ Optional parameters:
 					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
+					<id>latest-cft</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/cft/1.0.1.M1/</url>
+				</repository>
+				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
 					<url>http://www.mihai-nita.net/eclipse</url>
@@ -942,6 +947,11 @@ Optional parameters:
 					<id>jdepend-eclipse</id>
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/release/TOOLS/third-party/jdepend4eclipse</url>
+				</repository>
+				<repository>
+					<id>latest-cft</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/cft/1.0.1.M1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
