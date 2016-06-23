@@ -21,6 +21,21 @@
   <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
   <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
   
+  <style>
+    p {
+        margin-top: 12px;
+    }
+    
+    table {
+        margin-top: 20px;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        vertical-align: top;
+    }
+  </style>
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -146,13 +161,95 @@ select "Customize... >> Customize Label...":</p>
 
 <p class="nan3"><a name="codetemplates"></a>Spring Boot: additional code templates</p>
 <br/>
-<p>tbd</p>
+<p>Based on input from Pivotal's Spring and Spring Boot core developers we have created a substantial number of code
+templates useful in developing Spring/Spring Boot apps.</p>
+<p>The templates are invoked through Eclipse's content-assist (i.e. you press CTRL-SPACE) and shown as completions
+when you type the template's name (or even just a part of the name).<p>
+<p>Some templates are context-sensitive. This means that there are two or more versions of the template that expand
+into a different pattern, depending on the context you are in. For example the <tt>notnull<tt> template expands to something
+that uses JUnit's assert in test code, but it expands into something that uses Spring's assert anywhere else.</p>
+<p>Below is a table showing all the templates we have added in this release:</p>
+<table>
+    <tr>
+        <th>Name[context]</th> 
+        <th>Screenshot</th> 
+    </tr>
+    <tr>
+        <td>main</td>
+        <td><img src="screenshot/template-main.png"></img></td>
+    </tr>
+        <td>notnull[spring]</td>
+        <td><img src="screenshot/template-notnull-spring.png"></img></td>
+    <tr>
+    </tr>
+        <td>notnull[test]</td>
+        <td><img src="screenshot/template-notnull-test.png"></img></td>
+    <tr>
+        <td>asl</td>
+        <td><img src="screenshot/template-asl.png"></img></td>
+    </tr>
+    <tr>
+        <td>jumock</td>
+        <td><img src="screenshot/template-jumock.png"></img></td>
+    </tr>
+    <tr>
+        <td>eerule[test-member]</td>
+        <td><img src="screenshot/template-eerule-test-member.png"></img></td>
+    </tr>
+    <tr>
+        <td>eerule[test-statement]</td>
+        <td><img src="screenshot/template-eerule-test-statement.png"></img></td>
+    </tr>
+    <tr>
+        <td>jumockmvcwac</td>
+        <td><img src="screenshot/template-jumockmvcwac.png"></img></td>
+    </tr>
+    <tr>
+        <td>formatter-off</td>
+        <td><img src="screenshot/template-formatter-off.png"></img></td>
+    </tr>
+    <tr>
+        <td>logger</td>
+        <td><img src="screenshot/template-logger.png"></img></td>
+    </tr>
+    <tr>
+        <td>logi</td>
+        <td><img src="screenshot/template-logi.png"></img></td>
+    </tr>
+    <tr>
+        <td>loge</td>
+        <td><img src="screenshot/template-loge.png"></img></td>
+    </tr>
+    <tr>
+        <td>logw</td>
+        <td><img src="screenshot/template-logw.png"></img></td>
+    </tr>
+    <tr>
+        <td>rtex</td>
+        <td><img src="screenshot/template-rtex.png"></img></td>
+    </tr>
+</table>
+
+<p>
+Note: The "formatter-off" template is special and can be applied from 
+the "Surround With..." menu:</p>
+<center><img src="screenshot/template-surround-with.png"></img></center>
 <br/>
 
-<p class="nan3"><a name="codetemplates"></a>Spring Boot: JAR type search now asks for confirmation</p>
+<p class="nan3"><a name="jar-type-search-confirmation"></a>Spring Boot: JAR type search now asks for confirmation</p>
+<p>
+The "Jar Type Search" is a feature that was introduced in <a href="http://docs.spring.io/sts/nan/v350/NewAndNoteworthy.html">STS 3.5.0</a>.
+It provides content-assist proposals in Spring Boot projects, for types that are not (yet) on the classpath. When selecting such a proposal
+the required dependency is automatically added to the project's maven pom.</p>
+<p>Some people liked this, but others found it confusing or annoying rather than helpful because it was too easy to add undesirable elements
+to the pom accidentally.</p>
+
+<p>STS 3.8.0 addresses this by asking for explicit confirmation before making changes to the pom. 
+The confirmation dialog also has a 'Disable' button, which you can click 
+to disable it completely.</p>
+
 <br/>
-<p>tbd</p>
-<br/>
+<center><img src="screenshot/jar-type-search-confirm.png"></img></center>
 
 <p class="nan3"><a name="codetemplates"></a>Spring Boot: trigger devtools restart manually</p>
 <br/>
