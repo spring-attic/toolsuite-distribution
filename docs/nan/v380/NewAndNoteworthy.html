@@ -258,7 +258,33 @@ to disable it completely.</p>
 
 <p class="nan3"><a name="ymlediting"></a>Improvements to the Spring Boot YML and Properties Editors</p>
 <br/>
-<p>tbd</p>
+<p><b>Validation of comma-separated lists in the <tt>.properties</tt> editor</b></p>
+
+<p>The Spring Boot Properties editor now knows how to check the validity of a list of comma-separated
+values. For example:</p>
+<center><img src="screenshot/props-reconcile-comma-lists.png"></img></center>
+
+<p><b>Content-assist in comma-separated lists in the <tt>.properties</tt> editor</b></p>
+
+<center><img src="screenshot/props-content-assist-comma-lists.png"></img></center>
+
+
+<p>
+TODO: The following stuff below needs to be fleshed out and organized.
+<ul>
+<li>Support for 'class-reference' value provider.
+<li>Support for 'handle-as' value provider.
+<li>Basic content-assist for 'Resource Type' in yml/props editor.
+<li>Quickfix deprecated property in yml editor.
+<li>Quickfix deprecated property in props editor.
+<li>JavaDoc for enum values shown in CA value proposals and hovers in props abd yml editor.
+<li>Hyperlink click works for enum values
+<li>Show error for duplicate props in property file
+<li>Content assist in props editor for 'comma-separated' list when value in list are 'assistable'.
+<li>Reconcile in props editor for 'comma-separated' list when value in list are 'reconcileable'.
+
+</ul>
+</p>
 
 <p class="nan2">Developer Productvity Bits</p>
 
@@ -266,11 +292,18 @@ to disable it completely.</p>
 	Spring Tool Suite and Eclipse. Here are the little improvements in detail.</p>
 <br/>
 
-<p>Toggle Line Number Visibility Action: </p>
+<p><b>Toggle Line Number Visibility Action:</b></p>
 <br/>
+<center><img src="screenshot/toggle-line-numbers.png"></img></center>
+<br>
 
-<p>Want to rename tests, too?</p>
+<p><b>Want to rename tests, too?</b></p>
 <br/>
+<p>After you rename a class, STS will check if there is a test class with a similar name. If it finds one, it will 
+ask you if you want to rename that too.</p>
+<br/>
+<center><img src="screenshot/rename-test-too.png"></img></center>
+<br>
 
 <p>more defaults for statc imports</p>
 <br/>
