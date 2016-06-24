@@ -161,7 +161,7 @@ select "Customize... >> Customize Label...":</p>
 
 <p class="nan3"><a name="codetemplates"></a>Spring Boot: additional code templates</p>
 
-<p>Based on input from Spring Boot Core developers we have created a substantial number of code
+<p>Based on input from Spring Boot Core developers we have created some code
 templates useful in developing Spring/Spring Boot apps.</p>
 <p>The templates are invoked through Eclipse's content-assist (i.e. you press CTRL-SPACE) and shown as completions
 when you type the template's name (or even just a part of the name).<p>
@@ -238,16 +238,15 @@ the "Surround With..." menu:</p>
 
 <p class="nan3"><a name="jar-type-search-confirmation"></a>Spring Boot: JAR type search now asks for confirmation</p>
 <p>
-The "Jar Type Search" is a feature that was introduced in <a href="http://docs.spring.io/sts/nan/v350/NewAndNoteworthy.html">STS 3.5.0</a>.
+"Jar Type Search" is a feature that was introduced in <a href="http://docs.spring.io/sts/nan/v350/NewAndNoteworthy.html">STS 3.5.0</a>.
 It provides content-assist proposals in Spring Boot projects, for types that are not (yet) on the classpath. When selecting such a proposal
 the required dependency is automatically added to the project's maven pom.</p>
 <p>Some people liked this, but others found it confusing or annoying rather than helpful because it was too easy to add undesirable elements
-to the pom accidentally.</p>
+to a pom accidentally.</p>
 
-<p>STS 3.8.0 addresses this by asking for explicit confirmation before making changes to the pom. 
+<p>STS 3.8.0 addresses this by asking for explicit confirmation before making changes to your pom. 
 The confirmation dialog also has a 'Disable' button, which you can click 
 to disable it completely.</p>
-
 <br/>
 <center><img src="screenshot/jar-type-search-confirm.png"></img></center>
 
@@ -268,6 +267,18 @@ values. For example:</p>
 
 <center><img src="screenshot/props-content-assist-comma-lists.png"></img></center>
 
+<p><b>Quickfix for deprecated propertie in yml and properties editor</b></p>
+<p>Both the yml and properties editor now provide a quickfix for deprecated property names (if the property
+defines a replacement in its metadata).
+
+<p><b>Check for duplicate keys in yml editor</b></p>
+
+
+<center><img src="screenshot/yml-quickfix-deprecated.png"></img></center>
+
+<p>Note: The yml quickfix is smart enough to not just change the name of a property in-place but
+also moves it to a different place in the yml structure as needed:</p>
+<center><img src="screenshot/yml-quickfix-deprecated-before-and-after.png"></img></center>
 
 <p>
 TODO: The following stuff below needs to be fleshed out and organized.
@@ -275,13 +286,9 @@ TODO: The following stuff below needs to be fleshed out and organized.
 <li>Support for 'class-reference' value provider.
 <li>Support for 'handle-as' value provider.
 <li>Basic content-assist for 'Resource Type' in yml/props editor.
-<li>Quickfix deprecated property in yml editor.
-<li>Quickfix deprecated property in props editor.
 <li>JavaDoc for enum values shown in CA value proposals and hovers in props abd yml editor.
 <li>Hyperlink click works for enum values
 <li>Show error for duplicate props in property file
-<li>Content assist in props editor for 'comma-separated' list when value in list are 'assistable'.
-<li>Reconcile in props editor for 'comma-separated' list when value in list are 'reconcileable'.
 
 </ul>
 </p>
