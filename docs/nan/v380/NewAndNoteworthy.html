@@ -136,19 +136,27 @@ select "Customize... >> Customize Label...":</p>
 
 <p class="nan3"><a name="multiappmanifests"></a>Spring Boot Dashboard: advanced support for multi-app manifest files</p>
 <br/>
-<p>tbd</p>
+<p>Deployment manifest may specify deployment properties for multiple applications. Deployment Properties dialog YAML Content section shows 
+application names. They are marked with visual annotations on the vertical ruler on the right side of the editor. Also the line where an application 
+name appears has a light-grey background such that it is easy to recognize application names in the manifest. User should be able to select 
+an application in the manifest by clicking on the visual annotation on the ruler. Green color annotation denotes selected application. Grey 
+color annotation denotes not selected application.</p>
+<center><img src="screenshot/boot-dashboard-multi-app-manifest.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="rememberpassword"></a>Spring Boot Dashboard: choose to remember password or not</p>
 <br/>
-<p>tdb</p>
-<center><img src="img/boot-dashboard-cf-targets-connected.png"></img></center>
+<p>Cloud Foundry Target creation wizard and login dialog now have "Remember Password" check-box. If user chooses not to remember the password
+then user will be prompted to enter Cloud Foundry login credentials when connecting to the Cloud Foundry target or after restarting STS. Otherwise, 
+the password will be stored in the Secure Storage and user will not be prompted to enter the password again after Cloud Foundry Target is disconnected 
+or STS restarted. Note that user might be prompted to enter a password for the Secure Storage to open it.</p>
+<center><img src="screenshot/boot-dashboard-cf-targets-connected.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="appsmanagerURL"></a>Spring Boot Dashboard: customizable apps manager URL</p>
 <br/>
 <p>tdb</p>
-<center><img src="img/boot-dashboard-cf-targets-connected.png"></img></center>
+<center><img src="img/boot-dashboard-custom-app-manager-url.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="filterbyname"></a>Spring Boot Dashboard: filter apps by project name</p>
@@ -267,7 +275,7 @@ values. For example:</p>
 
 <center><img src="screenshot/props-content-assist-comma-lists.png"></img></center>
 
-<p><b>Quickfix for deprecated propertie in yml and properties editor</b></p>
+<p><b>Quickfix for deprecated properties in yml and properties editor</b></p>
 <p>Both the yml and properties editor now provide a quickfix for deprecated property names (if the property
 defines a replacement in its metadata).
 
