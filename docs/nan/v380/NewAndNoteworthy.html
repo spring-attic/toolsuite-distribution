@@ -102,8 +102,14 @@
 <h2>Table of Contents</h2>
 <ul>
 <li><a href="#gu">General Updates</a></li>
-<li><a href="#bootdash">Spring Boot Dash</a></li>
+<li><a href="#bootdash">Spring Boot Dashboard</a></li>
+<li><a href="#codetemplates">Spring Boot in general</a></li>
+<li><a href="#ymlediting">Spring Boot YML and Property File Editing</a></li>
+<li><a href="#cfmanifesteditor">Cloud Foundry Manifest YML Editor</a></li>
+<li><a href="#developerproductivity">Developer Productivity Bits</a></li>
+<li><a href="#misc">Miscellaneous</a></li>
 </ul>
+
 
 <p class="nan2"><a name="gu"></a>General Updates</p>
 
@@ -128,14 +134,12 @@
 <p class="nan2">Spring Tooling</p>
 
 <p class="nan3"><a name="bootdash"></a><a name="targetlabels"></a>Spring Boot Dashboard: customizable labels for CF targets</p>
-<br/>
 <p>You can now change the labels for CF target nodes in the Boot Dashboard View. To do so, right-click a node and 
 select "Customize... >> Customize Label...":</p>
 <center><img src="screenshot/customize-target-labels.png"></img></center><br>
 <br/>
 
 <p class="nan3"><a name="multiappmanifests"></a>Spring Boot Dashboard: advanced support for multi-app manifest files</p>
-<br/>
 <p>Deployment manifest may specify deployment properties for multiple applications. Deployment Properties dialog YAML Content section shows 
 application names. They are marked with visual annotations on the vertical ruler on the right side of the editor. Also the line where an application 
 name appears has a light-grey background such that it is easy to recognize application names in the manifest. User should be able to select 
@@ -145,7 +149,6 @@ color annotation denotes not selected application.</p>
 <br/>
 
 <p class="nan3"><a name="rememberpassword"></a>Spring Boot Dashboard: choose to remember password or not</p>
-<br/>
 <p>Cloud Foundry Target creation wizard and login dialog now have "Remember Password" check-box. If user chooses not to remember the password
 then user will be prompted to enter Cloud Foundry login credentials when connecting to the Cloud Foundry target or after restarting STS. Otherwise, 
 the password will be stored in the Secure Storage and user will not be prompted to enter the password again after Cloud Foundry Target is disconnected 
@@ -154,19 +157,19 @@ or STS restarted. Note that user might be prompted to enter a password for the S
 <br/>
 
 <p class="nan3"><a name="skipsslvalidation"></a>Spring Boot Dashboard: Skip SSL validation for Cloud Foundry targets</p>
-<br/>
 <p>Skipping SSL validation is now supported when creating Cloud Foundry targets in the Spring Boot Dashboard.</p>
 <center><img src="screenshot/boot-dashboard-cf-skip-ssl.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="appsmanagerURL"></a>Spring Boot Dashboard: customizable apps manager URL</p>
-<br/>
-<p>tdb</p>
-<center><img src="img/boot-dashboard-custom-app-manager-url.png"></img></center>
+<p>The boot dashboard allows you to quickly jump to the web console of the apps manager of a Cloud Foundry target
+	that you confgured in the boot dashboard. However, the URL of the apps manager can vary, depending on the
+	version and configuration of your PCF installation. Therefore the boot dashboard allows you to customize the
+	URL it uses to jump to that web console (via Customize -> Customize Cloud Admin Console URL):</p>
+<center><img src="screenshot/boot-dashboard-customize-apps-manager.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="filterbyname"></a>Spring Boot Dashboard: filter apps by project name</p>
-<br/>
 <p>The filter in the boot dashboard is now also aware of project names. No need to organize your projects
 	into working sets anymore, just type in a part of the project name and see the filtered list of projects
 	in the boot dashboard.</p>
@@ -265,8 +268,9 @@ to disable it completely.</p>
 <center><img src="screenshot/jar-type-search-confirm.png"></img></center>
 
 <p class="nan3"><a name="codetemplates"></a>Spring Boot: trigger devtools restart manually</p>
-<br/>
-<p>tbd</p>
+<p>Spring Boot applications that have the boot devtools included in their classpath can quickly be restarted
+	(whthout shutting down the JVM completely). This can now be triggered manually from the console:</p>
+<center><img src="screenshot/devtools-restart-trigger.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="ymlediting"></a>Improvements to the Spring Boot YML and Properties Editors</p>
@@ -294,26 +298,14 @@ defines a replacement in its metadata).
 also moves it to a different place in the yml structure as needed:</p>
 <center><img src="screenshot/yml-quickfix-deprecated-before-and-after.png"></img></center>
 
-<p>
-TODO: The following stuff below needs to be fleshed out and organized.
-<ul>
-<li>Support for 'class-reference' value provider.
-<li>Support for 'handle-as' value provider.
-<li>Basic content-assist for 'Resource Type' in yml/props editor.
-<li>JavaDoc for enum values shown in CA value proposals and hovers in props abd yml editor.
-<li>Hyperlink click works for enum values
-<li>Show error for duplicate props in property file
-
-</ul>
-</p>
-<p class="nan2">Manifest YML Editor</p>
+<p class="nan2"><a name="cfmanifesteditor"></a>Cloud Foundry Manifest YML Editor</p>
 <p><b>Content Assist for Cloud Foundry Buildpacks</b></p>
 <p>Content assist for buildpacks now proposes buildpacks dynamically from Cloud Foundry targets in the Spring Boot Dashboard. It will list buildpacks from any Cloud Foundry target, not just Pivotal Web Services.</p>
 <br/>
 <center><img src="screenshot/manifest-editor-buildpack-contentassist.png"></img></center>
 <br/>
 
-<p class="nan2">Developer Productivity Bits</p>
+<p class="nan2"><a name="developerproductivity"></a>Developer Productivity Bits</p>
 
 <p>We implemented a number of little things to improve the general developer productivity when working with the
 	Spring Tool Suite and Eclipse. Here are the little improvements in detail.</p>
@@ -344,7 +336,7 @@ as restore the default list.</p>
 <br/>
 
 
-<p class="nan2">Miscellaneous</a>
+<p class="nan2"><a name="misc"></a>Miscellaneous</a>
 
 <h2>Issues resolved in this release</h2>
 
