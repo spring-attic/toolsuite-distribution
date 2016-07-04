@@ -102,8 +102,14 @@
 <h2>Table of Contents</h2>
 <ul>
 <li><a href="#gu">General Updates</a></li>
-<li><a href="#bootdash">Spring Boot Dash</a></li>
+<li><a href="#bootdash">Spring Boot Dashboard</a></li>
+<li><a href="#codetemplates">Spring Boot in general</a></li>
+<li><a href="#ymlediting">Spring Boot YML and Property File Editing</a></li>
+<li><a href="#cfmanifesteditor">Cloud Foundry Manifest YML Editor</a></li>
+<li><a href="#developerproductivity">Developer Productivity Bits</a></li>
+<li><a href="#misc">Miscellaneous</a></li>
 </ul>
+
 
 <p class="nan2"><a name="gu"></a>General Updates</p>
 
@@ -113,7 +119,7 @@
 <p>Highlights from this Eclipse Neon release include substring code completion for Java content
 	assist, word-wrap in text editors, commands/shortcuts/pinch gestures to zoom into text editors (especially
 	useful when giving presentations), and more. Please find additional details in the
-	<a href="https://www.eclipse.org/eclipse/news/4.6/">Eclipse Neon Platform New and Noteworthy</a>.</p>
+	<a href="https://www.eclipse.org/neon/noteworthy/">Eclipse Neon New and Noteworthy</a>.</p>
 
 <p class="nan3">Pivotal tc Server updated to 3.1.4</p>
 <p>The latest Pivotal tc Server release 3.1.4 is now included in the STS distribution bundle.</p>
@@ -128,31 +134,42 @@
 <p class="nan2">Spring Tooling</p>
 
 <p class="nan3"><a name="bootdash"></a><a name="targetlabels"></a>Spring Boot Dashboard: customizable labels for CF targets</p>
-<br/>
 <p>You can now change the labels for CF target nodes in the Boot Dashboard View. To do so, right-click a node and 
 select "Customize... >> Customize Label...":</p>
 <center><img src="screenshot/customize-target-labels.png"></img></center><br>
 <br/>
 
 <p class="nan3"><a name="multiappmanifests"></a>Spring Boot Dashboard: advanced support for multi-app manifest files</p>
-<br/>
-<p>tbd</p>
+<p>Deployment manifest may specify deployment properties for multiple applications. Deployment Properties dialog YAML Content section shows 
+application names. They are marked with visual annotations on the vertical ruler on the right side of the editor. Also the line where an application 
+name appears has a light-grey background such that it is easy to recognize application names in the manifest. User should be able to select 
+an application in the manifest by clicking on the visual annotation on the ruler. Green color annotation denotes selected application. Grey 
+color annotation denotes not selected application.</p>
+<center><img src="screenshot/boot-dashboard-multi-app-manifest.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="rememberpassword"></a>Spring Boot Dashboard: choose to remember password or not</p>
+<p>Cloud Foundry Target creation wizard and login dialog now have "Remember Password" check-box. If user chooses not to remember the password
+then user will be prompted to enter Cloud Foundry login credentials when connecting to the Cloud Foundry target or after restarting STS. Otherwise, 
+the password will be stored in the Secure Storage and user will not be prompted to enter the password again after Cloud Foundry Target is disconnected 
+or STS restarted. Note that user might be prompted to enter a password for the Secure Storage to open it.</p>
+<center><img src="screenshot/boot-dashboard-cf-targets-connected.png"></img></center>
 <br/>
-<p>tdb</p>
-<center><img src="img/boot-dashboard-cf-targets-connected.png"></img></center>
+
+<p class="nan3"><a name="skipsslvalidation"></a>Spring Boot Dashboard: Skip SSL validation for Cloud Foundry targets</p>
+<p>Skipping SSL validation is now supported when creating Cloud Foundry targets in the Spring Boot Dashboard.</p>
+<center><img src="screenshot/boot-dashboard-cf-skip-ssl.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="appsmanagerURL"></a>Spring Boot Dashboard: customizable apps manager URL</p>
-<br/>
-<p>tdb</p>
-<center><img src="img/boot-dashboard-cf-targets-connected.png"></img></center>
+<p>The boot dashboard allows you to quickly jump to the web console of the apps manager of a Cloud Foundry target
+	that you confgured in the boot dashboard. However, the URL of the apps manager can vary, depending on the
+	version and configuration of your PCF installation. Therefore the boot dashboard allows you to customize the
+	URL it uses to jump to that web console (via Customize -> Customize Cloud Admin Console URL):</p>
+<center><img src="screenshot/boot-dashboard-customize-apps-manager.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="filterbyname"></a>Spring Boot Dashboard: filter apps by project name</p>
-<br/>
 <p>The filter in the boot dashboard is now also aware of project names. No need to organize your projects
 	into working sets anymore, just type in a part of the project name and see the filtered list of projects
 	in the boot dashboard.</p>
@@ -251,8 +268,9 @@ to disable it completely.</p>
 <center><img src="screenshot/jar-type-search-confirm.png"></img></center>
 
 <p class="nan3"><a name="codetemplates"></a>Spring Boot: trigger devtools restart manually</p>
-<br/>
-<p>tbd</p>
+<p>Spring Boot applications that have the boot devtools included in their classpath can quickly be restarted
+	(whthout shutting down the JVM completely). This can now be triggered manually from the console:</p>
+<center><img src="screenshot/devtools-restart-trigger.png"></img></center>
 <br/>
 
 <p class="nan3"><a name="ymlediting"></a>Improvements to the Spring Boot YML and Properties Editors</p>
@@ -267,7 +285,7 @@ values. For example:</p>
 
 <center><img src="screenshot/props-content-assist-comma-lists.png"></img></center>
 
-<p><b>Quickfix for deprecated propertie in yml and properties editor</b></p>
+<p><b>Quickfix for deprecated properties in yml and properties editor</b></p>
 <p>Both the yml and properties editor now provide a quickfix for deprecated property names (if the property
 defines a replacement in its metadata).
 
@@ -322,10 +340,16 @@ a content-assist suggestion. For example:</p>
 <p><b>Note 2:</b>JavaDoc in Eclipse in general, is only available when source-jars have been downloaded and associated with the binary jars. If you do not get JavaDoc hovers where you expect them, verify that source code for the enum in question is attached before reporting this as a bug.</p>
 <p><b>Note 3:</b>There are still cases, especially in the properties editor, where hover-info and/or CTRL-click does not yet work, in particular when the enum-value occurs on the left-hand-side of the '=' of a property-assignment. We plan to resolve these issues in a future release.</p>
 
+<p class="nan2"><a name="cfmanifesteditor"></a>Cloud Foundry Manifest YML Editor</p>
+<p><b>Content Assist for Cloud Foundry Buildpacks</b></p>
+<p>Content assist for buildpacks now proposes buildpacks dynamically from Cloud Foundry targets in the Spring Boot Dashboard. It will list buildpacks from any Cloud Foundry target, not just Pivotal Web Services.</p>
+<br/>
+<center><img src="screenshot/manifest-editor-buildpack-contentassist.png"></img></center>
+<br/>
 
-<p class="nan2">Developer Productvity Bits</p>
+<p class="nan2"><a name="developerproductivity"></a>Developer Productivity Bits</p>
 
-<p>We implemented a number of little things to improve the general developer producitivity when working with the
+<p>We implemented a number of little things to improve the general developer productivity when working with the
 	Spring Tool Suite and Eclipse. Here are the little improvements in detail.</p>
 <br/>
 
@@ -338,14 +362,23 @@ a content-assist suggestion. For example:</p>
 <p>After you rename a class, STS will check if there is a test class with a similar name. If it finds one, it will 
 ask you if you want to rename that too.</p>
 <center><img src="screenshot/rename-test-too.png"></img></center>
-<p><b>more defaults for statc imports</b></p>
+<p><b>More Defaults for Static Imports in Favorites</b></p>
+<p>Additional default types containing static members have been added to Content Assist for imports, including some from springframework libraries. Users can customize the list through "Favorites" preferences, as well
+as restore the default list.</p>
+<br>
+<center><img src="screenshot/content-assist-spring-static-members-imports.png"></img></center>
+</br>
 <br/>
 
-<p><b>use type for new statement that matches the assignment</b></p>
+<p><b>Improved Quickfix for Unresolved Types in Assignments</b></p>
+<p>Quickfix on unresolved Java types now matches the return type of an assignment statement.</p>
+<br>
+<center><img src="screenshot/quickfix-unresolved-types-matching.png"></img></center>
+</br>
 <br/>
 
 
-<p class="nan2">Miscellaneous</a>
+<p class="nan2"><a name="misc"></a>Miscellaneous</a>
 
 <h2>Issues resolved in this release</h2>
 
