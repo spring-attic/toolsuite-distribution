@@ -134,9 +134,17 @@
 <p class="nan2">Spring Tooling</p>
 
 <p class="nan3"><a name="bootdash"></a><a name="targetlabels"></a>Spring Boot Dashboard: customizable labels for CF targets</p>
-<p>You can now change the labels for CF target nodes in the Boot Dashboard View. To do so, right-click a node and 
-select "Customize... >> Customize Label...":</p>
+<p>You can now change the labels for CF target nodes in the Boot Dashboard. To do so, right-click a node and 
+select "Customize... -> Customize Label...":</p>
 <center><img src="screenshot/customize-target-labels.png"></img></center><br>
+<p>You can type in any name you like. In addition to plain text you can also use a few placeholders in there:</p>
+<br/><ul>
+	<li><b>%u: </b>the user name that you defined when accessing the Cloud Foundry target</li>
+	<li><b>%s: </b>the space that you selected for the Cloud Foundry target</li>
+	<li><b>%o: </b>the name of the organisation that you selected for the Cloud Foundry target</li>
+	<li><b>%a: </b>the API endpoint URL</li>
+</ul>
+<p>In case you don't remember those placeholders, don't worry. You can hover over the text field for some help.</p>
 <br/>
 
 <p class="nan3"><a name="multiappmanifests"></a>Spring Boot Dashboard: advanced support for multi-app manifest files</p>
@@ -163,7 +171,7 @@ will still be prompted for the Secure Storage master password.</p>
 <p>The boot dashboard allows you to quickly jump to the web console of the apps manager of a Cloud Foundry target
 	that you confgured in the boot dashboard. However, the URL of the apps manager can vary, depending on the
 	version and configuration of your PCF installation. Therefore the boot dashboard allows you to customize the
-	URL it uses to jump to that web console (via Customize -> Customize Cloud Admin Console URL):</p>
+	URL it uses to jump to that web console (via "Customize... -> Customize Cloud Admin Console URL"):</p>
 <center><img src="screenshot/boot-dashboard-customize-apps-manager.png"></img></center>
 <br/>
 
@@ -260,14 +268,14 @@ the required dependency is automatically added to the project's maven pom.</p>
 to a pom accidentally.</p>
 
 <p>STS 3.8.0 addresses this by asking for explicit confirmation before making changes to your pom. 
-The confirmation dialog also has a 'Disable' button, which you can click 
+The confirmation dialog also has a "Disable" button, which you can click 
 to disable it completely.</p>
 <br/>
 <center><img src="screenshot/jar-type-search-confirm.png"></img></center>
 
 <p class="nan3"><a name="codetemplates"></a>Spring Boot: trigger devtools restart manually</p>
 <p>Spring Boot applications that have the boot devtools included in their classpath can quickly be restarted
-	(whthout shutting down the JVM completely). This can now be triggered manually from the console:</p>
+	(without shutting down the JVM completely). This can now be triggered manually from the console:</p>
 <center><img src="screenshot/devtools-restart-trigger.png"></img></center>
 <br/>
 
