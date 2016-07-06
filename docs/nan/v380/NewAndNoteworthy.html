@@ -182,14 +182,14 @@ will still be prompted for the Secure Storage master password.</p>
 <center><img src="screenshot/filter-by-project-name.png"></img></center>
 <br/>
 
-<p class="nan3"><a name="codetemplates"></a>Spring Boot: additional code templates</p>
+<p class="nan3"><a name="codetemplates"></a>Spring Boot: Additional code templates</p>
 
 <p>Based on input from Spring Boot Core developers we have created some code
 templates useful in developing Spring/Spring Boot apps.</p>
 <p>The templates are invoked through Eclipse's content-assist (i.e. you press CTRL-SPACE) and shown as completions
 when you type the template's name (or even just a part of the name).<p>
-<p>Some templates are context-sensitive. This means that there multiple versions of the template that expand
-into a different pattern, depending on the context you are in. For example the <tt>notnull</tt> template expands to something
+<p>Some templates are context-sensitive. This means that there are multiple versions of the template that expand
+into a different pattern depending on the context you are in. For example the <tt>notnull</tt> template expands to something
 that uses JUnit's assert in test code; it expands into something that uses Spring's assert anywhere else.</p>
 <p>Below is a table showing all the templates we have added in this release:</p>
 <table>
@@ -208,28 +208,8 @@ that uses JUnit's assert in test code; it expands into something that uses Sprin
         <td>notnull[test]</td>
         <td><img src="screenshot/template-notnull-test.png"></img></td>
     <tr>
-        <td>asl</td>
-        <td><img src="screenshot/template-asl.png"></img></td>
-    </tr>
-    <tr>
-        <td>jumock</td>
-        <td><img src="screenshot/template-jumock.png"></img></td>
-    </tr>
-    <tr>
-        <td>eerule[test-member]</td>
-        <td><img src="screenshot/template-eerule-test-member.png"></img></td>
-    </tr>
-    <tr>
-        <td>eerule[test-statement]</td>
-        <td><img src="screenshot/template-eerule-test-statement.png"></img></td>
-    </tr>
-    <tr>
         <td>jumockmvcwac</td>
         <td><img src="screenshot/template-jumockmvcwac.png"></img></td>
-    </tr>
-    <tr>
-        <td>formatter-off</td>
-        <td><img src="screenshot/template-formatter-off.png"></img></td>
     </tr>
     <tr>
         <td>logger</td>
@@ -252,12 +232,6 @@ that uses JUnit's assert in test code; it expands into something that uses Sprin
         <td><img src="screenshot/template-rtex.png"></img></td>
     </tr>
 </table>
-
-<p>
-Note: The "formatter-off" template is special and can be applied from 
-the "Surround With..." menu:</p>
-<center><img src="screenshot/template-surround-with.png"></img></center>
-<br/>
 
 <p class="nan3"><a name="jar-type-search-confirmation"></a>Spring Boot: JAR type search now asks for confirmation</p>
 <p>
@@ -317,7 +291,7 @@ editor. For example property <tt>spring.data.mongodb.field-naming-strategy</tt> 
 
 <center><img src="screenshot/class-reference-metadata-example.png"></img></center>
 
-<p>The editor now understand what this means and will suggest names of classes that implement the <tt>FieldNamingStrategy</tt> interface from the
+<p>The editor now understands what this means and will suggest names of classes that implement the <tt>FieldNamingStrategy</tt> interface from the
 project's classpath.</p>
 
 <center><img src="screenshot/yml-content-assist-class-reference.png"></img></center>
@@ -357,6 +331,44 @@ a content-assist suggestion. For example:</p>
 
 <p>We implemented a number of little things to improve the general developer productivity when working with the
 	Spring Tool Suite and Eclipse. Here are the little improvements in detail.</p>
+<br/>
+
+<p><b>Additional code templates</b></p>
+
+<p>Based on input from Spring Boot Core developers we have created some code
+templates useful in Java apps in general. Below is a list of the templates that where added as a result:</p>
+
+<table>
+    <tr>
+        <th>Name[context]</th> 
+        <th>Screenshot</th> 
+    </tr>
+    <tr>
+        <td>asl</td>
+        <td><img src="screenshot/template-asl.png"></img></td>
+    </tr>
+    <tr>
+        <td>jumock</td>
+        <td><img src="screenshot/template-jumock.png"></img></td>
+    </tr>
+    <tr>
+        <td>eerule[test-member]</td>
+        <td><img src="screenshot/template-eerule-test-member.png"></img></td>
+    </tr>
+    <tr>
+        <td>eerule[test-statement]</td>
+        <td><img src="screenshot/template-eerule-test-statement.png"></img></td>
+    </tr>
+    <tr>
+        <td>formatter-off</td>
+        <td><img src="screenshot/template-formatter-off.png"></img></td>
+    </tr>
+</table>
+
+<p>
+Note: The "formatter-off" template is special and can be applied from 
+the "Surround With..." menu:</p>
+<center><img src="screenshot/template-surround-with.png"></img></center>
 <br/>
 
 <p><b>Toggle Line Number Visibility Action:</b></p>
