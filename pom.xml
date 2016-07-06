@@ -25,13 +25,13 @@ Optional parameters:
 	<parent>
 		<groupId>org.springsource.sts</groupId>
 		<artifactId>org.springsource.sts.root</artifactId>
-		<version>3.8.0-SNAPSHOT</version>
+		<version>3.8.1-SNAPSHOT</version>
 		<relativePath>common/pom-parent.xml</relativePath>
 	</parent>
 
 	<groupId>org.springsource.sts</groupId>
 	<artifactId>org.springsource.sts.parent</artifactId>
-	<version>3.8.0-SNAPSHOT</version>
+	<version>3.8.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
