@@ -113,6 +113,9 @@
 
 <p class="nan2"><a name="gu"></a>General Updates</p>
 
+<p class="nan3">Requirements</p>
+<p>STS 3.8.0 requires a JDK 8 to run properly.</p>
+
 <p class="nan3">Eclipse Neon (4.6.0)</p>
 <p>The default STS distribution is now based on the recently released Eclipse Neon (4.6) release.</p>
 
@@ -476,11 +479,17 @@ retina displays. The solution for this is to run STS on top of a JDK8 build. The
 	the dashboard back to the old (non-JavaFX-based) version via the preferences.</p>
 <br/>
 
+<h3>Silent loss of Functionality on Java 7 or earlier</h3>
+
+<p>STS 3.8.0 requires a JDK 8 to run on top of. If you are running it with an older JDK this may not be immediatlely apparant, but some of 
+STS functionality will simply be 'absent' because the corresponding plugins are automatically disabled by OSGI because their requirements
+are not satisfied at runtime. See also below 'Setting the JDK'.</p>
+<br/>
 <h3>Setting the JDK</h3>
 
-<p>STS requires a JDK to run on top of. Nevertheless the native launcher component might pick up a JRE automatically if you don't specify which
-JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. Add a line at the beginning
-"-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
+<p>STS 3.8.0 requires a JDK 8 to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
+if you don't specify which JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. 
+Add a line at the beginning "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
 <br/>
 
 <h3>Issues on Linux (GTK3)</h3>
