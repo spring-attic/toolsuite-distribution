@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>Spring Tool Suite 3.8.1/3.8.0 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+  <style>
+    p {
+        margin-top: 12px;
+    }
+    
+    table {
+        margin-top: 20px;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        vertical-align: top;
+    }
+  </style>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite 3.8.1/3.8.0: New and Noteworthy</h1>
+
+<p class="nan2">Updates and Fixes in 3.8.1</p>
+
+<p class="nan3">Pivotal tc Server updated to 3.1.5</p>
+<p>The latest Pivotal tc Server release 3.1.5 is now included in the STS distribution bundle.</p>
+
+<p class="nan3">Important Changes and Fixes</p>
+<br/>
+<ul>
+<li>Spring Boot Dashboard works behind a proxy again</li>
+<li>Spring Boot Dashboard expose via ngrok feature work wells with multiple launch configs now</li>
+<li>In addition to templates for logging errors and warnings, there is a new logd template for logging debug output</li>
+<li>A newer version of CFT made it into STS 3.8.1 which provides an improved packaging mechanism for deploying Spring Boot apps</li>
+<li>Assert templates now use JUnit or AssertJ, depending on what is on the classpath of the project</li>
+<li>Spring Boot dashboard now shows only one port when the app uses a dynamic port and has boot devtools enabled</li>
+<li>Fixed a problem that caused services to continue to show up on the boot dashboard even though there was an error conneting to the CF target</li>
+<li>Fixed a ConcurrentModificationException in the boot dashboard</li>
+<li>The sorting of the CF targets in the boot dashboard now takes customized labels into account</li>
+<li>The reactive streams bundle is now signed</li>
+<li>Fixed an issue with the Groovy-Eclipse m2e connector with missing source folders</li>
+<li>Added an action to jump to the ngrok admin web UI directly from the boot dashboard</li>
+<li>Fixed an issue with the port of a boot app not showing up in the dashboard</li>
+<li>Fixed an issue with the boot dashboard not identifying the starting state of a boot app correctly</li>
+<li>Fixed an issue with the dialog that lets you select a manifest when deploying an app to CF (let you deploy even in case of an error in the manifest file)</li>
+</ul>
+<br/>
+
+<h1 class="nan1">Spring Tool Suite 3.8.0: New and Noteworthy</h1>
+
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#gu">General Updates</a></li>
+<li><a href="#bootdash">Spring Boot Dashboard</a></li>
+<li><a href="#codetemplates">Spring Boot in general</a></li>
+<li><a href="#ymlediting">Spring Boot YML and Property File Editing</a></li>
+<li><a href="#cfmanifesteditor">Cloud Foundry Manifest YML Editor</a></li>
+<li><a href="#developerproductivity">Developer Productivity Bits</a></li>
+<li><a href="#misc">Miscellaneous</a></li>
+</ul>
+
+
+<p class="nan2"><a name="gu"></a>General Updates</p>
+
+<p class="nan3">Requirements</p>
+<p>STS 3.8.0 requires a JDK 8 to run properly.</p>
+
+<p class="nan3">Eclipse Neon (4.6.0)</p>
+<p>The default STS distribution is now based on the recently released Eclipse Neon (4.6) release.</p>
+
+<p>Highlights from this Eclipse Neon release include substring code completion for Java content
+	assist, word-wrap in text editors, commands/shortcuts/pinch gestures to zoom into text editors (especially
+	useful when giving presentations), and more. Please find additional details in the
+	<a href="https://www.eclipse.org/neon/noteworthy/">Eclipse Neon New and Noteworthy</a>.</p>
+
+<p class="nan3">Pivotal tc Server updated to 3.1.4</p>
+<p>The latest Pivotal tc Server release 3.1.4 is now included in the STS distribution bundle.</p>
+
+<p class="nan3">Support for Spring Insight removed</p>
+<p>The support for Spring Insight that was part of the tc-server support got removed.</p>
+
+<p class="nan3">Buildship notification</p>
+<p>We added a plugin from Eclipse Buildship to notify our users of using Eclipse Buildship instead of the legacy
+	STS support for Gradle in the future.</p>
+
+<p class="nan2">Spring Tooling</p>
+
+<p class="nan3"><a name="bootdash"></a><a name="targetlabels"></a>Spring Boot Dashboard: customizable labels for CF targets</p>
+<p>You can now change the labels for CF target nodes in the Boot Dashboard. To do so, right-click a node and 
+select "Customize... -> Customize Label...":</p>
+<center><img src="screenshot/customize-target-labels.png"></img></center><br>
+<p>You can type in any name you like. In addition to plain text you can also use a few placeholders in there:</p>
+<br/><ul>
+	<li><b>%u: </b>the user name that you defined when accessing the Cloud Foundry target</li>
+	<li><b>%s: </b>the space that you selected for the Cloud Foundry target</li>
+	<li><b>%o: </b>the name of the organisation that you selected for the Cloud Foundry target</li>
+	<li><b>%a: </b>the API endpoint URL</li>
+</ul>
+<p>In case you don't remember those placeholders, don't worry. You can hover over the text field for some help.</p>
+<br/>
+
+<p class="nan3"><a name="multiappmanifests"></a>Spring Boot Dashboard: advanced support for multi-app manifest files</p>
+<p>A single <tt>manifest.yml</tt> may specify deployment properties for multiple applications. When deploying an app, 
+the Deployment Properties dialog's YAML Content section highlights application names and allows the user to choose one,
+by clicking on the visual annotations in the vertical ruler.</p>
+<center><img src="screenshot/boot-dashboard-multi-app-manifest.png"></img></center>
+<br/>
+
+<p class="nan3"><a name="rememberpassword"></a>Spring Boot Dashboard: choose to remember password or not</p>
+<p>The Cloud Foundry Target creation wizard and login dialog now have a "Remember Password" check-box. If you choose not to remember the password
+then you will be prompted to enter Cloud Foundry login credentials when connecting to the Cloud Foundry target or after restarting STS. Otherwise, 
+the password will be stored in Secure Storage and you will not be prompted to enter the password again. Note that on Linux, you
+will still be prompted for the Secure Storage master password.</p>
+<center><img src="screenshot/boot-dashboard-cf-targets-connected.png"></img></center>
+<br/>
+
+<p class="nan3"><a name="skipsslvalidation"></a>Spring Boot Dashboard: Skip SSL validation for Cloud Foundry targets</p>
+<p>Skipping SSL validation is now supported when creating Cloud Foundry targets in the Spring Boot Dashboard.</p>
+<center><img src="screenshot/boot-dashboard-cf-skip-ssl.png"></img></center>
+<br/>
+
+<p class="nan3"><a name="appsmanagerURL"></a>Spring Boot Dashboard: customizable apps manager URL</p>
+<p>The boot dashboard allows you to quickly jump to the web console of the apps manager of a Cloud Foundry target
+	that you confgured in the boot dashboard. However, the URL of the apps manager can vary, depending on the
+	version and configuration of your PCF installation. Therefore the boot dashboard allows you to customize the
+	URL it uses to jump to that web console (via "Customize... -> Customize Cloud Admin Console URL"):</p>
+<center><img src="screenshot/boot-dashboard-customize-apps-manager.png"></img></center>
+<br/>
+
+<p class="nan3"><a name="filterbyname"></a>Spring Boot Dashboard: filter apps by project name</p>
+<p>The filter in the boot dashboard is now also aware of project names. No need to organize your projects
+	into working sets anymore, just type in a part of the project name and see the filtered list of projects
+	in the boot dashboard.</p>
+<center><img src="screenshot/filter-by-project-name.png"></img></center>
+<br/>
+
+<p class="nan3"><a name="codetemplates"></a>Spring Boot: Additional code templates</p>
+
+<p>Based on input from Spring Boot Core developers we have created some code
+templates useful in developing Spring/Spring Boot apps.</p>
+<p>The templates are invoked through Eclipse's content-assist (i.e. you press CTRL-SPACE) and shown as completions
+when you type the template's name (or even just a part of the name).<p>
+<p>Some templates are context-sensitive. This means that there are multiple versions of the template that expand
+into a different pattern depending on the context you are in. For example the <tt>notnull</tt> template expands to something
+that uses JUnit's assert in test code; it expands into something that uses Spring's assert anywhere else.</p>
+<p>Below is a table showing all the templates we have added in this release:</p>
+<table>
+    <tr>
+        <th>Name[context]</th> 
+        <th>Screenshot</th> 
+    </tr>
+    <tr>
+        <td>main</td>
+        <td><img src="screenshot/template-main.png"></img></td>
+    </tr>
+        <td>notnull[spring]</td>
+        <td><img src="screenshot/template-notnull-spring.png"></img></td>
+    <tr>
+    </tr>
+        <td>notnull[test]</td>
+        <td><img src="screenshot/template-notnull-test.png"></img></td>
+    <tr>
+        <td>jumockmvcwac</td>
+        <td><img src="screenshot/template-jumockmvcwac.png"></img></td>
+    </tr>
+    <tr>
+        <td>logger</td>
+        <td><img src="screenshot/template-logger.png"></img></td>
+    </tr>
+    <tr>
+        <td>logi</td>
+        <td><img src="screenshot/template-logi.png"></img></td>
+    </tr>
+    <tr>
+        <td>loge</td>
+        <td><img src="screenshot/template-loge.png"></img></td>
+    </tr>
+    <tr>
+        <td>logw</td>
+        <td><img src="screenshot/template-logw.png"></img></td>
+    </tr>
+    <tr>
+        <td>rtex</td>
+        <td><img src="screenshot/template-rtex.png"></img></td>
+    </tr>
+</table>
+
+<p class="nan3"><a name="jar-type-search-confirmation"></a>Spring Boot: JAR type search now asks for confirmation</p>
+<p>
+"Jar Type Search" is a feature that was introduced in <a href="http://docs.spring.io/sts/nan/v350/NewAndNoteworthy.html">STS 3.5.0</a>.
+It provides content-assist proposals in Spring Boot projects, for types that are not (yet) on the classpath. When selecting such a proposal
+the required dependency is automatically added to the project's maven pom.</p>
+<p>Some people liked this, but others found it confusing or annoying rather than helpful because it was too easy to add undesirable elements
+to a pom accidentally.</p>
+
+<p>STS 3.8.0 addresses this by asking for explicit confirmation before making changes to your pom. 
+The confirmation dialog also has a "Disable" button, which you can click 
+to disable it completely.</p>
+<br/>
+<center><img src="screenshot/jar-type-search-confirm.png"></img></center>
+
+<p class="nan3"><a name="codetemplates"></a>Spring Boot: trigger devtools restart manually</p>
+<p>Spring Boot applications that have the boot devtools included in their classpath can quickly be restarted
+	(without shutting down the JVM completely). This can now be triggered manually from the console:</p>
+<center><img src="screenshot/devtools-restart-trigger.png"></img></center>
+<br/>
+
+<p class="nan3"><a name="ymlediting"></a>Improvements to the Spring Boot YML and Properties Editors</p>
+<br/>
+<p><b>Validation of comma-separated lists in the <tt>.properties</tt> editor</b></p>
+
+<p>The Spring Boot Properties editor now knows how to check the validity of a list of comma-separated
+values. For example:</p>
+<center><img src="screenshot/props-reconcile-comma-lists.png"></img></center>
+
+<p><b>Content-assist in comma-separated lists in the <tt>.properties</tt> editor</b></p>
+
+<center><img src="screenshot/props-content-assist-comma-lists.png"></img></center>
+
+<p><b>Quickfix for deprecated properties in yml and properties editor</b></p>
+<p>Both the yml and properties editor now provide a quickfix for deprecated property names (if the property
+defines a replacement in its metadata).
+
+<center><img src="screenshot/yml-quickfix-deprecated.png"></img></center>
+
+<p>Note: The yml quickfix is smart enough to move a renamed property to a different place in 
+the yml structure as needed:</p>
+<center><img src="screenshot/yml-quickfix-deprecated-before-and-after.png"></img></center>
+
+<p><b>Basic content-assist for 'Resource' type in yml/props editor</b></p>
+
+<p>Both the yml and properties editor now provide some basic content assist for configuration properties of
+type <tt>org.springframework.core.io.Resource</tt>. Content assist suggestions are generated by
+scanning your project's source-folders for 'resources'. In a future release we may extend this to do
+a broader scan to look also for 'resources' in the project's dependencies.</p>
+
+<center><img src="screenshot/yml-content-assist-resource.png"></img></center>
+
+<p><b>Support for 'class-reference' value provider</b><p>
+
+<p>Configuration properties with 'value provider' metadata of type 'class-reference' now are handled by both the yml and properties
+editor. For example property <tt>spring.data.mongodb.field-naming-strategy</tt> comes with the following metadata attached:</p>
+
+<center><img src="screenshot/class-reference-metadata-example.png"></img></center>
+
+<p>The editor now understands what this means and will suggest names of classes that implement the <tt>FieldNamingStrategy</tt> interface from the
+project's classpath.</p>
+
+<center><img src="screenshot/yml-content-assist-class-reference.png"></img></center>
+
+<p><b>Support for <tt>handle-as</tt> value-provider</b></p>
+
+<p>Handle-as value provider can be used in spring-boot configuration property metadata to designate that a property ostensibly declared
+as a vanilla type such as <tt>String</tt> should be treated as something more specific (e.g. <tt>org.springframework.core.io.Resource</tt>).
+Both yml and properties editor now understand this metadata.</p>
+
+<p><b>Check for duplicate keys in yml and properties editor</b></p>
+
+<p>Both the yml and properties editor now check for duplicate keys and flag them with an error marker:</p> 
+
+<center><img src="screenshot/yml-reconcile-duplicate-keys.png"></img></center>
+
+<p><b>Better handling of enum values in yml and properties editor</b></p>
+
+<p>Both yml and properties editor now are able to show the JavaDoc for enum values when hovering over them or in the side-panel of
+a content-assist suggestion. For example:</p>
+
+<center><img src="screenshot/yml-hover-enum-key.png"></img></center>
+
+<p><b>Note 1:</b> Hyperlink navigation with 'CTRL-Click' now also works for enum values, taking you to the source-code of the corresponding enum constant.</p>
+
+<p><b>Note 2:</b>JavaDoc in Eclipse in general, is only available when source-jars have been downloaded and associated with the binary jars. If you do not get JavaDoc hovers where you expect them, verify that source code for the enum in question is attached before reporting this as a bug.</p>
+<p><b>Note 3:</b>There are still cases, especially in the properties editor, where hover-info and/or CTRL-click does not yet work, in particular when the enum-value occurs on the left-hand-side of the '=' of a property-assignment. We plan to resolve these issues in a future release.</p>
+
+<p class="nan2"><a name="cfmanifesteditor"></a>Cloud Foundry Manifest YML Editor</p>
+<p><b>Content Assist for Cloud Foundry Buildpacks</b></p>
+<p>Content assist for buildpacks now proposes buildpacks dynamically from Cloud Foundry targets in the Spring Boot Dashboard. It will list buildpacks from any Cloud Foundry target, not just Pivotal Web Services.</p>
+<br/>
+<center><img src="screenshot/manifest-editor-buildpack-contentassist.png"></img></center>
+<br/>
+
+<p class="nan2"><a name="developerproductivity"></a>Developer Productivity Bits</p>
+
+<p>We implemented a number of little things to improve the general developer productivity when working with the
+	Spring Tool Suite and Eclipse. Here are the little improvements in detail.</p>
+<br/>
+
+<p><b>Additional code templates</b></p>
+
+<p>Based on input from Spring Boot Core developers we have created some code
+templates useful in Java apps in general. Below is a list of the templates that where added as a result:</p>
+
+<table>
+    <tr>
+        <th>Name[context]</th> 
+        <th>Screenshot</th> 
+    </tr>
+    <tr>
+        <td>asl</td>
+        <td><img src="screenshot/template-asl.png"></img></td>
+    </tr>
+    <tr>
+        <td>jumock</td>
+        <td><img src="screenshot/template-jumock.png"></img></td>
+    </tr>
+    <tr>
+        <td>eerule[test-member]</td>
+        <td><img src="screenshot/template-eerule-test-member.png"></img></td>
+    </tr>
+    <tr>
+        <td>eerule[test-statement]</td>
+        <td><img src="screenshot/template-eerule-test-statement.png"></img></td>
+    </tr>
+    <tr>
+        <td>formatter-off</td>
+        <td><img src="screenshot/template-formatter-off.png"></img></td>
+    </tr>
+</table>
+
+<p>
+Note: The "formatter-off" template is special and can be applied from 
+the "Surround With..." menu:</p>
+<center><img src="screenshot/template-surround-with.png"></img></center>
+<br/>
+
+<p><b>Toggle Line Number Visibility Action:</b></p>
+<br/>
+<center><img src="screenshot/toggle-line-numbers.png"></img></center>
+<br>
+
+<p><b>Want to rename tests, too?</b></p>
+<p>After you rename a class, STS will check if there is a test class with a similar name. If it finds one, it will 
+ask you if you want to rename that too.</p>
+<center><img src="screenshot/rename-test-too.png"></img></center>
+<p><b>More Defaults for Static Imports in Favorites</b></p>
+<p>Additional default types containing static members have been added to Content Assist for imports, including some from springframework libraries. Users can customize the list through "Favorites" preferences, as well
+as restore the default list.</p>
+<br>
+<center><img src="screenshot/content-assist-spring-static-members-imports.png"></img></center>
+</br>
+<br/>
+
+<p><b>Improved Quickfix for Unresolved Types in Assignments</b></p>
+<p>Quickfix on unresolved Java types now matches the return type of an assignment statement.</p>
+<br>
+<center><img src="screenshot/quickfix-unresolved-types-matching.png"></img></center>
+</br>
+<p>Java quickfix improvements in STS can be disabled, and the original Eclipse JDT quickfix feature restored, by adding the following VM arg to the STS.ini file and restarting STS:</p>
+<p>-Denable.sts.quickfix.imports=false</p>
+<br/>
+
+
+<p class="nan2"><a name="misc"></a>Miscellaneous</a>
+
+<h2>Issues resolved in this release</h2>
+
+<p>Here is a full list of resolved bugs and enhancement requests for 3.8.0:</p>
+<p><a href="https://issuetracker.springsource.com/issues/?jql=project%20%3D%20STS%20AND%20fixVersion%20%3D%20%223.8.0.RELEASE%22%20AND%20status%20in%20(Resolved%2C%20Closed)">STS issue tracker</a></p>
+<p><a href="https://jira.spring.io/issues/?jql=project%20%3D%20IDE%20AND%20fixVersion%20%3D%203.8.0.RELEASE%20AND%20status%20in%20(Resolved%2C%20Closed)">Spring IDE issue tracker</a></p>
+
+<hr>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>STS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+
+<h2>Known issues in this release</h2>
+
+<h3>Spring Boot dashboard ngrok tunneling feature doesn't support Spring Cloud Services yet</h3>
+
+<p>The Spring Boot Dashboards ngrok tunnel feature doesn't work yet with remote service registries from Spring Cloud Services.
+	  Instead it works with self-deployed Eureka service registry apps on CF only (as described
+	  <a href="https://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry">here</a>). We
+	  are working on enhancing the ngrok tunnel feature to directly support Spring Cloud Services in the near future. In the meantime
+	  we published a tech note that describes <a href="http://static.springsource.org/sts/nan/v373/SpringToolSuite-LocalServicesAndSCS.html">
+      how to setup ngrok tunneling in combination with SCS manually</a>.</p>
+<br/>
+
+<h3>Conflicting duplicate lifecycle mapping errors in Maven projects upgrading from STS 3.6.x</h3>
+
+<p>Sometimes Maven projects show up with a red error (talking about a duplicate lifecycle mapping conflict) after upgrading STS
+	from 3.6.x to the latest 3.7.2 version. In this case, please update the Maven support for Eclipse/STS to the latest version,
+	as described here: <a href="https://issuetracker.springsource.com/browse/STS-4236?focusedCommentId=108387&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-108387">STS-4236</a>.</p>
+<br/>
+
+<h3>Error after updating from STS 3.7.0</h3>
+
+<p>Sometimes after updating an existing STS 3.7.0 installation to 3.7.1 an error dialog pops up and STS doesn't start. This
+	is a known but not yet solved problem. If you come across this issue, please press "OK" on the dialog and restart STS. It
+	will open up fine, including all the updated components.</p>
+<br/>
+
+<h3>No repository available when checking for updates</h3>
+
+<p>If you have used a pre-release version of Eclipse Mars or STS, the embedded Eclipse Oomph technology created a cache
+of p2 repositores in your home directory. This cached p2 data can cause issues when using STS 3.7.0 or Eclipse Mars. The
+error message looks like STS/Eclipse fails to read information from the main Eclipse Mars p2 repository.</p>
+<p>In case you encounter this error, please stop Eclipse/STS, go to your home directory, delete "~/.eclipse/org.eclipse.oomph.p2",
+and restart Eclipse/STS. The related Eclipse bug is: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=470912">Bug 470912</a>.</p>
+<br/>
+
+<h3>Live configuration-metadata generation requires Spring Boot 1.2.2</h3>
+
+<p>Spring Boot 1.2.1 configuration processor does not work correctly when executed
+from Eclipse's incremental build. This issue is fixed in Spring Boot 1.2.2.
+This only affects 'live' metadata generated from your own source code, not the
+metadata that is packaged inside spring-boot jars themselves. So you can still 
+use older versions of Boot, but the 'live metadata' updates 
+will not be accurate. See Spring Boot issue 
+<a href="https://github.com/spring-projects/spring-boot/issues/2313">GH-2313</a>
+for details.</p>
+<br>
+
+<h3>Dashboard and Retina Displays</h3>
+
+<p>When running STS on top of a JDK7, the new dashboard looks a bit blurry when using a HiRes (Retina) display, for example on a Retina MacBook Pro. This is due to the
+underlying browser technology that is used to display the dashboard content and that is coming from JavaFX. The JavaFX version that ships with JDK7 doesn't support
+retina displays. The solution for this is to run STS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
+<br/>
+
+<h3>Dashboard on JDK9</h3>
+
+<p>The JavaFX-based main STS dashboard doesn't work when running STS on top of an early-access version of JDK9. As a workaround run STS on a JDK8 or switch
+	the dashboard back to the old (non-JavaFX-based) version via the preferences.</p>
+<br/>
+
+<h3>Silent loss of Functionality on Java 7 or earlier</h3>
+
+<p>STS 3.8.0 requires a JDK 8 to run on top of. If you are running it with an older JDK this may not be immediatlely apparant, but some of 
+STS functionality will simply be 'absent' because the corresponding plugins are automatically disabled by OSGI because their requirements
+are not satisfied at runtime. See also below 'Setting the JDK'.</p>
+<br/>
+<h3>Setting the JDK</h3>
+
+<p>STS 3.8.0 requires a JDK 8 to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
+if you don't specify which JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. 
+Add a line at the beginning "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
+<br/>
+
+<h3>Issues on Linux (GTK3)</h3>
+
+<p>Eclipse 4.5, upon which STS and GGTS are based, is the first Eclipse release where GTK3 is the default for the SWT widget library.
+There are some issues with this still:</p>
+
+<ul>
+  <li>STS New Dashboard doesn't work under GTK3 because it uses JavaFX which is not currently compatible with GTK3. Instead the old dashboard will
+      open.
+  <li>The Eclipse editor may be slow to respond (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=434898">Eclipse Bug 434898</a>).
+</ul>
+
+<p>You may also experience other UI rendering glitches. If you exprience any of these problems you can avoid them by forcing SWT to 
+switch back to using GTK2. Just set the environment variable "SWT_GTK3=0" before launching STS or GGTS.
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v373/NewAndNoteworthy.html">STS/GGTS 3.7.3</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v372/NewAndNoteworthy.html">STS/GGTS 3.7.2</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v371/NewAndNoteworthy.html">STS/GGTS 3.7.1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v370/NewAndNoteworthy.html">STS/GGTS 3.7.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v364/NewAndNoteworthy.html">STS/GGTS 3.6.4</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v363sr1/NewAndNoteworthy.html">STS/GGTS 3.6.3.SR1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v363/NewAndNoteworthy.html">STS/GGTS 3.6.3</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v362/NewAndNoteworthy.html">STS/GGTS 3.6.2</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v361/NewAndNoteworthy.html">STS/GGTS 3.6.1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v360/NewAndNoteworthy.html">STS/GGTS 3.6.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v351/NewAndNoteworthy.html">STS/GGTS 3.5.1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy.html">STS/GGTS 3.4.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">STS/GGTS 3.3.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.6.1.SR1.pdf">STS 2.6.1.SR1</a></p>
+<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
