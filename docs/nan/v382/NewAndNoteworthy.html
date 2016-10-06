@@ -102,26 +102,48 @@
 <p class="nan2">Updates and Fixes in 3.8.2</p>
 
 <p class="nan3">Eclipse Neon.1 (4.6.1)</p>
-<p>The default STS distribution is now based on the recently released Eclipse Neon.1 (4.6.1) release.</p>
+<p>The default STS distribution is now based on the recently released Eclipse Neon.1 (4.6.1) release. There is a nice
+	<a href="https://www.youtube.com/watch?v=hW0ENpGcP34">4min video on YouTube about noticable updates and improvements
+	in Neon.1</a>, alongside various bug fixes that went into this release.</p>
 
 <p class="nan3">Pivotal tc Server updated to 3.2.0</p>
 <p>The latest Pivotal tc Server release 3.2.0 is now included in the STS distribution bundle.</p>
 
 <p class="nan3">Automatic Error Reporting now included</p>
-<p>tdb</p>
+<p>The Spring Tool Suite now comes with automatic error reporting being included in the distribution. This allows you to
+	report errors that happen under the hood of the IDE automatically to the development team.</p>
+<p>This automatic error reporting mechanism is an opt-in mechanism that uses the same automatic error reporting infrastructure
+	that the regular Eclipse Neon packages include. You can configure all the details via the preferences:</p>
+
+<center><img src="screenshot/aer-preferences.png"></img></center><br>
+<br/>
+
+<p>More details about the underlying technology, the exact information that is being transfered, where it is being
+stored, etc, can be found here: <a href="http://docs.spring.io/sts/nan/v382/SpringToolSuite-AERI-Details.html">Terms of Use</a>.</p>
 
 <p class="nan3"><a name="bootdash"></a><a name="targetlabels"></a>Spring Boot Dashboard: OAuth Token support</p>
-<p>tbd</p>
-<center><img src="screenshot/placeholder.png"></img></center><br>
+<p>In case you use the nice integration of Cloud Foundry into the boot dashboard, you are now able to select the way the boot
+	dashboard should remember your CF credentials. You can choose to not store the credentials at all, store them in the
+	secure storage facility that is provided by Eclipse, or (and this option is new) to use an oauth token (which is stored
+	by the boot dashboard in a local file).</p>
+<center><img src="screenshot/dashboard-oauth-token.png"></img></center><br>
 <br/>
 
 <p class="nan3"><a name="bootdash"></a><a name="targetlabels"></a>Buildpack content assist now provides additional hints</p>
-<p>tbd</p>
-<center><img src="screenshot/placeholder.png"></img></center><br>
+<p>The content assist for Cloud Foundry manifest files provides nice content-assist for various property values. For the
+	buildpack option those content-assist values are dynamically inferred from the configured Cloud Foundry targets in your
+	boot dashboard.</p>
+<p>While this is easy and convenient while using a single Cloud Foundry target, it can be confusing if you use various
+	Cloud Foundry targets from different CF installations, since those can each provide a different set of available
+	buildpacks.</p>
+<p>To avoid this confusion, the boot dashboard now shows additional information if a buildpack is available only on a
+	certain set of Cloud Foundry targets.</p>
+<center><img src="screenshot/manifest-editor-buildpack-cf-target-info.png"></img></center><br>
 <br/>
 
 <p class="nan3"><a name="bootdash"></a><a name="targetlabels"></a>Custom URLs for Spring Initializr</p>
-<p>It is now possible to provide custom starters for the <b>Spring Starter Project</b> wizard. This can be done by specifying custom <b>Spring Initilizr</b> service URL in the preferences: Spring -> Boot -> Initilizr</p>
+<p>It is now possible to provide custom starters for the <b>Spring Starter Project</b> wizard. This can be done by specifying custom <b>Spring Initilizr</b> service URL in the preferences: Spring -> Boot -> Initilizr. This is especially useful if you use your own, customized version
+	of the Spring Initializr app in-house and would like to use that directly in STS.</p>
 <center><img src="screenshot/custom-initializr-url.png"></img></center><br>
 <br/>
 
