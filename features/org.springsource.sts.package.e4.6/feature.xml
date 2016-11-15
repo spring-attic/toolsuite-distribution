@@ -30,7 +30,7 @@
       <import feature="org.eclipse.aether.maven.feature"/>
       <import feature="org.eclipse.aether.transport.file.feature"/>
       <import feature="org.eclipse.aether.transport.http.feature"/>
-		  
+<!--
       <import feature="org.eclipse.datatools.common.doc.user"/>
       <import feature="org.eclipse.datatools.connectivity.doc.user"/>
       <import feature="org.eclipse.datatools.connectivity.feature"/>
@@ -65,7 +65,7 @@
       <import feature="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature"/>
       <import feature="org.eclipse.datatools.sqldevtools.sqlbuilder.feature"/>
       <import feature="org.eclipse.datatools.sqltools.doc.user"/>
-		  
+-->
 		  
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.e4.rcp"/>
@@ -116,6 +116,7 @@
 <!--
       <import feature="org.eclipse.jgit"/>
 -->
+<!--
       <import feature="org.eclipse.jpt.common.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.common.feature"/>
       <import feature="org.eclipse.jpt.dbws.eclipselink.feature"/>
@@ -123,7 +124,7 @@
       <import feature="org.eclipse.jpt.jaxb.feature"/>
       <import feature="org.eclipse.jpt.jpa.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.jpa.feature"/>
-      
+-->      
       <import feature="org.eclipse.jsf.feature"/>
       <import feature="org.eclipse.jst.common.fproj.enablement.jdt"/>
       <import feature="org.eclipse.jst.enterprise_core.feature"/>
