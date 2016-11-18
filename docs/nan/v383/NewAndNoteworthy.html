@@ -117,7 +117,10 @@
 <li>Support for Legacy Maven project conversion removed (used to convert m2eclipse projects to use m2e)</li>
 </ul>
 
-<p class="nan3">Important Notes</p>
+<p class="nan2">Important Notes for 3.8.3</p>
+
+<p class="nan3">macOS Sierra causes lost settings and lost add-on installs</p>
+
 <p>If you unpackage the STS archive on macOS Sierra and use it without moving it to a different location on your
 	drive, macOS Sierra Gatekeeper activates a security feature called "Path Randomization" for the app. This causes
 	the STS.app bundle to be copied to a private and randomized read-only folder on your disc every time you start
@@ -125,6 +128,12 @@
 	configuration. As a workaround, please move the STS.app bundle to a different location on your drive before
 	starting it.</p>
 
+<p class="nan3">Manual Maven support going to be removed soon</p>
+
+<p>We plan to remove the support for manual Maven projects from STS and Spring IDE in future versions of STS and
+	Spring IDE. The manual maven support was used in the past when projects used Maven, but didn't opt-in to use
+	the direct Maven support in Eclipse via the m2e project. While projects can still decide to not use m2e for their
+	projects, the support for that via additional menu actions in STS will be gone.</p>
 <br/>
 
 
