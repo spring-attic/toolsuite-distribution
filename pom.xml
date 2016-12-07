@@ -843,7 +843,7 @@ Optional parameters:
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.0.1/</url>
+					<url>http://download.eclipse.org/cft/1.0.2/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
