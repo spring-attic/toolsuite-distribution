@@ -611,7 +611,7 @@ Optional parameters:
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://www.mihai-nita.net/eclipse</url>
+					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -848,7 +848,7 @@ Optional parameters:
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://www.mihai-nita.net/eclipse</url>
+					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 			</repositories>
 			<modules>
