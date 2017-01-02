@@ -740,7 +740,7 @@ Optional parameters:
 			<id>e46</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product.e4.6</product.project.sts>
-				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.6</p2.repository.name>
+				<p2.repository.name>Spring Tool Suite for Eclipse 4.6</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
@@ -858,29 +858,28 @@ Optional parameters:
 		</profile>
 
 		<profile>
-			<id>e46-internal</id>
+			<id>e47</id>
 			<properties>
-				<product.project.sts>org.springsource.sts.product.e4.6-internal</product.project.sts>
-				<p2.repository.name>SpringSource Tool Suite for Eclipse 4.6</p2.repository.name>
+				<product.project.sts>org.springsource.sts.product.e4.7</product.project.sts>
+				<p2.repository.name>Spring Tool Suite for Eclipse 4.7</p2.repository.name>
 				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
 				<repository>
-					<id>mars</id>
+					<id>neon</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/neon/</url>
+					<url>http://download.eclipse.org/releases/oxygen/</url>
 				</repository>
-				<!--				<repository>
-				<id>platform</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/eclipse/updates/4.5/</url>
-				</repository> -->
-
+				<repository>
+					<id>platform</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/eclipse/updates/4.7/</url>
+				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/</url>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20161205183421/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
@@ -910,7 +909,7 @@ Optional parameters:
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/mars</url>
+					<url>http://download.eclipse.org/m2e-wtp/releases/neon</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
@@ -925,7 +924,7 @@ Optional parameters:
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201504071521/</url>
+					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201509090157/</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
@@ -948,24 +947,19 @@ Optional parameters:
 					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
-					<id>jdepend-eclipse</id>
-					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/jdepend4eclipse</url>
-				</repository>
-				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.0.1.M2/</url>
+					<url>http://download.eclipse.org/cft/1.0.2/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://www.mihai-nita.net/eclipse</url>
+					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 			</repositories>
 			<modules>
-				<module>features/org.springsource.sts.product.e4.6-internal</module>
-				<module>features/org.springsource.sts.package.e4.6-internal</module>
+				<module>features/org.springsource.sts.package.e4.7</module>
+				<module>features/org.springsource.sts.product.e4.7</module>
 			</modules>
 		</profile>
 
