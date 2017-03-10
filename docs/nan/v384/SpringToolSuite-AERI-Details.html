@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>Spring Tool Suite Automated Error Reporting</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheetKotlin.css" />
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite Automated Error Reporting</h1>
+
+<p>The Spring IDE provides an integration with the Eclipse Automatic Error Reporting mechanism. This allows you to report errors that happen inside of the IDE directly to the developers without much hassle.
+The reported error data is used by the committers at Eclipse and the committers of the Spring IDE to fix errors and improve the IDE for future versions. This mechanism is already included in the main Eclipse distributions since Eclipse Mars and used since then with a lot of success.</p>
+</br>
+
+<p>The basic mechanism that we use is described in more detail here:</p>
+<p>Eclipse AERI : <a href="https://wiki.eclipse.org/EPP/Logging">https://wiki.eclipse.org/EPP/Logging</a></p>
+</br>
+
+<p>The details about the submitted information are described here:</p>
+<p><a href="https://wiki.eclipse.org/EPP/Logging#Submitted_Information">https://wiki.eclipse.org/EPP/Logging#Submitted_Information</a></p>
+</br>
+
+<p>This is an opt-in mechanism, so nothing will be reported automatically without your agreement in Eclipse and Spring IDE/STS.
+There are plenty of options to configure the privacy settings of this. Stack traces can be fully anonymized, for example. You can also opt-in to provide contact information, but you don't have to.
+Please take a look at the Preferences -> General -> Error Reporting.</p>
+</br>
+
+<p>The default configuration (in case you agree and enable this mechanism) sends Eclipse-related error reports to the Eclipse Foundation whereas Spring IDE related errors will be reported to:<p>
+<p><a href="https://www.ctrlflow.com/automated-error-reporting/">https://www.ctrlflow.com/automated-error-reporting/</a></p>
+</br>
+
+<p>Those error reports are not available to the public and will not be shared with anyonoe except the committers of the Spring IDE project.</p>
+</br>
+
+<p>IF you wanna know more about the details behind this automatic error reporting and how we integrated it into Spring IDE, watch this webinar:</p>
+<p><a href="https://www.youtube.com/watch?v=TDSv9Tm7hGA">https://www.youtube.com/watch?v=TDSv9Tm7hGA</a></p>
+</br>
+
+<p>You can always fully disable this error reporting at any time. In addition to that you can also un-install the related features from your STS or Spring IDE installation altogether by going to the "About" dialog -> Installation Details".</p>
+</br>
+
+<hr>
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>STS Issue tracker: <a href="https://issuetracker.springsource.com/browse/STS">https://issuetracker.springsource.com/browse/STS</a></p>
+
+<hr>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
