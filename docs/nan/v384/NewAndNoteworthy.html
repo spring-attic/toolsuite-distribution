@@ -152,24 +152,50 @@ TODO: Fill in the details and add some screenshos (here are some potential highl
   <li> Use a custom initializr service</li>
   <li> Buildship 2.x Import Strategy added. Buildship 1.x can also still be used with the old strategy.
   <li> more intuitive two-colum layout</li>
-  <li> automatically make artifact-name follow project-name.</li>
-  <li> Links to relevant documentation accessible on mouse-hovers.</li>
+  <li>
+  	Initial project name is unique with respect to names of projects in the workspace.
+  	Changes to project name are laso reflected on the default artifact name.
+  </li>
+  <li>
+  	Links to relevant documentation accessible on mouse-hovers with HTML content.
+  	<center><img src="screenshot/starter-wizard-hover.png"></img></center>
+  </li>
   <li> Content-assist "Shortcut" to open "Edit Starters" dialog from the pom editor</li>
 </ul>
 <br>
 <center><img src="screenshot/buildship_20.png"></img></center><br>
 <center><b>Screenshot: Buildship 2.x import strategy</b></center>
 
-<p class="nan3">Spring CLI Integration: Local Services in the Boot Dash</p>
-
-TODO: Fill in the details
+<p class="nan3">Spring Cloud CLI Integration: Local Services in the Boot Dash</p>
+<p>
+Spring Cloud CLI available services are shown in the Boot Dashboard under <b>local</b>
+run target below the Spring Boot project entries. The Boot Dashboard provides the expected life cycle management
+control features over Cloud services provided by Spring Cloud CLI such as starting and stopping a service. In order
+to see these services in the Boot Dashboard one would need to point STS to a Spring Boot CLI installation <u>with 
+Spring Cloud CLI installed in it</u> via preferences <b>Spring->Boot->CLI</b>. Current limitation is STS integration 
+not aware of any Spring Cloud CLI services started manually via CLI.
+<center style="display:inline-flex">
+	<img style="width: 50%; height:50%;" src="screenshot/spring-cloud-cli-prefs.png"/>
+	<img style="widht:482px; height:322px;" src="screenshot/spring-cloud-cli-boot-dash.png"/>
+</center>
+<br>
+</p>
 
 <p class="nan3">Cloudfoundry Support</p>
 
 <p>Support was added for the new "routes" property, including:</p>
 <ul>
   <li>Content assist and basic validation in the manifest editor</li>
-  <li>Diffing existing versus new routes when re-pushing and existing app</li>
+  <li>
+  	Basic validation in the manifest editor detects if legacy <code>domain(s)</code>, <code>host(s)</code> or 
+  	<code>no-hostname</code> were used with the new <code>routes</code> property in the same manifest and report errors 
+  	appropriately.
+  	<center><img src="screenshot/cf-manifest-reconcile.png"></img></center>
+  </li>
+  <li>
+  	Deployment manifest compare and merge support for <code>routes</code> property is available
+  	  	<center><img src="screenshot/cf-manifest-compare-merge.png"></img></center>
+  </li>
 </ul>
 
 TODO: Fill in the details and add some screenshots
