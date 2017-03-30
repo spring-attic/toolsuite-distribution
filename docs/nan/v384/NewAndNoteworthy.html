@@ -150,10 +150,18 @@ also still available.</p>
 
 <p class="nan3">Revamped UI for the "New Spring Starter" and "Edit Starters" Wizards</p>
 
-TODO: Fill in the details and add some screenshos (here are some potential highlights):
 <ul>
-  <li> Use a custom initializr service</li>
-  <li> more intuitive two-colum layout</li>
+  <li> Users can now specify a custom initializr service in the first page of the wizard. A new dropdown widget at the top of
+       the page allows users to type a URL or select one from the dropdown. URLs entered in the widget will be saved in the Initializr Preference page only
+       after the starter wizard finishes, and users can edit the URLs from there. The content of the wizard dynamically changes when a valid service URL is entered.
+        <center><img src="screenshot/starter-wizard-custom-url-edit.png"></img></center>
+        <center><img src="screenshot/starter-wizard-custom-url.png"></img></center>
+    	<center><img src="screenshot/initialzr-preference-page.png"></img></center>
+  </li>
+  <li> The UI for the dependencies page now features a more intuitive two-column layout. Available dependencies are shown in the left column
+       and selected dependencies on the right. A search box at the top of the first column filters the list of available dependencies.
+      <center><img src="screenshot/starter-wizard-dependencies.png"></img></center>
+  </li>
   <li>
   	Initial project name is unique with respect to names of projects in the workspace.
   	Changes to project name are laso reflected on the default artifact name.
@@ -183,10 +191,15 @@ not aware of any Spring Cloud CLI services started manually via CLI.
 <br>
 </p>
 
-<p class="nan3">Cloudfoundry Support</p>
+<p class="nan3">Cloud Foundry Support</p>
 
 <p>Support was added for the new "routes" property, including:</p>
 <ul>
+  <li>
+    Users can now specify routes with paths, or TCP routes with ports if the Cloud Foundry target supports TCP. NOTE: "random-route" property does not
+    yet work with "routes", so if specifying a TCP route, an explicit port needs to be set in the route.
+    <center><img src="screenshot/routes-tcp.png"></img></center>
+  </li>
   <li>Content assist and basic validation in the manifest editor</li>
   <li>
   	Basic validation in the manifest editor detects if legacy <code>domain(s)</code>, <code>host(s)</code> or 
@@ -196,11 +209,9 @@ not aware of any Spring Cloud CLI services started manually via CLI.
   </li>
   <li>
   	Deployment manifest compare and merge support for <code>routes</code> property is available
-  	  	<center><img src="screenshot/cf-manifest-compare-merge.png"></img></center>
+  	<center><img src="screenshot/cf-manifest-compare-merge.png"></img></center>
   </li>
 </ul>
-
-TODO: Fill in the details and add some screenshots
 
 <p class="nan3">Important Changes and Fixes</p>
 <br/>
