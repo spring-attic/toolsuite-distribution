@@ -99,20 +99,15 @@
 <div class="body--container container-fluid ">
 <h1 class="nan1">Spring Tool Suite 3.8.4: New and Noteworthy</h1>
 
+<p class="nan3">General introduction video to the Spring Tool Suite</p>
+
 <p>
 	Josh Long published a nice Spring Tips video, introducing the Spring Tool Suite.</p>
 </br>
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/6mtI4vmsQ08?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-<p>We would also like to thank our users for using the automated error reporting that we included since the 3.8.2 release and for
-	sending us all those error reports. We used them to fix issues and improve reliability in this
-	release. And we will continue to do that. So please keep those error reports coming!</p>
-
-<p class="nan3">Issues now tracked on GitHub Issues</p>
-
-<p>Issues around the Spring Tool Suite and the Spring IDE are tracked on GitHub from now on:
-	<a href="https://github.com/spring-projects/spring-ide/issues">https://github.com/spring-projects/spring-ide/issues</a>.</p>
-<br/>
+<p>
+	This video doesn't feature all the latest enhancements and changes from this 3.8.4 release, but provides a great
+	introduction to the Spring Tool Suite in general.</p>
 
 <p class="nan2">Updates and New/Enhanced Features in 3.8.4</p>
 
@@ -128,7 +123,7 @@
 <p>
 	<a href="http://dist.springsource.com/release/TOOLS/update/e4.7">http://dist.springsource.com/release/TOOLS/update/e4.7</a>
 </p>
-<p><b>Attention:</b> Eclipse Oxygen M6 has a severe bug that prevents the JEE, Java, and STS packages working properly together. If you want
+<p><b>Attention:</b> Eclipse Oxygen M6 has a severe bug that prevents the JEE, Java, and STS packages working properly. If you want
 	to install STS into Eclipse 4.7, you need to make sure to use post-M6 builds of Eclipse Oxygen as a base.</p>
 <p>
 	You can also download complete STS distribution packages based on early Eclipse 4.7 versions from our nightly downloads page at: <a href ="http://dist.springsource.com/snapshot/STS/nightly-distributions.html">http://dist.springsource.com/snapshot/STS/nightly-distributions.html</a>.
@@ -136,11 +131,14 @@
 </p>
 
 <p class="nan3">Eclipse Data Tools removed</p>
-<p>Due to various users reporting issues related to the Eclipse Data Tools that we included in STS, we decided to remove
+<p>
+	Due to various users reporting issues related to the Eclipse Data Tools that we included in STS, we decided to remove
 	those features from the default STS distribution. We added an item to the dashboard extension install listing
-	that makes it easy for you to get them back into your STS in case you would like to use them.</p>
+	that makes it easy for you to get them back into your STS in case you would like to use them.
+	More details on the exact issue behind this can be found here: <a href="https://issuetracker.springsource.com/browse/STS-4416">https://issuetracker.springsource.com/browse/STS-4416</a>
+</p>
 
-<p class="nan3">Buildship 2.0 import strategy for Getting Started Wizards</p>
+<p class="nan3">Buildship 2 import strategy for Getting Started Wizards</p>
 
 <p>The "New Spring Starter Project" and "Import Getting Started Content" now provide a "Buildship 2.x"
 import strategy. For backwards compatibility the old import startegy which supports "Buildship 1.x" is
@@ -149,6 +147,13 @@ also still available.</p>
 <br/>
 <center><img src="screenshot/buildship_20.png"></img></center><br>
 <br/>
+
+<p>
+	This allows you to use the STS wizards to import those projects while using the new version of the
+	Buildship project in the same installation. STS recognizes the installed version of the Buildship
+	plugin and offers the matching option in those wizards automatically. For more information about
+	Buildship version 2, here is the announcement blog post: <a href="https://blog.gradle.org/announcing-buildship-2.0">https://blog.gradle.org/announcing-buildship-2.0</a>
+</p>
 
 <p class="nan3">Revamped UI for the "New Spring Starter" and "Edit Starters" Wizards</p>
 
@@ -264,8 +269,18 @@ also still available.</p>
 <li>Fixed a number of most-reported errors from the automated error reporting</li>
 </ul>
 
-
 <p class="nan2">Important Notes for 3.8.4</p>
+
+<p class="nan3">Issues now tracked on GitHub Issues</p>
+
+<p>Issues around the Spring Tool Suite and the Spring IDE are tracked on GitHub from now on:
+	<a href="https://github.com/spring-projects/spring-ide/issues">https://github.com/spring-projects/spring-ide/issues</a>.</p>
+
+<p class="nan3">Thanks for using the automatic error reporting</p>
+
+<p>We would also like to thank our users for using the automated error reporting that we included since the 3.8.2 release and for
+	sending us all those error reports. We used them to fix issues and improve reliability in this
+	release. And we will continue to do that. So please keep those error reports coming!</p>
 
 <p class="nan3">macOS Sierra causes lost settings and lost add-on installs</p>
 
