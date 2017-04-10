@@ -2,7 +2,7 @@
 
 	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
 
-	<property name="tcserver.version" value="3.2.4.SR1" />
+	<property name="tcserver.version" value="3.2.5.RELEASE" />
 	<property name="sts-rootfolder" value="sts-bundle" />
 	<property name="tcserver.name" value="pivotal-tc-server-developer-${tcserver.version}" />
 	<property name="tcserver.root" value="http://dist.springsource.com/release/STS/bundle" />
