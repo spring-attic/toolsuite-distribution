@@ -878,12 +878,12 @@ Optional parameters:
 				</repository>
 
 				<!-- newer platform build to include fix for bug https://bugs.eclipse.org/bugs/show_bug.cgi?id=514149 -->
-<!--				<repository>
-					<id>i-builds</id>
+				<repository>
+					<id>oxygen-i-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.7-I-builds/I20170516-2000/</url>
+					<url>http://download.eclipse.org/eclipse/updates/4.7-I-builds/</url>
 				</repository>
--->
+
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
