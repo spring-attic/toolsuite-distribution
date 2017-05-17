@@ -867,7 +867,7 @@ Optional parameters:
 			</properties>
 			<repositories>
 				<repository>
-					<id>neon</id>
+					<id>oxygen</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/oxygen/</url>
 				</repository>
@@ -878,17 +878,16 @@ Optional parameters:
 				</repository>
 
 				<!-- newer platform build to include fix for bug https://bugs.eclipse.org/bugs/show_bug.cgi?id=514149 -->
-				<repository>
+<!--				<repository>
 					<id>i-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.7-I-builds/I20170328-2000/</url>
+					<url>http://download.eclipse.org/eclipse/updates/4.7-I-builds/I20170516-2000/</url>
 				</repository>
-
-
+-->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20170306214312/repository/</url>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20170505151127/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
@@ -898,7 +897,7 @@ Optional parameters:
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/46/dev/update</url>
+					<url>http://download.eclipse.org/tools/ajdt/47/dev/update</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
@@ -914,11 +913,6 @@ Optional parameters:
 					<id>atlassian</id>
 					<layout>p2</layout>
 					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
-				</repository>
-				<repository>
-					<id>maven-wtp</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/neon</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
@@ -958,7 +952,7 @@ Optional parameters:
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.0.M6/</url>
+					<url>http://download.eclipse.org/cft/1.1.0.M7/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
