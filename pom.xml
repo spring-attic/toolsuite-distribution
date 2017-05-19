@@ -853,7 +853,7 @@ Optional parameters:
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4j/updates/releases/0.2.0/</url>
+					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -967,7 +967,7 @@ Optional parameters:
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4j/updates/releases/0.2.0/</url>
+					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 			</repositories>
 			<modules>
