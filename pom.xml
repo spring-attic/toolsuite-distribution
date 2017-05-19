@@ -850,6 +850,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
+				<repository>
+					<id>lsp4j</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/lsp4j/updates/milestones/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.6</module>
@@ -958,6 +963,11 @@ Optional parameters:
 					<id>ansi-console</id>
 					<layout>p2</layout>
 					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+				</repository>
+				<repository>
+					<id>lsp4j</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/lsp4j/updates/milestones/</url>
 				</repository>
 			</repositories>
 			<modules>

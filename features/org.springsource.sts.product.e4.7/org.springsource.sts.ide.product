@@ -38099,6 +38099,9 @@ Alternatively, the Source Files may accompany the Pivotal product.
 
       <feature id="org.eclipse.epp.logging.aeri.feature" installMode="root"/>
       <feature id="org.springframework.ide.eclipse.aeri.feature" installMode="root"/>
+
+      <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
+      <feature id="org.eclipse.lsp4j.sdk" installMode="root"/>
    </features>
 
    <configurations>
