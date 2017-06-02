@@ -183,8 +183,7 @@
       <import feature="org.eclipse.rse.telnet"/>
       <import feature="org.eclipse.rse.useractions"/>
 
-      <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
-      <import feature="org.eclipse.tm.terminal.connector.serial.feature"/>
+	  <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
       <import feature="org.eclipse.tm.terminal.connector.ssh.feature"/>
       <import feature="org.eclipse.tm.terminal.connector.telnet.feature"/>
       <import feature="org.eclipse.tm.terminal.control.feature"/>
