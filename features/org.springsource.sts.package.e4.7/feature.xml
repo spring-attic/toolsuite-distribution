@@ -24,12 +24,13 @@
    </url>
    
    <requires>
-	   
+<!--
       <import feature="org.eclipse.aether.connector.basic.feature"/>
       <import feature="org.eclipse.aether.feature"/>
       <import feature="org.eclipse.aether.maven.feature"/>
       <import feature="org.eclipse.aether.transport.file.feature"/>
       <import feature="org.eclipse.aether.transport.http.feature"/>
+-->
 <!--
       <import feature="org.eclipse.datatools.common.doc.user"/>
       <import feature="org.eclipse.datatools.connectivity.doc.user"/>
