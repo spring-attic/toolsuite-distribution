@@ -38088,7 +38088,6 @@ Alternatively, the Source Files may accompany the Pivotal product.
 
       <feature id="org.eclipse.cft.server.core.feature" installMode="root"/>
       <feature id="org.eclipse.cft.server.ui.feature" installMode="root"/>
-      <feature id="org.eclipse.cft.server.client.feature" installMode="root"/>
 
       <feature id="org.springsource.sts.cft" installMode="root"/>
       <feature id="org.springframework.ide.eclipse.cft.feature" installMode="root"/>
