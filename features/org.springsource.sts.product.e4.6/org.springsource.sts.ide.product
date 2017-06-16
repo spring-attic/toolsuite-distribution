@@ -38101,6 +38101,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
 
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.lsp4j.sdk" installMode="root"/>
+      <feature id="org.springframework.tooling.cloudfoundry.manifest.ls" installMode="root"/>
    </features>
 
    <configurations>

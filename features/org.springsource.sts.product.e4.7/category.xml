@@ -52,6 +52,25 @@
 	<category name="Uncategorized"/>
   </feature>
 
+  <!-- Language Server -->
+  <category-def name="Spring Tooling Language Servers for Eclipse" label="Spring Tooling Language Servers for Eclipse"/>
+
+  <feature
+	id="org.springframework.tooling.cloudfoundry.manifest.ls.feature"
+	version="0.0.0">
+	<category name="Spring Tooling Language Servers for Eclipse"/>
+  </feature>
+
+  <feature
+	id="org.eclipse.lsp4j.sdk"
+	version="0.0.0">
+	<category name="Spring Tooling Language Servers for Eclipse"/>
+  </feature>
+
+  <bundle id="org.eclipse.lsp4e" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
   <!-- Eclipse Integration Commons -->
   <category-def name="Core / Eclipse Integration Commons" label="Core / Eclipse Integration Commons"/>
   <category-def name="Resources / Eclipse Integration Commons" label="Resources / Eclipse Integration Commons"/>
