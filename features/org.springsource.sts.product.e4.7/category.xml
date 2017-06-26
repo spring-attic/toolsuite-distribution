@@ -71,6 +71,18 @@
 	<category name="Uncategorized"/>
   </bundle>
 
+  <bundle id="com.google.gson" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="com.google.gson.source" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.xtext.xbase.lib" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
   <!-- Eclipse Integration Commons -->
   <category-def name="Core / Eclipse Integration Commons" label="Core / Eclipse Integration Commons"/>
   <category-def name="Resources / Eclipse Integration Commons" label="Resources / Eclipse Integration Commons"/>
