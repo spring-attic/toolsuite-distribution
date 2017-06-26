@@ -61,11 +61,21 @@
 	<category name="Spring Tooling Language Servers for Eclipse"/>
   </feature>
 
-  <feature
-	id="org.eclipse.lsp4j.sdk"
-	version="0.0.0">
-	<category name="Spring Tooling Language Servers for Eclipse"/>
-  </feature>
+  <bundle id="org.eclipse.lsp4j" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4j.source" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4j.jsonrpc" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4j.jsonrpc.source" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
 
   <bundle id="org.eclipse.lsp4e" version="0.0.0">
 	<category name="Uncategorized"/>
