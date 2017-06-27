@@ -12,8 +12,6 @@ openFile</programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
 -Xms40m
 -Dosgi.module.lock.timeout=10
---add-modules=ALL-SYSTEM
---permit-illegal-access
 -Xverify:none</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns
          <argsX86_64>-Xmx1200m</argsX86_64>
