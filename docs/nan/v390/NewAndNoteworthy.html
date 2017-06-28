@@ -117,10 +117,33 @@
 <p class="nan3">Pivotal tc Server updated to 3.2.6</p>
 <p>The latest Pivotal tc Server release 3.2.6 is now included in the STS distribution bundle.</p>
 
+<p class="nan3">New option to improve Spring Boot app startup speed</p>
+<p>...</p>
+
+<p class="nan3">Updates to the Cloud Foundry Manifest editing support</p>
+<p>new dynamic value support for domains + hosts + stacks + services + routes, improved route support, support for new health-check attributes</p>
+<p>
+	The underlying mechanics of the Cloud Foundry manifest editing support have changed in this release. Most of the features
+	are now realized as part of a so-called language server that runs as a separate process. So don't be surprised to see another process
+	running on your machine whenever you have a CF manifest file open to edit.</p>
+<p>
+	In case you updated an existing STS installation to this new version of the Spring Tool Suite, you didn't get the language server
+	based support automatically. You would need to manually install the language server via "Install New Software", type in <a href="http://dist.springsource.com/release/TOOLS/sts4-language-servers/">http://dist.springsource.com/release/TOOLS/sts4-language-servers/</a>
+	and select the Cloud Foundry Manifest Editor Language Server feature. After that installed and you restarted STS, you will get
+	all the new features.</p>
+<p>
+	In case something goes wrong and you would like to switch this feature off, you can go to the About dialog, select the Installation Details
+	and uninstall the feature "Cloud Foundry Manifest Editing Language Server".</p>
+
+<p class="nan3">Improvements to the Spring Cloud CLI integration</p>
+<p>automatic download/install, preference to install, log streaming to console, reduced number of JVMs, works with Sprign Cloud 1.3.x</p>
+
 <p class="nan3">Important Changes and Fixes</p>
 <br/>
 <ul>
-<li>...</li>
+<li>various minor UI improvements to the "New Spring Starter" wizard</li>
+<li>@GetMapping, @PostMapping, @PutMapping, @DeleteMapping, and @PatchMapping now supported in request mapping overviews</li>
+<li>early work to support running on top of JDK9</li>
 </ul>
 
 <p class="nan2">Important Notes</p>
@@ -169,6 +192,18 @@
 
 <h2>Known issues in this release</h2>
 
+<h3>Running on JDK9</h3>
+
+<p>Using a few options, it is possible to run and use the Spring Tool Suite on top of a JDK9. However, please notice that
+	the Maven support in Eclipse/STS runs within the JVM of the IDE and therefore also uses the JDK9 runtime. While that isn't
+	necessarily a problem, having Maven modules in your build that aren't compatible with Java9 might cause your project
+	build to fail in Eclipse/STS.</p>
+<p>
+	This is the case, for example, if you use Spring Boot 1.5.x or earlier versions, which uses an older version of the
+	Maven jar plugin, which fails when running on top of a Java9 VM. In that case we recommend to configure Eclipse/STS
+	to run on top of a Java8 runtime (by modifying the eclipse.ini or sts.ini file accordingyly).</p>
+<br/>
+		
 <h3>macOS Sierra might cause loss of settings and installed plugins</h3>
 
 <p>If you unpackage the STS archive on macOS Sierra and use it without moving it to a different location on your
@@ -232,12 +267,6 @@ for details.</p>
 <p>When running STS on top of a JDK7, the new dashboard looks a bit blurry when using a HiRes (Retina) display, for example on a Retina MacBook Pro. This is due to the
 underlying browser technology that is used to display the dashboard content and that is coming from JavaFX. The JavaFX version that ships with JDK7 doesn't support
 retina displays. The solution for this is to run STS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
-<br/>
-
-<h3>Dashboard on JDK9</h3>
-
-<p>The JavaFX-based main STS dashboard doesn't work when running STS on top of an early-access version of JDK9. As a workaround run STS on a JDK8 or switch
-	the dashboard back to the old (non-JavaFX-based) version via the preferences.</p>
 <br/>
 
 <h3>Silent loss of Functionality on Java 7 or earlier</h3>
