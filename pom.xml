@@ -1030,7 +1030,7 @@ Optional parameters:
 		<repository>
 			<id>sts4-language-servers</id>
 			<layout>p2</layout>
-			<url>http://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly/</url>
+			<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers</url>
 		</repository>
 		<repository>
 			<id>egit</id>
