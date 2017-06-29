@@ -781,6 +781,11 @@ Optional parameters:
 					<url>http://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
+					<id>mylyn-docs</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/mylyn/docs/releases/3.0</url>
+				</repository>
+				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/tools/ajdt/46/dev/update</url>
@@ -843,7 +848,7 @@ Optional parameters:
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.0.RC2/</url>
+					<url>http://download.eclipse.org/cft/1.1.0/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
@@ -959,7 +964,7 @@ Optional parameters:
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.0.RC2/</url>
+					<url>http://download.eclipse.org/cft/1.1.0/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
