@@ -828,7 +828,7 @@ Optional parameters:
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
+					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
@@ -944,7 +944,7 @@ Optional parameters:
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
+					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
