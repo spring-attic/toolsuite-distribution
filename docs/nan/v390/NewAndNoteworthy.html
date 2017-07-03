@@ -113,25 +113,38 @@
 
 <p class="nan3">Eclipse Oxygen (4.7)</p>
 <p>The default STS distribution is now based on the recently released Eclipse Oxygen (4.7) release. <a href="https://www.eclipse.org/oxygen/">
-	Highlights from the Oxygen can be found here.</a></p>
+	Highlights from the Oxygen release can be found here.</a></p>
 
 <p class="nan3">Pivotal tc Server updated to 3.2.6</p>
 <p>The latest Pivotal tc Server release 3.2.6 is now included in the STS distribution bundle.</p>
+
+<p class="nan3">Early Access Java9 support available</p>
+<p>The JDT team at Eclipse provides an early access version of Java9 support from the Eclipse Marketplace. Details can be found here:
+	<a href="https://www.eclipse.org/oxygen/noteworthy/#jdt-java-java9">Early Access Java9 support for Eclipse Oxygen</a>.</p>
+
+<p class="nan3">Take care when having JDK9 installed</p>
+<p>Having an early access build of JDK9 installed on your machine might cause the launcher to pick that as the JDK to run STS
+	on - and this might fail with an error message after choosing your workspace. In that case make sure to define the latest
+	JDK8 runtime as the VM to run your IDE on: <a href="https://wiki.eclipse.org/Eclipse.ini">Here is how to modify your sts.ini file for that.</a></p>
 
 <p class="nan3">New option to improve Spring Boot app startup speed</p>
 <p>...</p>
 
 <p class="nan3">Updates to the Cloud Foundry Manifest editing support</p>
 <p>new dynamic value support for domains + hosts + stacks + services + routes, improved route support, support for new health-check attributes</p>
+
+<p>
+	<b>Under the hood</b></p>
+
 <p>
 	The underlying mechanics of the Cloud Foundry manifest editing support have changed in this release. Most of the features
-	are now realized as part of a so-called language server that runs as a separate process. So don't be surprised to see another process
+	are now realized as part of a so-called language server that runs as a separate process. So don't be surprised to see another processes
 	running on your machine whenever you have a CF manifest file open to edit.</p>
 <p>
 	In case you updated an existing STS installation to this new version of the Spring Tool Suite, you didn't get the language server
 	based support automatically. You would need to manually install the language server via "Install New Software", type in <a href="http://dist.springsource.com/release/TOOLS/sts4-language-servers/">http://dist.springsource.com/release/TOOLS/sts4-language-servers/</a>
-	and select the Cloud Foundry Manifest Editor Language Server feature. After that installed and you restarted STS, you will get
-	all the new features.</p>
+	and select the Cloud Foundry Manifest Editor Language Server feature. After the installation you can restart STS and will get
+	all the new features when editing Cloud Foundry manifest files.</p>
 <p>
 	In case something goes wrong and you would like to switch this feature off, you can go to the About dialog, select the Installation Details
 	and uninstall the feature "Cloud Foundry Manifest Editing Language Server".</p>
@@ -202,7 +215,8 @@
 <p>
 	This is the case, for example, if you use Spring Boot 1.5.x or earlier versions, which uses an older version of the
 	Maven jar plugin, which fails when running on top of a Java9 VM. In that case we recommend to configure Eclipse/STS
-	to run on top of a Java8 runtime (by modifying the eclipse.ini or sts.ini file accordingyly).</p>
+	to run on top of a Java8 runtime (<a href="https://wiki.eclipse.org/Eclipse.ini">by modifying the eclipse.ini or sts.ini
+	file accordingyly</a>).</p>
 <br/>
 		
 <h3>macOS Sierra might cause loss of settings and installed plugins</h3>
@@ -228,74 +242,25 @@
       how to setup ngrok tunneling in combination with SCS manually</a>.</p>
 <br/>
 
-<h3>Conflicting duplicate lifecycle mapping errors in Maven projects upgrading from STS 3.6.x</h3>
-
-<p>Sometimes Maven projects show up with a red error (talking about a duplicate lifecycle mapping conflict) after upgrading STS
-	from 3.6.x to the latest 3.7.2 version. In this case, please update the Maven support for Eclipse/STS to the latest version,
-	as described here: <a href="https://issuetracker.springsource.com/browse/STS-4236?focusedCommentId=108387&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-108387">STS-4236</a>.</p>
-<br/>
-
-<h3>Error after updating from STS 3.7.0</h3>
-
-<p>Sometimes after updating an existing STS 3.7.0 installation to 3.7.1 an error dialog pops up and STS doesn't start. This
-	is a known but not yet solved problem. If you come across this issue, please press "OK" on the dialog and restart STS. It
-	will open up fine, including all the updated components.</p>
-<br/>
-
-<h3>No repository available when checking for updates</h3>
-
-<p>If you have used a pre-release version of Eclipse Mars or STS, the embedded Eclipse Oomph technology created a cache
-of p2 repositores in your home directory. This cached p2 data can cause issues when using STS 3.7.0 or Eclipse Mars. The
-error message looks like STS/Eclipse fails to read information from the main Eclipse Mars p2 repository.</p>
-<p>In case you encounter this error, please stop Eclipse/STS, go to your home directory, delete "~/.eclipse/org.eclipse.oomph.p2",
-and restart Eclipse/STS. The related Eclipse bug is: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=470912">Bug 470912</a>.</p>
-<br/>
-
-<h3>Live configuration-metadata generation requires Spring Boot 1.2.2</h3>
-
-<p>Spring Boot 1.2.1 configuration processor does not work correctly when executed
-from Eclipse's incremental build. This issue is fixed in Spring Boot 1.2.2.
-This only affects 'live' metadata generated from your own source code, not the
-metadata that is packaged inside spring-boot jars themselves. So you can still 
-use older versions of Boot, but the 'live metadata' updates 
-will not be accurate. See Spring Boot issue 
-<a href="https://github.com/spring-projects/spring-boot/issues/2313">GH-2313</a>
-for details.</p>
-<br>
-
-<h3>Dashboard and Retina Displays</h3>
-
-<p>When running STS on top of a JDK7, the new dashboard looks a bit blurry when using a HiRes (Retina) display, for example on a Retina MacBook Pro. This is due to the
-underlying browser technology that is used to display the dashboard content and that is coming from JavaFX. The JavaFX version that ships with JDK7 doesn't support
-retina displays. The solution for this is to run STS on top of a JDK8 build. The JavaFX version that comes with JDK8 supports retina displays.</p>
-<br/>
-
 <h3>Silent loss of Functionality on Java 7 or earlier</h3>
 
 <p>STS 3.8.0 requires a JDK 8 to run on top of. If you are running it with an older JDK this may not be immediatlely apparant, but some of 
 STS functionality will simply be 'absent' because the corresponding plugins are automatically disabled by OSGI because their requirements
 are not satisfied at runtime. See also below 'Setting the JDK'.</p>
 <br/>
+
 <h3>Setting the JDK</h3>
 
-<p>STS 3.8.0 requires a JDK 8 to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
+<p>STS 3.9.0 requires a JDK 8 to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
 if you don't specify which JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. 
-Add a line at the beginning "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine.</p>
+Add a line at the beginning "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine. Here is a detailed
+explanation <a href="https://wiki.eclipse.org/Eclipse.ini">how to configure the JVM in the ini file</a>.</p>
 <br/>
 
 <h3>Issues on Linux (GTK3)</h3>
 
-<p>Eclipse 4.5, upon which STS and GGTS are based, is the first Eclipse release where GTK3 is the default for the SWT widget library.
-There are some issues with this still:</p>
-
-<ul>
-  <li>STS New Dashboard doesn't work under GTK3 because it uses JavaFX which is not currently compatible with GTK3. Instead the old dashboard will
-      open.
-  <li>The Eclipse editor may be slow to respond (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=434898">Eclipse Bug 434898</a>).
-</ul>
-
-<p>You may also experience other UI rendering glitches. If you exprience any of these problems you can avoid them by forcing SWT to 
-switch back to using GTK2. Just set the environment variable "SWT_GTK3=0" before launching STS or GGTS.
+<p>Since Eclipse 4.5, Eclipse uses GTK3 is the default for the SWT widget library. In case you come across UI rendering glitches or related issues,
+	you can try to avoid them by forcing SWT to switch back to using GTK2. Just set the environment variable "SWT_GTK3=0" before launching STS.</p>
 
 <hr>
 
@@ -307,23 +272,6 @@ switch back to using GTK2. Just set the environment variable "SWT_GTK3=0" before
 <p><a href="http://static.springsource.org/sts/nan/v372/NewAndNoteworthy.html">STS 3.7.2</a></p>
 <p><a href="http://static.springsource.org/sts/nan/v371/NewAndNoteworthy.html">STS 3.7.1</a></p>
 <p><a href="http://static.springsource.org/sts/nan/v370/NewAndNoteworthy.html">STS 3.7.0</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v364/NewAndNoteworthy.html">STS/GGTS 3.6.4</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v363sr1/NewAndNoteworthy.html">STS/GGTS 3.6.3.SR1</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v363/NewAndNoteworthy.html">STS/GGTS 3.6.3</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v362/NewAndNoteworthy.html">STS/GGTS 3.6.2</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v361/NewAndNoteworthy.html">STS/GGTS 3.6.1</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v360/NewAndNoteworthy.html">STS/GGTS 3.6.0</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v351/NewAndNoteworthy.html">STS/GGTS 3.5.1</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy.html">STS/GGTS 3.4.0</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">STS/GGTS 3.3.0</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v320/NewAndNoteworthy.html">STS/GGTS 3.2.0</a></p>
-<p><a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0</a></p>
-<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-3.0.0.RELEASE.pdf">STS/GGTS 3.0.0</a></p>
-<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.9.2.RELEASE.pdf">STS 2.9.2</a></p>
-<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.8.1.RELEASE.pdf">STS 2.8.1</a></p>
-<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.2.RELEASE.pdf">STS 2.7.2</a></p>
-<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.6.1.SR1.pdf">STS 2.6.1.SR1</a></p>
-<p><a href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.5.2.SR1.pdf">STS 2.5.2.SR1</a></p>
 
 </div>
 
