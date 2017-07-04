@@ -128,10 +128,45 @@
 	JDK8 runtime as the VM to run your IDE on: <a href="https://wiki.eclipse.org/Eclipse.ini">Here is how to modify your sts.ini file for that.</a></p>
 
 <p class="nan3">New option to improve Spring Boot app startup speed</p>
-<p>...</p>
+<p>Launching a Spring Boot app now allows you to easily switch on specific JVM flags that lets a boot app startup even faster. You can switch
+	that flag on for each individual launch config:</p>
+<br/>
+<center><img src="screenshot/fast-startup.png"></img></center>
+<p>In case you would like to modify those JVM options, you can take a look and change them in the preferences:</p>
+<br/>
+<center><img src="screenshot/fast-startup-preferences.png"></img></center>
 
 <p class="nan3">Updates to the Cloud Foundry Manifest editing support</p>
-<p>new dynamic value support for domains + hosts + stacks + services + routes, improved route support, support for new health-check attributes</p>
+<p>The editing support for Cloud Foundry manifest files got updated to the latest specs, including support for:</p>
+<p>
+	<ul>
+		<li><code>health-check-type</code>: new values (including deprecation warining for type "none")</li>
+		<li><code>health-check-http-endpoint</code> supported</li>
+	</ul>
+</p>
+<p>The editor now also supports content-assist of dynamically retrieved values for additional properties, including:</p>
+<p>
+	<ul>
+		<li><code>stack</code></li>
+		<li><code>domain</code></li>
+		<li><code>services</code></li>
+		<li><code>buildpack</code></li>
+	</ul>
+	This includes content-assist for domains inside of routes:
+<br/>
+<center><img src="screenshot/domains-inside-routes.png"></img></center>
+</br>
+
+<p>
+	The content-assist retrieves values for those properties dynamically from connected Cloud Foundry targets from within the
+	boot dashboard + the command-line interface for Cloud Foundry (in case you use that on your machine). All those Cloud Foundry
+	targets are used only in case you are connected to them (in the boot dashboard case) or logged in (in the cf cli case).</p>
+
+<p>
+	There are also additional validations in place that warns you if you use properties that shouldn't be used together in the
+	same manifest file:</p>
+<br/>
+<center><img src="screenshot/manifest-validation-excluding-properties.png"></img></center>
 
 <p>
 	<b>Under the hood</b></p>
