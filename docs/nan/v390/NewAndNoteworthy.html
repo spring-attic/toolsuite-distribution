@@ -185,15 +185,41 @@
 	and uninstall the feature "Cloud Foundry Manifest Editing Language Server".</p>
 
 <p class="nan3">Improvements to the Spring Cloud CLI integration</p>
-<p>automatic download/install, preference to install, log streaming to console, reduced number of JVMs, works with Sprign Cloud 1.3.x</p>
 
-<p class="nan3">Important Changes and Fixes</p>
+<p>
+	The Spring Cloud CLI extension is now automatically downloaded and installed into the default Spring Boot CLI, so you don't need to
+	configure your Spring Boot CLI manually to use the Spring Cloud services in the boot dashboard. This happens automatically for you.</p>
+	
+<p>
+	In case you use your own local Spring Boot CLI installation, STS allows you to easily add the Spring Cloud CLI extension to it
+	from the preferences:</p>
 <br/>
-<ul>
-<li>various minor UI improvements to the "New Spring Starter" wizard</li>
-<li>@GetMapping, @PostMapping, @PutMapping, @DeleteMapping, and @PatchMapping now supported in request mapping overviews</li>
-<li>early work to support running on top of JDK9</li>
-</ul>
+<center><img src="screenshot/cloud-cli-extension-install.png"></img></center>
+
+<p>
+	In addition to that, when using a recent Spring Boot and Cloud CLI version, you get the logs of those services streamed to
+	directly to the console view, so you can see everything that happens with from within STS.</p>
+	
+<p>
+	An additional improvement to the mechanics behind the scenes further reduces the number of JVM processes needed for each
+	local Spring Cloud service that you start via the dashboard to one JVM process per started service.</p>
+
+<p class="nan3">@GetMapping, @PostMapping, etc, now directly supported</p>
+<p>These specific request mapping annotations are now direclty supported:</p>
+<p>
+	<ul>
+		<li><code>@GetMapping</code></li>
+		<li><code>@PostMapping</code></li>
+		<li><code>@PutMapping</code></li>
+		<li><code>@DeleteMapping</code></li>
+		<li><code>@PatchMapping</code></li>
+	</ul>
+</p>
+
+<p>
+	They show up in the RequestMapping overview as well as the Spring Explorer view.</p>
+<br/>
+<center><img src="screenshot/request-mapping-improvements.png"></img></center>
 
 <p class="nan2">Important Notes</p>
 
