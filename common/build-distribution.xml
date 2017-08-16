@@ -9,13 +9,13 @@
 
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/${product.folder.sts}/target/products/" />
 
-    <condition property="tar-command" value="tar">
-        <os family="mac" />
-    </condition>
+	<condition property="tar-command" value="tar">
+		<os family="mac" />
+	</condition>
 
-    <condition property="tar-command" value="tar">
-	    <os family="unix" />
-    </condition>
+	<condition property="tar-command" value="tar">
+		<os family="unix" />
+	</condition>
 
 	<target name="create-bundled-distribution-sts">
 		<antcall target="download-tcserver"/>
@@ -52,6 +52,11 @@
 		<antcall target="create-sts-bundle-archive-tar-osx">
 			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86_64"/>
 			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.tar.gz"/>
+		</antcall>
+
+		<antcall target="create-sts-bundle-archive-osx-dmg">
+			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86_64"/>
+			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.dmg"/>
 		</antcall>
 
 		<antcall target="create-sts-bundle-archive-tar">
@@ -97,27 +102,34 @@
 
 	</target>
 
-		<target name="create-sts-bundle-archive-tar-osx">
-			<exec executable="${tar-command}">
-				<arg value="--transform"/>
-				<arg value="s,^,${sts-rootfolder}/,S"/>
-				<arg value="-czf"/>
-				<arg value="${destName}"/>
-				<arg value="-C"/>
-				<arg value="${project.build.directory}"/>
-				<arg value="${tcserver.name}"/>
-				<arg value="-C"/>
-				<arg value="${product.build.directory.sts}/${path}"/>
-				<arg value="STS.app"/>
-				<arg value="-C"/>
-				<arg value="${project.build.directory}/.."/>
-				<arg value="legal"/>
-			</exec>
+	<target name="create-sts-bundle-archive-tar-osx">
+		<exec executable="${tar-command}">
+			<arg value="--transform"/>
+			<arg value="s,^,${sts-rootfolder}/,S"/>
+			<arg value="-czf"/>
+			<arg value="${destName}"/>
+			<arg value="-C"/>
+			<arg value="${project.build.directory}"/>
+			<arg value="${tcserver.name}"/>
+			<arg value="-C"/>
+			<arg value="${product.build.directory.sts}/${path}"/>
+			<arg value="STS.app"/>
+			<arg value="-C"/>
+			<arg value="${project.build.directory}/.."/>
+			<arg value="legal"/>
+		</exec>
 
-			<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
-			<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
+		<checksum file="${destName}" algorithm="SHA1" fileext=".sha1" />
+		<checksum file="${destName}" algorithm="MD5" fileext=".md5" />
 
-		</target>
+	</target>
+
+	<target name="create-sts-bundle-archive-osx-dmg">
+		<exec executable="appdmg">
+			<arg value="${project.build.directory}/../sts-dmg-config-${dist.target.major}.json"/>
+			<arg value="${destName}"/>
+		</exec>
+	</target>
 
 	<target name="create-sts-bundle-archive-zip">
 		<zip destfile="${destName}">
@@ -133,17 +145,17 @@
 
 	<target name="download-tcserver">
 		<get src="${tcserver.root}/${tcserver.name}.zip"
-		 dest="${project.build.directory}/${tcserver.name}.zip"
-		 verbose="true"
-		 skipexisting="true"/>
-		<if>
-			<available file="${project.build.directory}/${tcserver.name}.zip" />
-			<then>
-				<exec executable="unzip">
-				    <arg line="-o ${project.build.directory}/${tcserver.name}.zip -d ${project.build.directory}" />
-				</exec>
-			</then>
-		</if>
-	</target>
+			dest="${project.build.directory}/${tcserver.name}.zip"
+			verbose="true"
+			skipexisting="true"/>
+			<if>
+				<available file="${project.build.directory}/${tcserver.name}.zip" />
+				<then>
+					<exec executable="unzip">
+						<arg line="-o ${project.build.directory}/${tcserver.name}.zip -d ${project.build.directory}" />
+					</exec>
+				</then>
+			</if>
+		</target>
 
-</project>
+	</project>

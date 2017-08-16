@@ -62,7 +62,7 @@
 					
 					<execution>
 						<id>archive-products</id>
-						<phase>install</phase>
+						<phase>package</phase>
 						<configuration>
 							<target>
 								<ant antfile="../../common/build-distribution.xml" target="create-bundled-distribution-sts-e45">
@@ -70,6 +70,36 @@
 									<property name="p2.qualifier" value="${p2.qualifier}" />
 									<property name="product.folder.sts" value="${product.project.sts}" />
 								</ant>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>osx-dmg-signing</id>
+						<phase>verify</phase>
+						<configuration>
+							<skip>${skip.osx.signing}</skip>
+							<target>
+
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+
+								<property name="dmgName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.dmg" />
+
+								<exec executable="codesign" failonerror="true">
+									<arg value="--verbose"/>
+								    <arg value="--keychain"/>
+								    <arg value="${env.KEYCHAIN}"/>
+								    <arg value="-s"/>
+								    <arg value="Developer ID Application: Trevor Marshall"/>
+								    <arg value="${dmgName}"/>
+								</exec>
+
+								<checksum file="${dmgName}" algorithm="SHA1" fileext=".sha1" />
+								<checksum file="${dmgName}" algorithm="MD5" fileext=".md5" />
+
 							</target>
 						</configuration>
 						<goals>
@@ -98,6 +128,9 @@
 											<include name="spring-tool-suite*.tar.gz" />
 											<include name="spring-tool-suite*.tar.gz.md5" />
 											<include name="spring-tool-suite*.tar.gz.sha1" />
+											<include name="spring-tool-suite*.dmg" />
+											<include name="spring-tool-suite*.dmg.md5" />
+											<include name="spring-tool-suite*.dmg.sha1" />
 										</fileset>
 									</delete>
 
@@ -110,6 +143,9 @@
 											<include name="spring-tool-suite*.tar.gz" />
 											<include name="spring-tool-suite*.tar.gz.md5" />
 											<include name="spring-tool-suite*.tar.gz.sha1" />
+											<include name="spring-tool-suite*.dmg" />
+											<include name="spring-tool-suite*.dmg.md5" />
+											<include name="spring-tool-suite*.dmg.sha1" />
 										</fileset>
 									</upload>
 
