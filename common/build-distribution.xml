@@ -125,7 +125,7 @@
 	</target>
 
 	<target name="create-sts-bundle-archive-osx-dmg">
-		<exec executable=" /usr/local/bin/appdmg">
+		<exec executable="/usr/local/bin/appdmg">
 			<arg value="${project.build.directory}/../sts-dmg-config-${dist.target.major}.json"/>
 			<arg value="${destName}"/>
 		</exec>
