@@ -8,5 +8,5 @@
     { "x": 448, "y": 250, "type": "file", "path": "legal" },
     { "x": 1000, "y": 2000, "type": "file", "path": "../../plugins/org.springsource.sts/sts.icns", "name": ".VolumeIcon.icns" }
   ],
-  "format": "ULFO"
+  "format": "UDBZ"
 }
