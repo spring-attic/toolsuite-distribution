@@ -48,12 +48,12 @@
 
 	<target name="create-bundled-distribution-sts-e45">
 		<antcall target="download-tcserver"/>
-
+<!--
 		<antcall target="create-sts-bundle-archive-tar-osx">
 			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86_64"/>
 			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.tar.gz"/>
 		</antcall>
-
+-->
 		<antcall target="create-sts-bundle-archive-osx-dmg">
 			<param name="path" value="org.springsource.sts.ide/macosx/cocoa/x86_64"/>
 			<param name="destName" value="${project.build.directory}/spring-tool-suite-${unqualifiedVersion}.${p2.qualifier}-${dist.target}-macosx-cocoa-x86_64.dmg"/>
