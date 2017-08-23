@@ -892,10 +892,15 @@ Optional parameters:
 					<url>http://download.eclipse.org/staging/oxygen</url>
 				</repository> -->
 				<repository>
+					<id>oxygen-java9-y-builds</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/eclipse/updates/4.7-Y-builds/</url>
+				</repository>
+<!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.7/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
