@@ -868,7 +868,7 @@ Optional parameters:
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>https://projects.eclipse.org/projects/technology.lsp4e/releases/0.3.0</url>
+					<url>http://download.eclipse.org/lsp4e/releases/0.3.0</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1004,7 +1004,7 @@ Optional parameters:
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>https://projects.eclipse.org/projects/technology.lsp4e/releases/0.3.0</url>
+					<url>http://download.eclipse.org/lsp4e/releases/0.3.0</url>
 				</repository>
 			</repositories>
 			<modules>
