@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns:app="http://spring.io"><head>
+  <title>Spring Tool Suite 3.9.1 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+  <style>
+    p {
+        margin-top: 12px;
+    }
+    
+    table {
+        margin-top: 20px;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        vertical-align: top;
+    }
+  </style>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="http://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="http://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://spring.io/blog">Blog</a>
+            </li>
+            <li class="navbar-link">
+              <a href="http://forum.springframework.io">Forum</a>
+            </li>
+<!--
+            <li class="navbar-link nav-search">
+              <i class="icon-search navbar-search--icon js-search-input-open"></i>
+              <div class="search-input-close js-search-input-close">x</div>
+            </li>
+-->
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite 3.9.1: New and Noteworthy</h1>
+
+<p class="nan3">General introduction video to the Spring Tool Suite</p>
+
+<p>
+	Josh Long published a nice Spring Tips video, introducing the Spring Tool Suite.</p>
+</br>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/6mtI4vmsQ08?rel=0" frameborder="0" allowfullscreen></iframe></center>
+<p>
+	This video doesn't feature all the latest enhancements and changes from this 3.9.1 release, but provides a great
+	introduction to the Spring Tool Suite in general.</p>
+
+<p class="nan2">Updates and New/Enhanced Features</p>
+
+<p class="nan3">Eclipse Oxygen.1a (4.7.1a), including support for Java9 and JUnit 5</p>
+<p>The default STS distribution is now based on the recently released Eclipse Oxygen.1a (4.7.1a) release. <a href="https://www.eclipse.org/oxygen/">
+	This includes support for JDK9 and JUnit 5 now out of the box.</a></p>
+
+<p class="nan3">Attention: How to run STS on JDK9</p>
+<p>You don't have to run STS on a JDK9 to hack on projects that use Java9 and the corresponding JDK. However, if you have a JDK9 installed and decide to
+	let STS run on top of JDK9, you need to add <code></code> to the vmargs section of your STS.ini file. Otherwise you will see a not-so-nice
+	error message showing up.</p>
+
+<p class="nan3">JDK9 compatibility warning</p>
+<p>tbd</p>
+	
+<p class="nan3">macOS version of STS ships as DMG file</p>
+<p>tbd</p>
+	
+<p class="nan3">Pivotal tc Server updated to 3.2.7</p>
+<p>The latest Pivotal tc Server release 3.2.7 is now included in the STS distribution bundle.</p>
+
+<p class="nan3">Automatic conversion of boot property files to YAML</p>
+<p>tbd</p>
+	
+<p class="nan3">Changes to the Spring Cloud CLI integration</p>
+<p>tbd</p>
+	
+<p class="nan3">New code templates for @Get/Post/Put/Delete/PatchMapping</p>
+<p>tbd</p>
+	
+<p class="nan3">Experimental: use Sprig Boot Thin JAR wrapper to launch boot apps</p>
+<p>tbd</p>
+	
+<hr/>
+
+<p class="nan3">Important Changes and Fixes</p>
+<br/>
+<ul>
+<li>Organize imports keybinding is back when editing Java source files</li>
+<li>Fast startup options caused boot app launch to fail in case of additional custom VM options</li>
+<li>STS news dashboard now uses embedded browser engine to avoid rendering issues</li>
+<li>AOP model builder could fail with <code>cannot find classfile</code></li>
+<li>Request mapping tab in boot dashboard property view for running apps now works with early Boot 2 versions</li>
+<li>Spring Data repository method auto-completion proposals now take code complete insert/override setting into account</li>
+<li>customizing the classpath of a boot app launch config doesn't cause strange libs to appear on the classpath anymore</li>
+<li>issue with custom annotation processing in combination with m2e-apt fixed</li>
+</ul>
+
+<hr/>
+
+<p class="nan3">Issues now tracked on GitHub Issues</p>
+
+<p>Issues around the Spring Tool Suite and the Spring IDE are tracked on GitHub from now on:
+	<a href="https://github.com/spring-projects/spring-ide/issues">https://github.com/spring-projects/spring-ide/issues</a>.</p>
+
+<p class="nan3">Thanks for using the automatic error reporting</p>
+
+<p>We would also like to thank our users for using the automated error reporting that we included since the 3.8.2 release and for
+	sending us all those error reports. We used them to fix issues and improve reliability in this
+	release. And we will continue to do that. So please keep those error reports coming!</p>
+<p>
+	In case you see a notification showing up that our error report quota exceeded, don't be surprised. With support from
+	CodeTrails, we use a limited plan for this error reporting facility - and that might cause our quota to exceed
+	from time to time. If you want to switch off those notifications, please go to the <code>Preferences -> General ->
+	Notifications</code>.</p>
+
+<p class="nan3">macOS Sierra causes lost settings and lost add-on installs</p>
+
+<p>If you unpackage the STS archive on macOS Sierra and use it without moving it to a different location on your
+	drive, macOS Sierra Gatekeeper activates a security feature called "Path Randomization" for the app. This causes
+	the STS.app bundle to be copied to a private and randomized read-only folder on your disc every time you start
+	STS after a restart of your machine. As a result, all your third-party installs are lost as well as your global
+	configuration. As a workaround, please move the STS.app bundle to a different location on your drive before
+	starting it.</p>
+
+<p class="nan3">Manual Maven support going to be removed soon</p>
+
+<p>We plan to remove the support for manual Maven projects from STS and Spring IDE in future versions of STS and
+	Spring IDE. The manual maven support was used in the past when projects used Maven, but didn't opt-in to use
+	the direct Maven support in Eclipse via the m2e project. While projects can still decide to not use m2e for their
+	projects, the support for that via additional menu actions in STS will be gone.</p>
+<br/>
+
+
+<hr/>
+
+
+<p class="nan2"><a name="misc"></a>Miscellaneous</a>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools/sts/all">https://spring.io/tools/sts/all</a></p>
+<p>Spring Tools Issue tracker: <a href="https://github.com/spring-projects/spring-ide/issues">https://github.com/spring-projects/spring-ide/issues</a></p>
+
+<hr/>
+
+
+<h2>Known issues in this release</h2>
+
+<h3>Running on JDK9</h3>
+
+<p>Using a few options, it is possible to run and use the Spring Tool Suite on top of a JDK9. However, please notice that
+	the Maven support in Eclipse/STS runs within the JVM of the IDE and therefore also uses the JDK9 runtime. While that isn't
+	necessarily a problem, having Maven modules in your build that aren't compatible with Java9 might cause your project
+	build to fail in Eclipse/STS.</p>
+<p>
+	This is the case, for example, if you use Spring Boot 1.5.x or earlier versions, which uses an older version of the
+	Maven jar plugin, which fails when running on top of a Java9 VM. In that case we recommend to configure Eclipse/STS
+	to run on top of a Java8 runtime (<a href="https://wiki.eclipse.org/Eclipse.ini">by modifying the eclipse.ini or sts.ini
+	file accordingyly</a>).</p>
+<br/>
+		
+<h3>macOS Sierra might cause loss of settings and installed plugins</h3>
+
+<p>If you unpackage the STS archive on macOS Sierra and use it without moving it to a different location on your
+	drive, macOS Sierra Gatekeeper activates a security feature called "Path Randomization" for the app. This causes
+	the STS.app bundle to be copied to a private and randomized read-only folder on your disc every time you start
+	STS after a restart of your machine. As a result, all your third-party installs are lost as well as your global
+	configuration. As a workaround, please move the STS.app bundle to a different location on your drive before
+	starting it.</p>
+	<p>The corresponding issue in the STS issue tracker:
+		<a href="https://issuetracker.springsource.com/browse/STS-4406">STS-4406: STS 3.8.2 and MacOS Sierra</a></p>
+		<p>The corresponding bug at Eclipse: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=507328">Bug 507328 - Eclipse forgets about global settings and installed features </a></p>
+<br/>
+
+<h3>Spring Boot dashboard ngrok tunneling feature doesn't support Spring Cloud Services yet</h3>
+
+<p>The Spring Boot Dashboards ngrok tunnel feature doesn't work yet with remote service registries from Spring Cloud Services.
+	  Instead it works with self-deployed Eureka service registry apps on CF only (as described
+	  <a href="https://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry">here</a>). We
+	  are working on enhancing the ngrok tunnel feature to directly support Spring Cloud Services in the near future. In the meantime
+	  we published a tech note that describes <a href="http://static.springsource.org/sts/nan/v373/SpringToolSuite-LocalServicesAndSCS.html">
+      how to setup ngrok tunneling in combination with SCS manually</a>.</p>
+<br/>
+
+<h3>Silent loss of Functionality on Java 7 or earlier</h3>
+
+<p>STS 3.9.1 requires a JDK 8 to run on top of. If you are running it with an older JDK this may not be immediatlely apparant, but some of 
+STS functionality will simply be 'absent' because the corresponding plugins are automatically disabled by OSGI because their requirements
+are not satisfied at runtime. See also below 'Setting the JDK'.</p>
+<br/>
+
+<h3>Setting the JDK</h3>
+
+<p>STS 3.9.1 requires a JDK 8 to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
+if you don't specify which JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. 
+Add a line at the beginning "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine. Here is a detailed
+explanation <a href="https://wiki.eclipse.org/Eclipse.ini">how to configure the JVM in the ini file</a>.</p>
+<br/>
+
+<h3>Issues on Linux (GTK3)</h3>
+
+<p>Since Eclipse 4.5, Eclipse uses GTK3 is the default for the SWT widget library. In case you come across UI rendering glitches or related issues,
+	you can try to avoid them by forcing SWT to switch back to using GTK2. Just set the environment variable "SWT_GTK3=0" before launching STS.</p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="http://static.springsource.org/sts/nan/v390/NewAndNoteworthy.html">STS 3.9.0</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v384/NewAndNoteworthy.html">STS 3.8.4</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v383/NewAndNoteworthy.html">STS 3.8.0 - 3.8.3</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v373/NewAndNoteworthy.html">STS 3.7.3</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v372/NewAndNoteworthy.html">STS 3.7.2</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v371/NewAndNoteworthy.html">STS 3.7.1</a></p>
+<p><a href="http://static.springsource.org/sts/nan/v370/NewAndNoteworthy.html">STS 3.7.0</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="http://spring.io/tools">Tools</a></li>
+                  <li><a href="http://spring.io/services">Services</a></li>
+                  <li><a href="http://spring.io/about">About Us</a></li>
+                  <li><a href="http://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
