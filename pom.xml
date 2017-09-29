@@ -891,11 +891,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/oxygen/</url>
 				</repository>
-<!--				<repository>
+				<repository>
 					<id>oxygen-staging</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/staging/oxygen</url>
-				</repository> -->
+				</repository>
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
