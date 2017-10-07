@@ -901,11 +901,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.7/</url>
 				</repository> -->
-				<repository>
+<!--				<repository>
 					<id>platform-m-build</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.7-M-builds</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
@@ -925,6 +925,11 @@ Optional parameters:
 					<id>latest-m2e</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/technology/m2e/releases</url>
+				</repository>
+				<repository>
+					<id>latest-m2e-snapshot</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/m2e/milestones/1.8/1.8.2.20171007-0217/</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
