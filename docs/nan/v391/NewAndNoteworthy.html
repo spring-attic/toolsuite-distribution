@@ -115,23 +115,32 @@
 <p>The default STS distribution is now based on the recently released Eclipse Oxygen.1a (4.7.1a) release. <a href="https://www.eclipse.org/oxygen/">
 	This includes support for JDK9 and JUnit 5 now out of the box.</a></p>
 
-<p class="nan3">Attention: How to run STS on JDK9</p>
-<p>You don't have to run STS on a JDK9 to hack on projects that use Java9 and the corresponding JDK. However, if you have a JDK9 installed and decide to
-	let STS run on top of JDK9, you need to add <code></code> to the vmargs section of your STS.ini file. Otherwise you will see a not-so-nice
-	error message showing up.</p>
-
-<p class="nan3">JDK9 compatibility warning</p>
-<p>tbd</p>
+<p class="nan3">JDK9 compatibility warning (attention if you are using Spring Boot 1.5.x or earlier)</p>
+<p>STS 3.9.1 runs fine on JDK9 (and supports developing Java 9 applications). However, in case you use Maven and have
+	a build plugin configured for your project that isn't compatible with Java 9 yet, the build in Eclipse/STS will
+	fail with an exception error message. This is the case for Spring Boot projects that use Spring Boot 1.5.x or earlier.</p>
+<p>In those cases, we recommend to run Eclipse/STS on top of a JDK8. You can still configure a Java 9 JRE and develop
+	Java 9 applications, but the IDE itself would run on top of a Java 8 runtime.</p>
+<p>
+	To make people aware of this incompatibility, a special dialog will pop up as soon as STS identifies such an error
+	and will notify you of the required steps how to avoid this error.
+</p>
+<center><img src="screenshot/jdk9-compatibility-warning.png"></img></center>
 	
 <p class="nan3">macOS version of STS ships as DMG file</p>
-<p>tbd</p>
+<p>The macOS distribution of STS now ships as signed DMG file. This makes installing STS easy and avoid running into issues
+when users don't move the app after extracting the tar.gz file in the past (due to Gatekeeper and App Translocation security
+features on macOS).</p>
 	
 <p class="nan3">Pivotal tc Server updated to 3.2.7</p>
 <p>The latest Pivotal tc Server release 3.2.7 is now included in the STS distribution bundle.</p>
 
 <p class="nan3">Automatic conversion of boot property files to YAML</p>
-<p>tbd</p>
-	
+<p>STS 3.9.1 allows you to automatically convert application.properties config files into YAML files. Right-click on the
+	application.properties file and select the automatic conversation to YAML. A preview diff dialog will show up and display
+	a nice diff preview of the result.</p>
+<center><img src="screenshot/properties-yaml-refactoring.png"></img></center>
+
 <p class="nan3">Changes to the Spring Cloud CLI integration</p>
 <p>tbd</p>
 	
@@ -174,15 +183,6 @@
 	from time to time. If you want to switch off those notifications, please go to the <code>Preferences -> General ->
 	Notifications</code>.</p>
 
-<p class="nan3">macOS Sierra causes lost settings and lost add-on installs</p>
-
-<p>If you unpackage the STS archive on macOS Sierra and use it without moving it to a different location on your
-	drive, macOS Sierra Gatekeeper activates a security feature called "Path Randomization" for the app. This causes
-	the STS.app bundle to be copied to a private and randomized read-only folder on your disc every time you start
-	STS after a restart of your machine. As a result, all your third-party installs are lost as well as your global
-	configuration. As a workaround, please move the STS.app bundle to a different location on your drive before
-	starting it.</p>
-
 <p class="nan3">Manual Maven support going to be removed soon</p>
 
 <p>We plan to remove the support for manual Maven projects from STS and Spring IDE in future versions of STS and
@@ -207,32 +207,31 @@
 
 <h2>Known issues in this release</h2>
 
+<h3>Running on macOS High Sierra (10.13)</h3>
+
+<p>STS 3.9.1 can run on top of macOS High Sierra. But due to a bug the ANSI Console feature (the one that nicely colors
+	the output in the console view if the app uses ANSI coloring) doesn't work on macOS High Sierra.</p>
+<p>
+	<a href="https://github.com/spring-projects/spring-ide/issues/196">https://github.com/spring-projects/spring-ide/issues/196</a></p>
+<p>
+	The issue on GitHub describes various workarounds for this issue. To avoid running into this issue, STS 3.9.1 disables the ANSI
+	color output option for Spring Boot launch configs by default when running on macOS High Sierra.</p>
+<p>
+	You can still enable the ansi coloring via the VM arguments manually, in case you need to.</p>
+<br/>
+		
 <h3>Running on JDK9</h3>
 
-<p>Using a few options, it is possible to run and use the Spring Tool Suite on top of a JDK9. However, please notice that
-	the Maven support in Eclipse/STS runs within the JVM of the IDE and therefore also uses the JDK9 runtime. While that isn't
-	necessarily a problem, having Maven modules in your build that aren't compatible with Java9 might cause your project
-	build to fail in Eclipse/STS.</p>
+<p>STS 3.9.1 can run on top of a JDK out-of-the-box. However, please notice that the Maven support in Eclipse/STS runs
+	within the JVM of the IDE and therefore also uses the JDK9 runtime. While that isn't necessarily a problem, having
+	Maven modules in your build that aren't compatible with Java 9 might cause your project build to fail in Eclipse/STS.</p>
 <p>
 	This is the case, for example, if you use Spring Boot 1.5.x or earlier versions, which uses an older version of the
-	Maven jar plugin, which fails when running on top of a Java9 VM. In that case we recommend to configure Eclipse/STS
-	to run on top of a Java8 runtime (<a href="https://wiki.eclipse.org/Eclipse.ini">by modifying the eclipse.ini or sts.ini
+	Maven jar plugin, which fails when running on top of a Java 9 VM. In that case we recommend to configure Eclipse/STS
+	to run on top of a Java 8 runtime (<a href="https://wiki.eclipse.org/Eclipse.ini">by modifying the eclipse.ini or sts.ini
 	file accordingyly</a>).</p>
 <br/>
 		
-<h3>macOS Sierra might cause loss of settings and installed plugins</h3>
-
-<p>If you unpackage the STS archive on macOS Sierra and use it without moving it to a different location on your
-	drive, macOS Sierra Gatekeeper activates a security feature called "Path Randomization" for the app. This causes
-	the STS.app bundle to be copied to a private and randomized read-only folder on your disc every time you start
-	STS after a restart of your machine. As a result, all your third-party installs are lost as well as your global
-	configuration. As a workaround, please move the STS.app bundle to a different location on your drive before
-	starting it.</p>
-	<p>The corresponding issue in the STS issue tracker:
-		<a href="https://issuetracker.springsource.com/browse/STS-4406">STS-4406: STS 3.8.2 and MacOS Sierra</a></p>
-		<p>The corresponding bug at Eclipse: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=507328">Bug 507328 - Eclipse forgets about global settings and installed features </a></p>
-<br/>
-
 <h3>Spring Boot dashboard ngrok tunneling feature doesn't support Spring Cloud Services yet</h3>
 
 <p>The Spring Boot Dashboards ngrok tunnel feature doesn't work yet with remote service registries from Spring Cloud Services.
@@ -245,14 +244,14 @@
 
 <h3>Silent loss of Functionality on Java 7 or earlier</h3>
 
-<p>STS 3.9.1 requires a JDK 8 to run on top of. If you are running it with an older JDK this may not be immediatlely apparant, but some of 
+<p>STS 3.9.1 requires a JDK 8 or JDK9 to run on top of. If you are running it with an older JDK this may not be immediatlely apparant, but some of 
 STS functionality will simply be 'absent' because the corresponding plugins are automatically disabled by OSGI because their requirements
 are not satisfied at runtime. See also below 'Setting the JDK'.</p>
 <br/>
 
 <h3>Setting the JDK</h3>
 
-<p>STS 3.9.1 requires a JDK 8 to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
+<p>STS 3.9.1 requires a JDK 8 or JDK9 to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
 if you don't specify which JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. 
 Add a line at the beginning "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine. Here is a detailed
 explanation <a href="https://wiki.eclipse.org/Eclipse.ini">how to configure the JVM in the ini file</a>.</p>
