@@ -926,11 +926,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/technology/m2e/releases</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>latest-m2e-milestones</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/technology/m2e/milestones/1.8/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
@@ -959,7 +959,7 @@ Optional parameters:
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201509090157/</url>
+					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.0/N/LATEST</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
@@ -984,7 +984,7 @@ Optional parameters:
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.0/</url>
+					<url>http://download.eclipse.org/cft/1.1.1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
