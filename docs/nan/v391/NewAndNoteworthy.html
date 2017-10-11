@@ -132,8 +132,8 @@
 when users don't move the app after extracting the tar.gz file in the past (due to Gatekeeper and App Translocation security
 features on macOS).</p>
 	
-<p class="nan3">Pivotal tc Server updated to 3.2.7</p>
-<p>The latest Pivotal tc Server release 3.2.7 is now included in the STS distribution bundle.</p>
+<p class="nan3">Pivotal tc Server updated to 3.2.8</p>
+<p>The latest Pivotal tc Server release 3.2.8 is now included in the STS distribution bundle.</p>
 
 <p class="nan3">Automatic conversion of boot property files to YAML</p>
 <p>STS 3.9.1 allows you to automatically convert application.properties config files into YAML files. Right-click on the
@@ -148,11 +148,29 @@ features on macOS).</p>
 <center><img src="screenshot/spring-cloud-services-wizard.png"></img></center>
 	
 <p class="nan3">New code templates for @Get/Post/Put/Delete/PatchMapping</p>
-<p>tbd</p>
+<p>STS 3.9.1 enhances the code templates around request mappings with new ones for the more specific meta annotations <code>GetMapping</code>,
+	<code>PostMapping</code>, <code>PutMapping</code>, and <code>DeleteMapping</code>.</p>
+<center><img src="screenshot/new-mapping-templates.png"></img></center>
 	
-<p class="nan3">Experimental: use Sprig Boot Thin JAR wrapper to launch boot apps</p>
-<p>tbd</p>
-	
+<p class="nan3">Experimental: use Spring Boot Thin JAR wrapper to launch boot apps</p>
+<p>As an experimental feature this release of STS introduces the option to launch Spring Boot apps from within the IDE using the
+	Thin launcher approach that Dave Syer implemented: <a href="https://github.com/dsyer/spring-boot-thin-launcher">spring-boot-thin-launcher (on GitHub)</a>.
+	This approach allows you to create a thin jar without all the dependencies that you have configured in your pom. Instead, a thin jar launcher
+	is placed and configured into your small JAR file. When the app launches, the thin jar launcher will resolve and fetch the necessary dependencies
+	and launch the boot app.</p>
+<p>Even though this approach to launch an app doesn't make a lot of sense when working on the app in an IDE like STS (since the IDE already resolved
+	the necessary dependencies for you), you might want to launch the boot app from time to time using this approach for testing purposes. To support
+	that, we include preliminary support for this in STS.</p>
+<p>In order to use this, you have to point STS to the thin jar launcher that you would like to use in the preferences:</p>
+<center><img src="screenshot/thin-jar-launcher-preference.png"></img></center>
+
+<p>You should select the thin jar launcher library that you would like to use for launching the app. Usually, if you have the thin jar launcher
+	configured in your build, Maven might already downloaded the corresponding artifact (to be used during the Maven build), so you can look
+	that up in your local Maven repo. The name of the JAR is, for example: <code>spring-boot-thin-wrapper-1.0.7.RELEASE.jar</code>.
+</p>
+<p>Once you configured this launcher in the preferences, you can enable it for each boot app launch config:</p>
+<center><img src="screenshot/thin-jar-launcher-launch-config.png"></img></center>
+
 <hr/>
 
 <p class="nan3">Important Changes and Fixes</p>
