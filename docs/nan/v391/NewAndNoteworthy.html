@@ -240,6 +240,14 @@ features on macOS).</p>
 	color output option for Spring Boot launch configs by default when running on macOS High Sierra.</p>
 <p>
 	You can still enable the ansi coloring via the VM arguments manually, in case you need to.</p>
+	
+<br/>
+	
+<h3>Deleting Eureka service instances from Boot Dashboard</h3>
+
+<p>Deleting certain Eureka service instances, like p-service-registry in Pivotal Web Services, from boot dashboard Cloud Foundry targets may experience problems with timeouts. The same issue may be found when deleting them from
+Eclipse Tools for Cloud Foundry (CFT). A workaround is to use the cf CLI to delete these service instances.</p>
+
 <br/>
 		
 <h3>Running on JDK9</h3>
