@@ -997,6 +997,11 @@ Optional parameters:
 					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 				<repository>
+					<id>latest-buildship-release</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
+				</repository>
+				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
