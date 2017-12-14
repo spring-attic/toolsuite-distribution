@@ -1057,16 +1057,16 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/${dist.type}/TOOLS/gradle/${dist.eclipse-integration-gradle-version}</url>
 		</repository>
-<!--		<repository>
+		<repository>
 			<id>sts4-language-servers-snapshots</id>
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
-		</repository> -->
-		<repository>
+		</repository>
+<!--		<repository>
 			<id>sts4-language-servers-specific-release</id>
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers/0.0.10.201710110505/</url>
-		</repository>
+		</repository> -->
 <!--		<repository>
 			<id>sts4-language-servers-releases</id>
 			<layout>p2</layout>
