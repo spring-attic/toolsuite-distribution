@@ -338,6 +338,10 @@
 		<category name="Uncategorized"/>
 	</bundle>
 
+	<bundle id="org.springframework.ide.eclipse.beans.ui.live" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
 	<bundle id="io.projectreactor.reactor-core" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
