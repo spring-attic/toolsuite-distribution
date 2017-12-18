@@ -119,9 +119,15 @@
 
 <p class="nan3">Important Changes and Fixes</p>
 <br/>
-<ul>
-<li>...</li>
-</ul>
+
+<p class="nan3">Improvements in Replacing Existing Cloud Foundry Applications in the Boot Dashboard</p>
+<p>In older versions of STS, dragging and dropping a project with the same name as an existing deployed application in Cloud Foundry would just open a simple dialogue warning the user that existing service bindings would be removed, but not show any differences between the manifest file in the project and the actual deployed application.</p>
+<p>New to 3.9.2., this has been improved to show actual differences between the manifest file, if one exists in the project, and the existing application in Cloud Foundry.</p>
+<p>A user can chose to use the local manifest file to make changes to the existing application, or can also chose to ignore the manifest file, and retain the existing properties, like memory, routes and environment variables, as well as existing service bindings. In the latter case, only the file contents of the application will be changed, but all Cloud Foundry properties will be retained</p>
+<p>Likewise, if the project does not contain a manifest file, and a user drag/drops the project into the dashboard, only the contents of the existing application in Cloud Foundry will be changed, but not any other Cloud Foundry properties, like service bindings, environment variables, etc..</p>
+<br/>
+<center><img src="screenshot/replace-app-boot-dash.png"></img></center>
+
 
 <hr/>
 
