@@ -55,6 +55,10 @@
 	<category name="Spring Tooling Language Servers for Eclipse"/>
   </feature>
 
+  <bundle id="org.springframework.tooling.ls.eclipse.commons">
+	  <category name="Uncategorized"/>
+  </bundle>
+
   <bundle id="org.eclipse.lsp4j" version="0.0.0">
 	<category name="Uncategorized"/>
   </bundle>
