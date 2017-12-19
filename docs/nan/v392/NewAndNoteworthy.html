@@ -112,13 +112,22 @@
 <p class="nan2">Updates and New/Enhanced Features</p>
 
 <p class="nan3">Eclipse Oxygen.2 (4.7.2), including support for Java9 and JUnit 5</p>
-<p>The default STS distribution is now based on the recently released Eclipse Oxygen.2 (4.7.2) release. <a href="https://www.eclipse.org/eclipse/news/4.7.2/">
-	This includes support for JDK9 and JUnit 5 out of the box.</a></p>
+<p>The default STS distribution is now based on the recently released Eclipse Oxygen.2 (4.7.2) release, please take a look at the <a href="https://www.eclipse.org/eclipse/news/4.7.2/">New and Noteworty.</a> This includes support for JDK9 and JUnit 5 out of the box.</p>
 
-<hr/>
-
-<p class="nan3">Important Changes and Fixes</p>
-<br/>
+<p class="nan3">Early Access: Spring Tools 4 Public Beta extension for STS 3.9.x</p>
+<p>At this years SpringOne Platform conference, we announced the public beta access for the upcoming all-new next generation of the Spring tooling,
+	called Spring Tools 4. If you haven't had the chance to take a look, here is the <a href="https://spring.io/tools4">Spring Tools 4 website</a>.</p>
+<p>In case you want to learn more, here is a great Spring Tip video that Josh Long recorded about the now available public beta of the all-new Spring Tools 4:</p>
+</br>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/m-AOu6vzJMQ?rel=0" frameborder="0" allowfullscreen></iframe></center>
+<p> There is also the full recording of the talk at SpringOne Platform 2017 avaiable on YouTube:</p>
+</br>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/v14bhGRo_zk?rel=0" frameborder="0" allowfullscreen></iframe></center>
+<p>While the Spring Tools 4 Public Beta (and the Spring Tools 4 in general) come as a totally new and independent distribution of Eclipse (called the Spring Tool Suite 4), extensions for Visual Studio Code and Atom, we also offer an early access extension pack for the now-releases STS 3.9.2
+	distribution (via the Extension Install listing on the STS dashboard). You can add this extension pack to your STS 3.9.2 install to get an
+	early impression of the new tooling - and provide feedback, of course.</p>
+<p>Please keep in mind that the new Spring Tools 4 distribution will replace the existing STS 3.9.x distributions in mid of 2018 and will
+	require a fresh install of the Spring Tools 4.</p>
 
 <p class="nan3">Improvements in Replacing Existing Cloud Foundry Applications in the Boot Dashboard</p>
 <p>In older versions of STS, dragging and dropping a project with the same name as an existing deployed application in Cloud Foundry would just open a simple dialogue warning the user that existing service bindings would be removed, but not show any differences between the manifest file in the project and the actual deployed application.</p>
@@ -128,6 +137,13 @@
 <br/>
 <center><img src="screenshot/replace-app-boot-dash.png"></img></center>
 
+<hr/>
+
+<p class="nan3">Important Changes and Fixes</p>
+</br>
+<ul>
+	<li>Help menu contains item for accessing the dashboard again (<a href="https://github.com/spring-projects/spring-ide/issues/208">#208</a>)</li>
+</ul>
 
 <hr/>
 
