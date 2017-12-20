@@ -238,6 +238,11 @@ Eclipse Tools for Cloud Foundry (CFT). A workaround is to use the cf CLI to dele
       how to setup ngrok tunneling in combination with SCS manually</a>.</p>
 <br/>
 
+<h3>Boot App launched with Thin Jar Launcher hangs during start up</h3>
+
+<p>Workaround is open launch configuration for the Boot App. Navigate to <strong><u>Spring Boot</u></strong> tab and enter a boot property into "Override Properties" table. For example <code>server.port</code> and value <code>8080</code>. Save the launch configuration and re-launch your Boot App.</p>
+<br/>
+
 <h3>Silent loss of Functionality on Java 7 or earlier</h3>
 
 <p>STS 3.9.2 requires a JDK 8 or JDK9 to run on top of. If you are running it with an older JDK this may not be immediatlely apparant, but some of 
