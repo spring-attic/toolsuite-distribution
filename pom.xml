@@ -860,15 +860,15 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/releases/0.3.0</url>
+					<url>http://download.eclipse.org/lsp4e/0.5.0milestone/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1001,15 +1001,15 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/releases/0.3.0</url>
+					<url>http://download.eclipse.org/lsp4e/0.5.0milestone/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1057,16 +1057,16 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/${dist.type}/TOOLS/gradle/${dist.eclipse-integration-gradle-version}</url>
 		</repository>
-		<repository>
+<!--		<repository>
 			<id>sts4-language-servers-snapshots</id>
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
-		</repository>
-<!--		<repository>
+		</repository> -->
+		<repository>
 			<id>sts4-language-servers-specific-release</id>
 			<layout>p2</layout>
-			<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers/0.0.10.201710110505/</url>
-		</repository> -->
+			<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers/0.1.2.201712181605/</url>
+		</repository>
 <!--		<repository>
 			<id>sts4-language-servers-releases</id>
 			<layout>p2</layout>
