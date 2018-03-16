@@ -886,16 +886,16 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-				<repository>
+<!--				<repository>
 					<id>oxygen</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/oxygen/</url>
-				</repository>
-<!--				<repository>
+				</repository> -->
+				<repository>
 					<id>oxygen-staging</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/staging/oxygen</url>
-				</repository> -->
+				</repository>
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
@@ -909,7 +909,7 @@ Optional parameters:
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository/</url>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20180206163158/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
@@ -1035,7 +1035,7 @@ Optional parameters:
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20180119201206/repository/</url>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20180302171354/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
