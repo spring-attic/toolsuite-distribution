@@ -901,11 +901,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.7/</url>
 				</repository> -->
-<!--				<repository>
+				<repository>
 					<id>platform-m-build</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.7-M-builds</url>
-				</repository> -->
+				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
