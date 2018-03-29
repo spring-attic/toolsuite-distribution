@@ -925,6 +925,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/technology/m2e/releases</url>
 				</repository>
+				<repository>
+					<id>snapshots-m2e</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/technology/m2e/snapshots/1.8.3/latest/</url>
+				</repository>
 <!--				<repository>
 					<id>latest-m2e-milestones</id>
 					<layout>p2</layout>
