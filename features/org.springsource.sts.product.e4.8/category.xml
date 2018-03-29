@@ -297,15 +297,6 @@
 		<category name="Resources / Spring IDE" />
 	</feature>
 
- 	<!-- Gradle -->
- 	<category-def name="Core / Eclipse Integration for Gradle" label="Core / Eclipse Integration for Gradle"/>
-
-	<feature
-		id="org.springsource.ide.eclipse.gradle.feature"
-		version="0.0.0">
-		<category name="Core / Eclipse Integration for Gradle" />
- 	</feature>
-
 	<bundle id="org.springsource.ide.eclipse.commons.content.core" version="0.0.0">
 		<category name="Uncategorized"/>
 	</bundle>
