@@ -174,15 +174,6 @@
       <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
       <import feature="org.eclipse.recommenders.rcp.feature"/>
 
-      <import feature="org.eclipse.rse"/>
-      <import feature="org.eclipse.rse.core"/>
-      <import feature="org.eclipse.rse.dstore"/>
-      <import feature="org.eclipse.rse.ftp"/>
-      <import feature="org.eclipse.rse.local"/>
-      <import feature="org.eclipse.rse.ssh"/>
-      <import feature="org.eclipse.rse.telnet"/>
-      <import feature="org.eclipse.rse.useractions"/>
-
 	  <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
       <import feature="org.eclipse.tm.terminal.connector.ssh.feature"/>
       <import feature="org.eclipse.tm.terminal.connector.telnet.feature"/>
