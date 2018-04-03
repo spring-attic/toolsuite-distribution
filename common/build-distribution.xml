@@ -5,6 +5,7 @@
 	<property name="tcserver.version" value="4.0.0.RELEASE" />
 	<property name="sts-rootfolder" value="sts-bundle" />
 	<property name="tcserver.name" value="pivotal-tc-server-developer-${tcserver.version}" />
+	<property name="tcserver.name.unzipped" value="pivotal-tc-server" />
 	<property name="tcserver.root" value="http://dist.springsource.com/release/STS/bundle" />
 
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/${product.folder.sts}/target/products/" />
@@ -88,7 +89,7 @@
 			<arg value="${destName}"/>
 			<arg value="-C"/>
 			<arg value="${project.build.directory}"/>
-			<arg value="${tcserver.name}"/>
+			<arg value="${tcserver.name.unzipped}"/>
 			<arg value="-C"/>
 			<arg value="${product.build.directory.sts}/${path}"/>
 			<arg value="sts-${unqualifiedVersion}.${p2.qualifier}"/>
@@ -110,7 +111,7 @@
 			<arg value="${destName}"/>
 			<arg value="-C"/>
 			<arg value="${project.build.directory}"/>
-			<arg value="${tcserver.name}"/>
+			<arg value="${tcserver.name.unzipped}"/>
 			<arg value="-C"/>
 			<arg value="${product.build.directory.sts}/${path}"/>
 			<arg value="STS.app"/>
@@ -134,7 +135,7 @@
 	<target name="create-sts-bundle-archive-zip">
 		<zip destfile="${destName}">
 			<zipfileset dir="${product.build.directory.sts}/${path}/sts-${unqualifiedVersion}.${p2.qualifier}" prefix="${sts-rootfolder}/sts-${unqualifiedVersion}.${p2.qualifier}"/>
-			<zipfileset dir="${project.build.directory}/${tcserver.name}" prefix="${sts-rootfolder}/${tcserver.name}"/>
+			<zipfileset dir="${project.build.directory}/${tcserver.name.unzipped}" prefix="${sts-rootfolder}/${tcserver.name.unzipped}"/>
 			<zipfileset dir="${project.build.directory}/../legal" prefix="${sts-rootfolder}/legal"/>
 		</zip>
 
