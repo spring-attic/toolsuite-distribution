@@ -1005,15 +1005,10 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
 				</repository>
-<!--				<repository>
-					<id>lsp4e-snapshots</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
-				</repository> -->
 				<repository>
-					<id>lsp4e-releases</id>
+					<id>lsp4e-050-snapshots</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.0milestone/</url>
+					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
 			</repositories>
 			<modules>
