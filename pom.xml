@@ -885,30 +885,30 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-<!--				<repository>
+				<repository>
 					<id>oxygen</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/oxygen/</url>
-				</repository> -->
-				<repository>
+				</repository>
+<!--				<repository>
 					<id>oxygen-staging</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/staging/oxygen</url>
-				</repository>
+				</repository> -->
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.7/</url>
 				</repository> -->
-				<repository>
+<!--				<repository>
 					<id>platform-m-build</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/eclipse/updates/4.7-M-builds</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20180206163158/repository/</url>
+					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20180330011457/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
