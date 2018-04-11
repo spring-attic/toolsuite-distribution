@@ -1006,6 +1006,11 @@ Optional parameters:
 					<url>http://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
 				</repository>
 				<repository>
+					<id>latest-wtp-fix</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/webtools/downloads/drops/R3.9.4/R-3.9.4.RC3-20180409100740/repository</url>
+				</repository>
+				<repository>
 					<id>lsp4e-050-snapshots</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
