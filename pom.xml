@@ -867,7 +867,7 @@ Optional parameters:
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.0milestone/</url>
+					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1139,7 +1139,7 @@ Optional parameters:
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.0milestone/</url>
+					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
 			</repositories>
 			<modules>
