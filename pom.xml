@@ -1008,7 +1008,7 @@ Optional parameters:
 				<repository>
 					<id>latest-wtp-fix</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/webtools/downloads/drops/R3.9.4/R-3.9.4.RC3-20180409100740/repository</url>
+					<url>http://download.eclipse.org/webtools/downloads/drops/R3.9.5/R-3.9.5-20180409100740/repository</url>
 				</repository>
 				<repository>
 					<id>lsp4e-050-snapshots</id>
@@ -1197,16 +1197,16 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers</url>
 		</repository> -->
-		<repository>
+<!--		<repository>
 			<id>egit</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/egit/updates</url>
-		</repository>
-		<repository>
+		</repository> -->
+<!--		<repository>
 			<id>egit-github</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/egit/github/updates</url>
-		</repository>
+		</repository> -->
 		<repository>
 			<id>m2eclipse-legacy</id>
 			<layout>p2</layout>
