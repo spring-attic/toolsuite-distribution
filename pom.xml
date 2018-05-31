@@ -1049,7 +1049,7 @@ Optional parameters:
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/47/dev/update</url>
+					<url>http://download.eclipse.org/tools/ajdt/48/dev/update</url>
 				</repository>
 				<repository>
 					<id>latest-m2e</id>
