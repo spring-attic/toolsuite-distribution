@@ -36338,6 +36338,7 @@ Alternatively, the Source Files may accompany the Pivotal product.
       <feature id="org.eclipse.egit" installMode="root"/>
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.jgit" installMode="root"/>
+      <feature id="org.eclipse.jgit.lfs" installMode="root"/>
 
       <feature id="net.mihai-nita.ansicon" installMode="root"/>
 
