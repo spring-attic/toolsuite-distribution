@@ -1091,11 +1091,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
-<!--				<repository>
+				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.0/N/LATEST</url>
-				</repository> -->
+					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
+				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
