@@ -1036,11 +1036,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/photon/</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>photon-staging</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/staging/photon/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
