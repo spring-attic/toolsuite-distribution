@@ -1015,6 +1015,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
+				<repository>
+					<id>sts4-language-servers-specific-release</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180406/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.7</module>
@@ -1146,6 +1151,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
+				<repository>
+					<id>sts4-language-servers-specific-release</id>
+					<layout>p2</layout>
+					<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180626/</url>
+				</repository>
 			</repositories>
 			<modules>
 				<module>features/org.springsource.sts.package.e4.8</module>
@@ -1192,11 +1202,6 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>http://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
 		</repository> -->
-		<repository>
-			<id>sts4-language-servers-specific-release</id>
-			<layout>p2</layout>
-			<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180626/</url>
-		</repository>
 <!--		<repository>
 			<id>sts4-language-servers-releases</id>
 			<layout>p2</layout>
