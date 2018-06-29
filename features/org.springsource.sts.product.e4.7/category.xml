@@ -59,10 +59,6 @@
 	  <category name="Uncategorized"/>
   </bundle>
 
-  <bundle id="org.springframework.tooling.jdt.ls.commons">
-	  <category name="Uncategorized"/>
-  </bundle>
-
   <bundle id="org.eclipse.lsp4j" version="0.0.0">
 	<category name="Uncategorized"/>
   </bundle>
