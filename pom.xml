@@ -1051,6 +1051,11 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20180606145124/repository</url>
 				</repository>
+				<repository> <!-- update because of bug on mpc client that got released with Photon.0 -->
+					<id>mpc-client</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/mpc/releases/1.7.1/</url>
+				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
