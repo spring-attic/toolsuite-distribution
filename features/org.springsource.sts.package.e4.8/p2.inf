@@ -10,3 +10,12 @@ instructions.unconfigure=\
  org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/photon);\
  org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.8);\
  org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.8)
+
+ # Bug 530093: make sure we have latest version of a.jre.javase included with product
+ requires.3.namespace=org.eclipse.equinox.p2.iu
+ requires.3.name=a.jre.javase
+ requires.3.range=[9.0.0,9.0.0]
+ requires.4.namespace=org.eclipse.equinox.p2.iu
+ requires.4.name=config.a.jre.javase
+ requires.4.range=[9.0.0,9.0.0]
+ 
