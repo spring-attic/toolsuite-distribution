@@ -1,0 +1,12 @@
+{
+  "title": "Spring Tool Suite",
+  "icon": "../../plugins/org.springsource.sts/sts.icns",
+  "contents": [
+    { "x": 192, "y": 100, "type": "file", "path": "../../features/org.springsource.sts.product.e4.9/target/products/org.springsource.sts.ide/macosx/cocoa/x86_64/STS.app" },
+    { "x": 448, "y": 100, "type": "link", "path": "/Applications" },
+    { "x": 192, "y": 250, "type": "file", "path": "target/pivotal-tc-server" },
+    { "x": 448, "y": 250, "type": "file", "path": "legal" },
+    { "x": 1000, "y": 2000, "type": "file", "path": "../../plugins/org.springsource.sts/sts.icns", "name": ".VolumeIcon.icns" }
+  ],
+  "format": "UDZO"
+}
