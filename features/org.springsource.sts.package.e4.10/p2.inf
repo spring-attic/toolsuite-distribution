@@ -1,0 +1,12 @@
+instructions.configure=\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/releases/2018-12,name:2018-12);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/releases/2018-12,name:2018-12);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.10,name:SpringSource Update Site for Eclipse 4.10);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.10,name:SpringSource Update Site for Eclipse 4.10);\
+ org.eclipse.equinox.p2.touchpoint.natives.mkdir(path:${installFolder}/dropins);
+
+instructions.unconfigure=\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/2018-12);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/2018-12);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.10);\
+ org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.springsource.com/release/TOOLS/update/e4.10)
