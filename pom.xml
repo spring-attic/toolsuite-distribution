@@ -1451,6 +1451,12 @@ Optional parameters:
 			</modules>
 		</profile>
 
+		<profile>
+			<id>spring-bundles-e410</id>
+			<modules>
+				<module>releng/org.springsource.sts.distribution-bundles.e410</module>
+			</modules>
+		</profile>
 	</profiles>
 
 	<repositories>

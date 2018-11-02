@@ -1,0 +1,5 @@
+The copyright statements and licenses which apply to various open source 
+software packages (or portions thereof) that are distributed with this 
+Pivotal Software, Inc. Product are published at the following URL;
+
+  https://network.pivotal.io/open-source
