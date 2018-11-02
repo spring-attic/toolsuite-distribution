@@ -163,9 +163,9 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.mylyn.github.feature"/>
 
-      <import feature="org.eclipse.oomph.p2"/>
+<!--      <import feature="org.eclipse.oomph.p2"/>
       <import feature="org.eclipse.oomph.setup"/>
-      <import feature="org.eclipse.oomph.setup.core"/>
+      <import feature="org.eclipse.oomph.setup.core"/> -->
 
       <import feature="org.eclipse.pde"/>
       <import feature="org.eclipse.platform"/>
