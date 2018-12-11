@@ -161,7 +161,7 @@
       <import feature="org.eclipse.mylyn.tasks.ide"/>
       <import feature="org.eclipse.mylyn.team_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.mylyn.github.feature"/>
+      <import feature="org.eclipse.mylyn.git"/>
 
 <!--      <import feature="org.eclipse.oomph.p2"/>
       <import feature="org.eclipse.oomph.setup"/>
