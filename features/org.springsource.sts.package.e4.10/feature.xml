@@ -171,8 +171,8 @@
       <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.rcp"/>
 
-      <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
-      <import feature="org.eclipse.recommenders.rcp.feature"/>
+<!--      <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.rcp.feature"/> -->
 
 	  <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
       <import feature="org.eclipse.tm.terminal.connector.ssh.feature"/>
