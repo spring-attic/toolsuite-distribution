@@ -1313,10 +1313,15 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-				<repository>
+<!--				<repository>
 					<id>2018-12</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/2018-12/</url>
+				</repository> -->
+				<repository>
+					<id>2018-12-staging</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/staging/2018-12/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
