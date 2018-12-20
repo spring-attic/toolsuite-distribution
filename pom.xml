@@ -1426,7 +1426,7 @@ Optional parameters:
 				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20181217/</url>
+					<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20181220/</url>
 				</repository>
 			</repositories>
 			<modules>
