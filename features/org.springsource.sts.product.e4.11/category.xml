@@ -210,11 +210,6 @@
 		<category name="Integrations / Spring IDE" />
 	</feature>
 	
-	<feature
-		id="org.springframework.ide.eclipse.aeri.feature" version="0.0.0">
-		<category name="Integrations / Spring IDE" />
-	</feature>
-	
 	<!-- Resources features -->
 	<feature
 		id="org.springframework.ide.eclipse.feature.source" version="0.0.0">
@@ -293,11 +288,6 @@
 
 	<feature
 		id="org.springframework.ide.eclipse.cft.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-
-	<feature
-		id="org.springframework.ide.eclipse.aeri.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
 
