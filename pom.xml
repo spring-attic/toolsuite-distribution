@@ -1444,11 +1444,11 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-				<repository>
+<!--				<repository>
 					<id>2019-03</id>
 					<layout>p2</layout>
 					<url>http://download.eclipse.org/releases/2019-03/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>2019-03-staging</id>
 					<layout>p2</layout>
