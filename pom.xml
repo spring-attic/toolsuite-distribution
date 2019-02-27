@@ -19,8 +19,8 @@ Optional parameters:
 -Pdist                       builds distribution packages
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springsource.sts</groupId>
@@ -35,11 +35,38 @@ Optional parameters:
 	<packaging>pom</packaging>
 
 	<scm>
-		<connection>scm:git:ssh://git.springsource.com:sts/sts.git</connection>
-		<developerConnection>scm:git:ssh://git.springsource.com:sts/sts.git</developerConnection>
+		<connection>https://github.com/spring-projects/toolsuite-distribution.git</connection>
 		<tag>HEAD</tag>
-		<url>http://git.springsource.com/sts/sts</url>
+		<url>https://github.com/spring-projects/toolsuite-distribution/</url>
 	</scm>
+
+	<organization>
+		<name>Pivotal Software, Inc.</name>
+		<url>https://spring.io</url>
+	</organization>
+	<url>https://spring.io/tools</url>
+	<inceptionYear>2007</inceptionYear>
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+	<issueManagement>
+		<url>https://github.com/spring-projects/toolsuite-distribution/issues</url>
+		<system>GitHub</system>
+	</issueManagement>
+
+	<ciManagement>
+		<url>https://build.spring.io/browse/IDE</url>
+		<system>BAMBOO</system>
+	</ciManagement>
+
+	<licenses>
+		<license>
+			<name>Eclipse Public License v1.0</name>
+			<url>https://www.eclipse.org/legal/epl-v10.html</url>
+		</license>
+	</licenses>
 
 	<properties>
 
@@ -75,72 +102,72 @@ Optional parameters:
 				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/3.7/</url>
+					<url>https://download.eclipse.org/eclipse/updates/3.7/</url>
 				</repository>
 				<repository>
 					<id>indigo</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/indigo/</url>
+					<url>https://download.eclipse.org/releases/indigo/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20120119162704/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20120119162704/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/indigo</url>
+					<url>https://download.eclipse.org/mylyn/releases/indigo</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/37/milestone/</url>
+					<url>https://download.eclipse.org/tools/ajdt/37/milestone/</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+					<url>https://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/milestone/GRECLIPSE/e3.7</url>
+					<url>https://dist.springsource.org/milestone/GRECLIPSE/e3.7</url>
 				</repository>
 				<repository>
 					<id>linked-resources-patch</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/patches/bug367669</url>
+					<url>https://dist.springsource.com/release/TOOLS/patches/bug367669</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 				</repository>
 				<repository>
 					<id>m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
+					<url>https://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120926-1337/</url>
+					<url>https://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20120926-1337/</url>
 				</repository>
 				<repository>
 					<id>maven-helper</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/m2e/</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/m2e/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401052352/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401052352/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -161,67 +188,67 @@ Optional parameters:
 				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/3.8/</url>
+					<url>https://download.eclipse.org/eclipse/updates/3.8/</url>
 				</repository>
 				<repository>
 					<id>juno</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/juno/</url>
+					<url>https://download.eclipse.org/releases/juno/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/juno</url>
+					<url>https://download.eclipse.org/mylyn/releases/juno</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/42/milestone/</url>
+					<url>https://download.eclipse.org/tools/ajdt/42/milestone/</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+					<url>https://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/milestone/GRECLIPSE/e4.2</url>
+					<url>https://dist.springsource.org/milestone/GRECLIPSE/e4.2</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 				</repository>
 				<repository>
 					<id>m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
+					<url>https://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/juno/</url>
+					<url>https://download.eclipse.org/m2e-wtp/releases/juno/</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -242,67 +269,67 @@ Optional parameters:
 				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.2/</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.2/</url>
 				</repository>
 				<repository>
 					<id>juno</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/juno/</url>
+					<url>https://download.eclipse.org/releases/juno/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20130118183705/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/juno</url>
+					<url>https://download.eclipse.org/mylyn/releases/juno</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/42/milestone/</url>
+					<url>https://download.eclipse.org/tools/ajdt/42/milestone/</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+					<url>https://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/milestone/GRECLIPSE/e4.2</url>
+					<url>https://dist.springsource.org/milestone/GRECLIPSE/e4.2</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.6</url>
 				</repository>
 				<repository>
 					<id>m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
+					<url>https://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/juno/</url>
+					<url>https://download.eclipse.org/m2e-wtp/releases/juno/</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -323,87 +350,87 @@ Optional parameters:
 				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.3/</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.3/</url>
 				</repository>
 				<repository>
 					<id>kepler</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/kepler/</url>
+					<url>https://download.eclipse.org/releases/kepler/</url>
 				</repository>
 <!--				<repository>
 					<id>kepler-updates</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/maintenance/</url>
+					<url>https://download.eclipse.org/releases/maintenance/</url>
 				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/</url>
 				</repository>
 				<repository>
 					<id>java8-patches</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.3-P-builds/P20140317-1600</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.3-P-builds/P20140317-1600</url>
 				</repository>
 				<repository>
 					<id>wtp-patches</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/webtools/patches/drops/R3.5.2/P-3.5.2-20140329045715/repository</url>
+					<url>https://download.eclipse.org/webtools/patches/drops/R3.5.2/P-3.5.2-20140329045715/repository</url>
 				</repository>
 				<repository>
 					<id>m2e-java8-update</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases/1.4/1.4.1.20140328-1905</url>
+					<url>https://download.eclipse.org/technology/m2e/releases/1.4/1.4.1.20140328-1905</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/43j8/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/43j8/dev/update</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+					<url>https://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.3-j8</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.3-j8</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases/1.4/1.4.1.20140328-1905</url>
+					<url>https://download.eclipse.org/technology/m2e/releases/1.4/1.4.1.20140328-1905</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/kepler</url>
+					<url>https://download.eclipse.org/m2e-wtp/releases/kepler</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e3.7/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -424,87 +451,87 @@ Optional parameters:
 				<repository>
 					<id>luna</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/luna/</url>
+					<url>https://download.eclipse.org/releases/luna/</url>
 				</repository>
 				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.4/</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.4/</url>
 				</repository>
 <!--				<repository>
 					<id>luna-updates</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/maintenance/</url>
+					<url>https://download.eclipse.org/releases/maintenance/</url>
 				</repository> -->
 <!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.4-I-builds</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.4-I-builds</url>
 				</repository> -->
 <!--				<repository>
 					<id>platform-m-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.4-M-builds/</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.4-M-builds/</url>
 				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20150124073747/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20150124073747/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/44/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/44/dev/update</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
+					<url>https://download.eclipse.org/technology/swtbot/helios/dev-build/update-site/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.4</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.4</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/luna</url>
+					<url>https://download.eclipse.org/m2e-wtp/releases/luna</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201401060023/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}/e4.4/</url>
 				</repository>
 				<repository>
 					<id>cloudfoundry-eclipse</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/cft/1.0.0.M2</url>
+					<url>https://download.springsource.com/release/TOOLS/cft/1.0.0.M2</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -525,82 +552,82 @@ Optional parameters:
 				<repository>
 					<id>mars</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/mars/</url>
+					<url>https://download.eclipse.org/releases/mars/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/45/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/45/dev/update</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.5/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.5/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/mars</url>
+					<url>https://download.eclipse.org/m2e-wtp/releases/mars</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201504071521/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201504071521/</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.0.1.M2/</url>
+					<url>https://download.eclipse.org/cft/1.0.1.M2/</url>
 				</repository>
 				<repository>
 					<id>cupertino-theme</id>
@@ -610,7 +637,7 @@ Optional parameters:
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -631,92 +658,92 @@ Optional parameters:
 				<repository>
 					<id>mars</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/mars/</url>
+					<url>https://download.eclipse.org/releases/mars/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20151221205849/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/45/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/45/dev/update</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.5/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.5/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/mars</url>
+					<url>https://download.eclipse.org/m2e-wtp/releases/mars</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201504071521/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201504071521/</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.0.1.M2/</url>
+					<url>https://download.eclipse.org/cft/1.0.1.M2/</url>
 				</repository>
 				<repository>
 					<id>jdepend-eclipse</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/jdepend4eclipse</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/jdepend4eclipse</url>
 				</repository>
 				<repository>
 					<id>fontsize</id>
 					<layout>p2</layout>
-					<url>http://eclipse-fonts.googlecode.com/svn/trunk/FontsUpdate/</url>
+					<url>https://eclipse-fonts.googlecode.com/svn/trunk/FontsUpdate/</url>
 				</repository>
 				<repository>
 					<id>cupertino-theme</id>
@@ -726,7 +753,7 @@ Optional parameters:
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://www.mihai-nita.net/eclipse</url>
+					<url>https://www.mihai-nita.net/eclipse</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -747,127 +774,127 @@ Optional parameters:
 				<repository>
 					<id>neon</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/neon/</url>
+					<url>https://download.eclipse.org/releases/neon/</url>
 				</repository>
 <!--				<repository>
 					<id>mpc-fix</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mpc/releases/1.5.1a/</url>
+					<url>https://download.eclipse.org/mpc/releases/1.5.1a/</url>
 				</repository> -->
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.6/</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.6/</url>
 				</repository> -->
 <!--				<repository>
 					<id>platform-i-builds</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.6-I-builds/I20160308-0800</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.6-I-builds/I20160308-0800</url>
 				</repository> -->
 <!--				<repository>
 					<id>staging</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/staging/neon/</url>
+					<url>https://download.eclipse.org/staging/neon/</url>
 				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>mylyn-docs</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/docs/releases/3.0</url>
+					<url>https://download.eclipse.org/mylyn/docs/releases/3.0</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/46/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/46/dev/update</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.6/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.6/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-wtp</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/m2e-wtp/releases/neon</url>
+					<url>https://download.eclipse.org/m2e-wtp/releases/neon</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201509090157/</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201509090157/</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.0/</url>
+					<url>https://download.eclipse.org/cft/1.1.0/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
+					<url>https://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 <!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
 				</repository> -->
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -888,137 +915,137 @@ Optional parameters:
 				<repository>
 					<id>oxygen</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/oxygen/</url>
+					<url>https://download.eclipse.org/releases/oxygen/</url>
 				</repository>
 <!--				<repository>
 					<id>oxygen-staging</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/staging/oxygen</url>
+					<url>https://download.eclipse.org/staging/oxygen</url>
 				</repository> -->
 <!--				<repository>
 					<id>platform</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.7/</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.7/</url>
 				</repository> -->
 <!--				<repository>
 					<id>platform-m-build</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/eclipse/updates/4.7-M-builds</url>
+					<url>https://download.eclipse.org/eclipse/updates/4.7-M-builds</url>
 				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20180330011457/repository/</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20180330011457/repository/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/47/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/47/dev/update</url>
 				</repository>
 				<repository>
 					<id>latest-m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases</url>
+					<url>https://download.eclipse.org/technology/m2e/releases</url>
 				</repository>
 				<repository>
 					<id>snapshots-m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/snapshots/1.8.3/latest/</url>
+					<url>https://download.eclipse.org/technology/m2e/snapshots/1.8.3/latest/</url>
 				</repository>
 <!--				<repository>
 					<id>latest-m2e-milestones</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/milestones/1.8/</url>
+					<url>https://download.eclipse.org/technology/m2e/milestones/1.8/</url>
 				</repository> -->
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.0/N/LATEST</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.0/N/LATEST</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.1/</url>
+					<url>https://download.eclipse.org/cft/1.1.1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
+					<url>https://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 				<repository>
 					<id>latest-buildship-release</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
+					<url>https://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
 				</repository>
 				<repository>
 					<id>latest-wtp-fix</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/webtools/downloads/drops/R3.9.5/R-3.9.5-20180409100740/repository</url>
+					<url>https://download.eclipse.org/webtools/downloads/drops/R3.9.5/R-3.9.5-20180409100740/repository</url>
 				</repository>
 				<repository>
 					<id>lsp4e-050-snapshots</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
 				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180406/</url>
+					<url>https://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180406/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1039,127 +1066,127 @@ Optional parameters:
 				<repository>
 					<id>photon</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/photon/</url>
+					<url>https://download.eclipse.org/releases/photon/</url>
 				</repository>
 <!--				<repository>
 					<id>photon-staging</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/staging/photon/</url>
+					<url>https://download.eclipse.org/staging/photon/</url>
 				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20180606145124/repository</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20180606145124/repository</url>
 				</repository>
 				<repository> <!-- update because of bug on mpc client that got released with Photon.0 -->
 					<id>mpc-client</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mpc/releases/1.7.1/</url>
+					<url>https://download.eclipse.org/mpc/releases/1.7.1/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/48/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/48/dev/update</url>
 				</repository>
 				<repository>
 					<id>latest-m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases</url>
+					<url>https://download.eclipse.org/technology/m2e/releases</url>
 				</repository>
 <!--				<repository>
 					<id>latest-m2e-milestones</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/milestones/1.8/</url>
+					<url>https://download.eclipse.org/technology/m2e/milestones/1.8/</url>
 				</repository> -->
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.1/</url>
+					<url>https://download.eclipse.org/cft/1.1.1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
+					<url>https://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 				<repository>
 					<id>latest-buildship-release</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
+					<url>https://download.eclipse.org/buildship/updates/e47/releases/2.x</url>
 				</repository>
 <!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
 				</repository> -->
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
 				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180629/</url>
+					<url>https://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180629/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1180,122 +1207,122 @@ Optional parameters:
 				<repository>
 					<id>2018-09</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/2018-09/</url>
+					<url>https://download.eclipse.org/releases/2018-09/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20180905201904/repository</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20180905201904/repository</url>
 				</repository>
 				<repository> <!-- update because of bug on mpc client that got released with Photon.0 -->
 					<id>mpc-client</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mpc/releases/1.7.1/</url>
+					<url>https://download.eclipse.org/mpc/releases/1.7.1/</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/48/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/48/dev/update</url>
 				</repository>
 				<repository>
 					<id>latest-m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases</url>
+					<url>https://download.eclipse.org/technology/m2e/releases</url>
 				</repository>
 <!--				<repository>
 					<id>latest-m2e-milestones</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/milestones/1.8/</url>
+					<url>https://download.eclipse.org/technology/m2e/milestones/1.8/</url>
 				</repository> -->
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.1/</url>
+					<url>https://download.eclipse.org/cft/1.1.1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
+					<url>https://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 				<repository>
 					<id>latest-buildship-release</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/buildship/updates/e48/releases/2.x</url>
+					<url>https://download.eclipse.org/buildship/updates/e48/releases/2.x</url>
 				</repository>
 <!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
 				</repository> -->
 				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository>
 				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180629/</url>
+					<url>https://dist.springsource.com/milestone/TOOLS/sts4-language-servers/20180629/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1316,12 +1343,12 @@ Optional parameters:
 				<repository>
 					<id>2018-12</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/2018-12/</url>
+					<url>https://download.eclipse.org/releases/2018-12/</url>
 				</repository>
 <!--				<repository>
 					<id>2018-12-staging</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/staging/2018-12/</url>
+					<url>https://download.eclipse.org/staging/2018-12/</url>
 				</repository> -->
 				<repository>
 					<id>orbit</id>
@@ -1331,102 +1358,102 @@ Optional parameters:
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/48/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/48/dev/update</url>
 				</repository>
 				<repository>
 					<id>latest-m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases</url>
+					<url>https://download.eclipse.org/technology/m2e/releases</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.1/</url>
+					<url>https://download.eclipse.org/cft/1.1.1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
+					<url>https://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 				<repository>
 					<id>latest-buildship-release</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/buildship/updates/e49/snapshots/3.x/</url>
+					<url>https://download.eclipse.org/buildship/updates/e49/snapshots/3.x/</url>
 				</repository>
 <!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
 				</repository> -->
 <!--				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository> -->
 				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers/20181220/</url>
+					<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/20181220/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1447,12 +1474,12 @@ Optional parameters:
 <!--				<repository>
 					<id>2019-03</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/2019-03/</url>
+					<url>https://download.eclipse.org/releases/2019-03/</url>
 				</repository> -->
 				<repository>
 					<id>2019-03-staging</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/staging/2019-03/</url>
+					<url>https://download.eclipse.org/staging/2019-03/</url>
 				</repository>
 				<repository>
 					<id>orbit</id>
@@ -1462,102 +1489,102 @@ Optional parameters:
 				<repository>
 					<id>mylyn</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/mylyn/releases/latest</url>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
 				</repository>
 				<repository>
 					<id>ajdt</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/tools/ajdt/48/dev/update</url>
+					<url>https://download.eclipse.org/tools/ajdt/48/dev/update</url>
 				</repository>
 				<repository>
 					<id>latest-m2e</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/m2e/releases</url>
+					<url>https://download.eclipse.org/technology/m2e/releases</url>
 				</repository>
 				<repository>
 					<id>swtbot</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/technology/swtbot/releases/latest/</url>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 				</repository>
 				<repository>
 					<id>groovy</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
 				</repository>
 				<repository>
 					<id>atlassian</id>
 					<layout>p2</layout>
-					<url>http://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
 				</repository>
 				<repository>
 					<id>maven-extras-mirror</id>
 					<layout>p2</layout>
-					<url>http://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
 				</repository>
 				<repository>
 					<id>ajdt-m2e-configurator</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.org/release/AJDT/configurator-v2/</url>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
 				</repository>
 				<repository>
 					<id>maven-egit</id>
 					<layout>p2</layout>
-					<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
 				</repository>
 				<repository>
 					<id>maven-wro4j</id>
 					<layout>p2</layout>
-					<url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
 				</repository>
 				<repository>
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
-					<url>http://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
 				</repository>
 				<repository>
 					<id>eclipse-integration-commons</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
+					<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 				</repository>
 				<repository>
 					<id>latest-cft</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/cft/1.1.1/</url>
+					<url>https://download.eclipse.org/cft/1.1.1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
 				</repository>
 				<repository>
 					<id>lsp4j</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
+					<url>https://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
 				</repository>
 				<repository>
 					<id>latest-buildship-release</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/buildship/updates/e49/snapshots/3.x/</url>
+					<url>https://download.eclipse.org/buildship/updates/e49/snapshots/3.x/</url>
 				</repository>
 <!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
 				</repository> -->
 <!--				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
+					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
 				</repository> -->
 				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
-					<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers/20181220/</url>
+					<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/20181220/</url>
 				</repository>
 			</repositories>
 			<modules>
@@ -1599,42 +1626,42 @@ Optional parameters:
 		<repository>
 			<id>springide</id>
 			<layout>p2</layout>
-			<url>http://dist.springframework.org/${dist.type}/IDE/${dist.springide-pathpostfix}</url>
+			<url>https://dist.springframework.org/${dist.type}/IDE/${dist.springide-pathpostfix}</url>
 		</repository>
 		<repository>
 			<id>eclipse-integration-tcserver</id>
 			<layout>p2</layout>
-			<url>http://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-tcserver/${dist.eclipse-integration-tcserver-version}</url>
+			<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-tcserver/${dist.eclipse-integration-tcserver-version}</url>
 		</repository>
 <!--		<repository>
 			<id>sts4-language-servers-snapshots</id>
 			<layout>p2</layout>
-			<url>http://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
+			<url>https://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
 		</repository> -->
 <!--		<repository>
 			<id>sts4-language-servers-releases</id>
 			<layout>p2</layout>
-			<url>http://dist.springsource.com/release/TOOLS/sts4-language-servers</url>
+			<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers</url>
 		</repository> -->
 <!--		<repository>
 			<id>egit</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/egit/updates</url>
+			<url>https://download.eclipse.org/egit/updates</url>
 		</repository> -->
 <!--		<repository>
 			<id>egit-github</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/egit/github/updates</url>
+			<url>https://download.eclipse.org/egit/github/updates</url>
 		</repository> -->
 		<repository>
 			<id>m2eclipse-legacy</id>
 			<layout>p2</layout>
-			<url>http://download.springsource.com/release/TOOLS/third-party/m2eclipse-012</url>
+			<url>https://download.springsource.com/release/TOOLS/third-party/m2eclipse-012</url>
 		</repository>
 		<!--	<repository>
 		<id>maven-ajdt</id>
 		<layout>p2</layout>
-		<url>http://dist.springsource.org/release/AJDT/configurator/</url>
+		<url>https://dist.springsource.org/release/AJDT/configurator/</url>
 		</repository> -->
 	</repositories>
 

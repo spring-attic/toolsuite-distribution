@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.springsource.sts</groupId>
@@ -33,17 +33,17 @@
 			<repository>
 			  <id>m2e</id>
 			  <layout>p2</layout>
-			  <url>http://download.eclipse.org/technology/m2e/releases</url>
+			  <url>https://download.eclipse.org/technology/m2e/releases</url>
 			</repository>
 			<repository>
 			  <id>maven-wtp</id>
 			  <layout>p2</layout>
-			  <url>http://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
+			  <url>https://download.jboss.org/jbosstools/updates/m2eclipse-wtp/</url>
 			</repository>
 			<repository>
 			  <id>maven-ajdt</id>
 			  <layout>p2</layout>
-			  <url>http://dist.springsource.org/release/AJDT/configurator</url>
+			  <url>https://dist.springsource.org/release/AJDT/configurator</url>
 			</repository>
 			<repository>
 			  <id>maven-buildhelper</id>
@@ -53,7 +53,7 @@
 			<repository>
 			  <id>orbit</id>
 			  <layout>p2</layout>
-			  <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository/</url>
+			  <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository/</url>
 			</repository>
 		  </source>
 		  <ius>
