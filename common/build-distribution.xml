@@ -6,7 +6,7 @@
 	<property name="sts-rootfolder" value="sts-bundle" />
 	<property name="tcserver.name" value="pivotal-tc-server-developer-${tcserver.version}" />
 	<property name="tcserver.name.unzipped" value="pivotal-tc-server" />
-	<property name="tcserver.root" value="http://dist.springsource.com/release/STS/bundle" />
+	<property name="tcserver.root" value="https://dist.springsource.com/release/STS/bundle" />
 
 	<property name="product.build.directory.sts" value="${project.build.directory}/../../../features/${product.folder.sts}/target/products/" />
 
