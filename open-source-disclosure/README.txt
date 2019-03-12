@@ -11,24 +11,24 @@ https://github.com/spring-projects/toolsuite-distribution/
 Please refer to the tag of the version you have to access the right version of the source code.
 
 2. The source code of the consumed GoPivotal projects is available from their GitHub repositories:
-https://github.com/SpringSource/eclipse-integration-commons/
-https://github.com/SpringSource/eclipse-integration-tcserver/
-https://github.com/SpringSource/eclipse-integration-gradle/
-https://github.com/SpringSource/grails-ide/
-https://github.com/SpringSource/spring-ide/
+https://github.com/spring-projects/eclipse-integration-commons/
+https://github.com/spring-projects/eclipse-integration-tcserver/
+https://github.com/spring-projects/eclipse-integration-gradle/
+https://github.com/spring-projects/grails-ide/
+https://github.com/spring-projects/spring-ide/
 
 Please refer to the tag of the version you have to access the right version of the source code.
 
 3. The code of the Eclipse distribution parts of the toolsuite distribution is available from Eclipse.
 The main project download pages are located here:
-http://www.eclipse.org/indigo
-http://www.eclipse.org/juno
-http://www.eclipse.org/kepler
-http://www.eclipse.org/luna
-http://www.eclipse.org/mars
+https://www.eclipse.org/indigo
+https://www.eclipse.org/juno
+https://www.eclipse.org/kepler
+https://www.eclipse.org/luna
+https://www.eclipse.org/mars
 
 Source code for all those components is available from the Eclipse Git repositories:
-http://git.eclipse.org/c/
+https://git.eclipse.org/c/
 
 Please check the project at Eclipse that is responsible for the component you are looking for.
 The name of the project usually prefixes the name of the component.
@@ -37,7 +37,7 @@ Inside the projects repository please refer to the tag that matches the timestam
 
 4. The source code of additional third-party libraries that are included is available as
 part of our archived update site repositories that you can find referenced from our main download page:
-http://spring.io/tools/sts
+https://spring.io/tools3/sts
 Take a look at the archived update site links that match the toolsuite and Eclipse version that you are looking for.
 
 5. The linux distributions ship the SWT implementation that comes with Eclipse, but that contains subcomponents
