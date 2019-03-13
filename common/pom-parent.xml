@@ -377,24 +377,6 @@
 
 	</profiles>
 
-	<repositories>
-		<repository>
-			<!-- necessary for Maven and Ant AWS dependency -->
-			<id>springsource-maven-release</id>
-			<name>SpringSource Maven Release Repository</name>
-			<url>https://repository.springsource.com/maven/bundles/release</url>
-		</repository>
-		<!-- necessary for commons-cli dependency in c.s.sts.grails.core -->
-		<repository>
-			<id>apache-release</id>
-			<url>https://repository.apache.org/content/repositories/releases/</url>
-		</repository>
-		<repository>
-			<id>maven-mirror</id>
-			<url>https://repo.exist.com/maven2</url>
-		</repository>
-	</repositories>
-
 	<pluginRepositories>
 	    <pluginRepository>
 	      <id>tycho-snapshots</id>
