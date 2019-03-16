@@ -106,15 +106,25 @@
 
 <center><img src="screenshot/quicksearch-path-filter.png"></img></center>
 
-<p class="nan3">Boot Dashboard property view now includes a live beans tab</p>
-<p>tbd</p>
+<p class="nan3">Boot Dashboard Properties view enhancements to live beans tab</p>
+<p>
+Boot Dashboard Properties view includes various enhancements to the live beans tab. Open the Eclipse Properties view and select a running application in Boot Dashboard
+with actuator endpoint and JMX enabled. Among the improvements in the "Beans" tab are:
+</p>
+<ul>
+    <li>Double-click on bean type and bean resource definition nodes opens the type in a Java editor.</li>
+    <li>Beans with dependencies, and those that are injected, are now shown under "Dependencies" and "Injected Into" respectively in the tree, and are navigable if those beans contain bean resource definitions.</li>
+</ul>
+<center><img src="screenshot/boot-dashboard-live-beans-dependencies.png"></img></center>
 
-<center><img src="screenshot/tbd.png"></img></center>
+<p class="nan3">Boot Dashboard Properties view now includes a live environment values tab</p>
+<p>
+Boot Dashboard Properties view now includes a new "Env" tab that shows live Spring Boot environment values from sources like command line args, 
+properties files, and system properties. To access the "Env" tab, open the Eclipse Properties view and select a running application in Boot Dashboard
+with actuator endpoint and JMX enabled. The environment properties and values are also searchable.
+</p>
 
-<p class="nan3">Boot Dashboard property view now includes a live environment values tab</p>
-<p>tbd</p>
-
-<center><img src="screenshot/tbd.png"></img></center>
+<center><img src="screenshot/boot-dashboard-env-tab.png"></img></center>
 
 <hr/>
 
