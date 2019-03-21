@@ -5652,7 +5652,7 @@ DOM
 DOM is developed by the World Wide Web Consortium. Your use of DOM is subject to the terms and conditions of the license found in the file 
 DOM-LICENSE.html
  which is included with this plug-in and can also be found at 
-http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 .
 SAX
 SAX is developed by the SAX project (
@@ -5739,7 +5739,7 @@ DOM
 DOM is developed by the World Wide Web Consortium. Your use of DOM is subject to the terms and conditions of the license found in the file 
 LICENSE.dom-software.txt
  which is included with this plug-in and can also be found at 
-http://www.w3.org/Consortium/Legal/copyright-software-19980720
+https://www.w3.org/Consortium/Legal/copyright-software-19980720
 .
 SAX
 SAX is developed by the SAX project (
@@ -5788,7 +5788,7 @@ DOM
 DOM is developed by the World Wide Web Consortium. Your use of DOM is subject to the terms and conditions of the license found in the file 
 LICENSE.dom-software.txt
  which is included with this plug-in and can also be found at 
-http://www.w3.org/Consortium/Legal/copyright-software-19980720
+https://www.w3.org/Consortium/Legal/copyright-software-19980720
 .
 SAX
 SAX is developed by the SAX project (
@@ -5837,7 +5837,7 @@ DOM
 DOM is developed by the World Wide Web Consortium. Your use of DOM is subject to the terms and conditions of the license found in the file 
 LICENSE.dom-software.txt
  which is included with this plug-in and can also be found at 
-http://www.w3.org/Consortium/Legal/copyright-software-19980720
+https://www.w3.org/Consortium/Legal/copyright-software-19980720
 .
 SAX
 SAX is developed by the SAX project (
@@ -13096,39 +13096,39 @@ Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributor's license for terms and conditions of use.
 W3C DTDs
 The plug-in is accompanied by document type definitions (" W3C DTDs") defined by the the W3C Extensible HyperText Markup Language (XHTML) 1.1. XHTML is described at 
-http://www.w3.org/TR/xhtml11/
+https://www.w3.org/TR/xhtml11/
 .
 The W3C DTDs are the following files located in the plug-in:
 xhtml11.dtd
  obtained from 
-http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
+https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
 xhtml11-flat.dtd
  obtained from 
-http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
+https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
 xhtml1-frameset.dtd
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd
+https://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd
 xhtml1-strict
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
+https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
 xhtml1-transitional.dtd
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
+https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
 xhtml-lat1.ent
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent
+https://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent
 xhtml-special.ent
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent
+https://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent
 xhtml-symbol.ent
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml-symbol.ent
+https://www.w3.org/TR/xhtml1/DTD/xhtml-symbol.ent
 As described in section 5.10 of the FAQ located at 
-http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD
+https://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD
 , your use of the W3C DTDs is governed by the terms and conditions of the W3C Software License a copy of which is included in the file 
 about_files/copyright-software-19980720.htm
  and is also available at 
-http://www.w3.org/Consortium/Legal/copyright-software-19980720
+https://www.w3.org/Consortium/Legal/copyright-software-19980720
 .
 
 
@@ -23105,39 +23105,39 @@ http://www.openmobilealliance.org/tech/affiliates/wap/wapindex.html
 .
 W3C DTDs
 The plug-in is accompanied by document type definitions (" W3C DTDs") defined by the the W3C Extensible HyperText Markup Language (XHTML) 1.1. XHTML is described at 
-http://www.w3.org/TR/xhtml11/
+https://www.w3.org/TR/xhtml11/
 .
 The W3C DTDs are the following files located in the plug-in:
 xhtml11-flat.dtd
  obtained from 
-http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
+https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd
 xhtml1-frameset.dtd
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd
+https://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd
 xhtml1-strict
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
+https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
 xhtml1-transitional.dtd
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
+https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
 xhtml-basic10-f.dtd
  obtained from 
-http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd
+https://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd
 xhtml-lat1.ent
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent
+https://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent
 xhtml-special.ent
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent
+https://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent
 xhtml-symbol.ent
  obtained from 
-http://www.w3.org/TR/xhtml1/DTD/xhtml-symbol.ent
+https://www.w3.org/TR/xhtml1/DTD/xhtml-symbol.ent
 As described in section 5.10 of the FAQ located at 
-http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD
+https://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD
 , your use of the W3C DTDs is governed by the terms and conditions of the W3C Software License a copy of which is included in the file 
 about_files/copyright-software-19980720.htm
  and is also available at 
-http://www.w3.org/Consortium/Legal/copyright-software-19980720
+https://www.w3.org/Consortium/Legal/copyright-software-19980720
 .
 WSDL Schemas
 The plug-in is accompanied by five schema files. Your use of the following files located in the xsd directory of the plug-in:
@@ -23160,11 +23160,11 @@ The following files located in the xsd directory of the plug-in:
 soapenc.xsd
 soapenv.xsd
 are governed by the terms and conditions of the W3C Software License as described in section 5.10 of the FAQ located at 
-http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD
+https://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD
 . A copy of the W3C Software License is located in 
 about_files/copyright-software-19980720.htm
  and is also available at 
-http://www.w3.org/Consortium/Legal/copyright-software-19980720
+https://www.w3.org/Consortium/Legal/copyright-software-19980720
 .
 
 
@@ -23692,7 +23692,7 @@ Your use of the W3C-Derived Work is subject to the terms and conditions of the W
 A copy of the license is contained in the file 
 W3CSoftwareLicense.html
  and is also available at 
-http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 .
 
 
@@ -34954,10 +34954,10 @@ The names "Batik" and "Apache Software Foundation" must not be used to endorse o
 > W3C software license 
 
 CSS SAC 1.3 Java Binding
-The plug-in includes CSS SAC 1.3 Java Binding ("CSS SAC") developed by the World Wide Web Consortium ("W3C"). Your use of CSS SAC is subject to the terms and conditions of the W3C software license, dated December 31 2002 ("W3C License"). A copy of the W3C License can be found in about_files/LICENSE-W3C-20021231.html and is also available at http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+The plug-in includes CSS SAC 1.3 Java Binding ("CSS SAC") developed by the World Wide Web Consortium ("W3C"). Your use of CSS SAC is subject to the terms and conditions of the W3C software license, dated December 31 2002 ("W3C License"). A copy of the W3C License can be found in about_files/LICENSE-W3C-20021231.html and is also available at https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 .
 Source code for CSS SAC is available at 
-http://www.w3.org/Style/CSS/SAC/
+https://www.w3.org/Style/CSS/SAC/
 .
 SAX
 SAX is developed by the SAX project (
@@ -35005,10 +35005,10 @@ DOM Events
 The plug-in includes Document Object Model (DOM) Level 3 Events Specification ("DOM Events") developed by the World Wide Web Consortium ("W3C"). Your use of DOM Events is subject to the terms and conditions of the W3C software license, dated December 31 2002 ("W3C License"). A copy of the W3C License can be found in 
 about_files/LICENSE-W3C-20021231.html
  and is also available at 
-http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 .
 Source code for DOM Events is available at 
-http://www.w3.org/TR/SVG11/java.html
+https://www.w3.org/TR/SVG11/java.html
 .
 
 
@@ -35050,10 +35050,10 @@ SMIL Animation 1.0 Java Binding
 The plug-in includes SMIL Animation 1.0 Java Binding ("SMIL") developed by the World Wide Web Consortium ("W3C"). Your use of SMIL is subject to the terms and conditions of the W3C software license, dated December 31 2002 ("W3C License"). A copy of the W3C License can be found in 
 about_files/LICENSE-W3C-20021231.html
  and is also available at 
-http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 .
 Source code for SMIL is available at 
-http://www.w3.org/TR/smil-animation/
+https://www.w3.org/TR/smil-animation/
 .
 
 
@@ -35101,10 +35101,10 @@ SVG 1.1 Java Binding
 The plug-in includes SVG 1.1 Java Binding ("SVG DOM") developed by the World Wide Web Consortium ("W3C"). Your use of SVG DOM is subject to the terms and conditions of the W3C software license, dated December 31 2002 ("W3C License"). A copy of the W3C License can be found in 
 about_files/LICENSE-W3C-20021231.html
  and is also available at 
-http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 .
 Source code for SVG DOM is available at 
-http://www.w3.org/TR/SVG11/java.html
+https://www.w3.org/TR/SVG11/java.html
 .
 
 
