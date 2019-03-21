@@ -1177,7 +1177,7 @@ License:
 
 Bouncy Castle Licence http://www.bouncycastle.org/licence.html
 
-Apache Software License, Version 1.1 http://www.apache.org/licenses/LICENSE-1.1
+Apache Software License, Version 1.1 https://www.apache.org/licenses/LICENSE-1.1
 
 
 >>> springframework.roo.wrapping.bcprov-jdk15_1.45-1.45
@@ -1193,7 +1193,7 @@ ADDITIONAL LICENSE INFORMATION:
 > Apache 1.1
 
 
-Apache Software License, Version 1.1 	http://www.apache.org/licenses/LICENSE-1.1
+Apache Software License, Version 1.1 	https://www.apache.org/licenses/LICENSE-1.1
 Packages
 
 
@@ -2220,7 +2220,7 @@ JavaBeans Activation Framework 1.1
 Your use of the Activation Framework code is subject to the terms and conditions of the Apache License Version 2.0. A copy of the license is contained in the file 
 LICENSE.txt
  and is also available at 
-http://www.apache.org/licenses/
+https://www.apache.org/licenses/
 .
 The source for the javax.activation bundle is available on the Apache Geronimo website at 
 http://geronimo.apache.org/
@@ -2316,7 +2316,7 @@ http://code.google.com/p/atinject/
 .
 Apache License
 Version 2.0, January 2004
-http://www.apache.org/licenses/
+https://www.apache.org/licenses/
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -2554,7 +2554,7 @@ Java Mail 1.4
 Your use of the Java Mail code is subject to the terms and conditions of the Apache License Version 2.0. A copy of the license is contained in the file 
 LICENSE.txt
  and is also available at 
-http://www.apache.org/licenses/
+https://www.apache.org/licenses/
 .
 The source for the javax.mail bundle is available on the Apache Geronimo website at 
 http://geronimo.apache.org/
@@ -3216,7 +3216,7 @@ The Content includes items that have been sourced from third parties as set out 
 BCEL 5.2
 The plug-in includes BCEL 5.2 developed by the Apache Software Foundation as part of the Apache Jakarta project. Therefore:
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The BCEL binary code is included with no modifications except postprocessing (pack200 conditioning and signing). The corresponding BCEL source code is located in src.zip.
 BCEL is:
@@ -3280,7 +3280,7 @@ The Content includes items that have been sourced from third parties as set out 
 Commons Collections 3.2
 The plug-in includes Commons Collections 3.2 ("Commons Collections") developed by the Apache Software Foundation as part of the Apache Commons project. Therefore:
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The Commons Collections binary code is included with no modifications except postprocessing (pack200 conditioning and signing). The corresponding Commons Collections source code is located in src.zip.
 Commons Net is:
@@ -3315,7 +3315,7 @@ The Content includes items that have been sourced from third parties as set out 
 Commons Compress 1.6
 The plug-in includes Commons Compress 1.6 ("Commons Compress") developed by the Apache Software Foundation as part of the Apache Commons project. Therefore:
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The Commons Compress binary code is included with no modifications except postprocessing (pack200 conditioning and signing). The corresponding Commons Compress source code is located in src.zip.
 Commons Compress is:
@@ -3365,7 +3365,7 @@ commons-discovery-0.2.jar
 Your use of Apache Axis is subject to the terms and conditions of the Apache License, Version 1.1 ("Apache License"). A copy of the Apache License can be found in 
 about_files/LICENSE.txt
  and is also available at 
-http://www.apache.org/licenses/LICENSE-1.1
+https://www.apache.org/licenses/LICENSE-1.1
 .
 The source for the bundle is available on the Apache Axis website at 
 http://ws.apache.org/axis/
@@ -3394,7 +3394,7 @@ The Content includes items that have been sourced from third parties as set out 
 Commons HttpClient 3.1
 The plug-in includes Commons HttpClient 3.1 ("Commons HttpClient") developed by the Apache Software Foundation as part of the Apache Commons project. Therefore:
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The Commons HttpClient binary code is included with no modifications except postprocessing (pack200 conditioning and signing). Commons HttpClient is:
 Copyright (c) 1997-2007 The Apache Software Foundation. All rights reserved.
@@ -3435,7 +3435,7 @@ The Content includes items that have been sourced from third parties as set out 
 Apache Commons IO 2.0.1
 The plug-in includes Commons IO 2.0.1 ("Commons IO") developed by the Apache Software Foundation. Therefore:
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The Commons IO binary code is included with no modifications except postprocessing (pack200 conditioning and signing). The corresponding Commons IO source code is located in src.zip.
 Commons IO is:
@@ -3511,7 +3511,7 @@ The Content includes items that have been sourced from third parties as set out 
 Commons Logging 1.0.4
 The plug-in includes Commons Logging 1.0.4 ("Commons Logging") developed by the Apache Software Foundation. Therefore:
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The Commons Logging binary code is included with no modifications except postprocessing (pack200 conditioning and signing). The corresponding Commons Logging source code is located in src.zip.
 Commons Logging is:
@@ -3545,7 +3545,7 @@ The Content includes items that have been sourced from third parties as set out 
 Apache Commons Net 3.2
 The plug-in includes Apache Commons Net 3.2 ("Commons Net") developed by the Apache Software Foundation. Therefore:
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The Commons Net binary code is included with no modifications except postprocessing (pack200 conditioning and signing). Commons Net is:
 Copyright (c) 2001-2012 The Apache Software Foundation. All rights reserved.
@@ -3944,7 +3944,7 @@ Apache WSIL4J 1.0.0
 Your use of the WSIL4J code is subject to the terms and conditions of the Apache Software License 1.1. A copy of the license can be found in 
 about_files/LICENSE
  and is also available at 
-http://www.apache.org/licenses/LICENSE-1.1
+https://www.apache.org/licenses/LICENSE-1.1
 .
 Source code for WSIL4J is available from the Apache Web Service Project, at 
 http://ws.apache.org/
@@ -4033,7 +4033,7 @@ about_files/LICENSE.DOM-software.html
 about_files/LICENSE-SAX.html
 Xerces-J also includes the file resolver.jar ("resolver").
 This product includes software developed by the Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 resolver is:
 Copyright (c) 2001-2003 The Apache Software Foundation. All rights reserved.
@@ -7104,7 +7104,7 @@ More specifically:
 
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -7342,7 +7342,7 @@ More specifically:
 
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -7716,7 +7716,7 @@ provided with the distribution.
 following acknowledgment:
 "This product includes software developed by the Apache Software Foundation
 (
-http://www.apache.org/
+https://www.apache.org/
 )."
 Alternately, this acknowledgment may appear in the software itself, if and wherever such
 third-party acknowledgments normally appear.
@@ -7868,7 +7868,7 @@ XML4J 4.3
 The plug-in is based on XML4J which is based on Xerces developed by The Apache Software Foundation as part of the Apache XML project. Therefore:
 This product includes software developed by the Apache Software Foundation
 (
-http://www.apache.org/
+https://www.apache.org/
 ).
 The following classes in the plug-in JAR:
 org.eclipse.emf.ecore.xml.type.internal.DataValue
@@ -7907,7 +7907,7 @@ distribution.
 if any, must include the following acknowledgment:
 "This product includes software developed by the
 Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 )."
 Alternately, this acknowledgment may appear in the software itself,
 if and wherever such third-party acknowledgments normally appear.
@@ -12224,7 +12224,7 @@ jdom-LICENSE.txt
 .
 Jakarta-Oro 2.0.8
 The plug-in includes Jakarta-Oro 2.0.8 ("Jakarta-Oro") developed by the Apache Software Foundation as part of the Jakarta project. Your use of Jakarta-Oro 2.0.8 in binary code form contained in the plug-in is subject to the terms and conditions of the The Apache Software License, Version 1.1 ("ASL-1.1"). A copy of the ASL 1.1 is available at 
-http://www.apache.org/licenses/LICENSE-1.1
+https://www.apache.org/licenses/LICENSE-1.1
 . (a local copy can be found 
 here
 )
@@ -19517,19 +19517,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -19728,19 +19728,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -19939,19 +19939,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -20150,19 +20150,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -20361,19 +20361,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -20572,19 +20572,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -20783,19 +20783,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -20994,19 +20994,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -21205,19 +21205,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -21416,19 +21416,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -21627,19 +21627,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -21838,19 +21838,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -22049,19 +22049,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -22260,19 +22260,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -22471,19 +22471,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -22683,19 +22683,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -22894,19 +22894,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -23105,19 +23105,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -23316,19 +23316,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -23527,19 +23527,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -23738,19 +23738,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -23949,19 +23949,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -24160,19 +24160,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -24371,19 +24371,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -24582,19 +24582,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -24793,19 +24793,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -25004,19 +25004,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -25215,19 +25215,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -25426,19 +25426,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -25637,19 +25637,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -25848,19 +25848,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -26059,19 +26059,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -26270,19 +26270,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -26494,19 +26494,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -26705,19 +26705,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -26916,19 +26916,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -27127,19 +27127,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -27338,19 +27338,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -27549,19 +27549,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -27760,19 +27760,19 @@ http://www.springframework.org
 ).
 Commons Codec v1.3.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Collections v3.2.0
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Commons Logging v1.1.1
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 Apache MyFaces v1.2.2
 This product includes software developed by The Apache Software Foundation (
-http://www.apache.org/
+https://www.apache.org/
 ).
 AspectJ Weaver v1.6.10
 This product includes software developed by The Eclipse Software Foundation (
@@ -28584,7 +28584,7 @@ to a jury trial in any resulting litigation.
 Apache License 
 
 Version 2.0, January 2004 
-http://www.apache.org/licenses/ 
+https://www.apache.org/licenses/ 
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 
 
