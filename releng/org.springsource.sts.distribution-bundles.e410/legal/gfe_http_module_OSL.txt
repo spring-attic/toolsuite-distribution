@@ -464,7 +464,7 @@ available (as would be noted above), you may obtain a copy of
 the source code corresponding to the binaries for such open
 source components and modifications thereto, if any, (the
 "Source Files"), by downloading the Source Files from Pivotal's website at
-http://www.pivotal.io/open-source, or by sending a request, 
+https://www.pivotal.io/open-source, or by sending a request, 
 with your name and address to: Pivotal Software, Inc., 3496 Deer Creek Rd, 
 Palo Alto, CA 94304, Attention: General Counsel. All such requests should 
 clearly specify: OPEN SOURCE FILES REQUEST, Attention General Counsel. 
