@@ -55,7 +55,7 @@ Software or as otherwise specified in this EULA.
 2.3. Open Source Software. OSS is licensed to Licensee under the applicable OSS 
 license terms (a) located in the open_source_licenses.txt file included in or 
 along with Software, Evaluation Software, or the corresponding source files 
-available at http://www.pivotal.io/open-source or http://network.pivotal.io, 
+available at https://www.pivotal.io/open-source or https://network.pivotal.io, 
 and/or (b) available by sending a written request, with Licensee’s name and 
 address, to: Pivotal Software, Inc., Open Source Files Request, Attn: General 
 Counsel, 3495 Deer Creek Road, Palo Alto, CA 94903. This offer to obtain a copy 
@@ -385,7 +385,7 @@ at no charge, for Licensee’s evaluation purposes only (a) subject to a signed
 order; or (b) where Licensee has not signed a Quote.
 
 “Guide” means the Pivotal Product Guide available at 
-http://www.pivotal.io/product-guide, in effect on the date of the Quote and 
+https://www.pivotal.io/product-guide, in effect on the date of the Quote and 
 incorporated into this EULA.
 
 “Licensee” means the person or the entity obtaining Software, and its permitted 
@@ -426,7 +426,7 @@ if available” basis, all during the Subscription Period.
 that Software is available for download, and continues for the period specified 
 in the Quote.
 
-“Support Services” means services described at: http://www.pivotal.io/support.
+“Support Services” means services described at: https://www.pivotal.io/support.
 
 “Territory” means the country or countries in which Licensee has been invoiced.
 
