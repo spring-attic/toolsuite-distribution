@@ -19,8 +19,8 @@
    </license>
 
    <url>
-      <update label="Groovy/Grails Tool Suite Updates" url="http://download.springsource.com/release/TOOLS/update/e4.5"/>
-      <discovery label="Groovy/Grails Tool Suite Updates" url="http://download.springsource.com/release/TOOLS/update/e4.5"/>
+      <update label="Groovy/Grails Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.5"/>
+      <discovery label="Groovy/Grails Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.5"/>
    </url>
    
    <requires>

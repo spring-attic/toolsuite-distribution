@@ -19,8 +19,8 @@
    </license>
 
    <url>
-      <update label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e3.8"/>
-      <discovery label="SpringSource Tool Suite Updates" url="http://dist.springsource.com/release/TOOLS/update/e3.8"/>
+      <update label="SpringSource Tool Suite Updates" url="https://dist.springsource.com/release/TOOLS/update/e3.8"/>
+      <discovery label="SpringSource Tool Suite Updates" url="https://dist.springsource.com/release/TOOLS/update/e3.8"/>
    </url>
    
    <requires>

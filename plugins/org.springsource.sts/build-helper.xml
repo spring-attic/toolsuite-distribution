@@ -61,7 +61,7 @@
 		<!-- <echo message="getDependenciesHelper.xml: basedir = ${basedir}"/> -->
 		<!-- requires the following params to be set -->
 		<!--
-			<property name="url"/> [url to download and unpack, eg., http://.../.../foo.zip]
+			<property name="url"/> [url to download and unpack, eg., https://.../.../foo.zip]
 			<property name="file"/> [filename of the url to download and unpack, eg., foo.zip]
     	-->
 		<!-- get the zip or tar.gz from the remote server if it's not already been downloaded -->

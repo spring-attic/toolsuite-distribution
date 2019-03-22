@@ -19,8 +19,8 @@
    </license>
 
    <url>
-      <update label="Spring Tool Suite Updates" url="http://download.springsource.com/release/TOOLS/update/e4.8"/>
-      <discovery label="Spring Tool Suite Updates" url="http://download.springsource.com/release/TOOLS/update/e4.8"/>
+      <update label="Spring Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.8"/>
+      <discovery label="Spring Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.8"/>
    </url>
    
    <requires>
