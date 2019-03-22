@@ -1303,7 +1303,7 @@ Copyright (C) 2000-2004 Jason Hunter & Brett McLaughlin.
      "This product includes software developed by the
       JDOM Project (https://www.jdom.org/)."
  Alternatively, the acknowledgment may be graphical using the logos 
- available at https://www.jdom.org/images/logos.
+ available at http://www.jdom.org/images/logos/.
 
  THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
@@ -1522,7 +1522,7 @@ limitations under the License.
 Apache Commons Codec
 Copyright 2002-2013 The Apache Software FoundationThis product includes software developed at
 The Apache Software Foundation (https://www.apache.org/).src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java
-contains test data from https://aspell.net/test/orig/batch0.tab.
+contains test data from http://aspell.net/test/orig/batch0.tab.
 Copyright (C) 2002 Kevin Atkinson (kevina@gnu.org)
 
 
@@ -1620,7 +1620,7 @@ The Apache Software Foundation (https://www.apache.org/).
 
 
 This project contains annotations derived from JCIP-ANNOTATIONS
-Copyright (c) 2005 Brian Goetz and Tim Peierls. See https://www.jcip.net
+Copyright (c) 2005 Brian Goetz and Tim Peierls. See http://jcip.net/
 
 
 ADDITIONAL LICENSE INFORMATION:
@@ -1632,7 +1632,7 @@ httpcore-4.3.3-sources.jar\META-INF\LICENSE
 This project contains annotations in the package org.apache.http.annotation
 which are derived from JCIP-ANNOTATIONS
 Copyright (c) 2005 Brian Goetz and Tim Peierls.
-See https://www.jcip.net and the Creative Commons Attribution License
+See http://jcip.net/ and the Creative Commons Attribution License
 (https://creativecommons.org/licenses/by/2.5)
 Full text: https://creativecommons.org/licenses/by/2.5/legalcode
 
@@ -2446,7 +2446,7 @@ Copyright (c) 2011-2016 Pivotal Software, Inc. All Rights Reserved.
 
 >>> snakeyaml-1.13
 
-Copyright (c) 2008-2013, https://www.snakeyaml.org
+Copyright (c) 2008-2013, https://bitbucket.org/asomov/snakeyaml
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -2940,7 +2940,7 @@ springframework/ security/ crypto/ codec/ Base64.java
 Base64 encoder which is a reduced version of Robert Harder's
 public domain implementation (version 2.3.7).
 
-* See <a href=""https://iharder.net/base64"">https://iharder.net/base64</a>
+* See <a href=""http://iharder.sourceforge.net/current/java/base64/"">http://iharder.sourceforge.net/current/java/base64/</a>
 for more information.
 
 
@@ -18199,7 +18199,7 @@ The Content includes items that have been sourced from third parties as set out 
 ASM v5.0.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's git repository and the org.eclipse.persistence.asm.source_*.jar bundle. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2011 INRIA, France Telecom
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -18255,7 +18255,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -18389,7 +18389,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -18524,7 +18524,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -18659,7 +18659,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -18793,7 +18793,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -18928,7 +18928,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -21252,7 +21252,7 @@ Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributors license for terms and conditions of use.
 C++ Standard Template Library
 This plugin contains a Java port of the code for the STL heap sorting algorithm. The original code can be found at:
-https://www.sgi.com/tech/stl/stl_heap.h
+https://community.hpe.com/t5/Servers-The-Right-Compute/SGI-com-Tech-Archive-Resources-now-retired/ba-p/6992583
 The java implementation of the code can be found in src.zip in the following files:
 org\eclipse\ui\internal\views\markers\MarkerSortUtil.java
 Copyright info
@@ -24365,12 +24365,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -24576,12 +24576,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -24787,12 +24787,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -24998,12 +24998,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -25209,12 +25209,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -25420,12 +25420,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -25631,12 +25631,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -25842,12 +25842,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -26053,12 +26053,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -26264,12 +26264,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -26475,12 +26475,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -26686,12 +26686,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -26897,12 +26897,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -27108,12 +27108,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -27319,12 +27319,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -27530,12 +27530,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -27741,12 +27741,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -27952,12 +27952,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -28163,12 +28163,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -28374,12 +28374,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -28585,12 +28585,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -28796,12 +28796,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -29007,12 +29007,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -29218,12 +29218,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -29429,12 +29429,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -29640,12 +29640,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -29851,12 +29851,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -30062,12 +30062,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -30273,12 +30273,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -30484,12 +30484,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -30695,12 +30695,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -30906,12 +30906,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -31117,12 +31117,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -31328,12 +31328,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -31539,12 +31539,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -31750,12 +31750,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -31961,12 +31961,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -32172,12 +32172,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -32383,12 +32383,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -32594,12 +32594,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -32805,12 +32805,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -33016,12 +33016,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -33227,12 +33227,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -33438,12 +33438,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -33649,12 +33649,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -33860,12 +33860,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -34071,12 +34071,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -34282,12 +34282,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -34493,12 +34493,12 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ASM v2.2.3
 Spring IDE includes a binary version of ASM v2.2.3 (
-https://asm.objectweb.org/
+https://asm.ow2.org/
 ). The source code for ASM is available from the ObjectWeb download site at 
-https://asm.objectweb.org/download/
+https://asm.ow2.org/download/
 .
 The ASM license is available at 
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 . The license is also reproduced here:
 Copyright (c) 2000-2005 INRIA, France Telecom
 All rights reserved.
@@ -35085,7 +35085,7 @@ The names "SnakeYAML" and "Apache Software Foundation" must not be used to endor
 apache@apache.org
 .
 Examples and documentation as well as updated source code for SnakeYAML is available at 
-https://www.snakeyaml.org/
+https://bitbucket.org/asomov/snakeyaml
 .
 
 

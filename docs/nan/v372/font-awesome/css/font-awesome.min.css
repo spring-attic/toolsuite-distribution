@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:app="http://www.springframework.org"><head>
+<html xmlns:app="https://www.springframework.org"><head>
   <title>Page Not Found</title>
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css" />
   <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
-  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
 
@@ -47,7 +47,7 @@
 
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   </script>
@@ -76,7 +76,7 @@
               <a href="/blog">Blog</a>
             </li>
             <li class="navbar-link">
-              <a href="http://forum.springframework.io">Forum</a>
+              <a href="https://forum.springframework.io">Forum</a>
             </li>
             <li class="navbar-link nav-search">
               <i class="icon-search navbar-search--icon js-search-input-open"></i>
@@ -114,7 +114,7 @@
 
     <div class="body--container container-fluid ">
 	404. Sorry.<br />
-	<img src="http://ithassoul.com/data/published/05_2011/f1ca80c5e09dcc28cf4912b951a4aa50_pub.jpg" />
+	<img src="https://ithassoul.com/data/published/05_2011/f1ca80c5e09dcc28cf4912b951a4aa50_pub.jpg" />
 </div>
 
     <footer class="footer">
@@ -133,8 +133,8 @@
             </div>
             &copy; <script type="text/javascript"> var d = new Date();
                   document.write(d.getFullYear());</script> GoPivotal, Inc. All Rights Reserved.
-            <a href="http://www.gopivotal.com/terms-of-use">Terms</a>,
-            <a href="http://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="https://pivotal.io/terms-of-use">Terms</a>,
+            <a href="https://pivotal.io/privacy-policy">Privacy</a>, and
             <a href="/logos">Usage</a>
             
           </div>
@@ -143,7 +143,7 @@
               <label>
                 Subscribe to our newsletter
               </label>
-              <form action="http://play.gopivotal.com/index.php/leadCapture/save" class="lpeRegForm formNotEmpty" enctype="application/x-www-form-urlencoded" id="mktForm_1035" method="post" name="mktForm_1035">
+              <form action="https://play.gopivotal.com/index.php/leadCapture/save" class="lpeRegForm formNotEmpty" enctype="application/x-www-form-urlencoded" id="mktForm_1035" method="post" name="mktForm_1035">
                 <ul class="mktLblLeft" style="margin: 0;">
                   <li class="mktField">
                     <span class="mktInput">
@@ -199,7 +199,7 @@
                 <input name="kw" type="hidden" value="" />
                 <input name="cr" type="hidden" value="" />
                 <input name="searchstr" type="hidden" value="" />
-                <input name="lpurl" type="hidden" value="http://play.gopivotal.com/OSS_Website_Spring_SpringNewsletterSubscriptionEmailOnly.html?cr={creative}&amp;kw={keyword}" />
+                <input name="lpurl" type="hidden" value="https://play.gopivotal.com/OSS_Website_Spring_SpringNewsletterSubscriptionEmailOnly.html?cr={creative}&amp;kw={keyword}" />
                 <input name="formid" type="hidden" value="1035" />
                 <input name="returnURL" type="hidden" value="" />
                 <input name="retURL" type="hidden" value="" />
@@ -207,7 +207,7 @@
                 <input name="_mkt_disp" type="hidden" value="return" />
                 <input name="_mkt_trk" type="hidden" value="" />
               </form>
-              <script src="http://play.gopivotal.com/js/mktFormSupport.js" type="text/javascript"></script>
+              <script src="https://play.gopivotal.com/js/mktFormSupport.js" type="text/javascript"></script>
               <script type="text/javascript">
               function formSubmit(elt) {
                 return Mkto.formSubmit(elt);

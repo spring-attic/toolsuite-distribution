@@ -980,7 +980,7 @@ been derived from the works by JSR-166 EG, Doug Lea, and Jason T. Greene:
     * license/LICENSE.jsr166y.txt (Public Domain)
   * HOMEPAGE:
     * http://gee.cs.oswego.edu/cgi-bin/viewcvs.cgi/jsr166/
-    * http://viewvc.jboss.org/cgi-bin/viewvc.cgi/jbosscache/experimental/jsr166/
+    * https://viewvc.jboss.org/cgi-bin/viewvc.cgi/jbosscache/experimental/jsr166/
 
 This product contains a modified version of Robert Harder's Public Domain
 Base64 Encoder and Decoder, which can be obtained at:
@@ -1914,7 +1914,7 @@ permission of The Werken Company. "jaxen" is a registered
 trademark of The Werken Company.
 
 5. Due credit should be given to The Werken Company.
-(http://jaxen.werken.com/).
+(https://jaxen.werken.com/).
 
 THIS SOFTWARE IS PROVIDED BY THE WERKEN COMPANY AND CONTRIBUTORS
 ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT
