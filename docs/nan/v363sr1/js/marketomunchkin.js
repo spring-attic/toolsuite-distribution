@@ -9,7 +9,7 @@
   var s = document.createElement('script');
   s.type = 'text/javascript';
   s.async = true;
-  s.src = 'http://munchkin.marketo.net/munchkin.js';
+  s.src = 'https://munchkin.marketo.net/munchkin.js';
   s.onreadystatechange = function() {
     if (this.readyState == 'complete' || this.readyState == 'loaded') {
       initMunchkin();

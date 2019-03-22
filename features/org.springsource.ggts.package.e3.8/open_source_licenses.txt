@@ -1040,7 +1040,7 @@ Copyright (C) 2000-2004 Jason Hunter & Brett McLaughlin.
      "This product includes software developed by the
       JDOM Project (http://www.jdom.org/)."
  Alternatively, the acknowledgment may be graphical using the logos 
- available at http://www.jdom.org/images/logos.
+ available at http://www.jdom.org/images/logos/.
 
  THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
@@ -1692,9 +1692,9 @@ https://www.eclipse.org
 Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributors license for terms and conditions of use.
 XStream 1.3.1
-The plug-in includes XStream ("XStream") developed by http://xstream.codehaus.org/. Therefore:
+The plug-in includes XStream ("XStream") developed by https://xstream.codehaus.org/. Therefore:
 This product includes software developed by XStream (
-http://xstream.codehaus.org/
+https://xstream.codehaus.org/
 ).
 A subset of the XStream binary code is included with no modifications except postprocessing (pack200 conditioning and signing). The corresponding XStream source code is located in src.zip.
 XStream is:
@@ -2510,7 +2510,7 @@ LICENCE.txt
 https://www.apache.org/licenses/LICENSE-2.0
 .
 The source for the bundle is available at the StAX website at 
-http://stax.codehaus.org/
+https://stax.codehaus.org/
 .
 
 
@@ -13388,7 +13388,7 @@ The Content includes items that have been sourced from third parties as set out 
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13443,7 +13443,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13576,7 +13576,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13709,7 +13709,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13842,7 +13842,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13975,7 +13975,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -14108,7 +14108,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -15335,7 +15335,7 @@ libswt-webkit-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the WebKitGTK+ Binding:
 The contents of the directory org/eclipse/swt/internal/webkit (but not including any sub-directories)
 The WebKitGTK+ Binding contains portions of libsoup ("Library"). libsoup is made available by The GNOME Project (
-https://wiki.gnome.org/action/show/Projects/libsoup?action=show
+https://live.gnome.org/LibSoup/
 ). Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the WebKitGTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
@@ -15563,7 +15563,7 @@ libswt-webkit-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the WebKitGTK+ Binding:
 The contents of the directory org/eclipse/swt/internal/webkit (but not including any sub-directories)
 The WebKitGTK+ Binding contains portions of libsoup ("Library"). libsoup is made available by The GNOME Project (
-https://wiki.gnome.org/action/show/Projects/libsoup?action=show
+https://live.gnome.org/LibSoup/
 ). Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the WebKitGTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
@@ -16294,7 +16294,8 @@ https://www.eclipse.org
 Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributors license for terms and conditions of use.
 C++ Standard Template Library
-This plugin contains a Java port of the code for the STL heap sorting algorithm.
+This plugin contains a Java port of the code for the STL heap sorting algorithm. The original code can be found at:
+https://community.hpe.com/t5/Servers-The-Right-Compute/SGI-com-Tech-Archive-Resources-now-retired/ba-p/6992583
 The java implementation of the code can be found in src.zip in the following files:
 org\eclipse\ui\internal\views\markers\MarkerSortUtil.java
 Copyright info

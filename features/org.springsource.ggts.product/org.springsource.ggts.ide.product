@@ -1082,7 +1082,7 @@ Copyright (C) 2000-2004 Jason Hunter & Brett McLaughlin.
      "This product includes software developed by the
       JDOM Project (http://www.jdom.org/)."
  Alternatively, the acknowledgment may be graphical using the logos 
- available at http://www.jdom.org/images/logos.
+ available at http://www.jdom.org/images/logos/.
 
  THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
@@ -1115,7 +1115,7 @@ LICENCE: all the source code provided by AOP Alliance is Public Domain.
 
 License:
 
-Bouncy Castle Licence http://www.bouncycastle.org/licence.html
+Bouncy Castle Licence https://www.bouncycastle.org/licence.html
 
 Apache Software License, Version 1.1 https://www.apache.org/licenses/LICENSE-1.1
 
@@ -1124,7 +1124,7 @@ Apache Software License, Version 1.1 https://www.apache.org/licenses/LICENSE-1.1
 
 Licenses:
 
-Bouncy Castle Licence 	http://www.bouncycastle.org/licence.html
+Bouncy Castle Licence 	https://www.bouncycastle.org/licence.html
 
 
 ADDITIONAL LICENSE INFORMATION:
@@ -1273,10 +1273,10 @@ are reserved. The "server" module consists of all files under the
 
 Other software is used by Spring UAA as follows:
 
-* Google Protocol Buffers for Java (http://code.google.com/p/protobuf) is used for encoding and decoding objects into an optimised wire format. This library is licensed under the New BSD License.
+* Google Protocol Buffers for Java (https://code.google.com/p/protobuf) is used for encoding and decoding objects into an optimised wire format. This library is licensed under the New BSD License.
 
 
-* Base64 (http://iharder.net/base64) is used for Base64 encoding and decoding. It has been formally granted to the public domain.
+* Base64 (http://iharder.sourceforge.net/current/java/base64/) is used for Base64 encoding and decoding. It has been formally granted to the public domain.
 
 
 >>> org.springframework.web-4.0.2
@@ -1409,7 +1409,7 @@ Atlassian Connector for Eclipse
 Atlassian Connector for Eclipse
  is an Eclipse plugin that provides integration with Atlassian JIRA, Atlassian Bamboo, Atlassian Crucible, and Atlassian Fisheye.
 This product includes software developed by Atlassian (
-http://www.atlassian.com
+https://www.atlassian.com
 ).
 Atlassian Connector for Eclipse is licensed under the terms and conditions of the Eclipse Public License Version 1.0 ("EPL").
 
@@ -1423,7 +1423,7 @@ Atlassian Connector for Eclipse
 Atlassian Connector for Eclipse
  is an Eclipse plugin that provides integration with Atlassian JIRA, Atlassian Bamboo, Atlassian Crucible, and Atlassian Fisheye.
 This product includes software developed by Atlassian (
-http://www.atlassian.com
+https://www.atlassian.com
 ).
 Atlassian Connector for Eclipse is licensed under the terms and conditions of the Eclipse Public License Version 1.0 ("EPL").
 
@@ -1526,7 +1526,7 @@ The Content includes items that have been sourced from third parties as set out 
 Google Guava libraries 15.0.0
 The plug-in includes Google Guava libraries 15.0.0 ("Google Guava") developed by Google Inc.. Therefore:
 This product includes software developed by Google Inc. (
-http://www.google.com/
+https://www.google.com/
 ).
 The Google Guava binary code is included with no modifications except postprocessing (unpacked from jar). The corresponding Google Guava source code is located in source bundle com.google.guava.source.
 Google Guava is:
@@ -1540,7 +1540,7 @@ The Apache attribution
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for Google Guava is available at 
-http://code.google.com/p/guava-libraries/
+https://code.google.com/p/guava-libraries/
 .
 
 
@@ -1569,7 +1569,7 @@ Copyright (c) 2003-2006, Objenesis Team and all contributors.
 Your use of the Objenesis code is subject to the terms and conditions of the MIT License. A copy of the license is contained in the file 
 LICENSE.txt
  and is also available at 
-http://www.opensource.org/licenses/mit-license.php
+https://www.opensource.org/licenses/mit-license.php
 .
 Examples and documentation as well as updated source code for Objenesis is available at 
 http://objenesis.org/
@@ -1685,7 +1685,7 @@ The plug-in includes software developed by Sun as part of the Glassfish project.
 Your use of the library code is subject to the terms and conditions of the Common Development and Distribution License("CDDL") license. A copy of the Common Development and Distribution License is contained in the file 
 LICENSE_CDDL.txt
  and is also available at 
-http://glassfish.java.net/public/CDDL+GPL.html
+https://glassfish.java.net/public/CDDL+GPL.html
 .
 Original binaries and source are available from the 
 Glassfish website
@@ -1734,9 +1734,9 @@ https://www.eclipse.org
 Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributors license for terms and conditions of use.
 XStream 1.3.1
-The plug-in includes XStream ("XStream") developed by http://xstream.codehaus.org/. Therefore:
+The plug-in includes XStream ("XStream") developed by https://xstream.codehaus.org/. Therefore:
 This product includes software developed by XStream (
-http://xstream.codehaus.org/
+https://xstream.codehaus.org/
 ).
 A subset of the XStream binary code is included with no modifications except postprocessing (pack200 conditioning and signing). The corresponding XStream source code is located in src.zip.
 XStream is:
@@ -1744,7 +1744,7 @@ Copyright (c) 2006-2007, XStream Committers and all contributors.
 Your use of the XStream code is subject to the terms and conditions of the BSD License. A copy of the license is contained in the file 
 LICENSE.txt
  and is also available at 
-http://www.opensource.org/licenses/bsd-license.php
+https://www.opensource.org/licenses/bsd-license.php
 .
 Examples and documentation as well as updated source code for XStream is available at 
 ttp://xstream.codehaus.org/
@@ -1842,7 +1842,7 @@ The source is licensed under the java_cup
 license
 .
 The source for the bundle (or pointers to it) is available on the Apache Xalan website at 
-http://xalan.apache.org/
+https://xalan.apache.org/
 .
 
 
@@ -1892,7 +1892,7 @@ LICENSE.txt
 https://www.apache.org/licenses/
 .
 The source for the javax.activation bundle is available on the Apache Geronimo website at 
-http://geronimo.apache.org/
+https://geronimo.apache.org/
 .
 
 
@@ -1915,7 +1915,7 @@ The plug-in includes software developed by Sun as part of the Glassfish project.
 Your use of the library code is subject to the terms and conditions of the Common Development and Distribution License("CDDL") license. A copy of the Common Development and Distribution License is contained in the file 
 LICENSE_CDDL.txt
  and is also available at 
-http://glassfish.java.net/public/CDDL+GPL.html
+https://glassfish.java.net/public/CDDL+GPL.html
 .
 Original binaries and source are available from the 
 Glassfish website
@@ -1946,7 +1946,7 @@ The plug-in includes software developed by Sun as part of the Glassfish project.
 Your use of the library code is subject to the terms and conditions of the Common Development and Distribution License("CDDL") license. A copy of the Common Development and Distribution License is contained in the file 
 LICENSE_CDDL.txt
  and is also available at 
-http://glassfish.java.net/public/CDDL+GPL.html
+https://glassfish.java.net/public/CDDL+GPL.html
 .
 Original binaries and source are available from the 
 Glassfish website
@@ -1981,7 +1981,7 @@ This plug-in includes the package "javax.inject" from the atinject project, whic
 https://www.apache.org/licenses/LICENSE-2.0
 . The license is copied below.
 The source for the bundle is available from the atinject website at 
-http://code.google.com/p/atinject/
+https://code.google.com/p/atinject/
 .
 Apache License
 Version 2.0, January 2004
@@ -2167,7 +2167,7 @@ Web Service Metadata 2.0
 Your use of the Web Service Metadata code is subject to the terms and conditions of the Common Development and Distribution License v1.0. A copy of the license is contained in the file 
 LICENSE.txt
  and is also available at 
-http://www.sun.com/cddl/cddl.html
+https://www.sun.com/cddl/cddl.html
 .
 
 
@@ -2200,7 +2200,7 @@ LICENSE.txt
 https://www.apache.org/licenses/
 .
 The source for the javax.mail bundle is available on the Apache Geronimo website at 
-http://geronimo.apache.org/
+https://geronimo.apache.org/
 .
 
 
@@ -2255,7 +2255,7 @@ JSP API Sources.
 
 The plug-in includes software developed by Sun as part of the Glassfish project.
 
-Your use of the library code is subject to the terms and conditions of the Common Development and Distribution License("CDDL") license. A copy of the Common Development and Distribution License is contained in the file LICENSE_CDDL.txt and is also available at http://glassfish.java.net/public/CDDL+GPL.html.
+Your use of the library code is subject to the terms and conditions of the Common Development and Distribution License("CDDL") license. A copy of the Common Development and Distribution License is contained in the file LICENSE_CDDL.txt and is also available at https://glassfish.java.net/public/CDDL+GPL.html.
 
 Original binaries and source are available from the Glassfish website.
 
@@ -2349,10 +2349,10 @@ The plug-in is accompanied by WSDL4J 1.5.1 ("WSDL4J") developed by IBM. The WSDL
 Your use of WSDL4J is governed by the terms and conditions of the Common Public License Version 1.0, a copy of which is located in 
 about_files/license.html
  and is also available at 
-http://www.opensource.org/licenses/cpl1.0.php
+https://www.opensource.org/licenses/cpl1.0.php
 .
 Source code for WSDL4J may be obtained at 
-http://sourceforge.net/projects/wsdl4j
+https://sourceforge.net/projects/wsdl4j
 .
 
 
@@ -2385,10 +2385,10 @@ The plug-in is accompanied by WSDL4J 1.6.2 ("WSDL4J") developed by IBM.
 Your use of WSDL4J is governed by the terms and conditions of the Common Public License Version 1.0, a copy of which is located in 
 about_files/license.html
  and is also available at 
-http://www.opensource.org/licenses/cpl1.0.php
+https://www.opensource.org/licenses/cpl1.0.php
 .
 Source code for WSDL4J may be obtained at 
-http://sourceforge.net/projects/wsdl4j
+https://sourceforge.net/projects/wsdl4j
 .
 
 
@@ -2422,7 +2422,7 @@ about_files/README.dom.txt
 about_files/README.sax.txt
  for details of which licenses apply to which files.
 Source code for this XML Commons code is available at 
-http://xml.apache.org/commons/
+https://xml.apache.org/commons/
 .
 
 
@@ -2451,7 +2451,7 @@ XML Binding for Java API (JAXB API)
 Your use of the JAXB API code is subject to the terms and conditions of the Common Development and Distribution License 1.0. A copy of the license is contained in the file 
 LICENSE.txt
  and is also available at 
-http://www.sun.com/cddl/cddl.html
+https://www.sun.com/cddl/cddl.html
 The source for the javax.xml.bind bundle is available on the JAXB RI Project at https://jaxb.dev.java.net/.
 
 
@@ -2489,7 +2489,7 @@ The Apache attribution
 NOTICE
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 The source for the bundle is available on the Apache Axis website at 
-http://ws.apache.org/axis/
+https://ws.apache.org/axis/
 .
 
 
@@ -2527,7 +2527,7 @@ The Apache attribution
 NOTICE
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 The source for the bundle is available on the Apache Axis website at 
-http://ws.apache.org/axis/
+https://ws.apache.org/axis/
 .
 
 
@@ -2552,7 +2552,7 @@ LICENCE.txt
 https://www.apache.org/licenses/LICENSE-2.0
 .
 The source for the bundle is available at the StAX website at 
-http://stax.codehaus.org/
+https://stax.codehaus.org/
 .
 
 
@@ -2692,7 +2692,7 @@ The Apache attribution
 NOTICE
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 The source for the bundle is available on the Apache Axis website at 
-http://ws.apache.org/axis/
+https://ws.apache.org/axis/
 .
 
 
@@ -2725,7 +2725,7 @@ Xerces-J
 PDF Transcoder
 The Apache binary code located in the file batik-css.jar of the original distribution is included in this plug-in.
 Source code for Batik is available at 
-http://xmlgraphics.apache.org/batik/
+https://xmlgraphics.apache.org/batik/
 .
 The names "Batik" and "Apache Software Foundation" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact 
 apache@apache.org
@@ -2774,7 +2774,7 @@ Xerces-J
 PDF Transcoder
 The Apache binary code located in the file batik-util.jar of the original distribution is included in this plug-in.
 Source code for Batik is available at 
-http://xmlgraphics.apache.org/batik/
+https://xmlgraphics.apache.org/batik/
 .
 The names "Batik" and "Apache Software Foundation" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact 
 apache@apache.org
@@ -2823,7 +2823,7 @@ Xerces-J
 PDF Transcoder
 The Apache binary code located in the file batik-gui-util.jar of the original distribution is included in this plug-in.
 Source code for Batik is available at 
-http://xmlgraphics.apache.org/batik/
+https://xmlgraphics.apache.org/batik/
 .
 The names "Batik" and "Apache Software Foundation" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact 
 apache@apache.org
@@ -2874,7 +2874,7 @@ The Apache attribution
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for BCEL is available at 
-http://jakarta.apache.org/bcel/
+https://jakarta.apache.org/bcel/
 .
 
 
@@ -2938,7 +2938,7 @@ The Apache attribution
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for Commons Collections is available at 
-http://commons.apache.org/collections/
+https://commons.apache.org/collections/
 .
 
 
@@ -2970,7 +2970,7 @@ LICENSE.txt
 https://www.apache.org/licenses/LICENSE-2.0
 .
 Examples and documentation as well as updated source code for Commons Compress is available at 
-http://commons.apache.org/compress/
+https://commons.apache.org/compress/
 .
 
 
@@ -3012,7 +3012,7 @@ about_files/LICENSE.txt
 https://www.apache.org/licenses/LICENSE-1.1
 .
 The source for the bundle is available on the Apache Axis website at 
-http://ws.apache.org/axis/
+https://ws.apache.org/axis/
 .
 
 
@@ -3050,7 +3050,7 @@ https://www.apache.org/licenses/LICENSE-2.0.html
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for Commons HttpClient is available at 
-http://hc.apache.org/httpclient-3.x/
+https://hc.apache.org/httpclient-3.x/
 .
 
 
@@ -3093,7 +3093,7 @@ The Apache attribution
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for Commons IO is available at 
-http://commons.apache.org/io/
+https://commons.apache.org/io/
 .
 
 
@@ -3168,7 +3168,7 @@ https://www.apache.org/licenses/LICENSE-2.0.html
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for Commons Logging is available at 
-http://commons.apache.org/logging/
+https://commons.apache.org/logging/
 .
 
 
@@ -3201,7 +3201,7 @@ https://www.apache.org/licenses/LICENSE-2.0.html
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for Commons Net is available at 
-http://commons.apache.org/net/
+https://commons.apache.org/net/
 .
 
 
@@ -3377,7 +3377,7 @@ License
 The Eclipse Foundation makes available all content in this plug-in ("Content"). Unless otherwise indicated below, the Content is provided to you under the terms and conditions of the Eclipse Public License Version 1.0 ("EPL"). A copy of the EPL is available at 
 https://www.eclipse.org/legal/epl-v10.html
 . For purposes of the EPL, "Program" will mean the Content.
-If you did not receive this Content directly from the Eclipse Foundation, the Content is being redistributed by another party ("Redistributor") and different terms and conditions may apply to your use of any object code in the Content. Check the Redistributor's license that was provided with the Content. If no such license exists, contact the Redistributor. Unless otherwise indicated below, the terms and conditions of the EPL still apply to any source code in the Content and such source code may be obtained at http://eclipse.org
+If you did not receive this Content directly from the Eclipse Foundation, the Content is being redistributed by another party ("Redistributor") and different terms and conditions may apply to your use of any object code in the Content. Check the Redistributor's license that was provided with the Content. If no such license exists, contact the Redistributor. Unless otherwise indicated below, the terms and conditions of the EPL still apply to any source code in the Content and such source code may be obtained at https://eclipse.org
 
 
 Third Party Content
@@ -3400,7 +3400,7 @@ https://www.apache.org/licenses/LICENSE-2.0.html
 . A copy of the Common Development and Distribution License is contained in the file 
 LICENSE_CDDL.txt
  and is also available at 
-http://www.opensource.org/licenses/CDDL-1.0
+https://www.opensource.org/licenses/CDDL-1.0
 .
 Original binaries and source are available from the 
 Glassfish website
@@ -3437,7 +3437,7 @@ Your use of the Log4J code is subject to the terms and conditions of the Apache 
 NOTICE.txt
  file is included with the Content in accordance with 4d of the Apache License, Version 2.0.
 Examples and documentation as well as updated source code for the bundle is available on the Apache Logging Services website at 
-http://logging.apache.org/log4j/1.2/index.html
+https://logging.apache.org/log4j/1.2/index.html
 .
 
 
@@ -3465,7 +3465,7 @@ https://www.apache.org/licenses/LICENSE-2.0.html
 NOTICE.txt
  for further information accompanying Apache Lucene.
 Apache Lucene including its source is available from 
-http://lucene.apache.org/
+https://lucene.apache.org/
 .
 
 
@@ -3493,7 +3493,7 @@ https://www.apache.org/licenses/LICENSE-2.0.html
 NOTICE.txt
  for further information accompanying Apache Lucene.
 Apache Lucene including its source is available from 
-http://lucene.apache.org/
+https://lucene.apache.org/
 .
 
 
@@ -3527,7 +3527,7 @@ Your use of Apache Velocity is subject to the terms and conditions of the Apache
 LICENSE.txt and is also available at https://www.apache.org/licenses/LICENSE-2.0.txt
 .
 Source code for Apache Velocity may be obtained at 
-http://archive.apache.org/dist/velocity/engine/1.5/
+https://archive.apache.org/dist/velocity/engine/1.5/
 .
 
 
@@ -3591,7 +3591,7 @@ about_files/LICENSE
 https://www.apache.org/licenses/LICENSE-1.1
 .
 Source code for WSIL4J is available from the Apache Web Service Project, at 
-http://ws.apache.org/
+https://ws.apache.org/
 . See 
 about_files/README.htm
  for information about where to get the source code from the Apache repositories.
@@ -3632,7 +3632,7 @@ The names "Xalan" and "Apache Software Foundation" must not be used to endorse o
 apache@apache.org
 .
 The source for the bundle is available on the Apache Xalan website at 
-http://xalan.apache.org/
+https://xalan.apache.org/
 .
 
 
@@ -3687,7 +3687,7 @@ about_files/LICENSE.resolver.txt
 https://www.apache.org/licenses/LICENSE-2.0
 .
 Source code for Xerces-J is available at 
-http://xerces.apache.org/xerces2-j/
+https://xerces.apache.org/xerces2-j/
 .
 
 
@@ -3719,7 +3719,7 @@ Apache XML Commons Resolver 1.2
 The plug-in is accompanied by Apache XML Commons Resolver 1.2 developed by the Apache Software Foundation as part of the Apache Commons project. Your use of Resolver is subject to the terms and conditions of the Apache License, Version 2.0 ("Apache License"). A copy of the Apache License can be found in about_files/LICENSE and is also available at  https://www.apache.org/licenses/LICENSE-2.0
 .
 Source code for org.apache.xml.resolver is available at 
-http://xml.apache.org/commons/
+https://xml.apache.org/commons/
 .
 
 
@@ -3751,7 +3751,7 @@ The plug-in is accompanied by the serializer jar, that is part of the Xalan proj
 about_files/LICENSE and is also available at https://www.apache.org/licenses/LICENSE-2.0
 .
 Source code for XML Serializer is available at 
-http://xml.apache.org/xalan-j/
+https://xml.apache.org/xalan-j/
 .
 
 
@@ -3829,10 +3829,10 @@ Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributor's license for terms and conditions of use.
 BCEL v5.1
 This product contains software developed by the Apache Software Foundation (
-http://www.apache.org
+https://www.apache.org
 ).
 AspectJ includes a modified version of the Apache Jakarta Byte Code Engineering Library (BCEL) v5.1. BCEL is available at 
-http://jakarta.apache.org/bcel/
+https://jakarta.apache.org/bcel/
 . Source code for the modified version of BCEL is available at Eclipse.org in the AspectJ source tree. This code is made available under the Apache Software License v1.1
 
 
@@ -3851,9 +3851,9 @@ https://www.eclipse.org
 Third Party Content
 bsf-2.4.0.jar
 Obtained from: 
-http://apache.sunsite.ualberta.ca//commons/bsf/binaries/bsf-bin-2.4.0.zip
+https://apache.sunsite.ualberta.ca//commons/bsf/binaries/bsf-bin-2.4.0.zip
 Sources available at: 
-http://apache.sunsite.ualberta.ca//commons/bsf/source/bsf-src-2.4.0.zip
+https://apache.sunsite.ualberta.ca//commons/bsf/source/bsf-src-2.4.0.zip
 License kind: ASL
 License URL: 
 https://www.apache.org/licenses/LICENSE-2.0.html
@@ -3861,7 +3861,7 @@ License text:
 asl-v20.txt
 groovy-all-2.1.8-sources.jar
 Obtained from: 
-http://dist.groovy.codehaus.org/distributions/groovy-src-2.1.8.zip
+https://dist.groovy.codehaus.org/distributions/groovy-src-2.1.8.zip
 Sources available at: This jar is a source jar
 License kind: ASL
 License URL: 
@@ -3870,9 +3870,9 @@ License text:
 asl-v20.txt
 groovy-all-2.1.8.jar
 Obtained from: 
-http://dist.groovy.codehaus.org/distributions/groovy-binary-2.1.8.zip
+https://dist.groovy.codehaus.org/distributions/groovy-binary-2.1.8.zip
 Sources available at: 
-http://dist.groovy.codehaus.org/distributions/groovy-src-2.1.8.zip
+https://dist.groovy.codehaus.org/distributions/groovy-src-2.1.8.zip
 License kind: ASL
 License URL: 
 https://www.apache.org/licenses/LICENSE-2.0.html
@@ -3880,9 +3880,9 @@ License text:
 asl-v20.txt
 ivy-2.2.0.jar
 Obtained from: 
-http://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-bin.zip
+https://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-bin.zip
 Sources available at: 
-http://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-src.zip
+https://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-src.zip
 License kind: ASL
 License URL: 
 https://www.apache.org/licenses/LICENSE-2.0.html
@@ -3915,9 +3915,9 @@ https://www.eclipse.org
 Third Party Content
 bsf-2.4.0.jar
 Obtained from: 
-http://apache.sunsite.ualberta.ca//commons/bsf/binaries/bsf-bin-2.4.0.zip
+https://apache.sunsite.ualberta.ca//commons/bsf/binaries/bsf-bin-2.4.0.zip
 Sources available at: 
-http://apache.sunsite.ualberta.ca//commons/bsf/source/bsf-src-2.4.0.zip
+https://apache.sunsite.ualberta.ca//commons/bsf/source/bsf-src-2.4.0.zip
 License kind: ASL
 License URL: 
 https://www.apache.org/licenses/LICENSE-2.0.html
@@ -3925,7 +3925,7 @@ License text:
 asl-v20.txt
 groovy-all-2.3.2-sources.jar
 Obtained from: 
-http://dist.groovy.codehaus.org/distributions/groovy-src-2.3.2.zip
+https://dist.groovy.codehaus.org/distributions/groovy-src-2.3.2.zip
 Sources available at: This jar is a source jar
 License kind: ASL
 License URL: 
@@ -3934,9 +3934,9 @@ License text:
 asl-v20.txt
 groovy-all-2.3.2.jar
 Obtained from: 
-http://dist.groovy.codehaus.org/distributions/groovy-binary-2.3.2.zip
+https://dist.groovy.codehaus.org/distributions/groovy-binary-2.3.2.zip
 Sources available at: 
-http://dist.groovy.codehaus.org/distributions/groovy-src-2.3.2.zip
+https://dist.groovy.codehaus.org/distributions/groovy-src-2.3.2.zip
 License kind: ASL
 License URL: 
 https://www.apache.org/licenses/LICENSE-2.0.html
@@ -3944,9 +3944,9 @@ License text:
 asl-v20.txt
 ivy-2.3.0.jar
 Obtained from: 
-http://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-bin.zip
+https://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-bin.zip
 Sources available at: 
-http://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-src.zip
+https://archive.apache.org/dist/ant/ivy/2.2.0/apache-ivy-2.2.0-src.zip
 License kind: ASL
 License URL: 
 https://www.apache.org/licenses/LICENSE-2.0.html
@@ -6992,7 +6992,7 @@ Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributor's license for terms and conditions of use.
 Apache HttpComponents v4.1.2
 This plugin is based on software developed by the Apache HttpComponents project at 
-http://hc.apache.org/
+https://hc.apache.org/
 . A copy of this library is distributed within this plugin and therefore this plugin is subject to the Apache License version 2.0, a copy of the license is contained in the file 
 asl-v20.txt
  and at 
@@ -7000,7 +7000,7 @@ https://www.apache.org/licenses/LICENSE-2.0
 .
 Apache Commons Logging v1.1.1
 This plugin is based on software developed by the Apache Commons Codec project at 
-http://jakarta.apache.org/commons/logging/
+https://jakarta.apache.org/commons/logging/
 . A copy of this library is distributed within this plugin and therefore this plugin is subject to the Apache License version 2.0, a copy of the license is contained in the file 
 asl-v20.txt
  and at 
@@ -7230,7 +7230,7 @@ Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributor's license for terms and conditions of use.
 Apache HttpComponents v4.1.2
 This plugin is based on software developed by the Apache HttpComponents project at 
-http://hc.apache.org/
+https://hc.apache.org/
 . A copy of this library is distributed within this plugin and therefore this plugin is subject to the Apache License version 2.0, a copy of the license is contained in the file 
 asl-v20.txt
  and at 
@@ -7238,7 +7238,7 @@ https://www.apache.org/licenses/LICENSE-2.0
 .
 Apache Commons Logging v1.1.1
 This plugin is based on software developed by the Apache Commons Codec project at 
-http://jakarta.apache.org/commons/logging/
+https://jakarta.apache.org/commons/logging/
 . A copy of this library is distributed within this plugin and therefore this plugin is subject to the Apache License version 2.0, a copy of the license is contained in the file 
 asl-v20.txt
  and at 
@@ -7804,7 +7804,7 @@ org\eclipse\emf\ecore\xml\type\internal\XMLDuration.java
 The XML4J Derivative Work is:
 Copyright (c) 1999-2004 The Apache Software Foundation. All rights reserved.
 Your use of the XML4J Derivative Work is subject to the terms and conditions of the Apache Software License which is available at 
-http://xml.apache.org/dist/LICENSE.txt
+https://xml.apache.org/dist/LICENSE.txt
 . More specifically:
 1. Redistributions of source code must retain the above copyright
 notice, this list of conditions and the following disclaimer.
@@ -9597,9 +9597,9 @@ https://www.eclipse.org
 Third Party Content
 nlcl.jar
 Obtained from: 
-http://apache.sunsite.ualberta.ca//commons/cli/binaries/commons-cli-1.2-bin.zip
+https://apache.sunsite.ualberta.ca//commons/cli/binaries/commons-cli-1.2-bin.zip
 Sources available at: 
-http://apache.sunsite.ualberta.ca//commons/cli/source/commons-cli-1.2-src.zip
+https://apache.sunsite.ualberta.ca//commons/cli/source/commons-cli-1.2-src.zip
 License kind: ASL
 License URL: 
 https://www.apache.org/licenses/LICENSE-2.0.html
@@ -9726,7 +9726,7 @@ The plug-in is accompanied by software developed by Geoff Kuenning. The followin
 dictionaries/en_US.dictionary
 dictionaries/en_GB.dictionary
 are based on Ispell 3.1.20. The home page for Ispell is located at 
-http://lasr.cs.ucla.edu/geoff/ispell.html
+https://lasr.cs.ucla.edu/geoff/ispell.html
 .
 Your use of Ispell 3.1.20 in the plug-in is subject to the terms and conditions of the Ispell license. A copy of the Ispell license is included in 
 about_files/ispell-license.txt
@@ -13444,7 +13444,7 @@ The Content includes items that have been sourced from third parties as set out 
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-http://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13499,7 +13499,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-http://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13632,7 +13632,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-http://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13765,7 +13765,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-http://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13898,7 +13898,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-http://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -14031,7 +14031,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-http://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -14164,7 +14164,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-http://asm.objectweb.org/license.html
+https://asm.ow2.org/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -14890,7 +14890,7 @@ Your use of LIBJPEG is subject to the terms and conditions located in the
 about_files/IJG_README
  file which is included with the Content.
 The IJG's website is located at 
-http://ijg.org
+https://ijg.org
 .
 The class org.eclipse.swt.internal.image.JPEGFileFormat is based on following files from LIBJPEG:
 cderror.h
@@ -14980,7 +14980,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SIMON TATHAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 A copy of the license is also available at 
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
+https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
 .
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
 
@@ -15023,13 +15023,13 @@ The contents of the directory org/eclipse/swt/internal/mozilla (but not includin
 The Mozilla Binding contains portions of Mozilla ("Mozilla"). Mozilla is made available by Mozilla.org. Use of Mozilla is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 XULRunner 24 (subset, derivative work)
 The library swt-xulrunner24-cocoa-xxxx.dll (where "xxxx" is the version number) contains a small portion of XULRunner 24 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIGlobalObject_24.h
@@ -15042,7 +15042,7 @@ XULRunner 1.9 (subset, derivative work)
 The library libswt-xulrunner-cocoa-xxxx.jnilib (where "xxxx" is the version number) contains a small portion of XULRunner 1.9 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIScriptContext.h
@@ -15056,7 +15056,7 @@ Your use of LIBJPEG is subject to the terms and conditions located in the
 about_files/IJG_README
  file which is included with the Content.
 The IJG's website is located at 
-http://ijg.org
+https://ijg.org
 .
 The class org.eclipse.swt.internal.image.JPEGFileFormat is based on following files from LIBJPEG:
 cderror.h
@@ -15146,7 +15146,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SIMON TATHAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 A copy of the license is also available at 
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
+https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
 .
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
 
@@ -15193,13 +15193,13 @@ The contents of the directory org/eclipse/swt/internal/mozilla (but not includin
 The Mozilla Binding contains portions of Mozilla ("Mozilla"). Mozilla is made available by Mozilla.org. Use of Mozilla is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 XULRunner 24 (subset, derivative work)
 The library swt-xulrunner24-cocoa-xxxx.dll (where "xxxx" is the version number) contains a small portion of XULRunner 24 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIGlobalObject_24.h
@@ -15213,7 +15213,7 @@ XULRunner 1.9 (subset, derivative work)
 The library libswt-xulrunner-cocoa-xxxx.jnilib (where "xxxx" is the version number) contains a small portion of XULRunner 1.9 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIScriptContext.h
@@ -15227,7 +15227,7 @@ Your use of LIBJPEG is subject to the terms and conditions located in the
 about_files/IJG_README
  file which is included with the Content.
 The IJG's website is located at 
-http://ijg.org
+https://ijg.org
 .
 The class org.eclipse.swt.internal.image.JPEGFileFormat is based on following files from LIBJPEG:
 cderror.h
@@ -15317,7 +15317,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SIMON TATHAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 A copy of the license is also available at 
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
+https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
 .
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
 
@@ -15345,7 +15345,7 @@ The contents of the directory org/eclipse/swt/internal/gnome (but not including 
 The Gnome Binding contains portions of Gnome ("Library"). Gnome is made available by The Free Software Foundation. Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the Gnome Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 In accordance with Section 6 of the LGPL, you may combine or link a "work that uses the Library" (e.g. the SWT) with the Library to produce a work containing portions of the Library (e.g. the Gnome Binding) and distribute that work under the terms of your choice (e.g. the EPL) provided you comply with all other terms and conditions of Section 6 as well as other Sections of the LGPL. Please note, if you modify the Gnome Binding such modifications shall be governed by the terms and conditions of the LGPL. Also note, the terms of the EPL permit you to modify the combined work and the source code of the combined work is provided for debugging purposes so there is no need to reverse engineer the combined work.
 GTK+ Binding
@@ -15360,7 +15360,7 @@ The contents of the directory org/eclipse/swt/internal/gtk (but not including an
 The GTK+ Binding contains portions of GTK+ ("Library"). GTK+ is made available by The Free Software Foundation. Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the GTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 In accordance with Section 6 of the LGPL, you may combine or link a "work that uses the Library" (e.g. the SWT) with the Library to produce a work containing portions of the Library (e.g. the GTK+ Binding) and distribute that work under the terms of your choice (e.g. the EPL) provided you comply with all other terms and conditions of Section 6 as well as other Sections of the LGPL. Please note, if you modify the GTK+ Binding such modifications shall be governed by the terms and conditions of the LGPL. Also note, the terms of the EPL permit you to modify the combined work and the source code of the combined work is provided for debugging purposes so there is no need to reverse engineer the combined work.
 WebKitGTK+ Binding
@@ -15370,19 +15370,19 @@ libswt-webkit-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the WebKitGTK+ Binding:
 The contents of the directory org/eclipse/swt/internal/webkit (but not including any sub-directories)
 The WebKitGTK+ Binding contains portions of WebKitGTK+ ("Library"). WebKitGTK+ is made available by the WebKitGTK+ open source project (
-http://webkit.org/
+https://webkit.org/
 ). Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the WebKitGTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 In accordance with Section 6 of the LGPL, you may combine or link a "work that uses the Library" (e.g. the SWT) with the Library to produce a work containing portions of the Library (e.g. the WebKitGTK+ Binding) and distribute that work under the terms of your choice (e.g. the EPL) provided you comply with all other terms and conditions of Section 6 as well as other Sections of the LGPL. Please note, if you modify the WebKitGTK+ Binding such modifications shall be governed by the terms and conditions of the LGPL. Also note, the terms of the EPL permit you to modify the combined work and the source code of the combined work is provided for debugging purposes so there is no need to reverse engineer the combined work.
 The WebKitGTK+ Binding also contains portions of the WebKit JavaScriptCore code which is made available by the WebKit open source project (
-http://webkit.org/
+https://webkit.org/
 ). The WebKit JavaScriptCore code was obtained under the terms of the BSD license. A copy of the BSD license is provided (
 webkit-bsd.txt
 ) and is also available at 
-http://webkit.org/coding/bsd-license.html
+https://webkit.org/coding/bsd-license.html
 .
 libsoup
 The "WebKitGTK+ Binding" also includes a binding to the libsoup API. The Content may include any or all of the following files:
@@ -15391,11 +15391,11 @@ libswt-webkit-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the WebKitGTK+ Binding:
 The contents of the directory org/eclipse/swt/internal/webkit (but not including any sub-directories)
 The WebKitGTK+ Binding contains portions of libsoup ("Library"). libsoup is made available by The GNOME Project (
-http://live.gnome.org/LibSoup/
+https://live.gnome.org/LibSoup/
 ). Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the WebKitGTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 Mozilla Binding
 The "Mozilla Binding" is a binding to the Mozilla API. The Content may include any or all of the following files:
@@ -15409,13 +15409,13 @@ The contents of the directory org/eclipse/swt/internal/mozilla (but not includin
 The Mozilla Binding contains portions of Mozilla ("Mozilla"). Mozilla is made available by Mozilla.org. Use of Mozilla is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 XULRunner 24 (subset, derivative work)
 The library swt-xulrunner24-gtk-xxxx.dll (where "xxxx" is the version number) contains a small portion of XULRunner 24 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIGlobalObject_24.h
@@ -15428,7 +15428,7 @@ XULRunner 1.9 (subset, derivative work)
 The libraries libswt-xulrunner-gtk-xxxx.so, libswt-mozilla-gtk-xxxx.so, and libswt-mozilla-gcc3-gtk-xxxx.so (where "xxxx" is the version number) contain a small portion of XULRunner 1.9 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIScriptContext.h
@@ -15443,11 +15443,11 @@ libswt-cairo-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the Cairo Binding:
 The contents of the directory org/eclipse/swt/internal/cairo (but not including any sub-directories)
 The Cairo Binding contains portions of Cairo ("Cairo"). Cairo is made available by the Cairo project at 
-http://www.cairographics.org
+https://www.cairographics.org
 . Use of Cairo by the Cairo Binding is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 Independent JPEG Group's JPEG software release 6b
 This software is based in part on the work of the Independent JPEG Group's JPEG software release 6b ("LIBJPEG"). LIBJPEG was used to implement the decoding of JPEG format files in Java (TM). The Content does NOT include any portion of the LIBJPEG file ansi2knr.c.
@@ -15455,7 +15455,7 @@ Your use of LIBJPEG is subject to the terms and conditions located in the
 about_files/IJG_README
  file which is included with the Content.
 The IJG's website is located at 
-http://ijg.org
+https://ijg.org
 .
 The class org.eclipse.swt.internal.image.JPEGFileFormat is based on following files from LIBJPEG:
 cderror.h
@@ -15545,7 +15545,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SIMON TATHAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 A copy of the license is also available at 
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
+https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
 .
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
 
@@ -15573,7 +15573,7 @@ The contents of the directory org/eclipse/swt/internal/gnome (but not including 
 The Gnome Binding contains portions of Gnome ("Library"). Gnome is made available by The Free Software Foundation. Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the Gnome Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 In accordance with Section 6 of the LGPL, you may combine or link a "work that uses the Library" (e.g. the SWT) with the Library to produce a work containing portions of the Library (e.g. the Gnome Binding) and distribute that work under the terms of your choice (e.g. the EPL) provided you comply with all other terms and conditions of Section 6 as well as other Sections of the LGPL. Please note, if you modify the Gnome Binding such modifications shall be governed by the terms and conditions of the LGPL. Also note, the terms of the EPL permit you to modify the combined work and the source code of the combined work is provided for debugging purposes so there is no need to reverse engineer the combined work.
 GTK+ Binding
@@ -15588,7 +15588,7 @@ The contents of the directory org/eclipse/swt/internal/gtk (but not including an
 The GTK+ Binding contains portions of GTK+ ("Library"). GTK+ is made available by The Free Software Foundation. Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the GTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 In accordance with Section 6 of the LGPL, you may combine or link a "work that uses the Library" (e.g. the SWT) with the Library to produce a work containing portions of the Library (e.g. the GTK+ Binding) and distribute that work under the terms of your choice (e.g. the EPL) provided you comply with all other terms and conditions of Section 6 as well as other Sections of the LGPL. Please note, if you modify the GTK+ Binding such modifications shall be governed by the terms and conditions of the LGPL. Also note, the terms of the EPL permit you to modify the combined work and the source code of the combined work is provided for debugging purposes so there is no need to reverse engineer the combined work.
 WebKitGTK+ Binding
@@ -15598,19 +15598,19 @@ libswt-webkit-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the WebKitGTK+ Binding:
 The contents of the directory org/eclipse/swt/internal/webkit (but not including any sub-directories)
 The WebKitGTK+ Binding contains portions of WebKitGTK+ ("Library"). WebKitGTK+ is made available by the WebKitGTK+ open source project (
-http://webkit.org/
+https://webkit.org/
 ). Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the WebKitGTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 In accordance with Section 6 of the LGPL, you may combine or link a "work that uses the Library" (e.g. the SWT) with the Library to produce a work containing portions of the Library (e.g. the WebKitGTK+ Binding) and distribute that work under the terms of your choice (e.g. the EPL) provided you comply with all other terms and conditions of Section 6 as well as other Sections of the LGPL. Please note, if you modify the WebKitGTK+ Binding such modifications shall be governed by the terms and conditions of the LGPL. Also note, the terms of the EPL permit you to modify the combined work and the source code of the combined work is provided for debugging purposes so there is no need to reverse engineer the combined work.
 The WebKitGTK+ Binding also contains portions of the WebKit JavaScriptCore code which is made available by the WebKit open source project (
-http://webkit.org/
+https://webkit.org/
 ). The WebKit JavaScriptCore code was obtained under the terms of the BSD license. A copy of the BSD license is provided (
 webkit-bsd.txt
 ) and is also available at 
-http://webkit.org/coding/bsd-license.html
+https://webkit.org/coding/bsd-license.html
 .
 libsoup
 The "WebKitGTK+ Binding" also includes a binding to the libsoup API. The Content may include any or all of the following files:
@@ -15619,11 +15619,11 @@ libswt-webkit-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the WebKitGTK+ Binding:
 The contents of the directory org/eclipse/swt/internal/webkit (but not including any sub-directories)
 The WebKitGTK+ Binding contains portions of libsoup ("Library"). libsoup is made available by The GNOME Project (
-http://live.gnome.org/LibSoup/
+https://live.gnome.org/LibSoup/
 ). Use of the Library is governed by the terms and conditions of the GNU Lesser General Public License Version 2.1 ("LGPL"). Use of the WebKitGTK+ Binding on a standalone basis, is also governed by the terms and conditions of the LGPL. A copy of the LGPL is provided with the Content (
 lgpl-v21.txt
 ) and is also available at 
-http://www.gnu.org/licenses/lgpl.html
+https://www.gnu.org/licenses/lgpl.html
 .
 Mozilla Binding
 The "Mozilla Binding" is a binding to the Mozilla API. The Content may include any or all of the following files:
@@ -15637,13 +15637,13 @@ The contents of the directory org/eclipse/swt/internal/mozilla (but not includin
 The Mozilla Binding contains portions of Mozilla ("Mozilla"). Mozilla is made available by Mozilla.org. Use of Mozilla is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 XULRunner 24 (subset, derivative work)
 The library swt-xulrunner24-gtk-xxxx.dll (where "xxxx" is the version number) contains a small portion of XULRunner 24 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIGlobalObject_24.h
@@ -15656,7 +15656,7 @@ XULRunner 1.9 (subset, derivative work)
 The libraries libswt-xulrunner-gtk-xxxx.so, libswt-mozilla-gtk-xxxx.so, and libswt-mozilla-gcc3-gtk-xxxx.so (where "xxxx" is the version number) contain a small portion of XULRunner 1.9 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIScriptContext.h
@@ -15671,11 +15671,11 @@ libswt-cairo-gtk-xxxx.so (where "xxxx" is the version number)
 The following files in both the plug-in JAR and the src.zip shall be defined respectively as the bytecode and source code portions of the Cairo Binding:
 The contents of the directory org/eclipse/swt/internal/cairo (but not including any sub-directories)
 The Cairo Binding contains portions of Cairo ("Cairo"). Cairo is made available by the Cairo project at 
-http://www.cairographics.org
+https://www.cairographics.org
 . Use of Cairo by the Cairo Binding is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 Independent JPEG Group's JPEG software release 6b
 This software is based in part on the work of the Independent JPEG Group's JPEG software release 6b ("LIBJPEG"). LIBJPEG was used to implement the decoding of JPEG format files in Java (TM). The Content does NOT include any portion of the LIBJPEG file ansi2knr.c.
@@ -15683,7 +15683,7 @@ Your use of LIBJPEG is subject to the terms and conditions located in the
 about_files/IJG_README
  file which is included with the Content.
 The IJG's website is located at 
-http://ijg.org
+https://ijg.org
 .
 The class org.eclipse.swt.internal.image.JPEGFileFormat is based on following files from LIBJPEG:
 cderror.h
@@ -15773,7 +15773,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SIMON TATHAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 A copy of the license is also available at 
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
+https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
 .
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
 
@@ -15803,13 +15803,13 @@ The contents of the directory org/eclipse/swt/internal/mozilla (but not includin
 The Mozilla Binding contains portions of Mozilla ("Mozilla"). Mozilla is made available by Mozilla.org. Use of Mozilla is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 XULRunner 24 (subset, derivative work)
 The library swt-xulrunner24-win32-xxxx.dll (where "xxxx" is the version number) contains a small portion of XULRunner 24 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 2.0 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v20.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/2.0/
+https://www.mozilla.org/MPL/2.0/
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIGlobalObject_24.h
@@ -15823,7 +15823,7 @@ XULRunner 1.9 (subset, derivative work)
 The library swt-xulrunner-win32-xxxx.dll (where "xxxx" is the version number) contains a small portion of XULRunner 1.9 content (header files) that have been modified from the Original Code provided by mozilla.org, and whose Initial Developer is Netscape Communications Corporation. Use of this code is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 The changed files are:
 org.eclipse.swt/Eclipse SWT Mozilla/common/library/nsIScriptContext.h
@@ -15837,7 +15837,7 @@ Your use of LIBJPEG is subject to the terms and conditions located in the
 about_files/IJG_README
  file which is included with the Content.
 The IJG's website is located at 
-http://ijg.org
+https://ijg.org
 .
 The class org.eclipse.swt.internal.image.JPEGFileFormat is based on following files from LIBJPEG:
 cderror.h
@@ -15927,7 +15927,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SIMON TATHAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 A copy of the license is also available at 
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
+https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
 .
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
 
@@ -15958,7 +15958,7 @@ The contents of the directory org/eclipse/swt/internal/mozilla (but not includin
 The Mozilla Binding contains portions of Mozilla ("Mozilla"). Mozilla is made available by Mozilla.org. Use of Mozilla is governed by the terms and conditions of the Mozilla Public License Version 1.1 ("MPL"). A copy of the MPL is provided with the Content (
 mpl-v11.txt
 ) and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 Independent JPEG Group's JPEG software release 6b
 This software is based in part on the work of the Independent JPEG Group's JPEG software release 6b ("LIBJPEG"). LIBJPEG was used to implement the decoding of JPEG format files in Java (TM). The Content does NOT include any portion of the LIBJPEG file ansi2knr.c.
@@ -15966,7 +15966,7 @@ Your use of LIBJPEG is subject to the terms and conditions located in the
 about_files/IJG_README
  file which is included with the Content.
 The IJG's website is located at 
-http://ijg.org
+https://ijg.org
 .
 The class org.eclipse.swt.internal.image.JPEGFileFormat is based on following files from LIBJPEG:
 cderror.h
@@ -16056,7 +16056,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SIMON TATHAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 A copy of the license is also available at 
-http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
+https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html
 .
 Java and all Java-based trademarks and logos are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
 
@@ -16351,7 +16351,7 @@ Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributors license for terms and conditions of use.
 C++ Standard Template Library
 This plugin contains a Java port of the code for the STL heap sorting algorithm. The original code can be found at:
-http://www.sgi.com/tech/stl/stl_heap.h
+https://community.hpe.com/t5/Servers-The-Right-Compute/SGI-com-Tech-Archive-Resources-now-retired/ba-p/6992583
 The java implementation of the code can be found in src.zip in the following files:
 org\eclipse\ui\internal\views\markers\MarkerSortUtil.java
 Copyright info
@@ -17089,7 +17089,7 @@ The plug-in is accompanied by software developed by Geoff Kuenning. The followin
 dictionaries/en_US.dictionary
 dictionaries/en_GB.dictionary
 are based on Ispell 3.1.20. The home page for Ispell is located at 
-http://lasr.cs.ucla.edu/geoff/ispell.html
+https://lasr.cs.ucla.edu/geoff/ispell.html
 .
 Your use of Ispell 3.1.20 in the plug-in is subject to the terms and conditions of the Ispell license. A copy of the Ispell license is included in 
 about_files/ispell-license.txt
@@ -17176,7 +17176,7 @@ The plug-in is accompanied by software developed by Geoff Kuenning. The followin
 dictionaries/en_US.dictionary
 dictionaries/en_GB.dictionary
 are based on Ispell 3.1.20. The home page for Ispell is located at 
-http://lasr.cs.ucla.edu/geoff/ispell.html
+https://lasr.cs.ucla.edu/geoff/ispell.html
 .
 Your use of Ispell 3.1.20 in the plug-in is subject to the terms and conditions of the Ispell license. A copy of the Ispell license is included in 
 about_files/ispell-license.txt
@@ -17235,7 +17235,7 @@ The plug-in is accompanied by software developed by Geoff Kuenning. The followin
 dictionaries/en_US.dictionary
 dictionaries/en_GB.dictionary
 are based on Ispell 3.1.20. The home page for Ispell is located at 
-http://lasr.cs.ucla.edu/geoff/ispell.html
+https://lasr.cs.ucla.edu/geoff/ispell.html
 .
 Your use of Ispell 3.1.20 in the plug-in is subject to the terms and conditions of the Ispell license. A copy of the Ispell license is included in 
 about_files/ispell-license.txt
@@ -17364,7 +17364,7 @@ The plug-in is accompanied by software developed by Geoff Kuenning. The followin
 dictionaries/en_US.dictionary
 dictionaries/en_GB.dictionary
 are based on Ispell 3.1.20. The home page for Ispell is located at 
-http://lasr.cs.ucla.edu/geoff/ispell.html
+https://lasr.cs.ucla.edu/geoff/ispell.html
 .
 Your use of Ispell 3.1.20 in the plug-in is subject to the terms and conditions of the Ispell license. A copy of the Ispell license is included in 
 about_files/ispell-license.txt
@@ -17646,16 +17646,16 @@ Open Mobile Alliance DTDs
 The plug-in is accompanied by document type definitions ("WAP DTDs") defined by the Wireless Application Protocol (WAP) Forum. The WAP Forum has now been consolidated into the Open Mobile Alliance (OMA). The WAP DTDs are the following files located in the plug-in:
 wml11.dtd
  obtained from 
-http://www.wapforum.org/DTD/wml_1.1.xml
+https://www.wapforum.org/DTD/wml_1.1.xml
 wml13.dtd
  obtained from 
-http://www.wapforum.org/DTD/wml13.dtd
+https://www.wapforum.org/DTD/wml13.dtd
 xhtml-mobile10-flat.dtd
  obtained from 
-http://www.wapforum.org/DTD/xhtml-mobile10.dtd
+https://www.wapforum.org/DTD/xhtml-mobile10.dtd
 Your use of the WAP DTDs is governed by the terms and conditions of the EPL.
 More information about the WAP and the OMA is available at 
-http://www.openmobilealliance.org/tech/affiliates/wap/wapindex.html
+https://www.openmobilealliance.org/tech/affiliates/wap/wapindex.html
 .
 W3C DTDs
 The plug-in is accompanied by document type definitions (" W3C DTDs") defined by the the W3C Extensible HyperText Markup Language (XHTML) 1.1. XHTML is described at 
@@ -18602,7 +18602,7 @@ Copyright (c) 2000-2006, www.hamcrest.org. All rights reserved.
 Your use of the Hamcrest code is subject to the terms and conditions of the BSD License. A copy of the license is contained in the file 
 LICENSE.txt
  and is also available at 
-http://www.opensource.org/licenses/bsd-license.php
+https://www.opensource.org/licenses/bsd-license.php
 .
 Examples and documentation as well as updated source code for Hamcrest is available at 
 http://hamcrest.org/
@@ -18627,7 +18627,7 @@ JSON Java API
 The plug-in includes the JSON Java API from JSON.org. Your use of JSON Java API is subject to the terms and conditions of the JSON Java API license. A copy of the JSON Java API License can be found in 
 about_files/LICENSE-JSON.txt
  and is also available at 
-http://www.json.org/license.html
+https://www.json.org/license.html
 .
 
 
@@ -18654,7 +18654,7 @@ The Content includes items that have been sourced from third parties as set out 
 
 jsoup: Java HTML Parser
 This code is licensed under the MIT license and can be found at 
-http://jsoup.org/license
+https://jsoup.org/license
 . (
 local copy
 )
@@ -18686,10 +18686,10 @@ JUnit.org
 https://www.eclipse.org/legal/cpl-v10.html
 . The binary code is located in junit.jar and the source code is located in source-bundle or in the org.junit.source bundle.
 The original source and binaries are available from 
-http://search.maven.org/#search|gav|1|g%3A%22junit%22%20AND%20a%3A%22junit%22
+https://search.maven.org/#search|gav|1|g%3A%22junit%22%20AND%20a%3A%22junit%22
 , namely:
-http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11-sources.jar
-http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11.jar
+https://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11-sources.jar
+https://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11.jar
 
 
 >>> org.mozilla.javascript-1.7.2
@@ -18721,10 +18721,10 @@ Rhino 1.7 R2
 This plug-in is accompanied by Rhino, developed by Mozilla and is subject to the terms and conditions of the Mozilla Public License version 1.1. A copy of the license is contained in the file 
 MPL-1.1.txt
  and is also available at 
-http://www.mozilla.org/MPL/MPL-1.1.html
+https://www.mozilla.org/MPL/MPL-1.1.html
 .
 The source for the bundle is available on the Mozilla Rhino website at 
-http://www.mozilla.org/rhino/
+https://www.mozilla.org/rhino/
 .
 
 
@@ -18751,7 +18751,7 @@ Your use of the ASM code is subject to the terms and conditions of the BSD Licen
 LICENSE.txt
 .
 Examples and documentation as well as updated source code for ASM is available at 
-http://asm.ow2.org/
+https://asm.ow2.org/
 .
 
 
@@ -18778,7 +18778,7 @@ Your use of the ASM code is subject to the terms and conditions of the BSD Licen
 LICENSE.txt
 .
 Examples and documentation as well as updated source code for ASM is available at 
-http://asm.ow2.org/
+https://asm.ow2.org/
 .
 
 
@@ -18804,10 +18804,10 @@ The Content includes items that have been sourced from third parties as set out 
 SAT4J 2.3.5 SUBSET (Core)
 The SAT4J project makes available all content in this plug-in ("Content"). Your use of the Content is governed by the terms and conditions of the Eclipse Public License Version 1.0 ("EPL"). A copy of the EPL is available at https://www.eclipse.org/legal/epl-v10.html. For purposes of the EPL, "Program" will mean the Content.
 Alternatively, the Content may be obtained from the SAT4J project website at 
-http://www.sat4j.org/
+https://www.sat4j.org/
  for use under the terms of either the GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which case the provisions of the LGPL are applicable instead of those above. If you wish to allow use of your version of the Content only under the terms of the LGPL, and not to allow others to use your version of this Content under the terms of the EPL, indicate your decision by deleting the provisions above and replace them with the notice and other provisions required by the LGPL. If you do not delete the provisions above, a recipient may use your version of this file under the terms of the EPL or the LGPL.
 The Eclipse Foundation elects to include this software in this distribution under the EPL license. The source code for this plug-in can be obtained from the SAT4J project website at 
-http://www.sat4j.org/
+https://www.sat4j.org/
 SAT4J includes content that was obtained under licenses that differ from the SAT4J licenses.
 The content in the following classes
 org/sat4j/core/Vec.java
@@ -18852,18 +18852,18 @@ The Content includes items that have been sourced from third parties as set out 
 SAT4J 2.3.5 SUBSET (Pseudo)
 The SAT4J project makes available all content in this plug-in ("Content"). Your use of the Content is governed by the terms and conditions of the Eclipse Public License Version 1.0 ("EPL"). A copy of the EPL is available at https://www.eclipse.org/legal/epl-v10.html. For purposes of the EPL, "Program" will mean the Content.
 Alternatively, the Content may be obtained from the SAT4J project website at 
-http://www.sat4j.org/
+https://www.sat4j.org/
  for use under the terms of either the GNU Lesser General Public License Version 2.1 or later (the "LGPL"), in which case the provisions of the LGPL are applicable instead of those above. If you wish to allow use of your version of the Content only under the terms of the LGPL, and not to allow others to use your version of this Content under the terms of the EPL, indicate your decision by deleting the provisions above and replace them with the notice and other provisions required by the LGPL. If you do not delete the provisions above, a recipient may use your version of this file under the terms of the EPL or the LGPL.
 The Eclipse Foundation elects to include this software in this distribution under the EPL license. The source code for this plug-in can be obtained from the SAT4J project website at 
-http://www.sat4j.org/
+https://www.sat4j.org/
 SAT4J includes content that was obtained under licenses that differ from the SAT4J licenses.
 The content in the following classes
 org/sat4j/pb/reader/OPBReader2005.java
 org/sat4j/pb/reader/OPBReader2007.java
 is based on a parser for pseudo-Boolean instances (the "Official" reader for the Pseudo Boolean evaluation 2005) and was obtained from
-http://www.cril.univ-artois.fr/PB05/parser/SimpleParser.java
+https://www.cril.univ-artois.fr/PB05/parser/SimpleParser.java
  and
-http://www.cril.univ-artois.fr/PB07/parser/SimpleParser.java
+https://www.cril.univ-artois.fr/PB07/parser/SimpleParser.java
 under the following permissive license:
 Copyright (c) 2005-2007 Olivier ROUSSEL and Vasco MANQUINHO
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19089,7 +19089,7 @@ uddi4j.jar
 Your use of UDDI4J is governed by the terms and conditions of the IBM Public License Version 1.0, a copy of which is located in 
 about_files/ipl-v10.html
  and is also available at 
-http://www.opensource.org/licenses/ibmpl.php
+https://www.opensource.org/licenses/ibmpl.php
 .
 Source code for UDDI4J may be obtained at 
 http://uddi4j.sourceforge.net/
@@ -19129,7 +19129,7 @@ Xerces-J
 PDF Transcoder
 A subset of the Apache binary code located in the file batik-ext.jar of the original distribution is included in this plug-in.
 Source code for Batik is available at 
-http://xmlgraphics.apache.org/batik/
+https://xmlgraphics.apache.org/batik/
 .
 The names "Batik" and "Apache Software Foundation" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact apache@apache.org
 .
@@ -19180,7 +19180,7 @@ Xerces-J
 PDF Transcoder
 A subset of the Apache binary code located in the file batik-ext.jar of the original distribution is included in this plug-in.
 Source code for Batik is available at 
-http://xmlgraphics.apache.org/batik/
+https://xmlgraphics.apache.org/batik/
 .
 The names "Batik" and "Apache Software Foundation" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact 
 apache@apache.org
@@ -19230,7 +19230,7 @@ Xerces-J
 PDF Transcoder
 A subset of the Apache binary code located in the file batik-ext.jar of the original distribution is included in this plug-in.
 Source code for Batik is available at 
-http://xmlgraphics.apache.org/batik/
+https://xmlgraphics.apache.org/batik/
 .
 The names "Batik" and "Apache Software Foundation" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact 
 apache@apache.org
@@ -19282,7 +19282,7 @@ Xerces-J
 PDF Transcoder
 A subset of the Apache binary code located in the file batik-ext.jar of the original distribution is included in this plug-in.
 Source code for Batik is available at 
-http://xmlgraphics.apache.org/batik/
+https://xmlgraphics.apache.org/batik/
 .
 The names "Batik" and "Apache Software Foundation" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact 
 apache@apache.org
@@ -20872,7 +20872,7 @@ EXHIBIT A -Mozilla Public License.
    Version 1.1 (the "License"); you may not use this file except in
    compliance with the License. You may obtain a copy of the License at
 
-   http://www.mozilla.org/MPL/
+   https://www.mozilla.org/MPL/
 
    Software distributed under the License is distributed on an "AS IS"
    basis, WITHOUT WARRANTY OF
@@ -21084,7 +21084,7 @@ If You choose to distribute Source Code Form that is Incompatible With Secondary
 
 Exhibit A - Source Code Form License Notice
 
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 If it is not possible or desirable to put the notice in a particular file, then You may include the notice in a location (such as a LICENSE file in a relevant directory) where a recipient would be likely to look for such a notice.
 
@@ -21845,7 +21845,7 @@ available (as would be noted above), you may obtain a copy of
 the source code corresponding to the binaries for such open
 source components and modifications thereto, if any, (the
 "Source Files"), by downloading the Source Files from Pivotal's website at
-http://www.gopivotal.com/open-source, or by sending a request, 
+https://pivotal.io/open-source, or by sending a request, 
 with your name and address to: Pivotal Software, Inc., 3496 Deer Creek Rd, 
 Palo Alto, CA 94304, Attention: General Counsel. All such requests should 
 clearly specify: OPEN SOURCE FILES REQUEST, Attention General Counsel. 

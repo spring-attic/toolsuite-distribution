@@ -1040,7 +1040,7 @@ Copyright (C) 2000-2004 Jason Hunter & Brett McLaughlin.
      "This product includes software developed by the
       JDOM Project (https://www.jdom.org/)."
  Alternatively, the acknowledgment may be graphical using the logos 
- available at https://www.jdom.org/images/logos.
+ available at http://www.jdom.org/images/logos/.
 
  THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
@@ -1234,7 +1234,7 @@ Other software is used by Spring UAA as follows:
 * Google Protocol Buffers for Java (https://code.google.com/p/protobuf) is used for encoding and decoding objects into an optimised wire format. This library is licensed under the New BSD License.
 
 
-* Base64 (https://iharder.net/base64) is used for Base64 encoding and decoding. It has been formally granted to the public domain.
+* Base64 (http://iharder.sourceforge.net/current/java/base64/) is used for Base64 encoding and decoding. It has been formally granted to the public domain.
 
 
 >>> org.springframework.web-4.0.2
@@ -13402,7 +13402,7 @@ The Content includes items that have been sourced from third parties as set out 
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.io/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13457,7 +13457,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.io/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13590,7 +13590,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.io/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13723,7 +13723,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.io/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13856,7 +13856,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.io/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -13989,7 +13989,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.io/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -14122,7 +14122,7 @@ WSDL4J 1.6.2
 ASM v3.3.1
 The EclipseLink Project includes ASM for the purpose of byte code weaving. The AMS library is re-packaged within the source of the project (org.persistence.eclipse.internal.libraries.asm.*) to avoid version collisions with other usage of ASM.
 The source code is available within the project's subversion repository. The binaries are distributed within the eclipselink.jar and in the org.eclipse.persistence.asm_*.jar bundle.
-https://asm.objectweb.org/license.html
+https://asm.ow2.io/license.html
 Copyright (c) 2000-2005 INRIA, France Telecom, All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -16309,7 +16309,7 @@ Third Party Content
 The Content includes items that have been sourced from third parties as set out below. If you did not receive this Content directly from the Eclipse Foundation, the following is provided for informational purposes only, and you should look to the Redistributors license for terms and conditions of use.
 C++ Standard Template Library
 This plugin contains a Java port of the code for the STL heap sorting algorithm. The original code can be found at:
-https://www.sgi.com/tech/stl/stl_heap.h
+https://community.hpe.com/t5/Servers-The-Right-Compute/SGI-com-Tech-Archive-Resources-now-retired/ba-p/6992583
 The java implementation of the code can be found in src.zip in the following files:
 org\eclipse\ui\internal\views\markers\MarkerSortUtil.java
 Copyright info
@@ -21803,7 +21803,7 @@ available (as would be noted above), you may obtain a copy of
 the source code corresponding to the binaries for such open
 source components and modifications thereto, if any, (the
 "Source Files"), by downloading the Source Files from Pivotal's website at
-https://www.gopivotal.com/open-source, or by sending a request, 
+https://pivotal.io/open-source, or by sending a request, 
 with your name and address to: Pivotal Software, Inc., 3496 Deer Creek Rd, 
 Palo Alto, CA 94304, Attention: General Counsel. All such requests should 
 clearly specify: OPEN SOURCE FILES REQUEST, Attention General Counsel. 
