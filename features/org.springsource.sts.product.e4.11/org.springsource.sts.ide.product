@@ -47,8 +47,7 @@ openFile</programArgs>
    </vm>
 
    <license>
-        <url>open_source_licenses.txt</url>
-       <text></text>
+        <url>license.txt</url>
    </license>
 
    <!--
