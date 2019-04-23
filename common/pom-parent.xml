@@ -128,178 +128,6 @@
 		</profile>
 		
 		<profile>
-			<id>e35</id>
-			<properties>
-				<dist.target>e3.5.2</dist.target>
-				<dist.target.major>e3.5</dist.target.major>
-				<dist.platform.name>Galileo</dist.platform.name>
-				<dist.platform.name.long>Galileo SR2 (3.5.2)</dist.platform.name.long>
-				<dist.platform.id>galileo</dist.platform.id>
-				<dist.platform.version>3.5</dist.platform.version>
-				<package.qualifierPrefix>e35</package.qualifierPrefix>
-				<version.weaving>1.0.0.v20100108</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e36</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<dist.target>e3.6.2</dist.target>
-				<dist.target.major>e3.6</dist.target.major>
-				<dist.platform.name>Helios</dist.platform.name>
-				<dist.platform.name.long>Helios SR2 (3.6.2)</dist.platform.name.long>
-				<dist.platform.id>helios</dist.platform.id>
-				<dist.platform.version>3.6</dist.platform.version>
-				<package.qualifierPrefix>e36</package.qualifierPrefix>
-				<version.weaving>1.0.0.R3_6_2</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e37</id>
-			<properties>
-				<dist.target>e3.7.2</dist.target>
-				<dist.target.major>e3.7</dist.target.major>
-				<dist.platform.name>Indigo</dist.platform.name>
-				<dist.platform.name.long>Indigo SR2 (3.7.2)</dist.platform.name.long>
-				<dist.platform.id>indigo</dist.platform.id>
-				<dist.platform.version>3.7</dist.platform.version>
-				<package.qualifierPrefix>e37</package.qualifierPrefix>
-				<version.weaving>1.0.100.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e38</id>
-			<properties>
-				<dist.target>e3.8.2</dist.target>
-				<dist.target.major>e3.8</dist.target.major>
-				<dist.platform.name>Juno</dist.platform.name>
-				<dist.platform.name.long>Juno SR2 (3.8.2)</dist.platform.name.long>
-				<dist.platform.id>juno</dist.platform.id>
-				<dist.platform.version>3.8</dist.platform.version>
-				<package.qualifierPrefix>e38</package.qualifierPrefix>
-				<version.weaving>1.0.100.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e42</id>
-			<properties>
-				<dist.target>e4.2.2</dist.target>
-				<dist.target.major>e4.2</dist.target.major>
-				<dist.platform.name>Juno</dist.platform.name>
-				<dist.platform.name.long>Juno SR2 (4.2.2)</dist.platform.name.long>
-				<dist.platform.id>juno</dist.platform.id>
-				<dist.platform.version>4.2</dist.platform.version>
-				<package.qualifierPrefix>e42</package.qualifierPrefix>
-				<version.weaving>1.0.100.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e43</id>
-			<properties>
-				<dist.target>e4.3.2</dist.target>
-				<dist.target.major>e4.3</dist.target.major>
-				<dist.platform.name>Kepler</dist.platform.name>
-				<dist.platform.name.long>Kepler SR2 (4.3.2)</dist.platform.name.long>
-				<dist.platform.id>kepler</dist.platform.id>
-				<dist.platform.version>4.3</dist.platform.version>
-				<package.qualifierPrefix>e43</package.qualifierPrefix>
-				<version.weaving>1.0.100.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e43-java8</id>
-			<properties>
-				<dist.target>e4.3.2-java8</dist.target>
-				<dist.target.major>e4.3-java8</dist.target.major>
-				<dist.platform.name>Kepler</dist.platform.name>
-				<dist.platform.name.long>Kepler SR2 (4.3.2)</dist.platform.name.long>
-				<dist.platform.id>kepler</dist.platform.id>
-				<dist.platform.version>4.3-java8</dist.platform.version>
-				<package.qualifierPrefix>e43-java8</package.qualifierPrefix>
-				<version.weaving>1.0.100.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e44</id>
-			<properties>
-				<dist.target>e4.4.2</dist.target>
-				<dist.target.major>e4.4</dist.target.major>
-				<dist.platform.name>Luna</dist.platform.name>
-				<dist.platform.name.long>Luna SR2 (4.4.2)</dist.platform.name.long>
-				<dist.platform.id>luna</dist.platform.id>
-				<dist.platform.version>4.4</dist.platform.version>
-				<package.qualifierPrefix>e44</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e45</id>
-			<properties>
-				<dist.target>e4.5.2</dist.target>
-				<dist.target.major>e4.5</dist.target.major>
-				<dist.platform.name>Mars</dist.platform.name>
-				<dist.platform.name.long>Mars.2 (4.5.2)</dist.platform.name.long>
-				<dist.platform.id>mars</dist.platform.id>
-				<dist.platform.version>4.5</dist.platform.version>
-				<package.qualifierPrefix>e45</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e45-internal</id>
-			<properties>
-				<dist.target>e4.5.2-internal</dist.target>
-				<dist.target.major>e4.5-internal</dist.target.major>
-				<dist.platform.name>Mars</dist.platform.name>
-				<dist.platform.name.long>Mars.2 (4.5.2)</dist.platform.name.long>
-				<dist.platform.id>mars</dist.platform.id>
-				<dist.platform.version>4.5</dist.platform.version>
-				<package.qualifierPrefix>e45</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e46</id>
-			<properties>
-				<dist.target>e4.6.3</dist.target>
-				<dist.target.major>e4.6</dist.target.major>
-				<dist.platform.name>Neon</dist.platform.name>
-				<dist.platform.name.long>Neon.3 (4.6.3)</dist.platform.name.long>
-				<dist.platform.id>neon</dist.platform.id>
-				<dist.platform.version>4.6</dist.platform.version>
-				<package.qualifierPrefix>e46</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e47</id>
-			<properties>
-				<dist.target>e4.7.3a</dist.target>
-				<dist.target.major>e4.7</dist.target.major>
-				<dist.platform.name>Oxygen</dist.platform.name>
-				<dist.platform.name.long>Oxygen.3a (4.7.3a)</dist.platform.name.long>
-				<dist.platform.id>oxygen</dist.platform.id>
-				<dist.platform.version>4.7</dist.platform.version>
-				<package.qualifierPrefix>e47</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e48</id>
-			<properties>
-				<dist.target>e4.8.0</dist.target>
-				<dist.target.major>e4.8</dist.target.major>
-				<dist.platform.name>Photon</dist.platform.name>
-				<dist.platform.name.long>Photon (4.8.0)</dist.platform.name.long>
-				<dist.platform.id>photon</dist.platform.id>
-				<dist.platform.version>4.8</dist.platform.version>
-				<package.qualifierPrefix>e48</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
 			<id>e49</id>
 			<properties>
 				<dist.target>e4.9.0</dist.target>
@@ -338,6 +166,20 @@
 				<version.weaving>1.1.0.HEAD</version.weaving>
 			</properties>
 		</profile>
+		<profile>
+			<id>e412</id>
+			<properties>
+				<dist.target>e4.12.0</dist.target>
+				<dist.target.major>e4.12</dist.target.major>
+				<dist.platform.name>2019-06</dist.platform.name>
+				<dist.platform.name.long>2019-06 (4.12.0)</dist.platform.name.long>
+				<dist.platform.id>2019-06</dist.platform.id>
+				<dist.platform.version>4.12</dist.platform.version>
+				<package.qualifierPrefix>e412</package.qualifierPrefix>
+				<version.weaving>1.1.0.HEAD</version.weaving>
+			</properties>
+		</profile>
+
 		<profile>
 			<id>build.springsource.com</id>
 			<activation>
