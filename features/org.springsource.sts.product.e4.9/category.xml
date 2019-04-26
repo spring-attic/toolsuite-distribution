@@ -135,6 +135,11 @@
 	
 	<!-- Extensions features -->
 	<feature
+		id="org.springframework.ide.eclipse.xml.namespaces.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
 		id="org.springframework.ide.eclipse.aop.feature" version="0.0.0">
 		<category name="Extensions / Spring IDE" />
 	</feature>
@@ -218,6 +223,11 @@
 	<!-- Resources features -->
 	<feature
 		id="org.springframework.ide.eclipse.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.xml.namespaces.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
 	
