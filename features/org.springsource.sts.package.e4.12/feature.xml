@@ -74,8 +74,7 @@
       <import feature="org.eclipse.ecf.core.feature"/>
       <import feature="org.eclipse.ecf.core.ssl.feature"/>
       <import feature="org.eclipse.ecf.filetransfer.feature"/>
-      <import feature="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
-      <import feature="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
+      <import feature="org.eclipse.ecf.filetransfer.httpclient45.feature"/>
       <import feature="org.eclipse.ecf.filetransfer.ssl.feature"/>
 <!--
       <import feature="org.eclipse.egit"/>
