@@ -167,7 +167,7 @@
 								<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 								<taskdef resource="org/springframework/build/aws/ant/antlib.xml" />
 
-								<copy file="../../common/html/nightly-generic-snippet.html" tofile="../../common/html/sts-nightly-${dist.target.major}.html"/>
+								<copy file="../../common/html/nightly-generic-snippet.html" tofile="../../common/html/sts-nightly-${dist.target.major}.html" overwrite="true"/>
 		
 								<replace file="../../common/html/sts-nightly-${dist.target.major}.html" token="@QUALIFIER@" value="${unqualifiedVersion}.${p2.qualifier}" summary="yes" />
 								<replace file="../../common/html/sts-nightly-${dist.target.major}.html" token="@TARGET@" value="${dist.target}" summary="yes" />
