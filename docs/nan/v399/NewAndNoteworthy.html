@@ -96,18 +96,38 @@
 <p>The default STS distribution is now based on the recently released Eclipse 2019-06 (4.12) release, including build-in support for Java12. Details about the Eclipse release can be found here:
 	<a href="https://www.eclipse.org/eclipseide/2019-06/">Eclipse 2019-06</a>.</p>
 
-<p class="nan3">tbd</p>
+<p class="nan3">project-related XSD namespace lookup prefers https now</p>
 
-<p>tbd</p>
+<p>The internal mechanism to lookup XSD files for Spring namespaces from the project classpath can now deal correctly with https-defined XSD locations in your Spring config files. It mimics the same behavior than the one implemented in the core Spring Framework itself and is therefore compatible with spring.schemas files that use http as well as https for the schema location.</p>
 
-<center><img src="screenshot/quicksearch-keep-open.png"></img></center>
+<p class="nan3">Added user preference to prefer https for Spring namespaces</p>
+
+<p>In order to avoid security risks when using http URLs for namespace location defintions, you can now set the default to https when adding namespaces to your Spring config files using the preferences. So when having that option enabled, the tooling with automatically insert https locations for your namespaces instead of http, independent of the way those are defined in the spring.schemas file.</p>
+
+<center><img src="screenshot/prefer-https-namespaces.png"></img></center>
 
 <hr/>
 
 <p class="nan3">Important Changes and Fixes</p>
 </br>
 <ul>
-	<li>tbd</li>
+	<li>improvement: startup performance of CF manifest language server improved significantly</li>
+	<li>improvement: CF manifest editor now supports anchors and references</li>
+	<li>improvement: remote devtools integration for boot dashboard now uses process healthcheck instead of none</li>
+	<li>improvement: restarting an app on CF in the boot dashboard checks for dirty manifest editor</li>
+	<li>fixed: empty property values in custom properties not set when launching boot apps</li>
+	<li>fixed: pushing app to CF with health-check-type set to http throws exception</li>
+	<li>fixed: focus in Spring Initializr wiazrd is lost when switching wizard pages forth and back</li>
+	<li>fixed: CF manifest editor supports manifest files with number of instances set to zero</li>
+	<li>fixed: preference to configure remote boot apps for Spring Boot language server (part of STS4) moved to STS4</li>
+	<li>fixed: content-assist in CF manifest editor showed error when it should not</li>
+	<li>fixed: strange exceptions being logged when deleting apps on CF that had SSH tunnels active</li>
+	<li>fixed: various painting issues with icons on retina displays when using Eclipse 4.12 as base platform</li>
+	<li>fixed: quickly restarting apps in boot dashboard multiple times could cause failures</li>
+	<li>fixed: Tags in yaml files with dollar signs throw IllegalGroupReference</li>
+	<li>fixed: Double click on any Live Beans Graph node yields to NullPointerException</li>
+	<li>housekeeping: support for Buildship 1.x removed</li>
+	<li>housekeeping: separate feature for project-related XML namespace lookup extracted</li>
 </ul>
 
 <hr/>
