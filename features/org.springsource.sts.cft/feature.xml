@@ -2,7 +2,7 @@
 <feature
       id="org.springsource.sts.cft"
       label="%featureName"
-      version="3.9.9.qualifier"
+      version="3.9.10.qualifier"
       provider-name="%providerName"
       plugin="org.springsource.sts">
 
