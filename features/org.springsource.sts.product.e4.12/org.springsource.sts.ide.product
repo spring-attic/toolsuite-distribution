@@ -8,22 +8,19 @@
    <launcherArgs>
       <programArgs>-product org.springsource.sts.ide
 --launcher.defaultAction
-openFile</programArgs>
+openFile
+      </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
+-Xms256m
+-Xmx1024m
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
 --add-modules=ALL-SYSTEM
--Xms40m
--Dosgi.module.lock.timeout=10</vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns
-         <argsX86_64>-Xmx1200m</argsX86_64>
+-Dosgi.module.lock.timeout=10
+      </vmArgs>
+
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts4.icns
       </vmArgsMac>
-      <vmArgsWin>-Dorg.eclipse.swt.browser.IEVersion=10001
-         <argsX86_64>-Xmx1200m</argsX86_64>
-         <argsX86>-Xmx768m</argsX86>
-      </vmArgsWin>
-      <vmArgsLin>
-         <argsX86_64>-Xmx1200m</argsX86_64>
-         <argsX86>-Xmx768m</argsX86>
-      </vmArgsLin>
    </launcherArgs>
 
    <windowImages i16="/org.springsource.sts/sts16.png" i32="/org.springsource.sts/sts32.png" i48="/org.springsource.sts/sts48.png" i64="/org.springsource.sts/sts64.png" i128="/org.springsource.sts/sts128.png"/>
@@ -42,13 +39,6 @@ openFile</programArgs>
       </win>
       <linux icon="../../plugins/org.springsource.sts/sts.xpm"/>
    </launcher>
-
-   <vm>
-      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</linux>
-      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</macos>
-      <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</solaris>
-      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
-   </vm>
 
    <license>
         <url>license.txt</url>
@@ -129,12 +119,6 @@ Everyone is permitted to copy and distribute copies of this Agreement, but in or
 This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
 		</text>
    </license>
-
-   <!--
-   <plugins>
-      <plugin id="org.springsource.sts"/>
-   </plugins>
-   -->
 
    <features>
       <feature id="org.springsource.sts.package"/>
