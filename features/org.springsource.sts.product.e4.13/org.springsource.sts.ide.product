@@ -19,7 +19,7 @@ openFile
 -Dosgi.module.lock.timeout=10
       </vmArgs>
 
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts4.icns
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns
       </vmArgsMac>
    </launcherArgs>
 
