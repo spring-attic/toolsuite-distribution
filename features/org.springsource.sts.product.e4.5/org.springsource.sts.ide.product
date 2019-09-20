@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
-<product name="Spring Tool Suite" id="org.springsource.sts.ide" uid="org.springsource.sts.ide" application="org.eclipse.ui.ide.workbench" version="3.9.10.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Spring Tool Suite" id="org.springsource.sts.ide" uid="org.springsource.sts.ide" application="org.eclipse.ui.ide.workbench" version="3.9.11.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
