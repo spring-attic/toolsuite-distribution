@@ -192,6 +192,19 @@
 				<version.weaving>1.1.0.HEAD</version.weaving>
 			</properties>
 		</profile>
+		<profile>
+			<id>e414</id>
+			<properties>
+				<dist.target>e4.14.0</dist.target>
+				<dist.target.major>e4.14</dist.target.major>
+				<dist.platform.name>2019-12</dist.platform.name>
+				<dist.platform.name.long>2019-12 (4.14.0)</dist.platform.name.long>
+				<dist.platform.id>2019-12</dist.platform.id>
+				<dist.platform.version>4.14</dist.platform.version>
+				<package.qualifierPrefix>e414</package.qualifierPrefix>
+				<version.weaving>1.1.0.HEAD</version.weaving>
+			</properties>
+		</profile>
 
 		<profile>
 			<id>build.springsource.com</id>
