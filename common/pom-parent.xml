@@ -62,6 +62,7 @@
 
 		<!-- OSX app signing -->
 		<skip.osx.signing>true</skip.osx.signing>
+		<skip.osx.notarizing>true</skip.osx.notarizing>
 
 		<dist.name>Spring Tool Suite</dist.name>
 		<dist.project>springsource-tool-suite</dist.project>

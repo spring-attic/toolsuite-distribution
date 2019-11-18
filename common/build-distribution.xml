@@ -167,6 +167,7 @@
 
 	</target>
 
+	<!-- the creation of the DMG file is based on appdmg: https://www.npmjs.com/package/appdmg -->
 	<target name="create-sts-bundle-archive-osx-dmg">
 		<exec executable="/usr/local/bin/appdmg">
 			<arg value="${project.build.directory}/../sts-dmg-config-${dist.target.major}.json"/>
