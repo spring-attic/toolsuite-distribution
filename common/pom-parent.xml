@@ -60,7 +60,8 @@
 		<signing.alias>pivotal</signing.alias>
 		<signing.keystore>~/.keytool/pivotal.jks</signing.keystore>
 
-		<!-- OSX app signing -->
+		<!-- Windows Exe and OSX app signing and notarizing-->
+		<skip.win.signing>true</skip.win.signing>
 		<skip.osx.signing>true</skip.osx.signing>
 		<skip.osx.notarizing>true</skip.osx.notarizing>
 
