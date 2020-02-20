@@ -1,8 +1,1 @@
-# toolsuite-distribution
-the distribution build for the Spring Tool Suite 3 eclipse-based distribution and branding
-
-## run the snapshot build
-
-`mvn -Pe412 -Psnapshot clean package`
-
-This will build the full distributions for Windows, macOS, and Linux. The final products can be found in `features/org.springsource.sts.product.e4.12/target/products/org.springsource.sts.ide`
+This repository contains the definition and the build process for the Spring Tool Suite 3 distribution, which is no under active development. Updates will still be provided. Please take a look at the wiki for additional details: https://github.com/spring-projects/toolsuite-distribution/wiki/Spring-Tool-Suite-3
