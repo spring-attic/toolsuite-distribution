@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns:app="https://spring.io"><head>
+  <title>Spring Tool Suite 3.9.12 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+  <style>
+    p {
+        margin-top: 12px;
+    }
+    
+    table {
+        margin-top: 20px;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        vertical-align: top;
+    }
+  </style>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="https://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="https://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="https://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="https://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="https://spring.io/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite 3.9.12: New and Noteworthy</h1>
+
+<p class="nan2">Important Note</p>
+
+<p>This is a minor bugfix and maintenance release that we ship to our existing STS3 users beyond the announced maintenance lifespan for your convenience. We strongly recommend
+	to update to the new Spring Tools 4. Here is a <a href="https://github.com/spring-projects/sts4/wiki/STS3-Migration">migration guide from Spring Tool Suite 3 to Spring Tools 4</a>
+	that helps with migrating an existing workspace.</p>
+	
+<p>In case you are missing something extremely important or something is blocking you from upgrading, please raise an issue at:
+	<a href="https://github.com/spring-projects/sts4/issues">Spring Tools 4 GitHub issues</a>.</p>
+
+<p class="nan2">Updates and New/Enhanced Features</p>
+
+<p class="nan3">Eclipse 2020-03 (4.15)</p>
+<p>The default STS distribution is now based on the recently released Eclipse 2020-03 (4.15) release. Details about the Eclipse release can be found here:
+	<a href="https://www.eclipse.org/eclipseide/2020-03/">Eclipse 2020-03</a>.</p>
+
+<p class="nan3">Please remember: the Quick Text Search now part of the Eclipse platform</p>
+
+<p>The Quick Text Search feature got contributed to the Eclipse platform and ships now to all the millions of users of the Eclipse IDE. Therefore this will no longer be a separate feature installed
+	into the Spring Tool Suite 3 distribution, but a default feature of the platform itself. We are pround of this contribution to the platform and welcoming all the new users to this amazing
+	feature.</p>
+
+<hr/>
+
+<p class="nan3">Important Changes and Fixes</p>
+</br>
+<ul>
+	<li>fixed: fixed: Boot Dashboard cannot start app when Eclipse project name contains spaces  (<a href="https://github.com/spring-projects/sts4/issues/403">#403</a>)</li>
+</ul>
+
+<hr/>
+
+<p class="nan2"><a name="misc"></a>Miscellaneous</a>
+
+<h2>Useful Links</h2>
+
+<p>Download STS: <a href="https://spring.io/tools3/sts/all">https://spring.io/tools3/sts/all</a></p>
+<p>Spring Tools Issue tracker: <a href="https://github.com/spring-projects/spring-ide/issues">https://github.com/spring-projects/spring-ide/issues</a></p>
+
+<hr/>
+
+
+<h2>Known issues in this release</h2>
+
+<h3>Deploying apps to Cloud Foundry via Boot Dashboard does not support new buildpacks attribute yet</h3> 
+
+<p>The new buildpacks attribute in manifest.yml files is not yet supported when deploying apps via the Spring Boot dashboard
+	within STS. A dialog will pop up and warn you about this limitation in case you run into this situation. As a workaround, you
+	can push your apps via the CF CLI or continue to use the deprecated buildpack attribute.</p>
+<br/>
+
+<h3>Deleting Eureka service instances from Boot Dashboard</h3>
+
+<p>Deleting certain Eureka service instances, like p-service-registry in Pivotal Web Services, from boot dashboard Cloud Foundry targets may experience problems with timeouts. The same issue may be found when deleting them from
+Eclipse Tools for Cloud Foundry (CFT). A workaround is to use the cf CLI to delete these service instances.</p>
+
+<br/>
+		
+<h3>Running on JDK9/JDK10/JDK11</h3>
+
+<p>STS 3.9.12 can run on top of a JDK out-of-the-box. However, please notice that the Maven support in Eclipse/STS runs
+	within the JVM of the IDE and therefore also uses the JDK9/10/11/12/13 runtime. While that isn't necessarily a problem, having
+	Maven modules in your build that aren't compatible with Java 9 might cause your project build to fail in Eclipse/STS.</p>
+<p>
+	This is the case, for example, if you use Spring Boot 1.5.x or earlier versions, which uses an older version of the
+	Maven jar plugin, which fails when running on top of a Java 9/10/11 VM. In that case we recommend to configure Eclipse/STS
+	to run on top of a Java 8 runtime (<a href="https://wiki.eclipse.org/Eclipse.ini">by modifying the eclipse.ini or sts.ini
+	file accordingyly</a>).</p>
+<br/>
+		
+<h3>Spring Boot dashboard ngrok tunneling feature doesn't support Spring Cloud Services yet</h3>
+
+<p>The Spring Boot Dashboards ngrok tunnel feature doesn't work yet with remote service registries from Spring Cloud Services.
+	  Instead it works with self-deployed Eureka service registry apps on CF only (as described
+	  <a href="https://spring.io/blog/2015/10/15/the-spring-boot-dashboard-in-sts-part-2-working-with-cloud-foundry">here</a>). We
+	  are working on enhancing the ngrok tunnel feature to directly support Spring Cloud Services in the near future. In the meantime
+	  we published a tech note that describes <a href="https://docs.spring.io/sts/nan/v373/SpringToolSuite-LocalServicesAndSCS.html">
+      how to setup ngrok tunneling in combination with SCS manually</a>.</p>
+<br/>
+
+<h3>Boot App launched with Thin Jar Launcher hangs during start up</h3>
+
+<p>Workaround is open launch configuration for the Boot App. Navigate to <strong><u>Spring Boot</u></strong> tab and enter a boot property into "Override Properties" table. For example <code>server.port</code> and value <code>8080</code>. Save the launch configuration and re-launch your Boot App.</p>
+<br/>
+
+<h3>Setting the JDK</h3>
+
+<p>STS 3.9.12 requires a JDK8+ to run on top of. Nevertheless the native Eclipse launcher component might pick up a JRE or an older JDK automatically 
+if you don't specify which JDK to run STS on top of. To avoid this, you can specify the JDK in the sts.ini file that comes with your STS installation. 
+Add a line at the beginning "-vm" and an additional line below that which points to the "javaw" executable of the JDK on your machine. Here is a detailed
+explanation <a href="https://wiki.eclipse.org/Eclipse.ini">how to configure the JVM in the ini file</a>.</p>
+<br/>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="https://docs.spring.io/sts/nan/v3911/NewAndNoteworthy.html">STS 3.9.11</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3910/NewAndNoteworthy.html">STS 3.9.10</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v399/NewAndNoteworthy.html">STS 3.9.9</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v398/NewAndNoteworthy.html">STS 3.9.8</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v397/NewAndNoteworthy.html">STS 3.9.7</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v396/NewAndNoteworthy.html">STS 3.9.6</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v395/NewAndNoteworthy.html">STS 3.9.5</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v394/NewAndNoteworthy.html">STS 3.9.4</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v393/NewAndNoteworthy.html">STS 3.9.3</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v392/NewAndNoteworthy.html">STS 3.9.2</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v391/NewAndNoteworthy.html">STS 3.9.1</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v390/NewAndNoteworthy.html">STS 3.9.0</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v384/NewAndNoteworthy.html">STS 3.8.4</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v383/NewAndNoteworthy.html">STS 3.8.0 - 3.8.3</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v373/NewAndNoteworthy.html">STS 3.7.3</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v372/NewAndNoteworthy.html">STS 3.7.2</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v371/NewAndNoteworthy.html">STS 3.7.1</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v370/NewAndNoteworthy.html">STS 3.7.0</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="https://spring.io/tools">Tools</a></li>
+                  <li><a href="https://spring.io/services">Services</a></li>
+                  <li><a href="https://spring.io/about">About Us</a></li>
+                  <li><a href="https://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> Pivotal Software, Inc. All Rights Reserved.
+            <a href="https://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="https://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
