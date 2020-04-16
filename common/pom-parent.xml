@@ -130,19 +130,6 @@
 		</profile>
 		
 		<profile>
-			<id>e413</id>
-			<properties>
-				<dist.target>e4.13.0</dist.target>
-				<dist.target.major>e4.13</dist.target.major>
-				<dist.platform.name>2019-09</dist.platform.name>
-				<dist.platform.name.long>2019-09 (4.13.0)</dist.platform.name.long>
-				<dist.platform.id>2019-09</dist.platform.id>
-				<dist.platform.version>4.13</dist.platform.version>
-				<package.qualifierPrefix>e413</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
 			<id>e414</id>
 			<properties>
 				<dist.target>e4.14.0</dist.target>
@@ -165,6 +152,19 @@
 				<dist.platform.id>2020-03</dist.platform.id>
 				<dist.platform.version>4.15</dist.platform.version>
 				<package.qualifierPrefix>e415</package.qualifierPrefix>
+				<version.weaving>1.1.0.HEAD</version.weaving>
+			</properties>
+		</profile>
+		<profile>
+			<id>e416</id>
+			<properties>
+				<dist.target>e4.16.0</dist.target>
+				<dist.target.major>e4.16</dist.target.major>
+				<dist.platform.name>2020-06</dist.platform.name>
+				<dist.platform.name.long>2020-06 (4.16.0)</dist.platform.name.long>
+				<dist.platform.id>2020-06</dist.platform.id>
+				<dist.platform.version>4.16</dist.platform.version>
+				<package.qualifierPrefix>e416</package.qualifierPrefix>
 				<version.weaving>1.1.0.HEAD</version.weaving>
 			</properties>
 		</profile>
