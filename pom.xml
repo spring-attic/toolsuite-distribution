@@ -377,7 +377,7 @@ Optional parameters:
 			</modules>
 		</profile>
 
-		<profile>		<profile>
+		<profile>
 			<id>e416</id>
 			<properties>
 				<product.project.sts>org.springsource.sts.product.e4.16</product.project.sts>
@@ -523,6 +523,7 @@ Optional parameters:
 			</modules>
 		</profile>
 
+		<profile>
 			<id>spring-site</id>
 			<modules>
 				<module>releng/org.springsource.sts.site</module>
@@ -533,13 +534,6 @@ Optional parameters:
 			<id>spring-bundles</id>
 			<modules>
 				<module>releng/org.springsource.sts.distribution-bundles</module>
-			</modules>
-		</profile>
-
-		<profile>
-			<id>spring-bundles-e45</id>
-			<modules>
-				<module>releng/org.springsource.sts.distribution-bundles.e45</module>
 			</modules>
 		</profile>
 
