@@ -699,4 +699,28 @@
 		<category name="Uncategorized" />
 	</bundle>
 
+	<bundle id="org.glassfish.hk2.api" version="0.0.0">
+		<category name="Uncategorized" />
+	</bundle>
+
+	<bundle id="org.glassfish.hk2.locator" version="0.0.0">
+		<category name="Uncategorized" />
+	</bundle>
+
+	<bundle id="org.glassfish.hk2.osgi-resource-locator" version="0.0.0">
+		<category name="Uncategorized" />
+	</bundle>
+
+	<bundle id="org.glassfish.hk2.utils" version="0.0.0">
+		<category name="Uncategorized" />
+	</bundle>
+
+	<bundle id="org.glassfish.jersey.core.jersey-client" version="0.0.0">
+		<category name="Uncategorized" />
+	</bundle>
+
+	<bundle id="org.glassfish.jersey.core.jersey-common" version="0.0.0">
+		<category name="Uncategorized" />
+	</bundle>
+
 </site>
