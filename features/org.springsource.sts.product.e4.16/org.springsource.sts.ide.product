@@ -11,10 +11,9 @@
 openFile
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
+-Dosgi.dataAreaRequiresExplicitInit=true
 -Xms256m
--Xmx1024m
--XX:+UseG1GC
--XX:+UseStringDeduplication
+-Xmx2048m
 --add-modules=ALL-SYSTEM
 -Dosgi.module.lock.timeout=10
       </vmArgs>
