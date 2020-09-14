@@ -350,16 +350,16 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/buildship/updates/e410/releases/</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
-				</repository>
-<!--				<repository>
+				</repository> -->
+				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
-				</repository> -->
+					<url>https://download.eclipse.org/lsp4e/releases/0.16.0/</url>
+				</repository>
 <!--				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
@@ -491,16 +491,16 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/buildship/updates/e410/releases/</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
-				</repository>
-<!--				<repository>
+				</repository> -->
+				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
-				</repository> -->
+					<url>https://download.eclipse.org/lsp4e/releases/0.16.0/</url>
+				</repository>
 <!--				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
@@ -637,16 +637,16 @@ Optional parameters:
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/buildship/updates/e410/releases/</url>
 				</repository>
-				<repository>
+<!--				<repository>
 					<id>lsp4e-snapshots</id>
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
-				</repository>
-<!--				<repository>
+				</repository> -->
+				<repository>
 					<id>lsp4e-releases</id>
 					<layout>p2</layout>
-					<url>https://download.eclipse.org/lsp4e/0.5.x-snapshots/</url>
-				</repository> -->
+					<url>https://download.eclipse.org/lsp4e/releases/latest/</url>
+				</repository>
 <!--				<repository>
 					<id>sts4-language-servers-specific-release</id>
 					<layout>p2</layout>
