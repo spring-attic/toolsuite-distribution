@@ -83,9 +83,7 @@ Optional parameters:
 
 	<modules>
 		<module>plugins/org.springsource.sts</module>
-		<module>plugins/org.springsource.sts.cft.branding</module>
 		<module>features/org.springsource.sts</module>
-		<module>features/org.springsource.sts.cft</module>
 	</modules>
 
 	<profiles>
@@ -329,11 +327,6 @@ Optional parameters:
 					<id>maven-dependency-support</id>
 					<layout>p2</layout>
 					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
-				</repository>
-				<repository>
-					<id>latest-cft</id>
-					<layout>p2</layout>
-					<url>https://download.eclipse.org/cft/1.1.1/</url>
 				</repository>
 				<repository>
 					<id>ansi-console</id>
