@@ -138,12 +138,6 @@ This Agreement is governed by the laws of the State of New York and the intellec
       <feature id="com.ianbrandt.tools.m2e.mdp.feature" installMode="root"/>
       <feature id="m2e.chromatic.feature" installMode="root"/>
 
-      <feature id="org.eclipse.cft.server.core.feature" installMode="root"/>
-      <feature id="org.eclipse.cft.server.ui.feature" installMode="root"/>
-
-      <feature id="org.springsource.sts.cft" installMode="root"/>
-      <feature id="org.springframework.ide.eclipse.cft.feature" installMode="root"/>
-	  
       <feature id="org.eclipse.buildship" installMode="root"/>
       <feature id="org.eclipse.egit" installMode="root"/>
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>
