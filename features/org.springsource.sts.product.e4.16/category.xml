@@ -207,12 +207,12 @@
 		id="org.springframework.ide.eclipse.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
-<!--
+
 	<feature
 		id="org.springframework.ide.eclipse.xml.namespaces.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
--->
+
 	<feature
 		id="org.springframework.ide.eclipse.aop.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
@@ -277,16 +277,28 @@
 		id="org.springframework.ide.eclipse.boot.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
-<!--
+
 	<feature
 		id="org.springframework.ide.eclipse.boot.dash.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
--->
+
 	<feature
 		id="org.springframework.ide.eclipse.aeri.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
+
+	<bundle id="org.springsource.ide.eclipse.commons.boot.ls" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.boot.ls.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.content.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
 
 	<bundle id="org.springsource.ide.eclipse.commons.content.core" version="0.0.0">
 		<category name="Uncategorized"/>
