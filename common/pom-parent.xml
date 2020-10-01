@@ -130,32 +130,6 @@
 		</profile>
 		
 		<profile>
-			<id>e414</id>
-			<properties>
-				<dist.target>e4.14.0</dist.target>
-				<dist.target.major>e4.14</dist.target.major>
-				<dist.platform.name>2019-12</dist.platform.name>
-				<dist.platform.name.long>2019-12 (4.14.0)</dist.platform.name.long>
-				<dist.platform.id>2019-12</dist.platform.id>
-				<dist.platform.version>4.14</dist.platform.version>
-				<package.qualifierPrefix>e414</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
-			<id>e415</id>
-			<properties>
-				<dist.target>e4.15.0</dist.target>
-				<dist.target.major>e4.15</dist.target.major>
-				<dist.platform.name>2020-03</dist.platform.name>
-				<dist.platform.name.long>2020-03 (4.15.0)</dist.platform.name.long>
-				<dist.platform.id>2020-03</dist.platform.id>
-				<dist.platform.version>4.15</dist.platform.version>
-				<package.qualifierPrefix>e415</package.qualifierPrefix>
-				<version.weaving>1.1.0.HEAD</version.weaving>
-			</properties>
-		</profile>
-		<profile>
 			<id>e416</id>
 			<properties>
 				<dist.target>e4.16.0</dist.target>
@@ -178,6 +152,19 @@
 				<dist.platform.id>2020-09</dist.platform.id>
 				<dist.platform.version>4.17</dist.platform.version>
 				<package.qualifierPrefix>e417</package.qualifierPrefix>
+				<version.weaving>1.1.0.HEAD</version.weaving>
+			</properties>
+		</profile>
+		<profile>
+			<id>e418</id>
+			<properties>
+				<dist.target>e4.18.0</dist.target>
+				<dist.target.major>e4.18</dist.target.major>
+				<dist.platform.name>2020-12</dist.platform.name>
+				<dist.platform.name.long>2020-12 (4.18.0)</dist.platform.name.long>
+				<dist.platform.id>2020-12</dist.platform.id>
+				<dist.platform.version>4.18</dist.platform.version>
+				<package.qualifierPrefix>e418</package.qualifierPrefix>
 				<version.weaving>1.1.0.HEAD</version.weaving>
 			</properties>
 		</profile>
@@ -383,17 +370,7 @@
 							<environment>
 								<os>win32</os>
 								<ws>win32</ws>
-								<arch>x86</arch>
-							</environment>
-							<environment>
-								<os>win32</os>
-								<ws>win32</ws>
 								<arch>x86_64</arch>
-							</environment>
-							<environment>
-								<os>linux</os>
-								<ws>gtk</ws>
-								<arch>x86</arch>
 							</environment>
 							<environment>
 								<os>linux</os>

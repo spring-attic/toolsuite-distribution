@@ -2,7 +2,7 @@
   "title": "Spring Tool Suite",
   "icon": "../../plugins/org.springsource.sts/sts.icns",
   "contents": [
-    { "x": 192, "y": 100, "type": "file", "path": "../../features/org.springsource.sts.product.e4.14/target/products/org.springsource.sts.ide/macosx/cocoa/x86_64/STS.app" },
+    { "x": 192, "y": 100, "type": "file", "path": "../../features/org.springsource.sts.product.e4.18/target/products/org.springsource.sts.ide/macosx/cocoa/x86_64/STS.app" },
     { "x": 448, "y": 100, "type": "link", "path": "/Applications" },
     { "x": 192, "y": 250, "type": "file", "path": "target/pivotal-tc-server" },
     { "x": 448, "y": 250, "type": "file", "path": "legal" },
