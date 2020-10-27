@@ -504,7 +504,7 @@ Optional parameters:
 		<repository>
 			<id>springide</id>
 			<layout>p2</layout>
-			<url>https://dist.springframework.org/${dist.type}/IDE/${dist.springide-pathpostfix}</url>
+			<url>https://dist.springframework.org/${dist.type}/IDE/${dist.springide-pathpostfix}/${dist.target.major}</url>
 		</repository>
 		<repository>
 			<id>eclipse-integration-tcserver</id>
