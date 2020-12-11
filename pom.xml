@@ -79,7 +79,7 @@ Optional parameters:
 		<dist.eclipse-integration-tcserver-version>4.1.0.RELEASE</dist.eclipse-integration-tcserver-version>
 		<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
-		<sts4-language-server-release-version>20201023</sts4-language-server-release-version>
+		<sts4-language-server-release-version>20201211</sts4-language-server-release-version>
 
 	</properties>
 
@@ -516,16 +516,16 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 		</repository>
-<!--		<repository>
-			<id>sts4-language-servers-releases</id>
-			<layout>p2</layout>
-			<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/${sts4-language-server-release-version}</url>
-		</repository> -->
 		<repository>
 			<id>sts4-language-servers-releases</id>
 			<layout>p2</layout>
-			<url>https://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
+			<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/${sts4-language-server-release-version}</url>
 		</repository>
+<!--		<repository>
+			<id>sts4-language-servers-releases</id>
+			<layout>p2</layout>
+			<url>https://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
+		</repository> -->
 <!--		<repository>
 			<id>egit</id>
 			<layout>p2</layout>
