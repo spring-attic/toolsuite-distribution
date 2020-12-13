@@ -79,7 +79,7 @@ Optional parameters:
 		<dist.eclipse-integration-tcserver-version>4.1.0.RELEASE</dist.eclipse-integration-tcserver-version>
 		<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
-		<sts4-language-server-release-version>20201211</sts4-language-server-release-version>
+		<sts4-language-server-release-version>20201213</sts4-language-server-release-version>
 
 	</properties>
 
