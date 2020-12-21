@@ -157,11 +157,6 @@
 	</feature>	
 	
 	<feature
-		id="org.springframework.ide.eclipse.roo.feature" version="0.0.0">
-		<category name="Extensions / Spring IDE" />
-	</feature>	
-
-	<feature
 		id="org.springframework.ide.eclipse.maven.feature" version="0.0.0">
 		<category name="Extensions / Spring IDE" />
 	</feature>	
@@ -194,11 +189,6 @@
 	
 	<feature
 		id="org.springframework.ide.eclipse.mylyn.feature" version="0.0.0">
-		<category name="Integrations / Spring IDE" />
-	</feature>
-	
-	<feature
-		id="org.springframework.ide.eclipse.aeri.feature" version="0.0.0">
 		<category name="Integrations / Spring IDE" />
 	</feature>
 	
@@ -259,11 +249,6 @@
 	</feature>		
 
 	<feature
-		id="org.springframework.ide.eclipse.roo.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>		
-
-	<feature
 		id="org.springframework.ide.eclipse.maven.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>		
@@ -280,11 +265,6 @@
 
 	<feature
 		id="org.springframework.ide.eclipse.boot.dash.feature.source" version="0.0.0">
-		<category name="Resources / Spring IDE" />
-	</feature>
-
-	<feature
-		id="org.springframework.ide.eclipse.aeri.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
 	</feature>
 
