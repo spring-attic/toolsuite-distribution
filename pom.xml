@@ -390,16 +390,16 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 		</repository>
-		<repository>
-			<id>sts4-language-servers-releases</id>
-			<layout>p2</layout>
-			<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/${sts4-language-server-release-version}</url>
-		</repository>
 <!--		<repository>
 			<id>sts4-language-servers-releases</id>
 			<layout>p2</layout>
-			<url>https://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
+			<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/${sts4-language-server-release-version}</url>
 		</repository> -->
+		<repository>
+			<id>sts4-language-servers-releases</id>
+			<layout>p2</layout>
+			<url>https://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
+		</repository>
 <!--		<repository>
 			<id>egit</id>
 			<layout>p2</layout>
