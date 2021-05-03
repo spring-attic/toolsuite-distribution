@@ -177,7 +177,7 @@ Optional parameters:
 				<repository>
 					<id>m2e-chromatic</id>
 					<layout>p2</layout>
-					<url>https://dl.bintray.com/sidespin/repo/m2e-chromatic/1.0.1/</url>
+					<url>https://sidespin.github.io/m2e-chromatic/update/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
@@ -308,7 +308,7 @@ Optional parameters:
 				<repository>
 					<id>m2e-chromatic</id>
 					<layout>p2</layout>
-					<url>https://dl.bintray.com/sidespin/repo/m2e-chromatic/1.0.1/</url>
+					<url>https://sidespin.github.io/m2e-chromatic/update/</url>
 				</repository>
 				<repository>
 					<id>maven-devtools</id>
