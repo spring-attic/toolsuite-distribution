@@ -158,6 +158,20 @@
 		</profile>
 
 		<profile>
+			<id>e420</id>
+			<properties>
+				<dist.target>e4.20.0</dist.target>
+				<dist.target.major>e4.20</dist.target.major>
+				<dist.platform.name>2021-06</dist.platform.name>
+				<dist.platform.name.long>2021-06 (4.20.0)</dist.platform.name.long>
+				<dist.platform.id>2021-06</dist.platform.id>
+				<dist.platform.version>4.20</dist.platform.version>
+				<package.qualifierPrefix>e420</package.qualifierPrefix>
+				<version.weaving>1.1.0.HEAD</version.weaving>
+			</properties>
+		</profile>
+
+		<profile>
 			<id>build.springsource.com</id>
 			<activation>
 				<property>
