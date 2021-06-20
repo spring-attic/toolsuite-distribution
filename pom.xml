@@ -79,7 +79,7 @@ Optional parameters:
 		<dist.eclipse-integration-tcserver-version>4.1.0.RELEASE</dist.eclipse-integration-tcserver-version>
 		<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
-		<sts4-language-server-release-version>20210311</sts4-language-server-release-version>
+		<sts4-language-server-release-version>20210615</sts4-language-server-release-version>
 
 	</properties>
 
@@ -361,16 +361,16 @@ Optional parameters:
 				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
 			</properties>
 			<repositories>
-<!--				<repository>
+				<repository>
 					<id>2021-06</id>
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/releases/2021-06/</url>
-				</repository> -->
-				<repository>
+				</repository>
+<!--				<repository>
 					<id>2021-06-staging</id>
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/staging/2021-06/</url>
-				</repository>
+				</repository> -->
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
@@ -521,16 +521,16 @@ Optional parameters:
 			<layout>p2</layout>
 			<url>https://dist.springsource.com/${dist.type}/TOOLS/eclipse-integration-commons/${dist.eclipse-integration-commons-version}</url>
 		</repository>
-<!--		<repository>
-			<id>sts4-language-servers-releases</id>
-			<layout>p2</layout>
-			<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/${sts4-language-server-release-version}</url>
-		</repository> -->
 		<repository>
 			<id>sts4-language-servers-releases</id>
 			<layout>p2</layout>
-			<url>https://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
+			<url>https://dist.springsource.com/release/TOOLS/sts4-language-servers/${sts4-language-server-release-version}</url>
 		</repository>
+<!--		<repository>
+			<id>sts4-language-servers-releases</id>
+			<layout>p2</layout>
+			<url>https://dist.springsource.com/snapshot/TOOLS/sts4-language-servers/nightly</url>
+		</repository> -->
 <!--		<repository>
 			<id>egit</id>
 			<layout>p2</layout>
