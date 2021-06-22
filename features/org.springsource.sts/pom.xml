@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springsource.sts.features</groupId>
     <artifactId>org.springsource.sts.features.parent</artifactId>
-    <version>3.9.17-SNAPSHOT</version>
+    <version>3.9.18-SNAPSHOT</version>
   </parent>
   <artifactId>org.springsource.sts</artifactId>
   <packaging>eclipse-feature</packaging>
