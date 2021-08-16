@@ -79,7 +79,7 @@ Optional parameters:
 		<dist.eclipse-integration-tcserver-version>4.1.0.RELEASE</dist.eclipse-integration-tcserver-version>
 		<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
-		<sts4-language-server-release-version>20210615</sts4-language-server-release-version>
+		<sts4-language-server-release-version>20210815</sts4-language-server-release-version>
 
 	</properties>
 
@@ -480,6 +480,137 @@ Optional parameters:
 			<modules>
 				<module>features/org.springsource.sts.package.e4.20</module>
 				<module>features/org.springsource.sts.product.e4.20</module>
+			</modules>
+		</profile>
+
+		<profile>
+			<id>e421</id>
+			<properties>
+				<product.project.sts>org.springsource.sts.product.e4.21</product.project.sts>
+				<p2.repository.name>Spring Tool Suite for Eclipse 2021-09</p2.repository.name>
+				<groovy.compiler.feature>org.codehaus.groovy18.feature.feature.group</groovy.compiler.feature>
+				<groovy.compiler.switch>-Dgroovy.compiler.level=18</groovy.compiler.switch>
+			</properties>
+			<repositories>
+<!--				<repository>
+					<id>2021-06</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/releases/2021-09/</url>
+				</repository> -->
+				<repository>
+					<id>2021-09-staging</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/staging/2021-09/</url>
+				</repository>
+				<repository>
+					<id>orbit</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/S20210728044401/repository</url>
+				</repository>
+				<repository>
+					<id>mylyn</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/mylyn/releases/latest</url>
+				</repository>
+				<repository>
+					<id>ajdt</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/tools/ajdt/410/dev/update</url>
+				</repository>
+				<repository>
+					<id>latest-m2e</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/technology/m2e/releases</url>
+				</repository>
+				<repository>
+					<id>latest-m2e-wtp</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/m2e-wtp/releases/1.4/</url>
+				</repository>
+				<repository>
+					<id>swtbot</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
+				</repository>
+				<repository>
+					<id>groovy</id>
+					<layout>p2</layout>
+					<url>https://dist.springsource.org/snapshot/GRECLIPSE/e4.7/</url>
+				</repository>
+				<repository>
+					<id>atlassian</id>
+					<layout>p2</layout>
+					<url>https://update.atlassian.com/atlassian-eclipse-plugin/rest/e3.7</url>
+				</repository>
+				<repository>
+					<id>maven-extras-mirror</id>
+					<layout>p2</layout>
+					<url>https://download.springsource.com/release/TOOLS/third-party/m2e-sts310-signed/</url>
+				</repository>
+				<repository>
+					<id>ajdt-m2e-configurator</id>
+					<layout>p2</layout>
+					<url>https://dist.springsource.org/release/AJDT/configurator-v2/</url>
+				</repository>
+				<repository>
+					<id>maven-egit</id>
+					<layout>p2</layout>
+					<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.15.1/N/LATEST</url>
+				</repository>
+				<!--				<repository>
+									<id>maven-wro4j</id>
+									<layout>p2</layout>
+									<url>https://download.jboss.org/jbosstools/updates/m2e-wro4j/</url>
+								</repository> -->
+				<repository>
+					<id>maven-wro4j</id>
+					<layout>p2</layout>
+					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-06-25_06-16-31-H26/</url>
+				</repository>
+				<repository>
+					<id>m2e-chromatic</id>
+					<layout>p2</layout>
+					<url>https://sidespin.github.io/m2e-chromatic/update/</url>
+				</repository>
+				<repository>
+					<id>maven-devtools</id>
+					<layout>p2</layout>
+					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
+				</repository>
+				<repository>
+					<id>maven-dependency-support</id>
+					<layout>p2</layout>
+					<url>https://ianbrandt.github.io/m2e-maven-dependency-plugin/</url>
+				</repository>
+				<repository>
+					<id>ansi-console</id>
+					<layout>p2</layout>
+					<url>https://dist.springsource.com/release/TOOLS/third-party/ansiconsole</url>
+				</repository>
+<!--				<repository>
+					<id>lsp4j</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/modeling/tmf/xtext/updates/milestones/</url>
+				</repository> -->
+				<repository>
+					<id>latest-buildship-release</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/buildship/updates/e410/releases/</url>
+				</repository>
+<!--				<repository>
+					<id>lsp4e-snapshots</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/lsp4e/snapshots/</url>
+				</repository> -->
+				<repository>
+					<id>lsp4e-releases</id>
+					<layout>p2</layout>
+					<url>https://download.eclipse.org/lsp4e/releases/latest/</url>
+				</repository>
+			</repositories>
+			<modules>
+				<module>features/org.springsource.sts.package.e4.21</module>
+				<module>features/org.springsource.sts.product.e4.21</module>
 			</modules>
 		</profile>
 
