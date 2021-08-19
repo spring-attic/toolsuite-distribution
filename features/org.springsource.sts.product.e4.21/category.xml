@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site pack200="true">
+  <description url="https://www.springsource.com/products/sts">
+    The SpringSource Tool Suite is the next generation IDE that helps you focus 
+    your development work with the Spring Portfolio.
+  </description>
+
+  <category-def name="Uncategorized" label="Uncategorized"/>
+
+  <feature
+     url="features/org.springsource.sts_0.0.0.jar"
+     id="org.springsource.sts" 
+     version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
+  <feature
+     url="features/org.springsource.sts.package_0.0.0.jar"
+     id="org.springsource.sts.package" 
+     version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
+  <feature
+	id="org.eclipse.ajdt"
+	version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
+  <feature
+	id="org.eclipse.contribution.weaving"
+	version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
+  <feature
+	id="org.eclipse.contribution.xref"
+	version="0.0.0">
+	<category name="Uncategorized"/>
+  </feature>
+
+  <!-- Language Server -->
+  <category-def name="Spring Tooling Language Servers for Eclipse" label="Spring Tooling Language Servers for Eclipse"/>
+
+  <feature
+	id="org.springframework.tooling.cloudfoundry.manifest.ls.feature"
+	version="0.0.0">
+	<category name="Spring Tooling Language Servers for Eclipse"/>
+  </feature>
+
+  <bundle id="org.springframework.tooling.ls.eclipse.commons">
+	  <category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.springframework.tooling.jdt.ls.commons">
+	  <category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4j" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4j.source" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4j.jsonrpc" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4j.jsonrpc.source" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.lsp4e" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="com.google.gson" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="com.google.gson.source" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <bundle id="org.eclipse.xtext.xbase.lib" version="0.0.0">
+	<category name="Uncategorized"/>
+  </bundle>
+
+  <!-- Eclipse Integration Commons -->
+  <category-def name="Core / Eclipse Integration Commons" label="Core / Eclipse Integration Commons"/>
+  <category-def name="Resources / Eclipse Integration Commons" label="Resources / Eclipse Integration Commons"/>
+
+  <feature
+	id="org.springsource.ide.eclipse.dashboard"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration Commons" />
+  </feature>
+
+  <!-- tc Server -->
+  <category-def name="Core / Eclipse Integration Pivotal tc Server" label="Core / Eclipse Integration Pivotal tc Server"/>
+
+  <feature
+	id="com.vmware.vfabric.ide.eclipse.tcserver"
+	version="0.0.0">
+	<category name="Core / Eclipse Integration Pivotal tc Server" />
+  </feature>
+
+  <!-- Spring IDE -->
+  <category-def name="Core / Spring IDE" label="Core / Spring IDE" />
+  <category-def name="Extensions / Spring IDE" label="Extensions / Spring IDE" />
+  <category-def name="Extensions (Incubation) / Spring IDE" label="Extensions (Incubation) / Spring IDE" />
+  <category-def name="Integrations / Spring IDE" label="Integrations / Spring IDE" />
+  <category-def name="Resources / Spring IDE" label="Resources / Spring IDE" />
+
+	<!-- Core features -->
+	<feature
+		id="org.springframework.ide.eclipse.feature" version="0.0.0">
+		<category name="Core / Spring IDE" />
+	</feature>
+	
+	<!-- Extensions features -->
+	<feature
+		id="org.springframework.ide.eclipse.xml.namespaces.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.aop.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.osgi.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.security.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.webflow.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.batch.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.integration.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>	
+	
+	<feature
+		id="org.springframework.ide.eclipse.maven.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>	
+
+	<feature
+		id="org.springframework.ide.eclipse.data.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.boot.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.boot.dash.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.autowire.feature" version="0.0.0">
+		<category name="Extensions / Spring IDE" />
+	</feature>
+
+	<!-- Integration features -->
+	<feature
+		id="org.springframework.ide.eclipse.ajdt.feature" version="0.0.0">
+		<category name="Integrations / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.mylyn.feature" version="0.0.0">
+		<category name="Integrations / Spring IDE" />
+	</feature>
+	
+	<!-- Resources features -->
+	<feature
+		id="org.springframework.ide.eclipse.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.xml.namespaces.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.aop.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.batch.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.osgi.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.security.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.webflow.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.autowire.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.ajdt.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+	
+	<feature
+		id="org.springframework.ide.eclipse.mylyn.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+		
+	<feature
+		id="org.springframework.ide.eclipse.integration.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>		
+
+	<feature
+		id="org.springframework.ide.eclipse.maven.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>		
+
+	<feature
+		id="org.springframework.ide.eclipse.data.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.boot.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<feature
+		id="org.springframework.ide.eclipse.boot.dash.feature.source" version="0.0.0">
+		<category name="Resources / Spring IDE" />
+	</feature>
+
+	<bundle id="org.springsource.ide.eclipse.commons.boot.ls" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.boot.ls.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.content.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.frameworks.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.frameworks.ui" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.ui" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.livexp" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springsource.ide.eclipse.commons.jdk_tools" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springframework.ide.eclipse.beans.ui.live" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="io.projectreactor.reactor-core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="io.projectreactor.reactor-core.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.reactivestreams.reactive-streams" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.reactivestreams.reactive-streams.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<!-- third-party dependencies -->
+    <bundle id="org.bouncycastle.bcpg" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.bouncycastle.bcpg.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.bouncycastle.bcpkix" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.bouncycastle.bcpkix.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.bouncycastle.bcprov" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.bouncycastle.bcprov.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="com.hierynomus.sshj" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="com.hierynomus.sshj.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="com.jcraft.jzlib" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="com.jcraft.jzlib.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="net.i2p.crypto.eddsa" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="net.i2p.crypto.eddsa.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="com.google.protobuf" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="com.google.protobuf.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.yaml.snakeyaml" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.dadacoalition.yedit" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="com.fasterxml.jackson.core.jackson-annotations" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="com.fasterxml.jackson.core.jackson-core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="com.fasterxml.jackson.core.jackson-databind" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+    <bundle id="net.i2p.crypto.eddsa" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="net.i2p.crypto.eddsa.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+		
+	<bundle id="com.springsource.util.common" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="com.springsource.util.common.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	
+	<bundle id="edu.emory.mathcs.backport" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="edu.emory.mathcs.backport.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="javax.jms" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="javax.jms.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="javax.activation" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="javax.activation.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="javax.annotation" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="javax.annotation.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="javax.ws.rs" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="javax.ws.rs.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="javax.xml.bind" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="javax.xml.bind.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="javax.xml.stream" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="javax.validation" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="javax.validation.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.aopalliance" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.apache.commons.io.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	
+    <bundle id="org.codehaus.jackson.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+    <bundle id="org.codehaus.jackson.core.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.codehaus.jackson.mapper" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.codehaus.jackson.mapper.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.aspectj.runtime" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.aspectj.runtime.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.aspectj.weaver" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<!--		<bundle id="org.eclipse.weaver.source" version="0.0.0"/> -->
+	
+	<bundle id="org.springframework.aop" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.aop.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.beans" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.beans.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.context" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.context.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.context.support" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.context.support.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.core.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.data.core" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.data.core.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.expression" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.expression.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.jdbc" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.jdbc.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.jms" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.jms.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.orm" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.orm.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.oxm" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.oxm.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.transaction" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.transaction.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.web.servlet" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.web.servlet.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.web" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.web.source" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.springframework.roo.wrapping.bcpg-jdk15" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.roo.wrapping.bcprov-jdk15" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+	<bundle id="org.springframework.roo.wrapping.json-simple" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+	<bundle id="org.eclipse.buildship.stsmigration" version="0.0.0">
+		<category name="Uncategorized"/>
+	</bundle>
+
+</site>
