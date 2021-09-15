@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns:app="https://spring.io"><head>
+  <title>Spring Tool Suite 3.9.18 - New and Noteworthy</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap-responsive.css}" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/icons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/buttons.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/main.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/application.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/guide.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/team.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/docs.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/homepage.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/tools.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/projects.css.css" />
+  <link rel="stylesheet" type="text/css" href="css/highlight.css.css" />
+  
+  <style>
+    p {
+        margin-top: 12px;
+    }
+    
+    table {
+        margin-top: 20px;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        vertical-align: top;
+    }
+  </style>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+  <script type="text/javascript" src="js/guide.js"></script>
+	
+</head><body onload="checkCookie()">
+  <div class="viewport">
+    <header class="navbar header--navbar header-web">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="spring-logo--container">
+            <div class="logo-bg"></div>
+            <a class="spring-logo" href="https://spring.io/"></a>
+          </div>
+          <ul class="nav pull-right">
+            <li class="navbar-link">
+              <a href="https://spring.io/docs">Docs</a>
+            </li>
+            <li class="navbar-link">
+              <a href="https://spring.io/guides">Guides</a>
+            </li>
+            <li class="navbar-link">
+              <a href="https://spring.io/projects">Projects</a>
+            </li>
+            <li class="navbar-link">
+              <a href="https://spring.io/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+<!--
+      <div class="search-dropdown--container js-search-dropdown">
+        <div class="container-fluid">
+          <div class="search-form--container">
+            <form action="/search" class="form-inline form-search" method="get">
+              <input class="search-query search-form--form js-search-input" name="q" placeholder="Search for documentation, guides, and posts..." type="text" value="" />
+              <button class="search-form--submit" type="submit"><i class="icon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+-->
+    </header>
+
+
+<div class="header--container"></div>
+<div class="body--container container-fluid ">
+<h1 class="nan1">Spring Tool Suite 3.9.18: New and Noteworthy</h1>
+
+<p class="nan2">Important Note</p>
+
+<p>This is a minor bugfix and maintenance release that we ship to our existing STS3 users beyond the announced maintenance lifespan for your convenience. We strongly recommend
+	to update to the new Spring Tools 4. Here is a <a href="https://github.com/spring-projects/sts4/wiki/STS3-Migration">migration guide from Spring Tool Suite 3 to Spring Tools 4</a>
+	that helps with migrating an existing workspace.</p>
+	
+<p>In case you are missing something extremely important or something is blocking you from upgrading, please raise an issue at:
+	<a href="https://github.com/spring-projects/sts4/issues">Spring Tools 4 GitHub issues</a>.</p>
+
+<p class="nan2">Updates and New/Enhanced Features</p>
+
+<p class="nan3">Eclipse 2021-09 (4.21)</p>
+<p>The default STS distribution is now based on the recently released Eclipse 2021-09 (4.21) release. Details about the Eclipse release can be found here:
+	<a href="https://www.eclipse.org/eclipseide/2021-09/">Eclipse 2021-09</a>.</p>
+
+<p class="nan3">JDK11 required to run the IDE</p>
+<p>The IDE now requires a JDK11 to run on as a minimum requirement. This does not affect projects in your workspace. They can still use and compile against
+  any JDK that you configure in the preferences.</p>
+
+<p class="nan3">Please remember: the Quick Text Search now part of the Eclipse platform</p>
+<p>The Quick Text Search feature got contributed to the Eclipse platform and ships now to all the millions of users of the Eclipse IDE. Therefore this will no longer be a separate feature installed
+	into the Spring Tool Suite 3 distribution, but a default feature of the platform itself. We are pround of this contribution to the platform and welcoming all the new users to this amazing
+	feature.</p>
+
+<hr/>
+
+<p class="nan3">Important Changes and Fixes</p>
+</br>
+<ul>
+  <li>improvement: Little UX improvement for Tags Editor in the Properties View (<a href="https://github.com/spring-projects/sts4/issues/649">#649</a>)</li>
+  <li>fixed: Problem with the STS/eclipse initializr for custom project types (<a href="https://github.com/spring-projects/sts4/issues/660">#660</a>)</li>
+</ul>
+
+<hr/>
+
+<p class="nan2"><a name="misc"></a>Miscellaneous</a>
+
+<h2>Useful Links</h2>
+
+<p>Download STS3: <a href="https://github.com/spring-projects/toolsuite-distribution/wiki/Spring-Tool-Suite-3">https://github.com/spring-projects/toolsuite-distribution/wiki/Spring-Tool-Suite-3</a></p>
+<p>Spring Tools 3 Issue tracker: <a href="https://github.com/spring-projects/spring-ide/issues">https://github.com/spring-projects/spring-ide/issues</a></p>
+
+<hr>
+
+<h2>New and Noteworthy for previous releases</h2>
+
+<p><a href="https://docs.spring.io/sts/nan/v3917/NewAndNoteworthy.html">STS 3.9.17</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3916/NewAndNoteworthy.html">STS 3.9.16</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3915/NewAndNoteworthy.html">STS 3.9.15</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3914/NewAndNoteworthy.html">STS 3.9.14</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3913/NewAndNoteworthy.html">STS 3.9.13</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3912/NewAndNoteworthy.html">STS 3.9.12</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3911/NewAndNoteworthy.html">STS 3.9.11</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v3910/NewAndNoteworthy.html">STS 3.9.10</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v399/NewAndNoteworthy.html">STS 3.9.9</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v398/NewAndNoteworthy.html">STS 3.9.8</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v397/NewAndNoteworthy.html">STS 3.9.7</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v396/NewAndNoteworthy.html">STS 3.9.6</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v395/NewAndNoteworthy.html">STS 3.9.5</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v394/NewAndNoteworthy.html">STS 3.9.4</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v393/NewAndNoteworthy.html">STS 3.9.3</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v392/NewAndNoteworthy.html">STS 3.9.2</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v391/NewAndNoteworthy.html">STS 3.9.1</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v390/NewAndNoteworthy.html">STS 3.9.0</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v384/NewAndNoteworthy.html">STS 3.8.4</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v383/NewAndNoteworthy.html">STS 3.8.0 - 3.8.3</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v373/NewAndNoteworthy.html">STS 3.7.3</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v372/NewAndNoteworthy.html">STS 3.7.2</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v371/NewAndNoteworthy.html">STS 3.7.1</a></p>
+<p><a href="https://docs.spring.io/sts/nan/v370/NewAndNoteworthy.html">STS 3.7.0</a></p>
+
+</div>
+
+</div></div></div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="navbar">
+              <div class="container">
+                <ul class="nav">
+                  <li><a href="https://spring.io/tools">Tools</a></li>
+                  <li><a href="https://spring.io/services">Services</a></li>
+                  <li><a href="https://spring.io/about">About Us</a></li>
+                  <li><a href="https://spring.io/jobs">Work With Us</a></li>
+                </ul>
+              </div>
+            </div>
+            &copy; <script type="text/javascript"> var d = new Date();
+                  document.write(d.getFullYear());</script> VMware, Inc. All Rights Reserved.
+            <a href="https://www.gopivotal.com/terms-of-use">Terms</a>,
+            <a href="https://www.gopivotal.com/privacy-policy">Privacy</a>, and
+            <a href="/logos">Usage</a>
+            
+          </div>
+          <div class="span4 footer-newsletter--wrapper pull-right">
+      </div>    
+    </footer>
+    <div id="scrim"></div>
+  </div>
+
+</body></html>
