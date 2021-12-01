@@ -11,11 +11,6 @@
 	<artifactId>org.springsource.sts.distribution-bundles</artifactId>
 	<packaging>pom</packaging>
 
-	<properties>
-		<dist.accessKey>${accessKey}</dist.accessKey>
-		<dist.secretKey>${secretKey}</dist.secretKey>
-	</properties>
-
 	<build>
 		<plugins>
 
@@ -30,26 +25,6 @@
 						<goals>
 							<goal>build-qualifier</goal>
 						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>properties-maven-plugin</artifactId>
-				<version>1.0-alpha-2</version>
-				<executions>
-					<execution>
-						<phase>initialize</phase>
-						<goals>
-							<goal>read-project-properties</goal>
-						</goals>
-						<configuration>
-							<quiet>true</quiet>
-							<files>
-								<file>${dist.properties}</file>
-							</files>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>

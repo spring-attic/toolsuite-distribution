@@ -81,6 +81,8 @@ Optional parameters:
 
 		<sts4-language-server-release-version>20210913</sts4-language-server-release-version>
 
+		<dist.accessKey>${env.bamboo_tools_s3_accesskey_password}</dist.accessKey>
+		<dist.secretKey>${env.bamboo_tools_s3_secretkey_password}</dist.secretKey>
 	</properties>
 
 	<modules>

@@ -13,15 +13,11 @@
 	<name>org.springsource.sts.product</name>
 
 	<properties>
-		<dist.accessKey>${accessKey}</dist.accessKey>
-		<dist.secretKey>${secretKey}</dist.secretKey>
-		
 		<build.destination.cocoa.x86_64>target/products/org.springsource.sts.ide/macosx/cocoa/x86_64</build.destination.cocoa.x86_64>
 		<build.destination.linux.x86>target/products/org.springsource.sts.ide/linux/gtk/x86</build.destination.linux.x86>
 		<build.destination.linux.x86_64>target/products/org.springsource.sts.ide/linux/gtk/x86_64</build.destination.linux.x86_64>
 		<build.destination.win.x86>target/products/org.springsource.sts.ide/win32/win32/x86</build.destination.win.x86>
 		<build.destination.win.x86_64>target/products/org.springsource.sts.ide/win32/win32/x86_64</build.destination.win.x86_64>
-		
 	</properties>
 
 	<profiles>
@@ -44,26 +40,6 @@
 
 	<build>
 		<plugins>
-
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>properties-maven-plugin</artifactId>
-				<version>1.0-alpha-2</version>
-				<executions>
-					<execution>
-						<phase>initialize</phase>
-						<goals>
-							<goal>read-project-properties</goal>
-						</goals>
-						<configuration>
-							<quiet>true</quiet>
-							<files>
-								<file>${dist.properties}</file>
-							</files>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
