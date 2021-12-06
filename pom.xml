@@ -79,7 +79,7 @@ Optional parameters:
 		<dist.eclipse-integration-tcserver-version>4.1.0.RELEASE</dist.eclipse-integration-tcserver-version>
 		<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
-		<sts4-language-server-release-version>20210913</sts4-language-server-release-version>
+		<sts4-language-server-release-version>20211203</sts4-language-server-release-version>
 
 		<dist.accessKey>${env.bamboo_tools_s3_accesskey_password}</dist.accessKey>
 		<dist.secretKey>${env.bamboo_tools_s3_secretkey_password}</dist.secretKey>
@@ -623,7 +623,7 @@ Optional parameters:
 				<repository>
 					<id>orbit</id>
 					<layout>p2</layout>
-					<url>https://download.eclipse.org/tools/orbit/downloads/drops/S20211020204107/repository</url>
+					<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20211122181901/repository</url>
 				</repository>
 				<repository>
 					<id>mylyn</id>
