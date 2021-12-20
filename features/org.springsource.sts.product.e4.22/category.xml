@@ -20,7 +20,7 @@
      version="0.0.0">
 	<category name="Uncategorized"/>
   </feature>
-
+<!--
   <feature
 	id="org.eclipse.ajdt"
 	version="0.0.0">
@@ -38,7 +38,7 @@
 	version="0.0.0">
 	<category name="Uncategorized"/>
   </feature>
-
+-->
   <!-- Language Server -->
   <category-def name="Spring Tooling Language Servers for Eclipse" label="Spring Tooling Language Servers for Eclipse"/>
 
@@ -182,10 +182,10 @@
 	</feature>
 
 	<!-- Integration features -->
-	<feature
+<!--	<feature
 		id="org.springframework.ide.eclipse.ajdt.feature" version="0.0.0">
 		<category name="Integrations / Spring IDE" />
-	</feature>
+	</feature> -->
 	
 	<feature
 		id="org.springframework.ide.eclipse.mylyn.feature" version="0.0.0">
@@ -233,10 +233,10 @@
 		<category name="Resources / Spring IDE" />
 	</feature>
 
-	<feature
+<!--	<feature
 		id="org.springframework.ide.eclipse.ajdt.feature.source" version="0.0.0">
 		<category name="Resources / Spring IDE" />
-	</feature>
+	</feature> -->
 	
 	<feature
 		id="org.springframework.ide.eclipse.mylyn.feature.source" version="0.0.0">

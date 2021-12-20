@@ -129,7 +129,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
       <feature id="org.eclipse.m2e.wtp.jaxrs.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.wtp.jsf.feature" installMode="root"/>
 
-      <feature id="org.maven.ide.eclipse.ajdt.feature" installMode="root"/>
+<!--      <feature id="org.maven.ide.eclipse.ajdt.feature" installMode="root"/> -->
       <feature id="org.sonatype.m2e.buildhelper.feature" installMode="root"/>
       <feature id="org.sonatype.m2e.mavenarchiver.feature" installMode="root"/>
 <!--      <feature id="org.sonatype.m2e.egit.feature" installMode="root"/> --> <!-- temporarily disable due to dependency issues -->

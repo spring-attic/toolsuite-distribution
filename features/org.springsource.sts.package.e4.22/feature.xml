@@ -19,8 +19,8 @@
    </license>
 
    <url>
-      <update label="Spring Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.17"/>
-      <discovery label="Spring Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.17"/>
+      <update label="Spring Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.22"/>
+      <discovery label="Spring Tool Suite Updates" url="https://download.springsource.com/release/TOOLS/update/e4.22"/>
    </url>
    
    <requires>
@@ -207,7 +207,7 @@
 
       <import feature="org.springframework.ide.eclipse.feature"/>
 	  <import feature="org.springframework.ide.eclipse.aop.feature"/>
-	  <import feature="org.springframework.ide.eclipse.ajdt.feature"/>
+<!--	  <import feature="org.springframework.ide.eclipse.ajdt.feature"/> -->
 	  <import feature="org.springframework.ide.eclipse.webflow.feature"/>
 	  <import feature="org.springframework.ide.eclipse.mylyn.feature"/>
 	  <import feature="org.springframework.ide.eclipse.security.feature"/>			
@@ -219,9 +219,9 @@
       <import feature="org.springframework.ide.eclipse.boot.feature"/>
       <import feature="org.springframework.ide.eclipse.boot.dash.feature"/>
 
-	  <import feature="org.eclipse.ajdt"/>					
-	  <import feature="org.eclipse.contribution.weaving"/>					
-	  <import feature="org.eclipse.contribution.xref"/>					
+<!--	  <import feature="org.eclipse.ajdt"/>
+	  <import feature="org.eclipse.contribution.weaving"/>
+	  <import feature="org.eclipse.contribution.xref"/> -->
 
       <import feature="org.springsource.sts"/>
       <import feature="com.vmware.vfabric.ide.eclipse.tcserver"/>
