@@ -79,7 +79,7 @@ Optional parameters:
 		<dist.eclipse-integration-tcserver-version>4.1.0.RELEASE</dist.eclipse-integration-tcserver-version>
 		<dist.grails-ide-version>${dist.dependencies-version-path}</dist.grails-ide-version>
 
-		<sts4-language-server-release-version>20211203</sts4-language-server-release-version>
+		<sts4-language-server-release-version>20220131</sts4-language-server-release-version>
 
 		<dist.accessKey>${env.bamboo_tools_s3_accesskey_password}</dist.accessKey>
 		<dist.secretKey>${env.bamboo_tools_s3_secretkey_password}</dist.secretKey>
