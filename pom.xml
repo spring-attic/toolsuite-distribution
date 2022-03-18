@@ -769,7 +769,7 @@ Optional parameters:
 				<repository>
 					<id>latest-m2e</id>
 					<layout>p2</layout>
-					<url>https://download.eclipse.org/technology/m2e/releases</url>
+					<url>https://download.eclipse.org/technology/m2e/releases/latest</url>
 				</repository>
 				<repository>
 					<id>latest-m2e-wtp</id>
