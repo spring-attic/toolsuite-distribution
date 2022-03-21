@@ -135,7 +135,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
 <!--      <feature id="org.sonatype.m2e.egit.feature" installMode="root"/> --> <!-- temporarily disable due to dependency issues -->
       <feature id="org.jboss.tools.m2e.wro4j.feature" installMode="root"/>
       <feature id="com.ianbrandt.tools.m2e.mdp.feature" installMode="root"/>
-      <feature id="m2e.chromatic.feature" installMode="root"/>
+<!--      <feature id="m2e.chromatic.feature" installMode="root"/> -->
 
       <feature id="org.eclipse.buildship" installMode="root"/>
       <feature id="org.eclipse.egit" installMode="root"/>
