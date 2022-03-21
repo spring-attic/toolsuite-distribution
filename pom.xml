@@ -817,11 +817,6 @@ Optional parameters:
 					<url>https://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-wro4j/1.1.0-2014-06-25_06-16-31-H26/</url>
 				</repository>
 				<repository>
-					<id>m2e-chromatic</id>
-					<layout>p2</layout>
-					<url>https://sidespin.github.io/m2e-chromatic/update/</url>
-				</repository>
-				<repository>
 					<id>maven-devtools</id>
 					<layout>p2</layout>
 					<url>https://dist.springsource.com/release/TOOLS/mavendevtools/</url>
